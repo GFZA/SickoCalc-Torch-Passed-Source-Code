@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=43 format=3 uid="uid://dso3ame7qwr03"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=37 format=3 uid="uid://bkc46ofnli6ss"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_tyxuk"]
 [ext_resource type="Resource" uid="uid://buxodlww8kx5u" path="res://Autoloads/Resources/Trait/monster_block.tres" id="2_30qc7"]
@@ -8,16 +8,10 @@
 [ext_resource type="Resource" uid="uid://cr27dbuxid5hy" path="res://Autoloads/Resources/Plays/Attack/Mind/pierce.tres" id="4_vfxpx"]
 [ext_resource type="Resource" uid="uid://cb522xk60xw71" path="res://Autoloads/Resources/Trait/power_forward.tres" id="4_xiefl"]
 [ext_resource type="Resource" uid="uid://qhb7pc512xbi" path="res://Autoloads/Resources/Plays/Attack/Body/kneebender.tres" id="5_ouequ"]
-[ext_resource type="Texture2D" uid="uid://dxkni1csukjub" path="res://Autoloads/Resources/Beastie/Armantis/armantis_idle.png" id="5_xiefl"]
-[ext_resource type="Texture2D" uid="uid://c8fjeonmq8jcp" path="res://Autoloads/Resources/Beastie/Armantis/armantis_ready.png" id="6_8xcv5"]
 [ext_resource type="Resource" uid="uid://cxogqm0367lrk" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="6_yvh3b"]
 [ext_resource type="Resource" uid="uid://dcn80u35wkpjp" path="res://Autoloads/Resources/Plays/Volley/net_rush.tres" id="7_2p20i"]
-[ext_resource type="Texture2D" uid="uid://db68qvfwyrl6h" path="res://Autoloads/Resources/Beastie/Armantis/armantis_spike.png" id="7_6iygu"]
-[ext_resource type="Texture2D" uid="uid://3amih51583mt" path="res://Autoloads/Resources/Beastie/Armantis/armantis_volley.png" id="8_cf1ok"]
 [ext_resource type="Resource" uid="uid://dqgatu0qsofqj" path="res://Autoloads/Resources/Plays/Defense/distraction.tres" id="8_iapun"]
 [ext_resource type="Resource" uid="uid://8wi04v1m7juh" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="9_1s2nu"]
-[ext_resource type="Texture2D" uid="uid://dfachuedk0v38" path="res://Autoloads/Resources/Beastie/Armantis/armantis_good.png" id="9_ftwtd"]
-[ext_resource type="Texture2D" uid="uid://ckx8eg6evi2q4" path="res://Autoloads/Resources/Beastie/Armantis/armantis_bad.png" id="10_lv2t3"]
 [ext_resource type="Resource" uid="uid://iuquitr1xs5u" path="res://Autoloads/Resources/Plays/Defense/staredown.tres" id="10_xvh0x"]
 [ext_resource type="Resource" uid="uid://c36rtva2s671" path="res://Autoloads/Resources/Plays/Attack/Body/thunder.tres" id="11_783dg"]
 [ext_resource type="Texture2D" uid="uid://bfwpn6o0kht3s" path="res://Autoloads/Resources/Beastie/Armantis/icon_armantis.png" id="11_bfvit"]
@@ -59,12 +53,6 @@ mind_base_def = 105
 possible_plays = Array[ExtResource("1_tyxuk")]([ExtResource("3_sm6i6"), ExtResource("4_vfxpx"), ExtResource("5_ouequ"), ExtResource("6_yvh3b"), ExtResource("7_2p20i"), ExtResource("8_iapun"), ExtResource("9_1s2nu"), ExtResource("10_xvh0x"), ExtResource("11_783dg"), ExtResource("12_i61xb"), ExtResource("13_4u5vv"), ExtResource("14_7ikn2"), ExtResource("15_tnlro"), ExtResource("16_1t22x"), ExtResource("17_0h5l5"), ExtResource("18_oeqm4"), ExtResource("19_tjmeh"), ExtResource("20_w2dvw"), ExtResource("21_4figh"), ExtResource("22_e4nda"), ExtResource("23_4htf3"), ExtResource("24_hcsdh"), ExtResource("25_ny681"), ExtResource("26_0q20g"), ExtResource("27_kh4sp"), ExtResource("28_o0xwv"), ExtResource("29_pb50g"), ExtResource("30_k0ouv"), ExtResource("31_ouequ"), ExtResource("32_yvh3b")])
 possible_traits = Array[ExtResource("2_xka47")]([ExtResource("2_30qc7"), ExtResource("4_xiefl")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("5_xiefl"),
-1: ExtResource("6_8xcv5"),
-2: ExtResource("7_6iygu"),
-3: ExtResource("8_cf1ok"),
-4: ExtResource("9_ftwtd"),
-5: ExtResource("10_lv2t3"),
 6: ExtResource("11_bfvit")
 })
 ball_anchor_position_receive = Vector2(-18, -135)

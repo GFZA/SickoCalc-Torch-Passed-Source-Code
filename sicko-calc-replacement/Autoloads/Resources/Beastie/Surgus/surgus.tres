@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=44 format=3 uid="uid://dbvvk5fo6jdfy"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=38 format=3 uid="uid://cbn8cgu0l7gxw"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_ou104"]
 [ext_resource type="Resource" uid="uid://bqmwc0aqx6lbm" path="res://Autoloads/Resources/Trait/performer.tres" id="2_5tssy"]
@@ -8,17 +8,11 @@
 [ext_resource type="Resource" uid="uid://b0ri66efuwqq" path="res://Autoloads/Resources/Plays/Support/rally.tres" id="4_d7knn"]
 [ext_resource type="Resource" uid="uid://djoh3bqqfyh20" path="res://Autoloads/Resources/Trait/defiant.tres" id="4_oijn3"]
 [ext_resource type="Resource" uid="uid://c624jkvl1417h" path="res://Autoloads/Resources/Plays/Volley/refresh.tres" id="5_n23k6"]
-[ext_resource type="Texture2D" uid="uid://b11cacm3t2h4t" path="res://Autoloads/Resources/Beastie/Surgus/surgus_idle.png" id="5_oijn3"]
 [ext_resource type="Resource" uid="uid://ckfu6pta3o1u2" path="res://Autoloads/Resources/Plays/Support/provoke.tres" id="6_ggp8q"]
-[ext_resource type="Texture2D" uid="uid://18wb4mjnm3q4" path="res://Autoloads/Resources/Beastie/Surgus/surgus_ready.png" id="6_u78nl"]
-[ext_resource type="Texture2D" uid="uid://c7v4qry88yane" path="res://Autoloads/Resources/Beastie/Surgus/surgus_spike.png" id="7_tw1fw"]
 [ext_resource type="Resource" uid="uid://dhmx805jhg4ir" path="res://Autoloads/Resources/Plays/Attack/Spirit/jammer.tres" id="7_yntfi"]
-[ext_resource type="Texture2D" uid="uid://c4n0e2yymqsl7" path="res://Autoloads/Resources/Beastie/Surgus/surgus_volley.png" id="8_1k4c2"]
 [ext_resource type="Resource" uid="uid://dytuvbvg3oamq" path="res://Autoloads/Resources/Plays/Defense/shield.tres" id="8_n7ray"]
 [ext_resource type="Resource" uid="uid://71t7u1j5yqvb" path="res://Autoloads/Resources/Plays/Support/mark.tres" id="9_slnbo"]
-[ext_resource type="Texture2D" uid="uid://huhoh2qjipu" path="res://Autoloads/Resources/Beastie/Surgus/surgus_good.png" id="9_uxd74"]
 [ext_resource type="Resource" uid="uid://dtkos0xt4rmf" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="10_cwcx7"]
-[ext_resource type="Texture2D" uid="uid://bu03juvfck7s4" path="res://Autoloads/Resources/Beastie/Surgus/surgus_bad.png" id="10_uk78n"]
 [ext_resource type="Resource" uid="uid://bcuhkrf7hdroh" path="res://Autoloads/Resources/Plays/Support/clear_field.tres" id="11_u8rdo"]
 [ext_resource type="Texture2D" uid="uid://bs78qi27yvsgm" path="res://Autoloads/Resources/Beastie/Surgus/icon_surgus.png" id="11_xtdju"]
 [ext_resource type="Resource" uid="uid://d8rp5pq7qf2i" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="12_meqk6"]
@@ -60,12 +54,6 @@ mind_base_def = 65
 possible_plays = Array[ExtResource("1_ou104")]([ExtResource("3_2kd7i"), ExtResource("4_d7knn"), ExtResource("5_n23k6"), ExtResource("6_ggp8q"), ExtResource("7_yntfi"), ExtResource("8_n7ray"), ExtResource("9_slnbo"), ExtResource("10_cwcx7"), ExtResource("11_u8rdo"), ExtResource("12_meqk6"), ExtResource("13_axjgk"), ExtResource("14_m1oxd"), ExtResource("15_v68ie"), ExtResource("16_u2smr"), ExtResource("17_lisqn"), ExtResource("18_3yq7g"), ExtResource("19_3286q"), ExtResource("20_b43ty"), ExtResource("21_tmbdd"), ExtResource("22_3jyjm"), ExtResource("23_b73kg"), ExtResource("24_0h0qo"), ExtResource("25_pv3iy"), ExtResource("26_eib50"), ExtResource("27_jtset"), ExtResource("28_gw3ko"), ExtResource("29_vmxvm"), ExtResource("30_i2tcv"), ExtResource("31_erc0y"), ExtResource("32_2e13j"), ExtResource("33_dxga3")])
 possible_traits = Array[ExtResource("2_wllxg")]([ExtResource("2_5tssy"), ExtResource("4_oijn3")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("5_oijn3"),
-1: ExtResource("6_u78nl"),
-2: ExtResource("7_tw1fw"),
-3: ExtResource("8_1k4c2"),
-4: ExtResource("9_uxd74"),
-5: ExtResource("10_uk78n"),
 6: ExtResource("11_xtdju")
 })
 ball_anchor_position_receive = Vector2(60, -200)

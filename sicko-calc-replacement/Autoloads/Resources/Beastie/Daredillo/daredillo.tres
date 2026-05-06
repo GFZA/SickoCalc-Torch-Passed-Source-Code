@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=43 format=3 uid="uid://dlxbw66h5388j"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=37 format=3 uid="uid://bxxd20nqn2nv8"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_co2qs"]
 [ext_resource type="Resource" uid="uid://cagttvqn25cci" path="res://Autoloads/Resources/Trait/acrobat.tres" id="2_5qjw5"]
@@ -6,18 +6,12 @@
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_qw0ss"]
 [ext_resource type="Resource" uid="uid://duynnadxw4hkg" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_w0671"]
 [ext_resource type="Resource" uid="uid://csjy2arcu0s1x" path="res://Autoloads/Resources/Trait/self_assured.tres" id="4_1ujr4"]
-[ext_resource type="Texture2D" uid="uid://djnvhixn8l88m" path="res://Autoloads/Resources/Beastie/Daredillo/daredillo_idle.png" id="4_3uupq"]
 [ext_resource type="Resource" uid="uid://ckfu6pta3o1u2" path="res://Autoloads/Resources/Plays/Support/provoke.tres" id="4_51lq1"]
 [ext_resource type="Resource" uid="uid://fysaq1o88o1v" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="5_2jgtp"]
-[ext_resource type="Texture2D" uid="uid://quyspu2ukeos" path="res://Autoloads/Resources/Beastie/Daredillo/daredillo_ready.png" id="5_5qjw5"]
-[ext_resource type="Texture2D" uid="uid://bm2y2dma0whd6" path="res://Autoloads/Resources/Beastie/Daredillo/daredillo_spike.png" id="6_1ujr4"]
 [ext_resource type="Resource" uid="uid://ct7v52g87i87i" path="res://Autoloads/Resources/Plays/Volley/confident_pass.tres" id="6_21j1e"]
 [ext_resource type="Resource" uid="uid://cbqqeeugk7xo0" path="res://Autoloads/Resources/Plays/Attack/Spirit/desperate_force.tres" id="7_khfe2"]
-[ext_resource type="Texture2D" uid="uid://bbo88utvuyf0q" path="res://Autoloads/Resources/Beastie/Daredillo/daredillo_volley.png" id="7_t2we2"]
 [ext_resource type="Resource" uid="uid://tc6ag84sawpl" path="res://Autoloads/Resources/Plays/Support/tough_front.tres" id="8_ol6oq"]
-[ext_resource type="Texture2D" uid="uid://c003wd3xuq7g4" path="res://Autoloads/Resources/Beastie/Daredillo/daredillo_good.png" id="8_ywvum"]
 [ext_resource type="Resource" uid="uid://c8icw3pvu0swl" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="9_30kej"]
-[ext_resource type="Texture2D" uid="uid://uncugno5eq63" path="res://Autoloads/Resources/Beastie/Daredillo/daredillo_bad.png" id="9_u1hfc"]
 [ext_resource type="Resource" uid="uid://c6eqm7qkng1lr" path="res://Autoloads/Resources/Plays/Attack/Body/spike.tres" id="10_dnvk1"]
 [ext_resource type="Resource" uid="uid://dfrswto2e3nco" path="res://Autoloads/Resources/Plays/Defense/role_reverse.tres" id="12_7ggtb"]
 [ext_resource type="Resource" uid="uid://dcn80u35wkpjp" path="res://Autoloads/Resources/Plays/Volley/net_rush.tres" id="13_rkejm"]
@@ -59,12 +53,6 @@ mind_base_def = 65
 possible_plays = Array[ExtResource("1_co2qs")]([ExtResource("3_w0671"), ExtResource("4_51lq1"), ExtResource("5_2jgtp"), ExtResource("6_21j1e"), ExtResource("7_khfe2"), ExtResource("8_ol6oq"), ExtResource("9_30kej"), ExtResource("10_dnvk1"), ExtResource("12_7ggtb"), ExtResource("13_rkejm"), ExtResource("14_14vcc"), ExtResource("15_oms5a"), ExtResource("16_vedeh"), ExtResource("17_ekply"), ExtResource("18_0d6af"), ExtResource("19_da3wi"), ExtResource("20_71sl6"), ExtResource("21_7vbi7"), ExtResource("22_5kccc"), ExtResource("23_v2tpi"), ExtResource("24_f0clj"), ExtResource("25_uos7i"), ExtResource("26_qp8k7"), ExtResource("27_4q64c"), ExtResource("28_gwpb7"), ExtResource("29_kun3f"), ExtResource("30_3fwyd"), ExtResource("31_1mtka"), ExtResource("32_uf1qp"), ExtResource("32_ql6m5")])
 possible_traits = Array[ExtResource("2_pdjv8")]([ExtResource("2_5qjw5"), ExtResource("4_1ujr4")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("4_3uupq"),
-1: ExtResource("5_5qjw5"),
-2: ExtResource("6_1ujr4"),
-3: ExtResource("7_t2we2"),
-4: ExtResource("8_ywvum"),
-5: ExtResource("9_u1hfc"),
 6: ExtResource("42_ql6m5")
 })
 ball_anchor_position_receive = Vector2(58, -170)

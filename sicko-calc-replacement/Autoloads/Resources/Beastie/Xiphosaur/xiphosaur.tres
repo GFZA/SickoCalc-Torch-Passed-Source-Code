@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=34 format=3 uid="uid://chf4idli50svj"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=28 format=3 uid="uid://ddl5nojjcbhq0"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_aavhy"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_5x0qa"]
@@ -6,17 +6,11 @@
 [ext_resource type="Resource" uid="uid://duynnadxw4hkg" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_5sg5e"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_pm4g0"]
 [ext_resource type="Resource" uid="uid://dytuvbvg3oamq" path="res://Autoloads/Resources/Plays/Defense/shield.tres" id="4_qcdbm"]
-[ext_resource type="Texture2D" uid="uid://dxmdbr5oennm0" path="res://Autoloads/Resources/Beastie/Xiphosaur/xiphosaur_idle.png" id="5_rn1r6"]
 [ext_resource type="Resource" uid="uid://dgsnxhjtejofp" path="res://Autoloads/Resources/Plays/Volley/dig.tres" id="5_sf1s4"]
 [ext_resource type="Resource" uid="uid://dtkos0xt4rmf" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="6_oy6fx"]
-[ext_resource type="Texture2D" uid="uid://c0g38k8bhmuqu" path="res://Autoloads/Resources/Beastie/Xiphosaur/xiphosaur_ready.png" id="6_srmw0"]
 [ext_resource type="Resource" uid="uid://bgwy15q42o6k7" path="res://Autoloads/Resources/Plays/Support/hunker.tres" id="7_5u06q"]
-[ext_resource type="Texture2D" uid="uid://dosykhc4yk42q" path="res://Autoloads/Resources/Beastie/Xiphosaur/xiphosaur_spike.png" id="7_nlvhk"]
-[ext_resource type="Texture2D" uid="uid://bxd305ft4fitt" path="res://Autoloads/Resources/Beastie/Xiphosaur/xiphosaur_volley.png" id="8_bcucj"]
 [ext_resource type="Resource" uid="uid://y3o0tssi0oeu" path="res://Autoloads/Resources/Plays/Volley/forward_pass.tres" id="8_w60fm"]
-[ext_resource type="Texture2D" uid="uid://cdyjalbbanoy0" path="res://Autoloads/Resources/Beastie/Xiphosaur/xiphosaur_good.png" id="9_1ssrb"]
 [ext_resource type="Resource" uid="uid://bqwii245fpl4a" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="9_x7rrh"]
-[ext_resource type="Texture2D" uid="uid://b50ow3sk3vium" path="res://Autoloads/Resources/Beastie/Xiphosaur/xiphosaur_bad.png" id="10_khygw"]
 [ext_resource type="Resource" uid="uid://7nsxd3vbne52" path="res://Autoloads/Resources/Plays/Support/exhaust.tres" id="10_p2ph1"]
 [ext_resource type="Resource" uid="uid://bv35xn3xk317w" path="res://Autoloads/Resources/Plays/Attack/Spirit/cook.tres" id="11_cpmtj"]
 [ext_resource type="Texture2D" uid="uid://du25h8n0l1bj5" path="res://Autoloads/Resources/Beastie/Xiphosaur/icon_xiphosaur.png" id="11_mvpyl"]
@@ -50,12 +44,6 @@ mind_base_def = 107
 possible_plays = Array[ExtResource("1_aavhy")]([ExtResource("3_5sg5e"), ExtResource("4_qcdbm"), ExtResource("5_sf1s4"), ExtResource("6_oy6fx"), ExtResource("7_5u06q"), ExtResource("8_w60fm"), ExtResource("9_x7rrh"), ExtResource("10_p2ph1"), ExtResource("11_cpmtj"), ExtResource("12_aubav"), ExtResource("13_ngefs"), ExtResource("14_mjp41"), ExtResource("15_6reqb"), ExtResource("16_mthth"), ExtResource("18_ibs3k"), ExtResource("19_2cnqu"), ExtResource("20_hi1ls"), ExtResource("21_wd8we"), ExtResource("22_5opgn"), ExtResource("23_8qodr"), ExtResource("24_p6opk"), ExtResource("24_5sg5e")])
 possible_traits = Array[ExtResource("2_5x0qa")]([ExtResource("2_pm4g0")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("5_rn1r6"),
-1: ExtResource("6_srmw0"),
-2: ExtResource("7_nlvhk"),
-3: ExtResource("8_bcucj"),
-4: ExtResource("9_1ssrb"),
-5: ExtResource("10_khygw"),
 6: ExtResource("11_mvpyl")
 })
 ball_anchor_position_receive = Vector2(38, -85)

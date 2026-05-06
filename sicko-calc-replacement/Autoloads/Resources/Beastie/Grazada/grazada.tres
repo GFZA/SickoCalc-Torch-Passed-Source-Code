@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=43 format=3 uid="uid://br8ydf6rjufy5"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=37 format=3 uid="uid://c6xk73qcu8lpr"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_ncnhv"]
 [ext_resource type="Resource" uid="uid://dvtuxsee70dv" path="res://Autoloads/Resources/Trait/scary_face.tres" id="2_dv7o2"]
@@ -6,18 +6,12 @@
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_yr6yw"]
 [ext_resource type="Resource" uid="uid://doi4ldly85wo3" path="res://Autoloads/Resources/Plays/Volley/excited_pass.tres" id="3_yygon"]
 [ext_resource type="Resource" uid="uid://duynnadxw4hkg" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="4_4y4pn"]
-[ext_resource type="Texture2D" uid="uid://emhui0qkmwli" path="res://Autoloads/Resources/Beastie/Grazada/grazada_idle.png" id="5_q2apb"]
 [ext_resource type="Resource" uid="uid://bqwii245fpl4a" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="5_ygyas"]
-[ext_resource type="Texture2D" uid="uid://d2h7xk0iy33te" path="res://Autoloads/Resources/Beastie/Grazada/grazada_ready.png" id="6_318r4"]
 [ext_resource type="Resource" uid="uid://bpp1fdkheyfi" path="res://Autoloads/Resources/Plays/Defense/stinky.tres" id="6_v2xc2"]
-[ext_resource type="Texture2D" uid="uid://bnk06iyu68pq7" path="res://Autoloads/Resources/Beastie/Grazada/grazada_spike.png" id="7_dra27"]
 [ext_resource type="Resource" uid="uid://ct6ym4n4aja00" path="res://Autoloads/Resources/Plays/Support/cheer.tres" id="7_hxxbc"]
 [ext_resource type="Resource" uid="uid://bcr7xnr07v278" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="8_4ev4b"]
-[ext_resource type="Texture2D" uid="uid://wpuryq5rbli7" path="res://Autoloads/Resources/Beastie/Grazada/grazada_volley.png" id="8_xylax"]
 [ext_resource type="Resource" uid="uid://b0ri66efuwqq" path="res://Autoloads/Resources/Plays/Support/rally.tres" id="9_hgkme"]
-[ext_resource type="Texture2D" uid="uid://c5krm8ogddkca" path="res://Autoloads/Resources/Beastie/Grazada/grazada_good.png" id="9_sucfj"]
 [ext_resource type="Resource" uid="uid://b5ox8jsftfp33" path="res://Autoloads/Resources/Plays/Defense/mighty_yell.tres" id="10_o1tpc"]
-[ext_resource type="Texture2D" uid="uid://dvyo22cwhwc0f" path="res://Autoloads/Resources/Beastie/Grazada/grazada_bad.png" id="10_pviop"]
 [ext_resource type="Resource" uid="uid://bjh3q3eclur2i" path="res://Autoloads/Resources/Plays/Attack/Spirit/thriller.tres" id="11_61frs"]
 [ext_resource type="Resource" uid="uid://tc6ag84sawpl" path="res://Autoloads/Resources/Plays/Support/tough_front.tres" id="12_wg28w"]
 [ext_resource type="Resource" uid="uid://bkck3t5a2wv3f" path="res://Autoloads/Resources/Plays/Attack/Spirit/scream.tres" id="13_omhyr"]
@@ -59,12 +53,6 @@ mind_base_def = 65
 possible_plays = Array[ExtResource("1_ncnhv")]([ExtResource("3_yygon"), ExtResource("4_4y4pn"), ExtResource("5_ygyas"), ExtResource("6_v2xc2"), ExtResource("7_hxxbc"), ExtResource("8_4ev4b"), ExtResource("9_hgkme"), ExtResource("10_o1tpc"), ExtResource("11_61frs"), ExtResource("12_wg28w"), ExtResource("13_omhyr"), ExtResource("14_3jhpg"), ExtResource("15_dgt1o"), ExtResource("16_av8uv"), ExtResource("18_d348e"), ExtResource("19_0gqad"), ExtResource("20_7h8fg"), ExtResource("21_1hn04"), ExtResource("22_skelm"), ExtResource("23_15mu6"), ExtResource("24_2fjbk"), ExtResource("25_etipv"), ExtResource("26_1at6h"), ExtResource("27_f25ab"), ExtResource("29_3ingq"), ExtResource("30_0w8cl"), ExtResource("31_hkk3c"), ExtResource("32_iogsd"), ExtResource("33_wr2x7"), ExtResource("32_165s2"), ExtResource("33_42ray")])
 possible_traits = Array[ExtResource("2_fjxcg")]([ExtResource("2_dv7o2")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("5_q2apb"),
-1: ExtResource("6_318r4"),
-2: ExtResource("7_dra27"),
-3: ExtResource("8_xylax"),
-4: ExtResource("9_sucfj"),
-5: ExtResource("10_pviop"),
 6: ExtResource("42_165s2")
 })
 ball_anchor_position_receive = Vector2(51, -32)

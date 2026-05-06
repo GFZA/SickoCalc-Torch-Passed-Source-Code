@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=38 format=3 uid="uid://c5uuymtswvp65"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=32 format=3 uid="uid://ju17h5dh0ca0"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_5u6mg"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_crcu8"]
@@ -6,18 +6,12 @@
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_i8e3u"]
 [ext_resource type="Resource" uid="uid://coljoc6wslna8" path="res://Autoloads/Resources/Plays/Support/hum.tres" id="3_pa0nn"]
 [ext_resource type="Resource" uid="uid://uhybiiauycux" path="res://Autoloads/Resources/Plays/Attack/Spirit/pepshot.tres" id="4_8xxa6"]
-[ext_resource type="Texture2D" uid="uid://bfnuhdlwup73k" path="res://Autoloads/Resources/Beastie/Hopra/hopra_idle.png" id="4_d563j"]
 [ext_resource type="Resource" uid="uid://bk0m5f3kuweyx" path="res://Autoloads/Resources/Trait/rumpus.tres" id="4_o8hj7"]
 [ext_resource type="Resource" uid="uid://dpjt7qoiit6f0" path="res://Autoloads/Resources/Plays/Defense/battle_cry.tres" id="5_l7v36"]
-[ext_resource type="Texture2D" uid="uid://byq2t2kqw3gct" path="res://Autoloads/Resources/Beastie/Hopra/hopra_ready.png" id="5_pkep1"]
-[ext_resource type="Texture2D" uid="uid://dyclb4lh6acgq" path="res://Autoloads/Resources/Beastie/Hopra/hopra_spike.png" id="6_o8hj7"]
 [ext_resource type="Resource" uid="uid://dhmx805jhg4ir" path="res://Autoloads/Resources/Plays/Attack/Spirit/jammer.tres" id="6_twe2a"]
-[ext_resource type="Texture2D" uid="uid://ca42pq40yucee" path="res://Autoloads/Resources/Beastie/Hopra/hopra_volley.png" id="7_r21o0"]
 [ext_resource type="Resource" uid="uid://ck2v1w5w6an2w" path="res://Autoloads/Resources/Plays/Support/drum.tres" id="7_us2s0"]
 [ext_resource type="Resource" uid="uid://cpuds8hsc5dr1" path="res://Autoloads/Resources/Plays/Defense/dramatic_exit.tres" id="8_0hcby"]
-[ext_resource type="Texture2D" uid="uid://byy6o5mkyhcnj" path="res://Autoloads/Resources/Beastie/Hopra/hopra_good.png" id="8_p26u1"]
 [ext_resource type="Resource" uid="uid://d8rp5pq7qf2i" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="9_0hg36"]
-[ext_resource type="Texture2D" uid="uid://bpxra6l3fx3o7" path="res://Autoloads/Resources/Beastie/Hopra/hopra_bad.png" id="9_ol1so"]
 [ext_resource type="Resource" uid="uid://ct6ym4n4aja00" path="res://Autoloads/Resources/Plays/Support/cheer.tres" id="10_32foy"]
 [ext_resource type="Resource" uid="uid://chnjmscu87ehu" path="res://Autoloads/Resources/Plays/Support/introduce.tres" id="11_i2s1r"]
 [ext_resource type="Resource" uid="uid://r7wuh8vfp83p" path="res://Autoloads/Resources/Plays/Attack/Spirit/supercommit.tres" id="12_c0cdi"]
@@ -53,12 +47,6 @@ spirit_base_def = 110
 possible_plays = Array[ExtResource("1_5u6mg")]([ExtResource("3_pa0nn"), ExtResource("4_8xxa6"), ExtResource("5_l7v36"), ExtResource("6_twe2a"), ExtResource("7_us2s0"), ExtResource("8_0hcby"), ExtResource("9_0hg36"), ExtResource("10_32foy"), ExtResource("11_i2s1r"), ExtResource("12_c0cdi"), ExtResource("13_nukph"), ExtResource("14_shu85"), ExtResource("15_rdxag"), ExtResource("16_lfqic"), ExtResource("17_071fn"), ExtResource("19_gtnp8"), ExtResource("20_shitw"), ExtResource("21_2ym1j"), ExtResource("22_cvfqi"), ExtResource("23_8rde5"), ExtResource("24_nl5st"), ExtResource("25_qndbj"), ExtResource("26_tu2x6"), ExtResource("27_r6hnr"), ExtResource("27_yppus")])
 possible_traits = Array[ExtResource("2_crcu8")]([ExtResource("2_pkep1"), ExtResource("4_o8hj7")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("4_d563j"),
-1: ExtResource("5_pkep1"),
-2: ExtResource("6_o8hj7"),
-3: ExtResource("7_r21o0"),
-4: ExtResource("8_p26u1"),
-5: ExtResource("9_ol1so"),
 6: ExtResource("37_yppus")
 })
 ball_anchor_position_receive = Vector2(103, -155)

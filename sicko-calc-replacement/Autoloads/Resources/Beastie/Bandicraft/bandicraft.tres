@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=46 format=3 uid="uid://dr6dti4ow55uy"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=40 format=3 uid="uid://b72p5yai75keh"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_mjbct"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_c0oaa"]
@@ -6,16 +6,10 @@
 [ext_resource type="Resource" uid="uid://dgsnxhjtejofp" path="res://Autoloads/Resources/Plays/Volley/dig.tres" id="3_4icvs"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_xmliq"]
 [ext_resource type="Resource" uid="uid://chm7cp4ewi5bp" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="4_55egs"]
-[ext_resource type="Texture2D" uid="uid://dbhual56c4cnk" path="res://Autoloads/Resources/Beastie/Bandicraft/bandicraft_idle.png" id="4_74g53"]
 [ext_resource type="Resource" uid="uid://y3o0tssi0oeu" path="res://Autoloads/Resources/Plays/Volley/forward_pass.tres" id="5_mm356"]
-[ext_resource type="Texture2D" uid="uid://fqlub67fyf4c" path="res://Autoloads/Resources/Beastie/Bandicraft/bandicraft_ready.png" id="5_x4xr0"]
 [ext_resource type="Resource" uid="uid://dt6bwolfdhgfb" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="6_d36xi"]
-[ext_resource type="Texture2D" uid="uid://34ga6srd7kv2" path="res://Autoloads/Resources/Beastie/Bandicraft/bandicraft_spike.png" id="6_kkor3"]
 [ext_resource type="Resource" uid="uid://0qwdo32fcu5e" path="res://Autoloads/Resources/Plays/Volley/set.tres" id="7_mg1hr"]
-[ext_resource type="Texture2D" uid="uid://dc8mywgbnjfc7" path="res://Autoloads/Resources/Beastie/Bandicraft/bandicraft_volley.png" id="7_sjukr"]
 [ext_resource type="Resource" uid="uid://demy8mq1avyw2" path="res://Autoloads/Resources/Plays/Volley/demanding_set.tres" id="8_0d4x5"]
-[ext_resource type="Texture2D" uid="uid://dtqhkuhktohgu" path="res://Autoloads/Resources/Beastie/Bandicraft/bandicraft_good.png" id="8_k08c3"]
-[ext_resource type="Texture2D" uid="uid://kyjyfcv2clxo" path="res://Autoloads/Resources/Beastie/Bandicraft/bandicraft_bad.png" id="9_d2b2s"]
 [ext_resource type="Resource" uid="uid://gpx5prmyyhwg" path="res://Autoloads/Resources/Plays/Attack/Mind/zigzag.tres" id="9_edcip"]
 [ext_resource type="Resource" uid="uid://d2lsfpa4l3jmk" path="res://Autoloads/Resources/Plays/Support/build.tres" id="10_yr48i"]
 [ext_resource type="Resource" uid="uid://bgre5116472ag" path="res://Autoloads/Resources/Plays/Defense/wall.tres" id="11_fsy51"]
@@ -62,12 +56,6 @@ mind_base_def = 118
 possible_plays = Array[ExtResource("1_mjbct")]([ExtResource("3_4icvs"), ExtResource("4_55egs"), ExtResource("5_mm356"), ExtResource("6_d36xi"), ExtResource("7_mg1hr"), ExtResource("8_0d4x5"), ExtResource("9_edcip"), ExtResource("10_yr48i"), ExtResource("11_fsy51"), ExtResource("12_gkl2p"), ExtResource("13_kabuh"), ExtResource("14_klku7"), ExtResource("15_6doac"), ExtResource("16_8rswr"), ExtResource("17_ekdlw"), ExtResource("18_gjdvj"), ExtResource("19_nx86l"), ExtResource("20_cwcun"), ExtResource("21_1nfbd"), ExtResource("22_a106d"), ExtResource("23_rhmhn"), ExtResource("24_db4ca"), ExtResource("25_ax0rw"), ExtResource("26_wcguy"), ExtResource("27_ck6qw"), ExtResource("28_m1r2u"), ExtResource("30_lecm7"), ExtResource("31_dmjvq"), ExtResource("32_aw66a"), ExtResource("33_5cm4a"), ExtResource("34_6flip"), ExtResource("34_r1trf"), ExtResource("35_8rgej")])
 possible_traits = Array[ExtResource("2_c0oaa")]([ExtResource("2_x4xr0"), ExtResource("36_hwn4f")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("4_74g53"),
-1: ExtResource("5_x4xr0"),
-2: ExtResource("6_kkor3"),
-3: ExtResource("7_sjukr"),
-4: ExtResource("8_k08c3"),
-5: ExtResource("9_d2b2s"),
 6: ExtResource("44_u75hd")
 })
 ball_anchor_position_receive = Vector2(46, -113)

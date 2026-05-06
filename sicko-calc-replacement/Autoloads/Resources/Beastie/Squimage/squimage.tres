@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=49 format=3 uid="uid://c15y267qqihl4"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=43 format=3 uid="uid://b51u5rl0h30rm"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_ml67k"]
 [ext_resource type="Resource" uid="uid://cfp4l5l5j0k60" path="res://Autoloads/Resources/Trait/protean.tres" id="2_6kp4b"]
@@ -8,17 +8,11 @@
 [ext_resource type="Resource" uid="uid://b7c1t1fux071m" path="res://Autoloads/Resources/Plays/Support/call_out.tres" id="4_3ld87"]
 [ext_resource type="Resource" uid="uid://cnei2k6kdn2pk" path="res://Autoloads/Resources/Trait/mimicry.tres" id="4_vm3i7"]
 [ext_resource type="Resource" uid="uid://f056ck8wnien" path="res://Autoloads/Resources/Plays/Attack/Body/mimic.tres" id="5_ets4y"]
-[ext_resource type="Texture2D" uid="uid://dd3m7jfl5qpft" path="res://Autoloads/Resources/Beastie/Squimage/squimage_idle.png" id="5_vm3i7"]
-[ext_resource type="Texture2D" uid="uid://dtnumpitbsguq" path="res://Autoloads/Resources/Beastie/Squimage/squimage_ready.png" id="6_6dh48"]
 [ext_resource type="Resource" uid="uid://dt6bwolfdhgfb" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="6_pvcld"]
-[ext_resource type="Texture2D" uid="uid://b8svq1050egtw" path="res://Autoloads/Resources/Beastie/Squimage/squimage_spike.png" id="7_48odk"]
 [ext_resource type="Resource" uid="uid://dhmx805jhg4ir" path="res://Autoloads/Resources/Plays/Attack/Spirit/jammer.tres" id="7_y6ko1"]
 [ext_resource type="Resource" uid="uid://dthwtmgr6183d" path="res://Autoloads/Resources/Plays/Defense/pump_up.tres" id="8_h11de"]
-[ext_resource type="Texture2D" uid="uid://bgho0c8stxi78" path="res://Autoloads/Resources/Beastie/Squimage/squimage_volley.png" id="8_oovvg"]
 [ext_resource type="Resource" uid="uid://r8p64is70rc7" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="9_cq7or"]
-[ext_resource type="Texture2D" uid="uid://spbvpd815l4e" path="res://Autoloads/Resources/Beastie/Squimage/squimage_good.png" id="9_enfwi"]
 [ext_resource type="Resource" uid="uid://cpuds8hsc5dr1" path="res://Autoloads/Resources/Plays/Defense/dramatic_exit.tres" id="10_iecop"]
-[ext_resource type="Texture2D" uid="uid://pxtluaiwpfgm" path="res://Autoloads/Resources/Beastie/Squimage/squimage_bad.png" id="10_u3bx7"]
 [ext_resource type="Resource" uid="uid://7euxvv68bs8h" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="11_g052h"]
 [ext_resource type="Resource" uid="uid://dgerhmmgjkxn2" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="12_fwcih"]
 [ext_resource type="Resource" uid="uid://b3u7ewdra230k" path="res://Autoloads/Resources/Plays/Support/trait_dance.tres" id="13_4b4uv"]
@@ -65,12 +59,6 @@ mind_base_def = 69
 possible_plays = Array[ExtResource("1_ml67k")]([ExtResource("3_oao8d"), ExtResource("4_3ld87"), ExtResource("5_ets4y"), ExtResource("6_pvcld"), ExtResource("7_y6ko1"), ExtResource("8_h11de"), ExtResource("9_cq7or"), ExtResource("10_iecop"), ExtResource("11_g052h"), ExtResource("12_fwcih"), ExtResource("13_4b4uv"), ExtResource("14_scvkb"), ExtResource("15_16u6o"), ExtResource("16_okajv"), ExtResource("17_v1qv2"), ExtResource("18_luqrj"), ExtResource("19_qi331"), ExtResource("20_re2ub"), ExtResource("22_5wbbu"), ExtResource("23_l31b1"), ExtResource("24_vxfwp"), ExtResource("25_v4ig7"), ExtResource("26_knhef"), ExtResource("27_7mb31"), ExtResource("28_wfpkq"), ExtResource("29_ml2el"), ExtResource("30_hj884"), ExtResource("31_sempn"), ExtResource("32_52250"), ExtResource("33_u1fat"), ExtResource("34_brema"), ExtResource("35_njm87"), ExtResource("36_ssu2x"), ExtResource("37_71u7t"), ExtResource("38_vkurs"), ExtResource("39_v3qhh")])
 possible_traits = Array[ExtResource("2_lukmp")]([ExtResource("2_6kp4b"), ExtResource("4_vm3i7")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("5_vm3i7"),
-1: ExtResource("6_6dh48"),
-2: ExtResource("7_48odk"),
-3: ExtResource("8_oovvg"),
-4: ExtResource("9_enfwi"),
-5: ExtResource("10_u3bx7"),
 6: ExtResource("49_pck11")
 })
 ball_anchor_position_receive = Vector2(58, -60)

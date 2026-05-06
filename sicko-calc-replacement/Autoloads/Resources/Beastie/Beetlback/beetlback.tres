@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=43 format=3 uid="uid://18coamxysrdb"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=37 format=3 uid="uid://c84ejmokrfubi"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_us05o"]
 [ext_resource type="Resource" uid="uid://cndna6dik5aug" path="res://Autoloads/Resources/Trait/helmet.tres" id="2_5dd6k"]
@@ -9,16 +9,10 @@
 [ext_resource type="Resource" uid="uid://cqyb3ky1ckijy" path="res://Autoloads/Resources/Trait/captain.tres" id="4_rod40"]
 [ext_resource type="Resource" uid="uid://c5oyp7e74r3pd" path="res://Autoloads/Resources/Plays/Support/shake_off.tres" id="5_gj6cl"]
 [ext_resource type="Resource" uid="uid://hwqaqcj1j4lq" path="res://Autoloads/Resources/Plays/Attack/Mind/precision_strike.tres" id="6_4wnqp"]
-[ext_resource type="Texture2D" uid="uid://dlucu0s65unhv" path="res://Autoloads/Resources/Beastie/Beetlback/beetlback_idle.png" id="6_gpkju"]
-[ext_resource type="Texture2D" uid="uid://cmpti768cqc5k" path="res://Autoloads/Resources/Beastie/Beetlback/beetlback_ready.png" id="7_10cg2"]
 [ext_resource type="Resource" uid="uid://dkh0jivrf43jv" path="res://Autoloads/Resources/Plays/Defense/smack.tres" id="7_bveq5"]
 [ext_resource type="Resource" uid="uid://dekfo2slnoigr" path="res://Autoloads/Resources/Plays/Attack/Body/rocket.tres" id="8_hgx1x"]
-[ext_resource type="Texture2D" uid="uid://dtevdw0xdothw" path="res://Autoloads/Resources/Beastie/Beetlback/beetlback_spike.png" id="8_wsnaw"]
-[ext_resource type="Texture2D" uid="uid://cn0awn10evff" path="res://Autoloads/Resources/Beastie/Beetlback/beetlback_volley.png" id="9_jfmyl"]
 [ext_resource type="Resource" uid="uid://0qwdo32fcu5e" path="res://Autoloads/Resources/Plays/Volley/set.tres" id="9_qlryx"]
-[ext_resource type="Texture2D" uid="uid://bmgdnupi4jry0" path="res://Autoloads/Resources/Beastie/Beetlback/beetlback_good.png" id="10_nxuyh"]
 [ext_resource type="Resource" uid="uid://7euxvv68bs8h" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="10_xhehu"]
-[ext_resource type="Texture2D" uid="uid://c6d6ysw4ohtcu" path="res://Autoloads/Resources/Beastie/Beetlback/beetlback_bad.png" id="11_2ofm5"]
 [ext_resource type="Resource" uid="uid://6ch2rjd133ye" path="res://Autoloads/Resources/Plays/Defense/fall_back.tres" id="11_qvhvx"]
 [ext_resource type="Texture2D" uid="uid://p6pyumoll0gu" path="res://Autoloads/Resources/Beastie/Beetlback/icon_beetlback.png" id="12_qwnx6"]
 [ext_resource type="Resource" uid="uid://ymdvl6wdoqws" path="res://Autoloads/Resources/Plays/Defense/hawkeye.tres" id="12_s2754"]
@@ -59,12 +53,6 @@ mind_base_def = 104
 possible_plays = Array[ExtResource("1_us05o")]([ExtResource("3_pxp5a"), ExtResource("4_fhjx8"), ExtResource("5_gj6cl"), ExtResource("6_4wnqp"), ExtResource("7_bveq5"), ExtResource("8_hgx1x"), ExtResource("9_qlryx"), ExtResource("10_xhehu"), ExtResource("11_qvhvx"), ExtResource("12_s2754"), ExtResource("13_efaww"), ExtResource("14_1llil"), ExtResource("15_gxb53"), ExtResource("16_cg6lw"), ExtResource("17_p2whr"), ExtResource("18_est74"), ExtResource("19_0c51i"), ExtResource("20_u57i2"), ExtResource("21_vynre"), ExtResource("22_jxgla"), ExtResource("23_tt36e"), ExtResource("24_40msx"), ExtResource("25_fkoq3"), ExtResource("26_fwqds"), ExtResource("27_kuvfx"), ExtResource("28_1sb7n"), ExtResource("29_h3uyc"), ExtResource("30_j10gt"), ExtResource("31_an57d"), ExtResource("32_ar1uv")])
 possible_traits = Array[ExtResource("2_odc8v")]([ExtResource("2_5dd6k"), ExtResource("4_rod40")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("6_gpkju"),
-1: ExtResource("7_10cg2"),
-2: ExtResource("8_wsnaw"),
-3: ExtResource("9_jfmyl"),
-4: ExtResource("10_nxuyh"),
-5: ExtResource("11_2ofm5"),
 6: ExtResource("12_qwnx6")
 })
 ball_anchor_position_receive = Vector2(40, -135)

@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=45 format=3 uid="uid://cnr35tp2qn13p"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=39 format=3 uid="uid://c01wns5cnilkv"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_fo56u"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_73rju"]
@@ -6,17 +6,11 @@
 [ext_resource type="Resource" uid="uid://chm7cp4ewi5bp" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_hyapd"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_jkegs"]
 [ext_resource type="Resource" uid="uid://cv6tk1l5vkxo4" path="res://Autoloads/Resources/Plays/Defense/heart_harden.tres" id="4_104pg"]
-[ext_resource type="Texture2D" uid="uid://cw1vvijg46der" path="res://Autoloads/Resources/Beastie/Plumask/plumask_idle.png" id="4_cy8my"]
 [ext_resource type="Resource" uid="uid://dbhjpwqbhow82" path="res://Autoloads/Resources/Trait/stagecraft.tres" id="4_fj4vk"]
 [ext_resource type="Resource" uid="uid://dfmppss3snt2l" path="res://Autoloads/Resources/Plays/Attack/Mind/echo_strike.tres" id="5_0xltf"]
-[ext_resource type="Texture2D" uid="uid://bdsaxxerinrmu" path="res://Autoloads/Resources/Beastie/Plumask/plumask_ready.png" id="5_437uw"]
 [ext_resource type="Resource" uid="uid://bgwy15q42o6k7" path="res://Autoloads/Resources/Plays/Support/hunker.tres" id="6_4d4bl"]
-[ext_resource type="Texture2D" uid="uid://b3b75jbd05mpg" path="res://Autoloads/Resources/Beastie/Plumask/plumask_spike.png" id="6_fj4vk"]
-[ext_resource type="Texture2D" uid="uid://7jbcrwi8htf2" path="res://Autoloads/Resources/Beastie/Plumask/plumask_volley.png" id="7_4p7ej"]
 [ext_resource type="Resource" uid="uid://fysaq1o88o1v" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="7_07cb0"]
 [ext_resource type="Resource" uid="uid://b0ri66efuwqq" path="res://Autoloads/Resources/Plays/Support/rally.tres" id="8_6lm7l"]
-[ext_resource type="Texture2D" uid="uid://bvvmpkucg7w1i" path="res://Autoloads/Resources/Beastie/Plumask/plumask_good.png" id="8_axvim"]
-[ext_resource type="Texture2D" uid="uid://c303xte4x8txq" path="res://Autoloads/Resources/Beastie/Plumask/plumask_bad.png" id="9_4pmy0"]
 [ext_resource type="Resource" uid="uid://k5mh301i4gme" path="res://Autoloads/Resources/Plays/Attack/Mind/ego_blast.tres" id="9_rghkn"]
 [ext_resource type="Resource" uid="uid://ckfu6pta3o1u2" path="res://Autoloads/Resources/Plays/Support/provoke.tres" id="10_oyqae"]
 [ext_resource type="Resource" uid="uid://dlhm03et5x05t" path="res://Autoloads/Resources/Plays/Support/overthink.tres" id="11_qrxaw"]
@@ -61,12 +55,6 @@ mind_base_def = 75
 possible_plays = Array[ExtResource("1_fo56u")]([ExtResource("3_hyapd"), ExtResource("4_104pg"), ExtResource("5_0xltf"), ExtResource("6_4d4bl"), ExtResource("7_07cb0"), ExtResource("8_6lm7l"), ExtResource("9_rghkn"), ExtResource("10_oyqae"), ExtResource("11_qrxaw"), ExtResource("12_2pitj"), ExtResource("13_gbsic"), ExtResource("14_jx4k8"), ExtResource("15_rhs6j"), ExtResource("16_iuqkp"), ExtResource("17_23lu3"), ExtResource("18_ccb4r"), ExtResource("19_hw0yr"), ExtResource("20_bebp1"), ExtResource("21_k51vh"), ExtResource("22_50y05"), ExtResource("23_hd2v2"), ExtResource("24_cwfbn"), ExtResource("25_8bn1s"), ExtResource("26_a12g4"), ExtResource("27_fxgll"), ExtResource("28_s4byq"), ExtResource("29_00gx1"), ExtResource("30_jy1ki"), ExtResource("31_m3a1f"), ExtResource("32_tuver"), ExtResource("33_dbv8v"), ExtResource("34_yxwjv")])
 possible_traits = Array[ExtResource("2_73rju")]([ExtResource("2_437uw"), ExtResource("4_fj4vk")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("4_cy8my"),
-1: ExtResource("5_437uw"),
-2: ExtResource("6_fj4vk"),
-3: ExtResource("7_4p7ej"),
-4: ExtResource("8_axvim"),
-5: ExtResource("9_4pmy0"),
 6: ExtResource("43_8b367")
 })
 ball_anchor_position_receive = Vector2(32, -120)

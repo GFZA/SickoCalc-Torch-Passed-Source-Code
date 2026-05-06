@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=37 format=3 uid="uid://b4presmunba81"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=31 format=3 uid="uid://tnta74kh76y8"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_ijef1"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_hdk44"]
@@ -7,7 +7,6 @@
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_vq1k4"]
 [ext_resource type="Resource" uid="uid://bqwii245fpl4a" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="3_wjx85"]
 [ext_resource type="Resource" uid="uid://6n8gisa23e7k" path="res://Autoloads/Resources/Plays/Support/nettle.tres" id="4_a6d21"]
-[ext_resource type="Texture2D" uid="uid://cyjba1viw1ydi" path="res://Autoloads/Resources/Beastie/Orgella/orgella_idle.png" id="4_hdk44"]
 [ext_resource type="Resource" uid="uid://c5n8g4bqp64q2" path="res://Autoloads/Resources/Plays/Defense/sting.tres" id="6_fj4kb"]
 [ext_resource type="Resource" uid="uid://cj4h5a26hgmdy" path="res://Autoloads/Resources/Plays/Support/lay_trap.tres" id="7_0md47"]
 [ext_resource type="Resource" uid="uid://bsekeiw2v13qd" path="res://Autoloads/Resources/Plays/Attack/Spirit/relentless.tres" id="8_mce65"]
@@ -31,11 +30,6 @@
 [ext_resource type="Resource" uid="uid://dytuvbvg3oamq" path="res://Autoloads/Resources/Plays/Defense/shield.tres" id="26_lky6w"]
 [ext_resource type="Resource" uid="uid://dtp7xhemyx02l" path="res://Autoloads/Resources/Plays/Attack/Spirit/swarm.tres" id="27_8swbc"]
 [ext_resource type="Texture2D" uid="uid://c3coheb4jjuu1" path="res://Autoloads/Resources/Beastie/Orgella/icon_orgella.png" id="30_2bkd2"]
-[ext_resource type="Texture2D" uid="uid://divjk52naeqb6" path="res://Autoloads/Resources/Beastie/Orgella/orgella_ready.png" id="31_oppqr"]
-[ext_resource type="Texture2D" uid="uid://csw8is48uytwi" path="res://Autoloads/Resources/Beastie/Orgella/orgella_spike.png" id="32_jevp1"]
-[ext_resource type="Texture2D" uid="uid://dto0212ppcri4" path="res://Autoloads/Resources/Beastie/Orgella/orgella_volley.png" id="33_hismk"]
-[ext_resource type="Texture2D" uid="uid://c4d5trq35hffg" path="res://Autoloads/Resources/Beastie/Orgella/orgella_good.png" id="34_vmxmi"]
-[ext_resource type="Texture2D" uid="uid://cqsupn65my7ni" path="res://Autoloads/Resources/Beastie/Orgella/orgella_bad.png" id="35_vanyd"]
 
 [resource]
 script = ExtResource("3_vq1k4")
@@ -53,12 +47,6 @@ mind_base_def = 79
 possible_plays = Array[ExtResource("1_ijef1")]([ExtResource("3_mgyrf"), ExtResource("4_a6d21"), ExtResource("3_wjx85"), ExtResource("6_fj4kb"), ExtResource("7_0md47"), ExtResource("8_mce65"), ExtResource("9_g6elb"), ExtResource("10_2ppq3"), ExtResource("11_iae7t"), ExtResource("12_segry"), ExtResource("13_xjws6"), ExtResource("14_cavp4"), ExtResource("15_xdr7a"), ExtResource("16_ffmn5"), ExtResource("17_jj6cw"), ExtResource("18_fvidk"), ExtResource("19_78aep"), ExtResource("20_nijy0"), ExtResource("21_xs0mg"), ExtResource("22_bt41k"), ExtResource("23_xna5q"), ExtResource("24_th1m8"), ExtResource("25_rxmi0"), ExtResource("26_lky6w"), ExtResource("27_8swbc")])
 possible_traits = Array[ExtResource("2_hdk44")]([ExtResource("2_vq1k4")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("4_hdk44"),
-1: ExtResource("31_oppqr"),
-2: ExtResource("32_jevp1"),
-3: ExtResource("33_hismk"),
-4: ExtResource("34_vmxmi"),
-5: ExtResource("35_vanyd"),
 6: ExtResource("30_2bkd2")
 })
 ball_anchor_position_receive = Vector2(37, -133)

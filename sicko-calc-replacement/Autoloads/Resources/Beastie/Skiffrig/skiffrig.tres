@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=40 format=3 uid="uid://ck8f68cs7jftt"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=34 format=3 uid="uid://ca77mlqvjig5i"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_bsbdp"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_5pnl3"]
@@ -8,16 +8,10 @@
 [ext_resource type="Resource" uid="uid://b7c1t1fux071m" path="res://Autoloads/Resources/Plays/Support/call_out.tres" id="4_j3r6d"]
 [ext_resource type="Resource" uid="uid://cb522xk60xw71" path="res://Autoloads/Resources/Trait/power_forward.tres" id="4_t3vy7"]
 [ext_resource type="Resource" uid="uid://brbj7babpn6xc" path="res://Autoloads/Resources/Plays/Defense/quick_breath.tres" id="5_i1jyw"]
-[ext_resource type="Texture2D" uid="uid://dccw7unlj3htu" path="res://Autoloads/Resources/Beastie/Skiffrig/skiffrig_idle.png" id="5_t3vy7"]
 [ext_resource type="Resource" uid="uid://bp6cwp5r600rj" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="6_5lnq5"]
-[ext_resource type="Texture2D" uid="uid://ch5iegxoxmtii" path="res://Autoloads/Resources/Beastie/Skiffrig/skiffrig_ready.png" id="6_lh1wt"]
 [ext_resource type="Resource" uid="uid://c06r6f0oeahst" path="res://Autoloads/Resources/Plays/Support/whistle.tres" id="7_s51ax"]
-[ext_resource type="Texture2D" uid="uid://d3f5nwiw0w1hs" path="res://Autoloads/Resources/Beastie/Skiffrig/skiffrig_spike.png" id="7_u7rqd"]
-[ext_resource type="Texture2D" uid="uid://bpkghg6hkeone" path="res://Autoloads/Resources/Beastie/Skiffrig/skiffrig_volley.png" id="8_33wri"]
 [ext_resource type="Resource" uid="uid://blbmt8c6ixadi" path="res://Autoloads/Resources/Plays/Attack/Spirit/counter.tres" id="8_vn1yd"]
 [ext_resource type="Resource" uid="uid://bgg4s10j75g4l" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="9_6hvko"]
-[ext_resource type="Texture2D" uid="uid://bcsn8iu6tlwnl" path="res://Autoloads/Resources/Beastie/Skiffrig/skiffrig_good.png" id="9_fju0j"]
-[ext_resource type="Texture2D" uid="uid://dopiacrcipsus" path="res://Autoloads/Resources/Beastie/Skiffrig/skiffrig_bad.png" id="10_a28e4"]
 [ext_resource type="Resource" uid="uid://7nsxd3vbne52" path="res://Autoloads/Resources/Plays/Support/exhaust.tres" id="10_qigow"]
 [ext_resource type="Texture2D" uid="uid://7jduvluxcym0" path="res://Autoloads/Resources/Beastie/Skiffrig/icon_skiffrig.png" id="11_4socr"]
 [ext_resource type="Resource" uid="uid://fysaq1o88o1v" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="11_5c150"]
@@ -56,12 +50,6 @@ mind_base_def = 69
 possible_plays = Array[ExtResource("1_bsbdp")]([ExtResource("3_hf4bs"), ExtResource("4_j3r6d"), ExtResource("5_i1jyw"), ExtResource("6_5lnq5"), ExtResource("7_s51ax"), ExtResource("8_vn1yd"), ExtResource("9_6hvko"), ExtResource("10_qigow"), ExtResource("11_5c150"), ExtResource("12_xv4mb"), ExtResource("13_6nf80"), ExtResource("14_f6ngr"), ExtResource("15_vsqr4"), ExtResource("16_7ityv"), ExtResource("17_0lxpp"), ExtResource("18_4fyx6"), ExtResource("20_eo0i6"), ExtResource("21_ve2ym"), ExtResource("22_sahtl"), ExtResource("23_dnqu6"), ExtResource("24_ot2sd"), ExtResource("25_5yqn1"), ExtResource("26_6kvkh"), ExtResource("27_n1ubg"), ExtResource("28_rgjmm"), ExtResource("29_ix2q7"), ExtResource("29_hf4bs")])
 possible_traits = Array[ExtResource("2_5pnl3")]([ExtResource("2_dhg3t"), ExtResource("4_t3vy7")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("5_t3vy7"),
-1: ExtResource("6_lh1wt"),
-2: ExtResource("7_u7rqd"),
-3: ExtResource("8_33wri"),
-4: ExtResource("9_fju0j"),
-5: ExtResource("10_a28e4"),
 6: ExtResource("11_4socr")
 })
 y_offset = -10

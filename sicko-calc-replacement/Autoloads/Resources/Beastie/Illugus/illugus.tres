@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=46 format=3 uid="uid://bjthxewupgu3b"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=40 format=3 uid="uid://3jnbe21jfq38"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_1qr5m"]
 [ext_resource type="Resource" uid="uid://dsnexptlnp1n7" path="res://Autoloads/Resources/Trait/trapper.tres" id="2_1wfet"]
@@ -8,17 +8,11 @@
 [ext_resource type="Resource" uid="uid://cikeoevkusc8" path="res://Autoloads/Resources/Trait/precise.tres" id="4_53vyc"]
 [ext_resource type="Resource" uid="uid://cj4h5a26hgmdy" path="res://Autoloads/Resources/Plays/Support/lay_trap.tres" id="4_jvpfn"]
 [ext_resource type="Resource" uid="uid://c624jkvl1417h" path="res://Autoloads/Resources/Plays/Volley/refresh.tres" id="5_0s7ns"]
-[ext_resource type="Texture2D" uid="uid://dvsytyxspgck5" path="res://Autoloads/Resources/Beastie/Illugus/illugus_idle.png" id="6_a88fr"]
 [ext_resource type="Resource" uid="uid://bp6cwp5r600rj" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="6_igijl"]
-[ext_resource type="Texture2D" uid="uid://2jig055hf3uh" path="res://Autoloads/Resources/Beastie/Illugus/illugus_ready.png" id="7_mki18"]
 [ext_resource type="Resource" uid="uid://dqgatu0qsofqj" path="res://Autoloads/Resources/Plays/Defense/distraction.tres" id="7_y3ogs"]
-[ext_resource type="Texture2D" uid="uid://bcf6embkdetgd" path="res://Autoloads/Resources/Beastie/Illugus/illugus_spike.png" id="8_0cbar"]
 [ext_resource type="Resource" uid="uid://bqpax11k5enii" path="res://Autoloads/Resources/Plays/Attack/Mind/snipe.tres" id="8_gik77"]
 [ext_resource type="Resource" uid="uid://dytuvbvg3oamq" path="res://Autoloads/Resources/Plays/Defense/shield.tres" id="9_01vh7"]
-[ext_resource type="Texture2D" uid="uid://cvsk3mitfgnun" path="res://Autoloads/Resources/Beastie/Illugus/illugus_volley.png" id="9_vs26x"]
-[ext_resource type="Texture2D" uid="uid://dv87the4gfwl" path="res://Autoloads/Resources/Beastie/Illugus/illugus_good.png" id="10_flr3v"]
 [ext_resource type="Resource" uid="uid://8wi04v1m7juh" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="10_fnj7k"]
-[ext_resource type="Texture2D" uid="uid://2eoplcelr5ys" path="res://Autoloads/Resources/Beastie/Illugus/illugus_bad.png" id="11_d47hj"]
 [ext_resource type="Resource" uid="uid://71t7u1j5yqvb" path="res://Autoloads/Resources/Plays/Support/mark.tres" id="11_hxoih"]
 [ext_resource type="Resource" uid="uid://bj7gp00f8xtup" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="12_ikkbn"]
 [ext_resource type="Texture2D" uid="uid://djr5x2e1560hh" path="res://Autoloads/Resources/Beastie/Illugus/icon_illugus.png" id="12_jstko"]
@@ -62,12 +56,6 @@ mind_base_def = 110
 possible_plays = Array[ExtResource("1_1qr5m")]([null, ExtResource("3_fjles"), ExtResource("4_jvpfn"), ExtResource("5_0s7ns"), ExtResource("6_igijl"), ExtResource("7_y3ogs"), ExtResource("8_gik77"), ExtResource("9_01vh7"), ExtResource("10_fnj7k"), ExtResource("11_hxoih"), ExtResource("12_ikkbn"), ExtResource("13_3oo7i"), ExtResource("14_vfkwf"), ExtResource("15_d6v1u"), ExtResource("16_3vket"), ExtResource("17_6uboq"), ExtResource("18_ckkhk"), ExtResource("19_7oiwg"), ExtResource("20_i637x"), ExtResource("21_v6ke7"), ExtResource("22_s6vr6"), ExtResource("23_6ispl"), ExtResource("24_k8sqa"), ExtResource("25_viyub"), ExtResource("26_76qjx"), ExtResource("27_xo6gv"), ExtResource("28_bo688"), ExtResource("29_xq1yy"), ExtResource("30_jwrem"), ExtResource("31_wp2kd"), ExtResource("32_8oats"), ExtResource("33_wonxh"), ExtResource("34_2hqir"), ExtResource("35_jvpfn")])
 possible_traits = Array[ExtResource("2_n1j3f")]([ExtResource("2_1wfet"), ExtResource("4_53vyc")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("6_a88fr"),
-1: ExtResource("7_mki18"),
-2: ExtResource("8_0cbar"),
-3: ExtResource("9_vs26x"),
-4: ExtResource("10_flr3v"),
-5: ExtResource("11_d47hj"),
 6: ExtResource("12_jstko")
 })
 ball_anchor_position_receive = Vector2(30, -105)

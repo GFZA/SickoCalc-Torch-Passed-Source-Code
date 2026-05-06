@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=35 format=3 uid="uid://cdotysovl5jjd"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=29 format=3 uid="uid://cuwy3d3hkk8am"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_eeoda"]
 [ext_resource type="Resource" uid="uid://bjdlgptor1xj" path="res://Autoloads/Resources/Trait/musclebrain.tres" id="2_4s8pt"]
@@ -7,16 +7,10 @@
 [ext_resource type="Resource" uid="uid://o7g80igyrl8i" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_ffki4"]
 [ext_resource type="Resource" uid="uid://dgsnxhjtejofp" path="res://Autoloads/Resources/Plays/Volley/dig.tres" id="4_8yab7"]
 [ext_resource type="Resource" uid="uid://cqf3rk1ccvj3u" path="res://Autoloads/Resources/Plays/Support/flex.tres" id="5_lh252"]
-[ext_resource type="Texture2D" uid="uid://ba35xkgvgg1sa" path="res://Autoloads/Resources/Beastie/Musselbound/musselbound_idle.png" id="5_y5hl2"]
 [ext_resource type="Resource" uid="uid://gpx5prmyyhwg" path="res://Autoloads/Resources/Plays/Attack/Mind/zigzag.tres" id="6_pg5xa"]
-[ext_resource type="Texture2D" uid="uid://djmjowns071xy" path="res://Autoloads/Resources/Beastie/Musselbound/musselbound_ready.png" id="6_yt016"]
 [ext_resource type="Resource" uid="uid://bgwy15q42o6k7" path="res://Autoloads/Resources/Plays/Support/hunker.tres" id="7_l5jyv"]
-[ext_resource type="Texture2D" uid="uid://cprj11kb68ar4" path="res://Autoloads/Resources/Beastie/Musselbound/musselbound_spike.png" id="7_xxanx"]
 [ext_resource type="Resource" uid="uid://c2ojjw3lmvows" path="res://Autoloads/Resources/Plays/Attack/Body/muscle_memory.tres" id="8_txfmq"]
-[ext_resource type="Texture2D" uid="uid://dlglyghwg50ae" path="res://Autoloads/Resources/Beastie/Musselbound/musselbound_volley.png" id="8_u16h3"]
-[ext_resource type="Texture2D" uid="uid://7dj75yi53bd7" path="res://Autoloads/Resources/Beastie/Musselbound/musselbound_good.png" id="9_5kv6i"]
 [ext_resource type="Resource" uid="uid://tc6ag84sawpl" path="res://Autoloads/Resources/Plays/Support/tough_front.tres" id="9_tc1kg"]
-[ext_resource type="Texture2D" uid="uid://d20u651mggsg2" path="res://Autoloads/Resources/Beastie/Musselbound/musselbound_bad.png" id="10_m0gmt"]
 [ext_resource type="Resource" uid="uid://v37ifueojf8k" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="10_nu8ks"]
 [ext_resource type="Resource" uid="uid://dodbnlxn2lj0d" path="res://Autoloads/Resources/Plays/Attack/Mind/roll_shot.tres" id="11_caays"]
 [ext_resource type="Texture2D" uid="uid://ca6vfogwbwv1d" path="res://Autoloads/Resources/Beastie/Musselbound/icon_musselbound.png" id="11_kpk0b"]
@@ -51,12 +45,6 @@ mind_base_def = 38
 possible_plays = Array[ExtResource("1_eeoda")]([ExtResource("3_ffki4"), ExtResource("4_8yab7"), ExtResource("5_lh252"), ExtResource("6_pg5xa"), ExtResource("7_l5jyv"), ExtResource("8_txfmq"), ExtResource("9_tc1kg"), ExtResource("10_nu8ks"), ExtResource("11_caays"), ExtResource("12_va51i"), ExtResource("13_phy40"), ExtResource("14_uc22x"), ExtResource("15_hheoh"), ExtResource("16_r1bcm"), ExtResource("17_b1gf2"), ExtResource("18_f6ywi"), ExtResource("19_cpvv1"), ExtResource("20_cjhvo"), ExtResource("21_5tbax"), ExtResource("22_te2lf"), ExtResource("23_yss80"), ExtResource("24_qpm1c"), ExtResource("25_eupem")])
 possible_traits = Array[ExtResource("2_oo7lv")]([ExtResource("2_4s8pt")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("5_y5hl2"),
-1: ExtResource("6_yt016"),
-2: ExtResource("7_xxanx"),
-3: ExtResource("8_u16h3"),
-4: ExtResource("9_5kv6i"),
-5: ExtResource("10_m0gmt"),
 6: ExtResource("11_kpk0b")
 })
 ball_anchor_position_receive = Vector2(17, -73)

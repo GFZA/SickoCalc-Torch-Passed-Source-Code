@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=38 format=3 uid="uid://crlsqrlt1v3qd"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=32 format=3 uid="uid://bhh2pslrcmobv"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_dvkgs"]
 [ext_resource type="Resource" uid="uid://cev858wjqvyjd" path="res://Autoloads/Resources/Trait/vampire.tres" id="2_wdimx"]
@@ -9,17 +9,11 @@
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="5_jxnvn"]
 [ext_resource type="Resource" uid="uid://coljoc6wslna8" path="res://Autoloads/Resources/Plays/Support/hum.tres" id="5_qhykr"]
 [ext_resource type="Resource" uid="uid://cgp0jnuk0thpe" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="6_1slg6"]
-[ext_resource type="Texture2D" uid="uid://chxf2dk0ajjhv" path="res://Autoloads/Resources/Beastie/Lunaptra/lunaptra_idle.png" id="6_d6fb7"]
-[ext_resource type="Texture2D" uid="uid://cd3bfmeb8sefk" path="res://Autoloads/Resources/Beastie/Lunaptra/lunaptra_ready.png" id="7_2ksqn"]
 [ext_resource type="Resource" uid="uid://cpuds8hsc5dr1" path="res://Autoloads/Resources/Plays/Defense/dramatic_exit.tres" id="7_s0bpy"]
-[ext_resource type="Texture2D" uid="uid://pv78iahwdl21" path="res://Autoloads/Resources/Beastie/Lunaptra/lunaptra_spike.png" id="8_har1l"]
 [ext_resource type="Resource" uid="uid://bcr7xnr07v278" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="8_msjal"]
 [ext_resource type="Resource" uid="uid://c2ojjw3lmvows" path="res://Autoloads/Resources/Plays/Attack/Body/muscle_memory.tres" id="9_g8ov7"]
-[ext_resource type="Texture2D" uid="uid://sesr50xiiuab" path="res://Autoloads/Resources/Beastie/Lunaptra/lunaptra_volley.png" id="9_oxpxr"]
-[ext_resource type="Texture2D" uid="uid://dnaw000k57jju" path="res://Autoloads/Resources/Beastie/Lunaptra/lunaptra_good.png" id="10_7utes"]
 [ext_resource type="Resource" uid="uid://dcn80u35wkpjp" path="res://Autoloads/Resources/Plays/Volley/net_rush.tres" id="10_anrlt"]
 [ext_resource type="Resource" uid="uid://bd6b2mst43mrw" path="res://Autoloads/Resources/Plays/Attack/Spirit/comeback.tres" id="11_dnonr"]
-[ext_resource type="Texture2D" uid="uid://cgcaauuxo1b4q" path="res://Autoloads/Resources/Beastie/Lunaptra/lunaptra_bad.png" id="11_m8u2l"]
 [ext_resource type="Texture2D" uid="uid://du4m3meywuhq2" path="res://Autoloads/Resources/Beastie/Lunaptra/icon_lunaptra.png" id="12_1pd7m"]
 [ext_resource type="Resource" uid="uid://jkcejjcke75d" path="res://Autoloads/Resources/Plays/Attack/Body/power_sap.tres" id="12_tkc77"]
 [ext_resource type="Resource" uid="uid://c6eqm7qkng1lr" path="res://Autoloads/Resources/Plays/Attack/Body/spike.tres" id="13_3bi6c"]
@@ -53,12 +47,6 @@ spirit_base_def = 75
 possible_plays = Array[ExtResource("1_dvkgs")]([ExtResource("3_pgeef"), ExtResource("4_hi5vl"), ExtResource("5_qhykr"), ExtResource("6_1slg6"), ExtResource("7_s0bpy"), ExtResource("8_msjal"), ExtResource("9_g8ov7"), ExtResource("10_anrlt"), ExtResource("11_dnonr"), ExtResource("12_tkc77"), ExtResource("13_3bi6c"), ExtResource("14_t16pf"), ExtResource("15_w01dk"), ExtResource("16_aqoe7"), ExtResource("17_ri8im"), ExtResource("18_6qd03"), ExtResource("19_v78i7"), ExtResource("20_t80g3"), ExtResource("21_pe2a8"), ExtResource("22_6gjv4"), ExtResource("23_6sjiq"), ExtResource("24_s2mf3"), ExtResource("25_2k6nk"), ExtResource("26_omfe7"), ExtResource("27_hi5vl")])
 possible_traits = Array[ExtResource("3_y7hd3")]([ExtResource("2_wdimx"), ExtResource("4_0fq8w")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("6_d6fb7"),
-1: ExtResource("7_2ksqn"),
-2: ExtResource("8_har1l"),
-3: ExtResource("9_oxpxr"),
-4: ExtResource("10_7utes"),
-5: ExtResource("11_m8u2l"),
 6: ExtResource("12_1pd7m")
 })
 ball_anchor_position_receive = Vector2(40, -125)

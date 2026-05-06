@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=42 format=3 uid="uid://bgyd8tif31vmd"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=36 format=3 uid="uid://df4wwvplit7aj"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_d38cg"]
 [ext_resource type="Resource" uid="uid://csbgkg5b3sqsv" path="res://Autoloads/Resources/Trait/groove.tres" id="2_avi1j"]
@@ -34,12 +34,6 @@
 [ext_resource type="Resource" uid="uid://b3u7ewdra230k" path="res://Autoloads/Resources/Plays/Support/trait_dance.tres" id="30_3nel7"]
 [ext_resource type="Resource" uid="uid://by0ross5cpbjo" path="res://Autoloads/Resources/Plays/Defense/menace.tres" id="31_n101t"]
 [ext_resource type="Resource" uid="uid://divacd53n4a3d" path="res://Autoloads/Resources/Trait/flee.tres" id="33_vr6mf"]
-[ext_resource type="Texture2D" uid="uid://ufikeljuy2vs" path="res://Autoloads/Resources/Beastie/Turogue/turogue_idle.png" id="35_sdl2m"]
-[ext_resource type="Texture2D" uid="uid://dwwh7ciifxxri" path="res://Autoloads/Resources/Beastie/Turogue/turogue_ready.png" id="36_022xe"]
-[ext_resource type="Texture2D" uid="uid://ctlm8miylyax5" path="res://Autoloads/Resources/Beastie/Turogue/turogue_spike.png" id="37_lqa8f"]
-[ext_resource type="Texture2D" uid="uid://cg8fg4arijhrd" path="res://Autoloads/Resources/Beastie/Turogue/turogue_volley.png" id="38_i7qnd"]
-[ext_resource type="Texture2D" uid="uid://oim4ckcodsdo" path="res://Autoloads/Resources/Beastie/Turogue/turogue_good.png" id="39_n2x31"]
-[ext_resource type="Texture2D" uid="uid://cbdxtnkvrwtex" path="res://Autoloads/Resources/Beastie/Turogue/turogue_bad.png" id="40_t6mul"]
 [ext_resource type="Texture2D" uid="uid://xc5irei35pq7" path="res://Autoloads/Resources/Beastie/Turogue/icon_turogue.png" id="41_4yfi4"]
 
 [resource]
@@ -58,12 +52,6 @@ mind_base_def = 40
 possible_plays = Array[ExtResource("1_d38cg")]([ExtResource("3_sk8i7"), ExtResource("4_3rpwn"), ExtResource("5_8fpqx"), ExtResource("6_f8e1l"), ExtResource("7_d12np"), ExtResource("8_try5g"), ExtResource("9_sdl2m"), ExtResource("10_022xe"), ExtResource("11_lqa8f"), ExtResource("12_i7qnd"), ExtResource("13_n2x31"), ExtResource("14_t6mul"), ExtResource("15_4yfi4"), ExtResource("16_0q3o4"), ExtResource("17_5qrpc"), ExtResource("18_imhm5"), ExtResource("19_ruq2f"), ExtResource("20_xiilh"), ExtResource("21_a5id7"), ExtResource("22_gsb8e"), ExtResource("23_4ktm1"), ExtResource("24_6slap"), ExtResource("25_xvm26"), ExtResource("26_6unop"), ExtResource("27_7cm1b"), ExtResource("28_tw8ap"), ExtResource("29_2dqxq"), ExtResource("30_3nel7"), ExtResource("31_n101t")])
 possible_traits = Array[ExtResource("2_v2oqb")]([ExtResource("2_avi1j"), ExtResource("33_vr6mf")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("35_sdl2m"),
-1: ExtResource("36_022xe"),
-2: ExtResource("37_lqa8f"),
-3: ExtResource("38_i7qnd"),
-4: ExtResource("39_n2x31"),
-5: ExtResource("40_t6mul"),
 6: ExtResource("41_4yfi4")
 })
 ball_anchor_position_receive = Vector2(40, -68)

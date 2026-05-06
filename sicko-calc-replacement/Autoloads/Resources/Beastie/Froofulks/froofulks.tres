@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=40 format=3 uid="uid://c6poy4r4seu4i"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=34 format=3 uid="uid://daiiwbrir04co"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_iu5xd"]
 [ext_resource type="Resource" uid="uid://bgi008rdipho4" path="res://Autoloads/Resources/Trait/treat.tres" id="2_47xei"]
@@ -8,17 +8,11 @@
 [ext_resource type="Resource" uid="uid://c33nk1bps8v2q" path="res://Autoloads/Resources/Plays/Support/quick_tag.tres" id="4_byqph"]
 [ext_resource type="Resource" uid="uid://cuqsasq51eufd" path="res://Autoloads/Resources/Trait/protector.tres" id="4_kkcpg"]
 [ext_resource type="Resource" uid="uid://7nsxd3vbne52" path="res://Autoloads/Resources/Plays/Support/exhaust.tres" id="5_la770"]
-[ext_resource type="Texture2D" uid="uid://bcbpjbsvov5to" path="res://Autoloads/Resources/Beastie/Froofulks/froofulks_idle.png" id="6_hiv5g"]
 [ext_resource type="Resource" uid="uid://bqwii245fpl4a" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="6_s17hx"]
-[ext_resource type="Texture2D" uid="uid://brbp1pqncvx0i" path="res://Autoloads/Resources/Beastie/Froofulks/froofulks_ready.png" id="7_8tcey"]
 [ext_resource type="Resource" uid="uid://c624jkvl1417h" path="res://Autoloads/Resources/Plays/Volley/refresh.tres" id="7_hy8wr"]
 [ext_resource type="Resource" uid="uid://c8icw3pvu0swl" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="8_kqm4r"]
-[ext_resource type="Texture2D" uid="uid://g4cx7o77htfu" path="res://Autoloads/Resources/Beastie/Froofulks/froofulks_spike.png" id="8_x8bk4"]
 [ext_resource type="Resource" uid="uid://jkcejjcke75d" path="res://Autoloads/Resources/Plays/Attack/Body/power_sap.tres" id="9_skbs7"]
-[ext_resource type="Texture2D" uid="uid://q13i5y1ic3mj" path="res://Autoloads/Resources/Beastie/Froofulks/froofulks_volley.png" id="9_vtmfb"]
 [ext_resource type="Resource" uid="uid://cy671htu1m5fu" path="res://Autoloads/Resources/Plays/Support/calming_aura.tres" id="10_bsq3g"]
-[ext_resource type="Texture2D" uid="uid://wgrwyf0tl5df" path="res://Autoloads/Resources/Beastie/Froofulks/froofulks_good.png" id="10_lylie"]
-[ext_resource type="Texture2D" uid="uid://cekksfdrye1s4" path="res://Autoloads/Resources/Beastie/Froofulks/froofulks_bad.png" id="11_ni8aa"]
 [ext_resource type="Resource" uid="uid://d8rp5pq7qf2i" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="11_rp0yy"]
 [ext_resource type="Resource" uid="uid://c4u3rhcdxfjxf" path="res://Autoloads/Resources/Plays/Volley/faith.tres" id="12_a1c2e"]
 [ext_resource type="Texture2D" uid="uid://d0iddun4maklv" path="res://Autoloads/Resources/Beastie/Froofulks/icon_froofulks.png" id="12_shn7y"]
@@ -55,12 +49,6 @@ mind_base_def = 83
 possible_plays = Array[ExtResource("1_iu5xd")]([ExtResource("3_wl0ij"), ExtResource("4_byqph"), ExtResource("5_la770"), ExtResource("6_s17hx"), ExtResource("7_hy8wr"), ExtResource("8_kqm4r"), ExtResource("9_skbs7"), ExtResource("10_bsq3g"), ExtResource("11_rp0yy"), ExtResource("12_a1c2e"), ExtResource("13_egc26"), ExtResource("14_0gmma"), ExtResource("15_rlp8l"), ExtResource("16_npipy"), ExtResource("17_2h0sa"), ExtResource("18_fj678"), ExtResource("19_nskxf"), ExtResource("20_0gilc"), ExtResource("21_pil6h"), ExtResource("22_sykds"), ExtResource("23_7c5sh"), ExtResource("25_qp2nn"), ExtResource("26_3w55c"), ExtResource("27_mykfy"), ExtResource("28_5ewjg"), ExtResource("29_byqph"), ExtResource("29_la770")])
 possible_traits = Array[ExtResource("2_ob7yb")]([ExtResource("2_47xei"), ExtResource("4_kkcpg")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("6_hiv5g"),
-1: ExtResource("7_8tcey"),
-2: ExtResource("8_x8bk4"),
-3: ExtResource("9_vtmfb"),
-4: ExtResource("10_lylie"),
-5: ExtResource("11_ni8aa"),
 6: ExtResource("12_shn7y")
 })
 y_offset = -20

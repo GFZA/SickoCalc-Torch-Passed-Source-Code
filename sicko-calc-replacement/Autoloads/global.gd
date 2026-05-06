@@ -191,11 +191,27 @@ func _assign_all_beasties_data() -> void:
 					while inner_file_name != "":
 						if inner_file_name.ends_with(".tres") or inner_file_name.ends_with(".tres.remap"): # Is Beastie Resource
 							var suffix : String = ".tres" if not Global.is_on_web else "" # Not sure why we need this but it works!
-							all_beasties_data.append(load(path + file_name + "/" + inner_file_name.get_basename() + suffix))
+							var final_path : String = path + file_name + "/" + inner_file_name.get_basename() + suffix
+							#_remove_junk_sprite_from_resource(final_path)
+							all_beasties_data.append(load(final_path))
+						#elif inner_file_name.ends_with(".png") and not inner_file_name.begins_with("icon"):
+							#inner_dir.remove(path + file_name + "/" + inner_file_name)
 						inner_file_name = inner_dir.get_next()
 			file_name = dir.get_next()
 	else:
 		push_error("An error occurred when trying to access the path %s." % path)
+
+## Uncomment these and those above then launch the tool to automatically remove junk sprites!
+#func _remove_junk_sprite_from_resource(resource_file_path : String) -> void:
+	#var beastie : Beastie = load(resource_file_path)
+	#if beastie.sprites.size() > 1:
+		#beastie.sprites.erase(Beastie.Sprite.IDLE)
+		#beastie.sprites.erase(Beastie.Sprite.READY)
+		#beastie.sprites.erase(Beastie.Sprite.SPIKE)
+		#beastie.sprites.erase(Beastie.Sprite.VOLLEY)
+		#beastie.sprites.erase(Beastie.Sprite.GOOD)
+		#beastie.sprites.erase(Beastie.Sprite.BAD)
+	#ResourceSaver.save(beastie, resource_file_path)
 
 
 func _assign_all_plays_data() -> void:

@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=37 format=3 uid="uid://cvb8nc32b3jq0"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=31 format=3 uid="uid://3trufwbpwl3x"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_d144n"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_30rnj"]
@@ -6,17 +6,11 @@
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_pwot0"]
 [ext_resource type="Resource" uid="uid://duynnadxw4hkg" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_wcjvg"]
 [ext_resource type="Resource" uid="uid://c2f1ss5xarihg" path="res://Autoloads/Resources/Plays/Support/goo_goo_eyes.tres" id="4_pct15"]
-[ext_resource type="Texture2D" uid="uid://dmuo40gc7yems" path="res://Autoloads/Resources/Beastie/Wottle/wottle_idle.png" id="5_fewm5"]
 [ext_resource type="Resource" uid="uid://debwcca8lqqb2" path="res://Autoloads/Resources/Plays/Volley/pipe.tres" id="5_slrp4"]
 [ext_resource type="Resource" uid="uid://bqwii245fpl4a" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="6_0rubi"]
-[ext_resource type="Texture2D" uid="uid://cx4qbvbmp4tow" path="res://Autoloads/Resources/Beastie/Wottle/wottle_ready.png" id="6_kg0wl"]
-[ext_resource type="Texture2D" uid="uid://ca478l0bfm82k" path="res://Autoloads/Resources/Beastie/Wottle/wottle_spike.png" id="7_varlf"]
 [ext_resource type="Resource" uid="uid://c33nk1bps8v2q" path="res://Autoloads/Resources/Plays/Support/quick_tag.tres" id="7_weijm"]
-[ext_resource type="Texture2D" uid="uid://cruxhxuxp8bw0" path="res://Autoloads/Resources/Beastie/Wottle/wottle_volley.png" id="8_gak2q"]
 [ext_resource type="Resource" uid="uid://ymdvl6wdoqws" path="res://Autoloads/Resources/Plays/Defense/hawkeye.tres" id="8_u5ltw"]
 [ext_resource type="Resource" uid="uid://bc2yee43ynmgr" path="res://Autoloads/Resources/Plays/Attack/Spirit/tornadoball.tres" id="9_83ea1"]
-[ext_resource type="Texture2D" uid="uid://cxbxvh8k55ptn" path="res://Autoloads/Resources/Beastie/Wottle/wottle_good.png" id="9_ycvlu"]
-[ext_resource type="Texture2D" uid="uid://cb22vm0onp00j" path="res://Autoloads/Resources/Beastie/Wottle/wottle_bad.png" id="10_nuuqd"]
 [ext_resource type="Resource" uid="uid://y3o0tssi0oeu" path="res://Autoloads/Resources/Plays/Volley/forward_pass.tres" id="10_xfrrh"]
 [ext_resource type="Resource" uid="uid://bgwy15q42o6k7" path="res://Autoloads/Resources/Plays/Support/hunker.tres" id="11_6b5cq"]
 [ext_resource type="Texture2D" uid="uid://crxsv6d1dtfpr" path="res://Autoloads/Resources/Beastie/Wottle/icon_wottle.png" id="11_62ocn"]
@@ -53,12 +47,6 @@ mind_base_def = 112
 possible_plays = Array[ExtResource("1_d144n")]([ExtResource("3_wcjvg"), ExtResource("4_pct15"), ExtResource("5_slrp4"), ExtResource("6_0rubi"), ExtResource("7_weijm"), ExtResource("8_u5ltw"), ExtResource("9_83ea1"), ExtResource("10_xfrrh"), ExtResource("11_6b5cq"), ExtResource("12_5vun3"), ExtResource("13_h04sp"), ExtResource("14_k43qa"), ExtResource("15_pa32x"), ExtResource("16_etjal"), ExtResource("18_ujnum"), ExtResource("19_3r80k"), ExtResource("20_wdkwy"), ExtResource("21_47qra"), ExtResource("22_ui08v"), ExtResource("24_c67v4"), ExtResource("25_3cv3a"), ExtResource("26_frkqn"), ExtResource("25_pct15"), ExtResource("26_slrp4"), ExtResource("27_0rubi")])
 possible_traits = Array[ExtResource("2_30rnj")]([ExtResource("2_ukmd4")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("5_fewm5"),
-1: ExtResource("6_kg0wl"),
-2: ExtResource("7_varlf"),
-3: ExtResource("8_gak2q"),
-4: ExtResource("9_ycvlu"),
-5: ExtResource("10_nuuqd"),
 6: ExtResource("11_62ocn")
 })
 y_offset = -10

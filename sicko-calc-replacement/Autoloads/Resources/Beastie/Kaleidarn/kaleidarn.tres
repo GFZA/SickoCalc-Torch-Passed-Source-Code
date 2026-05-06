@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=36 format=3 uid="uid://qatkm8mkli8u"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=30 format=3 uid="uid://rxwqlqjdpb3e"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_vu622"]
 [ext_resource type="Resource" uid="uid://dkjakl583l77j" path="res://Autoloads/Resources/Trait/nimble.tres" id="2_mjt10"]
@@ -7,16 +7,10 @@
 [ext_resource type="Resource" uid="uid://bqwii245fpl4a" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="3_87xwc"]
 [ext_resource type="Resource" uid="uid://dcn80u35wkpjp" path="res://Autoloads/Resources/Plays/Volley/net_rush.tres" id="4_b7gtx"]
 [ext_resource type="Resource" uid="uid://coljoc6wslna8" path="res://Autoloads/Resources/Plays/Support/hum.tres" id="5_68bjc"]
-[ext_resource type="Texture2D" uid="uid://bmuxbyb8ln4fi" path="res://Autoloads/Resources/Beastie/Kaleidarn/kaleidarn_idle.png" id="5_lpkck"]
 [ext_resource type="Resource" uid="uid://bc2yee43ynmgr" path="res://Autoloads/Resources/Plays/Attack/Spirit/tornadoball.tres" id="6_4ya3n"]
-[ext_resource type="Texture2D" uid="uid://dpcbk4q4cs8j" path="res://Autoloads/Resources/Beastie/Kaleidarn/kaleidarn_ready.png" id="6_h2j22"]
-[ext_resource type="Texture2D" uid="uid://kabwikvwjxlp" path="res://Autoloads/Resources/Beastie/Kaleidarn/kaleidarn_spike.png" id="7_2ejgt"]
 [ext_resource type="Resource" uid="uid://bcr7xnr07v278" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="7_sl67f"]
-[ext_resource type="Texture2D" uid="uid://cm3uw73jeu3vv" path="res://Autoloads/Resources/Beastie/Kaleidarn/kaleidarn_volley.png" id="8_0ib68"]
 [ext_resource type="Resource" uid="uid://c4u3rhcdxfjxf" path="res://Autoloads/Resources/Plays/Volley/faith.tres" id="8_5cyx7"]
 [ext_resource type="Resource" uid="uid://c06r6f0oeahst" path="res://Autoloads/Resources/Plays/Support/whistle.tres" id="9_goi26"]
-[ext_resource type="Texture2D" uid="uid://cjh72u6vnyacb" path="res://Autoloads/Resources/Beastie/Kaleidarn/kaleidarn_good.png" id="9_jwm7e"]
-[ext_resource type="Texture2D" uid="uid://d1w0si0m37raa" path="res://Autoloads/Resources/Beastie/Kaleidarn/kaleidarn_bad.png" id="10_cvo46"]
 [ext_resource type="Resource" uid="uid://blbmt8c6ixadi" path="res://Autoloads/Resources/Plays/Attack/Spirit/counter.tres" id="10_fql15"]
 [ext_resource type="Resource" uid="uid://c6qin68p3shhq" path="res://Autoloads/Resources/Plays/Volley/tactical_pass.tres" id="11_cqvrc"]
 [ext_resource type="Texture2D" uid="uid://4tuvt67s7kho" path="res://Autoloads/Resources/Beastie/Kaleidarn/icon_kaleidarn.png" id="11_de0ys"]
@@ -52,12 +46,6 @@ mind_base_def = 74
 possible_plays = Array[ExtResource("1_vu622")]([ExtResource("3_87xwc"), ExtResource("4_b7gtx"), ExtResource("5_68bjc"), ExtResource("6_4ya3n"), ExtResource("7_sl67f"), ExtResource("8_5cyx7"), ExtResource("9_goi26"), ExtResource("10_fql15"), ExtResource("11_cqvrc"), ExtResource("12_d3vuj"), ExtResource("13_ptyj3"), ExtResource("14_tw5yt"), ExtResource("15_fpgnj"), ExtResource("16_pgkkn"), ExtResource("17_npuou"), ExtResource("18_pki4f"), ExtResource("19_wuc8p"), ExtResource("20_2epyb"), ExtResource("21_5vxmi"), ExtResource("22_l82gx"), ExtResource("23_n54im"), ExtResource("24_bgp4j"), ExtResource("26_7nwn1"), ExtResource("26_87xwc")])
 possible_traits = Array[ExtResource("2_uhgov")]([ExtResource("2_mjt10")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("5_lpkck"),
-1: ExtResource("6_h2j22"),
-2: ExtResource("7_2ejgt"),
-3: ExtResource("8_0ib68"),
-4: ExtResource("9_jwm7e"),
-5: ExtResource("10_cvo46"),
 6: ExtResource("11_de0ys")
 })
 y_offset = -100

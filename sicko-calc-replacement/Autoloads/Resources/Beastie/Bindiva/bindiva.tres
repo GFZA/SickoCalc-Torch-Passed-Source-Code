@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=32 format=3 uid="uid://dnb1eabl0ygo4"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=31 format=3 uid="uid://ve2kdxlvise"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_kbt7v"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_6tamj"]
@@ -8,7 +8,6 @@
 [ext_resource type="Resource" uid="uid://ckuv7fcd5f7n" path="res://Autoloads/Resources/Trait/majesty.tres" id="4_tbod5"]
 [ext_resource type="Resource" uid="uid://dgsnxhjtejofp" path="res://Autoloads/Resources/Plays/Volley/dig.tres" id="4_usumv"]
 [ext_resource type="Resource" uid="uid://ccjlfthgm3ed2" path="res://Autoloads/Resources/Plays/Support/jeer.tres" id="5_yys0j"]
-[ext_resource type="Texture2D" uid="uid://bwfvqfiv21t1c" path="res://Autoloads/Resources/Beastie/Bindiva/bindiva_idle.png" id="6_ek6pp"]
 [ext_resource type="Resource" uid="uid://cr27dbuxid5hy" path="res://Autoloads/Resources/Plays/Attack/Mind/pierce.tres" id="6_y6381"]
 [ext_resource type="Resource" uid="uid://dwttgu43t4rc1" path="res://Autoloads/Resources/Plays/Support/steal.tres" id="7_447gr"]
 [ext_resource type="Texture2D" uid="uid://dkcogabeurwfr" path="res://Autoloads/Resources/Beastie/Bindiva/icon_bindiva.png" id="7_vlx4u"]
@@ -48,12 +47,6 @@ mind_base_def = 88
 possible_plays = Array[ExtResource("1_kbt7v")]([ExtResource("3_gdc8o"), ExtResource("4_usumv"), ExtResource("5_yys0j"), ExtResource("6_y6381"), ExtResource("7_447gr"), ExtResource("8_2tuy0"), ExtResource("9_10slp"), ExtResource("11_ju5xg"), ExtResource("12_yfhwi"), ExtResource("13_s0lmw"), ExtResource("14_0isfj"), ExtResource("15_hxpma"), ExtResource("16_gxd8r"), ExtResource("17_jlc0c"), ExtResource("18_6un3h"), ExtResource("19_nxr5q"), ExtResource("20_0b56v"), ExtResource("21_1c0uk"), ExtResource("22_flcij"), ExtResource("23_sj550"), ExtResource("24_degp1"), ExtResource("24_yys0j"), ExtResource("25_y6381"), ExtResource("26_447gr")])
 possible_traits = Array[ExtResource("2_6tamj")]([ExtResource("2_lkn4f"), ExtResource("4_tbod5")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("6_ek6pp"),
-1: ExtResource("6_ek6pp"),
-2: ExtResource("6_ek6pp"),
-3: ExtResource("6_ek6pp"),
-4: ExtResource("6_ek6pp"),
-5: ExtResource("6_ek6pp"),
 6: ExtResource("7_vlx4u")
 })
 ball_anchor_position_receive = Vector2(22, -141)
