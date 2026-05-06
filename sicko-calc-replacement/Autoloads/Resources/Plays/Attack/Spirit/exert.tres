@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://d0oln32r14dhl"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_u3if1"]
+
+[resource]
+script = ExtResource("1_u3if1")
+name = "Exert"
+base_pow = 60
+descrition = "Feel 2 TOUGH (¼ damage). Feel +2 SWEATY (losing stamina)."
+type = 1
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

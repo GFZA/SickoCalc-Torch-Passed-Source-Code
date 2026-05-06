@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Support" load_steps=2 format=3 uid="uid://coljoc6wslna8"]
+
+[ext_resource type="Script" uid="uid://ckljlmv7ycuxl" path="res://Autoloads/Resources/Plays/Support/support.gd" id="1_7lx2d"]
+
+[resource]
+script = ExtResource("1_7lx2d")
+name = "Hum"
+descrition = "SPIRIT POW UP1 to self."
+metadata/_custom_type_script = "uid://ckljlmv7ycuxl"

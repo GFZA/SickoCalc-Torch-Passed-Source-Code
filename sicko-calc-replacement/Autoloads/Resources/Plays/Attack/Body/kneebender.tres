@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://qhb7pc512xbi"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_bbtc3"]
+
+[resource]
+script = ExtResource("1_bbtc3")
+name = "Kneebender"
+base_pow = 60
+descrition = "ATTACK. BODY POW DOWN1 to target."
+type = 0
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

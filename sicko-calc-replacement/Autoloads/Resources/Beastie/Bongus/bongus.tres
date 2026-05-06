@@ -1,0 +1,72 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=43 format=3 uid="uid://dct3g7r10hqgm"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_gb7fw"]
+[ext_resource type="Resource" uid="uid://cfgduxn21ajws" path="res://Autoloads/Resources/Trait/flow.tres" id="2_7aof5"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_ilj47"]
+[ext_resource type="Resource" uid="uid://ciplmlyeefqm" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="3_5206m"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_r8gm2"]
+[ext_resource type="Resource" uid="uid://dtv5rmobrpwwq" path="res://Autoloads/Resources/Trait/welcoming.tres" id="4_0xy4c"]
+[ext_resource type="Resource" uid="uid://ck2v1w5w6an2w" path="res://Autoloads/Resources/Plays/Support/drum.tres" id="4_pj5xj"]
+[ext_resource type="Texture2D" uid="uid://bsc3444t8iyum" path="res://Autoloads/Resources/Beastie/Bongus/bongus_idle.png" id="4_r576l"]
+[ext_resource type="Resource" uid="uid://c624jkvl1417h" path="res://Autoloads/Resources/Plays/Volley/refresh.tres" id="5_5aw1d"]
+[ext_resource type="Texture2D" uid="uid://cy1241sgpcns7" path="res://Autoloads/Resources/Beastie/Bongus/bongus_ready.png" id="5_tdx5t"]
+[ext_resource type="Texture2D" uid="uid://bb115qhwpjvfb" path="res://Autoloads/Resources/Beastie/Bongus/bongus_spike.png" id="6_7aof5"]
+[ext_resource type="Resource" uid="uid://cy671htu1m5fu" path="res://Autoloads/Resources/Plays/Support/calming_aura.tres" id="6_siere"]
+[ext_resource type="Texture2D" uid="uid://crrgwo1rae2xc" path="res://Autoloads/Resources/Beastie/Bongus/bongus_volley.png" id="7_0xy4c"]
+[ext_resource type="Resource" uid="uid://jkcejjcke75d" path="res://Autoloads/Resources/Plays/Attack/Body/power_sap.tres" id="7_f0o4x"]
+[ext_resource type="Texture2D" uid="uid://yn50mooqplel" path="res://Autoloads/Resources/Beastie/Bongus/bongus_good.png" id="8_04fdc"]
+[ext_resource type="Resource" uid="uid://dytuvbvg3oamq" path="res://Autoloads/Resources/Plays/Defense/shield.tres" id="8_8vd5o"]
+[ext_resource type="Texture2D" uid="uid://b5dg10e4muotl" path="res://Autoloads/Resources/Beastie/Bongus/bongus_bad.png" id="9_26igx"]
+[ext_resource type="Resource" uid="uid://71t7u1j5yqvb" path="res://Autoloads/Resources/Plays/Support/mark.tres" id="9_jsl6q"]
+[ext_resource type="Resource" uid="uid://dy23cpjw8vy57" path="res://Autoloads/Resources/Plays/Attack/Body/bounce.tres" id="10_d48kv"]
+[ext_resource type="Resource" uid="uid://bcuhkrf7hdroh" path="res://Autoloads/Resources/Plays/Support/clear_field.tres" id="11_sj3ms"]
+[ext_resource type="Resource" uid="uid://ihjite14xg1t" path="res://Autoloads/Resources/Plays/Attack/Body/stomp.tres" id="12_22mde"]
+[ext_resource type="Resource" uid="uid://y3o0tssi0oeu" path="res://Autoloads/Resources/Plays/Volley/forward_pass.tres" id="13_6k5o1"]
+[ext_resource type="Resource" uid="uid://b5ox8jsftfp33" path="res://Autoloads/Resources/Plays/Defense/mighty_yell.tres" id="14_mxx3m"]
+[ext_resource type="Resource" uid="uid://cgtd1m3ceieid" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="15_7igt3"]
+[ext_resource type="Resource" uid="uid://bvxjlydy1d38x" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="16_vjqgk"]
+[ext_resource type="Resource" uid="uid://cxogqm0367lrk" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="17_iwy86"]
+[ext_resource type="Resource" uid="uid://djku0a8qnembc" path="res://Autoloads/Resources/Plays/Attack/Body/boom.tres" id="18_rkh5k"]
+[ext_resource type="Resource" uid="uid://cgp0jnuk0thpe" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="19_4hp7j"]
+[ext_resource type="Resource" uid="uid://dtkos0xt4rmf" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="20_3b4wu"]
+[ext_resource type="Resource" uid="uid://bqwii245fpl4a" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="21_srui6"]
+[ext_resource type="Resource" uid="uid://bqpax11k5enii" path="res://Autoloads/Resources/Plays/Attack/Mind/snipe.tres" id="22_y5hrq"]
+[ext_resource type="Resource" uid="uid://dgu38u1ul5b81" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="23_pewps"]
+[ext_resource type="Resource" uid="uid://dgsnxhjtejofp" path="res://Autoloads/Resources/Plays/Volley/dig.tres" id="24_o43wk"]
+[ext_resource type="Resource" uid="uid://debwcca8lqqb2" path="res://Autoloads/Resources/Plays/Volley/pipe.tres" id="25_nxi6t"]
+[ext_resource type="Resource" uid="uid://b7c1t1fux071m" path="res://Autoloads/Resources/Plays/Support/call_out.tres" id="26_f5yge"]
+[ext_resource type="Resource" uid="uid://b670mi6ha0r4h" path="res://Autoloads/Resources/Plays/Support/chill_out.tres" id="27_sncf6"]
+[ext_resource type="Resource" uid="uid://7nsxd3vbne52" path="res://Autoloads/Resources/Plays/Support/exhaust.tres" id="28_8n8ir"]
+[ext_resource type="Resource" uid="uid://bgwy15q42o6k7" path="res://Autoloads/Resources/Plays/Support/hunker.tres" id="29_lpbhg"]
+[ext_resource type="Resource" uid="uid://tc6ag84sawpl" path="res://Autoloads/Resources/Plays/Support/tough_front.tres" id="30_42cxa"]
+[ext_resource type="Resource" uid="uid://l57ggke2vhn0" path="res://Autoloads/Resources/Plays/Defense/heat_up.tres" id="31_bg0lw"]
+[ext_resource type="Resource" uid="uid://dyyf4roekh4n8" path="res://Autoloads/Resources/Plays/Defense/torch_pass.tres" id="32_qftia"]
+[ext_resource type="Texture2D" uid="uid://ccnl0kg2xftdh" path="res://Autoloads/Resources/Beastie/Bongus/icon_bongus.png" id="42_fev4y"]
+
+[resource]
+script = ExtResource("3_r8gm2")
+my_plays = Array[ExtResource("1_gb7fw")]([null, null, null])
+my_trait = ExtResource("2_7aof5")
+specie_name = "Bongus"
+beastiepedia_id = 2
+bar_color = Color(0.8901961, 0.6901961, 0.26666668, 1)
+body_base_pow = 75
+spirit_base_pow = 60
+mind_base_pow = 45
+body_base_def = 110
+spirit_base_def = 90
+mind_base_def = 65
+possible_plays = Array[ExtResource("1_gb7fw")]([ExtResource("3_5206m"), ExtResource("4_pj5xj"), ExtResource("5_5aw1d"), ExtResource("6_siere"), ExtResource("7_f0o4x"), ExtResource("8_8vd5o"), ExtResource("9_jsl6q"), ExtResource("10_d48kv"), ExtResource("11_sj3ms"), ExtResource("12_22mde"), ExtResource("13_6k5o1"), ExtResource("14_mxx3m"), ExtResource("15_7igt3"), ExtResource("16_vjqgk"), ExtResource("17_iwy86"), ExtResource("18_rkh5k"), ExtResource("19_4hp7j"), ExtResource("20_3b4wu"), ExtResource("21_srui6"), ExtResource("22_y5hrq"), ExtResource("23_pewps"), ExtResource("24_o43wk"), ExtResource("25_nxi6t"), ExtResource("26_f5yge"), ExtResource("27_sncf6"), ExtResource("28_8n8ir"), ExtResource("29_lpbhg"), ExtResource("30_42cxa"), ExtResource("31_bg0lw"), ExtResource("32_qftia")])
+possible_traits = Array[ExtResource("2_ilj47")]([ExtResource("2_7aof5"), ExtResource("4_0xy4c")])
+sprites = Dictionary[int, Texture2D]({
+0: ExtResource("4_r576l"),
+1: ExtResource("5_tdx5t"),
+2: ExtResource("6_7aof5"),
+3: ExtResource("7_0xy4c"),
+4: ExtResource("8_04fdc"),
+5: ExtResource("9_26igx"),
+6: ExtResource("42_fev4y")
+})
+ball_anchor_position_receive = Vector2(91, -128)
+ball_anchor_position_ready = Vector2(85, -142)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://k5mh301i4gme"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_5ue2s"]
+
+[resource]
+script = ExtResource("1_5ue2s")
+name = "Ego Blast"
+base_pow = 80
+descrition = "ATTACK. Boosted by RALLY instead of weakened."
+type = 2
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

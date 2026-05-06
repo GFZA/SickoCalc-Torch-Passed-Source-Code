@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Support" load_steps=2 format=3 uid="uid://ckfu6pta3o1u2"]
+
+[ext_resource type="Script" uid="uid://ckljlmv7ycuxl" path="res://Autoloads/Resources/Plays/Support/support.gd" id="1_oi4ce"]
+
+[resource]
+script = ExtResource("1_oi4ce")
+metadata/_custom_type_script = "uid://ckljlmv7ycuxl"

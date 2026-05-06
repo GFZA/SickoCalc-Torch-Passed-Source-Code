@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Defense" load_steps=2 format=3 uid="uid://b5ox8jsftfp33"]
+
+[ext_resource type="Script" uid="uid://oq75vqpgnqa3" path="res://Autoloads/Resources/Plays/Defense/defense.gd" id="1_yv4xu"]
+
+[resource]
+script = ExtResource("1_yv4xu")
+name = "Mighty Yell"
+descrition = "Feel 1 NOISY (attracts attacks) & 2 ANGRY (only attacks)."
+type = 5
+metadata/_custom_type_script = "uid://oq75vqpgnqa3"

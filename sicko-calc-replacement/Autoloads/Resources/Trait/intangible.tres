@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://q5fhwy5qny81"]
+
+[ext_resource type="Script" uid="uid://byj7okdtjhcsv" path="res://Autoloads/Resources/Trait/intangible.gd" id="1_eh848"]
+
+[resource]
+script = ExtResource("1_eh848")
+name = "Intangible"
+description = "Immune to BODY attacks"
+damage_dealt_mult = 0.0
+damage_taken_mult = 0.0
+is_starter_trait = null
+starter_trait_type = null
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Support" load_steps=2 format=3 uid="uid://dlhm03et5x05t"]
+
+[ext_resource type="Script" uid="uid://ckljlmv7ycuxl" path="res://Autoloads/Resources/Plays/Support/support.gd" id="1_eadrt"]
+
+[resource]
+script = ExtResource("1_eadrt")
+name = "Overthink"
+descrition = "MIND POW UP3 to self. Feel 1 TIRED (only basic actions)."
+metadata/_custom_type_script = "uid://ckljlmv7ycuxl"

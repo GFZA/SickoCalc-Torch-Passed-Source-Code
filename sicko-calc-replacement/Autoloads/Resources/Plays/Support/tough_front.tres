@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Support" load_steps=2 format=3 uid="uid://tc6ag84sawpl"]
+
+[ext_resource type="Script" uid="uid://ckljlmv7ycuxl" path="res://Autoloads/Resources/Plays/Support/support.gd" id="1_2wojw"]
+
+[resource]
+script = ExtResource("1_2wojw")
+name = "Tough Front"
+descrition = "Feel 2 TOUGH (¼ damage). -25 STAMINA."
+metadata/_custom_type_script = "uid://ckljlmv7ycuxl"

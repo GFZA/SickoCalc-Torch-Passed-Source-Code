@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Defense" load_steps=2 format=3 uid="uid://d3avpv87snvri"]
+
+[ext_resource type="Script" uid="uid://oq75vqpgnqa3" path="res://Autoloads/Resources/Plays/Defense/defense.gd" id="1_lnhxm"]
+
+[resource]
+script = ExtResource("1_lnhxm")
+name = "Gloom"
+descrition = "Target feels 1 WEEPY (ignores BOOSTs)."
+type = 5
+metadata/_custom_type_script = "uid://oq75vqpgnqa3"

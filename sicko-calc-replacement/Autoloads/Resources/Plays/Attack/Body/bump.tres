@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://o7g80igyrl8i"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_qhce4"]
+
+[resource]
+script = ExtResource("1_qhce4")
+name = "Bump"
+base_pow = 35
+descrition = "ATTACK. Can hit without volleying."
+type = 0
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

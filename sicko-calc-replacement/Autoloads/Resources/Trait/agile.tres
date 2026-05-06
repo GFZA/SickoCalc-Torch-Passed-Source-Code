@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://cc6ln454rbqep"]
+
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_bbu2m"]
+
+[resource]
+script = ExtResource("1_bbu2m")
+name = "Agile"
+description = "Can attack without volleying"
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

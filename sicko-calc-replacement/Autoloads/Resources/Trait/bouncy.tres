@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://brb7f884wpw2a"]
+
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_0kejb"]
+
+[resource]
+script = ExtResource("1_0kejb")
+name = "Bouncy"
+description = "Volleys the ball to their ally after receiving any attack"
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

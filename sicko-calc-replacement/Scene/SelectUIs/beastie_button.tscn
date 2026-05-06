@@ -1,0 +1,99 @@
+[gd_scene load_steps=6 format=3 uid="uid://dpfyarbgjk6l4"]
+
+[ext_resource type="Script" uid="uid://b8n4h6hf4868g" path="res://Scene/SelectUIs/beastie_button.gd" id="1_5vphi"]
+[ext_resource type="Theme" uid="uid://bkrlwg21fhprn" path="res://Autoloads/Resources/Themes/edit_button.tres" id="2_hu215"]
+[ext_resource type="Texture2D" uid="uid://dey8bdpdiw1p4" path="res://Autoloads/Icons/icon_wiped.png" id="3_5vphi"]
+[ext_resource type="FontFile" uid="uid://cvfib27cf5q88" path="res://Autoloads/Resources/Fonts/Go Banana.ttf" id="5_7y7uk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_4ccyn"]
+font = ExtResource("5_7y7uk")
+font_size = 92
+font_color = Color(0, 0, 0, 1)
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[node name="BeastieButton" type="Button"]
+custom_minimum_size = Vector2(651, 248)
+offset_right = 651.0
+offset_bottom = 248.0
+focus_behavior_recursive = 1
+theme = ExtResource("2_hu215")
+script = ExtResource("1_5vphi")
+
+[node name="MainMarginContainer" type="MarginContainer" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 310)
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 290.0
+offset_bottom = 62.0
+grow_vertical = 2
+scale = Vector2(0.8, 0.8)
+focus_behavior_recursive = 1
+mouse_filter = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainMarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+focus_behavior_recursive = 1
+mouse_filter = 2
+theme_override_constants/separation = 24
+
+[node name="IconRec" type="TextureRect" parent="MainMarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(250, 250)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_behavior_recursive = 1
+mouse_filter = 2
+texture = ExtResource("3_5vphi")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="NameInfoContainer" type="VBoxContainer" parent="MainMarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(500, 270)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+focus_behavior_recursive = 1
+mouse_filter = 2
+theme_override_constants/separation = -8
+alignment = 1
+
+[node name="NumberContainer" type="HBoxContainer" parent="MainMarginContainer/HBoxContainer/NameInfoContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="HashLabel" type="Label" parent="MainMarginContainer/HBoxContainer/NameInfoContainer/NumberContainer"]
+layout_mode = 2
+text = "#"
+label_settings = SubResource("LabelSettings_4ccyn")
+
+[node name="Numberlabel" type="Label" parent="MainMarginContainer/HBoxContainer/NameInfoContainer/NumberContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+focus_behavior_recursive = 1
+theme = ExtResource("2_hu215")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 115
+text = "0"
+
+[node name="NameLabel" type="Label" parent="MainMarginContainer/HBoxContainer/NameInfoContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_behavior_recursive = 1
+theme = ExtResource("2_hu215")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 115
+text = "None"
+horizontal_alignment = 1
+vertical_alignment = 1

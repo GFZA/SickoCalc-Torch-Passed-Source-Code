@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Defense" load_steps=2 format=3 uid="uid://dkh0jivrf43jv"]
+
+[ext_resource type="Script" uid="uid://oq75vqpgnqa3" path="res://Autoloads/Resources/Plays/Defense/defense.gd" id="1_16unh"]
+
+[resource]
+script = ExtResource("1_16unh")
+name = "Smack"
+descrition = "ALL_TYPE POW UP1 to benched ally. Benched ally feels 2 ANGRY. TAG OUT."
+type = 5
+metadata/_custom_type_script = "uid://oq75vqpgnqa3"

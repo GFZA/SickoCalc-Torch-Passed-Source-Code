@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://jkcejjcke75d"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_a874k"]
+
+[resource]
+script = ExtResource("1_a874k")
+name = "Power Sap"
+base_pow = 75
+descrition = "ATTACK. HEALs self +10."
+type = 0
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

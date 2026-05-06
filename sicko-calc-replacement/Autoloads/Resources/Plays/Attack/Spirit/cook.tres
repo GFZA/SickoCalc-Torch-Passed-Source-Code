@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://bv35xn3xk317w"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_4txth"]
+
+[resource]
+script = ExtResource("1_4txth")
+name = "Cook"
+base_pow = 50
+descrition = "ATTACK. SPIRIT DEF DOWN1 boost to target team."
+type = 1
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

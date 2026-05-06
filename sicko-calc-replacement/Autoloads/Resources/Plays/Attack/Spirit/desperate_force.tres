@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://cbqqeeugk7xo0"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_kh6to"]
+
+[resource]
+script = ExtResource("1_kh6to")
+name = "Desperate Force"
+base_pow = 75
+descrition = "Can hit without volleying. Feel 1 STRESSED (becomes TIRED)."
+type = 1
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

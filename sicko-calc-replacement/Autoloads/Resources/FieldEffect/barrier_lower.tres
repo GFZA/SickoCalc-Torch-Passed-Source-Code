@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FieldEffect" load_steps=2 format=3 uid="uid://dto2dg2ytqoak"]
+
+[ext_resource type="Script" uid="uid://dqfnpws7qgoa1" path="res://Autoloads/Resources/FieldEffect/field_effect.gd" id="1_o0hsj"]
+
+[resource]
+script = ExtResource("1_o0hsj")
+type = 6
+name = "BARRIER"
+desc = "Nullify damage from an attack once"
+metadata/_custom_type_script = "uid://dqfnpws7qgoa1"

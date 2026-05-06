@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Support" load_steps=2 format=3 uid="uid://cy671htu1m5fu"]
+
+[ext_resource type="Script" uid="uid://ckljlmv7ycuxl" path="res://Autoloads/Resources/Plays/Support/support.gd" id="1_ok412"]
+
+[resource]
+script = ExtResource("1_ok412")
+name = "Calming Aura"
+descrition = "HEALs active team +15."
+metadata/_custom_type_script = "uid://ckljlmv7ycuxl"

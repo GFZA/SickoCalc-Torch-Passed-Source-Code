@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Defense" load_steps=2 format=3 uid="uid://dfrswto2e3nco"]
+
+[ext_resource type="Script" uid="uid://oq75vqpgnqa3" path="res://Autoloads/Resources/Plays/Defense/defense.gd" id="1_5h6tu"]
+
+[resource]
+script = ExtResource("1_5h6tu")
+name = "Role Reverse"
+descrition = "SHIFTs active team to opposite row."
+type = 5
+metadata/_custom_type_script = "uid://oq75vqpgnqa3"

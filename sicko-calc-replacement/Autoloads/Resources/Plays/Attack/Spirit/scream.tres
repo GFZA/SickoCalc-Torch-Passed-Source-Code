@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://bkck3t5a2wv3f"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_atl00"]
+
+[resource]
+script = ExtResource("1_atl00")
+name = "Scream"
+base_pow = 90
+descrition = "ATTACK. Target feels 2 NOISY (attracts attacks)."
+type = 1
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

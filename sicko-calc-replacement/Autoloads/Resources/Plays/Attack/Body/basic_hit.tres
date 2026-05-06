@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://hox6njgubt5t"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_j51xi"]
+
+[resource]
+script = ExtResource("1_j51xi")
+name = "Basic Hit"
+base_pow = 50
+descrition = "A BODY ATTACK."
+type = 0
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

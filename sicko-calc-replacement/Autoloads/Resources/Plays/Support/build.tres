@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Support" load_steps=2 format=3 uid="uid://d2lsfpa4l3jmk"]
+
+[ext_resource type="Script" uid="uid://ckljlmv7ycuxl" path="res://Autoloads/Resources/Plays/Support/support.gd" id="1_35hlm"]
+
+[resource]
+script = ExtResource("1_35hlm")
+name = "Build"
+descrition = "Only used from back row. Build a BARRIER in front of self. -34 STAMINA."
+metadata/_custom_type_script = "uid://ckljlmv7ycuxl"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://dgfdkj7w76uxx"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_wucps"]
+
+[resource]
+script = ExtResource("1_wucps")
+name = "Mindfield"
+base_pow = 30
+descrition = "ATTACK. Opponent field gets 2 QUAKE (Volleys deal 25 damage)."
+type = 2
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

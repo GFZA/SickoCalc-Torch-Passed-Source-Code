@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Volley" load_steps=2 format=3 uid="uid://lklea5saxtts"]
+
+[ext_resource type="Script" uid="uid://7mqfhyvrwevt" path="res://Autoloads/Resources/Plays/Volley/volley.gd" id="1_pgmte"]
+
+[resource]
+script = ExtResource("1_pgmte")
+name = "Updraft"
+descrition = "VOLLEY. +1 ACTIONs. -40 STAMINA."
+type = 3
+metadata/_custom_type_script = "uid://7mqfhyvrwevt"

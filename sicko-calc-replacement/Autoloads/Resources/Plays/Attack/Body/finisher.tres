@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://df7h4h5ahjpy3"]
+
+[ext_resource type="Script" uid="uid://bhxhv4fbrnlh1" path="res://Autoloads/Resources/Plays/Attack/Body/finisher.gd" id="1_5qjre"]
+
+[resource]
+script = ExtResource("1_5qjre")
+name = "Finisher"
+base_pow = 55
+descrition = "ATTACK. POW x2 if target STAMINA is under 50."
+type = 0
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

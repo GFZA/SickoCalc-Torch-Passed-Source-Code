@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bcpacxusyskuo"]
+
+[ext_resource type="Script" uid="uid://ch56ugt2j6fa2" path="res://Autoloads/Resources/Plays/Attack/Mind/sweep.gd" id="1_ja8ey"]
+
+[resource]
+script = ExtResource("1_ja8ey")
+name = "Sweep"
+base_pow = 50
+descrition = "POW x2 if there are any field effects. Clears all FIELD EFFECTS."
+type = 2
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

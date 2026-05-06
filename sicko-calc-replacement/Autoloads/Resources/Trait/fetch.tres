@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://cxsvm7cg1dgqr"]
+
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_ejl7h"]
+
+[resource]
+script = ExtResource("1_ejl7h")
+name = "Fetch"
+description = "Feels JAZZED (POW +50%) after receiving any attack"
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

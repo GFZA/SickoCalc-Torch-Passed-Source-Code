@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://bfiq4v8y2mdcg"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_ufuwl"]
+
+[resource]
+script = ExtResource("1_ufuwl")
+name = "Zinger"
+base_pow = 40
+descrition = "ATTACK. Target feels 2 TENDER (DEF x½)."
+type = 0
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://r7wuh8vfp83p"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_d3gso"]
+
+[resource]
+script = ExtResource("1_d3gso")
+name = "Supercommit"
+base_pow = 100
+descrition = "ATTACK. Feel 1 NERVOUS (can't move)."
+type = 1
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

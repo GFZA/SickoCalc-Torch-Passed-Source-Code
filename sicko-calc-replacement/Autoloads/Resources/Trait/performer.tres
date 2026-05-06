@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bqmwc0aqx6lbm"]
+
+[ext_resource type="Script" uid="uid://1ptausj3sa6e" path="res://Autoloads/Resources/Trait/performer.gd" id="1_qpg73"]
+
+[resource]
+script = ExtResource("1_qpg73")
+name = "Performer"
+description = "DEF x1.5 while field has RALLY"
+def_mult = 1.5
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://dg3yv0da8nkwv"]
+
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_3yj84"]
+
+[resource]
+script = ExtResource("1_3yj84")
+name = "Smooth"
+description = "When they MOVE or SHIFT, restores 15 STAMINA"
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Support" load_steps=2 format=3 uid="uid://dqokwb2l6gnsr"]
+
+[ext_resource type="Script" uid="uid://ckljlmv7ycuxl" path="res://Autoloads/Resources/Plays/Support/support.gd" id="1_yipxw"]
+
+[resource]
+script = ExtResource("1_yipxw")
+name = "Telekinesis"
+descrition = "Ball goes to self. MIND POW UP1 to self."
+metadata/_custom_type_script = "uid://ckljlmv7ycuxl"

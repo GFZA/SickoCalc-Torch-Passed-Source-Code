@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FieldEffect" load_steps=2 format=3 uid="uid://bjtv1n63kyvcb"]
+
+[ext_resource type="Script" uid="uid://dqfnpws7qgoa1" path="res://Autoloads/Resources/FieldEffect/field_effect.gd" id="1_7ghql"]
+
+[resource]
+script = ExtResource("1_7ghql")
+type = 2
+name = "RHYTHM"
+desc = "+6 STAMINA per turn. Stops SWEATY, NERVOUS, STRESSED, and TIRED from opponents"
+metadata/_custom_type_script = "uid://dqfnpws7qgoa1"

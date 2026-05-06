@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://r8p64is70rc7"]
+
+[ext_resource type="Script" uid="uid://8gprp2aq5yk2" path="res://Autoloads/Resources/Plays/Attack/Body/energized.gd" id="1_noww5"]
+
+[resource]
+script = ExtResource("1_noww5")
+name = "Energized"
+base_pow = 45
+descrition = "ATTACK. POW +10 for each UP1 BOOST on the user."
+type = 0
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://v37ifueojf8k"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_o34m6"]
+
+[resource]
+script = ExtResource("1_o34m6")
+name = "Thump"
+base_pow = 90
+descrition = "A BODY ATTACK."
+type = 0
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

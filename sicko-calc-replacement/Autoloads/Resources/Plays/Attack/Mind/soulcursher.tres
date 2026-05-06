@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://nwk5cfisjfoh"]
+
+[ext_resource type="Script" uid="uid://l8fe13ecge5y" path="res://Autoloads/Resources/Plays/Attack/Mind/soulcrusher.gd" id="1_m5gcg"]
+
+[resource]
+script = ExtResource("1_m5gcg")
+name = "Soulcrusher"
+base_pow = 110
+descrition = "ATTACK. Strongest when target has more STAMINA."
+type = 2
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

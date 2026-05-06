@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cle27qn3pd41x"]
+
+[ext_resource type="Script" uid="uid://b8y3gfisoa11e" path="res://Autoloads/Resources/Trait/super_armor.gd" id="1_n88rf"]
+
+[resource]
+script = ExtResource("1_n88rf")
+name = "Super Armor"
+description = "DEF x1.5 while STAMINA is at least ¾ filled"
+def_mult = 1.5
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

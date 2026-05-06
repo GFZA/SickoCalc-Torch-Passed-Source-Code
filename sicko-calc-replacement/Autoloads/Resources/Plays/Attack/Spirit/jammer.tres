@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://dhmx805jhg4ir"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_gs6k6"]
+
+[resource]
+script = ExtResource("1_gs6k6")
+name = "Jammer"
+base_pow = 70
+descrition = "ATTACK. MIND POW DOWN1 to target."
+type = 1
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Support" load_steps=2 format=3 uid="uid://chnjmscu87ehu"]
+
+[ext_resource type="Script" uid="uid://ckljlmv7ycuxl" path="res://Autoloads/Resources/Plays/Support/support.gd" id="1_g3det"]
+
+[resource]
+script = ExtResource("1_g3det")
+name = "Introduce"
+descrition = "Benched ally feels 1 TOUGH (¼ damage)."
+metadata/_custom_type_script = "uid://ckljlmv7ycuxl"

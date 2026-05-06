@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://ba06fmjpjnl1k"]
+
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_8g4xg"]
+
+[resource]
+script = ExtResource("1_8g4xg")
+name = "Stealthy"
+description = "Automatically SHIFTs to targeted empty lanes"
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://d8rp5pq7qf2i"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_3puwk"]
+
+[resource]
+script = ExtResource("1_3puwk")
+name = "Bring the Heat"
+base_pow = 85
+descrition = "A SPIRIT ATTACK."
+type = 1
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

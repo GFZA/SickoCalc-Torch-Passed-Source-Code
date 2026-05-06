@@ -1,0 +1,61 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=32 format=3 uid="uid://djmh6n54ngosp"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_lotr1"]
+[ext_resource type="Resource" uid="uid://daxy5d58ldols" path="res://Autoloads/Resources/Trait/venom_touch.tres" id="2_er023"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_qrcio"]
+[ext_resource type="Resource" uid="uid://dcn80u35wkpjp" path="res://Autoloads/Resources/Plays/Volley/net_rush.tres" id="3_1oimd"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_ufmhh"]
+[ext_resource type="Resource" uid="uid://chm7cp4ewi5bp" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="4_juce1"]
+[ext_resource type="Resource" uid="uid://do762o537gfm8" path="res://Autoloads/Resources/Trait/absorption.tres" id="4_xwxq8"]
+[ext_resource type="Resource" uid="uid://dqokwb2l6gnsr" path="res://Autoloads/Resources/Plays/Support/telekinesis.tres" id="5_2uou3"]
+[ext_resource type="Texture2D" uid="uid://fi7ob6j50yan" path="res://Autoloads/Resources/Beastie/Vultoxin/vultoxin_idle.png" id="5_xwxq8"]
+[ext_resource type="Resource" uid="uid://bgg4s10j75g4l" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="6_4qfb3"]
+[ext_resource type="Texture2D" uid="uid://b7iunuidv7tk2" path="res://Autoloads/Resources/Beastie/Vultoxin/icon_vultoxin.png" id="6_ljxy3"]
+[ext_resource type="Resource" uid="uid://c5n8g4bqp64q2" path="res://Autoloads/Resources/Plays/Defense/sting.tres" id="7_corh1"]
+[ext_resource type="Resource" uid="uid://dnfjfsf2a2vs5" path="res://Autoloads/Resources/Plays/Support/deep_breath.tres" id="8_xa3bq"]
+[ext_resource type="Resource" uid="uid://8wi04v1m7juh" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="9_s0hsy"]
+[ext_resource type="Resource" uid="uid://6n8gisa23e7k" path="res://Autoloads/Resources/Plays/Support/nettle.tres" id="10_7v6ff"]
+[ext_resource type="Resource" uid="uid://bp6cwp5r600rj" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="11_srkp1"]
+[ext_resource type="Resource" uid="uid://71t7u1j5yqvb" path="res://Autoloads/Resources/Plays/Support/mark.tres" id="12_rqrw5"]
+[ext_resource type="Resource" uid="uid://dodbnlxn2lj0d" path="res://Autoloads/Resources/Plays/Attack/Mind/roll_shot.tres" id="13_6aidh"]
+[ext_resource type="Resource" uid="uid://nwk5cfisjfoh" path="res://Autoloads/Resources/Plays/Attack/Mind/soulcursher.tres" id="14_vq2e6"]
+[ext_resource type="Resource" uid="uid://bj7gp00f8xtup" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="15_xqutf"]
+[ext_resource type="Resource" uid="uid://c7blujvv2w3vu" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="16_5tx70"]
+[ext_resource type="Resource" uid="uid://brf1cqjq1gnxc" path="res://Autoloads/Resources/Plays/Volley/cover.tres" id="17_wh5s4"]
+[ext_resource type="Resource" uid="uid://c6qin68p3shhq" path="res://Autoloads/Resources/Plays/Volley/tactical_pass.tres" id="18_u0r4v"]
+[ext_resource type="Resource" uid="uid://7nsxd3vbne52" path="res://Autoloads/Resources/Plays/Support/exhaust.tres" id="19_vpmm6"]
+[ext_resource type="Resource" uid="uid://xpx483vp77ry" path="res://Autoloads/Resources/Plays/Support/feint.tres" id="20_52fxp"]
+[ext_resource type="Resource" uid="uid://ccjlfthgm3ed2" path="res://Autoloads/Resources/Plays/Support/jeer.tres" id="21_enra8"]
+[ext_resource type="Resource" uid="uid://cd40pldvtmjj4" path="res://Autoloads/Resources/Plays/Support/lock_target.tres" id="22_nvcu7"]
+[ext_resource type="Resource" uid="uid://dljsdhfov21ex" path="res://Autoloads/Resources/Plays/Defense/assess.tres" id="23_swxyk"]
+[ext_resource type="Resource" uid="uid://ymdvl6wdoqws" path="res://Autoloads/Resources/Plays/Defense/hawkeye.tres" id="24_k2syg"]
+[ext_resource type="Resource" uid="uid://brbj7babpn6xc" path="res://Autoloads/Resources/Plays/Defense/quick_breath.tres" id="25_tvui4"]
+[ext_resource type="Resource" uid="uid://dytuvbvg3oamq" path="res://Autoloads/Resources/Plays/Defense/shield.tres" id="26_16f87"]
+
+[resource]
+script = ExtResource("3_ufmhh")
+my_plays = Array[ExtResource("1_lotr1")]([null, null, null])
+my_trait = ExtResource("2_er023")
+specie_name = "Vultoxin"
+beastiepedia_id = 54
+bar_color = Color(0.6666667, 0.9490196, 1, 1)
+body_base_pow = 30
+spirit_base_pow = 58
+mind_base_pow = 97
+body_base_def = 85
+spirit_base_def = 98
+mind_base_def = 59
+possible_plays = Array[ExtResource("1_lotr1")]([ExtResource("3_1oimd"), ExtResource("4_juce1"), ExtResource("5_2uou3"), ExtResource("6_4qfb3"), ExtResource("7_corh1"), ExtResource("8_xa3bq"), ExtResource("9_s0hsy"), ExtResource("10_7v6ff"), ExtResource("11_srkp1"), ExtResource("12_rqrw5"), ExtResource("13_6aidh"), ExtResource("14_vq2e6"), ExtResource("15_xqutf"), ExtResource("16_5tx70"), ExtResource("17_wh5s4"), ExtResource("18_u0r4v"), ExtResource("19_vpmm6"), ExtResource("20_52fxp"), ExtResource("21_enra8"), ExtResource("22_nvcu7"), ExtResource("23_swxyk"), ExtResource("24_k2syg"), ExtResource("25_tvui4"), ExtResource("26_16f87")])
+possible_traits = Array[ExtResource("2_qrcio")]([ExtResource("2_er023"), ExtResource("4_xwxq8")])
+sprites = Dictionary[int, Texture2D]({
+0: ExtResource("5_xwxq8"),
+1: ExtResource("5_xwxq8"),
+2: ExtResource("5_xwxq8"),
+3: ExtResource("5_xwxq8"),
+4: ExtResource("5_xwxq8"),
+5: ExtResource("5_xwxq8"),
+6: ExtResource("6_ljxy3")
+})
+ball_anchor_position_receive = Vector2(90, -95)
+ball_anchor_position_ready = Vector2(125, -120)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

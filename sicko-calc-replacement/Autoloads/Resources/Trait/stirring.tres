@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://truccwma1xyo"]
+
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_gnwwn"]
+
+[resource]
+script = ExtResource("1_gnwwn")
+name = "Stirring"
+description = "FEELINGs from any opponent reflect back onto the opponent team"
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

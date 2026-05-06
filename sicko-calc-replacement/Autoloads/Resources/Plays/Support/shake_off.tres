@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Support" load_steps=2 format=3 uid="uid://c5oyp7e74r3pd"]
+
+[ext_resource type="Script" uid="uid://ckljlmv7ycuxl" path="res://Autoloads/Resources/Plays/Support/support.gd" id="1_h6dit"]
+
+[resource]
+script = ExtResource("1_h6dit")
+name = "Shake Off"
+descrition = "HEALs self +20. Clears negative FEELINGs (except ANGRY) from self."
+metadata/_custom_type_script = "uid://ckljlmv7ycuxl"

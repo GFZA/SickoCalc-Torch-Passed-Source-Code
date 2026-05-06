@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://dekfo2slnoigr"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_ctats"]
+
+[resource]
+script = ExtResource("1_ctats")
+name = "Rocket"
+base_pow = 70
+descrition = "Does more damage to back-row targets. Always goes where it's targeted."
+type = 0
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

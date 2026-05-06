@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://c7ocn3elr7ejo"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_7i5k2"]
+
+[resource]
+script = ExtResource("1_7i5k2")
+name = "Rousing Strike"
+base_pow = 65
+descrition = "ATTACK. Active team feels +2 JAZZED (POW +50%)."
+type = 1
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

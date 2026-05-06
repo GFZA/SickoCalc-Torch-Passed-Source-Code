@@ -1,0 +1,75 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=46 format=3 uid="uid://bp3tuc5b5rbly"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_006db"]
+[ext_resource type="Resource" uid="uid://f7rnuwppo7e4" path="res://Autoloads/Resources/Trait/unpredictable.tres" id="2_12o50"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_mdakt"]
+[ext_resource type="Resource" uid="uid://off5g43shtql" path="res://Autoloads/Resources/Plays/Attack/Mind/twist.tres" id="3_32e5i"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_wi8rf"]
+[ext_resource type="Resource" uid="uid://dfrswto2e3nco" path="res://Autoloads/Resources/Plays/Defense/role_reverse.tres" id="4_ma2wd"]
+[ext_resource type="Texture2D" uid="uid://bhysi1m2d0jeb" path="res://Autoloads/Resources/Beastie/Varkabond/varkabond_idle.png" id="4_vj4f4"]
+[ext_resource type="Texture2D" uid="uid://cfw8rvu6iyvnx" path="res://Autoloads/Resources/Beastie/Varkabond/varkabond_ready.png" id="5_12o50"]
+[ext_resource type="Resource" uid="uid://cea0bb2qhn278" path="res://Autoloads/Resources/Plays/Attack/Mind/trickspin.tres" id="5_e2aik"]
+[ext_resource type="Resource" uid="uid://cd40pldvtmjj4" path="res://Autoloads/Resources/Plays/Support/lock_target.tres" id="6_5di5a"]
+[ext_resource type="Texture2D" uid="uid://cv85k37bp5ldp" path="res://Autoloads/Resources/Beastie/Varkabond/varkabond_spike.png" id="6_d141a"]
+[ext_resource type="Resource" uid="uid://bvn04obms7ax2" path="res://Autoloads/Resources/Plays/Attack/Body/sidewinder.tres" id="7_ma1wo"]
+[ext_resource type="Texture2D" uid="uid://srygdd7krwwe" path="res://Autoloads/Resources/Beastie/Varkabond/varkabond_volley.png" id="7_v6qub"]
+[ext_resource type="Resource" uid="uid://b3u7ewdra230k" path="res://Autoloads/Resources/Plays/Support/trait_dance.tres" id="8_03gsu"]
+[ext_resource type="Texture2D" uid="uid://cl8vdihlwqa8c" path="res://Autoloads/Resources/Beastie/Varkabond/varkabond_good.png" id="8_6gjqd"]
+[ext_resource type="Resource" uid="uid://bijgrhbki1aqo" path="res://Autoloads/Resources/Plays/Attack/Mind/slice.tres" id="9_bd86c"]
+[ext_resource type="Texture2D" uid="uid://dshulacguo6oi" path="res://Autoloads/Resources/Beastie/Varkabond/varkabond_bad.png" id="9_mkie2"]
+[ext_resource type="Resource" uid="uid://dcn80u35wkpjp" path="res://Autoloads/Resources/Plays/Volley/net_rush.tres" id="10_a4k5u"]
+[ext_resource type="Resource" uid="uid://gpx5prmyyhwg" path="res://Autoloads/Resources/Plays/Attack/Mind/zigzag.tres" id="11_khixa"]
+[ext_resource type="Resource" uid="uid://ckfu6pta3o1u2" path="res://Autoloads/Resources/Plays/Support/provoke.tres" id="12_v5hlf"]
+[ext_resource type="Resource" uid="uid://buvtgtcjmm2y2" path="res://Autoloads/Resources/Plays/Attack/Mind/dump.tres" id="13_3s4g7"]
+[ext_resource type="Resource" uid="uid://4k1sc4gshpvh" path="res://Autoloads/Resources/Plays/Attack/Body/nice_shot.tres" id="14_qmisf"]
+[ext_resource type="Resource" uid="uid://dekfo2slnoigr" path="res://Autoloads/Resources/Plays/Attack/Body/rocket.tres" id="15_qa4b4"]
+[ext_resource type="Resource" uid="uid://c8icw3pvu0swl" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="16_b2jmq"]
+[ext_resource type="Resource" uid="uid://bfiq4v8y2mdcg" path="res://Autoloads/Resources/Plays/Attack/Body/zinger.tres" id="17_g62ft"]
+[ext_resource type="Resource" uid="uid://b2j560i1uxo6y" path="res://Autoloads/Resources/Plays/Attack/Body/reach_shot.tres" id="18_k6p4e"]
+[ext_resource type="Resource" uid="uid://h4exsult8fgh" path="res://Autoloads/Resources/Plays/Attack/Mind/ricochet.tres" id="19_sgav2"]
+[ext_resource type="Resource" uid="uid://gfai1onwmtct" path="res://Autoloads/Resources/Plays/Attack/Mind/freezeray.tres" id="20_dhbm6"]
+[ext_resource type="Resource" uid="uid://bj7gp00f8xtup" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="21_wf0bg"]
+[ext_resource type="Resource" uid="uid://dgu38u1ul5b81" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="22_pwjdg"]
+[ext_resource type="Resource" uid="uid://du0svi4gto818" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="23_rmm6n"]
+[ext_resource type="Resource" uid="uid://7uoncfn55rjb" path="res://Autoloads/Resources/Plays/Attack/Mind/cornershot.tres" id="24_co58e"]
+[ext_resource type="Resource" uid="uid://brf1cqjq1gnxc" path="res://Autoloads/Resources/Plays/Volley/cover.tres" id="25_3qkh1"]
+[ext_resource type="Resource" uid="uid://dgsnxhjtejofp" path="res://Autoloads/Resources/Plays/Volley/dig.tres" id="26_uekfc"]
+[ext_resource type="Resource" uid="uid://b6c5yrxonrq5h" path="res://Autoloads/Resources/Plays/Volley/juggle.tres" id="27_7hmfv"]
+[ext_resource type="Resource" uid="uid://c624jkvl1417h" path="res://Autoloads/Resources/Plays/Volley/refresh.tres" id="28_imtsb"]
+[ext_resource type="Resource" uid="uid://dqokwb2l6gnsr" path="res://Autoloads/Resources/Plays/Support/telekinesis.tres" id="29_fcp7c"]
+[ext_resource type="Resource" uid="uid://du8cw84yk24oa" path="res://Autoloads/Resources/Plays/Support/teleport.tres" id="30_lu7ki"]
+[ext_resource type="Resource" uid="uid://tc6ag84sawpl" path="res://Autoloads/Resources/Plays/Support/tough_front.tres" id="31_kso4g"]
+[ext_resource type="Resource" uid="uid://c06r6f0oeahst" path="res://Autoloads/Resources/Plays/Support/whistle.tres" id="32_5uaxp"]
+[ext_resource type="Resource" uid="uid://ckdulp53r6xbu" path="res://Autoloads/Resources/Plays/Defense/frazzle.tres" id="33_ujq81"]
+[ext_resource type="Resource" uid="uid://dytuvbvg3oamq" path="res://Autoloads/Resources/Plays/Defense/shield.tres" id="34_710tx"]
+[ext_resource type="Resource" uid="uid://bcuhkrf7hdroh" path="res://Autoloads/Resources/Plays/Support/clear_field.tres" id="35_dq30q"]
+[ext_resource type="Resource" uid="uid://cy6gpqmeklx1o" path="res://Autoloads/Resources/Trait/deviant.tres" id="36_58747"]
+[ext_resource type="Texture2D" uid="uid://eoc0fx3v1bb3" path="res://Autoloads/Resources/Beastie/Varkabond/icon_varkabond.png" id="43_ws3nj"]
+
+[resource]
+script = ExtResource("3_wi8rf")
+my_plays = Array[ExtResource("1_006db")]([null, null, null])
+my_trait = ExtResource("2_12o50")
+specie_name = "Varkabond"
+beastiepedia_id = 49
+bar_color = Color(0.8392157, 0.5176471, 0.3529412, 1)
+body_base_pow = 60
+spirit_base_pow = 30
+mind_base_pow = 98
+body_base_def = 60
+spirit_base_def = 80
+mind_base_def = 100
+possible_plays = Array[ExtResource("1_006db")]([ExtResource("3_32e5i"), ExtResource("4_ma2wd"), ExtResource("5_e2aik"), ExtResource("6_5di5a"), ExtResource("7_ma1wo"), ExtResource("8_03gsu"), ExtResource("9_bd86c"), ExtResource("10_a4k5u"), ExtResource("11_khixa"), ExtResource("12_v5hlf"), ExtResource("13_3s4g7"), ExtResource("14_qmisf"), ExtResource("15_qa4b4"), ExtResource("16_b2jmq"), ExtResource("17_g62ft"), ExtResource("18_k6p4e"), ExtResource("19_sgav2"), ExtResource("20_dhbm6"), ExtResource("21_wf0bg"), ExtResource("22_pwjdg"), ExtResource("23_rmm6n"), ExtResource("24_co58e"), ExtResource("25_3qkh1"), ExtResource("26_uekfc"), ExtResource("27_7hmfv"), ExtResource("28_imtsb"), ExtResource("29_fcp7c"), ExtResource("30_lu7ki"), ExtResource("31_kso4g"), ExtResource("32_5uaxp"), ExtResource("33_ujq81"), ExtResource("34_710tx"), ExtResource("35_dq30q")])
+possible_traits = Array[ExtResource("2_mdakt")]([ExtResource("2_12o50"), ExtResource("36_58747")])
+sprites = Dictionary[int, Texture2D]({
+0: ExtResource("4_vj4f4"),
+1: ExtResource("5_12o50"),
+2: ExtResource("6_d141a"),
+3: ExtResource("7_v6qub"),
+4: ExtResource("8_6gjqd"),
+5: ExtResource("9_mkie2"),
+6: ExtResource("43_ws3nj")
+})
+ball_anchor_position_receive = Vector2(28, -105)
+ball_anchor_position_ready = Vector2(53, -100)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

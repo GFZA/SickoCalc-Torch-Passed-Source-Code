@@ -1,0 +1,65 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=35 format=3 uid="uid://v4ovawxq7553"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_knhx4"]
+[ext_resource type="Resource" uid="uid://dssnvskme6jw6" path="res://Autoloads/Resources/Trait/cheerleader.tres" id="2_fob6b"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_liucn"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_dsutf"]
+[ext_resource type="Resource" uid="uid://ct6ym4n4aja00" path="res://Autoloads/Resources/Plays/Support/cheer.tres" id="3_grfdo"]
+[ext_resource type="Resource" uid="uid://hox6njgubt5t" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="4_ah01r"]
+[ext_resource type="Texture2D" uid="uid://dy0vqicwrftel" path="res://Autoloads/Resources/Beastie/Cherrily/cherrily_idle.png" id="5_2is11"]
+[ext_resource type="Resource" uid="uid://b0ri66efuwqq" path="res://Autoloads/Resources/Plays/Support/rally.tres" id="5_44gg3"]
+[ext_resource type="Texture2D" uid="uid://bn5j6j34d6hpl" path="res://Autoloads/Resources/Beastie/Cherrily/cherrily_ready.png" id="6_8310w"]
+[ext_resource type="Resource" uid="uid://0qwdo32fcu5e" path="res://Autoloads/Resources/Plays/Volley/set.tres" id="6_csys5"]
+[ext_resource type="Resource" uid="uid://b2j560i1uxo6y" path="res://Autoloads/Resources/Plays/Attack/Body/reach_shot.tres" id="7_58ols"]
+[ext_resource type="Texture2D" uid="uid://cb1vbmxxch0kn" path="res://Autoloads/Resources/Beastie/Cherrily/cherrily_spike.png" id="7_jhyfy"]
+[ext_resource type="Texture2D" uid="uid://cyvaigkuvj8k1" path="res://Autoloads/Resources/Beastie/Cherrily/cherrily_volley.png" id="8_g084w"]
+[ext_resource type="Resource" uid="uid://i1od0b45fl8n" path="res://Autoloads/Resources/Plays/Support/chant.tres" id="8_j3gqt"]
+[ext_resource type="Resource" uid="uid://lklea5saxtts" path="res://Autoloads/Resources/Plays/Volley/updraft.tres" id="9_t3rco"]
+[ext_resource type="Texture2D" uid="uid://b48qmtca3vmjp" path="res://Autoloads/Resources/Beastie/Cherrily/cherrily_good.png" id="9_yavwb"]
+[ext_resource type="Resource" uid="uid://qhb7pc512xbi" path="res://Autoloads/Resources/Plays/Attack/Body/kneebender.tres" id="10_tw305"]
+[ext_resource type="Texture2D" uid="uid://cje8ctot2vto0" path="res://Autoloads/Resources/Beastie/Cherrily/cherrily_bad.png" id="10_xpmb3"]
+[ext_resource type="Texture2D" uid="uid://bflv0df4fj7k" path="res://Autoloads/Resources/Beastie/Cherrily/icon_cherrily.png" id="11_7ufjw"]
+[ext_resource type="Resource" uid="uid://cgtd1m3ceieid" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="11_rv46p"]
+[ext_resource type="Resource" uid="uid://dthwtmgr6183d" path="res://Autoloads/Resources/Plays/Defense/pump_up.tres" id="12_u733s"]
+[ext_resource type="Resource" uid="uid://cs7p2ql8pbv87" path="res://Autoloads/Resources/Plays/Support/dispel.tres" id="13_veg4w"]
+[ext_resource type="Resource" uid="uid://c36rtva2s671" path="res://Autoloads/Resources/Plays/Attack/Body/thunder.tres" id="14_tlclr"]
+[ext_resource type="Resource" uid="uid://cgp0jnuk0thpe" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="15_yq3ji"]
+[ext_resource type="Resource" uid="uid://ct7v52g87i87i" path="res://Autoloads/Resources/Plays/Volley/confident_pass.tres" id="16_87dne"]
+[ext_resource type="Resource" uid="uid://doi4ldly85wo3" path="res://Autoloads/Resources/Plays/Volley/excited_pass.tres" id="17_2xv53"]
+[ext_resource type="Resource" uid="uid://c4u3rhcdxfjxf" path="res://Autoloads/Resources/Plays/Volley/faith.tres" id="18_uipua"]
+[ext_resource type="Resource" uid="uid://b6c5yrxonrq5h" path="res://Autoloads/Resources/Plays/Volley/juggle.tres" id="19_1xpem"]
+[ext_resource type="Resource" uid="uid://ck2v1w5w6an2w" path="res://Autoloads/Resources/Plays/Support/drum.tres" id="20_8qu55"]
+[ext_resource type="Resource" uid="uid://chnjmscu87ehu" path="res://Autoloads/Resources/Plays/Support/introduce.tres" id="21_j08v7"]
+[ext_resource type="Resource" uid="uid://c06r6f0oeahst" path="res://Autoloads/Resources/Plays/Support/whistle.tres" id="22_it83s"]
+[ext_resource type="Resource" uid="uid://b0kuuquuv3nwx" path="res://Autoloads/Resources/Plays/Support/whoosh.tres" id="23_e5wmy"]
+[ext_resource type="Resource" uid="uid://dj6kdtlk5w6rq" path="res://Autoloads/Resources/Plays/Defense/high_five.tres" id="24_nq31g"]
+[ext_resource type="Resource" uid="uid://dytuvbvg3oamq" path="res://Autoloads/Resources/Plays/Defense/shield.tres" id="25_1iiqt"]
+
+[resource]
+script = ExtResource("3_dsutf")
+my_plays = Array[ExtResource("1_knhx4")]([null, null, null])
+my_trait = ExtResource("2_fob6b")
+specie_name = "Cherrily"
+beastiepedia_id = 36
+bar_color = Color(0.98039216, 0.60784316, 0.6313726, 1)
+body_base_pow = 65
+spirit_base_pow = 55
+mind_base_pow = 40
+body_base_def = 75
+spirit_base_def = 88
+mind_base_def = 57
+possible_plays = Array[ExtResource("1_knhx4")]([ExtResource("3_grfdo"), ExtResource("4_ah01r"), ExtResource("5_44gg3"), ExtResource("6_csys5"), ExtResource("7_58ols"), ExtResource("8_j3gqt"), ExtResource("9_t3rco"), ExtResource("10_tw305"), ExtResource("11_rv46p"), ExtResource("12_u733s"), ExtResource("13_veg4w"), ExtResource("14_tlclr"), ExtResource("15_yq3ji"), ExtResource("16_87dne"), ExtResource("17_2xv53"), ExtResource("18_uipua"), ExtResource("19_1xpem"), ExtResource("20_8qu55"), ExtResource("21_j08v7"), ExtResource("22_it83s"), ExtResource("23_e5wmy"), ExtResource("24_nq31g"), ExtResource("25_1iiqt")])
+possible_traits = Array[ExtResource("2_liucn")]([ExtResource("2_fob6b")])
+sprites = Dictionary[int, Texture2D]({
+0: ExtResource("5_2is11"),
+1: ExtResource("6_8310w"),
+2: ExtResource("7_jhyfy"),
+3: ExtResource("8_g084w"),
+4: ExtResource("9_yavwb"),
+5: ExtResource("10_xpmb3"),
+6: ExtResource("11_7ufjw")
+})
+y_offset = -100
+ball_anchor_position_receive = Vector2(40, -182)
+ball_anchor_position_ready = Vector2(24, -170)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://djoh3bqqfyh20"]
+
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_c2i5t"]
+
+[resource]
+script = ExtResource("1_c2i5t")
+name = "Defiant"
+description = "SPIRIT POW UP2 when any opponent gives them a DOWN1 BOOST"
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

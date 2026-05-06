@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://bj7gp00f8xtup"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_xmgee"]
+
+[resource]
+script = ExtResource("1_xmgee")
+name = "Stinger"
+base_pow = 65
+descrition = "ATTACK. Target feels 1 WEEPY (ignores BOOSTs)."
+type = 2
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

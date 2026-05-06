@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Defense" load_steps=2 format=3 uid="uid://by0ross5cpbjo"]
+
+[ext_resource type="Script" uid="uid://oq75vqpgnqa3" path="res://Autoloads/Resources/Plays/Defense/defense.gd" id="1_5hwdb"]
+
+[resource]
+script = ExtResource("1_5hwdb")
+name = "Menace"
+descrition = "Target feels +2 BLOCKED (POW x2/3). Feel 2 ANGRY (only attacks)."
+type = 5
+metadata/_custom_type_script = "uid://oq75vqpgnqa3"

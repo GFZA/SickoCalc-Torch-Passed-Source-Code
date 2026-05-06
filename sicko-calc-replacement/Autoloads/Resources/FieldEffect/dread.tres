@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FieldEffect" load_steps=2 format=3 uid="uid://bf7gxubuq3noe"]
+
+[ext_resource type="Script" uid="uid://dqfnpws7qgoa1" path="res://Autoloads/Resources/FieldEffect/field_effect.gd" id="1_orrkt"]
+
+[resource]
+script = ExtResource("1_orrkt")
+type = 1
+name = "DREAD"
+desc = "-8 STAMINA per turn. Prevents TOUGH, JAZZED, NOISY"
+metadata/_custom_type_script = "uid://dqfnpws7qgoa1"

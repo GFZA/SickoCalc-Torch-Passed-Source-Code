@@ -1,0 +1,66 @@
+[gd_scene load_steps=6 format=3 uid="uid://c0rfhniciamxq"]
+
+[ext_resource type="Script" uid="uid://kx18iqsqtt7h" path="res://Scene/SelectUIs/select_uis.gd" id="1_aln1h"]
+[ext_resource type="Texture2D" uid="uid://c3s4o3mxpxy1v" path="res://Autoloads/Misc/main_ui_bg_tile.png" id="1_s6xmw"]
+[ext_resource type="PackedScene" uid="uid://1p0s1gi4loyi" path="res://Scene/SelectUIs/beastie_select_ui.tscn" id="3_ttyll"]
+[ext_resource type="PackedScene" uid="uid://bw0b44puabbtj" path="res://Scene/SelectUIs/plays_select_ui.tscn" id="4_s6xmw"]
+[ext_resource type="PackedScene" uid="uid://c6c31v85g17a0" path="res://Scene/SelectUIs/trait_select_ui.tscn" id="5_aln1h"]
+
+[node name="SelectUIs" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_aln1h")
+
+[node name="BlackBG" type="ColorRect" parent="."]
+layout_mode = 2
+color = Color(0, 0, 0, 0.6862745)
+
+[node name="BGHiddenButton" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+focus_behavior_recursive = 1
+flat = true
+
+[node name="AlmostMainContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 300
+theme_override_constants/margin_top = 150
+theme_override_constants/margin_right = 300
+theme_override_constants/margin_bottom = 150
+
+[node name="BG" type="TextureRect" parent="AlmostMainContainer"]
+layout_mode = 2
+mouse_filter = 0
+texture = ExtResource("1_s6xmw")
+stretch_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="AlmostMainContainer/BG"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 50
+
+[node name="BeastieSelectUI" parent="AlmostMainContainer/BG/MarginContainer" instance=ExtResource("3_ttyll")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="PlaysSelectUI" parent="AlmostMainContainer/BG/MarginContainer" instance=ExtResource("4_s6xmw")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="TraitSelectUI" parent="AlmostMainContainer/BG/MarginContainer" instance=ExtResource("5_aln1h")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bfxkwvxuft00y"]
+
+[ext_resource type="Script" uid="uid://bhbgcnhe7ombg" path="res://Autoloads/Resources/Trait/hunter.gd" id="1_imk0h"]
+
+[resource]
+script = ExtResource("1_imk0h")
+name = "Hunter"
+description = "Does 1.5x damage when the target has just TAGGED IN"
+damage_dealt_mult = 1.5
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://c1fxya1i5x851"]
+
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_5fpoy"]
+
+[resource]
+script = ExtResource("1_5fpoy")
+name = "Overwork"
+description = "Attacks do 1.2x damage, but cost 15 STAMINA"
+damage_dealt_mult = 1.2
+always_activate = true
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

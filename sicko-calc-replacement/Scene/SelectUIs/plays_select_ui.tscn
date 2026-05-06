@@ -1,0 +1,180 @@
+[gd_scene load_steps=11 format=3 uid="uid://bw0b44puabbtj"]
+
+[ext_resource type="Script" uid="uid://c247numgn0d7b" path="res://Scene/SelectUIs/plays_select_ui.gd" id="1_pwxtq"]
+[ext_resource type="Theme" uid="uid://bkrlwg21fhprn" path="res://Autoloads/Resources/Themes/edit_button.tres" id="1_q4yal"]
+[ext_resource type="FontFile" uid="uid://ds0qrrbdvqa6n" path="res://Autoloads/Resources/Fonts/SF Sports Night.ttf" id="2_pwxtq"]
+[ext_resource type="Texture2D" uid="uid://dey8bdpdiw1p4" path="res://Autoloads/Icons/icon_wiped.png" id="4_sicgk"]
+[ext_resource type="Texture2D" uid="uid://dvh5rocl8fvmb" path="res://Autoloads/Icons/icon_body.png" id="5_iyctf"]
+[ext_resource type="Texture2D" uid="uid://cm5x35lnaq78y" path="res://Autoloads/Icons/icon_spirit.png" id="6_hjnyl"]
+[ext_resource type="Texture2D" uid="uid://cy0k4ndbr1eta" path="res://Autoloads/Icons/icon_mind.png" id="7_7unjb"]
+[ext_resource type="Texture2D" uid="uid://btfy08utpl3ck" path="res://Autoloads/Icons/icon_volley.png" id="8_dbq85"]
+[ext_resource type="Texture2D" uid="uid://cyft16csx6gkd" path="res://Autoloads/Icons/icon_support.png" id="9_f0af4"]
+[ext_resource type="Texture2D" uid="uid://pt6bokalb7mn" path="res://Autoloads/Icons/icon_defense.png" id="10_boxnf"]
+
+[node name="PlaysSelectUI" type="Control"]
+custom_minimum_size = Vector2(2800, 1625)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 2800.0
+offset_bottom = 1625.0
+script = ExtResource("1_pwxtq")
+
+[node name="MainContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+
+[node name="UpperContainer" type="HBoxContainer" parent="MainContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="SelectWhatLabel" type="Label" parent="MainContainer/UpperContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+theme = ExtResource("1_q4yal")
+theme_override_fonts/font = ExtResource("2_pwxtq")
+theme_override_font_sizes/font_size = 128
+text = "Select Play"
+
+[node name="SearchBar" type="LineEdit" parent="MainContainer/UpperContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_q4yal")
+theme_override_font_sizes/font_size = 104
+placeholder_text = "Search..."
+alignment = 1
+max_length = 25
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MainContainer"]
+custom_minimum_size = Vector2(2800, 1339)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="PlaysButtonContainer" type="GridContainer" parent="MainContainer/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+theme_override_constants/h_separation = 25
+theme_override_constants/v_separation = 25
+columns = 4
+
+[node name="BeastieLowerContainer" type="HBoxContainer" parent="MainContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="FilterContainer" type="HBoxContainer" parent="MainContainer/BeastieLowerContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_constants/separation = 16
+
+[node name="SortLabel" type="Label" parent="MainContainer/BeastieLowerContainer/FilterContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+theme = ExtResource("1_q4yal")
+theme_override_font_sizes/font_size = 92
+text = "Filter"
+
+[node name="NonePlaysFilterButton" type="Button" parent="MainContainer/BeastieLowerContainer/FilterContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(105, 105)
+layout_mode = 2
+size_flags_vertical = 4
+focus_behavior_recursive = 1
+theme = ExtResource("1_q4yal")
+theme_override_font_sizes/font_size = 92
+icon = ExtResource("4_sicgk")
+expand_icon = true
+
+[node name="BodyPlaysFilterButton" type="Button" parent="MainContainer/BeastieLowerContainer/FilterContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(105, 105)
+layout_mode = 2
+size_flags_vertical = 4
+focus_behavior_recursive = 1
+theme = ExtResource("1_q4yal")
+theme_override_font_sizes/font_size = 92
+icon = ExtResource("5_iyctf")
+expand_icon = true
+
+[node name="SpiritPlaysFilterButton" type="Button" parent="MainContainer/BeastieLowerContainer/FilterContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(105, 105)
+layout_mode = 2
+size_flags_vertical = 4
+focus_behavior_recursive = 1
+theme = ExtResource("1_q4yal")
+theme_override_font_sizes/font_size = 92
+icon = ExtResource("6_hjnyl")
+expand_icon = true
+
+[node name="MindPlaysFilterButton" type="Button" parent="MainContainer/BeastieLowerContainer/FilterContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(105, 105)
+layout_mode = 2
+size_flags_vertical = 4
+focus_behavior_recursive = 1
+theme = ExtResource("1_q4yal")
+theme_override_font_sizes/font_size = 92
+icon = ExtResource("7_7unjb")
+expand_icon = true
+
+[node name="VolleyPlaysFilterButton" type="Button" parent="MainContainer/BeastieLowerContainer/FilterContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(105, 105)
+layout_mode = 2
+size_flags_vertical = 4
+focus_behavior_recursive = 1
+theme = ExtResource("1_q4yal")
+theme_override_font_sizes/font_size = 92
+icon = ExtResource("8_dbq85")
+expand_icon = true
+
+[node name="SupportPlaysFilterButton" type="Button" parent="MainContainer/BeastieLowerContainer/FilterContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(105, 105)
+layout_mode = 2
+size_flags_vertical = 4
+focus_behavior_recursive = 1
+theme = ExtResource("1_q4yal")
+theme_override_font_sizes/font_size = 92
+icon = ExtResource("9_f0af4")
+expand_icon = true
+
+[node name="DefensePlaysFilterButton" type="Button" parent="MainContainer/BeastieLowerContainer/FilterContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(105, 105)
+layout_mode = 2
+size_flags_vertical = 4
+focus_behavior_recursive = 1
+theme = ExtResource("1_q4yal")
+theme_override_font_sizes/font_size = 92
+icon = ExtResource("10_boxnf")
+expand_icon = true
+
+[node name="AllowIllegalPlaysContainer" type="HBoxContainer" parent="MainContainer/BeastieLowerContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_constants/separation = 16
+
+[node name="AllowIllegalPlaysLabel" type="Label" parent="MainContainer/BeastieLowerContainer/AllowIllegalPlaysContainer"]
+layout_mode = 2
+size_flags_horizontal = 10
+theme = ExtResource("1_q4yal")
+theme_override_font_sizes/font_size = 92
+text = "Allows Illegal Plays"
+
+[node name="AllowIllegalPlaysCheckBox" type="CheckBox" parent="MainContainer/BeastieLowerContainer/AllowIllegalPlaysContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_behavior_recursive = 1
+theme = ExtResource("1_q4yal")
+icon_alignment = 1
+expand_icon = true

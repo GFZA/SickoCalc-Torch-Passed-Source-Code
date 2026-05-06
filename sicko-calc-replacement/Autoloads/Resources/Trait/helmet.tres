@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cndna6dik5aug"]
+
+[ext_resource type="Script" uid="uid://mwboau1l8n0o" path="res://Autoloads/Resources/Trait/helmet.gd" id="1_yoeo5"]
+
+[resource]
+script = ExtResource("1_yoeo5")
+name = "Helmet"
+description = "Damage from non-SIDEWAYS attacks reduced x¾"
+def_mult = 1.3
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://buvtgtcjmm2y2"]
+
+[ext_resource type="Script" uid="uid://ku1ly2i2vuhu" path="res://Autoloads/Resources/Plays/Attack/Mind/dump.gd" id="1_nusrp"]
+
+[resource]
+script = ExtResource("1_nusrp")
+name = "Dump"
+target = 2
+use_condition = 1
+base_pow = 60
+descrition = "Used from net. Targets front row. POW x1.5 if user has 2+ ACTIONs."
+need_to_be_manually_activated = true
+manual_condition_name = "Have Spare ACTIONs"
+type = 2
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

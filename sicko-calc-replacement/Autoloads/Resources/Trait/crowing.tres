@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://xd56b7iu3mlb"]
+
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_pghu4"]
+
+[resource]
+script = ExtResource("1_pghu4")
+name = "Crowing"
+description = "When an opponent is WIPED, this Beastie restores 50 STAMINA"
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bkfdw34ktudbx"]
+
+[ext_resource type="Script" uid="uid://c51bq0gs2iu7w" path="res://Autoloads/Resources/Trait/survivor.gd" id="1_t0ntk"]
+
+[resource]
+script = ExtResource("1_t0ntk")
+name = "Survivor"
+description = "DEF x1.3 while any ally is WIPED"
+def_mult = 1.3
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

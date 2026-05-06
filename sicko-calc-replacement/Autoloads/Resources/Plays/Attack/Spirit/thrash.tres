@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://btrfhbmniy38a"]
+
+[ext_resource type="Script" uid="uid://c4jdouov2jo51" path="res://Autoloads/Resources/Plays/Attack/Spirit/thrash.gd" id="1_k0hx3"]
+
+[resource]
+script = ExtResource("1_k0hx3")
+name = "Thrash"
+base_pow = 80
+descrition = "ATTACK. POW x1.5 if user feels JAZZED."
+type = 1
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c2ojjw3lmvows"]
+
+[ext_resource type="Script" uid="uid://bd6chqampl1jy" path="res://Autoloads/Resources/Plays/Attack/Body/muscle_memory.gd" id="1_uyvim"]
+
+[resource]
+script = ExtResource("1_uyvim")
+name = "Muscle Memory"
+base_pow = 80
+descrition = "ATTACK. POW x1.5 if used to serve."
+type = 0
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

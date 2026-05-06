@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://dx40fortxl3pq"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_3dalj"]
+
+[resource]
+script = ExtResource("1_3dalj")
+name = "Challenge"
+base_pow = 95
+descrition = "ATTACK. BODY SPIRIT POW UP1 to target."
+type = 1
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

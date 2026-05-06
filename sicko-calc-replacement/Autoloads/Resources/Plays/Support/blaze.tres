@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Support" load_steps=2 format=3 uid="uid://dkf6vgofkev6m"]
+
+[ext_resource type="Script" uid="uid://ckljlmv7ycuxl" path="res://Autoloads/Resources/Plays/Support/support.gd" id="1_6cjbd"]
+
+[resource]
+script = ExtResource("1_6cjbd")
+name = "Blaze"
+descrition = "SPIRIT POW UP2  to self. -34 STAMINA."
+metadata/_custom_type_script = "uid://ckljlmv7ycuxl"

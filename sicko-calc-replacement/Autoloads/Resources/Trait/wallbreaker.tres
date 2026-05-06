@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://5v5kswe3b1pl"]
+
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_2l6vp"]
+
+[resource]
+script = ExtResource("1_2l6vp")
+name = "Wallbreaker"
+description = "ALL_TYPE DEF DOWN1 to opponents that receive their attacks"
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

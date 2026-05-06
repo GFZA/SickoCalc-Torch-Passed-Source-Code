@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://f056ck8wnien"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_sim2u"]
+
+[resource]
+script = ExtResource("1_sim2u")
+name = "Mimic"
+base_pow = 0
+descrition = "The attack changes to the ally's first attack. POW x1.2."
+type = 0
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

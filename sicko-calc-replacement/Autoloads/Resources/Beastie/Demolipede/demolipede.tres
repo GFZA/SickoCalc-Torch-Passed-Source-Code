@@ -1,0 +1,64 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=35 format=3 uid="uid://35ei0kipj52m"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_vjhpb"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_ipj00"]
+[ext_resource type="Resource" uid="uid://bm47cji2a0kqh" path="res://Autoloads/Resources/Trait/watchtower.tres" id="2_mh4dv"]
+[ext_resource type="Resource" uid="uid://hox6njgubt5t" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="3_exssf"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_tr6kv"]
+[ext_resource type="Texture2D" uid="uid://vhj6m1lgd7hh" path="res://Autoloads/Resources/Beastie/Demolipede/demolipede_idle.png" id="4_2wh55"]
+[ext_resource type="Resource" uid="uid://dgsnxhjtejofp" path="res://Autoloads/Resources/Plays/Volley/dig.tres" id="4_20oqo"]
+[ext_resource type="Resource" uid="uid://5v5kswe3b1pl" path="res://Autoloads/Resources/Trait/wallbreaker.tres" id="4_c46k2"]
+[ext_resource type="Texture2D" uid="uid://d4dkx5w2mlsdj" path="res://Autoloads/Resources/Beastie/Demolipede/demolipede_ready.png" id="5_mh4dv"]
+[ext_resource type="Resource" uid="uid://bvn04obms7ax2" path="res://Autoloads/Resources/Plays/Attack/Body/sidewinder.tres" id="5_t0j7b"]
+[ext_resource type="Texture2D" uid="uid://c02gndncs71ph" path="res://Autoloads/Resources/Beastie/Demolipede/demolipede_spike.png" id="6_c46k2"]
+[ext_resource type="Resource" uid="uid://0dq577si4odv" path="res://Autoloads/Resources/Plays/Support/rumble.tres" id="6_dgjo6"]
+[ext_resource type="Texture2D" uid="uid://6rd2lmlm1i2g" path="res://Autoloads/Resources/Beastie/Demolipede/demolipede_volley.png" id="7_8exmo"]
+[ext_resource type="Resource" uid="uid://bvxjlydy1d38x" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="7_kp8jf"]
+[ext_resource type="Resource" uid="uid://bcuhkrf7hdroh" path="res://Autoloads/Resources/Plays/Support/clear_field.tres" id="8_d3837"]
+[ext_resource type="Texture2D" uid="uid://b6flvi6j1qc7x" path="res://Autoloads/Resources/Beastie/Demolipede/demolipede_good.png" id="8_i3dml"]
+[ext_resource type="Resource" uid="uid://dytuvbvg3oamq" path="res://Autoloads/Resources/Plays/Defense/shield.tres" id="9_fo5tr"]
+[ext_resource type="Texture2D" uid="uid://cnvrxrmahaqby" path="res://Autoloads/Resources/Beastie/Demolipede/demolipede_bad.png" id="9_ukcov"]
+[ext_resource type="Resource" uid="uid://v37ifueojf8k" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="10_i1bp0"]
+[ext_resource type="Resource" uid="uid://71t7u1j5yqvb" path="res://Autoloads/Resources/Plays/Support/mark.tres" id="11_wrdnn"]
+[ext_resource type="Resource" uid="uid://7nsxd3vbne52" path="res://Autoloads/Resources/Plays/Support/exhaust.tres" id="12_tt7pk"]
+[ext_resource type="Resource" uid="uid://dgerhmmgjkxn2" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="13_u3exc"]
+[ext_resource type="Resource" uid="uid://cxogqm0367lrk" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="14_cfuwo"]
+[ext_resource type="Resource" uid="uid://dekfo2slnoigr" path="res://Autoloads/Resources/Plays/Attack/Body/rocket.tres" id="15_5krhg"]
+[ext_resource type="Resource" uid="uid://c8icw3pvu0swl" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="16_224cx"]
+[ext_resource type="Resource" uid="uid://ciplmlyeefqm" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="17_gw4qo"]
+[ext_resource type="Resource" uid="uid://y3o0tssi0oeu" path="res://Autoloads/Resources/Plays/Volley/forward_pass.tres" id="18_h2c0x"]
+[ext_resource type="Resource" uid="uid://ccjlfthgm3ed2" path="res://Autoloads/Resources/Plays/Support/jeer.tres" id="19_j5a15"]
+[ext_resource type="Resource" uid="uid://cd40pldvtmjj4" path="res://Autoloads/Resources/Plays/Support/lock_target.tres" id="20_x0u2d"]
+[ext_resource type="Resource" uid="uid://ckdulp53r6xbu" path="res://Autoloads/Resources/Plays/Defense/frazzle.tres" id="22_dtww0"]
+[ext_resource type="Resource" uid="uid://cv6tk1l5vkxo4" path="res://Autoloads/Resources/Plays/Defense/heart_harden.tres" id="23_gca4k"]
+[ext_resource type="Resource" uid="uid://bhtfclbbbqqfq" path="res://Autoloads/Resources/Plays/Defense/mind_read.tres" id="24_l5xi3"]
+[ext_resource type="Resource" uid="uid://vrgoi8jwdlq1" path="res://Autoloads/Resources/Plays/Defense/patience.tres" id="25_xql7a"]
+[ext_resource type="Texture2D" uid="uid://lcw15gyrncmx" path="res://Autoloads/Resources/Beastie/Demolipede/icon_demolipede.png" id="35_eo6o0"]
+
+[resource]
+script = ExtResource("3_tr6kv")
+my_plays = Array[ExtResource("1_vjhpb")]([null, null, null])
+my_trait = ExtResource("2_mh4dv")
+specie_name = "Demolipede"
+beastiepedia_id = 79
+bar_color = Color(0.9372549, 0.58431375, 0, 1)
+body_base_pow = 88
+spirit_base_pow = 38
+mind_base_pow = 48
+body_base_def = 88
+spirit_base_def = 58
+mind_base_def = 98
+possible_plays = Array[ExtResource("1_vjhpb")]([ExtResource("3_exssf"), ExtResource("4_20oqo"), ExtResource("5_t0j7b"), ExtResource("6_dgjo6"), ExtResource("7_kp8jf"), ExtResource("8_d3837"), ExtResource("9_fo5tr"), ExtResource("10_i1bp0"), ExtResource("11_wrdnn"), ExtResource("12_tt7pk"), ExtResource("13_u3exc"), ExtResource("14_cfuwo"), ExtResource("15_5krhg"), ExtResource("16_224cx"), ExtResource("17_gw4qo"), ExtResource("18_h2c0x"), ExtResource("19_j5a15"), ExtResource("20_x0u2d"), ExtResource("22_dtww0"), ExtResource("23_gca4k"), ExtResource("24_l5xi3"), ExtResource("25_xql7a")])
+possible_traits = Array[ExtResource("2_ipj00")]([ExtResource("2_mh4dv"), ExtResource("4_c46k2")])
+sprites = Dictionary[int, Texture2D]({
+0: ExtResource("4_2wh55"),
+1: ExtResource("5_mh4dv"),
+2: ExtResource("6_c46k2"),
+3: ExtResource("7_8exmo"),
+4: ExtResource("8_i3dml"),
+5: ExtResource("9_ukcov"),
+6: ExtResource("35_eo6o0")
+})
+ball_anchor_position_receive = Vector2(-58, -142)
+ball_anchor_position_ready = Vector2(55, -157)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

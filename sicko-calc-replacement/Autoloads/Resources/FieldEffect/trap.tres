@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="FieldEffect" load_steps=2 format=3 uid="uid://dutdmjmfn3or8"]
+
+[ext_resource type="Script" uid="uid://dqfnpws7qgoa1" path="res://Autoloads/Resources/FieldEffect/field_effect.gd" id="1_bedb6"]
+
+[resource]
+script = ExtResource("1_bedb6")
+type = 3
+name = "TRAP"
+max_stack = 4
+desc = "Tag-ins lose 8 STAMINA per trap"
+metadata/_custom_type_script = "uid://dqfnpws7qgoa1"

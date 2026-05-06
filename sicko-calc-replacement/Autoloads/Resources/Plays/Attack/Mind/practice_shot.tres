@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://chm7cp4ewi5bp"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_tpgxe"]
+
+[resource]
+script = ExtResource("1_tpgxe")
+name = "Practice Shot"
+base_pow = 40
+descrition = "A MIND ATTACK."
+type = 2
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

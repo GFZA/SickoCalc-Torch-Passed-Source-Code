@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Defense" load_steps=2 format=3 uid="uid://dytuvbvg3oamq"]
+
+[ext_resource type="Script" uid="uid://oq75vqpgnqa3" path="res://Autoloads/Resources/Plays/Defense/defense.gd" id="1_op2vs"]
+
+[resource]
+script = ExtResource("1_op2vs")
+name = "Shield"
+descrition = "Feel 1 TOUGH (¼ damage) & 3 ANGRY (only attacks)."
+type = 5
+metadata/_custom_type_script = "uid://oq75vqpgnqa3"

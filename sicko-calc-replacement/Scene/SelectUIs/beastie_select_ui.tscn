@@ -1,0 +1,136 @@
+[gd_scene load_steps=4 format=3 uid="uid://1p0s1gi4loyi"]
+
+[ext_resource type="Theme" uid="uid://bkrlwg21fhprn" path="res://Autoloads/Resources/Themes/edit_button.tres" id="1_mdc6b"]
+[ext_resource type="Script" uid="uid://dxbj1qagvql1o" path="res://Scene/SelectUIs/beastie_select_ui.gd" id="1_uuw86"]
+[ext_resource type="FontFile" uid="uid://ds0qrrbdvqa6n" path="res://Autoloads/Resources/Fonts/SF Sports Night.ttf" id="2_uuw86"]
+
+[node name="BeastieSelectUI" type="Control"]
+custom_minimum_size = Vector2(2800, 1625)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 2800.0
+offset_bottom = 1625.0
+script = ExtResource("1_uuw86")
+
+[node name="MainContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+
+[node name="UpperContainer" type="HBoxContainer" parent="MainContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="SelectWhatLabel" type="Label" parent="MainContainer/UpperContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+theme = ExtResource("1_mdc6b")
+theme_override_fonts/font = ExtResource("2_uuw86")
+theme_override_font_sizes/font_size = 128
+text = "Select Beastie"
+
+[node name="SearchBar" type="LineEdit" parent="MainContainer/UpperContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_mdc6b")
+theme_override_font_sizes/font_size = 104
+placeholder_text = "Search..."
+alignment = 1
+max_length = 25
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MainContainer"]
+custom_minimum_size = Vector2(2800, 1339)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="BeastieButtonContainer" type="GridContainer" parent="MainContainer/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+theme_override_constants/h_separation = 25
+theme_override_constants/v_separation = 25
+columns = 4
+
+[node name="BeastieLowerContainer" type="HBoxContainer" parent="MainContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="SortContainer" type="HBoxContainer" parent="MainContainer/BeastieLowerContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 2
+theme_override_constants/separation = 16
+
+[node name="SortLabel" type="Label" parent="MainContainer/BeastieLowerContainer/SortContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+theme = ExtResource("1_mdc6b")
+theme_override_font_sizes/font_size = 92
+text = "Sort By "
+
+[node name="SortByNameButton" type="Button" parent="MainContainer/BeastieLowerContainer/SortContainer"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_vertical = 4
+theme = ExtResource("1_mdc6b")
+theme_override_font_sizes/font_size = 92
+text = "Name"
+
+[node name="SortByNumberButton" type="Button" parent="MainContainer/BeastieLowerContainer/SortContainer"]
+custom_minimum_size = Vector2(320, 0)
+layout_mode = 2
+size_flags_vertical = 4
+theme = ExtResource("1_mdc6b")
+theme_override_font_sizes/font_size = 92
+text = "Number"
+
+[node name="ShowNameContainer" type="HBoxContainer" parent="MainContainer/BeastieLowerContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_constants/separation = 16
+
+[node name="ShowNameLabel" type="Label" parent="MainContainer/BeastieLowerContainer/ShowNameContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+theme = ExtResource("1_mdc6b")
+theme_override_font_sizes/font_size = 92
+text = "Show Name"
+
+[node name="ShowNameCheckBox" type="CheckBox" parent="MainContainer/BeastieLowerContainer/ShowNameContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_behavior_recursive = 1
+theme = ExtResource("1_mdc6b")
+button_pressed = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="OnlyFullMorphsContainer" type="HBoxContainer" parent="MainContainer/BeastieLowerContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_constants/separation = 16
+
+[node name="OnlyFullMorphsLabel" type="Label" parent="MainContainer/BeastieLowerContainer/OnlyFullMorphsContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+theme = ExtResource("1_mdc6b")
+theme_override_font_sizes/font_size = 92
+text = "Does Not Metamorph"
+
+[node name="OnlyFullMorphsLabelCheckBox" type="CheckBox" parent="MainContainer/BeastieLowerContainer/OnlyFullMorphsContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_behavior_recursive = 1
+theme = ExtResource("1_mdc6b")
+button_pressed = true
+icon_alignment = 1
+expand_icon = true

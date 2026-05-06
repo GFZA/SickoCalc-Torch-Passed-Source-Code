@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Defense" load_steps=2 format=3 uid="uid://cpuds8hsc5dr1"]
+
+[ext_resource type="Script" uid="uid://oq75vqpgnqa3" path="res://Autoloads/Resources/Plays/Defense/defense.gd" id="1_pbhi5"]
+
+[resource]
+script = ExtResource("1_pbhi5")
+name = "Dramatic Exit"
+descrition = "Benched ally feels 1 NOISY. TAG OUT. Active team feels +1 ANGRY."
+type = 5
+metadata/_custom_type_script = "uid://oq75vqpgnqa3"

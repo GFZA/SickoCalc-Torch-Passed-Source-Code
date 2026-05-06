@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://fgjqfmtn5bfl"]
+
+[ext_resource type="Script" uid="uid://dchqjiwb22rfv" path="res://Scene/SelectUIs/trait_button.gd" id="2_3nyhx"]
+[ext_resource type="Theme" uid="uid://bkrlwg21fhprn" path="res://Autoloads/Resources/Themes/edit_button.tres" id="2_hfeci"]
+[ext_resource type="FontFile" uid="uid://cvfib27cf5q88" path="res://Autoloads/Resources/Fonts/Go Banana.ttf" id="2_pohsm"]
+
+[node name="TraitButton" type="Button"]
+custom_minimum_size = Vector2(650, 320)
+offset_right = 8.0
+offset_bottom = 8.0
+focus_behavior_recursive = 1
+theme = ExtResource("2_hfeci")
+script = ExtResource("2_3nyhx")
+
+[node name="TraitNameLabel" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 100.0
+grow_horizontal = 2
+focus_behavior_recursive = 2
+theme = ExtResource("2_hfeci")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 76
+text = "Trait"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TraitDescLabel" type="RichTextLabel" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 78.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_behavior_recursive = 2
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_constants/paragraph_separation = 0
+theme_override_fonts/normal_font = ExtResource("2_pohsm")
+theme_override_font_sizes/normal_font_size = 54
+bbcode_enabled = true
+text = "Likes to ball"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1

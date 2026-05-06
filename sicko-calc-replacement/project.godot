@@ -11,8 +11,21 @@ config_version=5
 [application]
 
 config/name="SickoCalc Replacement"
+run/main_scene="uid://6tifqer1os1t"
 config/features=PackedStringArray("4.5", "GL Compatibility")
+boot_splash/show_image=false
 config/icon="res://icon.svg"
+
+[autoload]
+
+Global="*res://Autoloads/global.gd"
+DamageCalculator="*res://Autoloads/damage_calculator.gd"
+
+[display]
+
+window/size/viewport_width=3600
+window/size/viewport_height=2025
+window/stretch/mode="canvas_items"
 
 [rendering]
 

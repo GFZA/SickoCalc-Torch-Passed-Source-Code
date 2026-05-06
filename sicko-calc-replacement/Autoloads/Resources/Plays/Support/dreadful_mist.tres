@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Support" load_steps=2 format=3 uid="uid://pwfmxe4epkih"]
+
+[ext_resource type="Script" uid="uid://ckljlmv7ycuxl" path="res://Autoloads/Resources/Plays/Support/support.gd" id="1_npv8f"]
+
+[resource]
+script = ExtResource("1_npv8f")
+name = "Dreadful Mist"
+descrition = "Entire field fills with DREAD (No good feelings). SHIFTs self to front row."
+metadata/_custom_type_script = "uid://ckljlmv7ycuxl"

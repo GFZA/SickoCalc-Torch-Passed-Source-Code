@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://dgml7fdyxpvr7"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_nxivo"]
+
+[resource]
+script = ExtResource("1_nxivo")
+name = "Cold Calculation"
+base_pow = 60
+descrition = "ATTACK. SPIRIT DEF UP1 to self."
+type = 2
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

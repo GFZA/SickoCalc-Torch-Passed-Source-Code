@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Support" load_steps=2 format=3 uid="uid://ct6ym4n4aja00"]
+
+[ext_resource type="Script" uid="uid://ckljlmv7ycuxl" path="res://Autoloads/Resources/Plays/Support/support.gd" id="1_rfar6"]
+
+[resource]
+script = ExtResource("1_rfar6")
+name = "Cheer"
+descrition = "ALL_TYPE POW UP1 to ally."
+metadata/_custom_type_script = "uid://ckljlmv7ycuxl"

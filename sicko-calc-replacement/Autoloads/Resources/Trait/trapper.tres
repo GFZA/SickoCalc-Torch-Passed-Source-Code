@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://dsnexptlnp1n7"]
+
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_crfpy"]
+
+[resource]
+script = ExtResource("1_crfpy")
+name = "Trapper"
+description = "Sets +1 TRAP on the opponent field each turn"
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

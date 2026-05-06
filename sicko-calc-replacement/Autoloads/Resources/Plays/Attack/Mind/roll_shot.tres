@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://dodbnlxn2lj0d"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_8utp1"]
+
+[resource]
+script = ExtResource("1_8utp1")
+name = "Roll Shot"
+target = 3
+use_condition = 1
+base_pow = 90
+descrition = "Only used from net. Auto-targets back row. Ignores BLOCKED."
+type = 2
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Support" load_steps=2 format=3 uid="uid://0dq577si4odv"]
+
+[ext_resource type="Script" uid="uid://ckljlmv7ycuxl" path="res://Autoloads/Resources/Plays/Support/support.gd" id="1_mmev6"]
+
+[resource]
+script = ExtResource("1_mmev6")
+name = "Rumble"
+descrition = "Opponent field gets 2 QUAKE (Volleys deal 25 damage)."
+metadata/_custom_type_script = "uid://ckljlmv7ycuxl"

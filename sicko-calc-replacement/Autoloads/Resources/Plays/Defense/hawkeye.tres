@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Defense" load_steps=2 format=3 uid="uid://ymdvl6wdoqws"]
+
+[ext_resource type="Script" uid="uid://oq75vqpgnqa3" path="res://Autoloads/Resources/Plays/Defense/defense.gd" id="1_dkmdv"]
+
+[resource]
+script = ExtResource("1_dkmdv")
+name = "Hawkeye"
+descrition = "Target feels +1 BLOCKED (POW x2/3). -10 STAMINA."
+type = 5
+metadata/_custom_type_script = "uid://oq75vqpgnqa3"

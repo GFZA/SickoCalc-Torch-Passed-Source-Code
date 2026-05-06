@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://del20bsclfn47"]
+
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_ffiul"]
+
+[resource]
+script = ExtResource("1_ffiul")
+name = "Superorganism"
+description = "Restores instantly from 0 STAMINA and just feels 2 SHOOK"
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://cf6ruiqil6yt3"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_8k8e0"]
+
+[resource]
+script = ExtResource("1_8k8e0")
+name = "Shove"
+use_condition = 1
+base_pow = 75
+descrition = "Only used from net. SHIFTs target to back row after hitting."
+type = 0
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

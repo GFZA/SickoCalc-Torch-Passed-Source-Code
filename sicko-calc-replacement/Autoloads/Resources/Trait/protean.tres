@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://cfp4l5l5j0k60"]
+
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_3eg5x"]
+
+[resource]
+script = ExtResource("1_3eg5x")
+name = "Protean"
+description = "POW or DEF UP2 BOOSTS to BODY, SPIRIT or MIND give +1 UP to the ALL_TYPE other 2"
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

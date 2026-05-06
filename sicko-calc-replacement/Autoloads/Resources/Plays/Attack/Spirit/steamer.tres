@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://d0quf2d6sukkq"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_fychc"]
+
+[resource]
+script = ExtResource("1_fychc")
+name = "Steamer"
+base_pow = 10
+descrition = "ATTACK. Target feels +2 SWEATY (losing stamina)."
+type = 1
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

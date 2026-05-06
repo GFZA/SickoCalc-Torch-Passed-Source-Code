@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://dgerhmmgjkxn2"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_v0xch"]
+
+[resource]
+script = ExtResource("1_v0xch")
+name = "Overpower"
+base_pow = 110
+descrition = "BODY POW DOWN1 to self. BODY DEF DOWN1 to self."
+type = 0
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

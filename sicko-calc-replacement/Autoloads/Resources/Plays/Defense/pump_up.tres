@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Defense" load_steps=2 format=3 uid="uid://dthwtmgr6183d"]
+
+[ext_resource type="Script" uid="uid://oq75vqpgnqa3" path="res://Autoloads/Resources/Plays/Defense/defense.gd" id="1_xfdlp"]
+
+[resource]
+script = ExtResource("1_xfdlp")
+name = "Pump Up"
+descrition = "BODY POW UP1 to self. SHIFTs self to front row."
+type = 5
+metadata/_custom_type_script = "uid://oq75vqpgnqa3"

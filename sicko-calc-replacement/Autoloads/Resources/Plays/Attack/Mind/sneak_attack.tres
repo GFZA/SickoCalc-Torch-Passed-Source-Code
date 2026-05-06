@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://8wi04v1m7juh"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_d6u2m"]
+
+[resource]
+script = ExtResource("1_d6u2m")
+name = "Sneak Attack"
+base_pow = 75
+descrition = "ATTACK. SHIFTs self to front row after hitting."
+type = 2
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

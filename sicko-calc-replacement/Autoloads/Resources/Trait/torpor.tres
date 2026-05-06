@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://xhyv614uv12e"]
+
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_ncp28"]
+
+[resource]
+script = ExtResource("1_ncp28")
+name = "Torpor"
+description = "ALL_TYPE POW UP3 when they use Free Ball"
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

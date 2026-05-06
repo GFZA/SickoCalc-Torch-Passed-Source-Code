@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://nxdyq36jyolv"]
+
+[ext_resource type="Script" uid="uid://335kuphkv8j" path="res://Autoloads/Resources/Trait/armored.gd" id="1_4n47c"]
+
+[resource]
+script = ExtResource("1_4n47c")
+name = "Armored"
+description = "DEF x1.5 when STAMINA is filled"
+def_mult = 1.5
+need_to_be_manually_activated = null
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

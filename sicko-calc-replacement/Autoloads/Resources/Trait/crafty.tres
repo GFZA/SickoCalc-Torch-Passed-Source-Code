@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://c7hhbipfdgw4y"]
+
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_gnv0c"]
+
+[resource]
+script = ExtResource("1_gnv0c")
+name = "Crafty"
+description = "Additional effects from this Beastie's attacks trigger twice"
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://pksg0p6acd8f"]
+
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_ya4oy"]
+
+[resource]
+script = ExtResource("1_ya4oy")
+name = "Slippery"
+description = "This Beastie's damage is x3/4. Adjacent allies receive attacks in their place."
+damage_dealt_mult = 0.75
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

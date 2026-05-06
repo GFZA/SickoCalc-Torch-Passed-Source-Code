@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://gpx5prmyyhwg"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_ct4al"]
+
+[resource]
+script = ExtResource("1_ct4al")
+name = "Zigzag"
+base_pow = 50
+descrition = "ATTACK. POW +50% for each volley between allies."
+type = 2
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

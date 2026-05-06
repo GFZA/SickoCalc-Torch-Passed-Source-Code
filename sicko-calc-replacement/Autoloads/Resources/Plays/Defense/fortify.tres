@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Support" load_steps=2 format=3 uid="uid://dc18vrinfolv4"]
+
+[ext_resource type="Script" uid="uid://ckljlmv7ycuxl" path="res://Autoloads/Resources/Plays/Support/support.gd" id="1_ty01k"]
+
+[resource]
+script = ExtResource("1_ty01k")
+name = "Fortify"
+descrition = "UP2 to the lowest DEF on active team."
+type = 5
+metadata/_custom_type_script = "uid://ckljlmv7ycuxl"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://blbmt8c6ixadi"]
+
+[ext_resource type="Script" uid="uid://3vx7u5yqfh1b" path="res://Autoloads/Resources/Plays/Attack/Spirit/counter.gd" id="1_f0jj3"]
+
+[resource]
+script = ExtResource("1_f0jj3")
+name = "Counter"
+base_pow = 75
+descrition = "ATTACK. POW x1.5 if user received the ball."
+need_to_be_manually_activated = true
+manual_condition_name = "Received Ball"
+type = 1
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

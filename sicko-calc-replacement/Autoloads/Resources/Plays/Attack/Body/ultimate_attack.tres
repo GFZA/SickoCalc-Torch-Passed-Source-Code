@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://pidj27lbe45q"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_v7266"]
+
+[resource]
+script = ExtResource("1_v7266")
+name = "Ultimate Attack"
+base_pow = 220
+descrition = "ATTACK. Requires 3 ACTIONS."
+type = 0
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

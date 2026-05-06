@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Defense" load_steps=2 format=3 uid="uid://dqgatu0qsofqj"]
+
+[ext_resource type="Script" uid="uid://oq75vqpgnqa3" path="res://Autoloads/Resources/Plays/Defense/defense.gd" id="1_bdvgf"]
+
+[resource]
+script = ExtResource("1_bdvgf")
+name = "Distraction"
+descrition = "Only used from net. Feel 1 NOISY (attracts attacks). ALL_TYPE POW DOWN1 to target."
+type = 5
+metadata/_custom_type_script = "uid://oq75vqpgnqa3"

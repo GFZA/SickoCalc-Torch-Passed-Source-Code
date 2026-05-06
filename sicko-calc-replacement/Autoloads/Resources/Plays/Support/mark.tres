@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Support" load_steps=2 format=3 uid="uid://71t7u1j5yqvb"]
+
+[ext_resource type="Script" uid="uid://ckljlmv7ycuxl" path="res://Autoloads/Resources/Plays/Support/support.gd" id="1_kjs38"]
+
+[resource]
+script = ExtResource("1_kjs38")
+name = "Mark"
+descrition = "Target feels +1 BLOCKED (POW x2/3)."
+metadata/_custom_type_script = "uid://ckljlmv7ycuxl"

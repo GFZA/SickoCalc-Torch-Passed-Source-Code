@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://bdd70o1kybaux"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_rfckh"]
+
+[resource]
+script = ExtResource("1_rfckh")
+name = "Hyperspike"
+base_pow = 130
+descrition = "Must charge up for 3 turns. Feel 3 TIRED (only basic actions)."
+type = 0
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

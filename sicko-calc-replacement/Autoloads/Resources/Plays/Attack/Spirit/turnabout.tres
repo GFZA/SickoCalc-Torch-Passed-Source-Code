@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c6bnkalnd6qdf"]
+
+[ext_resource type="Script" uid="uid://bpr043ro7ughp" path="res://Autoloads/Resources/Plays/Attack/Spirit/turnabout.gd" id="1_mrr8b"]
+
+[resource]
+script = ExtResource("1_mrr8b")
+name = "Turnabout"
+base_pow = 55
+descrition = "ATTACK. POW x2 when STAMINA is below 34."
+type = 1
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://djx3ran55r2wo"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_1aqtw"]
+
+[resource]
+script = ExtResource("1_1aqtw")
+name = "Grinder"
+base_pow = 0
+descrition = "Damage equals 50% of target's remaining STAMINA."
+type = 0
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

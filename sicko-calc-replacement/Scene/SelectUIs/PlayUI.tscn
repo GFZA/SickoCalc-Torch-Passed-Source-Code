@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c01w1s15h8gk1"]
+
+[ext_resource type="Script" uid="uid://dto4h06suyvdd" path="res://Scene/SelectUIs/plays_ui.gd" id="1_nnbtg"]
+
+[node name="PlaysUI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_nnbtg")

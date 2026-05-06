@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://dtp7xhemyx02l"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_478jd"]
+
+[resource]
+script = ExtResource("1_478jd")
+name = "Swarm"
+base_pow = 40
+descrition = "ATTACK. Before contact, SHIFTs active team to front row."
+type = 1
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dtkos0xt4rmf"]
+
+[ext_resource type="Script" uid="uid://b1d8kgv3wmec8" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.gd" id="1_aasd6"]
+
+[resource]
+script = ExtResource("1_aasd6")
+name = "Toppler"
+base_pow = 50
+descrition = "ATTACK. POW +100% for each 1 up arrow boostBOOST on target."
+type = 1
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0rfhniciamxq"]
+
+[ext_resource type="Script" uid="uid://kx18iqsqtt7h" path="res://Scenes/Main/SelectUIs/select_uis.gd" id="1_aln1h"]
+[ext_resource type="Texture2D" uid="uid://i036kmeuy3sl" path="res://Scenes/Main/main_ui/main_ui_bg_tile.png" id="1_s6xmw"]
+[ext_resource type="PackedScene" uid="uid://1p0s1gi4loyi" path="res://Scenes/Main/SelectUIs/beastie_select_ui.tscn" id="3_ttyll"]
+
+[node name="SelectUIs" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_aln1h")
+
+[node name="BlackBG" type="ColorRect" parent="."]
+layout_mode = 2
+color = Color(0, 0, 0, 0.49019608)
+
+[node name="AlmostMainContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 300
+theme_override_constants/margin_top = 150
+theme_override_constants/margin_right = 300
+theme_override_constants/margin_bottom = 150
+
+[node name="BG" type="TextureRect" parent="AlmostMainContainer"]
+layout_mode = 2
+mouse_filter = 0
+texture = ExtResource("1_s6xmw")
+stretch_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="AlmostMainContainer/BG"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 50
+
+[node name="BeastieSelectUI" parent="AlmostMainContainer/BG/MarginContainer" instance=ExtResource("3_ttyll")]
+layout_mode = 2

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c7blujvv2w3vu"]
+
+[ext_resource type="Script" uid="uid://mjv232yj1hh1" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.gd" id="1_47avm"]
+
+[resource]
+script = ExtResource("1_47avm")
+name = "Nerve Strike"
+base_pow = 55
+descrition = "ATTACK. POW x2 if target has a bad FEELING."
+type = 2
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

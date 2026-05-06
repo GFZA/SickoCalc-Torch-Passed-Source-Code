@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://di2g5vvqsnbgi"]
+
+[ext_resource type="Script" uid="uid://co6lyifyps1li" path="res://Autoloads/Resources/Trait/avenger.gd" id="1_kcwnw"]
+
+[resource]
+script = ExtResource("1_kcwnw")
+name = "Avenger"
+description = "Attacks do 1.2x damage while any ally is WIPED"
+damage_dealt_mult = 1.2
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

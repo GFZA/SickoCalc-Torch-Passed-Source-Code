@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://do762o537gfm8"]
+
+[ext_resource type="Script" uid="uid://cux0mu5evxqut" path="res://Autoloads/Resources/Trait/absorption.gd" id="1_sam20"]
+
+[resource]
+script = ExtResource("1_sam20")
+name = "Absorption"
+description = "Has 1.5x MIND DEF"
+def_mult = 1.5
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

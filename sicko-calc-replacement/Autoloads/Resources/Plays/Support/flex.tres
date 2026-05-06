@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Support" load_steps=2 format=3 uid="uid://cqf3rk1ccvj3u"]
+
+[ext_resource type="Script" uid="uid://ckljlmv7ycuxl" path="res://Autoloads/Resources/Plays/Support/support.gd" id="1_4v3rf"]
+
+[resource]
+script = ExtResource("1_4v3rf")
+name = "Flex"
+descrition = "BODY POW UP1 to self.
+ BODY DEF UP1  to self."
+metadata/_custom_type_script = "uid://ckljlmv7ycuxl"

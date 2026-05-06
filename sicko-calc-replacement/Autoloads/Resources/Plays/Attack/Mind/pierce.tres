@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cr27dbuxid5hy"]
+
+[ext_resource type="Script" uid="uid://blhmpw6ica3wr" path="res://Autoloads/Resources/Plays/Attack/Mind/pierce.gd" id="1_4356s"]
+
+[resource]
+script = ExtResource("1_4356s")
+name = "Pierce"
+base_pow = 60
+descrition = "ATTACK. POW +25% for each 1 down arrow boostBOOST on target."
+type = 2
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

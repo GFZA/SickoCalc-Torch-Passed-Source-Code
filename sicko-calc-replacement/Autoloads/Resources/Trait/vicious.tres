@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bviqgfc5c66a1"]
+
+[ext_resource type="Script" uid="uid://b3b273e7xkvuo" path="res://Autoloads/Resources/Trait/vicious.gd" id="1_umxvg"]
+
+[resource]
+script = ExtResource("1_umxvg")
+name = "Vicious"
+description = "Attacks always do at least 30 damage"
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

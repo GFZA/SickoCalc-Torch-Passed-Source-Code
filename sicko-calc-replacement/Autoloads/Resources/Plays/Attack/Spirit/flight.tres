@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://d0e8yqfg1s0jw"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_if15y"]
+
+[resource]
+script = ExtResource("1_if15y")
+name = "Flight"
+base_pow = 70
+descrition = "Targets straight ahead. TAG OUT with benched ally."
+type = 1
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

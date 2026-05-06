@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Support" load_steps=2 format=3 uid="uid://b670mi6ha0r4h"]
+
+[ext_resource type="Script" uid="uid://ckljlmv7ycuxl" path="res://Autoloads/Resources/Plays/Support/support.gd" id="1_3vq3n"]
+
+[resource]
+script = ExtResource("1_3vq3n")
+name = "Chill Out"
+descrition = "Clears UP1 DOWN1 BOOSTs from target. SPIRIT POW DOWN2 to target."
+metadata/_custom_type_script = "uid://ckljlmv7ycuxl"

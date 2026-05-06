@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://du0svi4gto818"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_xhd8g"]
+
+[resource]
+script = ExtResource("1_xhd8g")
+name = "Rattle"
+base_pow = 50
+descrition = "ATTACK. Target feels 2 STRESSED (becomes TIRED)."
+type = 2
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

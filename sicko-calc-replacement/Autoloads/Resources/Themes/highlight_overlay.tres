@@ -1,0 +1,19 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://v25nab4h4vdp"]
+
+[ext_resource type="FontFile" uid="uid://cvfib27cf5q88" path="res://Autoloads/Resources/Fonts/Go Banana.ttf" id="1_qr61y"]
+[ext_resource type="StyleBox" uid="uid://dw1dvbm31ux8x" path="res://Autoloads/Resources/Themes/hover_stylebox.tres" id="2_8r4d6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pxnh7"]
+bg_color = Color(0, 0, 0, 0.78431374)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xjywc"]
+
+[resource]
+Button/colors/font_color = Color(1, 1, 1, 0)
+Button/colors/font_focus_color = Color(1, 1, 1, 1)
+Button/colors/font_hover_color = Color(1, 1, 1, 1)
+Button/font_sizes/font_size = 64
+Button/fonts/font = ExtResource("1_qr61y")
+Button/styles/focus = ExtResource("2_8r4d6")
+Button/styles/hover = SubResource("StyleBoxFlat_pxnh7")
+Button/styles/normal = SubResource("StyleBoxEmpty_xjywc")

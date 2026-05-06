@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://ihjite14xg1t"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_ru15c"]
+
+[resource]
+script = ExtResource("1_ru15c")
+name = "Stomp"
+base_pow = 85
+descrition = "Feel 1 ANGRY (only attacks). If ally field has RHYTHM: BODY POW UP1 to self."
+type = 0
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

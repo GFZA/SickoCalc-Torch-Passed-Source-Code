@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FieldEffect" load_steps=2 format=3 uid="uid://bc7x1iitvc3gt"]
+
+[ext_resource type="Script" uid="uid://dqfnpws7qgoa1" path="res://Autoloads/Resources/FieldEffect/field_effect.gd" id="1_3b14s"]
+
+[resource]
+script = ExtResource("1_3b14s")
+type = 4
+name = "QUAKE"
+desc = "Volleys deal 25 damage"
+metadata/_custom_type_script = "uid://dqfnpws7qgoa1"

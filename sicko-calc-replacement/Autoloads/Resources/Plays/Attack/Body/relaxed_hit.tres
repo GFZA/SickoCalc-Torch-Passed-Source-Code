@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://cgp0jnuk0thpe"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_6cbjj"]
+
+[resource]
+script = ExtResource("1_6cbjj")
+name = "Relaxed Hit"
+base_pow = 50
+descrition = "ATTACK. HEALs self +20."
+type = 0
+metadata/_custom_type_script = "uid://bc63soeia1eb1"
