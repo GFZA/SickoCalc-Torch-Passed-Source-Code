@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnn1686te4wf8"]
+
+[ext_resource type="PackedScene" uid="uid://1arcfnc6wacj" path="res://Scene/BeastieColumn/beastie_row.tscn" id="1_cswjd"]
+[ext_resource type="Script" uid="uid://gfslx1e2j8by" path="res://Scene/BeastieColumn/beastie_column.gd" id="1_nvjsa"]
+
+[node name="BeastieColumn" type="MarginContainer"]
+custom_minimum_size = Vector2(1350, 2025)
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 100
+script = ExtResource("1_nvjsa")
+
+[node name="BGRec" type="ColorRect" parent="."]
+layout_mode = 2
+color = Color(1.2995303e-06, 0.3544763, 0.20812172, 1)
+metadata/_edit_lock_ = true
+
+[node name="MainContainer" type="VBoxContainer" parent="BGRec"]
+layout_mode = 0
+offset_right = 1150.0
+offset_bottom = 1825.0
+theme_override_constants/separation = 0
+
+[node name="BeastieRow" parent="BGRec/MainContainer" instance=ExtResource("1_cswjd")]
+unique_name_in_owner = true
+layout_mode = 2

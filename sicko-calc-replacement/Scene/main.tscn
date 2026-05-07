@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://6tifqer1os1t"]
+[gd_scene load_steps=4 format=3 uid="uid://6tifqer1os1t"]
 
 [ext_resource type="PackedScene" uid="uid://c0rfhniciamxq" path="res://Scene/SelectUIs/select_uis.tscn" id="1_f6udf"]
+[ext_resource type="Script" uid="uid://b5jcl1uu04k63" path="res://Scene/main.gd" id="1_r34rm"]
+[ext_resource type="PackedScene" uid="uid://cnn1686te4wf8" path="res://Scene/BeastieColumn/beastie_column.tscn" id="1_sblpm"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -9,6 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_r34rm")
 metadata/_edit_lock_ = true
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -21,6 +24,28 @@ grow_vertical = 2
 color = Color(0, 0, 0, 1)
 metadata/_edit_lock_ = true
 
+[node name="MainContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="LeftBeastieColumn" parent="MainContainer" instance=ExtResource("1_sblpm")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="RightBeastieColumn" parent="MainContainer" instance=ExtResource("1_sblpm")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 10
+side = 1
+
 [node name="SelectUIs" parent="." instance=ExtResource("1_f6udf")]
+unique_name_in_owner = true
 visible = false
 layout_mode = 1

@@ -2,13 +2,12 @@
 class_name TraitSelectUI
 extends Control
 
-signal trait_selected(new_trait : Trait, side : Global.MySide, team_pos : TeamController.TeamPosition)
+signal trait_selected(new_trait : Trait, side : Global.MySide)
 
 const TRAIT_BUTTON : PackedScene = preload("uid://fgjqfmtn5bfl")
 
 var beastie : Beastie = null
 var side : Global.MySide = Global.MySide.LEFT
-#var team_pos : TeamController.TeamPosition = TeamController.TeamPosition.FIELD_1
 
 var all_trait_data_sorted : Array[Trait] = []
 

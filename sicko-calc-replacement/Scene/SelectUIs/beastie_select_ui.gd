@@ -2,7 +2,7 @@
 class_name BeastieSelectUI
 extends Control
 
-signal beastie_selected(beastie : Beastie, side : Global.MySide, team_pos : TeamController.TeamPosition)
+signal beastie_selected(beastie : Beastie, side : Global.MySide)
 
 const BEASTIE_BUTTON : PackedScene = preload("uid://dpfyarbgjk6l4")
 
@@ -25,9 +25,6 @@ var current_search_string : String = "" :
 		update_grid()
 
 var side : Global.MySide = Global.MySide.LEFT
-var team_pos : TeamController.TeamPosition = TeamController.TeamPosition.FIELD_1
-
-var remove_mode : bool = false
 
 @onready var beastie_button_container: GridContainer = %BeastieButtonContainer
 @onready var search_bar: LineEdit = %SearchBar
@@ -102,13 +99,12 @@ func update_grid() -> void:
 
 func _on_beastie_button_beastie_selected(beastie : Beastie) -> void:
 	if not beastie:
-		beastie_selected.emit(null, side, team_pos)
+		beastie_selected.emit(null, side)
 	else:
-		beastie_selected.emit(beastie.duplicate(true), side, team_pos)
+		beastie_selected.emit(beastie.duplicate(true), side)
 
 
 func reset() -> void:
 	side = Global.MySide.LEFT
-	team_pos = TeamController.TeamPosition.FIELD_1
 	current_search_string = ""
 	search_bar.text = ""

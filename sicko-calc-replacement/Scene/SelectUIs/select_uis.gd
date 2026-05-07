@@ -1,11 +1,9 @@
 class_name SelectUIs
 extends MarginContainer
 
-signal beastie_selected(beastie : Beastie, side : Global.MySide, team_pos : TeamController.TeamPosition)
-signal plays_selected(plays : Plays, slot_index : int, side : Global.MySide, team_pos : TeamController.TeamPosition)
-signal trait_selected(new_trait : Trait, side : Global.MySide, team_pos : TeamController.TeamPosition)
-
-#var board : Board = null # Set by Main on ready
+signal beastie_selected(beastie : Beastie, side : Global.MySide)
+signal plays_selected(plays : Plays, slot_index : int, side : Global.MySide)
+signal trait_selected(new_trait : Trait, side : Global.MySide)
 
 @onready var bg_hidden_button: Button = %BGHiddenButton
 @onready var beastie_select_ui: BeastieSelectUI = %BeastieSelectUI
@@ -25,19 +23,18 @@ func _input(event: InputEvent) -> void:
 		reset_and_hide()
 
 
-func _on_beastie_selected(beastie : Beastie, side : Global.MySide, team_pos : TeamController.TeamPosition) -> void:
-	#board.board_manager.add_beastie_to_scene(beastie, side, team_pos)
-	beastie_selected.emit(beastie, side, team_pos)
+func _on_beastie_selected(beastie : Beastie, side : Global.MySide) -> void:
+	beastie_selected.emit(beastie, side)
 	reset_and_hide()
 
 
-func _on_plays_selected(plays : Plays, slot_index : int, side : Global.MySide, team_pos : TeamController.TeamPosition) -> void:
-	plays_selected.emit(plays, slot_index, side, team_pos)
+func _on_plays_selected(plays : Plays, slot_index : int, side : Global.MySide) -> void:
+	plays_selected.emit(plays, slot_index, side)
 	reset_and_hide()
 
 
-func _on_trait_selected(new_trait : Trait, side : Global.MySide, team_pos : TeamController.TeamPosition) -> void:
-	trait_selected.emit(new_trait, side, team_pos)
+func _on_trait_selected(new_trait : Trait, side : Global.MySide) -> void:
+	trait_selected.emit(new_trait, side)
 	reset_and_hide()
 
 
@@ -57,29 +54,26 @@ func hide_all_ui() -> void:
 	trait_select_ui.hide()
 
 
-func show_beastie_select_ui(side : Global.MySide, team_pos : TeamController.TeamPosition) -> void:
+func show_beastie_select_ui(side : Global.MySide) -> void:
 	show()
 	hide_all_ui()
 	beastie_select_ui.show()
 	beastie_select_ui.side = side
-	beastie_select_ui.team_pos = team_pos
 	beastie_select_ui.update_grid()
 
 
-func show_plays_select_ui(beastie : Beastie, slot_index : int, side : Global.MySide, team_pos : TeamController.TeamPosition) -> void:
+func show_plays_select_ui(beastie : Beastie, slot_index : int, side : Global.MySide) -> void:
 	show()
 	hide_all_ui()
 	plays_select_ui.show()
 	plays_select_ui.beastie = beastie
 	plays_select_ui.side = side
-	plays_select_ui.team_pos = team_pos
 	plays_select_ui.slot_index = slot_index
 
 
-func show_trait_select_ui(beastie : Beastie, side : Global.MySide, team_pos : TeamController.TeamPosition) -> void:
+func show_trait_select_ui(beastie : Beastie, side : Global.MySide) -> void:
 	show()
 	hide_all_ui()
 	trait_select_ui.show()
 	trait_select_ui.beastie = beastie
 	trait_select_ui.side = side
-	trait_select_ui.team_pos = team_pos

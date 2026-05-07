@@ -1,0 +1,149 @@
+[gd_scene load_steps=4 format=3 uid="uid://1arcfnc6wacj"]
+
+[ext_resource type="Script" uid="uid://qsm1bgrq1n67" path="res://Scene/BeastieColumn/beastie_row.gd" id="1_cnr5y"]
+[ext_resource type="Theme" uid="uid://bkrlwg21fhprn" path="res://Autoloads/Resources/Themes/edit_button.tres" id="2_cnr5y"]
+[ext_resource type="Texture2D" uid="uid://l3eh6masrurv" path="res://Autoloads/Resources/Beastie/evil_axolati.png" id="3_cnr5y"]
+
+[node name="BeastieRow" type="MarginContainer"]
+custom_minimum_size = Vector2(1150, 500)
+script = ExtResource("1_cnr5y")
+
+[node name="MainContainer" type="HBoxContainer" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 500)
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="StatsMainContainer" type="VBoxContainer" parent="MainContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 24
+
+[node name="StatsMarginContainer" type="MarginContainer" parent="MainContainer/StatsMainContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 125
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 125
+
+[node name="StatsContainer" type="VBoxContainer" parent="MainContainer/StatsMainContainer/StatsMarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="StatsLabel" type="Label" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("2_cnr5y")
+theme_override_font_sizes/font_size = 72
+text = "POW"
+horizontal_alignment = 2
+
+[node name="BodyBG" type="ColorRect" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+color = Color(1, 1, 0, 1)
+
+[node name="BodyLabelMargin" type="MarginContainer" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer/BodyBG"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_right = 25
+
+[node name="BodyStatsLabel" type="Label" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer/BodyBG/BodyLabelMargin"]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("2_cnr5y")
+text = "0"
+horizontal_alignment = 2
+
+[node name="SpiritBG" type="ColorRect" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+color = Color(1, 0, 1, 1)
+
+[node name="SpiritLabelMargin" type="MarginContainer" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer/SpiritBG"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_right = 25
+
+[node name="SpiritStatsLabel" type="Label" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer/SpiritBG/SpiritLabelMargin"]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("2_cnr5y")
+text = "0"
+horizontal_alignment = 2
+
+[node name="MindBG" type="ColorRect" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+color = Color(0, 1, 1, 1)
+
+[node name="MindLabelMargin" type="MarginContainer" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer/MindBG"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_right = 25
+
+[node name="MindStatsLabel" type="Label" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer/MindBG/MindLabelMargin"]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("2_cnr5y")
+text = "0"
+horizontal_alignment = 2
+
+[node name="ButtonMarginContainer" type="MarginContainer" parent="MainContainer/StatsMainContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_right = 50
+
+[node name="SelectBeastieButton" type="Button" parent="MainContainer/StatsMainContainer/ButtonMarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+theme = ExtResource("2_cnr5y")
+text = "Select"
+
+[node name="BeastieDisplayContainer" type="VBoxContainer" parent="MainContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="NameLabel" type="Label" parent="MainContainer/BeastieDisplayContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("2_cnr5y")
+theme_override_font_sizes/font_size = 88
+text = "Unselected"
+horizontal_alignment = 1
+
+[node name="IconMarginContainer" type="MarginContainer" parent="MainContainer/BeastieDisplayContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_right = 25
+
+[node name="IconRect" type="TextureRect" parent="MainContainer/BeastieDisplayContainer/IconMarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("3_cnr5y")
+expand_mode = 1
+stretch_mode = 5
+flip_h = true
