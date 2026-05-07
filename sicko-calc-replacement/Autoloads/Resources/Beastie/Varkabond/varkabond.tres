@@ -1,13 +1,14 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=26 format=3 uid="uid://0khtr7aaaq4h"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=27 format=3 uid="uid://bp3tuc5b5rbly"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_006db"]
 [ext_resource type="Resource" uid="uid://f7rnuwppo7e4" path="res://Autoloads/Resources/Trait/unpredictable.tres" id="2_12o50"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_mdakt"]
 [ext_resource type="Resource" uid="uid://off5g43shtql" path="res://Autoloads/Resources/Plays/Attack/Mind/twist.tres" id="3_32e5i"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_wi8rf"]
-[ext_resource type="Texture2D" uid="uid://c83qdtt7fthrf" path="res://Autoloads/Resources/Beastie/Varkabond/varkabond_ready.png" id="5_12o50"]
+[ext_resource type="Texture2D" uid="uid://bjhu6d03jijlm" path="res://Autoloads/Resources/Beastie/Varkabond/varkabond_idle.png" id="4_vj4f4"]
+[ext_resource type="Texture2D" uid="uid://q1kua7fo66yf" path="res://Autoloads/Resources/Beastie/Varkabond/varkabond_ready.png" id="5_12o50"]
 [ext_resource type="Resource" uid="uid://cea0bb2qhn278" path="res://Autoloads/Resources/Plays/Attack/Mind/trickspin.tres" id="5_e2aik"]
-[ext_resource type="Texture2D" uid="uid://dt2r881klgkms" path="res://Autoloads/Resources/Beastie/Varkabond/varkabond_spike.png" id="6_d141a"]
+[ext_resource type="Texture2D" uid="uid://ddouw5ip7cnji" path="res://Autoloads/Resources/Beastie/Varkabond/varkabond_spike.png" id="6_d141a"]
 [ext_resource type="Resource" uid="uid://bvn04obms7ax2" path="res://Autoloads/Resources/Plays/Attack/Body/sidewinder.tres" id="7_ma1wo"]
 [ext_resource type="Resource" uid="uid://bijgrhbki1aqo" path="res://Autoloads/Resources/Plays/Attack/Mind/slice.tres" id="9_bd86c"]
 [ext_resource type="Resource" uid="uid://gpx5prmyyhwg" path="res://Autoloads/Resources/Plays/Attack/Mind/zigzag.tres" id="11_khixa"]
@@ -42,6 +43,7 @@ mind_base_def = 100
 possible_plays = Array[ExtResource("1_006db")]([ExtResource("3_32e5i"), ExtResource("5_e2aik"), ExtResource("7_ma1wo"), ExtResource("9_bd86c"), ExtResource("11_khixa"), ExtResource("13_3s4g7"), ExtResource("14_qmisf"), ExtResource("15_qa4b4"), ExtResource("16_b2jmq"), ExtResource("17_g62ft"), ExtResource("18_k6p4e"), ExtResource("19_sgav2"), ExtResource("20_dhbm6"), ExtResource("21_wf0bg"), ExtResource("22_pwjdg"), ExtResource("23_rmm6n"), ExtResource("24_co58e")])
 possible_traits = Array[ExtResource("2_mdakt")]([ExtResource("2_12o50"), ExtResource("36_58747")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("4_vj4f4"),
 1: ExtResource("5_12o50"),
 2: ExtResource("6_d141a"),
 6: ExtResource("43_ws3nj")

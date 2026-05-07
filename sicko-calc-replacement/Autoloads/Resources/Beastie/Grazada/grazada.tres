@@ -1,13 +1,14 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=17 format=3 uid="uid://c6n1lk4r6s6q3"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://br8ydf6rjufy5"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_ncnhv"]
 [ext_resource type="Resource" uid="uid://dvtuxsee70dv" path="res://Autoloads/Resources/Trait/scary_face.tres" id="2_dv7o2"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_fjxcg"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_yr6yw"]
 [ext_resource type="Resource" uid="uid://duynnadxw4hkg" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="4_4y4pn"]
+[ext_resource type="Texture2D" uid="uid://dpn3lwkbqmj3a" path="res://Autoloads/Resources/Beastie/Grazada/grazada_idle.png" id="5_q2apb"]
 [ext_resource type="Resource" uid="uid://bqwii245fpl4a" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="5_ygyas"]
-[ext_resource type="Texture2D" uid="uid://bj421xkhvykmp" path="res://Autoloads/Resources/Beastie/Grazada/grazada_ready.png" id="6_318r4"]
-[ext_resource type="Texture2D" uid="uid://bfnlas0ucfrlv" path="res://Autoloads/Resources/Beastie/Grazada/grazada_spike.png" id="7_dra27"]
+[ext_resource type="Texture2D" uid="uid://b3p2428macpp" path="res://Autoloads/Resources/Beastie/Grazada/grazada_ready.png" id="6_318r4"]
+[ext_resource type="Texture2D" uid="uid://dxifh83saqd8e" path="res://Autoloads/Resources/Beastie/Grazada/grazada_spike.png" id="7_dra27"]
 [ext_resource type="Resource" uid="uid://bcr7xnr07v278" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="8_4ev4b"]
 [ext_resource type="Resource" uid="uid://bjh3q3eclur2i" path="res://Autoloads/Resources/Plays/Attack/Spirit/thriller.tres" id="11_61frs"]
 [ext_resource type="Resource" uid="uid://bkck3t5a2wv3f" path="res://Autoloads/Resources/Plays/Attack/Spirit/scream.tres" id="13_omhyr"]
@@ -33,6 +34,7 @@ mind_base_def = 65
 possible_plays = Array[ExtResource("1_ncnhv")]([ExtResource("4_4y4pn"), ExtResource("5_ygyas"), ExtResource("8_4ev4b"), ExtResource("11_61frs"), ExtResource("13_omhyr"), ExtResource("15_dgt1o"), ExtResource("16_av8uv"), ExtResource("18_d348e"), ExtResource("19_0gqad")])
 possible_traits = Array[ExtResource("2_fjxcg")]([ExtResource("2_dv7o2")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("5_q2apb"),
 1: ExtResource("6_318r4"),
 2: ExtResource("7_dra27"),
 6: ExtResource("42_165s2")

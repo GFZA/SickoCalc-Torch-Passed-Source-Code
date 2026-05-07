@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=23 format=3 uid="uid://vha1rpd2o2o1"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=24 format=3 uid="uid://4uivu6675b3y"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_gkqgm"]
 [ext_resource type="Resource" uid="uid://bvgjvdprgnnln" path="res://Autoloads/Resources/Trait/hardy.tres" id="2_5vbmt"]
@@ -8,8 +8,8 @@
 [ext_resource type="Resource" uid="uid://dtkos0xt4rmf" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="5_ci1fx"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="5_yq7pv"]
 [ext_resource type="Resource" uid="uid://fysaq1o88o1v" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="7_bmy1o"]
-[ext_resource type="Texture2D" uid="uid://dk4moqop0c0wo" path="res://Autoloads/Resources/Beastie/Opposur/opposur_ready.png" id="7_rqca6"]
-[ext_resource type="Texture2D" uid="uid://b1a6jr15rg4bk" path="res://Autoloads/Resources/Beastie/Opposur/opposur_spike.png" id="8_mx2ir"]
+[ext_resource type="Texture2D" uid="uid://bjijo43mux6ah" path="res://Autoloads/Resources/Beastie/Opposur/opposur_ready.png" id="7_rqca6"]
+[ext_resource type="Texture2D" uid="uid://o3i1q5smbgmo" path="res://Autoloads/Resources/Beastie/Opposur/opposur_spike.png" id="8_mx2ir"]
 [ext_resource type="Resource" uid="uid://v37ifueojf8k" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="10_o8iij"]
 [ext_resource type="Resource" uid="uid://dx40fortxl3pq" path="res://Autoloads/Resources/Plays/Attack/Spirit/challenge.tres" id="12_k62tl"]
 [ext_resource type="Texture2D" uid="uid://c0m6dv8kh4yxe" path="res://Autoloads/Resources/Beastie/Opposur/icon_opposur.png" id="12_oei4v"]
@@ -20,6 +20,7 @@
 [ext_resource type="Resource" uid="uid://cgtd1m3ceieid" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="18_co4ob"]
 [ext_resource type="Resource" uid="uid://blbmt8c6ixadi" path="res://Autoloads/Resources/Plays/Attack/Spirit/counter.tres" id="19_vsriy"]
 [ext_resource type="Resource" uid="uid://bsekeiw2v13qd" path="res://Autoloads/Resources/Plays/Attack/Spirit/relentless.tres" id="20_ibxcy"]
+[ext_resource type="Texture2D" uid="uid://ygfem5xtuxxv" path="res://Autoloads/Resources/Beastie/Opposur/opposur_idle.png" id="20_oei4v"]
 [ext_resource type="Resource" uid="uid://bcr7xnr07v278" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="21_7rsla"]
 [ext_resource type="Resource" uid="uid://bd6b2mst43mrw" path="res://Autoloads/Resources/Plays/Attack/Spirit/comeback.tres" id="22_du75b"]
 
@@ -39,6 +40,7 @@ mind_base_def = 60
 possible_plays = Array[ExtResource("1_gkqgm")]([ExtResource("3_ttahv"), ExtResource("5_ci1fx"), ExtResource("7_bmy1o"), ExtResource("10_o8iij"), ExtResource("12_k62tl"), ExtResource("14_4cvwu"), ExtResource("15_w8k8g"), ExtResource("16_4ns6b"), ExtResource("17_f32yc"), ExtResource("18_co4ob"), ExtResource("19_vsriy"), ExtResource("20_ibxcy"), ExtResource("21_7rsla"), ExtResource("22_du75b")])
 possible_traits = Array[ExtResource("3_22yyu")]([ExtResource("2_5vbmt"), ExtResource("4_jhvid")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("20_oei4v"),
 1: ExtResource("7_rqca6"),
 2: ExtResource("8_mx2ir"),
 6: ExtResource("12_oei4v")

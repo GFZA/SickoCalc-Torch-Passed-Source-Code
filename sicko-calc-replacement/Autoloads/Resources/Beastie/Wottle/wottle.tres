@@ -1,13 +1,14 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=14 format=3 uid="uid://c77nujtvy7ff8"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://cvb8nc32b3jq0"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_d144n"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_30rnj"]
 [ext_resource type="Resource" uid="uid://crw7mdnqf8a36" path="res://Autoloads/Resources/Trait/shy.tres" id="2_ukmd4"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_pwot0"]
 [ext_resource type="Resource" uid="uid://duynnadxw4hkg" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_wcjvg"]
+[ext_resource type="Texture2D" uid="uid://di63yx5vabq15" path="res://Autoloads/Resources/Beastie/Wottle/wottle_idle.png" id="5_fewm5"]
 [ext_resource type="Resource" uid="uid://bqwii245fpl4a" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="6_0rubi"]
-[ext_resource type="Texture2D" uid="uid://bnwggl4sapmws" path="res://Autoloads/Resources/Beastie/Wottle/wottle_ready.png" id="6_kg0wl"]
-[ext_resource type="Texture2D" uid="uid://dqv6ss0rpaxus" path="res://Autoloads/Resources/Beastie/Wottle/wottle_spike.png" id="7_varlf"]
+[ext_resource type="Texture2D" uid="uid://birgoeiam4iba" path="res://Autoloads/Resources/Beastie/Wottle/wottle_ready.png" id="6_kg0wl"]
+[ext_resource type="Texture2D" uid="uid://cgvctlsgopsny" path="res://Autoloads/Resources/Beastie/Wottle/wottle_spike.png" id="7_varlf"]
 [ext_resource type="Resource" uid="uid://bc2yee43ynmgr" path="res://Autoloads/Resources/Plays/Attack/Spirit/tornadoball.tres" id="9_83ea1"]
 [ext_resource type="Texture2D" uid="uid://crxsv6d1dtfpr" path="res://Autoloads/Resources/Beastie/Wottle/icon_wottle.png" id="11_62ocn"]
 [ext_resource type="Resource" uid="uid://d8rp5pq7qf2i" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="12_5vun3"]
@@ -30,6 +31,7 @@ mind_base_def = 112
 possible_plays = Array[ExtResource("1_d144n")]([ExtResource("3_wcjvg"), ExtResource("6_0rubi"), ExtResource("9_83ea1"), ExtResource("12_5vun3"), ExtResource("14_k43qa"), ExtResource("15_pa32x")])
 possible_traits = Array[ExtResource("2_30rnj")]([ExtResource("2_ukmd4")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("5_fewm5"),
 1: ExtResource("6_kg0wl"),
 2: ExtResource("7_varlf"),
 6: ExtResource("11_62ocn")

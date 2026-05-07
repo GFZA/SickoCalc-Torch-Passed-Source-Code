@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=26 format=3 uid="uid://bs2ojhpir3dim"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=27 format=3 uid="uid://dx4t2j3aeknw"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_br6ue"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_0a61l"]
@@ -7,9 +7,10 @@
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_8rhki"]
 [ext_resource type="Resource" uid="uid://bfxkwvxuft00y" path="res://Autoloads/Resources/Trait/hunter.tres" id="4_vppuf"]
 [ext_resource type="Resource" uid="uid://df7h4h5ahjpy3" path="res://Autoloads/Resources/Plays/Attack/Body/finisher.tres" id="6_ia0gm"]
-[ext_resource type="Texture2D" uid="uid://bqo1mdj0dbr1q" path="res://Autoloads/Resources/Beastie/Crawlurk/crawlurk_ready.png" id="7_8uwdi"]
+[ext_resource type="Texture2D" uid="uid://c8s6qqlrgf61o" path="res://Autoloads/Resources/Beastie/Crawlurk/crawlurk_idle.png" id="6_uvdj1"]
+[ext_resource type="Texture2D" uid="uid://c3bqptjn7kni4" path="res://Autoloads/Resources/Beastie/Crawlurk/crawlurk_ready.png" id="7_8uwdi"]
 [ext_resource type="Resource" uid="uid://cf02nhbjoqjgf" path="res://Autoloads/Resources/Plays/Attack/Mind/pressure.tres" id="7_j80pd"]
-[ext_resource type="Texture2D" uid="uid://co71b0kvqchya" path="res://Autoloads/Resources/Beastie/Crawlurk/crawlurk_spike.png" id="8_3d3wf"]
+[ext_resource type="Texture2D" uid="uid://d10ns810j8k11" path="res://Autoloads/Resources/Beastie/Crawlurk/crawlurk_spike.png" id="8_3d3wf"]
 [ext_resource type="Resource" uid="uid://8wi04v1m7juh" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="9_8xyms"]
 [ext_resource type="Texture2D" uid="uid://d2o225lptsg5x" path="res://Autoloads/Resources/Beastie/Crawlurk/icon_crawlurk.png" id="9_ldqr0"]
 [ext_resource type="Resource" uid="uid://c2ojjw3lmvows" path="res://Autoloads/Resources/Plays/Attack/Body/muscle_memory.tres" id="10_4bobh"]
@@ -42,6 +43,7 @@ mind_base_def = 60
 possible_plays = Array[ExtResource("1_br6ue")]([ExtResource("3_4vg8h"), ExtResource("6_ia0gm"), ExtResource("7_j80pd"), ExtResource("9_8xyms"), ExtResource("10_4bobh"), ExtResource("12_sbq0j"), ExtResource("13_l1sv0"), ExtResource("15_e4uui"), ExtResource("16_vj6pb"), ExtResource("17_8yyne"), ExtResource("18_ssijx"), ExtResource("19_d3yal"), ExtResource("20_4kd8h"), ExtResource("21_ht60k"), ExtResource("22_80b0s"), ExtResource("23_fwgns"), ExtResource("32_1lb3x")])
 possible_traits = Array[ExtResource("2_0a61l")]([ExtResource("2_b41mp"), ExtResource("4_vppuf")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("6_uvdj1"),
 1: ExtResource("7_8uwdi"),
 2: ExtResource("8_3d3wf"),
 6: ExtResource("9_ldqr0")

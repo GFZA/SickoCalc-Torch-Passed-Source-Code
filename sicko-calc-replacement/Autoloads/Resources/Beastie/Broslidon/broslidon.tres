@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://rfybkcxvnyfy"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=20 format=3 uid="uid://byk4slpql4xmo"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_tadrq"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_oul1c"]
@@ -6,9 +6,10 @@
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_3iwip"]
 [ext_resource type="Resource" uid="uid://hox6njgubt5t" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="3_siwng"]
 [ext_resource type="Resource" uid="uid://crahkxm7p7pe7" path="res://Autoloads/Resources/Trait/miracle_play.tres" id="4_budgc"]
+[ext_resource type="Texture2D" uid="uid://cx33lypt63kq3" path="res://Autoloads/Resources/Beastie/Broslidon/broslidon_idle.png" id="6_rib3k"]
 [ext_resource type="Resource" uid="uid://cgp0jnuk0thpe" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="7_7aofm"]
-[ext_resource type="Texture2D" uid="uid://b4whyjdw7kt5d" path="res://Autoloads/Resources/Beastie/Broslidon/broslidon_ready.png" id="7_ss5r3"]
-[ext_resource type="Texture2D" uid="uid://du62qm30rdkj2" path="res://Autoloads/Resources/Beastie/Broslidon/broslidon_spike.png" id="8_k4kay"]
+[ext_resource type="Texture2D" uid="uid://dcxwxpvl1tj0g" path="res://Autoloads/Resources/Beastie/Broslidon/broslidon_ready.png" id="7_ss5r3"]
+[ext_resource type="Texture2D" uid="uid://c6y2rtbfppg33" path="res://Autoloads/Resources/Beastie/Broslidon/broslidon_spike.png" id="8_k4kay"]
 [ext_resource type="Resource" uid="uid://c2ojjw3lmvows" path="res://Autoloads/Resources/Plays/Attack/Body/muscle_memory.tres" id="9_iji3d"]
 [ext_resource type="Texture2D" uid="uid://dv26u7yn00vgm" path="res://Autoloads/Resources/Beastie/Broslidon/icon_broslidon.png" id="12_1fro5"]
 [ext_resource type="Resource" uid="uid://4k1sc4gshpvh" path="res://Autoloads/Resources/Plays/Attack/Body/nice_shot.tres" id="12_cjmur"]
@@ -35,6 +36,7 @@ mind_base_def = 75
 possible_plays = Array[ExtResource("1_tadrq")]([ExtResource("3_siwng"), ExtResource("7_7aofm"), ExtResource("9_iji3d"), ExtResource("12_cjmur"), ExtResource("14_gkbyp"), ExtResource("15_y68ui"), ExtResource("16_ap8xx"), ExtResource("17_pso7n"), ExtResource("18_k6srt"), ExtResource("19_6qct1")])
 possible_traits = Array[ExtResource("2_oul1c")]([ExtResource("2_y7wdv"), ExtResource("4_budgc")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("6_rib3k"),
 1: ExtResource("7_ss5r3"),
 2: ExtResource("8_k4kay"),
 6: ExtResource("12_1fro5")

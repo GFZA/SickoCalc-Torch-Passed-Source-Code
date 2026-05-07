@@ -195,7 +195,8 @@ func _assign_all_beasties_data() -> void:
 							#_remove_junk_from_resource(final_path)
 							all_beasties_data.append(load(final_path))
 						#elif not (inner_file_name.begins_with("icon") or \
-							#inner_file_name.ends_with("_ready.png") or inner_file_name.ends_with("_spike.png")):
+							#inner_file_name.ends_with("_ready.png") or inner_file_name.ends_with("_spike.png") \
+							#or inner_file_name.ends_with("_idle.png")):
 							#inner_dir.remove(path + file_name + "/" + inner_file_name)
 						inner_file_name = inner_dir.get_next()
 			file_name = dir.get_next()
@@ -207,11 +208,10 @@ func _assign_all_beasties_data() -> void:
 	#var beastie : Beastie = load(resource_file_path)
 #
 	#if beastie.sprites.size() > 1:
-		#beastie.sprites.erase(Beastie.Sprite.IDLE)
 		#beastie.sprites.erase(Beastie.Sprite.VOLLEY)
 		#beastie.sprites.erase(Beastie.Sprite.GOOD)
 		#beastie.sprites.erase(Beastie.Sprite.BAD)
-		## Keep READY, SPIKE, ICON
+		## Keep IDLE, READY, SPIKE, ICON
 #
 	#var only_attacks : Array[Plays] = []
 	#for play in beastie.possible_plays:

@@ -1,13 +1,14 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=23 format=3 uid="uid://djvj3vq0c6m5w"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=24 format=3 uid="uid://btkpg0hq4cyoy"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_h4dkf"]
 [ext_resource type="Resource" uid="uid://dbu2peue0jfdg" path="res://Autoloads/Resources/Trait/jet.tres" id="2_6b3hr"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_as5ux"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_2q1ee"]
 [ext_resource type="Resource" uid="uid://hox6njgubt5t" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="3_t3niw"]
-[ext_resource type="Texture2D" uid="uid://csakk5cc7ulit" path="res://Autoloads/Resources/Beastie/Blitzwift/blitzwift_ready.png" id="6_fmbmk"]
+[ext_resource type="Texture2D" uid="uid://tkcrk1asa4vl" path="res://Autoloads/Resources/Beastie/Blitzwift/blitzwift_idle.png" id="5_5d4as"]
+[ext_resource type="Texture2D" uid="uid://d18bqgc7qbr1i" path="res://Autoloads/Resources/Beastie/Blitzwift/blitzwift_ready.png" id="6_fmbmk"]
 [ext_resource type="Resource" uid="uid://df7h4h5ahjpy3" path="res://Autoloads/Resources/Plays/Attack/Body/finisher.tres" id="6_rgle1"]
-[ext_resource type="Texture2D" uid="uid://c8wxlgctbjlaj" path="res://Autoloads/Resources/Beastie/Blitzwift/blitzwift_spike.png" id="7_6mad0"]
+[ext_resource type="Texture2D" uid="uid://cbewu7rxaem7l" path="res://Autoloads/Resources/Beastie/Blitzwift/blitzwift_spike.png" id="7_6mad0"]
 [ext_resource type="Resource" uid="uid://d0e8yqfg1s0jw" path="res://Autoloads/Resources/Plays/Attack/Spirit/flight.tres" id="9_elm6r"]
 [ext_resource type="Resource" uid="uid://c8icw3pvu0swl" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="10_5fuao"]
 [ext_resource type="Texture2D" uid="uid://i73kgxwvwuvo" path="res://Autoloads/Resources/Beastie/Blitzwift/icon_blitzwift.png" id="11_70t3w"]
@@ -39,6 +40,7 @@ mind_base_def = 47
 possible_plays = Array[ExtResource("1_h4dkf")]([ExtResource("3_t3niw"), ExtResource("6_rgle1"), ExtResource("9_elm6r"), ExtResource("10_5fuao"), ExtResource("12_eb133"), ExtResource("14_nyg76"), ExtResource("16_ncw4h"), ExtResource("17_774fn"), ExtResource("18_teb4m"), ExtResource("19_2ha6p"), ExtResource("20_bo2xo"), ExtResource("21_1kw8b"), ExtResource("22_44m85"), ExtResource("23_pq3d6"), ExtResource("36_re5y2")])
 possible_traits = Array[ExtResource("2_as5ux")]([ExtResource("2_6b3hr")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("5_5d4as"),
 1: ExtResource("6_fmbmk"),
 2: ExtResource("7_6mad0"),
 6: ExtResource("11_70t3w")

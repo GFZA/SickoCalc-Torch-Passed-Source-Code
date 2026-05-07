@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=17 format=3 uid="uid://deug78afuowhe"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://dhxivt35qgajf"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_pfaa0"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_lv4pa"]
@@ -13,8 +13,9 @@
 [ext_resource type="Resource" uid="uid://dgml7fdyxpvr7" path="res://Autoloads/Resources/Plays/Attack/Mind/cold_calculation.tres" id="16_bvl7a"]
 [ext_resource type="Resource" uid="uid://du0svi4gto818" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="17_h3q8r"]
 [ext_resource type="Resource" uid="uid://bp6cwp5r600rj" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="18_siwum"]
-[ext_resource type="Texture2D" uid="uid://cp8o38pbjjtld" path="res://Autoloads/Resources/Beastie/Albrax/albrax_ready.png" id="28_tug8r"]
-[ext_resource type="Texture2D" uid="uid://h2plthvbdipf" path="res://Autoloads/Resources/Beastie/Albrax/albrax_spike.png" id="29_ms1j6"]
+[ext_resource type="Texture2D" uid="uid://b15gnp2fnqhly" path="res://Autoloads/Resources/Beastie/Albrax/albrax_idle.png" id="27_4f6f8"]
+[ext_resource type="Texture2D" uid="uid://bbd35lryvv53h" path="res://Autoloads/Resources/Beastie/Albrax/albrax_ready.png" id="28_tug8r"]
+[ext_resource type="Texture2D" uid="uid://dvm6g2pg6rvdc" path="res://Autoloads/Resources/Beastie/Albrax/albrax_spike.png" id="29_ms1j6"]
 [ext_resource type="Texture2D" uid="uid://bsp34n5nwe2fi" path="res://Autoloads/Resources/Beastie/Albrax/icon_albrax.png" id="33_bvl7a"]
 
 [resource]
@@ -33,6 +34,7 @@ mind_base_def = 46
 possible_plays = Array[ExtResource("1_pfaa0")]([ExtResource("3_8db34"), ExtResource("6_nyird"), ExtResource("9_bhrur"), ExtResource("12_ms1j6"), ExtResource("14_h4al0"), ExtResource("15_bfabr"), ExtResource("16_bvl7a"), ExtResource("17_h3q8r"), ExtResource("18_siwum")])
 possible_traits = Array[ExtResource("2_lv4pa")]([ExtResource("2_weoxj")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("27_4f6f8"),
 1: ExtResource("28_tug8r"),
 2: ExtResource("29_ms1j6"),
 6: ExtResource("33_bvl7a")

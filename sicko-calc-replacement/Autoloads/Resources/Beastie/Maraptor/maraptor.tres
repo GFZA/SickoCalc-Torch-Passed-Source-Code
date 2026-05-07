@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=24 format=3 uid="uid://dirsq7jbj4lxh"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=24 format=3 uid="uid://cuiojyjv1254s"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_q33om"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_0u8y0"]
@@ -7,7 +7,7 @@
 [ext_resource type="Resource" uid="uid://chm7cp4ewi5bp" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_bdvuj"]
 [ext_resource type="Texture2D" uid="uid://cfyjrw1g3dsir" path="res://Autoloads/Resources/Beastie/Maraptor/icon_maraptor.png" id="5_eeusj"]
 [ext_resource type="Resource" uid="uid://cgp0jnuk0thpe" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="5_v8gxa"]
-[ext_resource type="Texture2D" path="res://Autoloads/Resources/Beastie/Maraptor/maraptor_idle.png" id="6_lugme"]
+[ext_resource type="Texture2D" uid="uid://eue8xgaqmona" path="res://Autoloads/Resources/Beastie/Maraptor/maraptor_idle.png" id="6_lugme"]
 [ext_resource type="Resource" uid="uid://cf02nhbjoqjgf" path="res://Autoloads/Resources/Plays/Attack/Mind/pressure.tres" id="7_vkq25"]
 [ext_resource type="Resource" uid="uid://nv07j1vj53ct" path="res://Autoloads/Resources/Plays/Attack/Mind/heartbreaker.tres" id="9_iolf5"]
 [ext_resource type="Resource" uid="uid://ihjite14xg1t" path="res://Autoloads/Resources/Plays/Attack/Body/stomp.tres" id="11_gfby4"]
@@ -40,6 +40,7 @@ mind_base_def = 86
 possible_plays = Array[ExtResource("1_q33om")]([ExtResource("3_bdvuj"), ExtResource("5_v8gxa"), ExtResource("7_vkq25"), ExtResource("9_iolf5"), ExtResource("11_gfby4"), ExtResource("12_1a7nl"), ExtResource("13_220iq"), ExtResource("14_dnwba"), ExtResource("15_cunlk"), ExtResource("18_ft882"), ExtResource("19_2n4go"), ExtResource("20_3iesq"), ExtResource("21_5kb81"), ExtResource("22_fxhlw"), ExtResource("23_ya2ms"), ExtResource("36_6cfis")])
 possible_traits = Array[ExtResource("2_0u8y0")]([ExtResource("2_eeusj"), ExtResource("37_bdvuj")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("5_eeusj"),
 1: ExtResource("5_eeusj"),
 2: ExtResource("5_eeusj"),
 6: ExtResource("6_lugme")

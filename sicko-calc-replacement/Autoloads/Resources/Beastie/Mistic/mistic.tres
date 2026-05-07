@@ -1,13 +1,14 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://vlnxiyvkvolb"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=17 format=3 uid="uid://bgpl4atiaqssh"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_e3v75"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_ad7c4"]
 [ext_resource type="Resource" uid="uid://q5fhwy5qny81" path="res://Autoloads/Resources/Trait/intangible.tres" id="2_pro8y"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_6nk6x"]
 [ext_resource type="Resource" uid="uid://7uoncfn55rjb" path="res://Autoloads/Resources/Plays/Attack/Mind/cornershot.tres" id="3_uddiu"]
+[ext_resource type="Texture2D" uid="uid://fj0uaigsxb5t" path="res://Autoloads/Resources/Beastie/Mistic/mistic_idle.png" id="5_c3xaf"]
 [ext_resource type="Resource" uid="uid://du0svi4gto818" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="6_5aog5"]
-[ext_resource type="Texture2D" uid="uid://mlv4g4oo1lmy" path="res://Autoloads/Resources/Beastie/Mistic/mistic_ready.png" id="6_oeuor"]
-[ext_resource type="Texture2D" uid="uid://bov0yia68u10u" path="res://Autoloads/Resources/Beastie/Mistic/mistic_spike.png" id="7_cpswo"]
+[ext_resource type="Texture2D" uid="uid://xnsalbx0lygy" path="res://Autoloads/Resources/Beastie/Mistic/mistic_ready.png" id="6_oeuor"]
+[ext_resource type="Texture2D" uid="uid://q1mjora1wf0l" path="res://Autoloads/Resources/Beastie/Mistic/mistic_spike.png" id="7_cpswo"]
 [ext_resource type="Resource" uid="uid://c7blujvv2w3vu" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="8_wemd7"]
 [ext_resource type="Resource" uid="uid://gfai1onwmtct" path="res://Autoloads/Resources/Plays/Attack/Mind/freezeray.tres" id="10_7hnm1"]
 [ext_resource type="Resource" uid="uid://nwk5cfisjfoh" path="res://Autoloads/Resources/Plays/Attack/Mind/soulcursher.tres" id="13_2h1qh"]
@@ -32,6 +33,7 @@ mind_base_def = 80
 possible_plays = Array[ExtResource("1_e3v75")]([ExtResource("3_uddiu"), ExtResource("6_5aog5"), ExtResource("8_wemd7"), ExtResource("10_7hnm1"), ExtResource("13_2h1qh"), ExtResource("15_piynx"), ExtResource("16_1jgjq"), ExtResource("17_5et26")])
 possible_traits = Array[ExtResource("2_ad7c4")]([ExtResource("2_pro8y")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("5_c3xaf"),
 1: ExtResource("6_oeuor"),
 2: ExtResource("7_cpswo"),
 6: ExtResource("39_l2axt")

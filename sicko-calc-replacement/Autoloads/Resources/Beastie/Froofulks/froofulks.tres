@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=22 format=3 uid="uid://dmglogj1j453t"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=23 format=3 uid="uid://c6poy4r4seu4i"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_iu5xd"]
 [ext_resource type="Resource" uid="uid://bgi008rdipho4" path="res://Autoloads/Resources/Trait/treat.tres" id="2_47xei"]
@@ -6,10 +6,11 @@
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_47xei"]
 [ext_resource type="Resource" uid="uid://duynnadxw4hkg" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_wl0ij"]
 [ext_resource type="Resource" uid="uid://cuqsasq51eufd" path="res://Autoloads/Resources/Trait/protector.tres" id="4_kkcpg"]
+[ext_resource type="Texture2D" uid="uid://c6ipcpx7oslq2" path="res://Autoloads/Resources/Beastie/Froofulks/froofulks_idle.png" id="6_hiv5g"]
 [ext_resource type="Resource" uid="uid://bqwii245fpl4a" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="6_s17hx"]
-[ext_resource type="Texture2D" uid="uid://lgxhq6uiuitk" path="res://Autoloads/Resources/Beastie/Froofulks/froofulks_ready.png" id="7_8tcey"]
+[ext_resource type="Texture2D" uid="uid://casg7pi5bb8yw" path="res://Autoloads/Resources/Beastie/Froofulks/froofulks_ready.png" id="7_8tcey"]
 [ext_resource type="Resource" uid="uid://c8icw3pvu0swl" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="8_kqm4r"]
-[ext_resource type="Texture2D" uid="uid://dhciy3fm0uxyt" path="res://Autoloads/Resources/Beastie/Froofulks/froofulks_spike.png" id="8_x8bk4"]
+[ext_resource type="Texture2D" uid="uid://bqup8rg6eot7l" path="res://Autoloads/Resources/Beastie/Froofulks/froofulks_spike.png" id="8_x8bk4"]
 [ext_resource type="Resource" uid="uid://jkcejjcke75d" path="res://Autoloads/Resources/Plays/Attack/Body/power_sap.tres" id="9_skbs7"]
 [ext_resource type="Resource" uid="uid://d8rp5pq7qf2i" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="11_rp0yy"]
 [ext_resource type="Texture2D" uid="uid://d0iddun4maklv" path="res://Autoloads/Resources/Beastie/Froofulks/icon_froofulks.png" id="12_shn7y"]
@@ -37,6 +38,7 @@ mind_base_def = 83
 possible_plays = Array[ExtResource("1_iu5xd")]([ExtResource("3_wl0ij"), ExtResource("6_s17hx"), ExtResource("8_kqm4r"), ExtResource("9_skbs7"), ExtResource("11_rp0yy"), ExtResource("13_egc26"), ExtResource("14_0gmma"), ExtResource("15_rlp8l"), ExtResource("16_npipy"), ExtResource("17_2h0sa"), ExtResource("18_fj678"), ExtResource("19_nskxf"), ExtResource("29_byqph")])
 possible_traits = Array[ExtResource("2_ob7yb")]([ExtResource("2_47xei"), ExtResource("4_kkcpg")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("6_hiv5g"),
 1: ExtResource("7_8tcey"),
 2: ExtResource("8_x8bk4"),
 6: ExtResource("12_shn7y")

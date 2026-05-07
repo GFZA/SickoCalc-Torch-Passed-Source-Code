@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://dfrsiw56y75w2"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://brqpylw32rqlp"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_bfpqm"]
 [ext_resource type="Resource" uid="uid://b7gdw1agdp5jo" path="res://Autoloads/Resources/Trait/forager.tres" id="2_ve7ok"]
@@ -14,8 +14,9 @@
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="30_4lwbm"]
 [ext_resource type="Resource" uid="uid://dyqi0aebqkj70" path="res://Autoloads/Resources/Trait/confident.tres" id="31_p2mw6"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="32_yow3n"]
-[ext_resource type="Texture2D" uid="uid://dgyes42r6wo2r" path="res://Autoloads/Resources/Beastie/Supilero/supilero_ready.png" id="34_a4kti"]
-[ext_resource type="Texture2D" uid="uid://2cp4idfnj1ak" path="res://Autoloads/Resources/Beastie/Supilero/supilero_spike.png" id="35_jxpey"]
+[ext_resource type="Texture2D" uid="uid://dlnoq08uuf3ku" path="res://Autoloads/Resources/Beastie/Supilero/supilero_idle.png" id="33_cjxud"]
+[ext_resource type="Texture2D" uid="uid://dj4y6aw4vimg4" path="res://Autoloads/Resources/Beastie/Supilero/supilero_ready.png" id="34_a4kti"]
+[ext_resource type="Texture2D" uid="uid://b787taaj8w7ij" path="res://Autoloads/Resources/Beastie/Supilero/supilero_spike.png" id="35_jxpey"]
 [ext_resource type="Texture2D" uid="uid://bop7sqeqcogaa" path="res://Autoloads/Resources/Beastie/Supilero/icon_supilero.png" id="39_exnkw"]
 
 [resource]
@@ -34,6 +35,7 @@ mind_base_def = 95
 possible_plays = Array[ExtResource("1_bfpqm")]([ExtResource("3_wly5g"), ExtResource("5_3d1f3"), ExtResource("8_8rjpk"), ExtResource("11_rrad1"), ExtResource("13_rndbi"), ExtResource("15_evnhr"), ExtResource("16_pa5bn"), ExtResource("17_pikyg"), ExtResource("29_k56ge")])
 possible_traits = Array[ExtResource("30_4lwbm")]([ExtResource("2_ve7ok"), ExtResource("31_p2mw6")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("33_cjxud"),
 1: ExtResource("34_a4kti"),
 2: ExtResource("35_jxpey"),
 6: ExtResource("39_exnkw")

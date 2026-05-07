@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=23 format=3 uid="uid://dp06x3d65f8wc"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=24 format=3 uid="uid://bat72qv62sr6u"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_sp66t"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_86y82"]
@@ -6,10 +6,11 @@
 [ext_resource type="Resource" uid="uid://chm7cp4ewi5bp" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_msy52"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_ri7ad"]
 [ext_resource type="Resource" uid="uid://xhyv614uv12e" path="res://Autoloads/Resources/Trait/torpor.tres" id="4_cd6fs"]
+[ext_resource type="Texture2D" uid="uid://cpadu55dnw07o" path="res://Autoloads/Resources/Beastie/Hydrolm/hydrolm_idle.png" id="6_ewbkh"]
 [ext_resource type="Resource" uid="uid://cgp0jnuk0thpe" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="6_mr5xt"]
-[ext_resource type="Texture2D" uid="uid://b0l5ka7iy8nye" path="res://Autoloads/Resources/Beastie/Hydrolm/hydrolm_ready.png" id="7_e7hah"]
+[ext_resource type="Texture2D" uid="uid://l5uykfcawb0r" path="res://Autoloads/Resources/Beastie/Hydrolm/hydrolm_ready.png" id="7_e7hah"]
 [ext_resource type="Resource" uid="uid://hwqaqcj1j4lq" path="res://Autoloads/Resources/Plays/Attack/Mind/precision_strike.tres" id="7_satp3"]
-[ext_resource type="Texture2D" uid="uid://du4gpfq4d23yq" path="res://Autoloads/Resources/Beastie/Hydrolm/hydrolm_spike.png" id="8_odr72"]
+[ext_resource type="Texture2D" uid="uid://bvcjois2sjcwx" path="res://Autoloads/Resources/Beastie/Hydrolm/hydrolm_spike.png" id="8_odr72"]
 [ext_resource type="Resource" uid="uid://bj7gp00f8xtup" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="9_ycgvb"]
 [ext_resource type="Resource" uid="uid://jkcejjcke75d" path="res://Autoloads/Resources/Plays/Attack/Body/power_sap.tres" id="11_afi2k"]
 [ext_resource type="Texture2D" uid="uid://5qwkxais1pym" path="res://Autoloads/Resources/Beastie/Hydrolm/icon_hydrolm.png" id="12_nbil7"]
@@ -39,6 +40,7 @@ mind_base_def = 100
 possible_plays = Array[ExtResource("1_sp66t")]([ExtResource("3_msy52"), ExtResource("6_mr5xt"), ExtResource("7_satp3"), ExtResource("9_ycgvb"), ExtResource("11_afi2k"), ExtResource("13_8u33q"), ExtResource("15_6mk5k"), ExtResource("16_s2dva"), ExtResource("17_kdmtq"), ExtResource("18_gqs81"), ExtResource("19_htftj"), ExtResource("20_wtaqn"), ExtResource("21_jhn74"), ExtResource("22_ix0oj")])
 possible_traits = Array[ExtResource("2_86y82")]([ExtResource("2_ri7ad"), ExtResource("4_cd6fs")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("6_ewbkh"),
 1: ExtResource("7_e7hah"),
 2: ExtResource("8_odr72"),
 6: ExtResource("12_nbil7")

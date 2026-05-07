@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://br6ath2fgdxde"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://c10q285k38w0f"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_hpxhf"]
 [ext_resource type="Resource" uid="uid://bcwvsxh0ndp5n" path="res://Autoloads/Resources/Trait/unflappable.tres" id="2_h3r0u"]
@@ -15,7 +15,7 @@
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="27_d2ypt"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="28_fuqgc"]
 [ext_resource type="Resource" uid="uid://c1fxya1i5x851" path="res://Autoloads/Resources/Trait/overwork.tres" id="30_rujeu"]
-[ext_resource type="Texture2D" path="res://Autoloads/Resources/Beastie/Duggout/duggout_idle.png" id="32_kkxb3"]
+[ext_resource type="Texture2D" uid="uid://ccog3p5qpg840" path="res://Autoloads/Resources/Beastie/Duggout/duggout_idle.png" id="32_kkxb3"]
 [ext_resource type="Texture2D" uid="uid://dbfu71wn43mh7" path="res://Autoloads/Resources/Beastie/Duggout/icon_duggout.png" id="33_38bw8"]
 
 [resource]
@@ -34,6 +34,7 @@ mind_base_def = 75
 possible_plays = Array[ExtResource("1_hpxhf")]([ExtResource("4_g54hi"), ExtResource("7_rmm7t"), ExtResource("10_vxiw2"), ExtResource("13_lfhk8"), ExtResource("15_h3r0u"), ExtResource("15_eddae"), ExtResource("16_p3kdu"), ExtResource("17_h4ogg"), ExtResource("7_0sggw"), ExtResource("18_mgdcw")])
 possible_traits = Array[ExtResource("27_d2ypt")]([ExtResource("2_h3r0u"), ExtResource("30_rujeu")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("32_kkxb3"),
 1: ExtResource("32_kkxb3"),
 2: ExtResource("32_kkxb3"),
 6: ExtResource("33_38bw8")

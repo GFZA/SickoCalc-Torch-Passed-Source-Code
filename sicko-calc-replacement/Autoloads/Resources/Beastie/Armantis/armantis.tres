@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=24 format=3 uid="uid://is85try67olv"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=25 format=3 uid="uid://dso3ame7qwr03"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_tyxuk"]
 [ext_resource type="Resource" uid="uid://buxodlww8kx5u" path="res://Autoloads/Resources/Trait/monster_block.tres" id="2_30qc7"]
@@ -7,9 +7,10 @@
 [ext_resource type="Resource" uid="uid://cr27dbuxid5hy" path="res://Autoloads/Resources/Plays/Attack/Mind/pierce.tres" id="4_vfxpx"]
 [ext_resource type="Resource" uid="uid://cb522xk60xw71" path="res://Autoloads/Resources/Trait/power_forward.tres" id="4_xiefl"]
 [ext_resource type="Resource" uid="uid://qhb7pc512xbi" path="res://Autoloads/Resources/Plays/Attack/Body/kneebender.tres" id="5_ouequ"]
-[ext_resource type="Texture2D" uid="uid://bb677s6in0djb" path="res://Autoloads/Resources/Beastie/Armantis/armantis_ready.png" id="6_8xcv5"]
+[ext_resource type="Texture2D" uid="uid://b5xmbrf6ukmmc" path="res://Autoloads/Resources/Beastie/Armantis/armantis_idle.png" id="5_xiefl"]
+[ext_resource type="Texture2D" uid="uid://dvu83gn52ktmc" path="res://Autoloads/Resources/Beastie/Armantis/armantis_ready.png" id="6_8xcv5"]
 [ext_resource type="Resource" uid="uid://cxogqm0367lrk" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="6_yvh3b"]
-[ext_resource type="Texture2D" uid="uid://bufj643agje28" path="res://Autoloads/Resources/Beastie/Armantis/armantis_spike.png" id="7_6iygu"]
+[ext_resource type="Texture2D" uid="uid://diaxw2g4i8vwh" path="res://Autoloads/Resources/Beastie/Armantis/armantis_spike.png" id="7_6iygu"]
 [ext_resource type="Resource" uid="uid://8wi04v1m7juh" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="9_1s2nu"]
 [ext_resource type="Resource" uid="uid://c36rtva2s671" path="res://Autoloads/Resources/Plays/Attack/Body/thunder.tres" id="11_783dg"]
 [ext_resource type="Texture2D" uid="uid://bfwpn6o0kht3s" path="res://Autoloads/Resources/Beastie/Armantis/icon_armantis.png" id="11_bfvit"]
@@ -40,6 +41,7 @@ mind_base_def = 105
 possible_plays = Array[ExtResource("1_tyxuk")]([ExtResource("4_vfxpx"), ExtResource("5_ouequ"), ExtResource("6_yvh3b"), ExtResource("9_1s2nu"), ExtResource("11_783dg"), ExtResource("13_4u5vv"), ExtResource("15_tnlro"), ExtResource("16_1t22x"), ExtResource("17_0h5l5"), ExtResource("18_oeqm4"), ExtResource("19_tjmeh"), ExtResource("20_w2dvw"), ExtResource("21_4figh"), ExtResource("22_e4nda"), ExtResource("32_yvh3b")])
 possible_traits = Array[ExtResource("2_xka47")]([ExtResource("2_30qc7"), ExtResource("4_xiefl")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("5_xiefl"),
 1: ExtResource("6_8xcv5"),
 2: ExtResource("7_6iygu"),
 6: ExtResource("11_bfvit")

@@ -1,13 +1,14 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=21 format=3 uid="uid://cae08hpt6sadk"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=22 format=3 uid="uid://cs2unbve1mnk2"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_pva2w"]
 [ext_resource type="Resource" uid="uid://ba06fmjpjnl1k" path="res://Autoloads/Resources/Trait/stealthy.tres" id="2_7046n"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_wu5ja"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_fjol0"]
 [ext_resource type="Resource" uid="uid://chm7cp4ewi5bp" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_pt2wr"]
+[ext_resource type="Texture2D" uid="uid://bfywbcjv6ms3x" path="res://Autoloads/Resources/Beastie/Skulkapi/skulkapi_idle.png" id="4_7046n"]
 [ext_resource type="Resource" uid="uid://off5g43shtql" path="res://Autoloads/Resources/Plays/Attack/Mind/twist.tres" id="5_d68l8"]
-[ext_resource type="Texture2D" uid="uid://4a4ktk7sxm4k" path="res://Autoloads/Resources/Beastie/Skulkapi/skulkapi_ready.png" id="5_e78tx"]
-[ext_resource type="Texture2D" uid="uid://c2osmj45emagp" path="res://Autoloads/Resources/Beastie/Skulkapi/skulkapi_spike.png" id="6_fcdbx"]
+[ext_resource type="Texture2D" uid="uid://dtnvcj8jgois1" path="res://Autoloads/Resources/Beastie/Skulkapi/skulkapi_ready.png" id="5_e78tx"]
+[ext_resource type="Texture2D" uid="uid://ci8wdfysdch3q" path="res://Autoloads/Resources/Beastie/Skulkapi/skulkapi_spike.png" id="6_fcdbx"]
 [ext_resource type="Resource" uid="uid://gpx5prmyyhwg" path="res://Autoloads/Resources/Plays/Attack/Mind/zigzag.tres" id="7_wtg2i"]
 [ext_resource type="Resource" uid="uid://bdmbgwhgtp2vl" path="res://Autoloads/Resources/Plays/Attack/Spirit/cut_shot.tres" id="10_boxtu"]
 [ext_resource type="Resource" uid="uid://nwk5cfisjfoh" path="res://Autoloads/Resources/Plays/Attack/Mind/soulcursher.tres" id="12_tv6qh"]
@@ -36,6 +37,7 @@ mind_base_def = 104
 possible_plays = Array[ExtResource("1_pva2w")]([ExtResource("3_pt2wr"), ExtResource("5_d68l8"), ExtResource("7_wtg2i"), ExtResource("10_boxtu"), ExtResource("12_tv6qh"), ExtResource("13_ahisa"), ExtResource("14_n5nmk"), ExtResource("15_ajuuu"), ExtResource("16_424qa"), ExtResource("17_7gamc"), ExtResource("18_uuo0b"), ExtResource("19_i6d4d"), ExtResource("20_2fuer")])
 possible_traits = Array[ExtResource("2_wu5ja")]([ExtResource("2_7046n")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("4_7046n"),
 1: ExtResource("5_e78tx"),
 2: ExtResource("6_fcdbx"),
 6: ExtResource("39_wiwft")

@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=20 format=3 uid="uid://bmwofoajb1sgw"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=20 format=3 uid="uid://dml6sojuxg2pf"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_bdkx8"]
 [ext_resource type="Resource" uid="uid://cc6ln454rbqep" path="res://Autoloads/Resources/Trait/agile.tres" id="2_6y1ef"]
@@ -17,7 +17,7 @@
 [ext_resource type="Resource" uid="uid://1mdrt5ys6ihc" path="res://Autoloads/Resources/Plays/Attack/Body/slide.tres" id="29_apl1o"]
 [ext_resource type="Resource" uid="uid://c7ocn3elr7ejo" path="res://Autoloads/Resources/Plays/Attack/Spirit/rousing_strike.tres" id="29_bkpsg"]
 [ext_resource type="Resource" uid="uid://cor4kr3di5lnr" path="res://Autoloads/Resources/Trait/synchronize.tres" id="31_5h0rg"]
-[ext_resource type="Texture2D" path="res://Autoloads/Resources/Beastie/Crabaret/crabaret_idle.png" id="32_gnpev"]
+[ext_resource type="Texture2D" uid="uid://hqyhcgbyrkuu" path="res://Autoloads/Resources/Beastie/Crabaret/crabaret_idle.png" id="32_gnpev"]
 [ext_resource type="Texture2D" uid="uid://colnkpvhwdqvj" path="res://Autoloads/Resources/Beastie/Crabaret/icon_crabaret.png" id="33_5h0rg"]
 
 [resource]
@@ -36,6 +36,7 @@ mind_base_def = 74
 possible_plays = Array[ExtResource("1_bdkx8")]([ExtResource("3_x1xu5"), ExtResource("6_5h0rg"), ExtResource("8_apl1o"), ExtResource("10_34j5v"), ExtResource("11_c16vj"), ExtResource("14_i0fg3"), ExtResource("15_2trai"), ExtResource("16_6gxru"), ExtResource("17_w8epe"), ExtResource("29_bkpsg"), ExtResource("29_apl1o")])
 possible_traits = Array[ExtResource("2_81byg")]([ExtResource("4_y1bsu"), ExtResource("31_5h0rg")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("32_gnpev"),
 1: ExtResource("32_gnpev"),
 2: ExtResource("32_gnpev"),
 6: ExtResource("33_5h0rg")

@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=20 format=3 uid="uid://6odujphtlup6"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=21 format=3 uid="uid://bdv24wd5y13xy"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_tpug0"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_3kmtp"]
@@ -6,9 +6,10 @@
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_5b38b"]
 [ext_resource type="Resource" uid="uid://chm7cp4ewi5bp" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_aolll"]
 [ext_resource type="Resource" uid="uid://b1p53xhl07na3" path="res://Autoloads/Resources/Trait/anticipation.tres" id="4_phe5q"]
-[ext_resource type="Texture2D" uid="uid://5438n7fu3tse" path="res://Autoloads/Resources/Beastie/Psylusc/psylusc_ready.png" id="5_6nyyb"]
+[ext_resource type="Texture2D" uid="uid://c0tefrlv1web0" path="res://Autoloads/Resources/Beastie/Psylusc/psylusc_idle.png" id="4_qnuvg"]
+[ext_resource type="Texture2D" uid="uid://d2my85knhtxuu" path="res://Autoloads/Resources/Beastie/Psylusc/psylusc_ready.png" id="5_6nyyb"]
 [ext_resource type="Resource" uid="uid://dgml7fdyxpvr7" path="res://Autoloads/Resources/Plays/Attack/Mind/cold_calculation.tres" id="6_b6t2n"]
-[ext_resource type="Texture2D" uid="uid://cib7ujirdryx6" path="res://Autoloads/Resources/Beastie/Psylusc/psylusc_spike.png" id="6_phe5q"]
+[ext_resource type="Texture2D" uid="uid://c8evc2m7u4khx" path="res://Autoloads/Resources/Beastie/Psylusc/psylusc_spike.png" id="6_phe5q"]
 [ext_resource type="Resource" uid="uid://nv07j1vj53ct" path="res://Autoloads/Resources/Plays/Attack/Mind/heartbreaker.tres" id="9_bsgnp"]
 [ext_resource type="Resource" uid="uid://7euxvv68bs8h" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="12_xfmwn"]
 [ext_resource type="Resource" uid="uid://c43v5gcf3gyur" path="res://Autoloads/Resources/Plays/Attack/Mind/perfect_shot.tres" id="14_sfnbd"]
@@ -36,6 +37,7 @@ mind_base_def = 100
 possible_plays = Array[ExtResource("1_tpug0")]([ExtResource("3_aolll"), ExtResource("6_b6t2n"), ExtResource("9_bsgnp"), ExtResource("12_xfmwn"), ExtResource("14_sfnbd"), ExtResource("15_1t4a0"), ExtResource("16_eguc8"), ExtResource("17_bf1g0"), ExtResource("18_wu4sv"), ExtResource("19_griok"), ExtResource("20_sqmv0")])
 possible_traits = Array[ExtResource("2_3kmtp")]([ExtResource("2_6nyyb"), ExtResource("4_phe5q")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("4_qnuvg"),
 1: ExtResource("5_6nyyb"),
 2: ExtResource("6_phe5q"),
 6: ExtResource("37_35qrc")

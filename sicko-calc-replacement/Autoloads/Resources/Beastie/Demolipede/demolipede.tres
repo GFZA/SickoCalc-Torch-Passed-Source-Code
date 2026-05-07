@@ -1,14 +1,15 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://ep0f66o71sle"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://35ei0kipj52m"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_vjhpb"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_ipj00"]
 [ext_resource type="Resource" uid="uid://bm47cji2a0kqh" path="res://Autoloads/Resources/Trait/watchtower.tres" id="2_mh4dv"]
 [ext_resource type="Resource" uid="uid://hox6njgubt5t" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="3_exssf"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_tr6kv"]
+[ext_resource type="Texture2D" uid="uid://cdbbfic7slk3m" path="res://Autoloads/Resources/Beastie/Demolipede/demolipede_idle.png" id="4_2wh55"]
 [ext_resource type="Resource" uid="uid://5v5kswe3b1pl" path="res://Autoloads/Resources/Trait/wallbreaker.tres" id="4_c46k2"]
-[ext_resource type="Texture2D" uid="uid://cs7l8xsorvxed" path="res://Autoloads/Resources/Beastie/Demolipede/demolipede_ready.png" id="5_mh4dv"]
+[ext_resource type="Texture2D" uid="uid://cb2ol33bdx8tn" path="res://Autoloads/Resources/Beastie/Demolipede/demolipede_ready.png" id="5_mh4dv"]
 [ext_resource type="Resource" uid="uid://bvn04obms7ax2" path="res://Autoloads/Resources/Plays/Attack/Body/sidewinder.tres" id="5_t0j7b"]
-[ext_resource type="Texture2D" uid="uid://duhn4for36jyy" path="res://Autoloads/Resources/Beastie/Demolipede/demolipede_spike.png" id="6_c46k2"]
+[ext_resource type="Texture2D" uid="uid://ty83r14qp2q5" path="res://Autoloads/Resources/Beastie/Demolipede/demolipede_spike.png" id="6_c46k2"]
 [ext_resource type="Resource" uid="uid://bvxjlydy1d38x" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="7_kp8jf"]
 [ext_resource type="Resource" uid="uid://v37ifueojf8k" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="10_i1bp0"]
 [ext_resource type="Resource" uid="uid://dgerhmmgjkxn2" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="13_u3exc"]
@@ -34,6 +35,7 @@ mind_base_def = 98
 possible_plays = Array[ExtResource("1_vjhpb")]([ExtResource("3_exssf"), ExtResource("5_t0j7b"), ExtResource("7_kp8jf"), ExtResource("10_i1bp0"), ExtResource("13_u3exc"), ExtResource("14_cfuwo"), ExtResource("15_5krhg"), ExtResource("16_224cx"), ExtResource("17_gw4qo")])
 possible_traits = Array[ExtResource("2_ipj00")]([ExtResource("2_mh4dv"), ExtResource("4_c46k2")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("4_2wh55"),
 1: ExtResource("5_mh4dv"),
 2: ExtResource("6_c46k2"),
 6: ExtResource("35_eo6o0")

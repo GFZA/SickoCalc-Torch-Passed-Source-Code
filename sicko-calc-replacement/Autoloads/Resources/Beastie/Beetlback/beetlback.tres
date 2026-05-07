@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=20 format=3 uid="uid://vrsqh6vx358j"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=21 format=3 uid="uid://18coamxysrdb"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_us05o"]
 [ext_resource type="Resource" uid="uid://cndna6dik5aug" path="res://Autoloads/Resources/Trait/helmet.tres" id="2_5dd6k"]
@@ -7,9 +7,10 @@
 [ext_resource type="Resource" uid="uid://ciplmlyeefqm" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="3_pxp5a"]
 [ext_resource type="Resource" uid="uid://cqyb3ky1ckijy" path="res://Autoloads/Resources/Trait/captain.tres" id="4_rod40"]
 [ext_resource type="Resource" uid="uid://hwqaqcj1j4lq" path="res://Autoloads/Resources/Plays/Attack/Mind/precision_strike.tres" id="6_4wnqp"]
-[ext_resource type="Texture2D" uid="uid://bm7687oxyjbjk" path="res://Autoloads/Resources/Beastie/Beetlback/beetlback_ready.png" id="7_10cg2"]
+[ext_resource type="Texture2D" uid="uid://cjhxfkbu56wr8" path="res://Autoloads/Resources/Beastie/Beetlback/beetlback_idle.png" id="6_gpkju"]
+[ext_resource type="Texture2D" uid="uid://blokvj1vxny7r" path="res://Autoloads/Resources/Beastie/Beetlback/beetlback_ready.png" id="7_10cg2"]
 [ext_resource type="Resource" uid="uid://dekfo2slnoigr" path="res://Autoloads/Resources/Plays/Attack/Body/rocket.tres" id="8_hgx1x"]
-[ext_resource type="Texture2D" uid="uid://xo23k1few4hv" path="res://Autoloads/Resources/Beastie/Beetlback/beetlback_spike.png" id="8_wsnaw"]
+[ext_resource type="Texture2D" uid="uid://bsubb4kobl5u6" path="res://Autoloads/Resources/Beastie/Beetlback/beetlback_spike.png" id="8_wsnaw"]
 [ext_resource type="Resource" uid="uid://7euxvv68bs8h" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="10_xhehu"]
 [ext_resource type="Texture2D" uid="uid://p6pyumoll0gu" path="res://Autoloads/Resources/Beastie/Beetlback/icon_beetlback.png" id="12_qwnx6"]
 [ext_resource type="Resource" uid="uid://bdd70o1kybaux" path="res://Autoloads/Resources/Plays/Attack/Body/hyperspike.tres" id="13_efaww"]
@@ -36,6 +37,7 @@ mind_base_def = 104
 possible_plays = Array[ExtResource("1_us05o")]([ExtResource("3_pxp5a"), ExtResource("6_4wnqp"), ExtResource("8_hgx1x"), ExtResource("10_xhehu"), ExtResource("13_efaww"), ExtResource("14_1llil"), ExtResource("15_gxb53"), ExtResource("16_cg6lw"), ExtResource("17_p2whr"), ExtResource("18_est74"), ExtResource("19_0c51i")])
 possible_traits = Array[ExtResource("2_odc8v")]([ExtResource("2_5dd6k"), ExtResource("4_rod40")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("6_gpkju"),
 1: ExtResource("7_10cg2"),
 2: ExtResource("8_wsnaw"),
 6: ExtResource("12_qwnx6")

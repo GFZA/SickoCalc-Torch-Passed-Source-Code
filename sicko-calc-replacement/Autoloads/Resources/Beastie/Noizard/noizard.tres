@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=21 format=3 uid="uid://hvgoicfmiqhx"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=22 format=3 uid="uid://j1047xxunjvs"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_73p0a"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_7ssa4"]
@@ -6,9 +6,10 @@
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_5bbos"]
 [ext_resource type="Resource" uid="uid://du0svi4gto818" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="3_bquwo"]
 [ext_resource type="Resource" uid="uid://3m4wp7g4buyd" path="res://Autoloads/Resources/Trait/annoying.tres" id="4_3jda1"]
+[ext_resource type="Texture2D" uid="uid://ck3nlr7pjkymg" path="res://Autoloads/Resources/Beastie/Noizard/noizard_idle.png" id="5_3jda1"]
 [ext_resource type="Resource" uid="uid://bcr7xnr07v278" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="6_apbvt"]
-[ext_resource type="Texture2D" uid="uid://ckvqcl8r2kl52" path="res://Autoloads/Resources/Beastie/Noizard/noizard_ready.png" id="6_qraw8"]
-[ext_resource type="Texture2D" uid="uid://b1dup2kwr7l5j" path="res://Autoloads/Resources/Beastie/Noizard/noizard_spike.png" id="7_nsutj"]
+[ext_resource type="Texture2D" uid="uid://cus7a8s6nef4h" path="res://Autoloads/Resources/Beastie/Noizard/noizard_ready.png" id="6_qraw8"]
+[ext_resource type="Texture2D" uid="uid://b2dlecafjowf7" path="res://Autoloads/Resources/Beastie/Noizard/noizard_spike.png" id="7_nsutj"]
 [ext_resource type="Resource" uid="uid://bijgrhbki1aqo" path="res://Autoloads/Resources/Plays/Attack/Mind/slice.tres" id="9_ismyd"]
 [ext_resource type="Resource" uid="uid://bkck3t5a2wv3f" path="res://Autoloads/Resources/Plays/Attack/Spirit/scream.tres" id="11_ltc6c"]
 [ext_resource type="Resource" uid="uid://buvtgtcjmm2y2" path="res://Autoloads/Resources/Plays/Attack/Mind/dump.tres" id="13_6ijr2"]
@@ -36,6 +37,7 @@ mind_base_def = 80
 possible_plays = Array[ExtResource("1_73p0a")]([ExtResource("3_bquwo"), ExtResource("6_apbvt"), ExtResource("9_ismyd"), ExtResource("11_ltc6c"), ExtResource("13_6ijr2"), ExtResource("14_7r1ws"), ExtResource("15_l61lq"), ExtResource("16_04v6f"), ExtResource("17_g021q"), ExtResource("18_r60gt"), ExtResource("19_f2wsh"), ExtResource("20_wf7qs")])
 possible_traits = Array[ExtResource("2_7ssa4")]([ExtResource("2_x54fp"), ExtResource("4_3jda1")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("5_3jda1"),
 1: ExtResource("6_qraw8"),
 2: ExtResource("7_nsutj"),
 6: ExtResource("39_setp5")

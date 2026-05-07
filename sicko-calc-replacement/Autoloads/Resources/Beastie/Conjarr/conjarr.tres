@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=20 format=3 uid="uid://bngwma3foe1wa"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=21 format=3 uid="uid://yoiwwo5rgm88"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_cj2tx"]
 [ext_resource type="Resource" uid="uid://d2npthnq1b582" path="res://Autoloads/Resources/Trait/cryptic.tres" id="2_2dtr3"]
@@ -6,9 +6,10 @@
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_g23rx"]
 [ext_resource type="Resource" uid="uid://duynnadxw4hkg" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_qxpkx"]
 [ext_resource type="Resource" uid="uid://cikeoevkusc8" path="res://Autoloads/Resources/Trait/precise.tres" id="4_2uqym"]
+[ext_resource type="Texture2D" uid="uid://ewbqh6mj3uhq" path="res://Autoloads/Resources/Beastie/Conjarr/conjarr_idle.png" id="5_2uqym"]
 [ext_resource type="Resource" uid="uid://dtkos0xt4rmf" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="6_dga2y"]
-[ext_resource type="Texture2D" uid="uid://b4w2ogd1jwbel" path="res://Autoloads/Resources/Beastie/Conjarr/conjarr_ready.png" id="6_xbf0j"]
-[ext_resource type="Texture2D" uid="uid://08haprmicer5" path="res://Autoloads/Resources/Beastie/Conjarr/conjarr_spike.png" id="7_aiga7"]
+[ext_resource type="Texture2D" uid="uid://10gkidn6uwv3" path="res://Autoloads/Resources/Beastie/Conjarr/conjarr_ready.png" id="6_xbf0j"]
+[ext_resource type="Texture2D" uid="uid://bfjkm6a248t0d" path="res://Autoloads/Resources/Beastie/Conjarr/conjarr_spike.png" id="7_aiga7"]
 [ext_resource type="Resource" uid="uid://bv35xn3xk317w" path="res://Autoloads/Resources/Plays/Attack/Spirit/cook.tres" id="9_6nsit"]
 [ext_resource type="Resource" uid="uid://bdmbgwhgtp2vl" path="res://Autoloads/Resources/Plays/Attack/Spirit/cut_shot.tres" id="12_kxnr3"]
 [ext_resource type="Resource" uid="uid://co6kokb12dkt0" path="res://Autoloads/Resources/Plays/Attack/Body/true_strike.tres" id="15_pc43y"]
@@ -36,6 +37,7 @@ mind_base_def = 63
 possible_plays = Array[ExtResource("1_cj2tx")]([ExtResource("3_qxpkx"), ExtResource("6_dga2y"), ExtResource("9_6nsit"), ExtResource("12_kxnr3"), ExtResource("15_pc43y"), ExtResource("16_w26o5"), ExtResource("17_i06cp"), ExtResource("18_1trou"), ExtResource("19_j4okw"), ExtResource("20_kqbvh"), ExtResource("35_1en20")])
 possible_traits = Array[ExtResource("2_a2f2f")]([ExtResource("2_2dtr3"), ExtResource("4_2uqym")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("5_2uqym"),
 1: ExtResource("6_xbf0j"),
 2: ExtResource("7_aiga7"),
 6: ExtResource("45_1en20")

@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://o0nwicctp8jy"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://djmh6n54ngosp"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_lotr1"]
 [ext_resource type="Resource" uid="uid://daxy5d58ldols" path="res://Autoloads/Resources/Trait/venom_touch.tres" id="2_er023"]
@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_ufmhh"]
 [ext_resource type="Resource" uid="uid://chm7cp4ewi5bp" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="4_juce1"]
 [ext_resource type="Resource" uid="uid://do762o537gfm8" path="res://Autoloads/Resources/Trait/absorption.tres" id="4_xwxq8"]
-[ext_resource type="Texture2D" path="res://Autoloads/Resources/Beastie/Vultoxin/vultoxin_idle.png" id="5_xwxq8"]
+[ext_resource type="Texture2D" uid="uid://q7lxfnv15fry" path="res://Autoloads/Resources/Beastie/Vultoxin/vultoxin_idle.png" id="5_xwxq8"]
 [ext_resource type="Resource" uid="uid://bgg4s10j75g4l" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="6_4qfb3"]
 [ext_resource type="Texture2D" uid="uid://b7iunuidv7tk2" path="res://Autoloads/Resources/Beastie/Vultoxin/icon_vultoxin.png" id="6_ljxy3"]
 [ext_resource type="Resource" uid="uid://8wi04v1m7juh" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="9_s0hsy"]
@@ -32,6 +32,7 @@ mind_base_def = 59
 possible_plays = Array[ExtResource("1_lotr1")]([ExtResource("4_juce1"), ExtResource("6_4qfb3"), ExtResource("9_s0hsy"), ExtResource("11_srkp1"), ExtResource("13_6aidh"), ExtResource("14_vq2e6"), ExtResource("15_xqutf"), ExtResource("16_5tx70")])
 possible_traits = Array[ExtResource("2_qrcio")]([ExtResource("2_er023"), ExtResource("4_xwxq8")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("5_xwxq8"),
 1: ExtResource("5_xwxq8"),
 2: ExtResource("5_xwxq8"),
 6: ExtResource("6_ljxy3")

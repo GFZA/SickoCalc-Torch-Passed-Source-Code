@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=25 format=3 uid="uid://jdw7n0fgcur3"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=26 format=3 uid="uid://bjthxewupgu3b"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_1qr5m"]
 [ext_resource type="Resource" uid="uid://dsnexptlnp1n7" path="res://Autoloads/Resources/Trait/trapper.tres" id="2_1wfet"]
@@ -6,9 +6,10 @@
 [ext_resource type="Resource" uid="uid://dgu38u1ul5b81" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="3_fjles"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_ifijr"]
 [ext_resource type="Resource" uid="uid://cikeoevkusc8" path="res://Autoloads/Resources/Trait/precise.tres" id="4_53vyc"]
+[ext_resource type="Texture2D" uid="uid://c0w83arnpwcj0" path="res://Autoloads/Resources/Beastie/Illugus/illugus_idle.png" id="6_a88fr"]
 [ext_resource type="Resource" uid="uid://bp6cwp5r600rj" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="6_igijl"]
-[ext_resource type="Texture2D" uid="uid://drmkh1e6vgt45" path="res://Autoloads/Resources/Beastie/Illugus/illugus_ready.png" id="7_mki18"]
-[ext_resource type="Texture2D" uid="uid://frffnewg1728" path="res://Autoloads/Resources/Beastie/Illugus/illugus_spike.png" id="8_0cbar"]
+[ext_resource type="Texture2D" uid="uid://cacn2bmh2giix" path="res://Autoloads/Resources/Beastie/Illugus/illugus_ready.png" id="7_mki18"]
+[ext_resource type="Texture2D" uid="uid://d2mpfdyuovmvm" path="res://Autoloads/Resources/Beastie/Illugus/illugus_spike.png" id="8_0cbar"]
 [ext_resource type="Resource" uid="uid://bqpax11k5enii" path="res://Autoloads/Resources/Plays/Attack/Mind/snipe.tres" id="8_gik77"]
 [ext_resource type="Resource" uid="uid://8wi04v1m7juh" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="10_fnj7k"]
 [ext_resource type="Resource" uid="uid://bj7gp00f8xtup" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="12_ikkbn"]
@@ -41,6 +42,7 @@ mind_base_def = 110
 possible_plays = Array[ExtResource("1_1qr5m")]([ExtResource("3_fjles"), ExtResource("6_igijl"), ExtResource("8_gik77"), ExtResource("10_fnj7k"), ExtResource("12_ikkbn"), ExtResource("14_vfkwf"), ExtResource("16_3vket"), ExtResource("17_6uboq"), ExtResource("18_ckkhk"), ExtResource("19_7oiwg"), ExtResource("20_i637x"), ExtResource("21_v6ke7"), ExtResource("22_s6vr6"), ExtResource("23_6ispl"), ExtResource("24_k8sqa"), ExtResource("35_jvpfn")])
 possible_traits = Array[ExtResource("2_n1j3f")]([ExtResource("2_1wfet"), ExtResource("4_53vyc")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("6_a88fr"),
 1: ExtResource("7_mki18"),
 2: ExtResource("8_0cbar"),
 6: ExtResource("12_jstko")

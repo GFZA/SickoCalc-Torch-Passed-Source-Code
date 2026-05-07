@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=27 format=3 uid="uid://dkd36q1e43v1b"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=28 format=3 uid="uid://dlxbw66h5388j"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_co2qs"]
 [ext_resource type="Resource" uid="uid://cagttvqn25cci" path="res://Autoloads/Resources/Trait/acrobat.tres" id="2_5qjw5"]
@@ -6,9 +6,10 @@
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_qw0ss"]
 [ext_resource type="Resource" uid="uid://duynnadxw4hkg" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_w0671"]
 [ext_resource type="Resource" uid="uid://csjy2arcu0s1x" path="res://Autoloads/Resources/Trait/self_assured.tres" id="4_1ujr4"]
+[ext_resource type="Texture2D" uid="uid://day8ihk0e1gf6" path="res://Autoloads/Resources/Beastie/Daredillo/daredillo_idle.png" id="4_3uupq"]
 [ext_resource type="Resource" uid="uid://fysaq1o88o1v" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="5_2jgtp"]
-[ext_resource type="Texture2D" uid="uid://3wfs8k3phtd3" path="res://Autoloads/Resources/Beastie/Daredillo/daredillo_ready.png" id="5_5qjw5"]
-[ext_resource type="Texture2D" uid="uid://b7uvy3el0omsm" path="res://Autoloads/Resources/Beastie/Daredillo/daredillo_spike.png" id="6_1ujr4"]
+[ext_resource type="Texture2D" uid="uid://nij5ipajulmw" path="res://Autoloads/Resources/Beastie/Daredillo/daredillo_ready.png" id="5_5qjw5"]
+[ext_resource type="Texture2D" uid="uid://evsji0kbykpj" path="res://Autoloads/Resources/Beastie/Daredillo/daredillo_spike.png" id="6_1ujr4"]
 [ext_resource type="Resource" uid="uid://cbqqeeugk7xo0" path="res://Autoloads/Resources/Plays/Attack/Spirit/desperate_force.tres" id="7_khfe2"]
 [ext_resource type="Resource" uid="uid://c8icw3pvu0swl" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="9_30kej"]
 [ext_resource type="Resource" uid="uid://c6eqm7qkng1lr" path="res://Autoloads/Resources/Plays/Attack/Body/spike.tres" id="10_dnvk1"]
@@ -43,6 +44,7 @@ mind_base_def = 65
 possible_plays = Array[ExtResource("1_co2qs")]([ExtResource("3_w0671"), ExtResource("5_2jgtp"), ExtResource("7_khfe2"), ExtResource("9_30kej"), ExtResource("10_dnvk1"), ExtResource("14_14vcc"), ExtResource("15_oms5a"), ExtResource("16_vedeh"), ExtResource("17_ekply"), ExtResource("18_0d6af"), ExtResource("19_da3wi"), ExtResource("20_71sl6"), ExtResource("21_7vbi7"), ExtResource("22_5kccc"), ExtResource("23_v2tpi"), ExtResource("24_f0clj"), ExtResource("25_uos7i"), ExtResource("32_ql6m5")])
 possible_traits = Array[ExtResource("2_pdjv8")]([ExtResource("2_5qjw5"), ExtResource("4_1ujr4")])
 sprites = Dictionary[int, Texture2D]({
+0: ExtResource("4_3uupq"),
 1: ExtResource("5_5qjw5"),
 2: ExtResource("6_1ujr4"),
 6: ExtResource("42_ql6m5")
