@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://b4bws0qofhe6x"]
+
+[ext_resource type="Script" uid="uid://cnt7xu4wjn3mx" path="res://Scene/PlayUI/plays_ui.gd" id="1_clvah"]
+[ext_resource type="Texture2D" uid="uid://dgum3wc24lo16" path="res://Scene/PlayUI/plays_ui_defense.png" id="2_clvah"]
+[ext_resource type="FontFile" uid="uid://q2kbgu0jja56" path="res://Autoloads/Resources/Fonts/sportsjersey.ttf" id="2_t0syg"]
+[ext_resource type="Texture2D" uid="uid://dkhdnngx0bnyb" path="res://Scene/PlayUI/plays_ui_disable_mask.png" id="4_ag766"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qejx7"]
+font = ExtResource("2_t0syg")
+font_size = 108
+font_color = Color(0, 0, 0, 1)
+
+[node name="PlaysUI" type="MarginContainer"]
+offset_right = 712.0
+offset_bottom = 143.0
+script = ExtResource("1_clvah")
+
+[node name="UITextureRec" type="TextureRect" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("2_clvah")
+stretch_mode = 3
+
+[node name="NameContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="PlayNameLabel" type="Label" parent="NameContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 10
+text = "End Turn"
+label_settings = SubResource("LabelSettings_qejx7")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Spacer" type="Control" parent="NameContainer"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+
+[node name="DisabledMask" type="TextureRect" parent="."]
+unique_name_in_owner = true
+visible = false
+self_modulate = Color(1, 1, 1, 0.39215687)
+layout_mode = 2
+texture = ExtResource("4_ag766")
+stretch_mode = 3

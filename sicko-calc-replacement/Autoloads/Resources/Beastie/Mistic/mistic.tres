@@ -1,37 +1,19 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=34 format=3 uid="uid://ia7ta4wl58lb"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://vlnxiyvkvolb"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_e3v75"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_ad7c4"]
 [ext_resource type="Resource" uid="uid://q5fhwy5qny81" path="res://Autoloads/Resources/Trait/intangible.tres" id="2_pro8y"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_6nk6x"]
 [ext_resource type="Resource" uid="uid://7uoncfn55rjb" path="res://Autoloads/Resources/Plays/Attack/Mind/cornershot.tres" id="3_uddiu"]
-[ext_resource type="Resource" uid="uid://brf1cqjq1gnxc" path="res://Autoloads/Resources/Plays/Volley/cover.tres" id="4_ckw1a"]
-[ext_resource type="Resource" uid="uid://bpp1fdkheyfi" path="res://Autoloads/Resources/Plays/Defense/stinky.tres" id="5_ckppy"]
 [ext_resource type="Resource" uid="uid://du0svi4gto818" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="6_5aog5"]
-[ext_resource type="Resource" uid="uid://l57ggke2vhn0" path="res://Autoloads/Resources/Plays/Defense/heat_up.tres" id="7_ujkn7"]
+[ext_resource type="Texture2D" uid="uid://mlv4g4oo1lmy" path="res://Autoloads/Resources/Beastie/Mistic/mistic_ready.png" id="6_oeuor"]
+[ext_resource type="Texture2D" uid="uid://bov0yia68u10u" path="res://Autoloads/Resources/Beastie/Mistic/mistic_spike.png" id="7_cpswo"]
 [ext_resource type="Resource" uid="uid://c7blujvv2w3vu" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="8_wemd7"]
-[ext_resource type="Resource" uid="uid://cddwygqioba8b" path="res://Autoloads/Resources/Plays/Support/hex.tres" id="9_o6sn6"]
 [ext_resource type="Resource" uid="uid://gfai1onwmtct" path="res://Autoloads/Resources/Plays/Attack/Mind/freezeray.tres" id="10_7hnm1"]
-[ext_resource type="Resource" uid="uid://du8cw84yk24oa" path="res://Autoloads/Resources/Plays/Support/teleport.tres" id="11_du5qt"]
-[ext_resource type="Resource" uid="uid://pwfmxe4epkih" path="res://Autoloads/Resources/Plays/Support/dreadful_mist.tres" id="12_cthe6"]
 [ext_resource type="Resource" uid="uid://nwk5cfisjfoh" path="res://Autoloads/Resources/Plays/Attack/Mind/soulcursher.tres" id="13_2h1qh"]
-[ext_resource type="Resource" uid="uid://d3avpv87snvri" path="res://Autoloads/Resources/Plays/Defense/gloom.tres" id="14_4k7to"]
 [ext_resource type="Resource" uid="uid://dfmppss3snt2l" path="res://Autoloads/Resources/Plays/Attack/Mind/echo_strike.tres" id="15_piynx"]
 [ext_resource type="Resource" uid="uid://bijgrhbki1aqo" path="res://Autoloads/Resources/Plays/Attack/Mind/slice.tres" id="16_1jgjq"]
 [ext_resource type="Resource" uid="uid://dgfdkj7w76uxx" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="17_5et26"]
-[ext_resource type="Resource" uid="uid://c624jkvl1417h" path="res://Autoloads/Resources/Plays/Volley/refresh.tres" id="18_puawm"]
-[ext_resource type="Resource" uid="uid://cs7p2ql8pbv87" path="res://Autoloads/Resources/Plays/Support/dispel.tres" id="19_dpj4n"]
-[ext_resource type="Resource" uid="uid://7nsxd3vbne52" path="res://Autoloads/Resources/Plays/Support/exhaust.tres" id="20_6j6df"]
-[ext_resource type="Resource" uid="uid://xpx483vp77ry" path="res://Autoloads/Resources/Plays/Support/feint.tres" id="21_gfuql"]
-[ext_resource type="Resource" uid="uid://ccjlfthgm3ed2" path="res://Autoloads/Resources/Plays/Support/jeer.tres" id="23_dwr0t"]
-[ext_resource type="Resource" uid="uid://71t7u1j5yqvb" path="res://Autoloads/Resources/Plays/Support/mark.tres" id="24_ipytr"]
-[ext_resource type="Resource" uid="uid://b1kd6deumgyu0" path="res://Autoloads/Resources/Plays/Support/meditate.tres" id="25_4pidh"]
-[ext_resource type="Resource" uid="uid://ymdvl6wdoqws" path="res://Autoloads/Resources/Plays/Defense/hawkeye.tres" id="26_8ei1o"]
-[ext_resource type="Resource" uid="uid://by0ross5cpbjo" path="res://Autoloads/Resources/Plays/Defense/menace.tres" id="27_g8wdi"]
-[ext_resource type="Resource" uid="uid://vrgoi8jwdlq1" path="res://Autoloads/Resources/Plays/Defense/patience.tres" id="28_1byay"]
-[ext_resource type="Resource" uid="uid://dytuvbvg3oamq" path="res://Autoloads/Resources/Plays/Defense/shield.tres" id="29_4q5wl"]
-[ext_resource type="Resource" uid="uid://iuquitr1xs5u" path="res://Autoloads/Resources/Plays/Defense/staredown.tres" id="30_emmit"]
-[ext_resource type="Resource" uid="uid://k5re1ttrcy1f" path="res://Autoloads/Resources/Plays/Support/wink.tres" id="30_l2axt"]
 [ext_resource type="Texture2D" uid="uid://c423r10svyi6l" path="res://Autoloads/Resources/Beastie/Mistic/icon_mistic.png" id="39_l2axt"]
 
 [resource]
@@ -47,9 +29,11 @@ mind_base_pow = 85
 body_base_def = 105
 spirit_base_def = 50
 mind_base_def = 80
-possible_plays = Array[ExtResource("1_e3v75")]([ExtResource("3_uddiu"), ExtResource("4_ckw1a"), ExtResource("5_ckppy"), ExtResource("6_5aog5"), ExtResource("7_ujkn7"), ExtResource("8_wemd7"), ExtResource("9_o6sn6"), ExtResource("10_7hnm1"), ExtResource("11_du5qt"), ExtResource("12_cthe6"), ExtResource("13_2h1qh"), ExtResource("14_4k7to"), ExtResource("15_piynx"), ExtResource("16_1jgjq"), ExtResource("17_5et26"), ExtResource("18_puawm"), ExtResource("19_dpj4n"), ExtResource("20_6j6df"), ExtResource("21_gfuql"), ExtResource("23_dwr0t"), ExtResource("24_ipytr"), ExtResource("25_4pidh"), ExtResource("26_8ei1o"), ExtResource("27_g8wdi"), ExtResource("28_1byay"), ExtResource("29_4q5wl"), ExtResource("30_emmit"), ExtResource("30_l2axt")])
+possible_plays = Array[ExtResource("1_e3v75")]([ExtResource("3_uddiu"), ExtResource("6_5aog5"), ExtResource("8_wemd7"), ExtResource("10_7hnm1"), ExtResource("13_2h1qh"), ExtResource("15_piynx"), ExtResource("16_1jgjq"), ExtResource("17_5et26")])
 possible_traits = Array[ExtResource("2_ad7c4")]([ExtResource("2_pro8y")])
 sprites = Dictionary[int, Texture2D]({
+1: ExtResource("6_oeuor"),
+2: ExtResource("7_cpswo"),
 6: ExtResource("39_l2axt")
 })
 y_offset = -50

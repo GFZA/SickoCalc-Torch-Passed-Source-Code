@@ -128,6 +128,7 @@ expand_icon = true
 
 [node name="VolleyPlaysFilterButton" type="Button" parent="MainContainer/BeastieLowerContainer/FilterContainer"]
 unique_name_in_owner = true
+visible = false
 custom_minimum_size = Vector2(105, 105)
 layout_mode = 2
 size_flags_vertical = 4
@@ -139,6 +140,7 @@ expand_icon = true
 
 [node name="SupportPlaysFilterButton" type="Button" parent="MainContainer/BeastieLowerContainer/FilterContainer"]
 unique_name_in_owner = true
+visible = false
 custom_minimum_size = Vector2(105, 105)
 layout_mode = 2
 size_flags_vertical = 4
@@ -150,6 +152,7 @@ expand_icon = true
 
 [node name="DefensePlaysFilterButton" type="Button" parent="MainContainer/BeastieLowerContainer/FilterContainer"]
 unique_name_in_owner = true
+visible = false
 custom_minimum_size = Vector2(105, 105)
 layout_mode = 2
 size_flags_vertical = 4

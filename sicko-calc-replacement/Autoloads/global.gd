@@ -163,9 +163,9 @@ var all_beasties_data : Array[Beastie] = []
 var all_body_attacks : Array[Plays] = []
 var all_spirit_attacks : Array[Plays] = []
 var all_mind_attacks : Array[Plays] = []
-var all_volley_plays : Array[Plays] = []
-var all_support_plays : Array[Plays] = []
-var all_defense_plays : Array[Plays] = []
+#var all_volley_plays : Array[Plays] = []
+#var all_support_plays : Array[Plays] = []
+#var all_defense_plays : Array[Plays] = []
 var all_plays : Array[Plays] = []
 var all_trait_data : Array[Trait] = []
 
@@ -192,9 +192,10 @@ func _assign_all_beasties_data() -> void:
 						if inner_file_name.ends_with(".tres") or inner_file_name.ends_with(".tres.remap"): # Is Beastie Resource
 							var suffix : String = ".tres" if not Global.is_on_web else "" # Not sure why we need this but it works!
 							var final_path : String = path + file_name + "/" + inner_file_name.get_basename() + suffix
-							#_remove_junk_sprite_from_resource(final_path)
+							#_remove_junk_from_resource(final_path)
 							all_beasties_data.append(load(final_path))
-						#elif inner_file_name.ends_with(".png") and not inner_file_name.begins_with("icon"):
+						#elif not (inner_file_name.begins_with("icon") or \
+							#inner_file_name.ends_with("_ready.png") or inner_file_name.ends_with("_spike.png")):
 							#inner_dir.remove(path + file_name + "/" + inner_file_name)
 						inner_file_name = inner_dir.get_next()
 			file_name = dir.get_next()
@@ -202,15 +203,22 @@ func _assign_all_beasties_data() -> void:
 		push_error("An error occurred when trying to access the path %s." % path)
 
 ## Uncomment these and those above then launch the tool to automatically remove junk sprites!
-#func _remove_junk_sprite_from_resource(resource_file_path : String) -> void:
+#func _remove_junk_from_resource(resource_file_path : String) -> void:
 	#var beastie : Beastie = load(resource_file_path)
+#
 	#if beastie.sprites.size() > 1:
 		#beastie.sprites.erase(Beastie.Sprite.IDLE)
-		#beastie.sprites.erase(Beastie.Sprite.READY)
-		#beastie.sprites.erase(Beastie.Sprite.SPIKE)
 		#beastie.sprites.erase(Beastie.Sprite.VOLLEY)
 		#beastie.sprites.erase(Beastie.Sprite.GOOD)
 		#beastie.sprites.erase(Beastie.Sprite.BAD)
+		## Keep READY, SPIKE, ICON
+#
+	#var only_attacks : Array[Plays] = []
+	#for play in beastie.possible_plays:
+		#if play and play.type in [Plays.Type.ATTACK_BODY, Plays.Type.ATTACK_SPIRIT, Plays.Type.ATTACK_MIND]:
+			#only_attacks.append(play)
+	#beastie.possible_plays = only_attacks
+#
 	#ResourceSaver.save(beastie, resource_file_path)
 
 
@@ -228,15 +236,15 @@ func _assign_all_plays_data() -> void:
 			2:
 				path += "Attack/Mind"
 				array_to_add = all_mind_attacks
-			3:
-				path += "Volley"
-				array_to_add = all_volley_plays
-			4:
-				path += "Support"
-				array_to_add = all_support_plays
-			5:
-				path += "Defense"
-				array_to_add = all_defense_plays
+			#3:
+				#path += "Volley"
+				#array_to_add = all_volley_plays
+			#4:
+				#path += "Support"
+				#array_to_add = all_support_plays
+			#5:
+				#path += "Defense"
+				#array_to_add = all_defense_plays
 
 		var dir := DirAccess.open(path)
 		if dir:
@@ -260,9 +268,9 @@ func _assign_all_plays_data() -> void:
 	all_plays.append_array(all_body_attacks)
 	all_plays.append_array(all_spirit_attacks)
 	all_plays.append_array(all_mind_attacks)
-	all_plays.append_array(all_volley_plays)
-	all_plays.append_array(all_support_plays)
-	all_plays.append_array(all_defense_plays)
+	#all_plays.append_array(all_volley_plays)
+	#all_plays.append_array(all_support_plays)
+	#all_plays.append_array(all_defense_plays)
 
 
 func _assign_all_trait_data() -> void:

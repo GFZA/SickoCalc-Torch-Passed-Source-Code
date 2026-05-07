@@ -57,7 +57,6 @@ layout_mode = 2
 
 [node name="PlaysSelectUI" parent="AlmostMainContainer/BG/MarginContainer" instance=ExtResource("4_s6xmw")]
 unique_name_in_owner = true
-visible = false
 layout_mode = 2
 
 [node name="TraitSelectUI" parent="AlmostMainContainer/BG/MarginContainer" instance=ExtResource("5_aln1h")]

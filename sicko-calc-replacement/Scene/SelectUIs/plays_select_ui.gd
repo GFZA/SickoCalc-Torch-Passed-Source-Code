@@ -79,9 +79,9 @@ func _assign_all_data_arrays() -> void:
 	all_body_attacks = Global.all_body_attacks.duplicate()
 	all_spirit_attacks = Global.all_spirit_attacks.duplicate()
 	all_mind_attacks = Global.all_mind_attacks.duplicate()
-	all_volley_plays = Global.all_volley_plays.duplicate()
-	all_support_plays = Global.all_support_plays.duplicate()
-	all_defense_plays = Global.all_defense_plays.duplicate()
+	#all_volley_plays = Global.all_volley_plays.duplicate()
+	#all_support_plays = Global.all_support_plays.duplicate()
+	#all_defense_plays = Global.all_defense_plays.duplicate()
 	all_plays = Global.all_plays
 
 

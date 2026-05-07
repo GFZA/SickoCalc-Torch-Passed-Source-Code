@@ -2,7 +2,7 @@
 
 [ext_resource type="Theme" uid="uid://bkrlwg21fhprn" path="res://Autoloads/Resources/Themes/edit_button.tres" id="1_5v8vx"]
 [ext_resource type="Script" uid="uid://bmp21qj65d8ax" path="res://Scene/SelectUIs/plays_button.gd" id="1_06qde"]
-[ext_resource type="PackedScene" uid="uid://c01w1s15h8gk1" path="res://Scene/SelectUIs/PlayUI.tscn" id="2_1t30o"]
+[ext_resource type="PackedScene" uid="uid://b4bws0qofhe6x" path="res://Scene/PlayUI/plays_ui.tscn" id="2_1t30o"]
 [ext_resource type="FontFile" uid="uid://cvfib27cf5q88" path="res://Autoloads/Resources/Fonts/Go Banana.ttf" id="6_yaaka"]
 
 [node name="PlaysButton" type="Button"]
@@ -15,6 +15,11 @@ script = ExtResource("1_06qde")
 
 [node name="PlaysUI" parent="." instance=ExtResource("2_1t30o")]
 unique_name_in_owner = true
+layout_mode = 1
+offset_left = 75.00001
+offset_top = 14.999999
+offset_right = 787.0
+offset_bottom = 157.0
 scale = Vector2(0.7, 0.7)
 
 [node name="DescLabel" type="RichTextLabel" parent="."]
