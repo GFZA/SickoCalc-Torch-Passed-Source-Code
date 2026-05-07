@@ -28,7 +28,7 @@ theme_override_constants/margin_right = 125
 
 [node name="StatsContainer" type="VBoxContainer" parent="MainContainer/StatsMainContainer/StatsMarginContainer"]
 layout_mode = 2
-theme_override_constants/separation = 8
+theme_override_constants/separation = 12
 
 [node name="StatsLabel" type="Label" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer"]
 unique_name_in_owner = true

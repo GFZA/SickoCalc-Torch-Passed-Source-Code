@@ -87,7 +87,7 @@ func update_grid() -> void:
 	beastie_button_container.columns = 4 if show_name else 11
 
 	var beastie_array : Array[Beastie] = _get_filtered_array(current_search_string)
-	beastie_array.push_front(null) # Add None Button here
+	#beastie_array.push_front(null) # Add None Button here
 
 	for beastie : Beastie in beastie_array:
 		var new_button : BeastieButton = BEASTIE_BUTTON.instantiate()

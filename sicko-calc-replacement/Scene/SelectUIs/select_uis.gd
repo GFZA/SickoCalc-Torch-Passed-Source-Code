@@ -28,8 +28,8 @@ func _on_beastie_selected(beastie : Beastie, side : Global.MySide) -> void:
 	reset_and_hide()
 
 
-func _on_plays_selected(plays : Plays, slot_index : int, side : Global.MySide) -> void:
-	plays_selected.emit(plays, slot_index, side)
+func _on_plays_selected(plays : Plays) -> void:
+	plays_selected.emit(plays)
 	reset_and_hide()
 
 
@@ -62,13 +62,11 @@ func show_beastie_select_ui(side : Global.MySide) -> void:
 	beastie_select_ui.update_grid()
 
 
-func show_plays_select_ui(beastie : Beastie, slot_index : int, side : Global.MySide) -> void:
+func show_plays_select_ui(beastie : Beastie) -> void:
 	show()
 	hide_all_ui()
 	plays_select_ui.show()
 	plays_select_ui.beastie = beastie
-	plays_select_ui.side = side
-	plays_select_ui.slot_index = slot_index
 
 
 func show_trait_select_ui(beastie : Beastie, side : Global.MySide) -> void:

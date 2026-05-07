@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://cnn1686te4wf8"]
+[gd_scene load_steps=6 format=3 uid="uid://cnn1686te4wf8"]
 
 [ext_resource type="PackedScene" uid="uid://1arcfnc6wacj" path="res://Scene/BeastieColumn/beastie_row.tscn" id="1_cswjd"]
 [ext_resource type="Script" uid="uid://gfslx1e2j8by" path="res://Scene/BeastieColumn/beastie_column.gd" id="1_nvjsa"]
+[ext_resource type="Resource" uid="uid://p68xjhmdw3hk" path="res://Autoloads/Resources/Beastie/Sprecko/sprecko.tres" id="3_om41x"]
+[ext_resource type="Theme" uid="uid://bkrlwg21fhprn" path="res://Autoloads/Resources/Themes/edit_button.tres" id="3_xu4fn"]
+[ext_resource type="PackedScene" uid="uid://b4bws0qofhe6x" path="res://Scene/PlayUI/plays_ui.tscn" id="4_om41x"]
 
 [node name="BeastieColumn" type="MarginContainer"]
 custom_minimum_size = Vector2(1350, 2025)
@@ -25,3 +28,68 @@ theme_override_constants/separation = 0
 [node name="BeastieRow" parent="BGRec/MainContainer" instance=ExtResource("1_cswjd")]
 unique_name_in_owner = true
 layout_mode = 2
+beastie = ExtResource("3_om41x")
+
+[node name="AttackRow" type="HBoxContainer" parent="BGRec/MainContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_constants/separation = 48
+alignment = 1
+
+[node name="SelectAttackButton" type="Button" parent="BGRec/MainContainer/AttackRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+focus_mode = 0
+theme = ExtResource("3_xu4fn")
+text = "Select Attack"
+
+[node name="AttackPlaysUI" parent="BGRec/MainContainer/AttackRow/SelectAttackButton" instance=ExtResource("4_om41x")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -249.0
+offset_top = -50.5
+offset_right = 463.0
+offset_bottom = 91.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.7, 0.7)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="MimicAttackSelectButton" type="Button" parent="BGRec/MainContainer/AttackRow"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+focus_mode = 0
+theme = ExtResource("3_xu4fn")
+text = "Select Attack"
+
+[node name="MimicAttackPlaysUI" parent="BGRec/MainContainer/AttackRow/MimicAttackSelectButton" instance=ExtResource("4_om41x")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -249.0
+offset_top = -50.5
+offset_right = 463.0
+offset_bottom = 91.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.7, 0.7)
+size_flags_horizontal = 4
+size_flags_vertical = 4

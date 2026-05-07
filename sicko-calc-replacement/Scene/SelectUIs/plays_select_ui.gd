@@ -2,7 +2,7 @@
 class_name PlaysSelectUI
 extends Control
 
-signal plays_selected(plays : Plays, slot_index : int, side : Global.MySide, team_pos : TeamController.TeamPosition)
+signal plays_selected(plays : Plays)
 
 const PLAY_BUTTON : PackedScene = preload("uid://dflcrna6d1235")
 const FREE_BALL : Plays = preload("uid://1gwxenj63w75")
@@ -13,23 +13,20 @@ const FREE_BALL : Plays = preload("uid://1gwxenj63w75")
 		_update_beastie_plays_data()
 		update_grid()
 
-var side : Global.MySide = Global.MySide.LEFT
-var slot_index : int = 0
-
 var all_body_attacks : Array[Plays] = []
 var all_spirit_attacks : Array[Plays] = []
 var all_mind_attacks : Array[Plays] = []
-var all_volley_plays : Array[Plays] = []
-var all_support_plays : Array[Plays] = []
-var all_defense_plays : Array[Plays] = []
+#var all_volley_plays : Array[Plays] = []
+#var all_support_plays : Array[Plays] = []
+#var all_defense_plays : Array[Plays] = []
 var all_plays : Array[Plays] = []
 
 var beastie_body_attacks : Array[Plays] = []
 var beastie_spirit_attacks : Array[Plays] = []
 var beastie_mind_attacks : Array[Plays] = []
-var beastie_volley_plays : Array[Plays] = []
-var beastie_support_plays : Array[Plays] = []
-var beastie_defense_plays : Array[Plays] = []
+#var beastie_volley_plays : Array[Plays] = []
+#var beastie_support_plays : Array[Plays] = []
+#var beastie_defense_plays : Array[Plays] = []
 var beastie_plays : Array[Plays] = []
 
 var current_filter : Plays.Type = Plays.Type.NONE :
@@ -89,9 +86,9 @@ func _update_beastie_plays_data() -> void:
 		beastie_body_attacks.clear()
 		beastie_spirit_attacks.clear()
 		beastie_mind_attacks.clear()
-		beastie_volley_plays.clear()
-		beastie_support_plays.clear()
-		beastie_defense_plays.clear()
+		#beastie_volley_plays.clear()
+		#beastie_support_plays.clear()
+		#beastie_defense_plays.clear()
 		beastie_plays.clear()
 		return
 
@@ -122,31 +119,31 @@ func _update_beastie_plays_data() -> void:
 	)
 	beastie_mind_attacks.sort_custom(sort_by_name)
 
-	# Volley
-	beastie_volley_plays = pre_sort_beastie_plays.filter(func(plays : Plays):
-		return plays.type == Plays.Type.VOLLEY if plays else false
-	)
-	beastie_volley_plays.sort_custom(sort_by_name)
-
-	# Support
-	beastie_support_plays = pre_sort_beastie_plays.filter(func(plays : Plays):
-		return plays.type == Plays.Type.SUPPORT if plays else false
-	)
-	beastie_support_plays.sort_custom(sort_by_name)
-
-	# Defense
-	beastie_defense_plays = pre_sort_beastie_plays.filter(func(plays : Plays):
-		return plays.type == Plays.Type.DEFENSE if plays else false
-	)
-	beastie_defense_plays.sort_custom(sort_by_name)
+	## Volley
+	#beastie_volley_plays = pre_sort_beastie_plays.filter(func(plays : Plays):
+		#return plays.type == Plays.Type.VOLLEY if plays else false
+	#)
+	#beastie_volley_plays.sort_custom(sort_by_name)
+#
+	## Support
+	#beastie_support_plays = pre_sort_beastie_plays.filter(func(plays : Plays):
+		#return plays.type == Plays.Type.SUPPORT if plays else false
+	#)
+	#beastie_support_plays.sort_custom(sort_by_name)
+#
+	## Defense
+	#beastie_defense_plays = pre_sort_beastie_plays.filter(func(plays : Plays):
+		#return plays.type == Plays.Type.DEFENSE if plays else false
+	#)
+	#beastie_defense_plays.sort_custom(sort_by_name)
 
 	# All Plays
 	beastie_plays.append_array(beastie_body_attacks)
 	beastie_plays.append_array(beastie_spirit_attacks)
 	beastie_plays.append_array(beastie_mind_attacks)
-	beastie_plays.append_array(beastie_volley_plays)
-	beastie_plays.append_array(beastie_support_plays)
-	beastie_plays.append_array(beastie_defense_plays)
+	#beastie_plays.append_array(beastie_volley_plays)
+	#beastie_plays.append_array(beastie_support_plays)
+	#beastie_plays.append_array(beastie_defense_plays)
 
 
 func _get_filtered_array() -> Array[Plays]:
@@ -160,12 +157,12 @@ func _get_filtered_array() -> Array[Plays]:
 				return beastie_spirit_attacks
 			Plays.Type.ATTACK_MIND:
 				return beastie_mind_attacks
-			Plays.Type.VOLLEY:
-				return beastie_volley_plays
-			Plays.Type.SUPPORT:
-				return beastie_support_plays
-			Plays.Type.DEFENSE:
-				return beastie_defense_plays
+			#Plays.Type.VOLLEY:
+				#return beastie_volley_plays
+			#Plays.Type.SUPPORT:
+				#return beastie_support_plays
+			#Plays.Type.DEFENSE:
+				#return beastie_defense_plays
 	else:
 		match current_filter:
 			Plays.Type.NONE:
@@ -176,12 +173,12 @@ func _get_filtered_array() -> Array[Plays]:
 				return all_spirit_attacks
 			Plays.Type.ATTACK_MIND:
 				return all_mind_attacks
-			Plays.Type.VOLLEY:
-				return all_volley_plays
-			Plays.Type.SUPPORT:
-				return all_support_plays
-			Plays.Type.DEFENSE:
-				return all_defense_plays
+			#Plays.Type.VOLLEY:
+				#return all_volley_plays
+			#Plays.Type.SUPPORT:
+				#return all_support_plays
+			#Plays.Type.DEFENSE:
+				#return all_defense_plays
 	return []
 
 
@@ -220,18 +217,18 @@ func _on_plays_button_plays_selected(plays : Plays) -> void:
 	if not beastie:
 		return
 	if not plays:
-		beastie.my_plays[slot_index] = null
-		beastie.my_plays_updated.emit(beastie.my_plays) # Have to manually emitted for some reason)
-		plays_selected.emit(null, slot_index, side)
+		#beastie.my_plays[0] = null
+		#beastie.my_plays_updated.emit(beastie.my_plays) # Have to manually emitted for some reason)
+		plays_selected.emit(null)
 	else:
-		beastie.my_plays[slot_index] = plays.duplicate(true)
-		beastie.my_plays_updated.emit(beastie.my_plays) # Have to manually emitted for some reason)
-		plays_selected.emit(beastie.my_plays[slot_index], slot_index, side)
+		#beastie.my_plays[0] = plays.duplicate(true)
+		#beastie.my_plays_updated.emit(beastie.my_plays) # Have to manually emitted for some reason)
+		#plays_selected.emit(beastie.my_plays[0])
+		plays_selected.emit(plays.duplicate(true))
 
 
 func reset() -> void:
 	beastie = null
-	side = Global.MySide.LEFT
 	current_filter = Plays.Type.NONE
 	current_search_string = ""
 	search_bar.text = ""
