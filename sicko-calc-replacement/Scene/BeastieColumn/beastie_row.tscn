@@ -41,7 +41,7 @@ horizontal_alignment = 2
 [node name="BodyBG" type="ColorRect" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer"]
 custom_minimum_size = Vector2(0, 75)
 layout_mode = 2
-color = Color(1, 1, 0, 1)
+color = Color(0.9843137, 0.8784314, 0.3529412, 1)
 
 [node name="BodyLabelMargin" type="MarginContainer" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer/BodyBG"]
 layout_mode = 1
@@ -63,7 +63,7 @@ horizontal_alignment = 2
 [node name="SpiritBG" type="ColorRect" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer"]
 custom_minimum_size = Vector2(0, 75)
 layout_mode = 2
-color = Color(1, 0, 1, 1)
+color = Color(0.98039216, 0.5254902, 0.6901961, 1)
 
 [node name="SpiritLabelMargin" type="MarginContainer" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer/SpiritBG"]
 layout_mode = 1
@@ -85,7 +85,7 @@ horizontal_alignment = 2
 [node name="MindBG" type="ColorRect" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer"]
 custom_minimum_size = Vector2(0, 75)
 layout_mode = 2
-color = Color(0, 1, 1, 1)
+color = Color(0.5921569, 0.8509804, 0.9843137, 1)
 
 [node name="MindLabelMargin" type="MarginContainer" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer/MindBG"]
 layout_mode = 1

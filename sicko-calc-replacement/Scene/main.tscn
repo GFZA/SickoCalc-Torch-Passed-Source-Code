@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://6tifqer1os1t"]
+[gd_scene load_steps=5 format=3 uid="uid://6tifqer1os1t"]
 
 [ext_resource type="PackedScene" uid="uid://c0rfhniciamxq" path="res://Scene/SelectUIs/select_uis.tscn" id="1_f6udf"]
 [ext_resource type="Script" uid="uid://b5jcl1uu04k63" path="res://Scene/main.gd" id="1_r34rm"]
 [ext_resource type="PackedScene" uid="uid://cnn1686te4wf8" path="res://Scene/BeastieColumn/beastie_column.tscn" id="1_sblpm"]
+[ext_resource type="PackedScene" uid="uid://cbc5i66rtpig1" path="res://Scene/DamageSplash/damage_splash.tscn" id="3_2wwxx"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -21,7 +22,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 1)
+color = Color(0.23753911, 0.23753914, 0.23753911, 1)
 metadata/_edit_lock_ = true
 
 [node name="MainContainer" type="HBoxContainer" parent="."]
@@ -38,6 +39,25 @@ alignment = 1
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 2
+
+[node name="MiddleMarginContainer" type="MarginContainer" parent="MainContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_bottom = 100
+
+[node name="MiddleContainer" type="VBoxContainer" parent="MainContainer/MiddleMarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+
+[node name="DamageSplashAnchor" type="Control" parent="MainContainer/MiddleMarginContainer/MiddleContainer"]
+custom_minimum_size = Vector2(600, 600)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="DamageSplash" parent="MainContainer/MiddleMarginContainer/MiddleContainer/DamageSplashAnchor" instance=ExtResource("3_2wwxx")]
+unique_name_in_owner = true
+layout_mode = 0
+offset_bottom = 150.0
 
 [node name="RightBeastieColumn" parent="MainContainer" instance=ExtResource("1_sblpm")]
 unique_name_in_owner = true

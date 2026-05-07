@@ -2,6 +2,7 @@
 class_name BeastieColumn
 extends MarginContainer
 
+signal beastie_updated
 
 @export var beastie : Beastie :
 	set(value):
@@ -22,6 +23,7 @@ func _update_beastie() -> void:
 	if not is_node_ready():
 		await ready
 	beastie_row.beastie = beastie
+	beastie_updated.emit()
 
 
 func _update_side() -> void:

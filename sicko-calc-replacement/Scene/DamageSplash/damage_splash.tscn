@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbc5i66rtpig1"]
+
+[ext_resource type="Script" uid="uid://7876n1ypq426" path="res://Scene/DamageSplash/damage_splash.gd" id="1_7xo7y"]
+[ext_resource type="FontFile" uid="uid://3m3y4biedw3n" path="res://Autoloads/Resources/Fonts/Hauser.otf" id="2_7xo7y"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_uutlb"]
+font = ExtResource("2_7xo7y")
+font_size = 288
+font_color = Color(0.9843137, 0.8784314, 0.3529412, 1)
+outline_size = 72
+outline_color = Color(0, 0, 0, 1)
+
+[node name="DamageSplash" type="MarginContainer"]
+custom_minimum_size = Vector2(600, 600)
+offset_right = 600.0
+offset_bottom = 600.0
+theme_override_constants/margin_top = 8
+script = ExtResource("1_7xo7y")
+
+[node name="BGSplash" type="Polygon2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(-5.1, -11)
+scale = Vector2(4, 4)
+color = Color(0.984, 0.878, 0.353, 1)
+polygon = PackedVector2Array(14, 60, 46, 48, 48, 15, 71, 39, 111, 10, 110, 51, 138, 51, 121, 74, 136, 95, 110, 99, 100, 133, 73, 111, 48, 145, 44, 102, 1, 94, 30, 77)
+
+[node name="FGSplash" type="Polygon2D" parent="."]
+position = Vector2(381, 127)
+scale = Vector2(4, 4)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-86.73532, 15.273529, -48.73532, 22.27353, -46.73532, -1.726471, -15.735321, 11.273529, 0.26467896, 1.273529, 4.264679, 19.27353, 45.26468, 24.27353, 19.264679, 43.27353, 50.26468, 65.27353, 5.264679, 66.27353, 8.264679, 89.27353, -17.735321, 72.27353, -45.73532, 85.27353, -50.73532, 63.27353, -76.73532, 66.27353, -58.73532, 39.27353)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Spacer" type="Control" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+
+[node name="NumberLabel" type="Label" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "0"
+label_settings = SubResource("LabelSettings_uutlb")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Spacer2" type="Control" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2

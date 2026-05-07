@@ -1,9 +1,6 @@
 @tool
 extends Node
 
-# Use to tell DamageSplash display BREAK text
-const BREAK_TEXT_DAMAGE := -99999
-
 enum MySide {LEFT, RIGHT}
 enum SortBeastie {NAME, NUMBER}
 
