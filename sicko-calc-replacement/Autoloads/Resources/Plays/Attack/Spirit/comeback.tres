@@ -7,5 +7,7 @@ script = ExtResource("1_t3ggm")
 name = "Comeback"
 base_pow = 60
 descrition = "ATTACK. POW x1.5 if tied or behind on score."
+condition_name = "Tied or Behind on score"
+condition_mult = 1.5
 type = 1
 metadata/_custom_type_script = "uid://bc63soeia1eb1"

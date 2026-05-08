@@ -5,15 +5,15 @@ extends Resource
 @export var name : String = "Primitive"
 @export_multiline var description : String = "This Beastie is traitless"
 
-@export_group("Damage multipliers")
+@export_group("Multipliers Condition")
+@export var need_to_be_manually_activated : bool = false
+@export var always_activate : bool = false
+@export var condition_name : String = ""
 @export_range(0.75, 2.0, 0.05) var damage_dealt_mult : float = 1.0
 @export_range(1.0, 1.5, 0.1) var def_mult : float = 1.0
-@export_group("Traits Special")
+@export_group("Starter Special")
 @export var is_starter_trait : bool = false
 @export var starter_trait_type : Global.ColorType = Global.ColorType.BODY
-@export var need_to_be_manually_activated : bool = false
-@export var manual_condition_name : String = ""
-@export var always_activate : bool = false
 
 var manually_activated : bool = false
 

@@ -1,10 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://cnn1686te4wf8"]
+[gd_scene load_steps=11 format=3 uid="uid://cnn1686te4wf8"]
 
 [ext_resource type="PackedScene" uid="uid://1arcfnc6wacj" path="res://Scene/BeastieColumn/beastie_row.tscn" id="1_cswjd"]
 [ext_resource type="Script" uid="uid://gfslx1e2j8by" path="res://Scene/BeastieColumn/beastie_column.gd" id="1_nvjsa"]
 [ext_resource type="Resource" uid="uid://p68xjhmdw3hk" path="res://Autoloads/Resources/Beastie/Sprecko/sprecko.tres" id="3_om41x"]
 [ext_resource type="Theme" uid="uid://bkrlwg21fhprn" path="res://Autoloads/Resources/Themes/edit_button.tres" id="3_xu4fn"]
+[ext_resource type="Theme" uid="uid://cp230picecare" path="res://Autoloads/Resources/Themes/edit_button_for_button_group.tres" id="4_buii5"]
 [ext_resource type="PackedScene" uid="uid://b4bws0qofhe6x" path="res://Scene/PlayUI/plays_ui.tscn" id="4_om41x"]
+[ext_resource type="Resource" uid="uid://1gwxenj63w75" path="res://Autoloads/Resources/Plays/Attack/Body/free_ball.tres" id="6_uupfg"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_ce8k3"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_jot1x"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_buii5"]
 
 [node name="BeastieColumn" type="MarginContainer"]
 custom_minimum_size = Vector2(1350, 2025)
@@ -13,6 +21,7 @@ theme_override_constants/margin_top = 100
 theme_override_constants/margin_right = 100
 theme_override_constants/margin_bottom = 100
 script = ExtResource("1_nvjsa")
+beastie = ExtResource("3_om41x")
 
 [node name="BGRec" type="ColorRect" parent="."]
 layout_mode = 2
@@ -23,18 +32,87 @@ metadata/_edit_lock_ = true
 layout_mode = 0
 offset_right = 1150.0
 offset_bottom = 1825.0
-theme_override_constants/separation = 0
+theme_override_constants/separation = 64
 
 [node name="BeastieRow" parent="BGRec/MainContainer" instance=ExtResource("1_cswjd")]
 unique_name_in_owner = true
 layout_mode = 2
 beastie = ExtResource("3_om41x")
 
+[node name="TraitRow" type="HBoxContainer" parent="BGRec/MainContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="TraitOneButton" type="Button" parent="BGRec/MainContainer/TraitRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+focus_mode = 0
+theme = ExtResource("4_buii5")
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_ce8k3")
+text = "Scavenger"
+
+[node name="TraitTwoButton" type="Button" parent="BGRec/MainContainer/TraitRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+focus_mode = 0
+theme = ExtResource("4_buii5")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_ce8k3")
+text = "Cleanup"
+
+[node name="CustomTraitButton" type="Button" parent="BGRec/MainContainer/TraitRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+focus_mode = 0
+theme = ExtResource("3_xu4fn")
+text = "Custom"
+
+[node name="PositionPow" type="HBoxContainer" parent="BGRec/MainContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="BackButton" type="Button" parent="BGRec/MainContainer/PositionPow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+focus_mode = 0
+theme = ExtResource("4_buii5")
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_jot1x")
+text = "Back"
+
+[node name="NetButton" type="Button" parent="BGRec/MainContainer/PositionPow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+focus_mode = 0
+theme = ExtResource("4_buii5")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_jot1x")
+text = "Net"
+
 [node name="AttackRow" type="HBoxContainer" parent="BGRec/MainContainer"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
-size_flags_vertical = 6
+size_flags_vertical = 4
 theme_override_constants/separation = 48
 alignment = 1
 
@@ -46,10 +124,10 @@ size_flags_horizontal = 4
 focus_mode = 0
 theme = ExtResource("3_xu4fn")
 text = "Select Attack"
+flat = true
 
 [node name="AttackPlaysUI" parent="BGRec/MainContainer/AttackRow/SelectAttackButton" instance=ExtResource("4_om41x")]
 unique_name_in_owner = true
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -65,31 +143,16 @@ grow_vertical = 2
 scale = Vector2(0.7, 0.7)
 size_flags_horizontal = 4
 size_flags_vertical = 4
+my_play = ExtResource("6_uupfg")
 
-[node name="MimicAttackSelectButton" type="Button" parent="BGRec/MainContainer/AttackRow"]
+[node name="MimicButton" type="Button" parent="BGRec/MainContainer/AttackRow"]
 unique_name_in_owner = true
 visible = false
-custom_minimum_size = Vector2(500, 0)
+custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 focus_mode = 0
-theme = ExtResource("3_xu4fn")
-text = "Select Attack"
-
-[node name="MimicAttackPlaysUI" parent="BGRec/MainContainer/AttackRow/MimicAttackSelectButton" instance=ExtResource("4_om41x")]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -249.0
-offset_top = -50.5
-offset_right = 463.0
-offset_bottom = 91.5
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.7, 0.7)
-size_flags_horizontal = 4
-size_flags_vertical = 4
+theme = ExtResource("4_buii5")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_buii5")
+text = "Mimic"

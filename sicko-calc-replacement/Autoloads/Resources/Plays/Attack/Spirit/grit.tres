@@ -7,5 +7,7 @@ script = ExtResource("1_wy4od")
 name = "Grit"
 base_pow = 55
 descrition = "ATTACK. POW x2 when SWEATY, NERVOUS, TENDER or WEEPY."
+condition_name = "User feels SWEATY, NERVOUS, TENDER or WEEPY"
+condition_mult = 2.0
 type = 1
 metadata/_custom_type_script = "uid://bc63soeia1eb1"

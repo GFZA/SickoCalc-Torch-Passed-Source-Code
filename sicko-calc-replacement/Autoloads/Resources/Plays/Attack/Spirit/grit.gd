@@ -10,5 +10,5 @@ func get_attack_pow(attacker : Beastie, _defender : Beastie, \
 			(attacker.get_feeling_stack(Beastie.Feelings.NERVOUS) > 0) or \
 			(attacker.get_feeling_stack(Beastie.Feelings.TENDER) > 0) or \
 			(attacker.get_feeling_stack(Beastie.Feelings.WEEPY) > 0):
-			return base_pow * 2
+			return base_pow_after_condition
 	return base_pow

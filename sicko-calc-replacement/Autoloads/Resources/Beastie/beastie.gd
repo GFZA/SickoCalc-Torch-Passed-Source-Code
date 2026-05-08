@@ -36,7 +36,7 @@ signal health_updated(health : int)
 @export var my_trait : Trait = null :
 	set(value):
 		my_trait = value
-		if my_trait.name.to_lower() == "haunted":
+		if my_trait and my_trait.name.to_lower() == "haunted":
 			current_feelings.clear()
 			current_feelings.get_or_add(Feelings.TRIED, 4)
 		my_trait_updated.emit(my_trait)

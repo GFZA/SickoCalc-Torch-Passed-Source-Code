@@ -6,5 +6,6 @@
 script = ExtResource("1_qpg73")
 name = "Performer"
 description = "DEF x1.5 while field has RALLY"
+condition_name = "Field has RALLY"
 def_mult = 1.5
 metadata/_custom_type_script = "uid://bslfuaragw1g7"

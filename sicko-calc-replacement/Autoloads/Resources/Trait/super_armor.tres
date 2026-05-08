@@ -6,5 +6,6 @@
 script = ExtResource("1_n88rf")
 name = "Super Armor"
 description = "DEF x1.5 while STAMINA is at least ¾ filled"
+condition_name = "User's STAMINA is at least ¾ filled"
 def_mult = 1.5
 metadata/_custom_type_script = "uid://bslfuaragw1g7"

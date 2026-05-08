@@ -6,5 +6,6 @@
 script = ExtResource("1_kcwnw")
 name = "Avenger"
 description = "Attacks do 1.2x damage while any ally is WIPED"
+condition_name = "Any ally is WIPED"
 damage_dealt_mult = 1.2
 metadata/_custom_type_script = "uid://bslfuaragw1g7"

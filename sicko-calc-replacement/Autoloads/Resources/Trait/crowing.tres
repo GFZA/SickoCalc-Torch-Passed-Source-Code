@@ -6,4 +6,6 @@
 script = ExtResource("1_pghu4")
 name = "Crowing"
 description = "When an opponent is WIPED, this Beastie restores 50 STAMINA"
+condition_name = null
+condition_mult = null
 metadata/_custom_type_script = "uid://bslfuaragw1g7"

@@ -7,5 +7,7 @@ script = ExtResource("1_mvvn4")
 name = "Perfect Shot"
 base_pow = 125
 descrition = "Requires 2 ACTIONS. POW x¾ if user has any FEELINGs."
+condition_name = "User has any FEELINGs"
+condition_mult = 0.75
 type = 2
 metadata/_custom_type_script = "uid://bc63soeia1eb1"

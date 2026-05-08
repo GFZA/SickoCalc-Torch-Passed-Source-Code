@@ -1,13 +1,14 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c8icw3pvu0swl"]
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://c8icw3pvu0swl"]
 
-[ext_resource type="Script" uid="uid://bq6n6s4g27q6x" path="res://Autoloads/Resources/Plays/Attack/Body/dive.gd" id="1_fabh5"]
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_w6o54"]
 
 [resource]
-script = ExtResource("1_fabh5")
+script = ExtResource("1_w6o54")
 name = "Dive"
 base_pow = 55
 descrition = "ATTACK. POW x2 if the user recently TAGGED IN."
+condition_name = "Recently tagged in"
+condition_mult = 2.0
 need_to_be_manually_activated = true
-manual_condition_name = "Just Tagged In"
 type = 0
 metadata/_custom_type_script = "uid://bc63soeia1eb1"

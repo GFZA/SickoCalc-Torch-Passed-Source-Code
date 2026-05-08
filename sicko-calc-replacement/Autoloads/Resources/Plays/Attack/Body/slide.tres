@@ -1,13 +1,14 @@
 [gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://1mdrt5ys6ihc"]
 
-[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_86ckc"]
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_x82vu"]
 
 [resource]
-script = ExtResource("1_86ckc")
+script = ExtResource("1_x82vu")
 name = "Slide"
 base_pow = 70
 descrition = "ATTACK. POW x1.5 if user changed row or lane this turn."
+condition_name = "Just Moved"
+condition_mult = 1.5
 need_to_be_manually_activated = true
-manual_condition_name = "Just Moved"
 type = 0
 metadata/_custom_type_script = "uid://bc63soeia1eb1"

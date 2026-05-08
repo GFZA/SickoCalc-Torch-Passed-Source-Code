@@ -7,5 +7,7 @@ script = ExtResource("1_k0hx3")
 name = "Thrash"
 base_pow = 80
 descrition = "ATTACK. POW x1.5 if user feels JAZZED."
+condition_name = "User feels JAZZED"
+condition_mult = 1.5
 type = 1
 metadata/_custom_type_script = "uid://bc63soeia1eb1"

@@ -6,4 +6,6 @@
 script = ExtResource("1_ustnd")
 name = "Deviant"
 description = "This Beastie's attacks do 1.5x damage when their target is changed"
+condition_name = "User's target is changed"
+damage_dealt_mult = 1.5
 metadata/_custom_type_script = "uid://bslfuaragw1g7"

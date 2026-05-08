@@ -7,5 +7,7 @@ script = ExtResource("1_ja8ey")
 name = "Sweep"
 base_pow = 50
 descrition = "POW x2 if there are any field effects. Clears all FIELD EFFECTS."
+condition_name = "Field Effects present"
+condition_mult = 2.0
 type = 2
 metadata/_custom_type_script = "uid://bc63soeia1eb1"

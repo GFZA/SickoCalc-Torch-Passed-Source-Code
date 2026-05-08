@@ -6,6 +6,6 @@
 script = ExtResource("1_iqajw")
 name = "Burnout"
 base_pow = 110
-descrition = "ATTACK. SpiritPOW2 down arrow boost to self."
+descrition = "ATTACK. SPIRIT POW DOWN2 to self."
 type = 1
 metadata/_custom_type_script = "uid://bc63soeia1eb1"
