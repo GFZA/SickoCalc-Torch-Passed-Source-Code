@@ -1,0 +1,162 @@
+@tool
+class_name BoostRow
+extends MarginContainer
+
+@export var attack : Attack = null :
+	set(value):
+		attack = value
+		if not is_node_ready():
+			await ready
+		if not attack:
+			_update_ui_bg(Color(1.0, 1.0, 1.0, 0.0))
+		var is_left : bool = side == Global.MySide.LEFT
+		match attack.type:
+			Plays.Type.ATTACK_BODY:
+				current_stat = Beastie.Stats.B_POW if is_left else Beastie.Stats.B_DEF
+				_update_ui_bg(Global.get_main_color(Global.ColorType.BODY))
+			Plays.Type.ATTACK_SPIRIT:
+				current_stat = Beastie.Stats.S_POW if is_left else Beastie.Stats.S_DEF
+				_update_ui_bg(Global.get_main_color(Global.ColorType.SPIRIT))
+			Plays.Type.ATTACK_MIND:
+				current_stat = Beastie.Stats.M_POW if is_left else Beastie.Stats.M_DEF
+				_update_ui_bg(Global.get_main_color(Global.ColorType.MIND))
+		match attack.name.to_lower():
+			"energized":
+				show_energized()
+			"toppler", "pierce", "snipe":
+				show_toppler()
+			"contest":
+				show_contest()
+			_:
+				show_normal()
+
+signal boost_updated(stat : Beastie.Stats, amount : int)
+signal invest_updated(stat : Beastie.Stats, amount : int)
+
+var side : Global.MySide = Global.MySide.LEFT :
+	set(value):
+		side = value
+		if not is_node_ready():
+			await ready
+		var is_left : bool = side == Global.MySide.LEFT
+		var prefix : String = "POW" if is_left else "DEF"
+		boosts_text_label.text = prefix + " Boosts"
+		invest_text_label.text = prefix + " Invests"
+
+var current_stat : Beastie.Stats = Beastie.Stats.B_POW
+
+@onready var single_boost_display: VBoxContainer = %SingleBoostDisplay
+@onready var boosts_text_label: Label = %BoostsTextLabel
+@onready var boost_number_ui: NumberUIAlt = %BoostNumberUI
+
+@onready var all_boost_uis: VBoxContainer = %AllBoostUIs
+@onready var bpow_number_ui: NumberUI = %BPOWNumberUI
+@onready var bdef_number_ui: NumberUI = %BDEFNumberUI
+@onready var spow_number_ui: NumberUI = %SPOWNumberUI
+@onready var sdef_number_ui: NumberUI = %SDEFNumberUI
+@onready var mpow_number_ui: NumberUI = %MPOWNumberUI
+@onready var mdef_number_ui: NumberUI = %MDEFNumberUI
+
+@onready var reset_button: Button = %ResetButton
+
+@onready var single_invest_display: VBoxContainer = %SingleInvestDisplay
+@onready var invest_text_label: Label = %InvestTextLabel
+@onready var invest_number_ui: NumberUIAlt = %InvestNumberUI
+
+@onready var all_invest_uis: VBoxContainer = %AllInvestUIs
+@onready var bdef_invest_number_ui: NumberUI = %BDEFInvestNumberUI
+@onready var sdef_invest_number_ui: NumberUI = %SDEFInvestNumberUI
+@onready var mdef_invest_number_ui: NumberUI = %MDEFInvestNumberUI
+
+
+func _ready() -> void:
+	boost_number_ui.value_updated.connect(_on_boost_updated)
+
+	bpow_number_ui.value_updated.connect(_on_all_ui_boost_updated.bind(Beastie.Stats.B_POW))
+	spow_number_ui.value_updated.connect(_on_all_ui_boost_updated.bind(Beastie.Stats.S_POW))
+	mpow_number_ui.value_updated.connect(_on_all_ui_boost_updated.bind(Beastie.Stats.M_POW))
+	bdef_number_ui.value_updated.connect(_on_all_ui_boost_updated.bind(Beastie.Stats.B_DEF))
+	sdef_number_ui.value_updated.connect(_on_all_ui_boost_updated.bind(Beastie.Stats.S_DEF))
+	mdef_number_ui.value_updated.connect(_on_all_ui_boost_updated.bind(Beastie.Stats.M_DEF))
+
+	reset_button.pressed.connect(reset_all_ui)
+
+	invest_number_ui.value_updated.connect(_on_invest_updated)
+
+	bdef_invest_number_ui.value_updated.connect(_on_all_ui_invest_updated.bind(Beastie.Stats.B_DEF))
+	sdef_invest_number_ui.value_updated.connect(_on_all_ui_invest_updated.bind(Beastie.Stats.S_DEF))
+	mdef_invest_number_ui.value_updated.connect(_on_all_ui_invest_updated.bind(Beastie.Stats.M_DEF))
+
+
+func _on_boost_updated(amount : int) -> void:
+	boost_updated.emit(current_stat, amount)
+
+
+func _on_all_ui_boost_updated(amount : int, stat : Beastie.Stats) -> void:
+	boost_updated.emit(stat, amount)
+
+
+func _on_invest_updated(amount : int) -> void:
+	invest_updated.emit(current_stat, amount)
+
+
+func _on_all_ui_invest_updated(amount : int, stat : Beastie.Stats) -> void:
+	invest_updated.emit(stat, amount)
+
+
+func _update_ui_bg(color : Color) -> void:
+	boost_number_ui.color = color
+	invest_number_ui.color = color
+
+
+func show_normal() -> void:
+	reset_all_ui()
+	all_boost_uis.hide()
+	all_invest_uis.hide()
+	single_boost_display.show()
+	single_invest_display.show()
+
+
+func show_energized() -> void:
+	reset_all_ui()
+	all_boost_uis.visible = side == Global.MySide.LEFT
+	all_invest_uis.hide()
+	single_boost_display.visible = side == Global.MySide.RIGHT
+	single_invest_display.show()
+
+
+func show_toppler() -> void:
+	reset_all_ui()
+	all_boost_uis.visible = side == Global.MySide.RIGHT
+	all_invest_uis.hide()
+	single_boost_display.visible = side == Global.MySide.LEFT
+	single_invest_display.show()
+
+
+func show_contest() -> void:
+	reset_all_ui()
+	all_boost_uis.visible = side == Global.MySide.RIGHT
+	all_invest_uis.visible = side == Global.MySide.RIGHT
+	single_boost_display.visible = side == Global.MySide.LEFT
+	single_invest_display.visible = side == Global.MySide.LEFT
+
+
+func show_single_boost_ui() -> void:
+	reset_all_ui()
+	all_boost_uis.hide()
+	single_boost_display.show()
+
+
+func reset_all_ui() -> void:
+	boost_number_ui.reset()
+	bpow_number_ui.reset()
+	bdef_number_ui.reset()
+	spow_number_ui.reset()
+	sdef_number_ui.reset()
+	mpow_number_ui.reset()
+	mdef_number_ui.reset()
+
+	invest_number_ui.reset()
+	bdef_invest_number_ui.reset()
+	sdef_invest_number_ui.reset()
+	mdef_invest_number_ui.reset()

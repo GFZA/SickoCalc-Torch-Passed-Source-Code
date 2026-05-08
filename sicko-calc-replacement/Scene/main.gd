@@ -66,4 +66,7 @@ func _update() -> void:
 	if attacker and defender:
 		damage_splash.amount = DamageCalculator.get_damage(attacker, defender, current_attack)
 		damage_splash.attack = current_attack
+		if left_beastie_column.current_attack == current_attack:
+			return # this prevents the most stupid accidental infinite loop I ever made, like wtf lmao
 		left_beastie_column.current_attack = current_attack
+		right_beastie_column.current_attack = current_attack

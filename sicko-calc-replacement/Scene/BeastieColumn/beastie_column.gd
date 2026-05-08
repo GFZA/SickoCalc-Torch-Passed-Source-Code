@@ -43,10 +43,13 @@ var current_pos : Beastie.Position = Beastie.Position.UPPER_BACK
 @onready var attack_plays_ui: PlaysUI = %AttackPlaysUI
 @onready var mimic_button: Button = %MimicButton
 
+@onready var boost_row: BoostRow = %BoostRow
+
 
 func _ready() -> void:
 	var is_left : bool = side == Global.MySide.LEFT
 	attack_row.visible = is_left
+	boost_row.side = side
 
 	if is_left:
 		select_attack_button.pressed.connect(plays_select_ui_requested.emit)
@@ -62,6 +65,9 @@ func _ready() -> void:
 	net_button.button_group = pos_button_group
 	back_button.pressed.connect(_on_pos_button_pressed.bind(Beastie.Position.UPPER_BACK))
 	net_button.pressed.connect(_on_pos_button_pressed.bind(Beastie.Position.UPPER_FRONT))
+
+	boost_row.boost_updated.connect(_on_boost_updated)
+	boost_row.invest_updated.connect(_on_invest_updated)
 
 	_update_attack()
 
@@ -91,7 +97,11 @@ func _update_side() -> void:
 func _update_attack() -> void:
 	if not is_node_ready():
 		await ready
+
+	boost_row.attack = current_attack
+
 	if not side == Global.MySide.LEFT:
+		attack_row.hide()
 		return
 
 	if not current_attack:
@@ -130,4 +140,18 @@ func _on_pos_button_pressed(pos : Beastie.Position) -> void:
 		return
 	current_pos = pos
 	beastie.my_field_position = pos
+	beastie_updated.emit()
+
+
+func _on_boost_updated(stat : Beastie.Stats, amount : int) -> void:
+	if not beastie:
+		return
+	beastie.current_boosts[stat] = amount
+	beastie_updated.emit()
+
+
+func _on_invest_updated(stat : Beastie.Stats, amount : int) -> void:
+	if not beastie:
+		return
+	beastie.invests[stat] = amount
 	beastie_updated.emit()

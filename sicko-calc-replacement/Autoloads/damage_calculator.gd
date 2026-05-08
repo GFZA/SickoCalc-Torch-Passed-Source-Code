@@ -1,6 +1,8 @@
 @tool
 extends Node
 
+## fix contest not accounting in def boosts
+
 
 func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 				attacker_team_controller : TeamController = null, \

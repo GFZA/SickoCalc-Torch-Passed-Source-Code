@@ -1,0 +1,97 @@
+[gd_scene load_steps=9 format=3 uid="uid://d1d26ob86bbom"]
+
+[ext_resource type="Script" uid="uid://dou8wbqqeyhf0" path="res://Scene/NumberUI/number_ui.gd" id="1_jqq0t"]
+[ext_resource type="Theme" uid="uid://bkrlwg21fhprn" path="res://Autoloads/Resources/Themes/edit_button.tres" id="1_t3gyi"]
+[ext_resource type="Texture2D" uid="uid://hqu8087deqdr" path="res://Autoloads/Icons/icon_reset.png" id="2_jqq0t"]
+[ext_resource type="FontFile" uid="uid://cpfae18khclng" path="res://Autoloads/Resources/Fonts/OpenSans-VariableFont_wdth,wght.ttf" id="4_dncij"]
+[ext_resource type="Texture2D" uid="uid://bguiky7x105wd" path="res://Autoloads/Icons/icon_up_white.png" id="4_jqq0t"]
+[ext_resource type="Texture2D" uid="uid://ym4g7x27mim3" path="res://Autoloads/Icons/icon_down_white.png" id="5_pyc1p"]
+[ext_resource type="Texture2D" uid="uid://17ji3etffeot" path="res://Autoloads/Icons/icon_max.png" id="6_3fyvr"]
+[ext_resource type="Texture2D" uid="uid://de1q1forhr6nv" path="res://Autoloads/Icons/icon_min.png" id="7_ja2jk"]
+
+[node name="NumberUI" type="HBoxContainer"]
+offset_right = 162.0
+offset_bottom = 88.0
+size_flags_horizontal = 0
+focus_behavior_recursive = 1
+theme_override_constants/separation = 0
+script = ExtResource("1_jqq0t")
+
+[node name="ResetButton" type="Button" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+focus_behavior_recursive = 1
+theme = ExtResource("1_t3gyi")
+theme_override_constants/icon_max_width = 48
+icon = ExtResource("2_jqq0t")
+
+[node name="NumberLabel" type="Label" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+theme = ExtResource("1_t3gyi")
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="UpDownButtonContainer" type="VBoxContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = -8
+
+[node name="UpButton" type="Button" parent="UpDownButtonContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("1_t3gyi")
+theme_override_constants/icon_max_width = 36
+icon = ExtResource("4_jqq0t")
+vertical_icon_alignment = 0
+
+[node name="DownButton" type="Button" parent="UpDownButtonContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 4
+theme = ExtResource("1_t3gyi")
+theme_override_constants/icon_max_width = 36
+icon = ExtResource("5_pyc1p")
+vertical_icon_alignment = 2
+
+[node name="MaxButtonSpacer" type="Control" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(8, 0)
+layout_mode = 2
+
+[node name="MaxButton" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("1_t3gyi")
+theme_override_constants/icon_max_width = 48
+icon = ExtResource("6_3fyvr")
+
+[node name="MinButtonSpacer" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(8, 0)
+layout_mode = 2
+
+[node name="MinButton" type="Button" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme = ExtResource("1_t3gyi")
+theme_override_constants/icon_max_width = 48
+icon = ExtResource("7_ja2jk")
+
+[node name="InfinityNumberLabel" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_dncij")
+theme_override_font_sizes/font_size = 64
+text = "∞"
+horizontal_alignment = 1
+vertical_alignment = 1

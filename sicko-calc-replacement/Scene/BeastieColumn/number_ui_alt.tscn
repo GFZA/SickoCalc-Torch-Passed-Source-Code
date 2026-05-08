@@ -1,0 +1,128 @@
+[gd_scene load_steps=4 format=3 uid="uid://8034fwfywq3r"]
+
+[ext_resource type="Script" uid="uid://hlil4s6unggf" path="res://Scene/BeastieColumn/number_ui_alt.gd" id="1_kmupt"]
+[ext_resource type="Theme" uid="uid://bkrlwg21fhprn" path="res://Autoloads/Resources/Themes/edit_button.tres" id="1_qjv7m"]
+[ext_resource type="FontFile" uid="uid://cvfib27cf5q88" path="res://Autoloads/Resources/Fonts/Go Banana.ttf" id="2_kmupt"]
+
+[node name="NumberUIAlt" type="HBoxContainer"]
+custom_minimum_size = Vector2(370, 170)
+size_flags_vertical = 3
+script = ExtResource("1_kmupt")
+
+[node name="MinContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="MinButton" type="Button" parent="MinContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+focus_mode = 0
+theme = ExtResource("1_qjv7m")
+theme_override_constants/icon_max_width = 48
+text = "MIN"
+
+[node name="MinusButton" type="Button" parent="MinContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 75)
+layout_mode = 2
+size_flags_vertical = 6
+focus_mode = 0
+theme = ExtResource("1_qjv7m")
+theme_override_constants/icon_max_width = 36
+vertical_icon_alignment = 0
+
+[node name="MinusLabel" type="Label" parent="MinContainer/MinusButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.5
+offset_top = -87.5
+offset_right = 23.5
+offset_bottom = 87.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_kmupt")
+theme_override_font_sizes/font_size = 128
+text = "-"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="LabelMargin" type="MarginContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="ColorRect" type="ColorRect" parent="LabelMargin"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(1, 1, 1, 0)
+
+[node name="NumberLabel" type="Label" parent="LabelMargin/ColorRect"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme = ExtResource("1_qjv7m")
+theme_override_font_sizes/font_size = 128
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MaxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="MaxButton" type="Button" parent="MaxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+focus_mode = 0
+theme = ExtResource("1_qjv7m")
+theme_override_constants/icon_max_width = 48
+text = "MAX"
+
+[node name="PlusButton" type="Button" parent="MaxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 75)
+layout_mode = 2
+size_flags_vertical = 6
+focus_mode = 0
+theme = ExtResource("1_qjv7m")
+theme_override_constants/icon_max_width = 36
+vertical_icon_alignment = 0
+
+[node name="PlusLabel" type="Label" parent="MaxContainer/PlusButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.5
+offset_top = -87.5
+offset_right = 23.5
+offset_bottom = 87.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_kmupt")
+theme_override_font_sizes/font_size = 128
+text = "+"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
