@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://cnn1686te4wf8"]
+[gd_scene load_steps=40 format=3 uid="uid://cnn1686te4wf8"]
 
 [ext_resource type="PackedScene" uid="uid://1arcfnc6wacj" path="res://Scene/BeastieColumn/beastie_row.tscn" id="1_cswjd"]
 [ext_resource type="Script" uid="uid://gfslx1e2j8by" path="res://Scene/BeastieColumn/beastie_column.gd" id="1_nvjsa"]
@@ -71,8 +71,6 @@ metadata/_custom_type_script = "uid://ehabj4qsgxpl"
 [sub_resource type="ButtonGroup" id="ButtonGroup_gvagf"]
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_ta5ev"]
-
-[sub_resource type="ButtonGroup" id="ButtonGroup_buii5"]
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_rr5fh"]
 allow_unpress = true
@@ -258,15 +256,23 @@ my_play = ExtResource("6_uupfg")
 
 [node name="MimicButton" type="Button" parent="BGRec/MainContainer/AttackRow"]
 unique_name_in_owner = true
-visible = false
 custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 focus_mode = 0
 theme = ExtResource("4_buii5")
 toggle_mode = true
-button_group = SubResource("ButtonGroup_buii5")
 text = "Mimic"
+
+[node name="RallyButton" type="Button" parent="BGRec/MainContainer/AttackRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+focus_mode = 0
+theme = ExtResource("4_buii5")
+toggle_mode = true
+text = "Rally"
 
 [node name="AttackConditionRow" type="HBoxContainer" parent="BGRec/MainContainer"]
 unique_name_in_owner = true

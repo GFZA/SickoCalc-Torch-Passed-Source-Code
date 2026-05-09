@@ -10,6 +10,7 @@ const ICON_ROW_BACK = preload("uid://dhs73i0hc16qu")
 signal beastie_updated
 signal plays_select_ui_requested
 signal trait_select_ui_requested
+signal rally_requested(toggled_on : bool)
 
 @export var beastie : Beastie = null:
 	set(value):
@@ -48,6 +49,7 @@ var current_pos : Beastie.Position = Beastie.Position.UPPER_BACK
 @onready var select_attack_button: Button = %SelectAttackButton
 @onready var attack_plays_ui: PlaysUI = %AttackPlaysUI
 @onready var mimic_button: Button = %MimicButton
+@onready var rally_button: Button = %RallyButton
 
 @onready var attack_condition_row: HBoxContainer = %AttackConditionRow
 @onready var attack_condition_button: Button = %AttackConditionButton
@@ -95,6 +97,8 @@ func _ready() -> void:
 	net_button.pressed.connect(_on_pos_button_pressed.bind(Beastie.Position.UPPER_FRONT))
 
 	attack_condition_button.toggled.connect(_on_attack_condtion_toggled)
+	mimic_button.toggled.connect(func(_toggle_on : bool): return)
+	rally_button.toggled.connect(rally_requested.emit)
 
 	boost_row.boost_updated.connect(_on_boost_updated)
 	boost_row.invest_updated.connect(_on_invest_updated)
@@ -174,6 +178,9 @@ func _update_attack() -> void:
 		attack_condition_button.button_pressed = false
 		attack_condition_button.text = current_attack.condition_name
 
+		rally_button.visible = current_attack.type in [Plays.Type.ATTACK_SPIRIT, Plays.Type.ATTACK_MIND]
+		mimic_button.visible = false # TEMPORARY
+
 
 func _on_attack_condtion_toggled(toggled_on) -> void:
 	if not current_attack:
@@ -221,6 +228,10 @@ func update_custom_trait_button() -> void:
 	else:
 		back_button.icon = ICON_ROW_BACK
 		net_button.icon = ICON_ROW_NET
+
+	if trait_name.to_lower() == "musclebrain":
+		boost_row.reset_all_ui(true)
+
 	beastie_updated.emit()
 
 
@@ -233,6 +244,7 @@ func _on_trait_button_pressed(trait_number : int) -> void:
 	var new_trait : Trait = trait_one if trait_number == 1 else trait_two
 	if new_trait and new_trait == beastie.my_trait:
 		return
+	var old_trait : Trait = beastie.my_trait
 	beastie.my_trait = new_trait
 	_update_trait_condition_button()
 	if new_trait.name.to_lower() == "shy":
@@ -241,6 +253,8 @@ func _on_trait_button_pressed(trait_number : int) -> void:
 	else:
 		back_button.icon = ICON_ROW_BACK
 		net_button.icon = ICON_ROW_NET
+	if old_trait.name.to_lower() == "musclebrain":
+		boost_row.reset_all_ui()
 
 	beastie_updated.emit()
 
@@ -304,6 +318,9 @@ func reset() -> void:
 
 	back_button.button_pressed = true
 	_on_pos_button_pressed(Beastie.Position.UPPER_BACK)
+
+	rally_button.button_pressed = false
+	mimic_button.button_pressed = false
 
 	trait_one_button.button_pressed = true
 	trait_condition_button.button_pressed = false

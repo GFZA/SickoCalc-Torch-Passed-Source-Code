@@ -35,7 +35,7 @@ func _update_color() -> void:
 	if not is_node_ready():
 		await ready
 	var new_color : Color = Global.get_main_color(Global.ColorType.BODY)
-	if attack:
+	if attack and not Global.is_musclebrained:
 		var index : int = int(attack.type)
 		var color_type := index as Global.ColorType
 		new_color = Global.get_main_color(color_type)

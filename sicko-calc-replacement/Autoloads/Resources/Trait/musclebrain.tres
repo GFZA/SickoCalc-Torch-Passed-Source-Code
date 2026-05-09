@@ -6,6 +6,5 @@
 script = ExtResource("1_bqkfv")
 name = "Musclebrain"
 description = "Non-Body attacks become Body and are 1.2x stronger"
-need_to_be_manually_activated = true
 damage_dealt_mult = 1.2
 metadata/_custom_type_script = "uid://bslfuaragw1g7"

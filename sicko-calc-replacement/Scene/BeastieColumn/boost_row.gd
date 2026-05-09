@@ -11,19 +11,7 @@ signal reset_requested
 		attack = value
 		if not is_node_ready():
 			await ready
-		if not attack:
-			_update_ui_bg(Color(1.0, 1.0, 1.0, 0.0))
-		var is_left : bool = side == Global.MySide.LEFT
-		match attack.type:
-			Plays.Type.ATTACK_BODY:
-				current_stat = Beastie.Stats.B_POW if is_left else Beastie.Stats.B_DEF
-				_update_ui_bg(Global.get_main_color(Global.ColorType.BODY))
-			Plays.Type.ATTACK_SPIRIT:
-				current_stat = Beastie.Stats.S_POW if is_left else Beastie.Stats.S_DEF
-				_update_ui_bg(Global.get_main_color(Global.ColorType.SPIRIT))
-			Plays.Type.ATTACK_MIND:
-				current_stat = Beastie.Stats.M_POW if is_left else Beastie.Stats.M_DEF
-				_update_ui_bg(Global.get_main_color(Global.ColorType.MIND))
+		_update_attack()
 		match attack.name.to_lower():
 			"energized":
 				show_energized()
@@ -71,6 +59,8 @@ var current_stat : Beastie.Stats = Beastie.Stats.B_POW
 
 
 func _ready() -> void:
+	Global.is_musclebrained_updated.connect(_update_attack.unbind(1))
+
 	boost_number_ui.value_updated.connect(_on_boost_updated)
 
 	bpow_number_ui.value_updated.connect(_on_all_ui_boost_updated.bind(Beastie.Stats.B_POW))
@@ -87,6 +77,26 @@ func _ready() -> void:
 	bdef_invest_number_ui.value_updated.connect(_on_all_ui_invest_updated.bind(Beastie.Stats.B_DEF))
 	sdef_invest_number_ui.value_updated.connect(_on_all_ui_invest_updated.bind(Beastie.Stats.S_DEF))
 	mdef_invest_number_ui.value_updated.connect(_on_all_ui_invest_updated.bind(Beastie.Stats.M_DEF))
+
+
+func _update_attack() -> void:
+	if not attack:
+		_update_ui_bg(Color(1.0, 1.0, 1.0, 0.0))
+	var is_left : bool = side == Global.MySide.LEFT
+	if Global.is_musclebrained:
+		current_stat = Beastie.Stats.B_POW if is_left else Beastie.Stats.B_DEF
+		_update_ui_bg(Global.get_main_color(Global.ColorType.BODY))
+	else:
+		match attack.type:
+			Plays.Type.ATTACK_BODY:
+				current_stat = Beastie.Stats.B_POW if is_left else Beastie.Stats.B_DEF
+				_update_ui_bg(Global.get_main_color(Global.ColorType.BODY))
+			Plays.Type.ATTACK_SPIRIT:
+				current_stat = Beastie.Stats.S_POW if is_left else Beastie.Stats.S_DEF
+				_update_ui_bg(Global.get_main_color(Global.ColorType.SPIRIT))
+			Plays.Type.ATTACK_MIND:
+				current_stat = Beastie.Stats.M_POW if is_left else Beastie.Stats.M_DEF
+				_update_ui_bg(Global.get_main_color(Global.ColorType.MIND))
 
 
 func _on_boost_updated(amount : int) -> void:
@@ -148,7 +158,7 @@ func show_single_boost_ui() -> void:
 	single_boost_display.show()
 
 
-func reset_all_ui() -> void:
+func reset_all_ui(no_emit : bool = false) -> void:
 	boost_number_ui.reset()
 	bpow_number_ui.reset()
 	bdef_number_ui.reset()
@@ -161,5 +171,8 @@ func reset_all_ui() -> void:
 	bdef_invest_number_ui.reset()
 	sdef_invest_number_ui.reset()
 	mdef_invest_number_ui.reset()
+
+	if no_emit:
+		return
 
 	reset_requested.emit()

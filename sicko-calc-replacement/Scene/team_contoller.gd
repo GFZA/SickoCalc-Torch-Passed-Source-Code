@@ -3,13 +3,30 @@ class_name TeamController
 extends Node2D
 
 #signal field_updated(pos_dict : Dictionary[Beastie.Position, Beastie])
-#signal field_effects_updated(field_dict : Dictionary)
+signal field_effects_updated(field_dict : Dictionary)
 #signal beastie_menu_requested(requested_beastie : Beastie, side : Global.MySide, team_pos : TeamController.TeamPosition)
 #signal beastie_remove_requested(requested_beastie : Beastie, side : Global.MySide, team_pos : TeamController.TeamPosition)
 #
+
 enum TeamPosition {FIELD_1, FIELD_2, BENCH_1, BENCH_2}
-#
-#
+
+var have_cheerleader : bool = false
+var have_friendship : bool = false
+
+
+func check_for_cheerleader_buff(_attacker : Beastie) -> bool:
+	return have_cheerleader
+
+
+func check_for_friendship_buff(_defender : Beastie) -> bool:
+	return have_friendship
+
+
+func reset() -> void:
+	have_cheerleader = false
+	have_friendship = false
+
+
 #@export var is_serving_team : bool = false:
 	#set(value):
 		#is_serving_team = value
@@ -20,15 +37,15 @@ enum TeamPosition {FIELD_1, FIELD_2, BENCH_1, BENCH_2}
 		#current_score = value
 		#_update_field()
 #
-#@export var my_field_effects : Dictionary = {} :
-	#set(value):
-		#value.sort()
-		#my_field_effects = value
-		#for field in my_field_effects.keys():
-			#if my_field_effects.get(field) == 0:
-				#my_field_effects.erase(field)
-		#field_effects_updated.emit(my_field_effects)
-		#_update_field()
+@export var my_field_effects : Dictionary = {} :
+	set(value):
+		value.sort()
+		my_field_effects = value
+		for field in my_field_effects.keys():
+			if my_field_effects.get(field) == 0:
+				my_field_effects.erase(field)
+		field_effects_updated.emit(my_field_effects)
+
 #
 #@export_group("Serve Slot", "beastie_1_")
 #@export var beastie_1_beastie : Beastie = null :
@@ -725,10 +742,10 @@ enum TeamPosition {FIELD_1, FIELD_2, BENCH_1, BENCH_2}
 #
 ##region Field Effects Stuffs
 #
-#func get_field_effect_stack(field_effect : FieldEffect.Type) -> int:
-	#if not my_field_effects.has(field_effect):
-		#return 0
-	#return my_field_effects.get(field_effect)
+func get_field_effect_stack(field_effect : FieldEffect.Type) -> int:
+	if not my_field_effects.has(field_effect):
+		return 0
+	return my_field_effects.get(field_effect)
 #
 #
 #func on_rally_stacked_changed(new_stack : int) -> void:
@@ -787,101 +804,3 @@ enum TeamPosition {FIELD_1, FIELD_2, BENCH_1, BENCH_2}
 	#_update_field()
 #
 ##endregion
-#
-#
-#func add_data_to_save(board_data : BoardData) -> void:
-	#var dict_to_add : Dictionary = board_data.left_team_dict if side == Global.MySide.LEFT else board_data.right_team_dict
-	#dict_to_add["field_effects"] = my_field_effects
-#
-	#dict_to_add["beastie_1_beastie"] = beastie_1_beastie.duplicate() if beastie_1_beastie else null
-	#if beastie_1_beastie:
-		#var beastie_1_first_slot : Plays = beastie_1_beastie.my_plays.get(0)
-		#if beastie_1_first_slot and beastie_1_first_slot is Attack:
-			#dict_to_add["beastie_1_first_slot_manually_activated"] = beastie_1_first_slot.manually_activated
-		#dict_to_add["beastie_1_trait_manually_activated"] = beastie_1_beastie.my_trait.manually_activated
-	#dict_to_add["beastie_1_position"] = beastie_1_position
-	#dict_to_add["beastie_1_show_play"] = beastie_1_show_play
-	#dict_to_add["beastie_1_show_bench_damage"] = beastie_1_show_bench_damage
-	#dict_to_add["beastie_1_have_ball"] = beastie_1_have_ball
-	#dict_to_add["beastie_1_ball_type"] = beastie_1_ball_type
-	#dict_to_add["beastie_1_h_allign"] = beastie_1_h_allign
-#
-	#dict_to_add["beastie_2_beastie"] = beastie_2_beastie.duplicate() if beastie_2_beastie else null
-	#if beastie_2_beastie:
-		#var beastie_2_first_slot : Plays = beastie_2_beastie.my_plays.get(0)
-		#if beastie_2_first_slot and beastie_2_first_slot is Attack:
-			#dict_to_add["beastie_2_first_slot_manually_activated"] = beastie_2_first_slot.manually_activated
-		#dict_to_add["beastie_2_trait_manually_activated"] = beastie_2_beastie.my_trait.manually_activated
-	#dict_to_add["beastie_2_position"] = beastie_2_position
-	#dict_to_add["beastie_2_show_play"] = beastie_2_show_play
-	#dict_to_add["beastie_2_show_bench_damage"] = beastie_2_show_bench_damage
-	#dict_to_add["beastie_2_have_ball"] = beastie_2_have_ball
-	#dict_to_add["beastie_2_ball_type"] = beastie_2_ball_type
-	#dict_to_add["beastie_2_h_allign"] = beastie_2_h_allign
-#
-	#dict_to_add["bench_beastie_1_beastie"] = bench_beastie_1_beastie.duplicate() if bench_beastie_1_beastie else null
-	#if bench_beastie_1_beastie:
-		#var bench_1_first_slot : Plays = bench_beastie_1_beastie.my_plays.get(0)
-		#if bench_1_first_slot and bench_1_first_slot is Attack:
-			#dict_to_add["bench_beastie_1_first_slot_manually_activated"] = bench_1_first_slot.manually_activated
-		#dict_to_add["bench_beastie_1_trait_manually_activated"] =bench_beastie_1_beastie.my_trait.manually_activated
-	#dict_to_add["bench_beastie_1_show_play"] = bench_beastie_1_show_play
-	#dict_to_add["bench_beastie_1_h_allign"] = bench_beastie_1_h_allign
-#
-	#dict_to_add["bench_beastie_2_beastie"] = bench_beastie_2_beastie.duplicate() if bench_beastie_2_beastie else null
-	#if bench_beastie_2_beastie:
-		#var bench_2_first_slot : Plays = bench_beastie_2_beastie.my_plays.get(0)
-		#if bench_2_first_slot and bench_2_first_slot is Attack:
-			#dict_to_add["bench_beastie_2_first_slot_manually_activated"] = bench_2_first_slot.manually_activated
-		#dict_to_add["bench_beastie_2_trait_manually_activated"] = bench_beastie_2_beastie.my_trait.manually_activated
-	#dict_to_add["bench_beastie_2_show_play"] = bench_beastie_2_show_play
-	#dict_to_add["bench_beastie_2_h_allign"] = bench_beastie_2_h_allign
-#
-#
-#func load_data_from_save(board_data : BoardData) -> void:
-	#var dict_to_load : Dictionary = board_data.left_team_dict if side == Global.MySide.LEFT else board_data.right_team_dict
-	#my_field_effects = dict_to_load["field_effects"]
-#
-	#beastie_1_beastie = dict_to_load["beastie_1_beastie"]
-	#if beastie_1_beastie:
-		#var beastie_1_first_slot : Plays = beastie_1_beastie.my_plays.get(0)
-		#if beastie_1_first_slot and beastie_1_first_slot is Attack:
-			#beastie_1_first_slot.manually_activated = dict_to_load["beastie_1_first_slot_manually_activated"]
-		#beastie_1_beastie.my_trait.manually_activated = dict_to_load["beastie_1_trait_manually_activated"]
-	#beastie_1_position = dict_to_load["beastie_1_position"]
-	#beastie_1_show_play = dict_to_load["beastie_1_show_play"]
-	#beastie_1_show_bench_damage = dict_to_load["beastie_1_show_bench_damage"]
-	#beastie_1_have_ball = dict_to_load["beastie_1_have_ball"]
-	#beastie_1_ball_type = dict_to_load["beastie_1_ball_type"]
-	#beastie_1_h_allign = dict_to_load["beastie_1_h_allign"]
-#
-	#beastie_2_beastie = dict_to_load["beastie_2_beastie"]
-	#if beastie_2_beastie:
-		#var beastie_2_first_slot : Plays = beastie_2_beastie.my_plays.get(0)
-		#if beastie_2_first_slot and beastie_2_first_slot is Attack:
-			#beastie_2_first_slot.manually_activated = dict_to_load["beastie_2_first_slot_manually_activated"]
-		#beastie_2_beastie.my_trait.manually_activated = dict_to_load["beastie_2_trait_manually_activated"]
-	#beastie_2_position = dict_to_load["beastie_2_position"]
-	#beastie_2_show_play = dict_to_load["beastie_2_show_play"]
-	#beastie_2_show_bench_damage = dict_to_load["beastie_2_show_bench_damage"]
-	#beastie_2_have_ball = dict_to_load["beastie_2_have_ball"]
-	#beastie_2_ball_type = dict_to_load["beastie_2_ball_type"]
-	#beastie_2_h_allign = dict_to_load["beastie_2_h_allign"]
-#
-	#bench_beastie_1_beastie = dict_to_load["bench_beastie_1_beastie"]
-	#if bench_beastie_1_beastie:
-		#var bench_1_first_slot : Plays = bench_beastie_1_beastie.my_plays.get(0)
-		#if bench_1_first_slot and bench_1_first_slot is Attack:
-			#bench_1_first_slot.manually_activated = dict_to_load["bench_beastie_1_first_slot_manually_activated"]
-		#bench_beastie_1_beastie.my_trait.manually_activated = dict_to_load["bench_beastie_1_trait_manually_activated"]
-	#bench_beastie_1_show_play = dict_to_load["bench_beastie_1_show_play"]
-	#bench_beastie_1_h_allign = dict_to_load["bench_beastie_1_h_allign"]
-#
-	#bench_beastie_2_beastie = dict_to_load["bench_beastie_2_beastie"]
-	#if bench_beastie_2_beastie:
-		#var bench_2_first_slot : Plays = bench_beastie_2_beastie.my_plays.get(0)
-		#if bench_2_first_slot and bench_2_first_slot is Attack:
-			#bench_2_first_slot.manually_activated = dict_to_load["bench_beastie_2_first_slot_manually_activated"]
-		#bench_beastie_2_beastie.my_trait.manually_activated = dict_to_load["bench_beastie_2_trait_manually_activated"]
-	#bench_beastie_2_show_play = dict_to_load["bench_beastie_2_show_play"]
-	#bench_beastie_2_h_allign = dict_to_load["bench_beastie_2_h_allign"]

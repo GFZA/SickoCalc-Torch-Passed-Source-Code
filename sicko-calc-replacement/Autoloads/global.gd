@@ -1,11 +1,19 @@
 @tool
 extends Node
 
+signal is_musclebrained_updated(value : bool)
+
 enum MySide {LEFT, RIGHT}
 enum SortBeastie {NAME, NUMBER}
 
 var pause_updating_field : bool = false
 var resetting : bool = false
+
+var is_musclebrained : bool = false : # Absolutely cheese var
+	set(value):
+		is_musclebrained = value
+		is_musclebrained_updated.emit(is_musclebrained)
+
 @onready var is_on_web : bool = OS.get_name() == "Web"
 
 #region Main Color Datas
@@ -304,7 +312,7 @@ func _assign_all_trait_data() -> void:
 #func _adjust_traits(resource_file_path : String) -> void:
 	#var the_trait : Trait = load(resource_file_path)
 	#if ((the_trait.def_mult != 1.0 or the_trait.damage_dealt_mult != 1.0 or the_trait.is_starter_trait) and \
-		#the_trait.name.to_lower() not in ["absorption", "helmet"] and not the_trait.always_activate) or \
+		#the_trait.name.to_lower() not in ["absorption", "helmet", "musclebrain"] and not the_trait.always_activate) or \
 		#the_trait.name.to_lower() in ["stagecraft"]:
 		#the_trait.need_to_be_manually_activated = true
 	#ResourceSaver.save(the_trait, resource_file_path)
