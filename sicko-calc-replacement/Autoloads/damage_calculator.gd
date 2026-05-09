@@ -234,12 +234,12 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 
 	final_damage = attacker.my_trait.special_cal_formula(final_damage, attacker, defender, attack, attacker_team_controller, defender_team_controller)
 
-	if not (attack_name == "true strike" or attacker.my_trait.name.to_lower() == "maverick"):
-		final_damage = defender.my_trait.special_cal_formula(final_damage, attacker, defender, attack, attacker_team_controller, defender_team_controller)
-
 	# Apply Tough mult after everything
 	var tough_mult : float = 1.0 / 4.0 if tough and (not attack_name == "raw fury") else 1.0
 	final_damage = max(1, ceili(float(final_damage) * tough_mult))
+
+	if not (attack_name == "true strike" or attacker.my_trait.name.to_lower() == "maverick"):
+		final_damage = defender.my_trait.special_cal_formula(final_damage, attacker, defender, attack, attacker_team_controller, defender_team_controller)
 
 	#endregion
 

@@ -5,7 +5,7 @@ extends Control
 signal plays_selected(plays : Plays)
 
 const PLAY_BUTTON : PackedScene = preload("uid://dflcrna6d1235")
-const FREE_BALL : Plays = preload("uid://1gwxenj63w75")
+const FREE_BALL = preload("res://Autoloads/Resources/Plays/Attack/Body/free_ball.tres")
 
 @export var beastie : Beastie = null :
 	set(value):

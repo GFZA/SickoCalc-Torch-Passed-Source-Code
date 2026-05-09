@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://mwvk8hurlkt4"]
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://b0l5vhvcf5pst"]
 
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_dugro"]
 
@@ -6,7 +6,6 @@
 script = ExtResource("1_dugro")
 name = "Launcher"
 description = "Attacks do 1.3x damage and always target straight ahead"
-need_to_be_manually_activated = true
 always_activate = true
 damage_dealt_mult = 1.3
 metadata/_custom_type_script = "uid://bslfuaragw1g7"

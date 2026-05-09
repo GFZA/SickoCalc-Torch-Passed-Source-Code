@@ -2,7 +2,7 @@
 extends Trait
 
 
-func special_cal_formula(damage : int, attacker : Beastie, defender : Beastie, _attack : Attack, \
+func special_cal_formula(damage : int, attacker : Beastie, defender : Beastie, attack : Attack, \
 					 _attacker_team_controller : TeamController = null, \
 					 _defender_team_controller : TeamController = null) -> int: # Overwrite
 	# Can't use attack var as it could be from trait danced intangible beastie who have body attack
@@ -12,7 +12,8 @@ func special_cal_formula(damage : int, attacker : Beastie, defender : Beastie, _
 		return damage
 
 	var attacker_attack : Plays = attacker.my_plays[0]
-	if attacker_attack and attacker_attack.type == Plays.Type.ATTACK_BODY:
+	if attacker_attack and attacker_attack.type == Plays.Type.ATTACK_BODY \
+		and not attack.name.to_lower() in ["free ball", "grinder"]:
 		return 0
 
 	return damage

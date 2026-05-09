@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://ca6oxiy0axmrx"]
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://cxkk4cr1jee0e"]
 
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_lkq27"]
 
@@ -6,6 +6,8 @@
 script = ExtResource("1_lkq27")
 name = "High Spirits"
 description = "SPIRIT Attacks do +15 damage when STAMINA is below 34"
+need_to_be_manually_activated = true
+condition_name = "User STAMINA is below 34"
 is_starter_trait = true
 starter_trait_type = 1
 metadata/_custom_type_script = "uid://bslfuaragw1g7"

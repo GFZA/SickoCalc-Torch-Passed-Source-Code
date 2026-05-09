@@ -34,6 +34,7 @@ theme_override_constants/separation = 12
 unique_name_in_owner = true
 layout_mode = 2
 theme = ExtResource("2_cnr5y")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 72
 text = "POW"
 horizontal_alignment = 2
@@ -123,11 +124,16 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 8
 
+[node name="Spacer" type="Control" parent="MainContainer/BeastieDisplayContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
 [node name="NameLabel" type="Label" parent="MainContainer/BeastieDisplayContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 theme = ExtResource("2_cnr5y")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 88
 text = "Unselected"
 horizontal_alignment = 1

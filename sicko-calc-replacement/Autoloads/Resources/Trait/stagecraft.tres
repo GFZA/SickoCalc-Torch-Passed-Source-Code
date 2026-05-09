@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://draoyrmirh8id"]
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bryqk7emw3yhy"]
 
 [ext_resource type="Script" uid="uid://dw6pos1178ekd" path="res://Autoloads/Resources/Trait/stagecraft.gd" id="1_w8mio"]
 
@@ -6,5 +6,6 @@
 script = ExtResource("1_w8mio")
 name = "Stagecraft"
 description = "While field has RALLY or DREAD, never takes more than 66 damage from attacks"
+need_to_be_manually_activated = true
 condition_name = "Field has RALLY or DREAD"
 metadata/_custom_type_script = "uid://bslfuaragw1g7"

@@ -2,8 +2,10 @@
 class_name BeastieColumn
 extends MarginContainer
 
-const SPRECKO = preload("uid://p68xjhmdw3hk")
-const FREE_BALL : Plays = preload("uid://1gwxenj63w75")
+const SPRECKO = preload("res://Autoloads/Resources/Beastie/Sprecko/sprecko.tres")
+const FREE_BALL = preload("res://Autoloads/Resources/Plays/Attack/Body/free_ball.tres")
+const ICON_ROW_NET = preload("uid://i3su3ma1wc5")
+const ICON_ROW_BACK = preload("uid://dhs73i0hc16qu")
 
 signal beastie_updated
 signal plays_select_ui_requested
@@ -35,6 +37,9 @@ var current_pos : Beastie.Position = Beastie.Position.UPPER_BACK
 @onready var trait_two_button: Button = %TraitTwoButton
 @onready var custom_trait_button: Button = %CustomTraitButton
 
+@onready var trait_condition_row: HBoxContainer = %TraitConditionRow
+@onready var trait_condition_button: Button = %TraitConditionButton
+
 @onready var back_button: Button = %BackButton
 @onready var net_button: Button = %NetButton
 
@@ -43,12 +48,16 @@ var current_pos : Beastie.Position = Beastie.Position.UPPER_BACK
 @onready var attack_plays_ui: PlaysUI = %AttackPlaysUI
 @onready var mimic_button: Button = %MimicButton
 
+@onready var attack_condition_row: HBoxContainer = %AttackConditionRow
+@onready var attack_condition_button: Button = %AttackConditionButton
+
 @onready var boost_row: BoostRow = %BoostRow
 
 
 func _ready() -> void:
 	var is_left : bool = side == Global.MySide.LEFT
 	attack_row.visible = is_left
+	attack_condition_row.visible = is_left
 	boost_row.side = side
 
 	if is_left:
@@ -60,11 +69,15 @@ func _ready() -> void:
 	trait_one_button.pressed.connect(_on_trait_button_pressed.bind(1))
 	trait_two_button.pressed.connect(_on_trait_button_pressed.bind(2))
 
+	trait_condition_button.toggled.connect(_on_trait_condtion_toggled)
+
 	var pos_button_group := ButtonGroup.new()
 	back_button.button_group = pos_button_group
 	net_button.button_group = pos_button_group
 	back_button.pressed.connect(_on_pos_button_pressed.bind(Beastie.Position.UPPER_BACK))
 	net_button.pressed.connect(_on_pos_button_pressed.bind(Beastie.Position.UPPER_FRONT))
+
+	attack_condition_button.toggled.connect(_on_attack_condtion_toggled)
 
 	boost_row.boost_updated.connect(_on_boost_updated)
 	boost_row.invest_updated.connect(_on_invest_updated)
@@ -84,6 +97,7 @@ func _update_beastie() -> void:
 	beastie.my_field_position = current_pos
 
 	_update_trait_button()
+	_update_trait_condition_button()
 
 	beastie_updated.emit()
 
@@ -107,16 +121,24 @@ func _update_attack() -> void:
 	if not current_attack:
 		select_attack_button.flat = false
 		attack_plays_ui.hide()
+		attack_condition_row.hide()
+
 	else:
+		beastie.my_plays[0] = current_attack
+
 		select_attack_button.flat = true
 		attack_plays_ui.my_play = current_attack
 		attack_plays_ui.show()
 
+		attack_condition_row.visible = current_attack.need_to_be_manually_activated
+		attack_condition_button.button_pressed = false
+		attack_condition_button.text = current_attack.condition_name
 
-func _on_trait_button_pressed(trait_number : int) -> void:
-	if not beastie:
-		return # Shouldn't happen
-	beastie.my_trait = trait_one if trait_number == 1 else trait_two
+
+func _on_attack_condtion_toggled(toggled_on) -> void:
+	if not current_attack:
+		return
+	current_attack.manually_activated = toggled_on
 	beastie_updated.emit()
 
 
@@ -131,8 +153,49 @@ func _update_trait_button() -> void:
 		trait_two_button.hide()
 		trait_two = null
 		trait_two_button.text = "ERROR!!!" # Shouldn't see this
-		if trait_two_button.button_pressed:
-			trait_one_button.button_pressed = true
+
+	trait_one_button.button_pressed = true
+	_on_trait_button_pressed(1)
+
+
+func _update_trait_condition_button() -> void:
+	trait_condition_button.button_pressed = false
+	trait_condition_row.visible = false
+
+	var the_trait : Trait = beastie.my_trait
+	var is_left : bool = side == Global.MySide.LEFT
+	if ((the_trait.damage_dealt_mult != 1.0 or the_trait.is_starter_trait) and is_left) or \
+		(the_trait.def_mult != 1.0 and not is_left):
+		trait_condition_row.visible = beastie.my_trait.need_to_be_manually_activated
+		trait_condition_button.text = beastie.my_trait.condition_name
+
+
+func _on_trait_button_pressed(trait_number : int) -> void:
+	if not beastie:
+		return # Shouldn't happen
+	trait_one.manually_activated = false
+	if trait_two:
+		trait_two.manually_activated = false
+	var new_trait : Trait = trait_one if trait_number == 1 else trait_two
+	if new_trait and new_trait == beastie.my_trait:
+		return
+	beastie.my_trait = new_trait
+	_update_trait_condition_button()
+	if new_trait.name.to_lower() == "shy":
+		back_button.icon = ICON_ROW_NET
+		net_button.icon = ICON_ROW_BACK
+	else:
+		back_button.icon = ICON_ROW_BACK
+		net_button.icon = ICON_ROW_NET
+
+	beastie_updated.emit()
+
+
+func _on_trait_condtion_toggled(toggled_on) -> void:
+	if not beastie:
+		return
+	beastie.my_trait.manually_activated = toggled_on
+	beastie_updated.emit()
 
 
 func _on_pos_button_pressed(pos : Beastie.Position) -> void:

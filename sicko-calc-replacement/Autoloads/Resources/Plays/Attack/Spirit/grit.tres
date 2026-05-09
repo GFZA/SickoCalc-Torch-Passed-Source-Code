@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://chcore21ajv0h"]
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c0hsvmpto8e3s"]
 
 [ext_resource type="Script" uid="uid://d2pypf2gl8nod" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.gd" id="1_wy4od"]
 
@@ -7,7 +7,7 @@ script = ExtResource("1_wy4od")
 name = "Grit"
 base_pow = 55
 descrition = "ATTACK. POW x2 when SWEATY, NERVOUS, TENDER or WEEPY."
-condition_name = "User feels SWEATY, NERVOUS, TENDER or WEEPY"
+condition_name = "User feels SWEATY / NERVOUS / TENDER / WEEPY"
 condition_mult = 2.0
 need_to_be_manually_activated = true
 type = 1

@@ -1,7 +1,7 @@
 class_name Main
 extends Control
 
-const FREE_BALL : Plays = preload("uid://1gwxenj63w75")
+const FREE_BALL = preload("res://Autoloads/Resources/Plays/Attack/Body/free_ball.tres")
 
 var current_attack : Attack = FREE_BALL :
 	set(value):

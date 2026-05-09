@@ -6,6 +6,4 @@
 script = ExtResource("1_eh848")
 name = "Intangible"
 description = "Immune to BODY attacks"
-need_to_be_manually_activated = true
-damage_dealt_mult = 0.0
 metadata/_custom_type_script = "uid://bslfuaragw1g7"

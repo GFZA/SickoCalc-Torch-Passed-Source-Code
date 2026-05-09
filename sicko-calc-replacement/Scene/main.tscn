@@ -1,9 +1,65 @@
-[gd_scene load_steps=5 format=3 uid="uid://6tifqer1os1t"]
+[gd_scene load_steps=25 format=3 uid="uid://6tifqer1os1t"]
 
 [ext_resource type="PackedScene" uid="uid://c0rfhniciamxq" path="res://Scene/SelectUIs/select_uis.tscn" id="1_f6udf"]
 [ext_resource type="Script" uid="uid://b5jcl1uu04k63" path="res://Scene/main.gd" id="1_r34rm"]
 [ext_resource type="PackedScene" uid="uid://cnn1686te4wf8" path="res://Scene/BeastieColumn/beastie_column.tscn" id="1_sblpm"]
 [ext_resource type="PackedScene" uid="uid://cbc5i66rtpig1" path="res://Scene/DamageSplash/damage_splash.tscn" id="3_2wwxx"]
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="3_hiice"]
+[ext_resource type="Resource" uid="uid://c3elar3cfgqeb" path="res://Autoloads/Resources/Trait/scavenger.tres" id="4_sor6r"]
+[ext_resource type="Resource" uid="uid://bwntvaq8we2ee" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="5_pqe63"]
+[ext_resource type="Resource" uid="uid://c6joa81j7k6sd" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="6_aam5o"]
+[ext_resource type="Resource" uid="uid://51titaex4o3e" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="7_nyb1q"]
+[ext_resource type="Resource" uid="uid://cya1yqpm1hk8m" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="8_xw8bv"]
+[ext_resource type="Resource" uid="uid://iarkv57ltv2s" path="res://Autoloads/Resources/Plays/Attack/Mind/snipe.tres" id="9_wimqa"]
+[ext_resource type="Resource" uid="uid://ooe1a5sxb6wn" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="10_t372l"]
+[ext_resource type="Resource" uid="uid://cnksvmrwuymf3" path="res://Autoloads/Resources/Plays/Attack/Body/power_sap.tres" id="11_uctnp"]
+[ext_resource type="Resource" uid="uid://bpdws38adgj1d" path="res://Autoloads/Resources/Plays/Attack/Body/boom.tres" id="12_m37ut"]
+[ext_resource type="Resource" uid="uid://de4i64x6vnp7m" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="13_yoaul"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="14_mepbf"]
+[ext_resource type="Resource" uid="uid://b2f4ajbr7hmk5" path="res://Autoloads/Resources/Trait/cleanup.tres" id="15_dvq1j"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="16_50v0s"]
+[ext_resource type="Texture2D" uid="uid://t0k5liylbitw" path="res://Autoloads/Resources/Beastie/Sprecko/sprecko_idle.png" id="17_mu7ye"]
+[ext_resource type="Texture2D" uid="uid://b2vehc3so4hkq" path="res://Autoloads/Resources/Beastie/Sprecko/sprecko_ready.png" id="18_2oiod"]
+[ext_resource type="Texture2D" uid="uid://bsw2hjdchiote" path="res://Autoloads/Resources/Beastie/Sprecko/sprecko_spike.png" id="19_8bkap"]
+[ext_resource type="Texture2D" uid="uid://bmkrey7wnjpt" path="res://Autoloads/Resources/Beastie/Sprecko/icon_sprecko.png" id="20_b0nqf"]
+
+[sub_resource type="Resource" id="Resource_hiice"]
+script = ExtResource("16_50v0s")
+my_plays = Array[ExtResource("3_hiice")]([null, null, null])
+my_trait = ExtResource("4_sor6r")
+is_nfe = true
+bar_color = Color(0.68235296, 0.92941177, 0.5764706, 1)
+possible_plays = Array[ExtResource("3_hiice")]([ExtResource("5_pqe63"), ExtResource("6_aam5o"), ExtResource("7_nyb1q"), ExtResource("8_xw8bv"), ExtResource("9_wimqa"), ExtResource("10_t372l"), ExtResource("11_uctnp"), ExtResource("12_m37ut"), ExtResource("13_yoaul")])
+possible_traits = Array[ExtResource("14_mepbf")]([ExtResource("4_sor6r"), ExtResource("15_dvq1j")])
+sprites = Dictionary[int, Texture2D]({
+0: ExtResource("17_mu7ye"),
+1: ExtResource("18_2oiod"),
+2: ExtResource("19_8bkap"),
+6: ExtResource("20_b0nqf")
+})
+y_offset = -5
+ball_anchor_position_receive = Vector2(10, -52)
+ball_anchor_position_ready = Vector2(60, -85)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"
+
+[sub_resource type="Resource" id="Resource_sor6r"]
+script = ExtResource("16_50v0s")
+my_plays = Array[ExtResource("3_hiice")]([null, null, null])
+my_trait = ExtResource("4_sor6r")
+is_nfe = true
+bar_color = Color(0.68235296, 0.92941177, 0.5764706, 1)
+possible_plays = Array[ExtResource("3_hiice")]([ExtResource("5_pqe63"), ExtResource("6_aam5o"), ExtResource("7_nyb1q"), ExtResource("8_xw8bv"), ExtResource("9_wimqa"), ExtResource("10_t372l"), ExtResource("11_uctnp"), ExtResource("12_m37ut"), ExtResource("13_yoaul")])
+possible_traits = Array[ExtResource("14_mepbf")]([ExtResource("4_sor6r"), ExtResource("15_dvq1j")])
+sprites = Dictionary[int, Texture2D]({
+0: ExtResource("17_mu7ye"),
+1: ExtResource("18_2oiod"),
+2: ExtResource("19_8bkap"),
+6: ExtResource("20_b0nqf")
+})
+y_offset = -5
+ball_anchor_position_receive = Vector2(10, -52)
+ball_anchor_position_ready = Vector2(60, -85)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -39,10 +95,11 @@ alignment = 1
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 2
+beastie = SubResource("Resource_hiice")
 
 [node name="MiddleMarginContainer" type="MarginContainer" parent="MainContainer"]
 layout_mode = 2
-theme_override_constants/margin_top = 50
+theme_override_constants/margin_top = 80
 theme_override_constants/margin_bottom = 100
 
 [node name="MiddleContainer" type="VBoxContainer" parent="MainContainer/MiddleMarginContainer"]
@@ -63,6 +120,7 @@ offset_bottom = 150.0
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 10
+beastie = SubResource("Resource_sor6r")
 side = 1
 
 [node name="SelectUIs" parent="." instance=ExtResource("1_f6udf")]
