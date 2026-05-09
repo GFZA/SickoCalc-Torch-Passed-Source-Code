@@ -9,7 +9,7 @@ const EVIL_AXOLATI = preload("uid://l3eh6masrurv")
 @export var beastie : Beastie :
 	set(value):
 		beastie = value
-		_update_beastie()
+		update_beastie()
 
 @export var side : Global.MySide = Global.MySide.LEFT :
 	set(value):
@@ -34,7 +34,7 @@ func _ready() -> void:
 	select_beastie_button.pressed.connect(beastie_select_ui_requested.emit)
 
 
-func _update_beastie() -> void:
+func update_beastie() -> void:
 	if not is_node_ready():
 		await ready
 
@@ -48,9 +48,9 @@ func _update_beastie() -> void:
 	else:
 		name_label.text = beastie.specie_name
 		icon_rect.texture = beastie.get_sprite(Beastie.Sprite.ICON)
-		body_stats_label.text = str(beastie.get_total_stats_value(Beastie.Stats.B_POW)) if is_left else str(beastie.get_total_stats_value(Beastie.Stats.B_DEF))
-		spirit_stats_label.text = str(beastie.get_total_stats_value(Beastie.Stats.S_POW)) if is_left else str(beastie.get_total_stats_value(Beastie.Stats.S_DEF))
-		mind_stats_label.text = str(beastie.get_total_stats_value(Beastie.Stats.M_POW)) if is_left else str(beastie.get_total_stats_value(Beastie.Stats.M_DEF))
+		body_stats_label.text = str(beastie.get_stats_to_display(Beastie.Stats.B_POW)) if is_left else str(beastie.get_stats_to_display(Beastie.Stats.B_DEF))
+		spirit_stats_label.text = str(beastie.get_stats_to_display(Beastie.Stats.S_POW)) if is_left else str(beastie.get_stats_to_display(Beastie.Stats.S_DEF))
+		mind_stats_label.text = str(beastie.get_stats_to_display(Beastie.Stats.M_POW)) if is_left else str(beastie.get_stats_to_display(Beastie.Stats.M_DEF))
 
 
 func _update_side() -> void:
@@ -67,3 +67,6 @@ func _update_side() -> void:
 	body_stats_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT if is_left else HORIZONTAL_ALIGNMENT_LEFT
 	spirit_stats_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT if is_left else HORIZONTAL_ALIGNMENT_LEFT
 	mind_stats_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT if is_left else HORIZONTAL_ALIGNMENT_LEFT
+	body_stats_label.text = str(beastie.get_stats_to_display(Beastie.Stats.B_POW)) if is_left else str(beastie.get_stats_to_display(Beastie.Stats.B_DEF))
+	spirit_stats_label.text = str(beastie.get_stats_to_display(Beastie.Stats.S_POW)) if is_left else str(beastie.get_stats_to_display(Beastie.Stats.S_DEF))
+	mind_stats_label.text = str(beastie.get_stats_to_display(Beastie.Stats.M_POW)) if is_left else str(beastie.get_stats_to_display(Beastie.Stats.M_DEF))

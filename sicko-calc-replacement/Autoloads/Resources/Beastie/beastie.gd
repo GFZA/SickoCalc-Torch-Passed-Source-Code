@@ -189,3 +189,33 @@ static func get_empty_slot_plays_array() -> Array[Plays]:
 static func get_empty_trait_array() -> Array[Trait]:
 	# Due to typing, we need this convoluted function, bruh
 	return []
+
+
+func get_stats_to_display(stat : Stats) -> int:
+	var base_stat : int = get_total_stats_value(stat)
+	var total_boost : int = 0
+	var boosts_to_add : int = get_boosts(stat)
+	if get_feeling_stack(Feelings.WEEPY) > 0:
+		boosts_to_add = min(0, boosts_to_add) # so it counts deboosts
+	total_boost += boosts_to_add
+
+	match stat:
+		Stats.B_POW, Stats.S_POW, Stats.M_POW:
+			if my_trait.name.to_lower() == "shy":
+				total_boost += int(not check_if_net())
+			else:
+				total_boost += int(check_if_net())
+		Stats.B_DEF, Stats.S_DEF, Stats.M_DEF:
+			if my_trait.name.to_lower() == "shy":
+				total_boost += int(check_if_net())
+			else:
+				total_boost += int(not check_if_net()) + int(check_if_stack())
+
+	var final_stat : float = float(base_stat) + 5.0
+	match signi(total_boost):
+		1:
+			final_stat += floori(final_stat * float(total_boost) / 2.0)
+		-1:
+			final_stat = floori(final_stat * 2.0 / (absf(float(total_boost)) + 2.0))
+
+	return floori(final_stat)

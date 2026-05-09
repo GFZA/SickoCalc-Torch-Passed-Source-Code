@@ -256,6 +256,7 @@ my_play = ExtResource("6_uupfg")
 
 [node name="MimicButton" type="Button" parent="BGRec/MainContainer/AttackRow"]
 unique_name_in_owner = true
+visible = false
 custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -266,6 +267,7 @@ text = "Mimic"
 
 [node name="RallyButton" type="Button" parent="BGRec/MainContainer/AttackRow"]
 unique_name_in_owner = true
+visible = false
 custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -331,14 +333,13 @@ size_flags_vertical = 6
 size_flags_stretch_ratio = 0.6
 focus_mode = 0
 theme = ExtResource("4_buii5")
-theme_override_constants/outline_size = 16
-theme_override_constants/icon_max_width = 152
 theme_override_font_sizes/font_size = 88
 toggle_mode = true
 button_group = SubResource("ButtonGroup_rr5fh")
 text = "Jazzed"
 icon = ExtResource("29_13mji")
 icon_alignment = 1
+vertical_icon_alignment = 0
 expand_icon = true
 
 [node name="LeftWeepyButton" type="Button" parent="BGRec/MainContainer/FeelingRow/MarginContainer/LeftFeelingContainer"]
@@ -350,14 +351,13 @@ size_flags_vertical = 6
 size_flags_stretch_ratio = 0.6
 focus_mode = 0
 theme = ExtResource("4_buii5")
-theme_override_constants/outline_size = 16
-theme_override_constants/icon_max_width = 152
 theme_override_font_sizes/font_size = 88
 toggle_mode = true
 button_group = SubResource("ButtonGroup_rr5fh")
 text = "Weepy"
 icon = ExtResource("30_erbep")
 icon_alignment = 1
+vertical_icon_alignment = 2
 expand_icon = true
 
 [node name="BlockedColumn" type="VBoxContainer" parent="BGRec/MainContainer/FeelingRow/MarginContainer/LeftFeelingContainer"]
@@ -398,13 +398,12 @@ size_flags_vertical = 6
 size_flags_stretch_ratio = 0.6
 focus_mode = 0
 theme = ExtResource("4_buii5")
-theme_override_constants/outline_size = 16
-theme_override_constants/icon_max_width = 152
 theme_override_font_sizes/font_size = 88
 toggle_mode = true
 text = "Tough"
 icon = ExtResource("33_vcchh")
 icon_alignment = 1
+vertical_icon_alignment = 0
 expand_icon = true
 
 [node name="RightWeepyButton" type="Button" parent="BGRec/MainContainer/FeelingRow/MarginContainer/RightFeelingContainer"]
@@ -416,13 +415,12 @@ size_flags_vertical = 6
 size_flags_stretch_ratio = 0.6
 focus_mode = 0
 theme = ExtResource("4_buii5")
-theme_override_constants/outline_size = 16
-theme_override_constants/icon_max_width = 152
 theme_override_font_sizes/font_size = 88
 toggle_mode = true
 text = "Weepy"
 icon = ExtResource("30_erbep")
 icon_alignment = 1
+vertical_icon_alignment = 2
 expand_icon = true
 
 [node name="TenderButton" type="Button" parent="BGRec/MainContainer/FeelingRow/MarginContainer/RightFeelingContainer"]
@@ -434,13 +432,12 @@ size_flags_vertical = 6
 size_flags_stretch_ratio = 0.6
 focus_mode = 0
 theme = ExtResource("4_buii5")
-theme_override_constants/outline_size = 16
-theme_override_constants/icon_max_width = 152
 theme_override_font_sizes/font_size = 88
 toggle_mode = true
 text = "Tender"
 icon = ExtResource("34_gl0d7")
 icon_alignment = 1
+vertical_icon_alignment = 0
 expand_icon = true
 
 [node name="Spacer5" type="Control" parent="BGRec/MainContainer"]

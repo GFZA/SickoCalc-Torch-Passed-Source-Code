@@ -73,6 +73,8 @@ func _ready() -> void:
 	attack_condition_row.visible = is_left
 	boost_row.side = side
 
+	beastie_updated.connect(beastie_row.update_beastie)
+
 	if is_left:
 		select_attack_button.pressed.connect(plays_select_ui_requested.emit)
 
@@ -97,8 +99,8 @@ func _ready() -> void:
 	net_button.pressed.connect(_on_pos_button_pressed.bind(Beastie.Position.UPPER_FRONT))
 
 	attack_condition_button.toggled.connect(_on_attack_condtion_toggled)
-	mimic_button.toggled.connect(func(_toggle_on : bool): return)
 	rally_button.toggled.connect(rally_requested.emit)
+	mimic_button.toggled.connect(_on_mimic_button_toggled)
 
 	boost_row.boost_updated.connect(_on_boost_updated)
 	boost_row.invest_updated.connect(_on_invest_updated)
@@ -138,6 +140,8 @@ func update_beastie() -> void:
 
 	beastie_row.beastie = beastie
 	beastie.my_field_position = current_pos
+
+	mimic_button.visible = beastie.specie_name.to_lower() == "squimage"
 
 	_update_trait_button()
 	_update_trait_condition_button()
@@ -179,7 +183,6 @@ func _update_attack() -> void:
 		attack_condition_button.text = current_attack.condition_name
 
 		rally_button.visible = current_attack.type in [Plays.Type.ATTACK_SPIRIT, Plays.Type.ATTACK_MIND]
-		mimic_button.visible = false # TEMPORARY
 
 
 func _on_attack_condtion_toggled(toggled_on) -> void:
@@ -271,6 +274,13 @@ func _on_pos_button_pressed(pos : Beastie.Position) -> void:
 		return
 	current_pos = pos
 	beastie.my_field_position = pos
+	beastie_updated.emit()
+
+
+func _on_mimic_button_toggled(toggled_on : bool) -> void:
+	if not beastie or not current_attack:
+		return
+	current_attack.is_mimicked = toggled_on
 	beastie_updated.emit()
 
 
