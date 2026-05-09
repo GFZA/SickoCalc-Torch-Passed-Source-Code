@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://6tifqer1os1t"]
+[gd_scene load_steps=27 format=3 uid="uid://6tifqer1os1t"]
 
 [ext_resource type="PackedScene" uid="uid://c0rfhniciamxq" path="res://Scene/SelectUIs/select_uis.tscn" id="1_f6udf"]
 [ext_resource type="Script" uid="uid://b5jcl1uu04k63" path="res://Scene/main.gd" id="1_r34rm"]
@@ -24,9 +24,15 @@
 [ext_resource type="Texture2D" uid="uid://bmkrey7wnjpt" path="res://Autoloads/Resources/Beastie/Sprecko/icon_sprecko.png" id="20_b0nqf"]
 
 [sub_resource type="Resource" id="Resource_hiice"]
+script = ExtResource("14_mepbf")
+name = "Scavenger"
+description = "Restores 25 STAMINA when TAGGED OUT"
+metadata/_custom_type_script = "uid://bslfuaragw1g7"
+
+[sub_resource type="Resource" id="Resource_sor6r"]
 script = ExtResource("16_50v0s")
 my_plays = Array[ExtResource("3_hiice")]([null, null, null])
-my_trait = ExtResource("4_sor6r")
+my_trait = SubResource("Resource_hiice")
 is_nfe = true
 bar_color = Color(0.68235296, 0.92941177, 0.5764706, 1)
 possible_plays = Array[ExtResource("3_hiice")]([ExtResource("5_pqe63"), ExtResource("6_aam5o"), ExtResource("7_nyb1q"), ExtResource("8_xw8bv"), ExtResource("9_wimqa"), ExtResource("10_t372l"), ExtResource("11_uctnp"), ExtResource("12_m37ut"), ExtResource("13_yoaul")])
@@ -42,10 +48,16 @@ ball_anchor_position_receive = Vector2(10, -52)
 ball_anchor_position_ready = Vector2(60, -85)
 metadata/_custom_type_script = "uid://ehabj4qsgxpl"
 
-[sub_resource type="Resource" id="Resource_sor6r"]
+[sub_resource type="Resource" id="Resource_pqe63"]
+script = ExtResource("14_mepbf")
+name = "Scavenger"
+description = "Restores 25 STAMINA when TAGGED OUT"
+metadata/_custom_type_script = "uid://bslfuaragw1g7"
+
+[sub_resource type="Resource" id="Resource_aam5o"]
 script = ExtResource("16_50v0s")
 my_plays = Array[ExtResource("3_hiice")]([null, null, null])
-my_trait = ExtResource("4_sor6r")
+my_trait = SubResource("Resource_pqe63")
 is_nfe = true
 bar_color = Color(0.68235296, 0.92941177, 0.5764706, 1)
 possible_plays = Array[ExtResource("3_hiice")]([ExtResource("5_pqe63"), ExtResource("6_aam5o"), ExtResource("7_nyb1q"), ExtResource("8_xw8bv"), ExtResource("9_wimqa"), ExtResource("10_t372l"), ExtResource("11_uctnp"), ExtResource("12_m37ut"), ExtResource("13_yoaul")])
@@ -95,7 +107,7 @@ alignment = 1
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 2
-beastie = SubResource("Resource_hiice")
+beastie = SubResource("Resource_sor6r")
 
 [node name="MiddleMarginContainer" type="MarginContainer" parent="MainContainer"]
 layout_mode = 2
@@ -120,7 +132,7 @@ offset_bottom = 150.0
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 10
-beastie = SubResource("Resource_sor6r")
+beastie = SubResource("Resource_aam5o")
 side = 1
 
 [node name="SelectUIs" parent="." instance=ExtResource("1_f6udf")]

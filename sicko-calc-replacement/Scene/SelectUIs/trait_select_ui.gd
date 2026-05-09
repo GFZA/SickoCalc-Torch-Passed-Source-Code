@@ -6,7 +6,6 @@ signal trait_selected(new_trait : Trait, side : Global.MySide)
 
 const TRAIT_BUTTON : PackedScene = preload("uid://fgjqfmtn5bfl")
 
-var beastie : Beastie = null
 var side : Global.MySide = Global.MySide.LEFT
 
 var all_trait_data_sorted : Array[Trait] = []
@@ -73,19 +72,13 @@ func update_grid() -> void:
 
 func _on_trait_button_trait_selected(new_trait : Trait) -> void:
 	if not new_trait: # Shouldn't happen
-		beastie.my_trait = null
-		beastie.my_trait_updated.emit(beastie.my_trait) # Have to manually emitted for some reason)
-		#trait_selected.emit(null, side, team_pos)
+		trait_selected.emit(null, side)
 	else:
-		#beastie.my_trait = new_trait.duplicate(true)
-		#beastie.my_trait_updated.emit(beastie.my_trait) # Have to manually emitted for some reason)
-		#trait_selected.emit(new_trait.duplicate(true), side, team_pos)
+		trait_selected.emit(new_trait.duplicate(true), side)
 		return
 
 
 func reset() -> void:
-	beastie = null
 	side = Global.MySide.LEFT
-	#team_pos = TeamController.TeamPosition.FIELD_1
 	current_search_string = ""
 	search_bar.text = ""

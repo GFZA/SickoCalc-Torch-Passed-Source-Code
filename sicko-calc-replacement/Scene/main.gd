@@ -26,6 +26,10 @@ func _ready() -> void:
 	# specify if this is selecting for mimicked attack later
 	select_uis.plays_selected.connect(_on_play_selected)
 
+	left_beastie_column.trait_select_ui_requested.connect(select_uis.show_trait_select_ui.bind(Global.MySide.LEFT))
+	right_beastie_column.trait_select_ui_requested.connect(select_uis.show_trait_select_ui.bind(Global.MySide.RIGHT))
+	select_uis.trait_selected.connect(_on_trait_selected)
+
 	_update()
 
 
@@ -50,6 +54,12 @@ func _on_play_selected(attack : Plays) -> void:
 	current_attack = attack
 	if not current_attack:
 		current_attack = FREE_BALL
+
+
+func _on_trait_selected(new_trait : Trait, side : Global.MySide) -> void:
+	var column : BeastieColumn = left_beastie_column if side == Global.MySide.LEFT else right_beastie_column
+	column.beastie.my_trait = new_trait
+	column.update_custom_trait_button()
 
 
 func _update() -> void:

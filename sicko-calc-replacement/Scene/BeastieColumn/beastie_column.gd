@@ -9,11 +9,12 @@ const ICON_ROW_BACK = preload("uid://dhs73i0hc16qu")
 
 signal beastie_updated
 signal plays_select_ui_requested
+signal trait_select_ui_requested
 
 @export var beastie : Beastie = null:
 	set(value):
 		beastie = value
-		_update_beastie()
+		update_beastie()
 
 
 @export var side : Global.MySide = Global.MySide.LEFT :
@@ -66,8 +67,14 @@ func _ready() -> void:
 	var trait_button_group := ButtonGroup.new()
 	trait_one_button.button_group = trait_button_group
 	trait_two_button.button_group = trait_button_group
+	custom_trait_button.button_group = trait_button_group
 	trait_one_button.pressed.connect(_on_trait_button_pressed.bind(1))
 	trait_two_button.pressed.connect(_on_trait_button_pressed.bind(2))
+	custom_trait_button.pressed.connect(trait_select_ui_requested.emit)
+	custom_trait_button.toggled.connect(func(toggled_on : bool):
+		if not toggled_on:
+			custom_trait_button.text = "Custom"
+	)
 
 	trait_condition_button.toggled.connect(_on_trait_condtion_toggled)
 
@@ -87,7 +94,7 @@ func _ready() -> void:
 	beastie = SPRECKO.duplicate(true)
 
 
-func _update_beastie() -> void:
+func update_beastie() -> void:
 	if not is_node_ready():
 		await ready
 	if not beastie:
@@ -99,7 +106,8 @@ func _update_beastie() -> void:
 	_update_trait_button()
 	_update_trait_condition_button()
 
-	beastie_updated.emit()
+	trait_one_button.button_pressed = true
+	_on_trait_button_pressed(1) # beastie_updated.emit() in here
 
 
 func _update_side() -> void:
@@ -154,9 +162,6 @@ func _update_trait_button() -> void:
 		trait_two = null
 		trait_two_button.text = "ERROR!!!" # Shouldn't see this
 
-	trait_one_button.button_pressed = true
-	_on_trait_button_pressed(1)
-
 
 func _update_trait_condition_button() -> void:
 	trait_condition_button.button_pressed = false
@@ -168,6 +173,23 @@ func _update_trait_condition_button() -> void:
 		(the_trait.def_mult != 1.0 and not is_left):
 		trait_condition_row.visible = beastie.my_trait.need_to_be_manually_activated
 		trait_condition_button.text = beastie.my_trait.condition_name
+
+
+func update_custom_trait_button() -> void:
+	if beastie.my_trait == null:
+		return
+
+	var trait_name : String = beastie.my_trait.name
+	custom_trait_button.text = trait_name
+	custom_trait_button.button_pressed = true
+	_update_trait_condition_button()
+	if trait_name.to_lower() == "shy":
+		back_button.icon = ICON_ROW_NET
+		net_button.icon = ICON_ROW_BACK
+	else:
+		back_button.icon = ICON_ROW_BACK
+		net_button.icon = ICON_ROW_NET
+	beastie_updated.emit()
 
 
 func _on_trait_button_pressed(trait_number : int) -> void:

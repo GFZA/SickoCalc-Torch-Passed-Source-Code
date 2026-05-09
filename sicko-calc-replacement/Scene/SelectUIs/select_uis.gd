@@ -2,7 +2,7 @@ class_name SelectUIs
 extends MarginContainer
 
 signal beastie_selected(beastie : Beastie, side : Global.MySide)
-signal plays_selected(plays : Plays, slot_index : int, side : Global.MySide)
+signal plays_selected(plays : Plays)
 signal trait_selected(new_trait : Trait, side : Global.MySide)
 
 @onready var bg_hidden_button: Button = %BGHiddenButton
@@ -69,9 +69,8 @@ func show_plays_select_ui(beastie : Beastie) -> void:
 	plays_select_ui.beastie = beastie
 
 
-func show_trait_select_ui(beastie : Beastie, side : Global.MySide) -> void:
+func show_trait_select_ui(side : Global.MySide) -> void:
 	show()
 	hide_all_ui()
 	trait_select_ui.show()
-	trait_select_ui.beastie = beastie
 	trait_select_ui.side = side
