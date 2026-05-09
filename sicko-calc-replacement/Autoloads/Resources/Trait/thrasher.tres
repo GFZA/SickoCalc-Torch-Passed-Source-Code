@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c2s4fsxhehj3m"]
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://knf784u3rdhn"]
 
 [ext_resource type="Script" uid="uid://badd0rvmij5lg" path="res://Autoloads/Resources/Trait/thrasher.gd" id="1_yfjwd"]
 
@@ -6,6 +6,7 @@
 script = ExtResource("1_yfjwd")
 name = "Thrasher"
 description = "Does 1.3x damage while any Beastie on the opponent team is WIPED"
+need_to_be_manually_activated = true
 condition_name = "Any opponent is WIPED"
 damage_dealt_mult = 1.3
 metadata/_custom_type_script = "uid://bslfuaragw1g7"

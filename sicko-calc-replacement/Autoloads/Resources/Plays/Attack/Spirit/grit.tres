@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://fysaq1o88o1v"]
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://chcore21ajv0h"]
 
 [ext_resource type="Script" uid="uid://d2pypf2gl8nod" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.gd" id="1_wy4od"]
 
@@ -9,5 +9,6 @@ base_pow = 55
 descrition = "ATTACK. POW x2 when SWEATY, NERVOUS, TENDER or WEEPY."
 condition_name = "User feels SWEATY, NERVOUS, TENDER or WEEPY"
 condition_mult = 2.0
+need_to_be_manually_activated = true
 type = 1
 metadata/_custom_type_script = "uid://bc63soeia1eb1"

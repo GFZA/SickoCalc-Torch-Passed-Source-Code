@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://cgp0jnuk0thpe"]
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://de4i64x6vnp7m"]
 
 [ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_6cbjj"]
 

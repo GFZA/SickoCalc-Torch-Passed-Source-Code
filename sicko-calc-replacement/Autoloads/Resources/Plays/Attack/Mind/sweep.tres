@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bcpacxusyskuo"]
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cb5l0ce1v0p15"]
 
 [ext_resource type="Script" uid="uid://ch56ugt2j6fa2" path="res://Autoloads/Resources/Plays/Attack/Mind/sweep.gd" id="1_ja8ey"]
 
@@ -9,5 +9,6 @@ base_pow = 50
 descrition = "POW x2 if there are any field effects. Clears all FIELD EFFECTS."
 condition_name = "Field Effects present"
 condition_mult = 2.0
+need_to_be_manually_activated = true
 type = 2
 metadata/_custom_type_script = "uid://bc63soeia1eb1"

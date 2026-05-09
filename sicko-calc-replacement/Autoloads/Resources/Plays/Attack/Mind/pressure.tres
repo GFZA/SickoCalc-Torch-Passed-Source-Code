@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cf02nhbjoqjgf"]
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://smdb12qjwch4"]
 
 [ext_resource type="Script" uid="uid://b2vrj4sphfbqd" path="res://Autoloads/Resources/Plays/Attack/Mind/pressure.gd" id="1_ssts3"]
 
@@ -9,5 +9,6 @@ base_pow = 55
 descrition = "ATTACK. POW x2 if target just TAGGED IN."
 condition_name = "Target just tagged in"
 condition_mult = 2.0
+need_to_be_manually_activated = true
 type = 2
 metadata/_custom_type_script = "uid://bc63soeia1eb1"

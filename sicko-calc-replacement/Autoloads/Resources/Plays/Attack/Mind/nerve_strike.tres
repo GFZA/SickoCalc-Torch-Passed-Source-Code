@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c7blujvv2w3vu"]
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://b3ie8s030fuig"]
 
 [ext_resource type="Script" uid="uid://mjv232yj1hh1" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.gd" id="1_47avm"]
 
@@ -9,5 +9,6 @@ base_pow = 55
 descrition = "ATTACK. POW x2 if target has a bad FEELING."
 condition_name = "Target has a bad FEELING"
 condition_mult = 2.0
+need_to_be_manually_activated = true
 type = 2
 metadata/_custom_type_script = "uid://bc63soeia1eb1"

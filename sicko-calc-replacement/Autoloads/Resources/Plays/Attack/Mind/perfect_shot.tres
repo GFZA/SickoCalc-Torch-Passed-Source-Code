@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c43v5gcf3gyur"]
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bbtfkfi4i2py6"]
 
 [ext_resource type="Script" uid="uid://ci8wajirxbhr6" path="res://Autoloads/Resources/Plays/Attack/Mind/perfect_shot.gd" id="1_mvvn4"]
 
@@ -9,5 +9,6 @@ base_pow = 125
 descrition = "Requires 2 ACTIONS. POW x¾ if user has any FEELINGs."
 condition_name = "User has any FEELINGs"
 condition_mult = 0.75
+need_to_be_manually_activated = true
 type = 2
 metadata/_custom_type_script = "uid://bc63soeia1eb1"

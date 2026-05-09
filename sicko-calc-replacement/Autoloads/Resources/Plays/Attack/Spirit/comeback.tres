@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bd6b2mst43mrw"]
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bt6kmjvu2p44g"]
 
 [ext_resource type="Script" uid="uid://cs5cjpb6xedka" path="res://Autoloads/Resources/Plays/Attack/Spirit/comeback.gd" id="1_t3ggm"]
 
@@ -9,5 +9,6 @@ base_pow = 60
 descrition = "ATTACK. POW x1.5 if tied or behind on score."
 condition_name = "Tied or Behind on score"
 condition_mult = 1.5
+need_to_be_manually_activated = true
 type = 1
 metadata/_custom_type_script = "uid://bc63soeia1eb1"

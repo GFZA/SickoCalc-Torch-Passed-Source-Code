@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://b1p53xhl07na3"]
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://2dh6f7d4qb15"]
 
 [ext_resource type="Script" uid="uid://p8fcmumqenti" path="res://Autoloads/Resources/Trait/anticipation.gd" id="1_q83yv"]
 
@@ -6,6 +6,7 @@
 script = ExtResource("1_q83yv")
 name = "Anticipation"
 description = "DEF x1.5 when the attacker is BLOCKED"
+need_to_be_manually_activated = true
 condition_name = "Attacker feels Blocked"
 def_mult = 1.5
 metadata/_custom_type_script = "uid://bslfuaragw1g7"

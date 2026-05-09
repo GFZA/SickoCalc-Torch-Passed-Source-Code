@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cagttvqn25cci"]
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://vhdfve28icxd"]
 
 [ext_resource type="Script" uid="uid://dqfy7lhr4blo8" path="res://Autoloads/Resources/Trait/acrobat.gd" id="1_irvqf"]
 
@@ -6,6 +6,7 @@
 script = ExtResource("1_irvqf")
 name = "Acrobat"
 description = "DEF x1.5 just after moving or tagging in"
+need_to_be_manually_activated = true
 condition_name = "Just after moving or tagging in"
 def_mult = 1.5
 metadata/_custom_type_script = "uid://bslfuaragw1g7"
