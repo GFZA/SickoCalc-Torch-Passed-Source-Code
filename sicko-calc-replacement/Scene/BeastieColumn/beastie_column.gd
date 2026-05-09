@@ -54,6 +54,16 @@ var current_pos : Beastie.Position = Beastie.Position.UPPER_BACK
 
 @onready var boost_row: BoostRow = %BoostRow
 
+@onready var left_feeling_container: HBoxContainer = %LeftFeelingContainer
+@onready var jazzed_button: Button = %JazzedButton
+@onready var left_weepy_button: Button = %LeftWeepyButton
+@onready var blocked_number_ui: NumberUIAlt = %BlockedNumberUI
+
+@onready var right_feeling_container: HBoxContainer = %RightFeelingContainer
+@onready var tough_button: Button = %ToughButton
+@onready var right_weepy_button: Button = %RightWeepyButton
+@onready var tender_button: Button = %TenderButton
+
 
 func _ready() -> void:
 	var is_left : bool = side == Global.MySide.LEFT
@@ -89,9 +99,31 @@ func _ready() -> void:
 	boost_row.boost_updated.connect(_on_boost_updated)
 	boost_row.invest_updated.connect(_on_invest_updated)
 
-	_update_attack()
+	if is_left:
+		left_feeling_container.show()
+		right_feeling_container.hide()
+		var left_field_button_group := ButtonGroup.new()
+		left_field_button_group.allow_unpress = true
+		jazzed_button.button_group = left_field_button_group
+		left_weepy_button.button_group = left_field_button_group
+		jazzed_button.toggled.connect(_on_feeling_button_toggled.bind(Beastie.Feelings.JAZZED))
+		left_weepy_button.toggled.connect(_on_feeling_button_toggled.bind(Beastie.Feelings.WEEPY))
+		blocked_number_ui.value_updated.connect(_on_blocked_updated)
+	else:
+		left_feeling_container.hide()
+		right_feeling_container.show()
+		var right_field_button_group := ButtonGroup.new()
+		right_field_button_group.allow_unpress = true
+		tough_button.button_group = right_field_button_group
+		tender_button.button_group = right_field_button_group
+		tough_button.toggled.connect(_on_feeling_button_toggled.bind(Beastie.Feelings.TOUGH))
+		right_weepy_button.toggled.connect(_on_feeling_button_toggled.bind(Beastie.Feelings.WEEPY))
+		tender_button.toggled.connect(_on_feeling_button_toggled.bind(Beastie.Feelings.TENDER))
+
+	boost_row.reset_requested.connect(reset)
 
 	beastie = SPRECKO.duplicate(true)
+	_update_attack()
 
 
 func update_beastie() -> void:
@@ -240,3 +272,39 @@ func _on_invest_updated(stat : Beastie.Stats, amount : int) -> void:
 		return
 	beastie.invests[stat] = amount
 	beastie_updated.emit()
+
+
+func _on_feeling_button_toggled(toggled_on : bool, feeling : Beastie.Feelings) -> void:
+	if not beastie:
+		return
+	if toggled_on:
+		beastie.current_feelings.get_or_add(feeling, 1)
+	elif beastie.current_feelings.has(feeling):
+		beastie.current_feelings.erase(feeling)
+	beastie_updated.emit()
+
+
+func _on_blocked_updated(amount : int) -> void:
+	if not beastie:
+		return
+	beastie.current_feelings[Beastie.Feelings.BLOCKED] = amount
+	if amount == 0:
+		if beastie.current_feelings.has(Beastie.Feelings.BLOCKED):
+			beastie.current_feelings.erase(Beastie.Feelings.BLOCKED)
+	beastie_updated.emit()
+
+
+func reset() -> void:
+	jazzed_button.button_pressed = false
+	left_weepy_button.button_pressed = false
+	blocked_number_ui.reset()
+	tough_button.button_pressed = false
+	right_weepy_button.button_pressed = false
+	tender_button.button_pressed = false
+
+	back_button.button_pressed = true
+	_on_pos_button_pressed(Beastie.Position.UPPER_BACK)
+
+	trait_one_button.button_pressed = true
+	trait_condition_button.button_pressed = false
+	_on_trait_button_pressed(1)

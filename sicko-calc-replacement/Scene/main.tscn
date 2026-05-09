@@ -1,10 +1,12 @@
-[gd_scene load_steps=27 format=3 uid="uid://6tifqer1os1t"]
+[gd_scene load_steps=31 format=3 uid="uid://6tifqer1os1t"]
 
 [ext_resource type="PackedScene" uid="uid://c0rfhniciamxq" path="res://Scene/SelectUIs/select_uis.tscn" id="1_f6udf"]
 [ext_resource type="Script" uid="uid://b5jcl1uu04k63" path="res://Scene/main.gd" id="1_r34rm"]
 [ext_resource type="PackedScene" uid="uid://cnn1686te4wf8" path="res://Scene/BeastieColumn/beastie_column.tscn" id="1_sblpm"]
 [ext_resource type="PackedScene" uid="uid://cbc5i66rtpig1" path="res://Scene/DamageSplash/damage_splash.tscn" id="3_2wwxx"]
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="3_hiice"]
+[ext_resource type="FontFile" uid="uid://cvfib27cf5q88" path="res://Autoloads/Resources/Fonts/Go Banana.ttf" id="3_nyb1q"]
+[ext_resource type="Resource" uid="uid://vgjeoby0udu0" path="res://Autoloads/Resources/Plays/Attack/Body/free_ball.tres" id="4_aam5o"]
 [ext_resource type="Resource" uid="uid://c3elar3cfgqeb" path="res://Autoloads/Resources/Trait/scavenger.tres" id="4_sor6r"]
 [ext_resource type="Resource" uid="uid://bwntvaq8we2ee" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="5_pqe63"]
 [ext_resource type="Resource" uid="uid://c6joa81j7k6sd" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="6_aam5o"]
@@ -22,17 +24,27 @@
 [ext_resource type="Texture2D" uid="uid://b2vehc3so4hkq" path="res://Autoloads/Resources/Beastie/Sprecko/sprecko_ready.png" id="18_2oiod"]
 [ext_resource type="Texture2D" uid="uid://bsw2hjdchiote" path="res://Autoloads/Resources/Beastie/Sprecko/sprecko_spike.png" id="19_8bkap"]
 [ext_resource type="Texture2D" uid="uid://bmkrey7wnjpt" path="res://Autoloads/Resources/Beastie/Sprecko/icon_sprecko.png" id="20_b0nqf"]
+[ext_resource type="Texture2D" uid="uid://0a5xkw4orq58" path="res://Autoloads/Misc/main_ui_bg_tile_4.png" id="23_nyb1q"]
+[ext_resource type="Theme" uid="uid://bkrlwg21fhprn" path="res://Autoloads/Resources/Themes/edit_button.tres" id="24_xw8bv"]
 
-[sub_resource type="Resource" id="Resource_hiice"]
+[sub_resource type="Resource" id="Resource_wimqa"]
 script = ExtResource("14_mepbf")
 name = "Scavenger"
 description = "Restores 25 STAMINA when TAGGED OUT"
 metadata/_custom_type_script = "uid://bslfuaragw1g7"
 
-[sub_resource type="Resource" id="Resource_sor6r"]
+[sub_resource type="Resource" id="Resource_t372l"]
 script = ExtResource("16_50v0s")
-my_plays = Array[ExtResource("3_hiice")]([null, null, null])
-my_trait = SubResource("Resource_hiice")
+my_plays = Array[ExtResource("3_hiice")]([ExtResource("4_aam5o"), null, null])
+my_trait = SubResource("Resource_wimqa")
+current_boosts = Dictionary[int, int]({
+0: 0,
+1: 0,
+2: 0,
+3: 0,
+4: 0,
+5: 0
+})
 is_nfe = true
 bar_color = Color(0.68235296, 0.92941177, 0.5764706, 1)
 possible_plays = Array[ExtResource("3_hiice")]([ExtResource("5_pqe63"), ExtResource("6_aam5o"), ExtResource("7_nyb1q"), ExtResource("8_xw8bv"), ExtResource("9_wimqa"), ExtResource("10_t372l"), ExtResource("11_uctnp"), ExtResource("12_m37ut"), ExtResource("13_yoaul")])
@@ -48,16 +60,24 @@ ball_anchor_position_receive = Vector2(10, -52)
 ball_anchor_position_ready = Vector2(60, -85)
 metadata/_custom_type_script = "uid://ehabj4qsgxpl"
 
-[sub_resource type="Resource" id="Resource_pqe63"]
+[sub_resource type="Resource" id="Resource_uctnp"]
 script = ExtResource("14_mepbf")
 name = "Scavenger"
 description = "Restores 25 STAMINA when TAGGED OUT"
 metadata/_custom_type_script = "uid://bslfuaragw1g7"
 
-[sub_resource type="Resource" id="Resource_aam5o"]
+[sub_resource type="Resource" id="Resource_m37ut"]
 script = ExtResource("16_50v0s")
 my_plays = Array[ExtResource("3_hiice")]([null, null, null])
-my_trait = SubResource("Resource_pqe63")
+my_trait = SubResource("Resource_uctnp")
+current_boosts = Dictionary[int, int]({
+0: 0,
+1: 0,
+2: 0,
+3: 0,
+4: 0,
+5: 0
+})
 is_nfe = true
 bar_color = Color(0.68235296, 0.92941177, 0.5764706, 1)
 possible_plays = Array[ExtResource("3_hiice")]([ExtResource("5_pqe63"), ExtResource("6_aam5o"), ExtResource("7_nyb1q"), ExtResource("8_xw8bv"), ExtResource("9_wimqa"), ExtResource("10_t372l"), ExtResource("11_uctnp"), ExtResource("12_m37ut"), ExtResource("13_yoaul")])
@@ -93,6 +113,65 @@ grow_vertical = 2
 color = Color(0.23753911, 0.23753914, 0.23753911, 1)
 metadata/_edit_lock_ = true
 
+[node name="CreditOneLabel" type="Label" parent="ColorRect"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = -94.0
+offset_right = 806.0
+offset_bottom = -6.0
+grow_vertical = 0
+size_flags_horizontal = 4
+theme = ExtResource("24_xw8bv")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_nyb1q")
+text = "SickoCalc: Torch Passed by GFZA "
+
+[node name="PatchLabel" type="Label" parent="ColorRect"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -397.0
+offset_top = -93.0
+offset_right = 397.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+theme = ExtResource("24_xw8bv")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_nyb1q")
+text = "Patch : Milestone 4"
+horizontal_alignment = 1
+
+[node name="CreditTwoLabel" type="Label" parent="ColorRect"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -836.0
+offset_top = -96.0
+offset_right = -7.0
+offset_bottom = -8.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 4
+theme = ExtResource("24_xw8bv")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_nyb1q")
+text = "Original SickCalc by llllllll (Barcode)"
+horizontal_alignment = 2
+
 [node name="MainContainer" type="HBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
@@ -107,16 +186,17 @@ alignment = 1
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 2
-beastie = SubResource("Resource_sor6r")
+beastie = SubResource("Resource_t372l")
 
 [node name="MiddleMarginContainer" type="MarginContainer" parent="MainContainer"]
 layout_mode = 2
+size_flags_horizontal = 3
 theme_override_constants/margin_top = 80
 theme_override_constants/margin_bottom = 100
 
 [node name="MiddleContainer" type="VBoxContainer" parent="MainContainer/MiddleMarginContainer"]
 layout_mode = 2
-size_flags_horizontal = 6
+size_flags_horizontal = 3
 
 [node name="DamageSplashAnchor" type="Control" parent="MainContainer/MiddleMarginContainer/MiddleContainer"]
 custom_minimum_size = Vector2(600, 600)
@@ -128,11 +208,79 @@ unique_name_in_owner = true
 layout_mode = 0
 offset_bottom = 150.0
 
+[node name="MiddleBG" type="TextureRect" parent="MainContainer/MiddleMarginContainer/MiddleContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("23_nyb1q")
+stretch_mode = 1
+
+[node name="MiddleMargin" type="MarginContainer" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="MiddleContainer" type="VBoxContainer" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin"]
+layout_mode = 2
+
+[node name="ResetRow" type="HBoxContainer" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+
+[node name="ResetButton" type="Button" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer/ResetRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.6
+focus_mode = 0
+theme = ExtResource("24_xw8bv")
+theme_override_constants/icon_max_width = 36
+text = "RESET
+EYERYTHING"
+vertical_icon_alignment = 0
+
+[node name="BottomRow" type="HBoxContainer" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+theme_override_constants/separation = -16
+
+[node name="CheerleaderButton" type="Button" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer/BottomRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(350, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.6
+focus_mode = 0
+theme = ExtResource("24_xw8bv")
+theme_override_constants/icon_max_width = 36
+text = "Cheerleader"
+vertical_icon_alignment = 0
+
+[node name="FriendshipButton" type="Button" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer/BottomRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(350, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.6
+focus_mode = 0
+theme = ExtResource("24_xw8bv")
+theme_override_constants/icon_max_width = 36
+text = "Friendship"
+vertical_icon_alignment = 0
+
 [node name="RightBeastieColumn" parent="MainContainer" instance=ExtResource("1_sblpm")]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 10
-beastie = SubResource("Resource_aam5o")
+beastie = SubResource("Resource_m37ut")
 side = 1
 
 [node name="SelectUIs" parent="." instance=ExtResource("1_f6udf")]

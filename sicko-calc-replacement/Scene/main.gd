@@ -13,6 +13,9 @@ var current_attack : Attack = FREE_BALL :
 @onready var right_beastie_column: BeastieColumn = %RightBeastieColumn
 @onready var select_uis: SelectUIs = %SelectUIs
 
+@onready var reset_all_button: Button = %ResetButton
+@onready var cheerleader_button: Button = %CheerleaderButton
+@onready var friendship_button: Button = %FriendshipButton
 
 func _ready() -> void:
 	left_beastie_column.beastie_updated.connect(_update)
@@ -29,6 +32,14 @@ func _ready() -> void:
 	left_beastie_column.trait_select_ui_requested.connect(select_uis.show_trait_select_ui.bind(Global.MySide.LEFT))
 	right_beastie_column.trait_select_ui_requested.connect(select_uis.show_trait_select_ui.bind(Global.MySide.RIGHT))
 	select_uis.trait_selected.connect(_on_trait_selected)
+
+	reset_all_button.pressed.connect(func():
+		left_beastie_column.beastie = left_beastie_column.SPRECKO.duplicate(true)
+		left_beastie_column.boost_row.reset_all_ui() # will signal up to column and reset it too
+		right_beastie_column.beastie = right_beastie_column.SPRECKO.duplicate(true)
+		right_beastie_column.boost_row.reset_all_ui() # will signal up to column and reset it too
+		current_attack = FREE_BALL.duplicate(true)
+	)
 
 	_update()
 

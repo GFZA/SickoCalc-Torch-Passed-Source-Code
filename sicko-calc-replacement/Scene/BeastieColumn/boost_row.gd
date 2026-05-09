@@ -2,6 +2,10 @@
 class_name BoostRow
 extends MarginContainer
 
+signal boost_updated(stat : Beastie.Stats, amount : int)
+signal invest_updated(stat : Beastie.Stats, amount : int)
+signal reset_requested
+
 @export var attack : Attack = null :
 	set(value):
 		attack = value
@@ -29,9 +33,6 @@ extends MarginContainer
 				show_contest()
 			_:
 				show_normal()
-
-signal boost_updated(stat : Beastie.Stats, amount : int)
-signal invest_updated(stat : Beastie.Stats, amount : int)
 
 var side : Global.MySide = Global.MySide.LEFT :
 	set(value):
@@ -160,3 +161,5 @@ func reset_all_ui() -> void:
 	bdef_invest_number_ui.reset()
 	sdef_invest_number_ui.reset()
 	mdef_invest_number_ui.reset()
+
+	reset_requested.emit()

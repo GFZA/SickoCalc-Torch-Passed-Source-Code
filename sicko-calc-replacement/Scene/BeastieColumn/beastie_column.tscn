@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://cnn1686te4wf8"]
+[gd_scene load_steps=41 format=3 uid="uid://cnn1686te4wf8"]
 
 [ext_resource type="PackedScene" uid="uid://1arcfnc6wacj" path="res://Scene/BeastieColumn/beastie_row.tscn" id="1_cswjd"]
 [ext_resource type="Script" uid="uid://gfslx1e2j8by" path="res://Scene/BeastieColumn/beastie_column.gd" id="1_nvjsa"]
@@ -28,17 +28,31 @@
 [ext_resource type="Texture2D" uid="uid://dhs73i0hc16qu" path="res://Autoloads/Icons/icon_row_back.png" id="24_aauwx"]
 [ext_resource type="Texture2D" uid="uid://i3su3ma1wc5" path="res://Autoloads/Icons/icon_row_net.png" id="25_8gptb"]
 [ext_resource type="PackedScene" uid="uid://b7iutmc2guxbf" path="res://Scene/BeastieColumn/boost_row.tscn" id="25_itac7"]
+[ext_resource type="FontFile" uid="uid://ckifc6cea5vs" path="res://Autoloads/Resources/Fonts/SportsJerseyEdited.ttf" id="29_8d37x"]
+[ext_resource type="Texture2D" uid="uid://cj40abc1kfr2j" path="res://Autoloads/Icons/icon_jazzed.png" id="29_13mji"]
+[ext_resource type="PackedScene" uid="uid://8034fwfywq3r" path="res://Scene/BeastieColumn/number_ui_alt.tscn" id="30_7ikyg"]
+[ext_resource type="Texture2D" uid="uid://cepdd0fw2uhhb" path="res://Autoloads/Icons/icon_weepy.png" id="30_erbep"]
+[ext_resource type="Texture2D" uid="uid://bdpt0dp2stnq8" path="res://Autoloads/Icons/icon_tough.png" id="33_vcchh"]
+[ext_resource type="Texture2D" uid="uid://7pheu4eh1geu" path="res://Autoloads/Icons/icon_tender.png" id="34_gl0d7"]
 
-[sub_resource type="Resource" id="Resource_aauwx"]
+[sub_resource type="Resource" id="Resource_vcchh"]
 script = ExtResource("13_gvagf")
 name = "Scavenger"
 description = "Restores 25 STAMINA when TAGGED OUT"
 metadata/_custom_type_script = "uid://bslfuaragw1g7"
 
-[sub_resource type="Resource" id="Resource_8gptb"]
+[sub_resource type="Resource" id="Resource_gl0d7"]
 script = ExtResource("15_rr5fh")
-my_plays = Array[ExtResource("2_itac7")]([null, null, null])
-my_trait = SubResource("Resource_aauwx")
+my_plays = Array[ExtResource("2_itac7")]([ExtResource("6_uupfg"), null, null])
+my_trait = SubResource("Resource_vcchh")
+current_boosts = Dictionary[int, int]({
+0: 0,
+1: 0,
+2: 0,
+3: 0,
+4: 0,
+5: 0
+})
 is_nfe = true
 bar_color = Color(0.68235296, 0.92941177, 0.5764706, 1)
 possible_plays = Array[ExtResource("2_itac7")]([ExtResource("4_8vii6"), ExtResource("5_aauwx"), ExtResource("6_8gptb"), ExtResource("7_8d37x"), ExtResource("8_7ikyg"), ExtResource("9_13mji"), ExtResource("10_erbep"), ExtResource("11_vcchh"), ExtResource("12_gl0d7")])
@@ -54,11 +68,14 @@ ball_anchor_position_receive = Vector2(10, -52)
 ball_anchor_position_ready = Vector2(60, -85)
 metadata/_custom_type_script = "uid://ehabj4qsgxpl"
 
-[sub_resource type="ButtonGroup" id="ButtonGroup_8d37x"]
+[sub_resource type="ButtonGroup" id="ButtonGroup_gvagf"]
 
-[sub_resource type="ButtonGroup" id="ButtonGroup_7ikyg"]
+[sub_resource type="ButtonGroup" id="ButtonGroup_ta5ev"]
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_buii5"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_rr5fh"]
+allow_unpress = true
 
 [node name="BeastieColumn" type="MarginContainer"]
 custom_minimum_size = Vector2(1350, 2025)
@@ -67,7 +84,7 @@ theme_override_constants/margin_top = 100
 theme_override_constants/margin_right = 100
 theme_override_constants/margin_bottom = 100
 script = ExtResource("1_nvjsa")
-beastie = SubResource("Resource_8gptb")
+beastie = SubResource("Resource_gl0d7")
 
 [node name="BGRec" type="TextureRect" parent="."]
 layout_mode = 2
@@ -79,17 +96,21 @@ metadata/_edit_lock_ = true
 layout_mode = 0
 offset_right = 1150.0
 offset_bottom = 1825.0
-theme_override_constants/separation = 64
 
 [node name="BeastieRow" parent="BGRec/MainContainer" instance=ExtResource("1_cswjd")]
 unique_name_in_owner = true
 layout_mode = 2
-beastie = SubResource("Resource_8gptb")
+size_flags_vertical = 0
+beastie = SubResource("Resource_gl0d7")
+
+[node name="Spacer" type="Control" parent="BGRec/MainContainer"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
 
 [node name="TraitRow" type="HBoxContainer" parent="BGRec/MainContainer"]
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
-size_flags_vertical = 4
+size_flags_vertical = 0
 theme_override_constants/separation = 24
 alignment = 1
 
@@ -102,7 +123,7 @@ focus_mode = 0
 theme = ExtResource("4_buii5")
 toggle_mode = true
 button_pressed = true
-button_group = SubResource("ButtonGroup_8d37x")
+button_group = SubResource("ButtonGroup_gvagf")
 text = "Scavenger"
 
 [node name="TraitTwoButton" type="Button" parent="BGRec/MainContainer/TraitRow"]
@@ -113,7 +134,7 @@ size_flags_horizontal = 4
 focus_mode = 0
 theme = ExtResource("4_buii5")
 toggle_mode = true
-button_group = SubResource("ButtonGroup_8d37x")
+button_group = SubResource("ButtonGroup_gvagf")
 text = "Cleanup"
 
 [node name="CustomTraitButton" type="Button" parent="BGRec/MainContainer/TraitRow"]
@@ -124,14 +145,19 @@ size_flags_horizontal = 4
 focus_mode = 0
 theme = ExtResource("4_buii5")
 toggle_mode = true
+button_group = SubResource("ButtonGroup_gvagf")
 text = "Custom"
+
+[node name="Spacer2" type="Control" parent="BGRec/MainContainer"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
 
 [node name="TraitConditionRow" type="HBoxContainer" parent="BGRec/MainContainer"]
 unique_name_in_owner = true
 visible = false
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
-size_flags_vertical = 4
+size_flags_vertical = 0
 theme_override_constants/separation = 24
 alignment = 1
 
@@ -150,10 +176,14 @@ focus_mode = 0
 theme = ExtResource("4_buii5")
 toggle_mode = true
 
+[node name="Spacer3" type="Control" parent="BGRec/MainContainer"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+
 [node name="PositionPow" type="HBoxContainer" parent="BGRec/MainContainer"]
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
-size_flags_vertical = 4
+size_flags_vertical = 6
 theme_override_constants/separation = 24
 alignment = 1
 
@@ -166,7 +196,7 @@ focus_mode = 0
 theme = ExtResource("4_buii5")
 toggle_mode = true
 button_pressed = true
-button_group = SubResource("ButtonGroup_7ikyg")
+button_group = SubResource("ButtonGroup_ta5ev")
 text = "Back"
 icon = ExtResource("24_aauwx")
 expand_icon = true
@@ -179,17 +209,21 @@ size_flags_horizontal = 4
 focus_mode = 0
 theme = ExtResource("4_buii5")
 toggle_mode = true
-button_group = SubResource("ButtonGroup_7ikyg")
+button_group = SubResource("ButtonGroup_ta5ev")
 text = "Net"
 icon = ExtResource("25_8gptb")
 icon_alignment = 2
 expand_icon = true
 
+[node name="Spacer6" type="Control" parent="BGRec/MainContainer"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+
 [node name="AttackRow" type="HBoxContainer" parent="BGRec/MainContainer"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
-size_flags_vertical = 4
+size_flags_vertical = 2
 theme_override_constants/separation = 48
 alignment = 1
 
@@ -239,7 +273,7 @@ unique_name_in_owner = true
 visible = false
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
-size_flags_vertical = 4
+size_flags_vertical = 6
 theme_override_constants/separation = 24
 alignment = 1
 
@@ -261,4 +295,148 @@ toggle_mode = true
 [node name="BoostRow" parent="BGRec/MainContainer" instance=ExtResource("25_itac7")]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_vertical = 10
 attack = ExtResource("6_uupfg")
+
+[node name="Spacer4" type="Control" parent="BGRec/MainContainer"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+
+[node name="FeelingRow" type="HBoxContainer" parent="BGRec/MainContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="MarginContainer" type="MarginContainer" parent="BGRec/MainContainer/FeelingRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LeftFeelingContainer" type="HBoxContainer" parent="BGRec/MainContainer/FeelingRow/MarginContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 275)
+layout_mode = 2
+theme_override_constants/separation = -24
+
+[node name="JazzedButton" type="Button" parent="BGRec/MainContainer/FeelingRow/MarginContainer/LeftFeelingContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(250, 200)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.6
+focus_mode = 0
+theme = ExtResource("4_buii5")
+theme_override_constants/outline_size = 16
+theme_override_constants/icon_max_width = 152
+theme_override_font_sizes/font_size = 88
+toggle_mode = true
+button_group = SubResource("ButtonGroup_rr5fh")
+text = "Jazzed"
+icon = ExtResource("29_13mji")
+icon_alignment = 1
+expand_icon = true
+
+[node name="LeftWeepyButton" type="Button" parent="BGRec/MainContainer/FeelingRow/MarginContainer/LeftFeelingContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(250, 200)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.6
+focus_mode = 0
+theme = ExtResource("4_buii5")
+theme_override_constants/outline_size = 16
+theme_override_constants/icon_max_width = 152
+theme_override_font_sizes/font_size = 88
+toggle_mode = true
+button_group = SubResource("ButtonGroup_rr5fh")
+text = "Weepy"
+icon = ExtResource("30_erbep")
+icon_alignment = 1
+expand_icon = true
+
+[node name="BlockedColumn" type="VBoxContainer" parent="BGRec/MainContainer/FeelingRow/MarginContainer/LeftFeelingContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_stretch_ratio = 0.75
+
+[node name="BlockedLabel" type="RichTextLabel" parent="BGRec/MainContainer/FeelingRow/MarginContainer/LeftFeelingContainer/BlockedColumn"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/normal_font = ExtResource("29_8d37x")
+theme_override_font_sizes/normal_font_size = 88
+bbcode_enabled = true
+text = "[img]res://Autoloads/Icons/icon_blocked.png[/img] Blocked"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BlockedNumberUI" parent="BGRec/MainContainer/FeelingRow/MarginContainer/LeftFeelingContainer/BlockedColumn" instance=ExtResource("30_7ikyg")]
+unique_name_in_owner = true
+layout_mode = 2
+value_min = 0
+value_max = 8
+color = Color(0.39607844, 0.47843137, 0.88235295, 1)
+
+[node name="RightFeelingContainer" type="HBoxContainer" parent="BGRec/MainContainer/FeelingRow/MarginContainer"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(0, 275)
+layout_mode = 2
+theme_override_constants/separation = -24
+
+[node name="ToughButton" type="Button" parent="BGRec/MainContainer/FeelingRow/MarginContainer/RightFeelingContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(250, 200)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.6
+focus_mode = 0
+theme = ExtResource("4_buii5")
+theme_override_constants/outline_size = 16
+theme_override_constants/icon_max_width = 152
+theme_override_font_sizes/font_size = 88
+toggle_mode = true
+text = "Tough"
+icon = ExtResource("33_vcchh")
+icon_alignment = 1
+expand_icon = true
+
+[node name="RightWeepyButton" type="Button" parent="BGRec/MainContainer/FeelingRow/MarginContainer/RightFeelingContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(250, 200)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.6
+focus_mode = 0
+theme = ExtResource("4_buii5")
+theme_override_constants/outline_size = 16
+theme_override_constants/icon_max_width = 152
+theme_override_font_sizes/font_size = 88
+toggle_mode = true
+text = "Weepy"
+icon = ExtResource("30_erbep")
+icon_alignment = 1
+expand_icon = true
+
+[node name="TenderButton" type="Button" parent="BGRec/MainContainer/FeelingRow/MarginContainer/RightFeelingContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(250, 200)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.6
+focus_mode = 0
+theme = ExtResource("4_buii5")
+theme_override_constants/outline_size = 16
+theme_override_constants/icon_max_width = 152
+theme_override_font_sizes/font_size = 88
+toggle_mode = true
+text = "Tender"
+icon = ExtResource("34_gl0d7")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Spacer5" type="Control" parent="BGRec/MainContainer"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2

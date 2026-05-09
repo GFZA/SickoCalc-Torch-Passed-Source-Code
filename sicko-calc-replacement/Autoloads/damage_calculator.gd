@@ -75,8 +75,12 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 	var attacker_at_net : bool = attacker.check_if_net() or (attack_name == "swarm")
 	if attack_name == "flight":
 		attacker_at_net = false
+
+	var dread : bool = false
+	if attacker_team_controller:
+		dread = attacker_team_controller.get_field_effect_stack(FieldEffect.Type.DREAD) > 0
 	var jazzed : bool = ((attacker.get_feeling_stack(Beastie.Feelings.JAZZED) > 0) or \
-				((attack_name == "thriller") and not (attacker_team_controller.get_field_effect_stack(FieldEffect.Type.DREAD) > 0)) \
+				((attack_name == "thriller")) and not dread \
 				and not attacker.get_feeling_stack(Beastie.Feelings.WEEPY) > 0)
 	var attacker_weepy : bool = (attacker.get_feeling_stack(Beastie.Feelings.WEEPY) > 0)
 
