@@ -5,6 +5,11 @@ extends Trait
 func get_defense_mult(attacker : Beastie, defender : Beastie, _attack : Attack, \
 					 _attacker_team_controller : TeamController = null,\
 					 _defender_team_controller : TeamController = null) -> float: # Overwrite
+	if need_to_be_manually_activated:
+		if manually_activated:
+			return def_mult
+		return 1.0
+
 	var defender_trait : Trait = defender.my_trait
 	var is_anticipation : bool = (defender_trait.name.to_lower() == "anticipation")
 	if not is_anticipation:

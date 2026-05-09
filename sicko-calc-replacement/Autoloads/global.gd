@@ -250,7 +250,9 @@ func _assign_all_plays_data() -> void:
 			while file_name != "":
 				if file_name.ends_with(".tres") or file_name.ends_with(".tres.remap"): # Is Beastie Resource
 					var suffix : String = ".tres" if not Global.is_on_web else "" # Not sure why we need this but it works!
-					array_to_add.append(load(path + "/" + file_name.get_basename() + suffix))
+					var final_path = path + "/" + file_name.get_basename() + suffix
+					_adjust_plays(final_path)
+					array_to_add.append(load(final_path))
 				file_name = dir.get_next()
 		else:
 			push_error("An error occurred when trying to access the path %s." % path)
@@ -268,6 +270,17 @@ func _assign_all_plays_data() -> void:
 	#all_plays.append_array(all_volley_plays)
 	#all_plays.append_array(all_support_plays)
 	#all_plays.append_array(all_defense_plays)
+
+
+# Uncomment these and those above then launch the tool to automatically adjust attack for the calc
+# (mainly remove auto detecting for condition since it's broken here)
+func _adjust_plays(resource_file_path : String) -> void:
+	var attack : Attack = load(resource_file_path)
+	var attack_name : String = attack.name.to_lower()
+	if not attack_name in ["energized", "toppler", "pierce", "vigor beam", "soulcrusher"]: # Still need autodetecting
+		attack.need_to_be_manually_activated = true
+	ResourceSaver.save(attack, resource_file_path)
+
 
 
 func _assign_all_trait_data() -> void:

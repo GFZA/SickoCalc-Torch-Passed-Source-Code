@@ -1,9 +1,9 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://blbmt8c6ixadi"]
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://blbmt8c6ixadi"]
 
-[ext_resource type="Script" uid="uid://3vx7u5yqfh1b" path="res://Autoloads/Resources/Plays/Attack/Spirit/counter.gd" id="1_f0jj3"]
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_m1gmc"]
 
 [resource]
-script = ExtResource("1_f0jj3")
+script = ExtResource("1_m1gmc")
 name = "Counter"
 base_pow = 75
 descrition = "ATTACK. POW x1.5 if user received the ball."

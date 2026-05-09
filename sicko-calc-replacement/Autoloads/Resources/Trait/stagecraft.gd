@@ -5,6 +5,11 @@ extends Trait
 func special_cal_formula(damage : int, _attacker : Beastie, _defender : Beastie, _attack : Attack, \
 					 _attacker_team_controller : TeamController = null, \
 					 defender_team_controller : TeamController = null) -> int: # Overwrite
+	if need_to_be_manually_activated:
+		if manually_activated and damage > 66:
+			return 66
+		return damage
+
 	if not defender_team_controller:
 		return damage
 

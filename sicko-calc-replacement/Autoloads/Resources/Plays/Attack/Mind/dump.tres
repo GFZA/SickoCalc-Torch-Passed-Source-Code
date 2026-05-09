@@ -1,9 +1,9 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://buvtgtcjmm2y2"]
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://buvtgtcjmm2y2"]
 
-[ext_resource type="Script" uid="uid://ku1ly2i2vuhu" path="res://Autoloads/Resources/Plays/Attack/Mind/dump.gd" id="1_nusrp"]
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_w8axw"]
 
 [resource]
-script = ExtResource("1_nusrp")
+script = ExtResource("1_w8axw")
 name = "Dump"
 target = 2
 use_condition = 1
