@@ -201,7 +201,8 @@ func _update_attack() -> void:
 		stamina_container.visible = is_vigor_beam or is_soulcrusher
 		volley_amount_container.visible = is_zigzag
 
-		rally_button.visible = current_attack.type in [Plays.Type.ATTACK_SPIRIT, Plays.Type.ATTACK_MIND]
+		rally_button.visible = current_attack.type in [Plays.Type.ATTACK_SPIRIT, Plays.Type.ATTACK_MIND] \
+								or beastie.my_trait.name.to_lower() == "extrovert"
 
 
 func _on_attack_condtion_toggled(toggled_on) -> void:
@@ -234,6 +235,10 @@ func _update_trait_condition_button() -> void:
 		(the_trait.def_mult != 1.0 and not is_left):
 		trait_condition_row.visible = beastie.my_trait.need_to_be_manually_activated
 		trait_condition_button.text = beastie.my_trait.condition_name
+
+	# A bit unrelated but it needed be update here too, so...
+	rally_button.visible = current_attack.type in [Plays.Type.ATTACK_SPIRIT, Plays.Type.ATTACK_MIND] \
+					or beastie.my_trait.name.to_lower() == "extrovert"
 
 
 func update_custom_trait_button() -> void:
