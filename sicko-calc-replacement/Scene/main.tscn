@@ -349,6 +349,27 @@ text = "RESET
 EYERYTHING"
 vertical_icon_alignment = 0
 
+[node name="Control" type="Control" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="ScreenshotRow" type="HBoxContainer" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="ScreenshotButton" type="Button" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer/ScreenshotRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(600, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.6
+focus_mode = 0
+theme = ExtResource("24_xw8bv")
+theme_override_constants/icon_max_width = 36
+text = "Save Screenshot"
+vertical_icon_alignment = 0
+
 [node name="RightBeastieColumn" parent="MainContainer" instance=ExtResource("1_sblpm")]
 unique_name_in_owner = true
 layout_mode = 2

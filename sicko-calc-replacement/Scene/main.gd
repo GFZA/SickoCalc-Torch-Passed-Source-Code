@@ -19,6 +19,7 @@ var current_attack : Attack = FREE_BALL :
 @onready var friendship_button: Button = %FriendshipButton
 @onready var weariness_number_ui: NumberUIAlt = %WearinessNumberUI
 @onready var reset_all_button: Button = %ResetButton
+@onready var screenshot_button: Button = %ScreenshotButton
 
 # Fake TeamController to avoid refactor damage calc code lol
 @onready var team_controller: TeamController = %TeamController
@@ -71,6 +72,8 @@ func _ready() -> void:
 		team_controller.reset()
 		current_attack = FREE_BALL.duplicate(true)
 	)
+
+	screenshot_button.pressed.connect(save_image)
 
 	_update()
 
@@ -141,3 +144,11 @@ func _on_rally_requested(toggled_on : bool) -> void:
 	elif team_controller.my_field_effects.has(FieldEffect.Type.RALLY):
 		team_controller.my_field_effects.erase(FieldEffect.Type.RALLY)
 	_update()
+
+
+func save_image() -> void:
+	if not Global.is_on_web:
+		return
+	var image : Image = get_viewport().get_texture().get_image()
+	var raw : PackedByteArray = image.save_png_to_buffer()
+	JavaScriptBridge.download_buffer(raw, "damage.png")
