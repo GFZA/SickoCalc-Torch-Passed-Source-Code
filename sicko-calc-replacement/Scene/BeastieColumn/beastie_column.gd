@@ -11,6 +11,7 @@ signal beastie_updated
 signal plays_select_ui_requested
 signal trait_select_ui_requested
 signal rally_requested(toggled_on : bool)
+signal stamina_change_requested(value : int)
 
 @export var beastie : Beastie = null:
 	set(value):
@@ -52,7 +53,11 @@ var current_pos : Beastie.Position = Beastie.Position.UPPER_BACK
 @onready var rally_button: Button = %RallyButton
 
 @onready var attack_condition_row: HBoxContainer = %AttackConditionRow
+@onready var attack_condition_margin: MarginContainer = %AttackConditionMargin
 @onready var attack_condition_button: Button = %AttackConditionButton
+@onready var stamina_container: StaminaContainer = %StaminaContainer
+@onready var volley_amount_container: HBoxContainer = %VolleyAmountContainer
+@onready var volley_number_ui: NumberUI = %VolleyNumberUI
 
 @onready var boost_row: BoostRow = %BoostRow
 
@@ -101,6 +106,9 @@ func _ready() -> void:
 	attack_condition_button.toggled.connect(_on_attack_condtion_toggled)
 	rally_button.toggled.connect(rally_requested.emit)
 	mimic_button.toggled.connect(_on_mimic_button_toggled)
+
+	stamina_container.value_updated.connect(_on_stamina_changed)
+	volley_number_ui.value_updated.connect(_on_volley_amount_changed)
 
 	boost_row.boost_updated.connect(_on_boost_updated)
 	boost_row.invest_updated.connect(_on_invest_updated)
@@ -178,9 +186,20 @@ func _update_attack() -> void:
 		attack_plays_ui.my_play = current_attack
 		attack_plays_ui.show()
 
-		attack_condition_row.visible = current_attack.need_to_be_manually_activated
+		var attack_name : String = current_attack.name.to_lower()
+		var is_vigor_beam : bool = attack_name == "vigor beam"
+		var is_soulcrusher : bool = attack_name == "soulcrusher"
+		var is_zigzag : bool = attack_name == "zigzag"
+		attack_condition_row.visible = current_attack.need_to_be_manually_activated or \
+								is_vigor_beam or is_soulcrusher or is_zigzag
+
+		attack_condition_margin.visible = current_attack.need_to_be_manually_activated
+		attack_condition_button.visible = current_attack.need_to_be_manually_activated
 		attack_condition_button.button_pressed = false
 		attack_condition_button.text = current_attack.condition_name
+
+		stamina_container.visible = is_vigor_beam or is_soulcrusher
+		volley_amount_container.visible = is_zigzag
 
 		rally_button.visible = current_attack.type in [Plays.Type.ATTACK_SPIRIT, Plays.Type.ATTACK_MIND]
 
@@ -284,6 +303,24 @@ func _on_mimic_button_toggled(toggled_on : bool) -> void:
 	beastie_updated.emit()
 
 
+func _on_stamina_changed(value : int) -> void:
+	match current_attack.name.to_lower():
+		"vigor beam":
+			stamina_container.text = "User STAMINA"
+			beastie.health = value
+		"soulcrusher":
+			stamina_container.text = "Target STAMINA"
+			stamina_change_requested.emit(value)
+	beastie_updated.emit()
+
+
+func _on_volley_amount_changed(value : int) -> void:
+	if current_attack.name.to_lower() != "zigzag":
+		return
+	current_attack.volley_amount = value
+	beastie_updated.emit()
+
+
 func _on_boost_updated(stat : Beastie.Stats, amount : int) -> void:
 	if not beastie:
 		return
@@ -319,6 +356,9 @@ func _on_blocked_updated(amount : int) -> void:
 
 
 func reset() -> void:
+	if beastie:
+		beastie.health = 100
+
 	jazzed_button.button_pressed = false
 	left_weepy_button.button_pressed = false
 	blocked_number_ui.reset()
@@ -331,6 +371,10 @@ func reset() -> void:
 
 	rally_button.button_pressed = false
 	mimic_button.button_pressed = false
+
+	stamina_container.reset()
+	stamina_change_requested.emit(100)
+	volley_number_ui.reset()
 
 	trait_one_button.button_pressed = true
 	trait_condition_button.button_pressed = false

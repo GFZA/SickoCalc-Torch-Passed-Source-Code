@@ -12,6 +12,7 @@ enum TeamPosition {FIELD_1, FIELD_2, BENCH_1, BENCH_2}
 
 var have_cheerleader : bool = false
 var have_friendship : bool = false
+var weariness : int = 0
 
 
 func check_for_cheerleader_buff(_attacker : Beastie) -> bool:

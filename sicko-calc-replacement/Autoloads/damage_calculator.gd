@@ -247,6 +247,9 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 
 	#endregion
 
+	if attacker_team_controller:
+		final_damage += (max(0, (attacker_team_controller.weariness - 7)) * 10)
+
 	return final_damage
 
 

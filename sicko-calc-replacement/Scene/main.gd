@@ -15,9 +15,10 @@ var current_attack : Attack = FREE_BALL :
 @onready var right_beastie_column: BeastieColumn = %RightBeastieColumn
 @onready var select_uis: SelectUIs = %SelectUIs
 
-@onready var reset_all_button: Button = %ResetButton
 @onready var cheerleader_button: Button = %CheerleaderButton
 @onready var friendship_button: Button = %FriendshipButton
+@onready var weariness_number_ui: NumberUIAlt = %WearinessNumberUI
+@onready var reset_all_button: Button = %ResetButton
 
 # Fake TeamController to avoid refactor damage calc code lol
 @onready var team_controller: TeamController = %TeamController
@@ -40,6 +41,10 @@ func _ready() -> void:
 	select_uis.trait_selected.connect(_on_trait_selected)
 
 	left_beastie_column.rally_requested.connect(_on_rally_requested)
+	left_beastie_column.stamina_change_requested.connect(func(value : int):
+		if right_beastie_column.beastie:
+			right_beastie_column.beastie.health = value
+	)
 
 	cheerleader_button.toggled.connect(func(toggle_on : bool):
 		team_controller.have_cheerleader = toggle_on
@@ -50,6 +55,11 @@ func _ready() -> void:
 		_update()
 	)
 
+	weariness_number_ui.value_updated.connect(func(value : int):
+		team_controller.weariness = value
+		_update()
+	)
+
 	reset_all_button.pressed.connect(func():
 		left_beastie_column.beastie = left_beastie_column.SPRECKO.duplicate(true)
 		left_beastie_column.boost_row.reset_all_ui() # will signal up to column and reset it too
@@ -57,6 +67,7 @@ func _ready() -> void:
 		right_beastie_column.boost_row.reset_all_ui() # will signal up to column and reset it too
 		cheerleader_button.button_pressed = false
 		friendship_button.button_pressed = false
+		weariness_number_ui.reset()
 		team_controller.reset()
 		current_attack = FREE_BALL.duplicate(true)
 	)

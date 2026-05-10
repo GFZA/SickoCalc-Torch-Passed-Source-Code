@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://6tifqer1os1t"]
+[gd_scene load_steps=34 format=3 uid="uid://6tifqer1os1t"]
 
 [ext_resource type="PackedScene" uid="uid://c0rfhniciamxq" path="res://Scene/SelectUIs/select_uis.tscn" id="1_f6udf"]
 [ext_resource type="Script" uid="uid://b5jcl1uu04k63" path="res://Scene/main.gd" id="1_r34rm"]
@@ -27,18 +27,19 @@
 [ext_resource type="Texture2D" uid="uid://0a5xkw4orq58" path="res://Autoloads/Misc/main_ui_bg_tile_4.png" id="23_nyb1q"]
 [ext_resource type="Theme" uid="uid://bkrlwg21fhprn" path="res://Autoloads/Resources/Themes/edit_button.tres" id="24_xw8bv"]
 [ext_resource type="Theme" uid="uid://cp230picecare" path="res://Autoloads/Resources/Themes/edit_button_for_button_group.tres" id="26_wimqa"]
+[ext_resource type="PackedScene" uid="uid://8034fwfywq3r" path="res://Scene/BeastieColumn/number_ui_alt.tscn" id="27_t372l"]
 [ext_resource type="Script" uid="uid://dv7bjfhfn4rs3" path="res://Scene/team_contoller.gd" id="27_xw8bv"]
 
-[sub_resource type="Resource" id="Resource_wimqa"]
+[sub_resource type="Resource" id="Resource_t372l"]
 script = ExtResource("14_mepbf")
 name = "Scavenger"
 description = "Restores 25 STAMINA when TAGGED OUT"
 metadata/_custom_type_script = "uid://bslfuaragw1g7"
 
-[sub_resource type="Resource" id="Resource_t372l"]
+[sub_resource type="Resource" id="Resource_uctnp"]
 script = ExtResource("16_50v0s")
 my_plays = Array[ExtResource("3_hiice")]([ExtResource("4_aam5o"), null, null])
-my_trait = SubResource("Resource_wimqa")
+my_trait = SubResource("Resource_t372l")
 current_boosts = Dictionary[int, int]({
 0: 0,
 1: 0,
@@ -62,16 +63,16 @@ ball_anchor_position_receive = Vector2(10, -52)
 ball_anchor_position_ready = Vector2(60, -85)
 metadata/_custom_type_script = "uid://ehabj4qsgxpl"
 
-[sub_resource type="Resource" id="Resource_uctnp"]
+[sub_resource type="Resource" id="Resource_m37ut"]
 script = ExtResource("14_mepbf")
 name = "Scavenger"
 description = "Restores 25 STAMINA when TAGGED OUT"
 metadata/_custom_type_script = "uid://bslfuaragw1g7"
 
-[sub_resource type="Resource" id="Resource_m37ut"]
+[sub_resource type="Resource" id="Resource_yoaul"]
 script = ExtResource("16_50v0s")
 my_plays = Array[ExtResource("3_hiice")]([null, null, null])
-my_trait = SubResource("Resource_uctnp")
+my_trait = SubResource("Resource_m37ut")
 current_boosts = Dictionary[int, int]({
 0: 0,
 1: 0,
@@ -112,7 +113,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.23753911, 0.23753914, 0.23753911, 1)
+color = Color(0.1444633, 0.21651062, 0.22422928, 1)
 metadata/_edit_lock_ = true
 
 [node name="ArrowAnchor" type="Control" parent="ColorRect"]
@@ -230,7 +231,7 @@ alignment = 1
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 2
-beastie = SubResource("Resource_t372l")
+beastie = SubResource("Resource_uctnp")
 
 [node name="MiddleMarginContainer" type="MarginContainer" parent="MainContainer"]
 layout_mode = 2
@@ -271,30 +272,12 @@ theme_override_constants/margin_bottom = 50
 [node name="MiddleContainer" type="VBoxContainer" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin"]
 layout_mode = 2
 
-[node name="ResetRow" type="HBoxContainer" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer"]
+[node name="CheerleaderRow" type="HBoxContainer" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer"]
 layout_mode = 2
-size_flags_vertical = 10
-
-[node name="ResetButton" type="Button" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer/ResetRow"]
-unique_name_in_owner = true
-custom_minimum_size = Vector2(300, 75)
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 6
-size_flags_stretch_ratio = 0.6
-focus_mode = 0
-theme = ExtResource("24_xw8bv")
-theme_override_constants/icon_max_width = 36
-text = "RESET
-EYERYTHING"
-vertical_icon_alignment = 0
-
-[node name="BottomRow" type="HBoxContainer" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer"]
-layout_mode = 2
-size_flags_vertical = 10
+size_flags_vertical = 2
 theme_override_constants/separation = -16
 
-[node name="CheerleaderButton" type="Button" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer/BottomRow"]
+[node name="CheerleaderButton" type="Button" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer/CheerleaderRow"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(350, 75)
 layout_mode = 2
@@ -308,7 +291,7 @@ toggle_mode = true
 text = "Cheerleader"
 vertical_icon_alignment = 0
 
-[node name="FriendshipButton" type="Button" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer/BottomRow"]
+[node name="FriendshipButton" type="Button" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer/CheerleaderRow"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(350, 75)
 layout_mode = 2
@@ -322,11 +305,55 @@ toggle_mode = true
 text = "Friendship"
 vertical_icon_alignment = 0
 
+[node name="WearinessRow" type="HBoxContainer" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer"]
+layout_mode = 2
+size_flags_vertical = 2
+theme_override_constants/separation = -16
+
+[node name="WearinessColumn" type="VBoxContainer" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer/WearinessRow"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme_override_constants/separation = 0
+
+[node name="WearinessLabel" type="Label" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer/WearinessRow/WearinessColumn"]
+custom_minimum_size = Vector2(369, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("24_xw8bv")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 88
+text = "Weariness"
+horizontal_alignment = 1
+
+[node name="WearinessNumberUI" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer/WearinessRow/WearinessColumn" instance=ExtResource("27_t372l")]
+unique_name_in_owner = true
+layout_mode = 2
+value_min = 0
+
+[node name="ResetRow" type="HBoxContainer" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+
+[node name="ResetButton" type="Button" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer/ResetRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(600, 75)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.6
+focus_mode = 0
+theme = ExtResource("24_xw8bv")
+theme_override_constants/icon_max_width = 36
+text = "RESET
+EYERYTHING"
+vertical_icon_alignment = 0
+
 [node name="RightBeastieColumn" parent="MainContainer" instance=ExtResource("1_sblpm")]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 10
-beastie = SubResource("Resource_m37ut")
+beastie = SubResource("Resource_yoaul")
 side = 1
 
 [node name="SelectUIs" parent="." instance=ExtResource("1_f6udf")]
