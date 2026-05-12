@@ -14,7 +14,7 @@ config/name="SickoCalc: Torch Passed"
 run/main_scene="uid://6tifqer1os1t"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 boot_splash/show_image=false
-config/icon="uid://btfy08utpl3ck"
+config/icon="uid://k7ofg6xpe8pl"
 
 [autoload]
 

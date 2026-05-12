@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://6tifqer1os1t"]
+[gd_scene load_steps=35 format=3 uid="uid://6tifqer1os1t"]
 
 [ext_resource type="PackedScene" uid="uid://c0rfhniciamxq" path="res://Scene/SelectUIs/select_uis.tscn" id="1_f6udf"]
 [ext_resource type="Script" uid="uid://b5jcl1uu04k63" path="res://Scene/main.gd" id="1_r34rm"]
@@ -8,6 +8,7 @@
 [ext_resource type="FontFile" uid="uid://cvfib27cf5q88" path="res://Autoloads/Resources/Fonts/Go Banana.ttf" id="3_nyb1q"]
 [ext_resource type="Resource" uid="uid://vgjeoby0udu0" path="res://Autoloads/Resources/Plays/Attack/Body/free_ball.tres" id="4_aam5o"]
 [ext_resource type="Resource" uid="uid://c3elar3cfgqeb" path="res://Autoloads/Resources/Trait/scavenger.tres" id="4_sor6r"]
+[ext_resource type="Texture2D" uid="uid://k7ofg6xpe8pl" path="res://Autoloads/Icons/icon_calc.png" id="4_uctnp"]
 [ext_resource type="Resource" uid="uid://bwntvaq8we2ee" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="5_pqe63"]
 [ext_resource type="Resource" uid="uid://c6joa81j7k6sd" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="6_aam5o"]
 [ext_resource type="Resource" uid="uid://51titaex4o3e" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="7_nyb1q"]
@@ -30,16 +31,16 @@
 [ext_resource type="PackedScene" uid="uid://8034fwfywq3r" path="res://Scene/BeastieColumn/number_ui_alt.tscn" id="27_t372l"]
 [ext_resource type="Script" uid="uid://dv7bjfhfn4rs3" path="res://Scene/team_contoller.gd" id="27_xw8bv"]
 
-[sub_resource type="Resource" id="Resource_t372l"]
+[sub_resource type="Resource" id="Resource_m37ut"]
 script = ExtResource("14_mepbf")
 name = "Scavenger"
 description = "Restores 25 STAMINA when TAGGED OUT"
 metadata/_custom_type_script = "uid://bslfuaragw1g7"
 
-[sub_resource type="Resource" id="Resource_uctnp"]
+[sub_resource type="Resource" id="Resource_yoaul"]
 script = ExtResource("16_50v0s")
 my_plays = Array[ExtResource("3_hiice")]([ExtResource("4_aam5o"), null, null])
-my_trait = SubResource("Resource_t372l")
+my_trait = SubResource("Resource_m37ut")
 current_boosts = Dictionary[int, int]({
 0: 0,
 1: 0,
@@ -63,16 +64,16 @@ ball_anchor_position_receive = Vector2(10, -52)
 ball_anchor_position_ready = Vector2(60, -85)
 metadata/_custom_type_script = "uid://ehabj4qsgxpl"
 
-[sub_resource type="Resource" id="Resource_m37ut"]
+[sub_resource type="Resource" id="Resource_mepbf"]
 script = ExtResource("14_mepbf")
 name = "Scavenger"
 description = "Restores 25 STAMINA when TAGGED OUT"
 metadata/_custom_type_script = "uid://bslfuaragw1g7"
 
-[sub_resource type="Resource" id="Resource_yoaul"]
+[sub_resource type="Resource" id="Resource_dvq1j"]
 script = ExtResource("16_50v0s")
 my_plays = Array[ExtResource("3_hiice")]([null, null, null])
-my_trait = SubResource("Resource_m37ut")
+my_trait = SubResource("Resource_mepbf")
 current_boosts = Dictionary[int, int]({
 0: 0,
 1: 0,
@@ -164,16 +165,37 @@ layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 12.0
-offset_top = -94.0
-offset_right = 806.0
-offset_bottom = -6.0
+offset_left = 19.0
+offset_top = -93.0
+offset_right = 857.0
+offset_bottom = -5.0
 grow_vertical = 0
 size_flags_horizontal = 4
 theme = ExtResource("24_xw8bv")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_nyb1q")
-text = "SickoCalc: Torch Passed by GFZA "
+text = "Made by GFZA, Icon by Hamapirasu"
+
+[node name="TitleContainer" type="HBoxContainer" parent="ColorRect"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 3.0
+offset_right = 588.0
+offset_bottom = 99.0
+theme_override_constants/separation = 16
+
+[node name="IconRect" type="TextureRect" parent="ColorRect/TitleContainer"]
+layout_mode = 2
+texture = ExtResource("4_uctnp")
+
+[node name="TitleLabel" type="Label" parent="ColorRect/TitleContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("24_xw8bv")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_nyb1q")
+text = "SickoCalc: Torch Passed"
 
 [node name="PatchLabel" type="Label" parent="ColorRect"]
 unique_name_in_owner = true
@@ -231,7 +253,7 @@ alignment = 1
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 2
-beastie = SubResource("Resource_uctnp")
+beastie = SubResource("Resource_yoaul")
 
 [node name="MiddleMarginContainer" type="MarginContainer" parent="MainContainer"]
 layout_mode = 2
@@ -374,7 +396,7 @@ vertical_icon_alignment = 0
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 10
-beastie = SubResource("Resource_yoaul")
+beastie = SubResource("Resource_dvq1j")
 side = 1
 
 [node name="SelectUIs" parent="." instance=ExtResource("1_f6udf")]
