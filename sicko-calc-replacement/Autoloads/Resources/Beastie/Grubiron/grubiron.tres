@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://uvlcrg2ikarv"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_qbjbc"]
+[ext_resource type="Resource" uid="uid://d21smuww0mij1" path="res://Autoloads/Resources/Trait/helmet.tres" id="2_2mihm"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_wemd6"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_7j7uh"]
+[ext_resource type="Resource" uid="uid://51titaex4o3e" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="3_qrm3j"]
+[ext_resource type="Resource" uid="uid://cwwdwghrp4cco" path="res://Autoloads/Resources/Plays/Attack/Mind/precision_strike.tres" id="4_6o51n"]
+[ext_resource type="Resource" uid="uid://6lu5dwdsnlss" path="res://Autoloads/Resources/Plays/Attack/Body/rocket.tres" id="5_75vud"]
+[ext_resource type="Resource" uid="uid://bojb10i043gnl" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="6_kecvj"]
+[ext_resource type="Resource" uid="uid://deeuy477kp33d" path="res://Autoloads/Resources/Plays/Attack/Body/hyperspike.tres" id="7_j8e00"]
+[ext_resource type="Resource" uid="uid://dqbap051upqpl" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="8_hqlmy"]
+[ext_resource type="Resource" uid="uid://ddnch0ufpde3l" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="9_ogbi7"]
+[ext_resource type="Resource" uid="uid://bi278ctjoqvrt" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="10_rdihq"]
+[ext_resource type="Resource" uid="uid://smdb12qjwch4" path="res://Autoloads/Resources/Plays/Attack/Mind/pressure.tres" id="11_tv8sc"]
+[ext_resource type="Resource" uid="uid://boyul2oo7py0g" path="res://Autoloads/Resources/Trait/momentum.tres" id="13_52muu"]
+[ext_resource type="Texture2D" uid="uid://bg4f3w7ymm68x" path="res://Autoloads/Resources/Beastie/Grubiron/Grubiron.png" id="15_qrm3j"]
+
+[resource]
+script = ExtResource("3_7j7uh")
+my_plays = Array[ExtResource("1_qbjbc")]([null, null, null])
+my_trait = ExtResource("2_2mihm")
+specie_name = "Grubiron"
+beastiepedia_id = 40
+is_nfe = true
+body_base_pow = 60
+spirit_base_pow = 35
+mind_base_pow = 35
+body_base_def = 95
+spirit_base_def = 45
+mind_base_def = 70
+possible_plays = Array[ExtResource("1_qbjbc")]([ExtResource("3_qrm3j"), ExtResource("4_6o51n"), ExtResource("5_75vud"), ExtResource("6_kecvj"), ExtResource("7_j8e00"), ExtResource("8_hqlmy"), ExtResource("9_ogbi7"), ExtResource("10_rdihq"), ExtResource("11_tv8sc")])
+possible_traits = Array[ExtResource("2_wemd6")]([ExtResource("2_2mihm"), ExtResource("13_52muu")])
+sprites = Dictionary[int, Texture2D]({
+0: ExtResource("15_qrm3j"),
+1: ExtResource("15_qrm3j"),
+2: ExtResource("15_qrm3j"),
+3: ExtResource("15_qrm3j"),
+4: ExtResource("15_qrm3j"),
+5: ExtResource("15_qrm3j"),
+6: ExtResource("15_qrm3j")
+})
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

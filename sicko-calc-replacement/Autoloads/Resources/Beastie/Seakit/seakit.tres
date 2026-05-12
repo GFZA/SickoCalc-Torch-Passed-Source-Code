@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://boxmetxo45akh"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_qwrbq"]
+[ext_resource type="Resource" uid="uid://usm4ousrjrpy" path="res://Autoloads/Resources/Trait/hunter.tres" id="2_2qalg"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_c8kx2"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_88t42"]
+[ext_resource type="Resource" uid="uid://cnrdrpp1ytwvq" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_ei6jd"]
+[ext_resource type="Resource" uid="uid://dfr4rlcnefv8y" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="4_awwmr"]
+[ext_resource type="Resource" uid="uid://dc5fuxjba5vkb" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="5_tsl6s"]
+[ext_resource type="Resource" uid="uid://cod7yqucaq628" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="6_mxtd8"]
+[ext_resource type="Resource" uid="uid://dmv2tjd66i2td" path="res://Autoloads/Resources/Plays/Attack/Mind/roll_shot.tres" id="7_lw158"]
+[ext_resource type="Resource" uid="uid://dlf2eqay3itwo" path="res://Autoloads/Resources/Plays/Attack/Mind/soulcursher.tres" id="8_2br25"]
+[ext_resource type="Resource" uid="uid://bycxj0vtn5bss" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="9_m7v2w"]
+[ext_resource type="Resource" uid="uid://b3ie8s030fuig" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="10_5hxut"]
+[ext_resource type="Resource" uid="uid://cxq7k0072fthg" path="res://Autoloads/Resources/Trait/absorption.tres" id="12_thq60"]
+[ext_resource type="Texture2D" uid="uid://b45ysdhaqtkyu" path="res://Autoloads/Resources/Beastie/Seakit/icon_seakit.png" id="14_bjwt7"]
+
+[resource]
+script = ExtResource("3_88t42")
+my_plays = Array[ExtResource("1_qwrbq")]([null, null, null])
+my_trait = ExtResource("2_2qalg")
+specie_name = "Seakit"
+beastiepedia_id = 53
+is_nfe = true
+bar_color = Color(0.87058824, 1, 0.98039216, 1)
+body_base_pow = 21
+spirit_base_pow = 44
+mind_base_pow = 83
+body_base_def = 67
+spirit_base_def = 79
+mind_base_def = 40
+possible_plays = Array[ExtResource("1_qwrbq")]([ExtResource("3_ei6jd"), ExtResource("4_awwmr"), ExtResource("5_tsl6s"), ExtResource("6_mxtd8"), ExtResource("7_lw158"), ExtResource("8_2br25"), ExtResource("9_m7v2w"), ExtResource("10_5hxut")])
+possible_traits = Array[ExtResource("2_c8kx2")]([ExtResource("2_2qalg"), ExtResource("12_thq60")])
+sprites = Dictionary[int, Texture2D]({
+0: ExtResource("14_bjwt7"),
+1: ExtResource("14_bjwt7"),
+2: ExtResource("14_bjwt7"),
+3: ExtResource("14_bjwt7"),
+4: ExtResource("14_bjwt7"),
+5: ExtResource("14_bjwt7"),
+6: ExtResource("14_bjwt7")
+})
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

@@ -31,16 +31,16 @@
 [ext_resource type="PackedScene" uid="uid://8034fwfywq3r" path="res://Scene/BeastieColumn/number_ui_alt.tscn" id="27_t372l"]
 [ext_resource type="Script" uid="uid://dv7bjfhfn4rs3" path="res://Scene/team_contoller.gd" id="27_xw8bv"]
 
-[sub_resource type="Resource" id="Resource_m37ut"]
+[sub_resource type="Resource" id="Resource_uctnp"]
 script = ExtResource("14_mepbf")
 name = "Scavenger"
 description = "Restores 25 STAMINA when TAGGED OUT"
 metadata/_custom_type_script = "uid://bslfuaragw1g7"
 
-[sub_resource type="Resource" id="Resource_yoaul"]
+[sub_resource type="Resource" id="Resource_m37ut"]
 script = ExtResource("16_50v0s")
 my_plays = Array[ExtResource("3_hiice")]([ExtResource("4_aam5o"), null, null])
-my_trait = SubResource("Resource_m37ut")
+my_trait = SubResource("Resource_uctnp")
 current_boosts = Dictionary[int, int]({
 0: 0,
 1: 0,
@@ -64,16 +64,16 @@ ball_anchor_position_receive = Vector2(10, -52)
 ball_anchor_position_ready = Vector2(60, -85)
 metadata/_custom_type_script = "uid://ehabj4qsgxpl"
 
-[sub_resource type="Resource" id="Resource_mepbf"]
+[sub_resource type="Resource" id="Resource_yoaul"]
 script = ExtResource("14_mepbf")
 name = "Scavenger"
 description = "Restores 25 STAMINA when TAGGED OUT"
 metadata/_custom_type_script = "uid://bslfuaragw1g7"
 
-[sub_resource type="Resource" id="Resource_dvq1j"]
+[sub_resource type="Resource" id="Resource_mepbf"]
 script = ExtResource("16_50v0s")
 my_plays = Array[ExtResource("3_hiice")]([null, null, null])
-my_trait = SubResource("Resource_mepbf")
+my_trait = SubResource("Resource_yoaul")
 current_boosts = Dictionary[int, int]({
 0: 0,
 1: 0,
@@ -253,7 +253,7 @@ alignment = 1
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 2
-beastie = SubResource("Resource_yoaul")
+beastie = SubResource("Resource_m37ut")
 
 [node name="MiddleMarginContainer" type="MarginContainer" parent="MainContainer"]
 layout_mode = 2
@@ -396,7 +396,7 @@ vertical_icon_alignment = 0
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 10
-beastie = SubResource("Resource_dvq1j")
+beastie = SubResource("Resource_mepbf")
 side = 1
 
 [node name="SelectUIs" parent="." instance=ExtResource("1_f6udf")]
