@@ -15,9 +15,9 @@ signal reset_requested
 		match attack.name.to_lower():
 			"energized":
 				show_energized()
-			"toppler", "pierce", "snipe":
+			"toppler", "pierce":
 				show_toppler()
-			"contest":
+			"contest", "snipe":
 				show_contest()
 			_:
 				show_normal()
