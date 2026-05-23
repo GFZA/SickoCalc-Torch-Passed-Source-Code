@@ -6,6 +6,5 @@
 script = ExtResource("1_1pe31")
 name = "Spiker"
 description = "Net attacks do 1.2x damage"
-need_to_be_manually_activated = true
 damage_dealt_mult = 1.2
 metadata/_custom_type_script = "uid://bslfuaragw1g7"
