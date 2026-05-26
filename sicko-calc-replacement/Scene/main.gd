@@ -77,6 +77,8 @@ func _ready() -> void:
 
 	_update()
 
+	_fix_button_for_mobile.call_deferred()
+
 
 func _on_beastie_selected(beastie : Beastie, side : Global.MySide) -> void:
 	var column : BeastieColumn = left_beastie_column if side == Global.MySide.LEFT else right_beastie_column
@@ -152,3 +154,29 @@ func save_image() -> void:
 	var image : Image = get_viewport().get_texture().get_image()
 	var raw : PackedByteArray = image.save_png_to_buffer()
 	JavaScriptBridge.download_buffer(raw, "damage.png")
+
+
+
+# It doesn't work??????
+# I have no idea why
+# TODO: look into this more
+
+var all_buttons : Array[Button] = []
+
+func _fix_button_for_mobile() -> void:
+	if not Global.is_on_web_mobile:
+		return
+	_find_button_recursive(self)
+	for button : Button in all_buttons:
+		var normal_style = button.get_theme_stylebox("normal")
+		var pressed_style = button.get_theme_stylebox("pressed")
+		button.add_theme_stylebox_override("hover", normal_style)
+		button.add_theme_stylebox_override("hover_pressed", pressed_style)
+
+
+func _find_button_recursive(parent : Node) -> void:
+	for child in parent.get_children():
+		if child.get_class().to_lower() == "button":
+			all_buttons.append(child)
+		if child.get_child_count() > 0:
+			_find_button_recursive(child)

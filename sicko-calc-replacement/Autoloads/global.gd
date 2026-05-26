@@ -15,6 +15,7 @@ var is_musclebrained : bool = false : # Absolutely cheese var
 		is_musclebrained_updated.emit(is_musclebrained)
 
 @onready var is_on_web : bool = OS.get_name() == "Web"
+@onready var is_on_web_mobile : bool = is_on_web and (OS.has_feature("web_android") or OS.has_feature("web_ios"))
 
 #region Main Color Datas
 enum ColorType {BODY, SPIRIT, MIND}
@@ -163,7 +164,7 @@ func _add_img_bbcode(icon : Icon) -> String:
 	return "[img]" + _get_icon_path(icon) + "[/img]"
 #endregion
 
-
+#region Game Datas
 var all_beasties_data : Array[Beastie] = []
 var all_body_attacks : Array[Plays] = []
 var all_spirit_attacks : Array[Plays] = []
@@ -316,3 +317,4 @@ func _assign_all_trait_data() -> void:
 		#the_trait.name.to_lower() in ["stagecraft"]:
 		#the_trait.need_to_be_manually_activated = true
 	#ResourceSaver.save(the_trait, resource_file_path)
+#endregion

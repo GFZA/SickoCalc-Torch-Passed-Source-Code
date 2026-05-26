@@ -163,11 +163,11 @@ func get_feeling_stack(feeling : Beastie.Feelings) -> int:
 	return current_feelings.get(feeling)
 
 
-func get_total_invests_points() -> int:
-	var result : int = 0
-	for point in invests.values():
-		result += point
-	return result
+#func get_total_invests_points() -> int:
+	#var result : int = 0
+	#for point in invests.values():
+		#result += point
+	#return result
 
 
 static func get_empty_stats_dict() -> Dictionary[String, Array]:

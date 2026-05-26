@@ -8,7 +8,6 @@ const MIMIC_MULT : float = 1.2
 const MUSCLEBRAIN_MULT : float = 1.2
 
 const FRIENDSHIP_MULT : float = 0.75
-const SLIPPERY_MULT : float = 0.75
 const RALLY_MIND_MULT : float = 0.75
 const TENDER_MULT : float = 2.0
 const TOUGH_MULT : float = 0.25
@@ -195,8 +194,6 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 
 	var mimic_mult : float = MIMIC_MULT if attack.is_mimicked else 1.0
 
-	var slippery_mult : float = SLIPPERY_MULT if attacker.my_trait.name.to_lower() == "slippery" else 1.0
-
 	var tender_mult : float = TENDER_MULT if tender else 1.0
 
 	var rally_mind_mult : float = RALLY_MIND_MULT if stats_type_attack == int(Plays.Type.ATTACK_MIND) and attacker_team_controller and \
@@ -208,7 +205,7 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 							not attack_name == "true strike" and not attacker.my_trait.name.to_lower() == "maverick" \
 							else 1.0
 
-	var all_damage_mults : float = (attacker_trait_mult / defender_trait_mult) * mimic_mult * slippery_mult \
+	var all_damage_mults : float = (attacker_trait_mult / defender_trait_mult) * mimic_mult \
 									* tender_mult * rally_mind_mult * friendship_mult
 	#endregion
 
