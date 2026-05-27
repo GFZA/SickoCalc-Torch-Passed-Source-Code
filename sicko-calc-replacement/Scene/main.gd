@@ -9,6 +9,7 @@ var current_attack : Attack = FREE_BALL :
 		_update()
 
 @onready var arrow_anchor: Control = %ArrowAnchor
+@onready var github_button: Button = %GithubButton
 
 @onready var left_beastie_column: BeastieColumn = %LeftBeastieColumn
 @onready var damage_splash: DamageSplash = %DamageSplash
@@ -26,6 +27,8 @@ var current_attack : Attack = FREE_BALL :
 
 
 func _ready() -> void:
+	github_button.pressed.connect(_on_github_button_pressed)
+
 	left_beastie_column.beastie_updated.connect(_update)
 	right_beastie_column.beastie_updated.connect(_update)
 
@@ -156,9 +159,12 @@ func save_image() -> void:
 	JavaScriptBridge.download_buffer(raw, "damage.png")
 
 
+func _on_github_button_pressed() -> void:
+	OS.shell_open("https://github.com/GFZA/SickoCalc-Torch-Passed")
+	print("click")
 
 # It doesn't work??????
-# I have no idea why
+# I have no idea why lol
 # TODO: look into this more
 
 var all_buttons : Array[Button] = []

@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://6tifqer1os1t"]
+[gd_scene load_steps=36 format=3 uid="uid://6tifqer1os1t"]
 
 [ext_resource type="PackedScene" uid="uid://c0rfhniciamxq" path="res://Scene/SelectUIs/select_uis.tscn" id="1_f6udf"]
 [ext_resource type="Script" uid="uid://b5jcl1uu04k63" path="res://Scene/main.gd" id="1_r34rm"]
@@ -9,6 +9,7 @@
 [ext_resource type="Resource" uid="uid://vgjeoby0udu0" path="res://Autoloads/Resources/Plays/Attack/Body/free_ball.tres" id="4_aam5o"]
 [ext_resource type="Resource" uid="uid://c3elar3cfgqeb" path="res://Autoloads/Resources/Trait/scavenger.tres" id="4_sor6r"]
 [ext_resource type="Texture2D" uid="uid://k7ofg6xpe8pl" path="res://Autoloads/Icons/icon_calc.png" id="4_uctnp"]
+[ext_resource type="Texture2D" uid="uid://c56bab4mbpfwg" path="res://Autoloads/Icons/icon_github.png" id="5_m37ut"]
 [ext_resource type="Resource" uid="uid://bwntvaq8we2ee" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="5_pqe63"]
 [ext_resource type="Resource" uid="uid://c6joa81j7k6sd" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="6_aam5o"]
 [ext_resource type="Resource" uid="uid://51titaex4o3e" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="7_nyb1q"]
@@ -114,6 +115,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 color = Color(0.1444633, 0.21651062, 0.22422928, 1)
 metadata/_edit_lock_ = true
 
@@ -159,6 +161,27 @@ position = Vector2(1000, 11)
 color = Color(0.984, 0.878, 0.353, 1)
 polygon = PackedVector2Array(1275, 265, 1425, 265, 1500, 365, 1425, 465, 1275, 465, 1350, 365)
 
+[node name="TitleContainer" type="HBoxContainer" parent="ColorRect"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 3.0
+offset_right = 668.0
+offset_bottom = 99.0
+theme_override_constants/separation = 16
+
+[node name="IconRect" type="TextureRect" parent="ColorRect/TitleContainer"]
+layout_mode = 2
+texture = ExtResource("4_uctnp")
+
+[node name="TitleLabel" type="Label" parent="ColorRect/TitleContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("24_xw8bv")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_nyb1q")
+text = "SickoCalc: Torch Passed"
+
 [node name="CreditOneLabel" type="Label" parent="ColorRect"]
 unique_name_in_owner = true
 layout_mode = 1
@@ -175,27 +198,6 @@ theme = ExtResource("24_xw8bv")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_nyb1q")
 text = "Made by GFZA, Icon by Hamapirasu"
-
-[node name="TitleContainer" type="HBoxContainer" parent="ColorRect"]
-layout_mode = 0
-offset_left = 6.0
-offset_top = 3.0
-offset_right = 588.0
-offset_bottom = 99.0
-theme_override_constants/separation = 16
-
-[node name="IconRect" type="TextureRect" parent="ColorRect/TitleContainer"]
-layout_mode = 2
-texture = ExtResource("4_uctnp")
-
-[node name="TitleLabel" type="Label" parent="ColorRect/TitleContainer"]
-unique_name_in_owner = true
-layout_mode = 2
-size_flags_horizontal = 4
-theme = ExtResource("24_xw8bv")
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("3_nyb1q")
-text = "SickoCalc: Torch Passed"
 
 [node name="PatchLabel" type="Label" parent="ColorRect"]
 unique_name_in_owner = true
@@ -407,3 +409,24 @@ layout_mode = 1
 [node name="TeamController" type="Node2D" parent="."]
 unique_name_in_owner = true
 script = ExtResource("27_xw8bv")
+
+[node name="GithubButton" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -94.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = 94.0
+grow_horizontal = 0
+size_flags_horizontal = 6
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.6
+focus_mode = 0
+theme = ExtResource("24_xw8bv")
+theme_override_constants/icon_max_width = 84
+icon = ExtResource("5_m37ut")
+flat = true
+icon_alignment = 1
