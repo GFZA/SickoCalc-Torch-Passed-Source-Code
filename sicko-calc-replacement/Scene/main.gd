@@ -160,8 +160,8 @@ func save_image() -> void:
 
 
 func _on_github_button_pressed() -> void:
-	OS.shell_open("https://github.com/GFZA/SickoCalc-Torch-Passed")
-	print("click")
+	OS.shell_open("https://github.com/GFZA/SickoCalc-Torch-Passed-Source-Code")
+
 
 # It doesn't work??????
 # I have no idea why lol
