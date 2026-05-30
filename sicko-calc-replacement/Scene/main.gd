@@ -170,14 +170,14 @@ func _on_github_button_pressed() -> void:
 var all_buttons : Array[Button] = []
 
 func _fix_button_for_mobile() -> void:
-	if not Global.is_on_web_mobile:
-		return
 	_find_button_recursive(self)
 	for button : Button in all_buttons:
-		var normal_style = button.get_theme_stylebox("normal")
-		var pressed_style = button.get_theme_stylebox("pressed")
-		button.add_theme_stylebox_override("hover", normal_style)
-		button.add_theme_stylebox_override("hover_pressed", pressed_style)
+		button.action_mode = BaseButton.ACTION_MODE_BUTTON_PRESS
+		if Global.is_on_web_mobile:
+			var normal_style = button.get_theme_stylebox("normal")
+			var pressed_style = button.get_theme_stylebox("pressed")
+			button.add_theme_stylebox_override("hover", normal_style)
+			button.add_theme_stylebox_override("hover_pressed", pressed_style)
 
 
 func _find_button_recursive(parent : Node) -> void:

@@ -1,25 +1,23 @@
-[gd_resource type="Theme" load_steps=20 format=3 uid="uid://cp230picecare"]
+[gd_resource type="Theme" load_steps=19 format=3 uid="uid://cp230picecare"]
 
 [ext_resource type="FontFile" uid="uid://ckifc6cea5vs" path="res://Autoloads/Resources/Fonts/SportsJerseyEdited.ttf" id="1_26i5n"]
 [ext_resource type="StyleBox" uid="uid://capa45njvrn5x" path="res://Autoloads/Resources/Themes/edit_button_hover.tres" id="2_owg8w"]
+[ext_resource type="Texture2D" uid="uid://c3s4o3mxpxy1v" path="res://Autoloads/Misc/main_ui_bg_tile.png" id="3_26i5n"]
 [ext_resource type="StyleBox" uid="uid://cy6m62di7kc6y" path="res://Autoloads/Resources/Themes/edit_button_normal.tres" id="3_l1h1d"]
-[ext_resource type="Texture2D" uid="uid://kha3ywa48ubk" path="res://Autoloads/Misc/main_ui_bg_tile_2.png" id="3_owg8w"]
-[ext_resource type="Texture2D" uid="uid://cs8jipw3101tn" path="res://Autoloads/Misc/main_ui_bg_tile_3.png" id="4_6cieu"]
 [ext_resource type="Texture2D" uid="uid://d1ptyyvm2x01k" path="res://Autoloads/Icons/icon_checkmark.png" id="5_2lo7i"]
 [ext_resource type="StyleBox" uid="uid://ci28vvsldarw1" path="res://Autoloads/Resources/Themes/stamina_bar_fill_stylebox.tres" id="6_1da5y"]
 [ext_resource type="StyleBox" uid="uid://clim7vgfv5w3i" path="res://Autoloads/Resources/Themes/tab_unselected_stylebox.tres" id="7_fck63"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l1h1d"]
-texture = ExtResource("3_owg8w")
+texture = ExtResource("3_26i5n")
 axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
-modulate_color = Color(1, 1, 0.64, 1)
+modulate_color = Color(0.85, 0.85, 0.85, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vvyiu"]
-texture = ExtResource("4_6cieu")
+texture = ExtResource("3_26i5n")
 axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
-modulate_color = Color(1, 1, 0.050980393, 1)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xfipr"]
 
@@ -52,6 +50,8 @@ modulate_color = Color(1, 1, 1, 0.6862745)
 Button/colors/font_color = Color(1, 1, 1, 1)
 Button/colors/font_focus_color = Color(1, 1, 1, 1)
 Button/colors/font_hover_color = Color(1, 1, 1, 1)
+Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(0, 0, 0, 1)
 Button/font_sizes/font_size = 64
 Button/fonts/font = ExtResource("1_26i5n")
 Button/styles/focus = ExtResource("2_owg8w")

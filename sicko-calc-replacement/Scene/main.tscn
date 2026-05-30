@@ -354,6 +354,7 @@ horizontal_alignment = 1
 unique_name_in_owner = true
 layout_mode = 2
 value_min = 0
+color = Color(1, 1, 1, 0.15686275)
 
 [node name="ResetRow" type="HBoxContainer" parent="MainContainer/MiddleMarginContainer/MiddleContainer/MiddleBG/MiddleMargin/MiddleContainer"]
 layout_mode = 2
