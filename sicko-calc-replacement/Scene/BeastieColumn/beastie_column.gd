@@ -149,7 +149,7 @@ func update_beastie() -> void:
 	beastie_row.beastie = beastie
 	beastie.my_field_position = current_pos
 
-	mimic_button.visible = beastie.specie_name.to_lower() == "squimage"
+	mimic_button.visible = beastie.specie_name.to_lower() in ["squimage", "diabloceras"]
 
 	_update_trait_button()
 	_update_trait_condition_button()
