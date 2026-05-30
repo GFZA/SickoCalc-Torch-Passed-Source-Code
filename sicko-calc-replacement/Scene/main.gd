@@ -172,7 +172,8 @@ var all_buttons : Array[Button] = []
 func _fix_button_for_mobile() -> void:
 	_find_button_recursive(self)
 	for button : Button in all_buttons:
-		button.action_mode = BaseButton.ACTION_MODE_BUTTON_PRESS
+		if not button.name.to_lower() == "screenshotbutton":
+			button.action_mode = BaseButton.ACTION_MODE_BUTTON_PRESS # really bad cheese to set all button lol
 		if Global.is_on_web_mobile:
 			var normal_style = button.get_theme_stylebox("normal")
 			var pressed_style = button.get_theme_stylebox("pressed")
