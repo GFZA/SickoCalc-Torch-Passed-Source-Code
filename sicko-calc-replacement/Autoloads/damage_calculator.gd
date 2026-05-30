@@ -87,7 +87,7 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 
 	#region Set up vars for calculation
 
-	var attacker_at_net : bool = attacker.check_if_net() or (attack_name == "swarm")
+	var attacker_at_net : bool = attacker.check_if_net() or (attack_name == "swarm") or (attack_name == "exp launch")
 	if attack_name == "flight":
 		attacker_at_net = false
 

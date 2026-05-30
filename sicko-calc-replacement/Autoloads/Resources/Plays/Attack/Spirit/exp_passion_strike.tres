@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://c346ver25emiu"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_eqjfg"]
+
+[resource]
+script = ExtResource("1_eqjfg")
+name = "EXP Passion Strike"
+base_pow = 105
+descrition = "ATTACK. Feel 1 WEEPY (ignores BOOSTs) before hit."
+type = 1
+metadata/_custom_type_script = "uid://bc63soeia1eb1"
