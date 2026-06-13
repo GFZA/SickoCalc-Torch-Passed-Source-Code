@@ -6,7 +6,7 @@
 script = ExtResource("1_ou6fu")
 name = "Launch"
 use_condition = 2
-base_pow = 100
-descrition = "Only used from back row. SHIFTs self to front row."
+base_pow = 65
+descrition = "Only used from back row. Before hit, SHIFTs self forward."
 type = 0
 metadata/_custom_type_script = "uid://bc63soeia1eb1"

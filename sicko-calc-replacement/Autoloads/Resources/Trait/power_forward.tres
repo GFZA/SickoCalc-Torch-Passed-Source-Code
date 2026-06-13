@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_7fquf")
 name = "Power Forward"
-description = "When receiving at the net, gets an EASY RECEIVE and feels JAZZED"
+description = "When at the net, feels JAZZED before receiving and gets an EASY RECEIVE"
 metadata/_custom_type_script = "uid://bslfuaragw1g7"

@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_njrne")
 name = "Synchronize"
-description = "When they TAG IN, copies UP1 DOWN1 BOOSTs from ally"
+description = "Gets any UP1 BOOSTs that their ally gets"
 metadata/_custom_type_script = "uid://bslfuaragw1g7"

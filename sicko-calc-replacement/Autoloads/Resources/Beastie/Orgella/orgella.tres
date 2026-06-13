@@ -1,19 +1,20 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://b4presmunba81"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://b4presmunba81"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_ijef1"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_hdk44"]
-[ext_resource type="Resource" uid="uid://del20bsclfn47" path="res://Autoloads/Resources/Trait/superorganism.tres" id="2_vq1k4"]
-[ext_resource type="Resource" uid="uid://duynnadxw4hkg" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_mgyrf"]
+[ext_resource type="Resource" uid="uid://dy37j6pvwer12" path="res://Autoloads/Resources/Trait/superorganism.tres" id="2_vq1k4"]
+[ext_resource type="Resource" uid="uid://b4745hu4puleb" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_mgyrf"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_vq1k4"]
-[ext_resource type="Resource" uid="uid://bqwii245fpl4a" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="3_wjx85"]
+[ext_resource type="Resource" uid="uid://bwntvaq8we2ee" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="3_wjx85"]
 [ext_resource type="Texture2D" uid="uid://dv1lowtb4k5ky" path="res://Autoloads/Resources/Beastie/Orgella/orgella_idle.png" id="4_hdk44"]
-[ext_resource type="Resource" uid="uid://bsekeiw2v13qd" path="res://Autoloads/Resources/Plays/Attack/Spirit/relentless.tres" id="8_mce65"]
-[ext_resource type="Resource" uid="uid://bdmbgwhgtp2vl" path="res://Autoloads/Resources/Plays/Attack/Spirit/cut_shot.tres" id="11_iae7t"]
-[ext_resource type="Resource" uid="uid://c6bnkalnd6qdf" path="res://Autoloads/Resources/Plays/Attack/Spirit/turnabout.tres" id="14_cavp4"]
-[ext_resource type="Resource" uid="uid://dhmx805jhg4ir" path="res://Autoloads/Resources/Plays/Attack/Spirit/jammer.tres" id="15_xdr7a"]
-[ext_resource type="Resource" uid="uid://bcr7xnr07v278" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="16_ffmn5"]
-[ext_resource type="Resource" uid="uid://fysaq1o88o1v" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="17_jj6cw"]
-[ext_resource type="Resource" uid="uid://dtp7xhemyx02l" path="res://Autoloads/Resources/Plays/Attack/Spirit/swarm.tres" id="27_8swbc"]
+[ext_resource type="Resource" uid="uid://dumv8ybmwmdqs" path="res://Autoloads/Resources/Plays/Attack/Spirit/relentless.tres" id="8_mce65"]
+[ext_resource type="Resource" uid="uid://dw7hjak5gn2tk" path="res://Autoloads/Resources/Plays/Attack/Spirit/cut_shot.tres" id="11_iae7t"]
+[ext_resource type="Resource" uid="uid://c346ver25emiu" path="res://Autoloads/Resources/Plays/Attack/Spirit/passion_strike.tres" id="12_p5v5t"]
+[ext_resource type="Resource" uid="uid://cl3u33ko6jycn" path="res://Autoloads/Resources/Plays/Attack/Spirit/turnabout.tres" id="14_cavp4"]
+[ext_resource type="Resource" uid="uid://xuq2krgioyg5" path="res://Autoloads/Resources/Plays/Attack/Spirit/jammer.tres" id="15_xdr7a"]
+[ext_resource type="Resource" uid="uid://bosg46t132k5k" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="16_ffmn5"]
+[ext_resource type="Resource" uid="uid://c0hsvmpto8e3s" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="17_jj6cw"]
+[ext_resource type="Resource" uid="uid://ld2lhvgalfff" path="res://Autoloads/Resources/Plays/Attack/Spirit/swarm.tres" id="27_8swbc"]
 [ext_resource type="Texture2D" uid="uid://c3coheb4jjuu1" path="res://Autoloads/Resources/Beastie/Orgella/icon_orgella.png" id="30_2bkd2"]
 [ext_resource type="Texture2D" uid="uid://c8iy0qfw7m4w4" path="res://Autoloads/Resources/Beastie/Orgella/orgella_ready.png" id="31_oppqr"]
 [ext_resource type="Texture2D" uid="uid://dpgx837m0cr0p" path="res://Autoloads/Resources/Beastie/Orgella/orgella_spike.png" id="32_jevp1"]
@@ -31,7 +32,7 @@ mind_base_pow = 49
 body_base_def = 90
 spirit_base_def = 101
 mind_base_def = 79
-possible_plays = Array[ExtResource("1_ijef1")]([ExtResource("3_mgyrf"), ExtResource("3_wjx85"), ExtResource("8_mce65"), ExtResource("11_iae7t"), ExtResource("14_cavp4"), ExtResource("15_xdr7a"), ExtResource("16_ffmn5"), ExtResource("17_jj6cw"), ExtResource("27_8swbc")])
+possible_plays = Array[ExtResource("1_ijef1")]([ExtResource("3_mgyrf"), ExtResource("3_wjx85"), ExtResource("8_mce65"), ExtResource("11_iae7t"), ExtResource("14_cavp4"), ExtResource("15_xdr7a"), ExtResource("16_ffmn5"), ExtResource("17_jj6cw"), ExtResource("27_8swbc"), ExtResource("12_p5v5t")])
 possible_traits = Array[ExtResource("2_hdk44")]([ExtResource("2_vq1k4")])
 sprites = Dictionary[int, Texture2D]({
 0: ExtResource("4_hdk44"),

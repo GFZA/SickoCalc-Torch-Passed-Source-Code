@@ -87,7 +87,7 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 
 	#region Set up vars for calculation
 
-	var attacker_at_net : bool = attacker.check_if_net() or (attack_name == "swarm") or (attack_name == "exp launch")
+	var attacker_at_net : bool = attacker.check_if_net() or (attack_name == "swarm") or (attack_name == "launch")
 	if attack_name == "flight":
 		attacker_at_net = false
 
@@ -198,7 +198,8 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 
 	var rally_mind_mult : float = RALLY_MIND_MULT if stats_type_attack == int(Plays.Type.ATTACK_MIND) and attacker_team_controller and \
 							(attacker_team_controller.get_field_effect_stack(FieldEffect.Type.RALLY) > 0) and (attack_name != "ego blast") \
-							and (attacker.my_trait.name.to_lower() != "extrovert") and (attack_name != "sweep") else 1.0
+							and (attacker.my_trait.name.to_lower() != "extrovert") and (attack_name != "sweep") \
+							and not (attacker.my_trait.name.to_lower() == "in the clouds") else 1.0
 
 	var friendship_mult : float = FRIENDSHIP_MULT if defender_team_controller and \
 							defender_team_controller.check_for_friendship_buff(defender) and \
@@ -232,8 +233,11 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 	if attacker_team_controller:
 		if attacker_team_controller.check_for_cheerleader_buff(attacker):
 			final_damage += CHEERLEADER_FLAT
-		if ((stats_type_attack == int(Plays.Type.ATTACK_SPIRIT)) or (attack_name == "ego blast") or (attacker.my_trait.name.to_lower() == "extrovert")) and \
-			(attacker_team_controller.get_field_effect_stack(FieldEffect.Type.RALLY) > 0):
+		var boostable_by_rally : bool = ((stats_type_attack == int(Plays.Type.ATTACK_SPIRIT)) or (attack_name == "ego blast") or (attacker.my_trait.name.to_lower() == "extrovert")) \
+										and not (attacker.my_trait.name.to_lower() == "in the clouds")
+		var has_rally : bool = (attacker_team_controller.get_field_effect_stack(FieldEffect.Type.RALLY) > 0)
+		var defender_ignore_rally : bool = (defender.my_trait.name.to_lower() == "in the clouds") and not attacker.my_trait.name.to_lower() == "maverick"
+		if boostable_by_rally and has_rally and not defender_ignore_rally:
 			final_damage += RALLY_FLAT
 
 	var starter_trait_proc : bool = bool(attacker.my_trait.get_starter_trait_boost_stack(attacker, stats_type_attack))

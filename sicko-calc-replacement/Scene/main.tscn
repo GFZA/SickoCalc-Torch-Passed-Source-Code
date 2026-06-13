@@ -108,7 +108,7 @@ grow_vertical = 2
 script = ExtResource("1_r34rm")
 metadata/_edit_lock_ = true
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="Overlay" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -119,49 +119,49 @@ mouse_filter = 2
 color = Color(0.1444633, 0.21651062, 0.22422928, 1)
 metadata/_edit_lock_ = true
 
-[node name="ArrowAnchor" type="Control" parent="ColorRect"]
+[node name="ArrowAnchor" type="Control" parent="Overlay"]
 unique_name_in_owner = true
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Polygon2D" type="Polygon2D" parent="ColorRect/ArrowAnchor"]
+[node name="Polygon2D" type="Polygon2D" parent="Overlay/ArrowAnchor"]
 modulate = Color(1, 1, 1, 0.6862745)
 position = Vector2(-185, 11)
 color = Color(0.98039216, 0.8745098, 0.3529412, 1)
 polygon = PackedVector2Array(1275, 265, 1425, 265, 1500, 365, 1425, 465, 1275, 465, 1350, 365)
 
-[node name="Polygon2D2" type="Polygon2D" parent="ColorRect/ArrowAnchor"]
+[node name="Polygon2D2" type="Polygon2D" parent="Overlay/ArrowAnchor"]
 modulate = Color(1, 1, 1, 0.6862745)
 position = Vector2(49, 11)
 color = Color(0.984, 0.878, 0.353, 1)
 polygon = PackedVector2Array(1275, 265, 1425, 265, 1500, 365, 1425, 465, 1275, 465, 1350, 365)
 
-[node name="Polygon2D3" type="Polygon2D" parent="ColorRect/ArrowAnchor"]
+[node name="Polygon2D3" type="Polygon2D" parent="Overlay/ArrowAnchor"]
 modulate = Color(1, 1, 1, 0.6862745)
 position = Vector2(285, 11)
 color = Color(0.984, 0.878, 0.353, 1)
 polygon = PackedVector2Array(1275, 265, 1425, 265, 1500, 365, 1425, 465, 1275, 465, 1350, 365)
 
-[node name="Polygon2D4" type="Polygon2D" parent="ColorRect/ArrowAnchor"]
+[node name="Polygon2D4" type="Polygon2D" parent="Overlay/ArrowAnchor"]
 modulate = Color(1, 1, 1, 0.6862745)
 position = Vector2(549, 11)
 color = Color(0.984, 0.878, 0.353, 1)
 polygon = PackedVector2Array(1275, 265, 1425, 265, 1500, 365, 1425, 465, 1275, 465, 1350, 365)
 
-[node name="Polygon2D5" type="Polygon2D" parent="ColorRect/ArrowAnchor"]
+[node name="Polygon2D5" type="Polygon2D" parent="Overlay/ArrowAnchor"]
 modulate = Color(1, 1, 1, 0.6862745)
 position = Vector2(774, 11)
 color = Color(0.984, 0.878, 0.353, 1)
 polygon = PackedVector2Array(1275, 265, 1425, 265, 1500, 365, 1425, 465, 1275, 465, 1350, 365)
 
-[node name="Polygon2D6" type="Polygon2D" parent="ColorRect/ArrowAnchor"]
+[node name="Polygon2D6" type="Polygon2D" parent="Overlay/ArrowAnchor"]
 modulate = Color(1, 1, 1, 0.6862745)
 position = Vector2(1000, 11)
 color = Color(0.984, 0.878, 0.353, 1)
 polygon = PackedVector2Array(1275, 265, 1425, 265, 1500, 365, 1425, 465, 1275, 465, 1350, 365)
 
-[node name="TitleContainer" type="HBoxContainer" parent="ColorRect"]
+[node name="TitleContainer" type="HBoxContainer" parent="Overlay"]
 layout_mode = 0
 offset_left = 6.0
 offset_top = 3.0
@@ -169,11 +169,11 @@ offset_right = 668.0
 offset_bottom = 99.0
 theme_override_constants/separation = 16
 
-[node name="IconRect" type="TextureRect" parent="ColorRect/TitleContainer"]
+[node name="IconRect" type="TextureRect" parent="Overlay/TitleContainer"]
 layout_mode = 2
 texture = ExtResource("4_uctnp")
 
-[node name="TitleLabel" type="Label" parent="ColorRect/TitleContainer"]
+[node name="TitleLabel" type="Label" parent="Overlay/TitleContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
@@ -182,7 +182,7 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_nyb1q")
 text = "SickoCalc: Torch Passed"
 
-[node name="CreditOneLabel" type="Label" parent="ColorRect"]
+[node name="CreditOneLabel" type="Label" parent="Overlay"]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 2
@@ -199,7 +199,7 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_nyb1q")
 text = "Made by GFZA, Icon by Hamapirasu"
 
-[node name="PatchLabel" type="Label" parent="ColorRect"]
+[node name="PatchLabel" type="Label" parent="Overlay"]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 7
@@ -217,10 +217,10 @@ size_flags_horizontal = 4
 theme = ExtResource("24_xw8bv")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_nyb1q")
-text = "Patch : Milestone 4"
+text = "Patch : Milestone 5 (Workshop Update)"
 horizontal_alignment = 1
 
-[node name="CreditTwoLabel" type="Label" parent="ColorRect"]
+[node name="CreditTwoLabel" type="Label" parent="Overlay"]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 3

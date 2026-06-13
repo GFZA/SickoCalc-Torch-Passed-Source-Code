@@ -1,19 +1,20 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://v4ovawxq7553"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://v4ovawxq7553"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_knhx4"]
-[ext_resource type="Resource" uid="uid://dssnvskme6jw6" path="res://Autoloads/Resources/Trait/cheerleader.tres" id="2_fob6b"]
+[ext_resource type="Resource" uid="uid://gg4non5q0kqq" path="res://Autoloads/Resources/Trait/cheerleader.tres" id="2_fob6b"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_liucn"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_dsutf"]
-[ext_resource type="Resource" uid="uid://hox6njgubt5t" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="4_ah01r"]
+[ext_resource type="Resource" uid="uid://dc0b8j0fujpbd" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="4_ah01r"]
 [ext_resource type="Texture2D" uid="uid://c51hq3dtvhb3" path="res://Autoloads/Resources/Beastie/Cherrily/cherrily_idle.png" id="5_2is11"]
 [ext_resource type="Texture2D" uid="uid://xr8q7ukk4c5h" path="res://Autoloads/Resources/Beastie/Cherrily/cherrily_ready.png" id="6_8310w"]
-[ext_resource type="Resource" uid="uid://b2j560i1uxo6y" path="res://Autoloads/Resources/Plays/Attack/Body/reach_shot.tres" id="7_58ols"]
+[ext_resource type="Resource" uid="uid://qi0fklguwm3c" path="res://Autoloads/Resources/Plays/Attack/Body/reach_shot.tres" id="7_58ols"]
 [ext_resource type="Texture2D" uid="uid://dalawruhckael" path="res://Autoloads/Resources/Beastie/Cherrily/cherrily_spike.png" id="7_jhyfy"]
-[ext_resource type="Resource" uid="uid://qhb7pc512xbi" path="res://Autoloads/Resources/Plays/Attack/Body/kneebender.tres" id="10_tw305"]
+[ext_resource type="Resource" uid="uid://ld2lhvgalfff" path="res://Autoloads/Resources/Plays/Attack/Spirit/swarm.tres" id="9_g084w"]
+[ext_resource type="Resource" uid="uid://br2xlvc1ky06q" path="res://Autoloads/Resources/Plays/Attack/Body/kneebender.tres" id="10_tw305"]
 [ext_resource type="Texture2D" uid="uid://bflv0df4fj7k" path="res://Autoloads/Resources/Beastie/Cherrily/icon_cherrily.png" id="11_7ufjw"]
-[ext_resource type="Resource" uid="uid://cgtd1m3ceieid" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="11_rv46p"]
-[ext_resource type="Resource" uid="uid://c36rtva2s671" path="res://Autoloads/Resources/Plays/Attack/Body/thunder.tres" id="14_tlclr"]
-[ext_resource type="Resource" uid="uid://cgp0jnuk0thpe" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="15_yq3ji"]
+[ext_resource type="Resource" uid="uid://hiuivj04u8ir" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="11_rv46p"]
+[ext_resource type="Resource" uid="uid://khv754wvrclb" path="res://Autoloads/Resources/Plays/Attack/Body/thunder.tres" id="14_tlclr"]
+[ext_resource type="Resource" uid="uid://de4i64x6vnp7m" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="15_yq3ji"]
 
 [resource]
 script = ExtResource("3_dsutf")
@@ -28,7 +29,7 @@ mind_base_pow = 40
 body_base_def = 75
 spirit_base_def = 88
 mind_base_def = 57
-possible_plays = Array[ExtResource("1_knhx4")]([ExtResource("4_ah01r"), ExtResource("7_58ols"), ExtResource("10_tw305"), ExtResource("11_rv46p"), ExtResource("14_tlclr"), ExtResource("15_yq3ji")])
+possible_plays = Array[ExtResource("1_knhx4")]([ExtResource("4_ah01r"), ExtResource("7_58ols"), ExtResource("10_tw305"), ExtResource("11_rv46p"), ExtResource("14_tlclr"), ExtResource("15_yq3ji"), ExtResource("9_g084w")])
 possible_traits = Array[ExtResource("2_liucn")]([ExtResource("2_fob6b")])
 sprites = Dictionary[int, Texture2D]({
 0: ExtResource("5_2is11"),

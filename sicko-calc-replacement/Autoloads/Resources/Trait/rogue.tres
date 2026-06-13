@@ -4,8 +4,8 @@
 
 [resource]
 script = ExtResource("1_ustnd")
-name = "Deviant"
-description = "This Beastie's attacks do 1.5x damage when their target is changed"
+name = "Rogue"
+description = "Does 1.5x damage and ignores BLOCKED when their target is changed"
 need_to_be_manually_activated = true
 condition_name = "User target is changed"
 damage_dealt_mult = 1.5

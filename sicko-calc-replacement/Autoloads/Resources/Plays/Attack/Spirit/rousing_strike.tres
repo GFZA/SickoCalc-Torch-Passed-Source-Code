@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource("1_7i5k2")
 name = "Rousing Strike"
-base_pow = 65
+base_pow = 60
 descrition = "ATTACK. Active team feels +2 JAZZED (POW +50%)."
 type = 1
 metadata/_custom_type_script = "uid://bc63soeia1eb1"

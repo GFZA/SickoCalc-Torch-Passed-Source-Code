@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_ffoxm")
 name = "Galaxy Brain"
-description = "MIND POW UP1 when receiving a MIND attack"
+description = "MIND POW UP1 after receiving a MIND attack"
 metadata/_custom_type_script = "uid://bslfuaragw1g7"

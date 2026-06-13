@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_5yfbl")
 name = "Watchtower"
-description = "Receives attacks in place of adjacent allies"
+description = "Applies +1 BLOCKED to attackers targeting adjacent allies"
 metadata/_custom_type_script = "uid://bslfuaragw1g7"

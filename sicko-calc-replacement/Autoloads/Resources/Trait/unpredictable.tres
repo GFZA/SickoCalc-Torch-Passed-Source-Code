@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_kul1r")
 name = "Unpredictable"
-description = "When receiving an attack, attacker feels 1 NERVOUS (can't move)"
+description = "Before receiving an attack, attacker feels 1 NERVOUS (can't move)"
 metadata/_custom_type_script = "uid://bslfuaragw1g7"

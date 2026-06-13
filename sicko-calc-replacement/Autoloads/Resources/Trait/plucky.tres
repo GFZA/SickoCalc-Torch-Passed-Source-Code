@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_g1qgv")
 name = "Plucky"
-description = "Can't be given FEELINGs"
+description = "Can't be given FEELINGs (except BLOCKED)"
 metadata/_custom_type_script = "uid://bslfuaragw1g7"
