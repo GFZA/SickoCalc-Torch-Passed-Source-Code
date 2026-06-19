@@ -152,10 +152,11 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 			total_attack_boost = 0
 		total_attack_boost += 1
 
-	if attacker_trait == "shy" and not attack_name == "flight":
-		total_attack_boost += int(not attacker_at_net)
-	else:
-		total_attack_boost += int(attacker_at_net)
+	if not attack_name == "flight": # Flight remove all row bonus for some reason
+		if attacker_trait == "shy":
+			total_attack_boost += int(not attacker_at_net)
+		else:
+			total_attack_boost += int(attacker_at_net)
 
 	# --- DEF boosts ---
 	var total_defense_boost : int = 0
