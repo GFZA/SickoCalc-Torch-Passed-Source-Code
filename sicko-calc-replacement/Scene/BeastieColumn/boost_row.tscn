@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://b7iutmc2guxbf"]
+[gd_scene load_steps=14 format=3 uid="uid://b7iutmc2guxbf"]
 
 [ext_resource type="Script" uid="uid://c8hipine4d0r1" path="res://Scene/BeastieColumn/boost_row.gd" id="1_qyf7v"]
 [ext_resource type="PackedScene" uid="uid://d1d26ob86bbom" path="res://Scene/NumberUI/number_ui.tscn" id="1_xaepe"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cy0k4ndbr1eta" path="res://Autoloads/Icons/icon_mind.png" id="5_jt04l"]
 [ext_resource type="Theme" uid="uid://bkrlwg21fhprn" path="res://Autoloads/Resources/Themes/edit_button.tres" id="6_ipt43"]
 [ext_resource type="PackedScene" uid="uid://8034fwfywq3r" path="res://Scene/BeastieColumn/number_ui_alt.tscn" id="7_fdb32"]
+[ext_resource type="Texture2D" uid="uid://b4crkk01qxlng" path="res://Autoloads/Icons/icon_up_3.png" id="7_jt04l"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ta5ev"]
 font = ExtResource("2_ipt43")
@@ -24,6 +25,10 @@ font = ExtResource("2_ipt43")
 font_size = 64
 font_color = Color(0, 0, 0, 1)
 
+[sub_resource type="LabelSettings" id="LabelSettings_jt04l"]
+font_size = 64
+font_color = Color(0, 0, 0, 1)
+
 [node name="BoostRow" type="MarginContainer"]
 custom_minimum_size = Vector2(1150, 275)
 offset_right = 1150.0
@@ -33,9 +38,11 @@ theme_override_constants/margin_right = 15
 script = ExtResource("1_qyf7v")
 
 [node name="MainContainer" type="HBoxContainer" parent="."]
+unique_name_in_owner = true
 layout_mode = 2
 
 [node name="BoostsColumn" type="HBoxContainer" parent="MainContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
@@ -109,10 +116,18 @@ text = "POW"
 label_settings = SubResource("LabelSettings_ta5ev")
 
 [node name="BodyIcon" type="TextureRect" parent="MainContainer/BoostsColumn/AllBoostUIs/BodyMargin/BodyBG/BodyContainer"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("3_fdb32")
 stretch_mode = 5
+
+[node name="BodyIcon2" type="TextureRect" parent="MainContainer/BoostsColumn/AllBoostUIs/BodyMargin/BodyBG/BodyContainer"]
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("7_jt04l")
+stretch_mode = 3
 
 [node name="BDefLabel" type="Label" parent="MainContainer/BoostsColumn/AllBoostUIs/BodyMargin/BodyBG/BodyContainer"]
 layout_mode = 2
@@ -170,10 +185,18 @@ text = "POW"
 label_settings = SubResource("LabelSettings_rr5fh")
 
 [node name="SpiritIcon" type="TextureRect" parent="MainContainer/BoostsColumn/AllBoostUIs/SpiritMargin/SpiritBG/SpiritContainer"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("4_qyf7v")
 stretch_mode = 5
+
+[node name="SpiritIcon2" type="TextureRect" parent="MainContainer/BoostsColumn/AllBoostUIs/SpiritMargin/SpiritBG/SpiritContainer"]
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("7_jt04l")
+stretch_mode = 3
 
 [node name="SDefLabel" type="Label" parent="MainContainer/BoostsColumn/AllBoostUIs/SpiritMargin/SpiritBG/SpiritContainer"]
 layout_mode = 2
@@ -231,10 +254,18 @@ text = "POW"
 label_settings = SubResource("LabelSettings_blo7e")
 
 [node name="MindIcon" type="TextureRect" parent="MainContainer/BoostsColumn/AllBoostUIs/MindMargin/MindBG/MindContainer"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("5_jt04l")
 stretch_mode = 5
+
+[node name="MindIcon2" type="TextureRect" parent="MainContainer/BoostsColumn/AllBoostUIs/MindMargin/MindBG/MindContainer"]
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("7_jt04l")
+stretch_mode = 3
 
 [node name="MDefLabel" type="Label" parent="MainContainer/BoostsColumn/AllBoostUIs/MindMargin/MindBG/MindContainer"]
 layout_mode = 2
@@ -268,6 +299,7 @@ text = "RESET"
 vertical_icon_alignment = 0
 
 [node name="InvestColumn" type="HBoxContainer" parent="MainContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 6
 
@@ -319,6 +351,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="BodyIcon" type="TextureRect" parent="MainContainer/InvestColumn/AllInvestUIs/BodyMargin/BodyBG/BodyContainer"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("3_fdb32")
@@ -327,8 +360,14 @@ stretch_mode = 5
 [node name="BDefLabel" type="Label" parent="MainContainer/InvestColumn/AllInvestUIs/BodyMargin/BodyBG/BodyContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-text = "DEF"
+text = " DEF"
 label_settings = SubResource("LabelSettings_ta5ev")
+
+[node name="BDefLabel2" type="Label" parent="MainContainer/InvestColumn/AllInvestUIs/BodyMargin/BodyBG/BodyContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = " +"
+label_settings = SubResource("LabelSettings_jt04l")
 
 [node name="BDEFInvestNumberUI" parent="MainContainer/InvestColumn/AllInvestUIs/BodyMargin/BodyBG/BodyContainer" instance=ExtResource("1_xaepe")]
 unique_name_in_owner = true
@@ -354,6 +393,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="SpiritIcon" type="TextureRect" parent="MainContainer/InvestColumn/AllInvestUIs/SpiritMargin/SpiritBG/SpiritContainer"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("4_qyf7v")
@@ -362,8 +402,14 @@ stretch_mode = 5
 [node name="SDefLabel" type="Label" parent="MainContainer/InvestColumn/AllInvestUIs/SpiritMargin/SpiritBG/SpiritContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-text = "DEF"
+text = " DEF"
 label_settings = SubResource("LabelSettings_rr5fh")
+
+[node name="SDefLabel2" type="Label" parent="MainContainer/InvestColumn/AllInvestUIs/SpiritMargin/SpiritBG/SpiritContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = " +"
+label_settings = SubResource("LabelSettings_jt04l")
 
 [node name="SDEFInvestNumberUI" parent="MainContainer/InvestColumn/AllInvestUIs/SpiritMargin/SpiritBG/SpiritContainer" instance=ExtResource("1_xaepe")]
 unique_name_in_owner = true
@@ -389,6 +435,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="MindIcon" type="TextureRect" parent="MainContainer/InvestColumn/AllInvestUIs/MindMargin/MindBG/MindContainer"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("5_jt04l")
@@ -397,8 +444,14 @@ stretch_mode = 5
 [node name="MDefLabel" type="Label" parent="MainContainer/InvestColumn/AllInvestUIs/MindMargin/MindBG/MindContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-text = "DEF"
+text = " DEF"
 label_settings = SubResource("LabelSettings_blo7e")
+
+[node name="MDefLabel2" type="Label" parent="MainContainer/InvestColumn/AllInvestUIs/MindMargin/MindBG/MindContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = " +"
+label_settings = SubResource("LabelSettings_jt04l")
 
 [node name="MDEFInvestNumberUI" parent="MainContainer/InvestColumn/AllInvestUIs/MindMargin/MindBG/MindContainer" instance=ExtResource("1_xaepe")]
 unique_name_in_owner = true

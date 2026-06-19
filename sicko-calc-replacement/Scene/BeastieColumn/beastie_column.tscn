@@ -185,14 +185,15 @@ toggle_mode = true
 custom_minimum_size = Vector2(0, 25)
 layout_mode = 2
 
-[node name="PositionPow" type="HBoxContainer" parent="BGRec/MainContainer"]
+[node name="PositionButtons" type="HBoxContainer" parent="BGRec/MainContainer"]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_vertical = 6
 theme_override_constants/separation = 24
 alignment = 1
 
-[node name="BackButton" type="Button" parent="BGRec/MainContainer/PositionPow"]
+[node name="BackButton" type="Button" parent="BGRec/MainContainer/PositionButtons"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
@@ -206,7 +207,7 @@ text = "Back"
 icon = ExtResource("24_aauwx")
 expand_icon = true
 
-[node name="NetButton" type="Button" parent="BGRec/MainContainer/PositionPow"]
+[node name="NetButton" type="Button" parent="BGRec/MainContainer/PositionButtons"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2

@@ -5,6 +5,9 @@ extends MarginContainer
 signal beastie_select_ui_requested
 
 const EVIL_AXOLATI = preload("uid://l3eh6masrurv")
+const SECRET_1 = preload("uid://cukw0bkohbuhw")
+const SECRET_2 = preload("uid://cxjjnkkwhac1y")
+const SECRET_3 = preload("uid://bh3ewxrd80od8")
 
 @export var beastie : Beastie :
 	set(value):
@@ -51,6 +54,7 @@ func update_beastie() -> void:
 		body_stats_label.text = str(beastie.get_stats_to_display(Beastie.Stats.B_POW)) if is_left else str(beastie.get_stats_to_display(Beastie.Stats.B_DEF))
 		spirit_stats_label.text = str(beastie.get_stats_to_display(Beastie.Stats.S_POW)) if is_left else str(beastie.get_stats_to_display(Beastie.Stats.S_DEF))
 		mind_stats_label.text = str(beastie.get_stats_to_display(Beastie.Stats.M_POW)) if is_left else str(beastie.get_stats_to_display(Beastie.Stats.M_DEF))
+		_special()
 
 
 func _update_side() -> void:
@@ -70,3 +74,26 @@ func _update_side() -> void:
 	body_stats_label.text = str(beastie.get_stats_to_display(Beastie.Stats.B_POW)) if is_left else str(beastie.get_stats_to_display(Beastie.Stats.B_DEF))
 	spirit_stats_label.text = str(beastie.get_stats_to_display(Beastie.Stats.S_POW)) if is_left else str(beastie.get_stats_to_display(Beastie.Stats.S_DEF))
 	mind_stats_label.text = str(beastie.get_stats_to_display(Beastie.Stats.M_POW)) if is_left else str(beastie.get_stats_to_display(Beastie.Stats.M_DEF))
+
+
+func _special() -> void:
+	if not beastie:
+		return
+	if not beastie.my_trait:
+		return
+	if beastie.my_plays.front() == null:
+		return
+	var beastie_name : String = beastie.specie_name.to_lower()
+	var trait_name : String = beastie.my_trait.name.to_lower()
+	var attack_name : String = beastie.my_plays.front().name.to_lower()
+
+	match [beastie_name, trait_name, attack_name]:
+		["riplash", "shy", "launch"]:
+			name_label.text = "Pipe Bomb"
+			icon_rect.texture = SECRET_1
+		["kasaleet", "power up", "spike"]:
+			name_label.text = "Footdive"
+			icon_rect.texture = SECRET_2
+		["squimage", "moist", "grit"]:
+			name_label.text = "ena"
+			icon_rect.texture = SECRET_3

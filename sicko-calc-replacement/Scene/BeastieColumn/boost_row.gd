@@ -8,10 +8,14 @@ signal reset_requested
 
 @export var attack : Attack = null :
 	set(value):
+		var same_type : bool = false
+		if attack:
+			same_type = value.type == attack.type
 		attack = value
 		if not is_node_ready():
 			await ready
-		_update_attack()
+		_update_attack_ui()
+		reset_all_ui(true, same_type)
 		match attack.name.to_lower():
 			"energized":
 				show_energized()
@@ -25,15 +29,13 @@ signal reset_requested
 var side : Global.MySide = Global.MySide.LEFT :
 	set(value):
 		side = value
-		if not is_node_ready():
-			await ready
-		var is_left : bool = side == Global.MySide.LEFT
-		var prefix : String = "POW" if is_left else "DEF"
-		boosts_text_label.text = prefix + " Boosts"
-		invest_text_label.text = prefix + " Invests"
+		_update_side()
 
 var current_stat : Beastie.Stats = Beastie.Stats.B_POW
 
+@onready var main_container: HBoxContainer = %MainContainer
+
+@onready var boosts_column: HBoxContainer = %BoostsColumn
 @onready var single_boost_display: VBoxContainer = %SingleBoostDisplay
 @onready var boosts_text_label: Label = %BoostsTextLabel
 @onready var boost_number_ui: NumberUIAlt = %BoostNumberUI
@@ -48,6 +50,7 @@ var current_stat : Beastie.Stats = Beastie.Stats.B_POW
 
 @onready var reset_button: Button = %ResetButton
 
+@onready var invest_column: HBoxContainer = %InvestColumn
 @onready var single_invest_display: VBoxContainer = %SingleInvestDisplay
 @onready var invest_text_label: Label = %InvestTextLabel
 @onready var invest_number_ui: NumberUIAlt = %InvestNumberUI
@@ -59,7 +62,7 @@ var current_stat : Beastie.Stats = Beastie.Stats.B_POW
 
 
 func _ready() -> void:
-	Global.is_musclebrained_updated.connect(_update_attack.unbind(1))
+	Global.is_musclebrained_updated.connect(_update_attack_ui.unbind(1))
 
 	boost_number_ui.value_updated.connect(_on_boost_updated)
 
@@ -79,7 +82,7 @@ func _ready() -> void:
 	mdef_invest_number_ui.value_updated.connect(_on_all_ui_invest_updated.bind(Beastie.Stats.M_DEF))
 
 
-func _update_attack() -> void:
+func _update_attack_ui() -> void:
 	if not attack:
 		_update_ui_bg(Color(1.0, 1.0, 1.0, 0.0))
 	var is_left : bool = side == Global.MySide.LEFT
@@ -120,8 +123,21 @@ func _update_ui_bg(color : Color) -> void:
 	invest_number_ui.color = color
 
 
+func _update_side() -> void:
+	if not is_node_ready():
+		await ready
+	var is_left : bool = side == Global.MySide.LEFT
+	var prefix : String = "POW" if is_left else "DEF"
+	boosts_text_label.text = prefix + " Boosts"
+	invest_text_label.text = prefix + " Invests"
+
+	var boost_index : int = main_container.get_child_count() if is_left else 0
+	var invest_index : int = 0 if is_left else main_container.get_child_count()
+	main_container.move_child(boosts_column, boost_index)
+	main_container.move_child(invest_column, invest_index)
+
+
 func show_normal() -> void:
-	reset_all_ui()
 	all_boost_uis.hide()
 	all_invest_uis.hide()
 	single_boost_display.show()
@@ -129,7 +145,6 @@ func show_normal() -> void:
 
 
 func show_energized() -> void:
-	reset_all_ui()
 	all_boost_uis.visible = side == Global.MySide.LEFT
 	all_invest_uis.hide()
 	single_boost_display.visible = side == Global.MySide.RIGHT
@@ -137,7 +152,6 @@ func show_energized() -> void:
 
 
 func show_toppler() -> void:
-	reset_all_ui()
 	all_boost_uis.visible = side == Global.MySide.RIGHT
 	all_invest_uis.hide()
 	single_boost_display.visible = side == Global.MySide.LEFT
@@ -145,7 +159,6 @@ func show_toppler() -> void:
 
 
 func show_contest() -> void:
-	reset_all_ui()
 	all_boost_uis.visible = side == Global.MySide.RIGHT
 	all_invest_uis.visible = side == Global.MySide.RIGHT
 	single_boost_display.visible = side == Global.MySide.LEFT
@@ -153,13 +166,13 @@ func show_contest() -> void:
 
 
 func show_single_boost_ui() -> void:
-	reset_all_ui()
 	all_boost_uis.hide()
 	single_boost_display.show()
 
 
-func reset_all_ui(no_emit : bool = false) -> void:
-	boost_number_ui.reset()
+func reset_all_ui(no_emit : bool = false, same_type : bool = false) -> void:
+	if not same_type:
+		boost_number_ui.reset()
 	bpow_number_ui.reset()
 	bdef_number_ui.reset()
 	spow_number_ui.reset()
@@ -167,7 +180,8 @@ func reset_all_ui(no_emit : bool = false) -> void:
 	mpow_number_ui.reset()
 	mdef_number_ui.reset()
 
-	invest_number_ui.reset()
+	if not same_type:
+		invest_number_ui.reset()
 	bdef_invest_number_ui.reset()
 	sdef_invest_number_ui.reset()
 	mdef_invest_number_ui.reset()

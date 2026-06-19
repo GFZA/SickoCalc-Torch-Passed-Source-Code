@@ -43,6 +43,7 @@ var current_pos : Beastie.Position = Beastie.Position.UPPER_BACK
 @onready var trait_condition_row: HBoxContainer = %TraitConditionRow
 @onready var trait_condition_button: Button = %TraitConditionButton
 
+@onready var position_buttons: HBoxContainer = %PositionButtons
 @onready var back_button: Button = %BackButton
 @onready var net_button: Button = %NetButton
 
@@ -162,6 +163,11 @@ func _update_side() -> void:
 	if not is_node_ready():
 		await ready
 	beastie_row.side = side
+	boost_row.side = side
+	var is_right : bool = side == Global.MySide.RIGHT
+	position_buttons.move_child(back_button, is_right)
+	back_button.icon_alignment = HORIZONTAL_ALIGNMENT_RIGHT if is_right else HORIZONTAL_ALIGNMENT_LEFT
+	net_button.icon_alignment = HORIZONTAL_ALIGNMENT_LEFT if is_right else HORIZONTAL_ALIGNMENT_RIGHT
 
 
 func _update_attack() -> void:
@@ -181,6 +187,7 @@ func _update_attack() -> void:
 
 	else:
 		beastie.my_plays[0] = current_attack
+		beastie_row.update_beastie() # ;)
 
 		select_attack_button.flat = true
 		attack_plays_ui.my_play = current_attack
@@ -199,6 +206,11 @@ func _update_attack() -> void:
 		attack_condition_button.text = current_attack.condition_name
 
 		stamina_container.visible = is_vigor_beam or is_soulcrusher
+		match attack_name:
+			"vigor beam":
+				stamina_container.text = "User STAMINA"
+			"soulcrusher":
+				stamina_container.text = "Target STAMINA"
 		volley_amount_container.visible = is_zigzag
 
 		rally_button.visible = current_attack.type in [Plays.Type.ATTACK_SPIRIT, Plays.Type.ATTACK_MIND] \
@@ -311,10 +323,8 @@ func _on_mimic_button_toggled(toggled_on : bool) -> void:
 func _on_stamina_changed(value : int) -> void:
 	match current_attack.name.to_lower():
 		"vigor beam":
-			stamina_container.text = "User STAMINA"
 			beastie.health = value
 		"soulcrusher":
-			stamina_container.text = "Target STAMINA"
 			stamina_change_requested.emit(value)
 	beastie_updated.emit()
 
