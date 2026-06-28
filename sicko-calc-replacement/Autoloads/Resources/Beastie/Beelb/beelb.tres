@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=17 format=3 uid="uid://cfmafcpgpp0h0"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://bjdy2nhjkhsot"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_cyb7t"]
 [ext_resource type="Resource" uid="uid://vpstp8b0iceu" path="res://Autoloads/Resources/Trait/charge.tres" id="2_k0cj1"]
@@ -12,9 +12,7 @@
 [ext_resource type="Resource" uid="uid://de4i64x6vnp7m" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="10_0vqko"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="11_1a5he"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="12_jtty3"]
-[ext_resource type="Texture2D" uid="uid://cn7iial6tr8w5" path="res://Autoloads/Resources/Beastie/Beelb/beelb_idle.png" id="13_q6dsl"]
-[ext_resource type="Texture2D" uid="uid://dcwgvvalio5rq" path="res://Autoloads/Resources/Beastie/Beelb/beelb_ready.png" id="14_06tvs"]
-[ext_resource type="Texture2D" uid="uid://c4txac65u6ljk" path="res://Autoloads/Resources/Beastie/Beelb/beelb_spike.png" id="15_4c6l1"]
+[ext_resource type="Texture2D" uid="uid://rhhnyqo0uy5q" path="res://Autoloads/Resources/Beastie/Beelb/beelb_idle.png" id="13_q6dsl"]
 [ext_resource type="Texture2D" uid="uid://b631nnfcog6da" path="res://Autoloads/Resources/Beastie/Beelb/icon_beelb.png" id="16_qtmm3"]
 
 [resource]
@@ -34,8 +32,6 @@ possible_plays = Array[ExtResource("1_cyb7t")]([ExtResource("3_x2itg"), ExtResou
 possible_traits = Array[ExtResource("11_1a5he")]([ExtResource("2_k0cj1")])
 sprites = Dictionary[int, Texture2D]({
 0: ExtResource("13_q6dsl"),
-1: ExtResource("14_06tvs"),
-2: ExtResource("15_4c6l1"),
 6: ExtResource("16_qtmm3")
 })
 ball_anchor_position_receive = Vector2(20, -111)

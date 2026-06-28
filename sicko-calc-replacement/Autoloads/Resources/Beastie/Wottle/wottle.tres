@@ -1,14 +1,12 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://cvb8nc32b3jq0"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=14 format=3 uid="uid://dkoi8fnj0s1il"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_d144n"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_30rnj"]
 [ext_resource type="Resource" uid="uid://dc70xag8swf2r" path="res://Autoloads/Resources/Trait/shy.tres" id="2_ukmd4"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_pwot0"]
 [ext_resource type="Resource" uid="uid://b4745hu4puleb" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_wcjvg"]
-[ext_resource type="Texture2D" uid="uid://di63yx5vabq15" path="res://Autoloads/Resources/Beastie/Wottle/wottle_idle.png" id="5_fewm5"]
+[ext_resource type="Texture2D" uid="uid://5dd50hlpqdl8" path="res://Autoloads/Resources/Beastie/Wottle/wottle_idle.png" id="5_fewm5"]
 [ext_resource type="Resource" uid="uid://bwntvaq8we2ee" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="6_0rubi"]
-[ext_resource type="Texture2D" uid="uid://birgoeiam4iba" path="res://Autoloads/Resources/Beastie/Wottle/wottle_ready.png" id="6_kg0wl"]
-[ext_resource type="Texture2D" uid="uid://cgvctlsgopsny" path="res://Autoloads/Resources/Beastie/Wottle/wottle_spike.png" id="7_varlf"]
 [ext_resource type="Resource" uid="uid://d1lmi0j5jfehr" path="res://Autoloads/Resources/Plays/Attack/Spirit/tornadoball.tres" id="9_83ea1"]
 [ext_resource type="Resource" uid="uid://d21rgslrfpvct" path="res://Autoloads/Resources/Plays/Attack/Spirit/flight.tres" id="9_gak2q"]
 [ext_resource type="Texture2D" uid="uid://crxsv6d1dtfpr" path="res://Autoloads/Resources/Beastie/Wottle/icon_wottle.png" id="11_62ocn"]
@@ -33,8 +31,6 @@ possible_plays = Array[ExtResource("1_d144n")]([ExtResource("3_wcjvg"), ExtResou
 possible_traits = Array[ExtResource("2_30rnj")]([ExtResource("2_ukmd4")])
 sprites = Dictionary[int, Texture2D]({
 0: ExtResource("5_fewm5"),
-1: ExtResource("6_kg0wl"),
-2: ExtResource("7_varlf"),
 6: ExtResource("11_62ocn")
 })
 y_offset = -10

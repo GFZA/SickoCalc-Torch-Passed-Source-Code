@@ -1,22 +1,20 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://c5uuymtswvp65"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=17 format=3 uid="uid://ba4wc2qv8uy3x"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_5u6mg"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_crcu8"]
-[ext_resource type="Resource" uid="uid://bmt343nrue458" path="res://Autoloads/Resources/Trait/high_spirits.tres" id="2_pkep1"]
+[ext_resource type="Resource" uid="uid://cxkk4cr1jee0e" path="res://Autoloads/Resources/Trait/high_spirits.tres" id="2_pkep1"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_i8e3u"]
-[ext_resource type="Resource" uid="uid://uhybiiauycux" path="res://Autoloads/Resources/Plays/Attack/Spirit/pepshot.tres" id="4_8xxa6"]
-[ext_resource type="Texture2D" uid="uid://b8rlpwsodgkai" path="res://Autoloads/Resources/Beastie/Hopra/hopra_idle.png" id="4_d563j"]
-[ext_resource type="Resource" uid="uid://bk0m5f3kuweyx" path="res://Autoloads/Resources/Trait/rumpus.tres" id="4_o8hj7"]
-[ext_resource type="Texture2D" uid="uid://bmaojbrghquhe" path="res://Autoloads/Resources/Beastie/Hopra/hopra_ready.png" id="5_pkep1"]
-[ext_resource type="Texture2D" uid="uid://caguhsx2pjibn" path="res://Autoloads/Resources/Beastie/Hopra/hopra_spike.png" id="6_o8hj7"]
-[ext_resource type="Resource" uid="uid://dhmx805jhg4ir" path="res://Autoloads/Resources/Plays/Attack/Spirit/jammer.tres" id="6_twe2a"]
-[ext_resource type="Resource" uid="uid://d8rp5pq7qf2i" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="9_0hg36"]
-[ext_resource type="Resource" uid="uid://r7wuh8vfp83p" path="res://Autoloads/Resources/Plays/Attack/Spirit/supercommit.tres" id="12_c0cdi"]
-[ext_resource type="Resource" uid="uid://ihjite14xg1t" path="res://Autoloads/Resources/Plays/Attack/Body/stomp.tres" id="14_shu85"]
-[ext_resource type="Resource" uid="uid://cgp0jnuk0thpe" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="15_rdxag"]
-[ext_resource type="Resource" uid="uid://r8p64is70rc7" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="16_lfqic"]
-[ext_resource type="Resource" uid="uid://bjh3q3eclur2i" path="res://Autoloads/Resources/Plays/Attack/Spirit/thriller.tres" id="17_071fn"]
-[ext_resource type="Resource" uid="uid://c7ocn3elr7ejo" path="res://Autoloads/Resources/Plays/Attack/Spirit/rousing_strike.tres" id="27_yppus"]
+[ext_resource type="Resource" uid="uid://cq8dhafy2aqe5" path="res://Autoloads/Resources/Plays/Attack/Spirit/pepshot.tres" id="4_8xxa6"]
+[ext_resource type="Texture2D" uid="uid://bi0vdrq1lhpw6" path="res://Autoloads/Resources/Beastie/Hopra/hopra_idle.png" id="4_d563j"]
+[ext_resource type="Resource" uid="uid://0j2wljh1wykn" path="res://Autoloads/Resources/Trait/rumpus.tres" id="4_o8hj7"]
+[ext_resource type="Resource" uid="uid://xuq2krgioyg5" path="res://Autoloads/Resources/Plays/Attack/Spirit/jammer.tres" id="6_twe2a"]
+[ext_resource type="Resource" uid="uid://b2pc2vt2pjw6t" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="9_0hg36"]
+[ext_resource type="Resource" uid="uid://cmcpx7nmshnvs" path="res://Autoloads/Resources/Plays/Attack/Spirit/supercommit.tres" id="12_c0cdi"]
+[ext_resource type="Resource" uid="uid://bko08dievjnfg" path="res://Autoloads/Resources/Plays/Attack/Body/stomp.tres" id="14_shu85"]
+[ext_resource type="Resource" uid="uid://de4i64x6vnp7m" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="15_rdxag"]
+[ext_resource type="Resource" uid="uid://du31ndfut0hoa" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="16_lfqic"]
+[ext_resource type="Resource" uid="uid://4bo2qruocep5" path="res://Autoloads/Resources/Plays/Attack/Spirit/thriller.tres" id="17_071fn"]
+[ext_resource type="Resource" uid="uid://5ul0rbnt3ci1" path="res://Autoloads/Resources/Plays/Attack/Spirit/rousing_strike.tres" id="27_yppus"]
 [ext_resource type="Texture2D" uid="uid://dt3sloq2ngs3p" path="res://Autoloads/Resources/Beastie/Hopra/icon_hopra.png" id="37_yppus"]
 
 [resource]
@@ -35,8 +33,6 @@ possible_plays = Array[ExtResource("1_5u6mg")]([ExtResource("4_8xxa6"), ExtResou
 possible_traits = Array[ExtResource("2_crcu8")]([ExtResource("2_pkep1"), ExtResource("4_o8hj7")])
 sprites = Dictionary[int, Texture2D]({
 0: ExtResource("4_d563j"),
-1: ExtResource("5_pkep1"),
-2: ExtResource("6_o8hj7"),
 6: ExtResource("37_yppus")
 })
 ball_anchor_position_receive = Vector2(103, -155)

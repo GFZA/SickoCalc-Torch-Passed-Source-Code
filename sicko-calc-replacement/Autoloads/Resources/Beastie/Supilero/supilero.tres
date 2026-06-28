@@ -1,22 +1,20 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://brqpylw32rqlp"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=17 format=3 uid="uid://chhpovhh0yw0o"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_bfpqm"]
-[ext_resource type="Resource" uid="uid://b7gdw1agdp5jo" path="res://Autoloads/Resources/Trait/forager.tres" id="2_ve7ok"]
-[ext_resource type="Resource" uid="uid://o7g80igyrl8i" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_wly5g"]
-[ext_resource type="Resource" uid="uid://ciplmlyeefqm" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="5_3d1f3"]
-[ext_resource type="Resource" uid="uid://c8icw3pvu0swl" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="8_8rjpk"]
-[ext_resource type="Resource" uid="uid://co6kokb12dkt0" path="res://Autoloads/Resources/Plays/Attack/Body/true_strike.tres" id="11_rrad1"]
-[ext_resource type="Resource" uid="uid://cgtd1m3ceieid" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="13_rndbi"]
-[ext_resource type="Resource" uid="uid://c36rtva2s671" path="res://Autoloads/Resources/Plays/Attack/Body/thunder.tres" id="15_evnhr"]
-[ext_resource type="Resource" uid="uid://bvxjlydy1d38x" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="16_pa5bn"]
-[ext_resource type="Resource" uid="uid://fysaq1o88o1v" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="17_pikyg"]
-[ext_resource type="Resource" uid="uid://v37ifueojf8k" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="29_k56ge"]
+[ext_resource type="Resource" uid="uid://cnv44o8juprqo" path="res://Autoloads/Resources/Trait/forager.tres" id="2_ve7ok"]
+[ext_resource type="Resource" uid="uid://bi278ctjoqvrt" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_wly5g"]
+[ext_resource type="Resource" uid="uid://51titaex4o3e" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="5_3d1f3"]
+[ext_resource type="Resource" uid="uid://ddnch0ufpde3l" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="8_8rjpk"]
+[ext_resource type="Resource" uid="uid://rou4ol1fdo40" path="res://Autoloads/Resources/Plays/Attack/Body/true_strike.tres" id="11_rrad1"]
+[ext_resource type="Resource" uid="uid://hiuivj04u8ir" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="13_rndbi"]
+[ext_resource type="Resource" uid="uid://khv754wvrclb" path="res://Autoloads/Resources/Plays/Attack/Body/thunder.tres" id="15_evnhr"]
+[ext_resource type="Resource" uid="uid://ooe1a5sxb6wn" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="16_pa5bn"]
+[ext_resource type="Resource" uid="uid://c0hsvmpto8e3s" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="17_pikyg"]
+[ext_resource type="Resource" uid="uid://b3bvfpjwplhwn" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="29_k56ge"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="30_4lwbm"]
-[ext_resource type="Resource" uid="uid://dyqi0aebqkj70" path="res://Autoloads/Resources/Trait/confident.tres" id="31_p2mw6"]
+[ext_resource type="Resource" uid="uid://brae51tcbsn8h" path="res://Autoloads/Resources/Trait/confident.tres" id="31_p2mw6"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="32_yow3n"]
-[ext_resource type="Texture2D" uid="uid://dlnoq08uuf3ku" path="res://Autoloads/Resources/Beastie/Supilero/supilero_idle.png" id="33_cjxud"]
-[ext_resource type="Texture2D" uid="uid://dj4y6aw4vimg4" path="res://Autoloads/Resources/Beastie/Supilero/supilero_ready.png" id="34_a4kti"]
-[ext_resource type="Texture2D" uid="uid://b787taaj8w7ij" path="res://Autoloads/Resources/Beastie/Supilero/supilero_spike.png" id="35_jxpey"]
+[ext_resource type="Texture2D" uid="uid://da1bux2q3ctdb" path="res://Autoloads/Resources/Beastie/Supilero/supilero_idle.png" id="33_cjxud"]
 [ext_resource type="Texture2D" uid="uid://bop7sqeqcogaa" path="res://Autoloads/Resources/Beastie/Supilero/icon_supilero.png" id="39_exnkw"]
 
 [resource]
@@ -36,8 +34,6 @@ possible_plays = Array[ExtResource("1_bfpqm")]([ExtResource("3_wly5g"), ExtResou
 possible_traits = Array[ExtResource("30_4lwbm")]([ExtResource("2_ve7ok"), ExtResource("31_p2mw6")])
 sprites = Dictionary[int, Texture2D]({
 0: ExtResource("33_cjxud"),
-1: ExtResource("34_a4kti"),
-2: ExtResource("35_jxpey"),
 6: ExtResource("39_exnkw")
 })
 ball_anchor_position_receive = Vector2(65, -68)

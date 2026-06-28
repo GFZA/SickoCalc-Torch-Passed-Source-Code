@@ -1,15 +1,13 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=24 format=3 uid="uid://cnr35tp2qn13p"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=22 format=3 uid="uid://clsya76wgftyo"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_fo56u"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_73rju"]
 [ext_resource type="Resource" uid="uid://dpdcbhb64tceo" path="res://Autoloads/Resources/Trait/stirring.tres" id="2_437uw"]
 [ext_resource type="Resource" uid="uid://cnrdrpp1ytwvq" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_hyapd"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_jkegs"]
-[ext_resource type="Texture2D" uid="uid://2b48l2g8ybs" path="res://Autoloads/Resources/Beastie/Plumask/plumask_idle.png" id="4_cy8my"]
+[ext_resource type="Texture2D" uid="uid://b8neh84nc4xww" path="res://Autoloads/Resources/Beastie/Plumask/plumask_idle.png" id="4_cy8my"]
 [ext_resource type="Resource" uid="uid://bryqk7emw3yhy" path="res://Autoloads/Resources/Trait/stagecraft.tres" id="4_fj4vk"]
 [ext_resource type="Resource" uid="uid://cm6axu5oniegv" path="res://Autoloads/Resources/Plays/Attack/Mind/echo_strike.tres" id="5_0xltf"]
-[ext_resource type="Texture2D" uid="uid://dfdt708u8t63v" path="res://Autoloads/Resources/Beastie/Plumask/plumask_ready.png" id="5_437uw"]
-[ext_resource type="Texture2D" uid="uid://cifq84qrw15pd" path="res://Autoloads/Resources/Beastie/Plumask/plumask_spike.png" id="6_fj4vk"]
 [ext_resource type="Resource" uid="uid://c0hsvmpto8e3s" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="7_07cb0"]
 [ext_resource type="Resource" uid="uid://cdvmyw82xfyc5" path="res://Autoloads/Resources/Plays/Attack/Mind/ego_blast.tres" id="9_rghkn"]
 [ext_resource type="Resource" uid="uid://c8alcpfh6p0m0" path="res://Autoloads/Resources/Plays/Attack/Spirit/scream.tres" id="12_2pitj"]
@@ -41,8 +39,6 @@ possible_plays = Array[ExtResource("1_fo56u")]([ExtResource("3_hyapd"), ExtResou
 possible_traits = Array[ExtResource("2_73rju")]([ExtResource("2_437uw"), ExtResource("4_fj4vk")])
 sprites = Dictionary[int, Texture2D]({
 0: ExtResource("4_cy8my"),
-1: ExtResource("5_437uw"),
-2: ExtResource("6_fj4vk"),
 6: ExtResource("43_8b367")
 })
 ball_anchor_position_receive = Vector2(32, -120)

@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://boxmetxo45akh"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://ct2kqf0btgyb5"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_qwrbq"]
 [ext_resource type="Resource" uid="uid://usm4ousrjrpy" path="res://Autoloads/Resources/Trait/hunter.tres" id="2_2qalg"]
@@ -33,11 +33,6 @@ possible_plays = Array[ExtResource("1_qwrbq")]([ExtResource("3_ei6jd"), ExtResou
 possible_traits = Array[ExtResource("2_c8kx2")]([ExtResource("2_2qalg"), ExtResource("12_thq60")])
 sprites = Dictionary[int, Texture2D]({
 0: ExtResource("14_bjwt7"),
-1: ExtResource("14_bjwt7"),
-2: ExtResource("14_bjwt7"),
-3: ExtResource("14_bjwt7"),
-4: ExtResource("14_bjwt7"),
-5: ExtResource("14_bjwt7"),
 6: ExtResource("14_bjwt7")
 })
 metadata/_custom_type_script = "uid://ehabj4qsgxpl"

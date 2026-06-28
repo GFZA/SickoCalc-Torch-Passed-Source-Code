@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=27 format=3 uid="uid://c15y267qqihl4"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=25 format=3 uid="uid://5lflbb6kon4y"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_ml67k"]
 [ext_resource type="Resource" uid="uid://dvcexyhaughkg" path="res://Autoloads/Resources/Trait/protean.tres" id="2_6kp4b"]
@@ -7,10 +7,8 @@
 [ext_resource type="Resource" uid="uid://cq8dhafy2aqe5" path="res://Autoloads/Resources/Plays/Attack/Spirit/pepshot.tres" id="3_oao8d"]
 [ext_resource type="Resource" uid="uid://c2ibtbp2bmn5t" path="res://Autoloads/Resources/Trait/mimicry.tres" id="4_vm3i7"]
 [ext_resource type="Resource" uid="uid://bib4bmyqtq3o5" path="res://Autoloads/Resources/Plays/Attack/Body/mimic.tres" id="5_ets4y"]
-[ext_resource type="Texture2D" uid="uid://clu7wh30cnyov" path="res://Autoloads/Resources/Beastie/Squimage/squimage_idle.png" id="5_vm3i7"]
-[ext_resource type="Texture2D" uid="uid://de0xpjdoj7ipw" path="res://Autoloads/Resources/Beastie/Squimage/squimage_ready.png" id="6_6dh48"]
+[ext_resource type="Texture2D" uid="uid://c6fth5pf3k5hs" path="res://Autoloads/Resources/Beastie/Squimage/squimage_idle.png" id="5_vm3i7"]
 [ext_resource type="Resource" uid="uid://dxpdlo5hbqo7w" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="6_pvcld"]
-[ext_resource type="Texture2D" uid="uid://c7lqwd2u1xcgk" path="res://Autoloads/Resources/Beastie/Squimage/squimage_spike.png" id="7_48odk"]
 [ext_resource type="Resource" uid="uid://xuq2krgioyg5" path="res://Autoloads/Resources/Plays/Attack/Spirit/jammer.tres" id="7_y6ko1"]
 [ext_resource type="Resource" uid="uid://du31ndfut0hoa" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="9_cq7or"]
 [ext_resource type="Resource" uid="uid://bojb10i043gnl" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="11_g052h"]
@@ -44,8 +42,6 @@ possible_plays = Array[ExtResource("1_ml67k")]([ExtResource("3_oao8d"), ExtResou
 possible_traits = Array[ExtResource("2_lukmp")]([ExtResource("2_6kp4b"), ExtResource("4_vm3i7")])
 sprites = Dictionary[int, Texture2D]({
 0: ExtResource("5_vm3i7"),
-1: ExtResource("6_6dh48"),
-2: ExtResource("7_48odk"),
 6: ExtResource("49_pck11")
 })
 ball_anchor_position_receive = Vector2(58, -60)

@@ -1,28 +1,26 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=25 format=3 uid="uid://cqn5u6qc87guw"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=23 format=3 uid="uid://ca3c3e8x5k5o5"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_cyme1"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="2_kpbug"]
-[ext_resource type="Resource" uid="uid://c0w31jc1g46o" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="2_npfu7"]
-[ext_resource type="Resource" uid="uid://4k1sc4gshpvh" path="res://Autoloads/Resources/Plays/Attack/Body/nice_shot.tres" id="3_losrm"]
-[ext_resource type="Texture2D" uid="uid://cl1h8lqwqxf08" path="res://Autoloads/Resources/Beastie/Garood/garood_idle.png" id="3_x8peq"]
-[ext_resource type="Resource" uid="uid://chm7cp4ewi5bp" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_xrwlh"]
-[ext_resource type="Texture2D" uid="uid://1p1opuoavceq" path="res://Autoloads/Resources/Beastie/Garood/garood_ready.png" id="4_pu60j"]
-[ext_resource type="Texture2D" uid="uid://b6v5xjefxe04b" path="res://Autoloads/Resources/Beastie/Garood/garood_spike.png" id="5_vj4kr"]
-[ext_resource type="Resource" uid="uid://dgu38u1ul5b81" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="6_1e53r"]
-[ext_resource type="Resource" uid="uid://bfiq4v8y2mdcg" path="res://Autoloads/Resources/Plays/Attack/Body/zinger.tres" id="7_q0u62"]
-[ext_resource type="Resource" uid="uid://8wi04v1m7juh" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="9_vjvqm"]
+[ext_resource type="Resource" uid="uid://bqqsp4q4rpaet" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="2_npfu7"]
+[ext_resource type="Resource" uid="uid://cvelioeeooyfg" path="res://Autoloads/Resources/Plays/Attack/Body/nice_shot.tres" id="3_losrm"]
+[ext_resource type="Texture2D" uid="uid://331oqni05n4s" path="res://Autoloads/Resources/Beastie/Garood/garood_idle.png" id="3_x8peq"]
+[ext_resource type="Resource" uid="uid://cnrdrpp1ytwvq" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_xrwlh"]
+[ext_resource type="Resource" uid="uid://c6joa81j7k6sd" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="6_1e53r"]
+[ext_resource type="Resource" uid="uid://djcmrw24fjtuo" path="res://Autoloads/Resources/Plays/Attack/Body/zinger.tres" id="7_q0u62"]
+[ext_resource type="Resource" uid="uid://dc5fuxjba5vkb" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="9_vjvqm"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="10_klvd5"]
-[ext_resource type="Resource" uid="uid://bai86ceaem0cm" path="res://Autoloads/Resources/Trait/mischief.tres" id="11_4rwsp"]
-[ext_resource type="Resource" uid="uid://xd56b7iu3mlb" path="res://Autoloads/Resources/Trait/crowing.tres" id="12_621g8"]
-[ext_resource type="Resource" uid="uid://dkcf8so36ophe" path="res://Autoloads/Resources/Plays/Attack/Mind/tool.tres" id="15_gxj4f"]
-[ext_resource type="Resource" uid="uid://qhb7pc512xbi" path="res://Autoloads/Resources/Plays/Attack/Body/kneebender.tres" id="17_4bqjt"]
-[ext_resource type="Resource" uid="uid://o7g80igyrl8i" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="18_5ins0"]
-[ext_resource type="Resource" uid="uid://dodbnlxn2lj0d" path="res://Autoloads/Resources/Plays/Attack/Mind/roll_shot.tres" id="19_lidnj"]
-[ext_resource type="Resource" uid="uid://nv07j1vj53ct" path="res://Autoloads/Resources/Plays/Attack/Mind/heartbreaker.tres" id="20_t0523"]
-[ext_resource type="Resource" uid="uid://dt6bwolfdhgfb" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="21_2b100"]
-[ext_resource type="Resource" uid="uid://bj7gp00f8xtup" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="22_0vc86"]
-[ext_resource type="Resource" uid="uid://cf02nhbjoqjgf" path="res://Autoloads/Resources/Plays/Attack/Mind/pressure.tres" id="23_dsv3b"]
-[ext_resource type="Resource" uid="uid://du0svi4gto818" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="24_whffv"]
+[ext_resource type="Resource" uid="uid://dli3hdgytpobw" path="res://Autoloads/Resources/Trait/mischief.tres" id="11_4rwsp"]
+[ext_resource type="Resource" uid="uid://djcdjdoi0pvic" path="res://Autoloads/Resources/Trait/crowing.tres" id="12_621g8"]
+[ext_resource type="Resource" uid="uid://b4hy4c6g3y6kt" path="res://Autoloads/Resources/Plays/Attack/Mind/tool.tres" id="15_gxj4f"]
+[ext_resource type="Resource" uid="uid://br2xlvc1ky06q" path="res://Autoloads/Resources/Plays/Attack/Body/kneebender.tres" id="17_4bqjt"]
+[ext_resource type="Resource" uid="uid://bi278ctjoqvrt" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="18_5ins0"]
+[ext_resource type="Resource" uid="uid://dmv2tjd66i2td" path="res://Autoloads/Resources/Plays/Attack/Mind/roll_shot.tres" id="19_lidnj"]
+[ext_resource type="Resource" uid="uid://c8f8a3vv12co1" path="res://Autoloads/Resources/Plays/Attack/Mind/heartbreaker.tres" id="20_t0523"]
+[ext_resource type="Resource" uid="uid://dxpdlo5hbqo7w" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="21_2b100"]
+[ext_resource type="Resource" uid="uid://bycxj0vtn5bss" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="22_0vc86"]
+[ext_resource type="Resource" uid="uid://smdb12qjwch4" path="res://Autoloads/Resources/Plays/Attack/Mind/pressure.tres" id="23_dsv3b"]
+[ext_resource type="Resource" uid="uid://fbkol2rhhchv" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="24_whffv"]
 [ext_resource type="Texture2D" uid="uid://cb0c0hp2m8ox7" path="res://Autoloads/Resources/Beastie/Garood/icon_garood.png" id="44_moxll"]
 
 [resource]
@@ -42,8 +40,6 @@ possible_plays = Array[ExtResource("1_cyme1")]([ExtResource("3_xrwlh"), ExtResou
 possible_traits = Array[ExtResource("10_klvd5")]([ExtResource("11_4rwsp"), ExtResource("12_621g8")])
 sprites = Dictionary[int, Texture2D]({
 0: ExtResource("3_x8peq"),
-1: ExtResource("4_pu60j"),
-2: ExtResource("5_vj4kr"),
 6: ExtResource("44_moxll")
 })
 ball_anchor_position_receive = Vector2(9, -185)

@@ -2,7 +2,6 @@
 class_name BeastieColumn
 extends MarginContainer
 
-const SPRECKO = preload("res://Autoloads/Resources/Beastie/Sprecko/sprecko.tres")
 const FREE_BALL = preload("res://Autoloads/Resources/Plays/Attack/Body/free_ball.tres")
 const ICON_ROW_NET = preload("uid://i3su3ma1wc5")
 const ICON_ROW_BACK = preload("uid://dhs73i0hc16qu")
@@ -30,9 +29,10 @@ var current_attack : Attack = FREE_BALL:
 		_update_attack()
 
 
-var trait_one : Trait = SPRECKO.possible_traits[0].duplicate(true)
-var trait_two : Trait = SPRECKO.possible_traits[1].duplicate(true)
 var current_pos : Beastie.Position = Beastie.Position.UPPER_BACK
+
+@onready var trait_one : Trait = Global.SPRECKO.possible_traits[0].duplicate(true)
+@onready var trait_two : Trait = Global.SPRECKO.possible_traits[1].duplicate(true)
 
 @onready var beastie_row: BeastieRow = %BeastieRow
 
@@ -137,7 +137,7 @@ func _ready() -> void:
 
 	boost_row.reset_requested.connect(reset)
 
-	beastie = SPRECKO.duplicate(true)
+	beastie = Global.SPRECKO.duplicate(true)
 	_update_attack()
 
 

@@ -1,22 +1,20 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://35ei0kipj52m"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=17 format=3 uid="uid://cb3u1arsy7byc"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_vjhpb"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_ipj00"]
-[ext_resource type="Resource" uid="uid://bm47cji2a0kqh" path="res://Autoloads/Resources/Trait/watchtower.tres" id="2_mh4dv"]
-[ext_resource type="Resource" uid="uid://hox6njgubt5t" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="3_exssf"]
+[ext_resource type="Resource" uid="uid://wm3bnbsrsel" path="res://Autoloads/Resources/Trait/watchtower.tres" id="2_mh4dv"]
+[ext_resource type="Resource" uid="uid://dc0b8j0fujpbd" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="3_exssf"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_tr6kv"]
-[ext_resource type="Texture2D" uid="uid://cdbbfic7slk3m" path="res://Autoloads/Resources/Beastie/Demolipede/demolipede_idle.png" id="4_2wh55"]
-[ext_resource type="Resource" uid="uid://5v5kswe3b1pl" path="res://Autoloads/Resources/Trait/wallbreaker.tres" id="4_c46k2"]
-[ext_resource type="Texture2D" uid="uid://cb2ol33bdx8tn" path="res://Autoloads/Resources/Beastie/Demolipede/demolipede_ready.png" id="5_mh4dv"]
-[ext_resource type="Resource" uid="uid://bvn04obms7ax2" path="res://Autoloads/Resources/Plays/Attack/Body/sidewinder.tres" id="5_t0j7b"]
-[ext_resource type="Texture2D" uid="uid://ty83r14qp2q5" path="res://Autoloads/Resources/Beastie/Demolipede/demolipede_spike.png" id="6_c46k2"]
-[ext_resource type="Resource" uid="uid://bvxjlydy1d38x" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="7_kp8jf"]
-[ext_resource type="Resource" uid="uid://v37ifueojf8k" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="10_i1bp0"]
-[ext_resource type="Resource" uid="uid://dgerhmmgjkxn2" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="13_u3exc"]
-[ext_resource type="Resource" uid="uid://cxogqm0367lrk" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="14_cfuwo"]
-[ext_resource type="Resource" uid="uid://dekfo2slnoigr" path="res://Autoloads/Resources/Plays/Attack/Body/rocket.tres" id="15_5krhg"]
-[ext_resource type="Resource" uid="uid://c8icw3pvu0swl" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="16_224cx"]
-[ext_resource type="Resource" uid="uid://ciplmlyeefqm" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="17_gw4qo"]
+[ext_resource type="Texture2D" uid="uid://bouiwsp3uhda7" path="res://Autoloads/Resources/Beastie/Demolipede/demolipede_idle.png" id="4_2wh55"]
+[ext_resource type="Resource" uid="uid://bso8xjw2fie52" path="res://Autoloads/Resources/Trait/wallbreaker.tres" id="4_c46k2"]
+[ext_resource type="Resource" uid="uid://xatg4jj1ib0k" path="res://Autoloads/Resources/Plays/Attack/Body/sidewinder.tres" id="5_t0j7b"]
+[ext_resource type="Resource" uid="uid://ooe1a5sxb6wn" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="7_kp8jf"]
+[ext_resource type="Resource" uid="uid://b3bvfpjwplhwn" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="10_i1bp0"]
+[ext_resource type="Resource" uid="uid://dqbap051upqpl" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="13_u3exc"]
+[ext_resource type="Resource" uid="uid://32wc5cr5dtuo" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="14_cfuwo"]
+[ext_resource type="Resource" uid="uid://6lu5dwdsnlss" path="res://Autoloads/Resources/Plays/Attack/Body/rocket.tres" id="15_5krhg"]
+[ext_resource type="Resource" uid="uid://ddnch0ufpde3l" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="16_224cx"]
+[ext_resource type="Resource" uid="uid://51titaex4o3e" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="17_gw4qo"]
 [ext_resource type="Texture2D" uid="uid://lcw15gyrncmx" path="res://Autoloads/Resources/Beastie/Demolipede/icon_demolipede.png" id="35_eo6o0"]
 
 [resource]
@@ -36,8 +34,6 @@ possible_plays = Array[ExtResource("1_vjhpb")]([ExtResource("3_exssf"), ExtResou
 possible_traits = Array[ExtResource("2_ipj00")]([ExtResource("2_mh4dv"), ExtResource("4_c46k2")])
 sprites = Dictionary[int, Texture2D]({
 0: ExtResource("4_2wh55"),
-1: ExtResource("5_mh4dv"),
-2: ExtResource("6_c46k2"),
 6: ExtResource("35_eo6o0")
 })
 ball_anchor_position_receive = Vector2(-58, -142)

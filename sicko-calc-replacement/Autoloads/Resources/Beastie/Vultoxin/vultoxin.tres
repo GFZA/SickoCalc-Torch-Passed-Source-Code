@@ -1,20 +1,20 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://djmh6n54ngosp"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://k1dv4f1voch7"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_lotr1"]
-[ext_resource type="Resource" uid="uid://daxy5d58ldols" path="res://Autoloads/Resources/Trait/venom_touch.tres" id="2_er023"]
+[ext_resource type="Resource" uid="uid://dgjtsmaxf5xy2" path="res://Autoloads/Resources/Trait/venom_touch.tres" id="2_er023"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_qrcio"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_ufmhh"]
-[ext_resource type="Resource" uid="uid://chm7cp4ewi5bp" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="4_juce1"]
-[ext_resource type="Resource" uid="uid://do762o537gfm8" path="res://Autoloads/Resources/Trait/absorption.tres" id="4_xwxq8"]
-[ext_resource type="Texture2D" uid="uid://q7lxfnv15fry" path="res://Autoloads/Resources/Beastie/Vultoxin/vultoxin_idle.png" id="5_xwxq8"]
-[ext_resource type="Resource" uid="uid://bgg4s10j75g4l" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="6_4qfb3"]
+[ext_resource type="Resource" uid="uid://cnrdrpp1ytwvq" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="4_juce1"]
+[ext_resource type="Resource" uid="uid://cxq7k0072fthg" path="res://Autoloads/Resources/Trait/absorption.tres" id="4_xwxq8"]
+[ext_resource type="Texture2D" uid="uid://db8trsegmm31g" path="res://Autoloads/Resources/Beastie/Vultoxin/vultoxin_idle.png" id="5_xwxq8"]
+[ext_resource type="Resource" uid="uid://dfr4rlcnefv8y" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="6_4qfb3"]
 [ext_resource type="Texture2D" uid="uid://b7iunuidv7tk2" path="res://Autoloads/Resources/Beastie/Vultoxin/icon_vultoxin.png" id="6_ljxy3"]
-[ext_resource type="Resource" uid="uid://8wi04v1m7juh" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="9_s0hsy"]
-[ext_resource type="Resource" uid="uid://bp6cwp5r600rj" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="11_srkp1"]
-[ext_resource type="Resource" uid="uid://dodbnlxn2lj0d" path="res://Autoloads/Resources/Plays/Attack/Mind/roll_shot.tres" id="13_6aidh"]
-[ext_resource type="Resource" uid="uid://nwk5cfisjfoh" path="res://Autoloads/Resources/Plays/Attack/Mind/soulcursher.tres" id="14_vq2e6"]
-[ext_resource type="Resource" uid="uid://bj7gp00f8xtup" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="15_xqutf"]
-[ext_resource type="Resource" uid="uid://c7blujvv2w3vu" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="16_5tx70"]
+[ext_resource type="Resource" uid="uid://dc5fuxjba5vkb" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="9_s0hsy"]
+[ext_resource type="Resource" uid="uid://cod7yqucaq628" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="11_srkp1"]
+[ext_resource type="Resource" uid="uid://dmv2tjd66i2td" path="res://Autoloads/Resources/Plays/Attack/Mind/roll_shot.tres" id="13_6aidh"]
+[ext_resource type="Resource" uid="uid://dlf2eqay3itwo" path="res://Autoloads/Resources/Plays/Attack/Mind/soulcursher.tres" id="14_vq2e6"]
+[ext_resource type="Resource" uid="uid://bycxj0vtn5bss" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="15_xqutf"]
+[ext_resource type="Resource" uid="uid://b3ie8s030fuig" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="16_5tx70"]
 
 [resource]
 script = ExtResource("3_ufmhh")
@@ -33,8 +33,6 @@ possible_plays = Array[ExtResource("1_lotr1")]([ExtResource("4_juce1"), ExtResou
 possible_traits = Array[ExtResource("2_qrcio")]([ExtResource("2_er023"), ExtResource("4_xwxq8")])
 sprites = Dictionary[int, Texture2D]({
 0: ExtResource("5_xwxq8"),
-1: ExtResource("5_xwxq8"),
-2: ExtResource("5_xwxq8"),
 6: ExtResource("6_ljxy3")
 })
 ball_anchor_position_receive = Vector2(90, -95)

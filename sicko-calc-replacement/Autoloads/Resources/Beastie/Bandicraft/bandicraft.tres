@@ -1,14 +1,12 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=23 format=3 uid="uid://dr6dti4ow55uy"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=21 format=3 uid="uid://0aqaqwnuvxdc"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_mjbct"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_c0oaa"]
 [ext_resource type="Resource" uid="uid://1q4bohxic4he" path="res://Autoloads/Resources/Trait/full_focus.tres" id="2_x4xr0"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_xmliq"]
 [ext_resource type="Resource" uid="uid://cnrdrpp1ytwvq" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="4_55egs"]
-[ext_resource type="Texture2D" uid="uid://cgktl48x6q3qc" path="res://Autoloads/Resources/Beastie/Bandicraft/bandicraft_idle.png" id="4_74g53"]
-[ext_resource type="Texture2D" uid="uid://dbytifmcunnvm" path="res://Autoloads/Resources/Beastie/Bandicraft/bandicraft_ready.png" id="5_x4xr0"]
+[ext_resource type="Texture2D" uid="uid://bjrp7335b1hkc" path="res://Autoloads/Resources/Beastie/Bandicraft/bandicraft_idle.png" id="4_74g53"]
 [ext_resource type="Resource" uid="uid://dxpdlo5hbqo7w" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="6_d36xi"]
-[ext_resource type="Texture2D" uid="uid://wlgsr8f22hdl" path="res://Autoloads/Resources/Beastie/Bandicraft/bandicraft_spike.png" id="6_kkor3"]
 [ext_resource type="Resource" uid="uid://c6cpdi5nq4tlw" path="res://Autoloads/Resources/Plays/Attack/Mind/zigzag.tres" id="9_edcip"]
 [ext_resource type="Resource" uid="uid://b4hy4c6g3y6kt" path="res://Autoloads/Resources/Plays/Attack/Mind/tool.tres" id="13_kabuh"]
 [ext_resource type="Resource" uid="uid://cvelioeeooyfg" path="res://Autoloads/Resources/Plays/Attack/Body/nice_shot.tres" id="15_6doac"]
@@ -40,8 +38,6 @@ possible_plays = Array[ExtResource("1_mjbct")]([ExtResource("4_55egs"), ExtResou
 possible_traits = Array[ExtResource("2_c0oaa")]([ExtResource("2_x4xr0"), ExtResource("36_hwn4f")])
 sprites = Dictionary[int, Texture2D]({
 0: ExtResource("4_74g53"),
-1: ExtResource("5_x4xr0"),
-2: ExtResource("6_kkor3"),
 6: ExtResource("44_u75hd")
 })
 ball_anchor_position_receive = Vector2(46, -113)

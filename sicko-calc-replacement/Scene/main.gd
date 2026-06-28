@@ -65,9 +65,9 @@ func _ready() -> void:
 	)
 
 	reset_all_button.pressed.connect(func():
-		left_beastie_column.beastie = left_beastie_column.SPRECKO.duplicate(true)
+		left_beastie_column.beastie = Global.SPRECKO.duplicate(true)
 		left_beastie_column.boost_row.reset_all_ui() # will signal up to column and reset it too
-		right_beastie_column.beastie = right_beastie_column.SPRECKO.duplicate(true)
+		right_beastie_column.beastie = Global.SPRECKO.duplicate(true)
 		right_beastie_column.boost_row.reset_all_ui() # will signal up to column and reset it too
 		cheerleader_button.button_pressed = false
 		friendship_button.button_pressed = false

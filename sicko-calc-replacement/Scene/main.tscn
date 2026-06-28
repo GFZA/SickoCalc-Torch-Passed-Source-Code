@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://6tifqer1os1t"]
+[gd_scene load_steps=34 format=3 uid="uid://6tifqer1os1t"]
 
 [ext_resource type="PackedScene" uid="uid://c0rfhniciamxq" path="res://Scene/SelectUIs/select_uis.tscn" id="1_f6udf"]
 [ext_resource type="Script" uid="uid://b5jcl1uu04k63" path="res://Scene/main.gd" id="1_r34rm"]
@@ -22,15 +22,44 @@
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="14_mepbf"]
 [ext_resource type="Resource" uid="uid://b2f4ajbr7hmk5" path="res://Autoloads/Resources/Trait/cleanup.tres" id="15_dvq1j"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="16_50v0s"]
-[ext_resource type="Texture2D" uid="uid://t0k5liylbitw" path="res://Autoloads/Resources/Beastie/Sprecko/sprecko_idle.png" id="17_mu7ye"]
-[ext_resource type="Texture2D" uid="uid://b2vehc3so4hkq" path="res://Autoloads/Resources/Beastie/Sprecko/sprecko_ready.png" id="18_2oiod"]
-[ext_resource type="Texture2D" uid="uid://bsw2hjdchiote" path="res://Autoloads/Resources/Beastie/Sprecko/sprecko_spike.png" id="19_8bkap"]
+[ext_resource type="Texture2D" uid="uid://xha50cqawqku" path="res://Autoloads/Resources/Beastie/Sprecko/sprecko_idle.png" id="17_mu7ye"]
 [ext_resource type="Texture2D" uid="uid://bmkrey7wnjpt" path="res://Autoloads/Resources/Beastie/Sprecko/icon_sprecko.png" id="20_b0nqf"]
 [ext_resource type="Texture2D" uid="uid://0a5xkw4orq58" path="res://Autoloads/Misc/main_ui_bg_tile_4.png" id="23_nyb1q"]
 [ext_resource type="Theme" uid="uid://bkrlwg21fhprn" path="res://Autoloads/Resources/Themes/edit_button.tres" id="24_xw8bv"]
 [ext_resource type="Theme" uid="uid://cp230picecare" path="res://Autoloads/Resources/Themes/edit_button_for_button_group.tres" id="26_wimqa"]
 [ext_resource type="PackedScene" uid="uid://8034fwfywq3r" path="res://Scene/BeastieColumn/number_ui_alt.tscn" id="27_t372l"]
 [ext_resource type="Script" uid="uid://dv7bjfhfn4rs3" path="res://Scene/team_contoller.gd" id="27_xw8bv"]
+
+[sub_resource type="Resource" id="Resource_t372l"]
+script = ExtResource("14_mepbf")
+name = "Scavenger"
+description = "Restores 25 STAMINA when TAGGED OUT"
+metadata/_custom_type_script = "uid://bslfuaragw1g7"
+
+[sub_resource type="Resource" id="Resource_uctnp"]
+script = ExtResource("16_50v0s")
+my_plays = Array[ExtResource("3_hiice")]([ExtResource("4_aam5o"), null, null])
+my_trait = SubResource("Resource_t372l")
+current_boosts = Dictionary[int, int]({
+0: 0,
+1: 0,
+2: 0,
+3: 0,
+4: 0,
+5: 0
+})
+is_nfe = true
+bar_color = Color(0.68235296, 0.92941177, 0.5764706, 1)
+possible_plays = Array[ExtResource("3_hiice")]([ExtResource("5_pqe63"), ExtResource("6_aam5o"), ExtResource("7_nyb1q"), ExtResource("8_xw8bv"), ExtResource("9_wimqa"), ExtResource("10_t372l"), ExtResource("11_uctnp"), ExtResource("12_m37ut"), ExtResource("13_yoaul")])
+possible_traits = Array[ExtResource("14_mepbf")]([ExtResource("4_sor6r"), ExtResource("15_dvq1j")])
+sprites = Dictionary[int, Texture2D]({
+0: ExtResource("17_mu7ye"),
+6: ExtResource("20_b0nqf")
+})
+y_offset = -5
+ball_anchor_position_receive = Vector2(10, -52)
+ball_anchor_position_ready = Vector2(60, -85)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"
 
 [sub_resource type="Resource" id="Resource_m37ut"]
 script = ExtResource("14_mepbf")
@@ -40,7 +69,7 @@ metadata/_custom_type_script = "uid://bslfuaragw1g7"
 
 [sub_resource type="Resource" id="Resource_yoaul"]
 script = ExtResource("16_50v0s")
-my_plays = Array[ExtResource("3_hiice")]([ExtResource("4_aam5o"), null, null])
+my_plays = Array[ExtResource("3_hiice")]([null, null, null])
 my_trait = SubResource("Resource_m37ut")
 current_boosts = Dictionary[int, int]({
 0: 0,
@@ -56,41 +85,6 @@ possible_plays = Array[ExtResource("3_hiice")]([ExtResource("5_pqe63"), ExtResou
 possible_traits = Array[ExtResource("14_mepbf")]([ExtResource("4_sor6r"), ExtResource("15_dvq1j")])
 sprites = Dictionary[int, Texture2D]({
 0: ExtResource("17_mu7ye"),
-1: ExtResource("18_2oiod"),
-2: ExtResource("19_8bkap"),
-6: ExtResource("20_b0nqf")
-})
-y_offset = -5
-ball_anchor_position_receive = Vector2(10, -52)
-ball_anchor_position_ready = Vector2(60, -85)
-metadata/_custom_type_script = "uid://ehabj4qsgxpl"
-
-[sub_resource type="Resource" id="Resource_mepbf"]
-script = ExtResource("14_mepbf")
-name = "Scavenger"
-description = "Restores 25 STAMINA when TAGGED OUT"
-metadata/_custom_type_script = "uid://bslfuaragw1g7"
-
-[sub_resource type="Resource" id="Resource_dvq1j"]
-script = ExtResource("16_50v0s")
-my_plays = Array[ExtResource("3_hiice")]([null, null, null])
-my_trait = SubResource("Resource_mepbf")
-current_boosts = Dictionary[int, int]({
-0: 0,
-1: 0,
-2: 0,
-3: 0,
-4: 0,
-5: 0
-})
-is_nfe = true
-bar_color = Color(0.68235296, 0.92941177, 0.5764706, 1)
-possible_plays = Array[ExtResource("3_hiice")]([ExtResource("5_pqe63"), ExtResource("6_aam5o"), ExtResource("7_nyb1q"), ExtResource("8_xw8bv"), ExtResource("9_wimqa"), ExtResource("10_t372l"), ExtResource("11_uctnp"), ExtResource("12_m37ut"), ExtResource("13_yoaul")])
-possible_traits = Array[ExtResource("14_mepbf")]([ExtResource("4_sor6r"), ExtResource("15_dvq1j")])
-sprites = Dictionary[int, Texture2D]({
-0: ExtResource("17_mu7ye"),
-1: ExtResource("18_2oiod"),
-2: ExtResource("19_8bkap"),
 6: ExtResource("20_b0nqf")
 })
 y_offset = -5
@@ -255,7 +249,7 @@ alignment = 1
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 2
-beastie = SubResource("Resource_yoaul")
+beastie = SubResource("Resource_uctnp")
 
 [node name="MiddleMarginContainer" type="MarginContainer" parent="MainContainer"]
 layout_mode = 2
@@ -399,7 +393,7 @@ vertical_icon_alignment = 0
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 10
-beastie = SubResource("Resource_dvq1j")
+beastie = SubResource("Resource_yoaul")
 side = 1
 
 [node name="SelectUIs" parent="." instance=ExtResource("1_f6udf")]

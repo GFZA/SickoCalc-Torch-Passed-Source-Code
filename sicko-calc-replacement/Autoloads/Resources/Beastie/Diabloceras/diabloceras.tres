@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=24 format=3 uid="uid://b8d23jx2jg0ff"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=24 format=3 uid="uid://bg7wdka2uuk1r"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_7vuc1"]
 [ext_resource type="Resource" uid="uid://cdtatdc12icql" path="res://Autoloads/Resources/Trait/overwrite.tres" id="2_7fdah"]
@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_8rjds"]
 [ext_resource type="Resource" uid="uid://cq8dhafy2aqe5" path="res://Autoloads/Resources/Plays/Attack/Spirit/pepshot.tres" id="3_aogw2"]
 [ext_resource type="Resource" uid="uid://bib4bmyqtq3o5" path="res://Autoloads/Resources/Plays/Attack/Body/mimic.tres" id="5_g1aol"]
-[ext_resource type="Texture2D" uid="uid://cdhrbpdu8rqqw" path="res://Autoloads/Resources/Beastie/Diabloceras/diabloceras_idle.png" id="5_vbuyd"]
+[ext_resource type="Texture2D" uid="uid://cuv5vygcmeipi" path="res://Autoloads/Resources/Beastie/Diabloceras/diabloceras_idle.png" id="5_vbuyd"]
 [ext_resource type="Resource" uid="uid://bqqsp4q4rpaet" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="6_idgjv"]
 [ext_resource type="Texture2D" uid="uid://dgw7fyeacdjcg" path="res://Autoloads/Resources/Beastie/Diabloceras/icon_diabloceras.png" id="6_w2102"]
 [ext_resource type="Resource" uid="uid://xuq2krgioyg5" path="res://Autoloads/Resources/Plays/Attack/Spirit/jammer.tres" id="7_qk0wt"]
@@ -41,8 +41,6 @@ possible_plays = Array[ExtResource("1_7vuc1")]([ExtResource("3_aogw2"), ExtResou
 possible_traits = Array[ExtResource("2_gt5ta")]([ExtResource("2_7fdah")])
 sprites = Dictionary[int, Texture2D]({
 0: ExtResource("5_vbuyd"),
-1: ExtResource("5_vbuyd"),
-2: ExtResource("5_vbuyd"),
 6: ExtResource("6_w2102")
 })
 ball_anchor_position_receive = Vector2(0, -58)

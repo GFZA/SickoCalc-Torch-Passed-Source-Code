@@ -1,25 +1,23 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=22 format=3 uid="uid://j1047xxunjvs"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=20 format=3 uid="uid://m2fl5llb0gg8"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_73p0a"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_7ssa4"]
-[ext_resource type="Resource" uid="uid://nglbldkw8c6n" path="res://Autoloads/Resources/Trait/clamor.tres" id="2_x54fp"]
+[ext_resource type="Resource" uid="uid://byb3yv1birorx" path="res://Autoloads/Resources/Trait/clamor.tres" id="2_x54fp"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_5bbos"]
-[ext_resource type="Resource" uid="uid://du0svi4gto818" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="3_bquwo"]
-[ext_resource type="Resource" uid="uid://3m4wp7g4buyd" path="res://Autoloads/Resources/Trait/annoying.tres" id="4_3jda1"]
-[ext_resource type="Texture2D" uid="uid://ck3nlr7pjkymg" path="res://Autoloads/Resources/Beastie/Noizard/noizard_idle.png" id="5_3jda1"]
-[ext_resource type="Resource" uid="uid://bcr7xnr07v278" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="6_apbvt"]
-[ext_resource type="Texture2D" uid="uid://cus7a8s6nef4h" path="res://Autoloads/Resources/Beastie/Noizard/noizard_ready.png" id="6_qraw8"]
-[ext_resource type="Texture2D" uid="uid://b2dlecafjowf7" path="res://Autoloads/Resources/Beastie/Noizard/noizard_spike.png" id="7_nsutj"]
-[ext_resource type="Resource" uid="uid://bijgrhbki1aqo" path="res://Autoloads/Resources/Plays/Attack/Mind/slice.tres" id="9_ismyd"]
-[ext_resource type="Resource" uid="uid://bkck3t5a2wv3f" path="res://Autoloads/Resources/Plays/Attack/Spirit/scream.tres" id="11_ltc6c"]
-[ext_resource type="Resource" uid="uid://buvtgtcjmm2y2" path="res://Autoloads/Resources/Plays/Attack/Mind/dump.tres" id="13_6ijr2"]
-[ext_resource type="Resource" uid="uid://cbqqeeugk7xo0" path="res://Autoloads/Resources/Plays/Attack/Spirit/desperate_force.tres" id="14_7r1ws"]
-[ext_resource type="Resource" uid="uid://dtkos0xt4rmf" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="15_l61lq"]
-[ext_resource type="Resource" uid="uid://bgg4s10j75g4l" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="16_04v6f"]
-[ext_resource type="Resource" uid="uid://bj7gp00f8xtup" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="17_g021q"]
-[ext_resource type="Resource" uid="uid://cr27dbuxid5hy" path="res://Autoloads/Resources/Plays/Attack/Mind/pierce.tres" id="18_r60gt"]
-[ext_resource type="Resource" uid="uid://7uoncfn55rjb" path="res://Autoloads/Resources/Plays/Attack/Mind/cornershot.tres" id="19_f2wsh"]
-[ext_resource type="Resource" uid="uid://hwqaqcj1j4lq" path="res://Autoloads/Resources/Plays/Attack/Mind/precision_strike.tres" id="20_wf7qs"]
+[ext_resource type="Resource" uid="uid://fbkol2rhhchv" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="3_bquwo"]
+[ext_resource type="Resource" uid="uid://l1wlxe5rft2l" path="res://Autoloads/Resources/Trait/annoying.tres" id="4_3jda1"]
+[ext_resource type="Texture2D" uid="uid://dc8r4aaj2qbu0" path="res://Autoloads/Resources/Beastie/Noizard/noizard_idle.png" id="5_3jda1"]
+[ext_resource type="Resource" uid="uid://bosg46t132k5k" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="6_apbvt"]
+[ext_resource type="Resource" uid="uid://cpue5n2qo6k4j" path="res://Autoloads/Resources/Plays/Attack/Mind/slice.tres" id="9_ismyd"]
+[ext_resource type="Resource" uid="uid://c8alcpfh6p0m0" path="res://Autoloads/Resources/Plays/Attack/Spirit/scream.tres" id="11_ltc6c"]
+[ext_resource type="Resource" uid="uid://cme5s0ruaay2q" path="res://Autoloads/Resources/Plays/Attack/Mind/dump.tres" id="13_6ijr2"]
+[ext_resource type="Resource" uid="uid://c18abdsio1qy3" path="res://Autoloads/Resources/Plays/Attack/Spirit/desperate_force.tres" id="14_7r1ws"]
+[ext_resource type="Resource" uid="uid://cya1yqpm1hk8m" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="15_l61lq"]
+[ext_resource type="Resource" uid="uid://dfr4rlcnefv8y" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="16_04v6f"]
+[ext_resource type="Resource" uid="uid://bycxj0vtn5bss" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="17_g021q"]
+[ext_resource type="Resource" uid="uid://d3do2oh5f2miw" path="res://Autoloads/Resources/Plays/Attack/Mind/pierce.tres" id="18_r60gt"]
+[ext_resource type="Resource" uid="uid://b6xyao2ghmtij" path="res://Autoloads/Resources/Plays/Attack/Mind/cornershot.tres" id="19_f2wsh"]
+[ext_resource type="Resource" uid="uid://cwwdwghrp4cco" path="res://Autoloads/Resources/Plays/Attack/Mind/precision_strike.tres" id="20_wf7qs"]
 [ext_resource type="Texture2D" uid="uid://bih1v7srk7dxs" path="res://Autoloads/Resources/Beastie/Noizard/icon_noizard.png" id="39_setp5"]
 
 [resource]
@@ -38,8 +36,6 @@ possible_plays = Array[ExtResource("1_73p0a")]([ExtResource("3_bquwo"), ExtResou
 possible_traits = Array[ExtResource("2_7ssa4")]([ExtResource("2_x54fp"), ExtResource("4_3jda1")])
 sprites = Dictionary[int, Texture2D]({
 0: ExtResource("5_3jda1"),
-1: ExtResource("6_qraw8"),
-2: ExtResource("7_nsutj"),
 6: ExtResource("39_setp5")
 })
 ball_anchor_position_receive = Vector2(67, -134)

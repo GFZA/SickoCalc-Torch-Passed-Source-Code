@@ -1,21 +1,21 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=17 format=3 uid="uid://dfeffe0um0ngp"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=17 format=3 uid="uid://dxa1qpsb3mgbo"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_5701n"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_7c8yp"]
-[ext_resource type="Resource" uid="uid://cqyrnc8yf26wn" path="res://Autoloads/Resources/Trait/in_the_clouds.tres" id="2_l3acx"]
+[ext_resource type="Resource" uid="uid://dh45ok8523d0m" path="res://Autoloads/Resources/Trait/in_the_clouds.tres" id="2_l3acx"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_715g1"]
-[ext_resource type="Resource" uid="uid://bfiq4v8y2mdcg" path="res://Autoloads/Resources/Plays/Attack/Body/zinger.tres" id="3_ha0xy"]
-[ext_resource type="Texture2D" uid="uid://8vym0icmu11g" path="res://Autoloads/Resources/Beastie/Deluja/deluja_idle.png" id="5_fflrt"]
-[ext_resource type="Resource" uid="uid://cgp0jnuk0thpe" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="5_rtp85"]
+[ext_resource type="Resource" uid="uid://djcmrw24fjtuo" path="res://Autoloads/Resources/Plays/Attack/Body/zinger.tres" id="3_ha0xy"]
+[ext_resource type="Texture2D" uid="uid://dl85cu45jonwm" path="res://Autoloads/Resources/Beastie/Deluja/deluja_idle.png" id="5_fflrt"]
+[ext_resource type="Resource" uid="uid://de4i64x6vnp7m" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="5_rtp85"]
 [ext_resource type="Texture2D" uid="uid://ckgwknseoppvs" path="res://Autoloads/Resources/Beastie/Deluja/icon_deluja.png" id="6_4cn4a"]
-[ext_resource type="Resource" uid="uid://cxogqm0367lrk" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="8_ognuf"]
-[ext_resource type="Resource" uid="uid://co6kokb12dkt0" path="res://Autoloads/Resources/Plays/Attack/Body/true_strike.tres" id="10_4tam6"]
-[ext_resource type="Resource" uid="uid://bdd70o1kybaux" path="res://Autoloads/Resources/Plays/Attack/Body/hyperspike.tres" id="13_o5tbr"]
-[ext_resource type="Resource" uid="uid://c36rtva2s671" path="res://Autoloads/Resources/Plays/Attack/Body/thunder.tres" id="14_rttdh"]
-[ext_resource type="Resource" uid="uid://4k1sc4gshpvh" path="res://Autoloads/Resources/Plays/Attack/Body/nice_shot.tres" id="15_02eo7"]
-[ext_resource type="Resource" uid="uid://bvxjlydy1d38x" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="16_yfr2u"]
-[ext_resource type="Resource" uid="uid://djku0a8qnembc" path="res://Autoloads/Resources/Plays/Attack/Body/boom.tres" id="17_3cg3p"]
-[ext_resource type="Resource" uid="uid://r8p64is70rc7" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="18_xarlr"]
+[ext_resource type="Resource" uid="uid://32wc5cr5dtuo" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="8_ognuf"]
+[ext_resource type="Resource" uid="uid://rou4ol1fdo40" path="res://Autoloads/Resources/Plays/Attack/Body/true_strike.tres" id="10_4tam6"]
+[ext_resource type="Resource" uid="uid://deeuy477kp33d" path="res://Autoloads/Resources/Plays/Attack/Body/hyperspike.tres" id="13_o5tbr"]
+[ext_resource type="Resource" uid="uid://khv754wvrclb" path="res://Autoloads/Resources/Plays/Attack/Body/thunder.tres" id="14_rttdh"]
+[ext_resource type="Resource" uid="uid://cvelioeeooyfg" path="res://Autoloads/Resources/Plays/Attack/Body/nice_shot.tres" id="15_02eo7"]
+[ext_resource type="Resource" uid="uid://ooe1a5sxb6wn" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="16_yfr2u"]
+[ext_resource type="Resource" uid="uid://bpdws38adgj1d" path="res://Autoloads/Resources/Plays/Attack/Body/boom.tres" id="17_3cg3p"]
+[ext_resource type="Resource" uid="uid://du31ndfut0hoa" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="18_xarlr"]
 
 [resource]
 script = ExtResource("3_715g1")
@@ -34,8 +34,6 @@ possible_plays = Array[ExtResource("1_5701n")]([ExtResource("3_ha0xy"), ExtResou
 possible_traits = Array[ExtResource("2_7c8yp")]([ExtResource("2_l3acx")])
 sprites = Dictionary[int, Texture2D]({
 0: ExtResource("5_fflrt"),
-1: ExtResource("5_fflrt"),
-2: ExtResource("5_fflrt"),
 6: ExtResource("6_4cn4a")
 })
 ball_anchor_position_receive = Vector2(60, -115)

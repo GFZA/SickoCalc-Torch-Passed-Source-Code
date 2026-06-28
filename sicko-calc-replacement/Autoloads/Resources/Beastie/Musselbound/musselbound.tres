@@ -1,24 +1,22 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=20 format=3 uid="uid://cdotysovl5jjd"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://b5u5c7ivu8fbe"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_eeoda"]
-[ext_resource type="Resource" uid="uid://bjdlgptor1xj" path="res://Autoloads/Resources/Trait/musclebrain.tres" id="2_4s8pt"]
+[ext_resource type="Resource" uid="uid://bgee3b51ommgl" path="res://Autoloads/Resources/Trait/musclebrain.tres" id="2_4s8pt"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_oo7lv"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_4s8pt"]
-[ext_resource type="Resource" uid="uid://o7g80igyrl8i" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_ffki4"]
-[ext_resource type="Texture2D" uid="uid://bptnsn8xf1o31" path="res://Autoloads/Resources/Beastie/Musselbound/musselbound_idle.png" id="5_y5hl2"]
-[ext_resource type="Resource" uid="uid://gpx5prmyyhwg" path="res://Autoloads/Resources/Plays/Attack/Mind/zigzag.tres" id="6_pg5xa"]
-[ext_resource type="Texture2D" uid="uid://bdnb4mshg6xyv" path="res://Autoloads/Resources/Beastie/Musselbound/musselbound_ready.png" id="6_yt016"]
-[ext_resource type="Texture2D" uid="uid://dxj22m61rgjtt" path="res://Autoloads/Resources/Beastie/Musselbound/musselbound_spike.png" id="7_xxanx"]
-[ext_resource type="Resource" uid="uid://c2ojjw3lmvows" path="res://Autoloads/Resources/Plays/Attack/Body/muscle_memory.tres" id="8_txfmq"]
-[ext_resource type="Resource" uid="uid://v37ifueojf8k" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="10_nu8ks"]
-[ext_resource type="Resource" uid="uid://dodbnlxn2lj0d" path="res://Autoloads/Resources/Plays/Attack/Mind/roll_shot.tres" id="11_caays"]
+[ext_resource type="Resource" uid="uid://bi278ctjoqvrt" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_ffki4"]
+[ext_resource type="Texture2D" uid="uid://b0tp7jvqu5knr" path="res://Autoloads/Resources/Beastie/Musselbound/musselbound_idle.png" id="5_y5hl2"]
+[ext_resource type="Resource" uid="uid://c6cpdi5nq4tlw" path="res://Autoloads/Resources/Plays/Attack/Mind/zigzag.tres" id="6_pg5xa"]
+[ext_resource type="Resource" uid="uid://b1hvdsyb5bx4b" path="res://Autoloads/Resources/Plays/Attack/Body/muscle_memory.tres" id="8_txfmq"]
+[ext_resource type="Resource" uid="uid://b3bvfpjwplhwn" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="10_nu8ks"]
+[ext_resource type="Resource" uid="uid://dmv2tjd66i2td" path="res://Autoloads/Resources/Plays/Attack/Mind/roll_shot.tres" id="11_caays"]
 [ext_resource type="Texture2D" uid="uid://ca6vfogwbwv1d" path="res://Autoloads/Resources/Beastie/Musselbound/icon_musselbound.png" id="11_kpk0b"]
-[ext_resource type="Resource" uid="uid://dgerhmmgjkxn2" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="13_phy40"]
-[ext_resource type="Resource" uid="uid://c8icw3pvu0swl" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="14_uc22x"]
-[ext_resource type="Resource" uid="uid://bsekeiw2v13qd" path="res://Autoloads/Resources/Plays/Attack/Spirit/relentless.tres" id="15_hheoh"]
-[ext_resource type="Resource" uid="uid://fysaq1o88o1v" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="16_r1bcm"]
-[ext_resource type="Resource" uid="uid://8wi04v1m7juh" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="17_b1gf2"]
-[ext_resource type="Resource" uid="uid://c0w31jc1g46o" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="18_f6ywi"]
+[ext_resource type="Resource" uid="uid://dqbap051upqpl" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="13_phy40"]
+[ext_resource type="Resource" uid="uid://ddnch0ufpde3l" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="14_uc22x"]
+[ext_resource type="Resource" uid="uid://dumv8ybmwmdqs" path="res://Autoloads/Resources/Plays/Attack/Spirit/relentless.tres" id="15_hheoh"]
+[ext_resource type="Resource" uid="uid://c0hsvmpto8e3s" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="16_r1bcm"]
+[ext_resource type="Resource" uid="uid://dc5fuxjba5vkb" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="17_b1gf2"]
+[ext_resource type="Resource" uid="uid://bqqsp4q4rpaet" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="18_f6ywi"]
 
 [resource]
 script = ExtResource("3_4s8pt")
@@ -37,8 +35,6 @@ possible_plays = Array[ExtResource("1_eeoda")]([ExtResource("3_ffki4"), ExtResou
 possible_traits = Array[ExtResource("2_oo7lv")]([ExtResource("2_4s8pt")])
 sprites = Dictionary[int, Texture2D]({
 0: ExtResource("5_y5hl2"),
-1: ExtResource("6_yt016"),
-2: ExtResource("7_xxanx"),
 6: ExtResource("11_kpk0b")
 })
 ball_anchor_position_receive = Vector2(17, -73)

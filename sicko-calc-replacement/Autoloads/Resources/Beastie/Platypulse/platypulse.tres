@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=21 format=3 uid="uid://bknbk6rm1tf57"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://b56twkbr2gu38"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_q2b64"]
 [ext_resource type="Resource" uid="uid://ct7431wre3ug2" path="res://Autoloads/Resources/Trait/neural_net.tres" id="2_f806a"]
@@ -16,9 +16,7 @@
 [ext_resource type="Resource" uid="uid://bycxj0vtn5bss" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="16_ykitg"]
 [ext_resource type="Resource" uid="uid://d3do2oh5f2miw" path="res://Autoloads/Resources/Plays/Attack/Mind/pierce.tres" id="18_pu6x1"]
 [ext_resource type="Resource" uid="uid://b3ie8s030fuig" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="19_5f0ih"]
-[ext_resource type="Texture2D" uid="uid://c12duvh85naqs" path="res://Autoloads/Resources/Beastie/Platypulse/platypulse_idle.png" id="34_6boed"]
-[ext_resource type="Texture2D" uid="uid://b81grymquqcpx" path="res://Autoloads/Resources/Beastie/Platypulse/platypulse_ready.png" id="35_wf15q"]
-[ext_resource type="Texture2D" uid="uid://d1kmw5cbgryma" path="res://Autoloads/Resources/Beastie/Platypulse/platypulse_spike.png" id="36_nu00v"]
+[ext_resource type="Texture2D" uid="uid://d3b3857jlw878" path="res://Autoloads/Resources/Beastie/Platypulse/platypulse_idle.png" id="34_6boed"]
 [ext_resource type="Texture2D" uid="uid://ckjtr70282d3o" path="res://Autoloads/Resources/Beastie/Platypulse/icon_platypulse.png" id="40_0vn3a"]
 
 [resource]
@@ -38,8 +36,6 @@ possible_plays = Array[ExtResource("1_q2b64")]([ExtResource("3_0b1tr"), ExtResou
 possible_traits = Array[ExtResource("2_pjspl")]([ExtResource("2_f806a")])
 sprites = Dictionary[int, Texture2D]({
 0: ExtResource("34_6boed"),
-1: ExtResource("35_wf15q"),
-2: ExtResource("36_nu00v"),
 6: ExtResource("40_0vn3a")
 })
 ball_anchor_position_receive = Vector2(55, -126)

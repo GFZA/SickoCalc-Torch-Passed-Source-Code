@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://f0f78p8mvn1a"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://dfnjhwtq7dj3h"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_e3agr"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_l1gr1"]
@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_nt2fm"]
 [ext_resource type="Resource" uid="uid://dc0b8j0fujpbd" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="4_ffuyq"]
 [ext_resource type="Resource" uid="uid://c5g053pe7ju8c" path="res://Autoloads/Resources/Trait/groove.tres" id="4_rsmqe"]
-[ext_resource type="Texture2D" uid="uid://ckfsadthwrj25" path="res://Autoloads/Resources/Beastie/Mascurry/mascurry_idle.png" id="5_rsmqe"]
+[ext_resource type="Texture2D" uid="uid://bo2s2oijipqo2" path="res://Autoloads/Resources/Beastie/Mascurry/mascurry_idle.png" id="5_rsmqe"]
 [ext_resource type="Texture2D" uid="uid://boxtq3yiabyd1" path="res://Autoloads/Resources/Beastie/Mascurry/icon_mascurry.png" id="6_fsaa6"]
 [ext_resource type="Resource" uid="uid://br2xlvc1ky06q" path="res://Autoloads/Resources/Plays/Attack/Body/kneebender.tres" id="7_6nbad"]
 [ext_resource type="Resource" uid="uid://bko08dievjnfg" path="res://Autoloads/Resources/Plays/Attack/Body/stomp.tres" id="9_qx1tt"]
@@ -33,8 +33,6 @@ possible_plays = Array[ExtResource("1_e3agr")]([ExtResource("4_ffuyq"), ExtResou
 possible_traits = Array[ExtResource("2_l1gr1")]([ExtResource("2_uk7iy"), ExtResource("4_rsmqe")])
 sprites = Dictionary[int, Texture2D]({
 0: ExtResource("5_rsmqe"),
-1: ExtResource("5_rsmqe"),
-2: ExtResource("5_rsmqe"),
 6: ExtResource("6_fsaa6")
 })
 ball_anchor_position_receive = Vector2(13, -105)

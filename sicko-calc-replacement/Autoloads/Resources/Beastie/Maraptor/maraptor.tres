@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=24 format=3 uid="uid://cuiojyjv1254s"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=24 format=3 uid="uid://dlo5kes1xjx7a"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_q33om"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_0u8y0"]
@@ -7,7 +7,7 @@
 [ext_resource type="Resource" uid="uid://cnrdrpp1ytwvq" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_bdvuj"]
 [ext_resource type="Texture2D" uid="uid://cfyjrw1g3dsir" path="res://Autoloads/Resources/Beastie/Maraptor/icon_maraptor.png" id="5_eeusj"]
 [ext_resource type="Resource" uid="uid://de4i64x6vnp7m" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="5_v8gxa"]
-[ext_resource type="Texture2D" uid="uid://eue8xgaqmona" path="res://Autoloads/Resources/Beastie/Maraptor/maraptor_idle.png" id="6_lugme"]
+[ext_resource type="Texture2D" uid="uid://bko11ro2frhhs" path="res://Autoloads/Resources/Beastie/Maraptor/maraptor_idle.png" id="6_lugme"]
 [ext_resource type="Resource" uid="uid://smdb12qjwch4" path="res://Autoloads/Resources/Plays/Attack/Mind/pressure.tres" id="7_vkq25"]
 [ext_resource type="Resource" uid="uid://c8f8a3vv12co1" path="res://Autoloads/Resources/Plays/Attack/Mind/heartbreaker.tres" id="9_iolf5"]
 [ext_resource type="Resource" uid="uid://bko08dievjnfg" path="res://Autoloads/Resources/Plays/Attack/Body/stomp.tres" id="11_gfby4"]
@@ -41,8 +41,6 @@ possible_plays = Array[ExtResource("1_q33om")]([ExtResource("3_bdvuj"), ExtResou
 possible_traits = Array[ExtResource("2_0u8y0")]([ExtResource("2_eeusj"), ExtResource("20_atvwv")])
 sprites = Dictionary[int, Texture2D]({
 0: ExtResource("5_eeusj"),
-1: ExtResource("5_eeusj"),
-2: ExtResource("5_eeusj"),
 6: ExtResource("6_lugme")
 })
 ball_anchor_position_receive = Vector2(35, -145)
