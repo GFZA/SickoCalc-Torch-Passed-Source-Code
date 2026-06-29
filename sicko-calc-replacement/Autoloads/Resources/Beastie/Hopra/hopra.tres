@@ -1,21 +1,20 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=17 format=3 uid="uid://ba4wc2qv8uy3x"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://bwqb88a0pxnvv"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_5u6mg"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_crcu8"]
 [ext_resource type="Resource" uid="uid://cxkk4cr1jee0e" path="res://Autoloads/Resources/Trait/high_spirits.tres" id="2_pkep1"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_i8e3u"]
-[ext_resource type="Resource" uid="uid://cq8dhafy2aqe5" path="res://Autoloads/Resources/Plays/Attack/Spirit/pepshot.tres" id="4_8xxa6"]
-[ext_resource type="Texture2D" uid="uid://bi0vdrq1lhpw6" path="res://Autoloads/Resources/Beastie/Hopra/hopra_idle.png" id="4_d563j"]
 [ext_resource type="Resource" uid="uid://0j2wljh1wykn" path="res://Autoloads/Resources/Trait/rumpus.tres" id="4_o8hj7"]
-[ext_resource type="Resource" uid="uid://xuq2krgioyg5" path="res://Autoloads/Resources/Plays/Attack/Spirit/jammer.tres" id="6_twe2a"]
-[ext_resource type="Resource" uid="uid://b2pc2vt2pjw6t" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="9_0hg36"]
-[ext_resource type="Resource" uid="uid://cmcpx7nmshnvs" path="res://Autoloads/Resources/Plays/Attack/Spirit/supercommit.tres" id="12_c0cdi"]
-[ext_resource type="Resource" uid="uid://bko08dievjnfg" path="res://Autoloads/Resources/Plays/Attack/Body/stomp.tres" id="14_shu85"]
+[ext_resource type="Resource" uid="uid://cq8dhafy2aqe5" path="res://Autoloads/Resources/Plays/Attack/Spirit/pepshot.tres" id="4_yppus"]
+[ext_resource type="Resource" uid="uid://5ul0rbnt3ci1" path="res://Autoloads/Resources/Plays/Attack/Spirit/rousing_strike.tres" id="6_a23g4"]
+[ext_resource type="Resource" uid="uid://b2pc2vt2pjw6t" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="9_2jdr0"]
+[ext_resource type="Resource" uid="uid://cmcpx7nmshnvs" path="res://Autoloads/Resources/Plays/Attack/Spirit/supercommit.tres" id="12_jbtiv"]
+[ext_resource type="Resource" uid="uid://bko08dievjnfg" path="res://Autoloads/Resources/Plays/Attack/Body/stomp.tres" id="14_qlrgf"]
+[ext_resource type="Texture2D" uid="uid://dt3sloq2ngs3p" path="res://Autoloads/Resources/Beastie/Hopra/icon_hopra.png" id="15_6abh6"]
 [ext_resource type="Resource" uid="uid://de4i64x6vnp7m" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="15_rdxag"]
-[ext_resource type="Resource" uid="uid://du31ndfut0hoa" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="16_lfqic"]
-[ext_resource type="Resource" uid="uid://4bo2qruocep5" path="res://Autoloads/Resources/Plays/Attack/Spirit/thriller.tres" id="17_071fn"]
-[ext_resource type="Resource" uid="uid://5ul0rbnt3ci1" path="res://Autoloads/Resources/Plays/Attack/Spirit/rousing_strike.tres" id="27_yppus"]
-[ext_resource type="Texture2D" uid="uid://dt3sloq2ngs3p" path="res://Autoloads/Resources/Beastie/Hopra/icon_hopra.png" id="37_yppus"]
+[ext_resource type="Resource" uid="uid://du31ndfut0hoa" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="16_7sirp"]
+[ext_resource type="Resource" uid="uid://xuq2krgioyg5" path="res://Autoloads/Resources/Plays/Attack/Spirit/jammer.tres" id="17_32iwy"]
+[ext_resource type="Resource" uid="uid://4bo2qruocep5" path="res://Autoloads/Resources/Plays/Attack/Spirit/thriller.tres" id="18_3qr0c"]
 
 [resource]
 script = ExtResource("3_i8e3u")
@@ -29,11 +28,12 @@ spirit_base_pow = 100
 mind_base_pow = 26
 body_base_def = 85
 spirit_base_def = 110
-possible_plays = Array[ExtResource("1_5u6mg")]([ExtResource("4_8xxa6"), ExtResource("6_twe2a"), ExtResource("9_0hg36"), ExtResource("12_c0cdi"), ExtResource("14_shu85"), ExtResource("15_rdxag"), ExtResource("16_lfqic"), ExtResource("17_071fn"), ExtResource("27_yppus")])
+plays_level = "0,Hum,0,Pepshot,15,Cheer,19,Rousing Strike,23,Drum,27,Dramatic Exit,31,Bring The Heat,36,Battle Cry,40,Introduce,44,Supercommit,49,Chant"
+plays_extra = "Stomp,Relaxed Hit,Energized,Jammer,Thriller,Cover,Forward Pass,Net Rush,Trait Dance,Whistle,Mighty Yell,Shield,Soliloquy"
+possible_plays = Array[ExtResource("1_5u6mg")]([ExtResource("4_yppus"), ExtResource("6_a23g4"), ExtResource("9_2jdr0"), ExtResource("12_jbtiv"), ExtResource("14_qlrgf"), ExtResource("15_rdxag"), ExtResource("16_7sirp"), ExtResource("17_32iwy"), ExtResource("18_3qr0c")])
 possible_traits = Array[ExtResource("2_crcu8")]([ExtResource("2_pkep1"), ExtResource("4_o8hj7")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("4_d563j"),
-6: ExtResource("37_yppus")
+6: ExtResource("15_6abh6")
 })
 ball_anchor_position_receive = Vector2(103, -155)
 ball_anchor_position_ready = Vector2(46, -248)

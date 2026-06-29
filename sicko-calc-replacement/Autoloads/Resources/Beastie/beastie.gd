@@ -36,7 +36,7 @@ signal health_updated(health : int)
 @export var my_trait : Trait = null :
 	set(value):
 		my_trait = value
-		if my_trait.name.to_lower() == "haunted":
+		if my_trait and my_trait.name.to_lower() == "haunted":
 			current_feelings.clear()
 			current_feelings.get_or_add(Feelings.TRIED, 4)
 		my_trait_updated.emit(my_trait)
@@ -88,6 +88,8 @@ signal health_updated(health : int)
 @export_range(1, 150) var body_base_def : int = 50
 @export_range(1, 150) var spirit_base_def : int = 67
 @export_range(1, 150) var mind_base_def : int = 55
+@export_multiline var plays_level : String = "0,Careful Shot,0,Call Out,6,Refresh,9,Lure Shot,12,Breaker,15,Shield,19,Clear Field,24,Toppler,30,Mark,35,Snipe,39,Forward Pass,43,Demolish"
+@export_multiline var plays_extra : String = "Power Sap,Boom,Relaxed Hit,Dig,Pipe,Chill Out,Exhaust,Hunker,Tough Front,Heat Up,Torch Pass"
 @export var possible_plays : Array[Plays] = []
 @export var possible_traits : Array[Trait] = []
 @export var sprites : Dictionary[Sprite, Texture2D] = {
@@ -163,11 +165,11 @@ func get_feeling_stack(feeling : Beastie.Feelings) -> int:
 	return current_feelings.get(feeling)
 
 
-#func get_total_invests_points() -> int:
-	#var result : int = 0
-	#for point in invests.values():
-		#result += point
-	#return result
+func get_total_invests_points() -> int:
+	var result : int = 0
+	for point in invests.values():
+		result += point
+	return result
 
 
 static func get_empty_stats_dict() -> Dictionary[String, Array]:

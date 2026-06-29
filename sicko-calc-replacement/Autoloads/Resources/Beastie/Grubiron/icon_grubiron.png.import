@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ce732xutk35go"
-path="res://.godot/imported/skulkapi_idle.png-eb570ab9de9452a182d2f3020cfb8870.ctex"
+uid="uid://dddp06tmmpnos"
+path="res://.godot/imported/icon_grubiron.png-fc0c282f31f8c28dbc87b3dba525c104.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Autoloads/Resources/Beastie/Skulkapi/skulkapi_idle.png"
-dest_files=["res://.godot/imported/skulkapi_idle.png-eb570ab9de9452a182d2f3020cfb8870.ctex"]
+source_file="res://Autoloads/Resources/Beastie/Grubiron/icon_grubiron.png"
+dest_files=["res://.godot/imported/icon_grubiron.png-fc0c282f31f8c28dbc87b3dba525c104.ctex"]
 
 [params]
 

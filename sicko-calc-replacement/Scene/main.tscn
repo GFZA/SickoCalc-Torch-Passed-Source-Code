@@ -22,7 +22,7 @@
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="14_mepbf"]
 [ext_resource type="Resource" uid="uid://b2f4ajbr7hmk5" path="res://Autoloads/Resources/Trait/cleanup.tres" id="15_dvq1j"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="16_50v0s"]
-[ext_resource type="Texture2D" uid="uid://xha50cqawqku" path="res://Autoloads/Resources/Beastie/Sprecko/sprecko_idle.png" id="17_mu7ye"]
+[ext_resource type="Texture2D" uid="uid://bmkrey7wnjpt" path="res://Autoloads/Resources/Beastie/Sprecko/icon_sprecko.png" id="17_mu7ye"]
 [ext_resource type="Texture2D" uid="uid://bmkrey7wnjpt" path="res://Autoloads/Resources/Beastie/Sprecko/icon_sprecko.png" id="20_b0nqf"]
 [ext_resource type="Texture2D" uid="uid://0a5xkw4orq58" path="res://Autoloads/Misc/main_ui_bg_tile_4.png" id="23_nyb1q"]
 [ext_resource type="Theme" uid="uid://bkrlwg21fhprn" path="res://Autoloads/Resources/Themes/edit_button.tres" id="24_xw8bv"]

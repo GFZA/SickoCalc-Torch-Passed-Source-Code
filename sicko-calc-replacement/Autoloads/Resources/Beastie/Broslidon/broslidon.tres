@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://bcxwgy1rdldtf"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=17 format=3 uid="uid://bbj1q6hf5agn4"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_tadrq"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_oul1c"]
@@ -6,17 +6,16 @@
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_3iwip"]
 [ext_resource type="Resource" uid="uid://dc0b8j0fujpbd" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="3_siwng"]
 [ext_resource type="Resource" uid="uid://b1urbs121k82l" path="res://Autoloads/Resources/Trait/miracle_play.tres" id="4_budgc"]
-[ext_resource type="Texture2D" uid="uid://4nbpitnor3j0" path="res://Autoloads/Resources/Beastie/Broslidon/broslidon_idle.png" id="6_rib3k"]
 [ext_resource type="Resource" uid="uid://de4i64x6vnp7m" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="7_7aofm"]
-[ext_resource type="Resource" uid="uid://b1hvdsyb5bx4b" path="res://Autoloads/Resources/Plays/Attack/Body/muscle_memory.tres" id="9_iji3d"]
-[ext_resource type="Texture2D" uid="uid://dv26u7yn00vgm" path="res://Autoloads/Resources/Beastie/Broslidon/icon_broslidon.png" id="12_1fro5"]
-[ext_resource type="Resource" uid="uid://cvelioeeooyfg" path="res://Autoloads/Resources/Plays/Attack/Body/nice_shot.tres" id="12_cjmur"]
-[ext_resource type="Resource" uid="uid://ddqiybh2xkn7p" path="res://Autoloads/Resources/Plays/Attack/Body/slide.tres" id="14_gkbyp"]
-[ext_resource type="Resource" uid="uid://dqbap051upqpl" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="15_y68ui"]
-[ext_resource type="Resource" uid="uid://deeuy477kp33d" path="res://Autoloads/Resources/Plays/Attack/Body/hyperspike.tres" id="16_ap8xx"]
-[ext_resource type="Resource" uid="uid://bi278ctjoqvrt" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="17_pso7n"]
-[ext_resource type="Resource" uid="uid://bqqsp4q4rpaet" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="18_k6srt"]
-[ext_resource type="Resource" uid="uid://cme5s0ruaay2q" path="res://Autoloads/Resources/Plays/Attack/Mind/dump.tres" id="19_6qct1"]
+[ext_resource type="Resource" uid="uid://b1hvdsyb5bx4b" path="res://Autoloads/Resources/Plays/Attack/Body/muscle_memory.tres" id="9_7aofm"]
+[ext_resource type="Resource" uid="uid://cvelioeeooyfg" path="res://Autoloads/Resources/Plays/Attack/Body/nice_shot.tres" id="12_r7yct"]
+[ext_resource type="Resource" uid="uid://ddqiybh2xkn7p" path="res://Autoloads/Resources/Plays/Attack/Body/slide.tres" id="14_cjmur"]
+[ext_resource type="Resource" uid="uid://dqbap051upqpl" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="15_3kqve"]
+[ext_resource type="Resource" uid="uid://deeuy477kp33d" path="res://Autoloads/Resources/Plays/Attack/Body/hyperspike.tres" id="16_gkbyp"]
+[ext_resource type="Resource" uid="uid://bi278ctjoqvrt" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="17_y68ui"]
+[ext_resource type="Resource" uid="uid://bqqsp4q4rpaet" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="18_ap8xx"]
+[ext_resource type="Resource" uid="uid://cme5s0ruaay2q" path="res://Autoloads/Resources/Plays/Attack/Mind/dump.tres" id="19_pso7n"]
+[ext_resource type="Texture2D" uid="uid://dv26u7yn00vgm" path="res://Autoloads/Resources/Beastie/Broslidon/icon_broslidon.png" id="34_sqami"]
 
 [resource]
 script = ExtResource("3_3iwip")
@@ -31,11 +30,12 @@ mind_base_pow = 69
 body_base_def = 93
 spirit_base_def = 58
 mind_base_def = 75
-possible_plays = Array[ExtResource("1_tadrq")]([ExtResource("3_siwng"), ExtResource("7_7aofm"), ExtResource("9_iji3d"), ExtResource("12_cjmur"), ExtResource("14_gkbyp"), ExtResource("15_y68ui"), ExtResource("16_ap8xx"), ExtResource("17_pso7n"), ExtResource("18_k6srt"), ExtResource("19_6qct1")])
+plays_level = "0,Basic Hit,0,Flex,0,Whoosh,6,Dig,11,Relaxed Hit,16,Pump Up,21,Muscle Memory,26,High Five,31,Set,36,Nice Shot,40,Quick Set,44,Slide,49,Overpower"
+plays_extra = "Hyperspike,Bump,Spitball,Dump,Confident Pass,Forward Pass,Call Out,Deep Breath,Meditate,Tough Front,Trait Dance,Body Ready,Hawkeye,Shield,Wall"
+possible_plays = Array[ExtResource("1_tadrq")]([ExtResource("3_siwng"), ExtResource("7_7aofm"), ExtResource("9_7aofm"), ExtResource("12_r7yct"), ExtResource("14_cjmur"), ExtResource("15_3kqve"), ExtResource("16_gkbyp"), ExtResource("17_y68ui"), ExtResource("18_ap8xx"), ExtResource("19_pso7n")])
 possible_traits = Array[ExtResource("2_oul1c")]([ExtResource("2_y7wdv"), ExtResource("4_budgc")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("6_rib3k"),
-6: ExtResource("12_1fro5")
+6: ExtResource("34_sqami")
 })
 ball_anchor_position_receive = Vector2(8, -138)
 ball_anchor_position_ready = Vector2(82, -175)

@@ -1,26 +1,25 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=22 format=3 uid="uid://dwj5pgr8we7gb"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=21 format=3 uid="uid://dyhhm0fylplgx"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_63de5"]
 [ext_resource type="Resource" uid="uid://br05pnuoxr6kh" path="res://Autoloads/Resources/Trait/decoy.tres" id="2_1mwk4"]
 [ext_resource type="Resource" uid="uid://cqjsp3oguvpym" path="res://Autoloads/Resources/Trait/super_armor.tres" id="2_oplwd"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_rysq2"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_mjom6"]
-[ext_resource type="Resource" uid="uid://dc0b8j0fujpbd" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="4_4vux1"]
-[ext_resource type="Texture2D" uid="uid://cx8lfre5ttgt3" path="res://Autoloads/Resources/Beastie/Boldlur/boldlur_idle.png" id="4_qvvha"]
+[ext_resource type="Resource" uid="uid://dc0b8j0fujpbd" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="4_vfdvl"]
 [ext_resource type="Resource" uid="uid://51titaex4o3e" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="7_oc5g4"]
-[ext_resource type="Resource" uid="uid://sap57n0xh527" path="res://Autoloads/Resources/Plays/Attack/Body/shove.tres" id="8_frn23"]
-[ext_resource type="Resource" uid="uid://6lu5dwdsnlss" path="res://Autoloads/Resources/Plays/Attack/Body/rocket.tres" id="10_g51go"]
-[ext_resource type="Resource" uid="uid://b3bvfpjwplhwn" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="13_hx13p"]
-[ext_resource type="Resource" uid="uid://bko08dievjnfg" path="res://Autoloads/Resources/Plays/Attack/Body/stomp.tres" id="15_d6f17"]
-[ext_resource type="Resource" uid="uid://32wc5cr5dtuo" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="16_7v43h"]
+[ext_resource type="Resource" uid="uid://sap57n0xh527" path="res://Autoloads/Resources/Plays/Attack/Body/shove.tres" id="8_y4fcu"]
+[ext_resource type="Resource" uid="uid://6lu5dwdsnlss" path="res://Autoloads/Resources/Plays/Attack/Body/rocket.tres" id="10_dac4p"]
+[ext_resource type="Resource" uid="uid://b3bvfpjwplhwn" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="13_ii1u2"]
+[ext_resource type="Resource" uid="uid://bko08dievjnfg" path="res://Autoloads/Resources/Plays/Attack/Body/stomp.tres" id="15_d5ak6"]
+[ext_resource type="Resource" uid="uid://32wc5cr5dtuo" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="16_er1e4"]
 [ext_resource type="Resource" uid="uid://bpdws38adgj1d" path="res://Autoloads/Resources/Plays/Attack/Body/boom.tres" id="17_3ph32"]
-[ext_resource type="Resource" uid="uid://bi278ctjoqvrt" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="18_24trm"]
-[ext_resource type="Resource" uid="uid://debgas20rcwyv" path="res://Autoloads/Resources/Plays/Attack/Mind/ricochet.tres" id="19_7b66b"]
-[ext_resource type="Resource" uid="uid://dxpdlo5hbqo7w" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="20_fuxx0"]
-[ext_resource type="Resource" uid="uid://bh4ukdiqnmxsh" path="res://Autoloads/Resources/Plays/Attack/Mind/cold_calculation.tres" id="21_d5t55"]
+[ext_resource type="Resource" uid="uid://bi278ctjoqvrt" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="18_22ovd"]
+[ext_resource type="Resource" uid="uid://debgas20rcwyv" path="res://Autoloads/Resources/Plays/Attack/Mind/ricochet.tres" id="19_l000w"]
+[ext_resource type="Resource" uid="uid://dxpdlo5hbqo7w" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="20_npmqx"]
+[ext_resource type="Texture2D" uid="uid://dpljjakkd3ruc" path="res://Autoloads/Resources/Beastie/Boldlur/icon_boldlur.png" id="20_y6npn"]
+[ext_resource type="Resource" uid="uid://bh4ukdiqnmxsh" path="res://Autoloads/Resources/Plays/Attack/Mind/cold_calculation.tres" id="21_5d4pd"]
 [ext_resource type="Resource" uid="uid://c6joa81j7k6sd" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="22_wh02g"]
-[ext_resource type="Resource" uid="uid://cod7yqucaq628" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="23_erheg"]
-[ext_resource type="Texture2D" uid="uid://dpljjakkd3ruc" path="res://Autoloads/Resources/Beastie/Boldlur/icon_boldlur.png" id="43_ot52c"]
+[ext_resource type="Resource" uid="uid://cod7yqucaq628" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="23_q72nn"]
 
 [resource]
 script = ExtResource("3_mjom6")
@@ -34,11 +33,12 @@ spirit_base_pow = 22
 mind_base_pow = 75
 body_base_def = 125
 spirit_base_def = 82
-possible_plays = Array[ExtResource("1_63de5")]([ExtResource("4_4vux1"), ExtResource("7_oc5g4"), ExtResource("8_frn23"), ExtResource("10_g51go"), ExtResource("13_hx13p"), ExtResource("15_d6f17"), ExtResource("16_7v43h"), ExtResource("17_3ph32"), ExtResource("18_24trm"), ExtResource("19_7b66b"), ExtResource("20_fuxx0"), ExtResource("21_d5t55"), ExtResource("22_wh02g"), ExtResource("23_erheg")])
+plays_level = "0,Rumble,0,Basic Hit,12,Dig,15,Shield,19,Breaker,23,Shove,27,Quick Breath,30,Rocket,35,Hunker,41,Tough Front,44,Thump,48,Distraction"
+plays_extra = "Stomp,High Slam,Boom,Bump,Ricochet,Prepared Attack,Cold Calculation,Lure Shot,Tracker,Forward Pass,Deep Breath,Exhaust,Feint,Flex,Provoke,Shake Off,Body Ready,Menace,Pump Up"
+possible_plays = Array[ExtResource("1_63de5")]([ExtResource("4_vfdvl"), ExtResource("7_oc5g4"), ExtResource("8_y4fcu"), ExtResource("10_dac4p"), ExtResource("13_ii1u2"), ExtResource("15_d5ak6"), ExtResource("16_er1e4"), ExtResource("17_3ph32"), ExtResource("18_22ovd"), ExtResource("19_l000w"), ExtResource("20_npmqx"), ExtResource("21_5d4pd"), ExtResource("22_wh02g"), ExtResource("23_q72nn")])
 possible_traits = Array[ExtResource("2_rysq2")]([ExtResource("2_1mwk4"), ExtResource("2_oplwd")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("4_qvvha"),
-6: ExtResource("43_ot52c")
+6: ExtResource("20_y6npn")
 })
 ball_anchor_position_receive = Vector2(49, -100)
 ball_anchor_position_ready = Vector2(49, -130)

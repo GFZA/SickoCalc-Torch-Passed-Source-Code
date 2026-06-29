@@ -1,22 +1,21 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://daukwt0q5iod7"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=17 format=3 uid="uid://bhp2nfo0ji7e0"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_kbt7v"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_6tamj"]
 [ext_resource type="Resource" uid="uid://dee0nfr5bqoqs" path="res://Autoloads/Resources/Trait/thief.tres" id="2_lkn4f"]
-[ext_resource type="Resource" uid="uid://cnrdrpp1ytwvq" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_gdc8o"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_lkn4f"]
+[ext_resource type="Resource" uid="uid://cnrdrpp1ytwvq" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_yys0j"]
 [ext_resource type="Resource" uid="uid://cqtrgnsfy5pqt" path="res://Autoloads/Resources/Trait/majesty.tres" id="4_tbod5"]
-[ext_resource type="Texture2D" uid="uid://dtqr52gpv0dfm" path="res://Autoloads/Resources/Beastie/Bindiva/bindiva_idle.png" id="6_ek6pp"]
-[ext_resource type="Resource" uid="uid://d3do2oh5f2miw" path="res://Autoloads/Resources/Plays/Attack/Mind/pierce.tres" id="6_y6381"]
-[ext_resource type="Texture2D" uid="uid://dkcogabeurwfr" path="res://Autoloads/Resources/Beastie/Bindiva/icon_bindiva.png" id="7_vlx4u"]
-[ext_resource type="Resource" uid="uid://dc5fuxjba5vkb" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="8_2tuy0"]
-[ext_resource type="Resource" uid="uid://dmv2tjd66i2td" path="res://Autoloads/Resources/Plays/Attack/Mind/roll_shot.tres" id="11_ju5xg"]
-[ext_resource type="Resource" uid="uid://cme5s0ruaay2q" path="res://Autoloads/Resources/Plays/Attack/Mind/dump.tres" id="13_s0lmw"]
-[ext_resource type="Resource" uid="uid://32wc5cr5dtuo" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="14_0isfj"]
-[ext_resource type="Resource" uid="uid://b4hy4c6g3y6kt" path="res://Autoloads/Resources/Plays/Attack/Mind/tool.tres" id="15_hxpma"]
-[ext_resource type="Resource" uid="uid://bqqsp4q4rpaet" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="16_gxd8r"]
-[ext_resource type="Resource" uid="uid://cm6axu5oniegv" path="res://Autoloads/Resources/Plays/Attack/Mind/echo_strike.tres" id="17_jlc0c"]
+[ext_resource type="Resource" uid="uid://d3do2oh5f2miw" path="res://Autoloads/Resources/Plays/Attack/Mind/pierce.tres" id="6_447gr"]
+[ext_resource type="Resource" uid="uid://dc5fuxjba5vkb" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="8_10slp"]
+[ext_resource type="Resource" uid="uid://dmv2tjd66i2td" path="res://Autoloads/Resources/Plays/Attack/Mind/roll_shot.tres" id="11_yfhwi"]
+[ext_resource type="Resource" uid="uid://cme5s0ruaay2q" path="res://Autoloads/Resources/Plays/Attack/Mind/dump.tres" id="13_0isfj"]
+[ext_resource type="Resource" uid="uid://32wc5cr5dtuo" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="14_hxpma"]
+[ext_resource type="Resource" uid="uid://b4hy4c6g3y6kt" path="res://Autoloads/Resources/Plays/Attack/Mind/tool.tres" id="15_gxd8r"]
+[ext_resource type="Resource" uid="uid://cm6axu5oniegv" path="res://Autoloads/Resources/Plays/Attack/Mind/echo_strike.tres" id="16_jlc0c"]
+[ext_resource type="Resource" uid="uid://bqqsp4q4rpaet" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="17_6un3h"]
 [ext_resource type="Resource" uid="uid://c6joa81j7k6sd" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="18_6un3h"]
+[ext_resource type="Texture2D" uid="uid://dkcogabeurwfr" path="res://Autoloads/Resources/Beastie/Bindiva/icon_bindiva.png" id="30_usumv"]
 
 [resource]
 script = ExtResource("3_lkn4f")
@@ -31,11 +30,12 @@ mind_base_pow = 108
 body_base_def = 71
 spirit_base_def = 38
 mind_base_def = 88
-possible_plays = Array[ExtResource("1_kbt7v")]([ExtResource("3_gdc8o"), ExtResource("6_y6381"), ExtResource("8_2tuy0"), ExtResource("11_ju5xg"), ExtResource("13_s0lmw"), ExtResource("14_0isfj"), ExtResource("15_hxpma"), ExtResource("16_gxd8r"), ExtResource("17_jlc0c"), ExtResource("18_6un3h")])
+plays_level = "0,Practice Shot,0,Dig,7,Jeer,12,Pierce,17,Steal,23,Sneak Attack,28,Intimidate,32,Distraction,35,Roll Shot,40,Provoke,47,Dump"
+plays_extra = "High Slam,Tool,Echo Strike,Spitball,Lure Shot,Net Rush,Quick Set,Clear Field,Exhaust,Wink,Dramatic Exit,Hawkeye,Shield"
+possible_plays = Array[ExtResource("1_kbt7v")]([ExtResource("3_yys0j"), ExtResource("6_447gr"), ExtResource("8_10slp"), ExtResource("11_yfhwi"), ExtResource("13_0isfj"), ExtResource("14_hxpma"), ExtResource("15_gxd8r"), ExtResource("16_jlc0c"), ExtResource("17_6un3h"), ExtResource("18_6un3h")])
 possible_traits = Array[ExtResource("2_6tamj")]([ExtResource("2_lkn4f"), ExtResource("4_tbod5")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("6_ek6pp"),
-6: ExtResource("7_vlx4u")
+6: ExtResource("30_usumv")
 })
 ball_anchor_position_receive = Vector2(22, -141)
 ball_anchor_position_ready = Vector2(62, -160)

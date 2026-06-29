@@ -17,7 +17,6 @@ signal stamina_change_requested(value : int)
 		beastie = value
 		update_beastie()
 
-
 @export var side : Global.MySide = Global.MySide.LEFT :
 	set(value):
 		side = value
@@ -27,7 +26,6 @@ var current_attack : Attack = FREE_BALL:
 	set(value):
 		current_attack = value
 		_update_attack()
-
 
 var current_pos : Beastie.Position = Beastie.Position.UPPER_BACK
 

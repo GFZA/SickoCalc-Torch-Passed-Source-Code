@@ -1,17 +1,16 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=14 format=3 uid="uid://dkoi8fnj0s1il"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=13 format=3 uid="uid://b5g8lo1yo8ncy"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_d144n"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_30rnj"]
 [ext_resource type="Resource" uid="uid://dc70xag8swf2r" path="res://Autoloads/Resources/Trait/shy.tres" id="2_ukmd4"]
+[ext_resource type="Resource" uid="uid://b4745hu4puleb" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_pct15"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_pwot0"]
-[ext_resource type="Resource" uid="uid://b4745hu4puleb" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_wcjvg"]
-[ext_resource type="Texture2D" uid="uid://5dd50hlpqdl8" path="res://Autoloads/Resources/Beastie/Wottle/wottle_idle.png" id="5_fewm5"]
 [ext_resource type="Resource" uid="uid://bwntvaq8we2ee" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="6_0rubi"]
-[ext_resource type="Resource" uid="uid://d1lmi0j5jfehr" path="res://Autoloads/Resources/Plays/Attack/Spirit/tornadoball.tres" id="9_83ea1"]
-[ext_resource type="Resource" uid="uid://d21rgslrfpvct" path="res://Autoloads/Resources/Plays/Attack/Spirit/flight.tres" id="9_gak2q"]
-[ext_resource type="Texture2D" uid="uid://crxsv6d1dtfpr" path="res://Autoloads/Resources/Beastie/Wottle/icon_wottle.png" id="11_62ocn"]
-[ext_resource type="Resource" uid="uid://b2pc2vt2pjw6t" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="12_5vun3"]
-[ext_resource type="Resource" uid="uid://bosg46t132k5k" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="14_k43qa"]
+[ext_resource type="Resource" uid="uid://d1lmi0j5jfehr" path="res://Autoloads/Resources/Plays/Attack/Spirit/tornadoball.tres" id="9_u5ltw"]
+[ext_resource type="Resource" uid="uid://b2pc2vt2pjw6t" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="11_83ea1"]
+[ext_resource type="Texture2D" uid="uid://crxsv6d1dtfpr" path="res://Autoloads/Resources/Beastie/Wottle/icon_wottle.png" id="12_fewm5"]
+[ext_resource type="Resource" uid="uid://d21rgslrfpvct" path="res://Autoloads/Resources/Plays/Attack/Spirit/flight.tres" id="13_6b5cq"]
+[ext_resource type="Resource" uid="uid://bosg46t132k5k" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="14_5vun3"]
 [ext_resource type="Resource" uid="uid://cya1yqpm1hk8m" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="15_pa32x"]
 
 [resource]
@@ -27,11 +26,12 @@ mind_base_pow = 60
 body_base_def = 55
 spirit_base_def = 90
 mind_base_def = 112
-possible_plays = Array[ExtResource("1_d144n")]([ExtResource("3_wcjvg"), ExtResource("6_0rubi"), ExtResource("9_83ea1"), ExtResource("12_5vun3"), ExtResource("14_k43qa"), ExtResource("15_pa32x"), ExtResource("9_gak2q")])
+plays_level = "0,Beginner Effort,0,Goo-Goo Eyes,6,Pipe,10,Careful Shot,16,Quick Tag,21,Hawkeye,25,Tornadoball,31,Dodge Roll,36,Hunker,41,Bring The Heat,47,Patience"
+plays_extra = "Flight,Raw Fury,Toppler,Cover,Forward Pass,Set,Clear Field,Deep Breath,Exhaust,Mark,Tough Front,Fortify,Gloom,Shield,Torch Pass"
+possible_plays = Array[ExtResource("1_d144n")]([ExtResource("3_pct15"), ExtResource("6_0rubi"), ExtResource("9_u5ltw"), ExtResource("11_83ea1"), ExtResource("13_6b5cq"), ExtResource("14_5vun3"), ExtResource("15_pa32x")])
 possible_traits = Array[ExtResource("2_30rnj")]([ExtResource("2_ukmd4")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("5_fewm5"),
-6: ExtResource("11_62ocn")
+6: ExtResource("12_fewm5")
 })
 y_offset = -10
 ball_anchor_position_receive = Vector2(40, -110)

@@ -1,21 +1,20 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=17 format=3 uid="uid://dxa1qpsb3mgbo"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://c5esowbdlybq5"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_5701n"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_7c8yp"]
 [ext_resource type="Resource" uid="uid://dh45ok8523d0m" path="res://Autoloads/Resources/Trait/in_the_clouds.tres" id="2_l3acx"]
+[ext_resource type="Resource" uid="uid://djcmrw24fjtuo" path="res://Autoloads/Resources/Plays/Attack/Body/zinger.tres" id="3_8kkme"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_715g1"]
-[ext_resource type="Resource" uid="uid://djcmrw24fjtuo" path="res://Autoloads/Resources/Plays/Attack/Body/zinger.tres" id="3_ha0xy"]
-[ext_resource type="Texture2D" uid="uid://dl85cu45jonwm" path="res://Autoloads/Resources/Beastie/Deluja/deluja_idle.png" id="5_fflrt"]
 [ext_resource type="Resource" uid="uid://de4i64x6vnp7m" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="5_rtp85"]
-[ext_resource type="Texture2D" uid="uid://ckgwknseoppvs" path="res://Autoloads/Resources/Beastie/Deluja/icon_deluja.png" id="6_4cn4a"]
-[ext_resource type="Resource" uid="uid://32wc5cr5dtuo" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="8_ognuf"]
-[ext_resource type="Resource" uid="uid://rou4ol1fdo40" path="res://Autoloads/Resources/Plays/Attack/Body/true_strike.tres" id="10_4tam6"]
-[ext_resource type="Resource" uid="uid://deeuy477kp33d" path="res://Autoloads/Resources/Plays/Attack/Body/hyperspike.tres" id="13_o5tbr"]
-[ext_resource type="Resource" uid="uid://khv754wvrclb" path="res://Autoloads/Resources/Plays/Attack/Body/thunder.tres" id="14_rttdh"]
-[ext_resource type="Resource" uid="uid://cvelioeeooyfg" path="res://Autoloads/Resources/Plays/Attack/Body/nice_shot.tres" id="15_02eo7"]
+[ext_resource type="Resource" uid="uid://32wc5cr5dtuo" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="8_ha0xy"]
+[ext_resource type="Resource" uid="uid://rou4ol1fdo40" path="res://Autoloads/Resources/Plays/Attack/Body/true_strike.tres" id="10_rtp85"]
+[ext_resource type="Resource" uid="uid://deeuy477kp33d" path="res://Autoloads/Resources/Plays/Attack/Body/hyperspike.tres" id="13_ognuf"]
+[ext_resource type="Resource" uid="uid://khv754wvrclb" path="res://Autoloads/Resources/Plays/Attack/Body/thunder.tres" id="14_0j1dp"]
+[ext_resource type="Resource" uid="uid://cvelioeeooyfg" path="res://Autoloads/Resources/Plays/Attack/Body/nice_shot.tres" id="15_4tam6"]
 [ext_resource type="Resource" uid="uid://ooe1a5sxb6wn" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="16_yfr2u"]
 [ext_resource type="Resource" uid="uid://bpdws38adgj1d" path="res://Autoloads/Resources/Plays/Attack/Body/boom.tres" id="17_3cg3p"]
-[ext_resource type="Resource" uid="uid://du31ndfut0hoa" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="18_xarlr"]
+[ext_resource type="Resource" uid="uid://du31ndfut0hoa" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="18_1gpjw"]
+[ext_resource type="Texture2D" uid="uid://ckgwknseoppvs" path="res://Autoloads/Resources/Beastie/Deluja/icon_deluja.png" id="30_ysmj0"]
 
 [resource]
 script = ExtResource("3_715g1")
@@ -30,11 +29,12 @@ mind_base_pow = 29
 body_base_def = 111
 spirit_base_def = 63
 mind_base_def = 99
-possible_plays = Array[ExtResource("1_5701n")]([ExtResource("3_ha0xy"), ExtResource("5_rtp85"), ExtResource("8_ognuf"), ExtResource("10_4tam6"), ExtResource("13_o5tbr"), ExtResource("14_rttdh"), ExtResource("15_02eo7"), ExtResource("16_yfr2u"), ExtResource("17_3cg3p"), ExtResource("18_xarlr")])
+plays_level = "0,Zinger,0,Chill Out,7,Relaxed Hit,12,Exhaust,17,Refresh,21,High Slam,26,Patience,32,True Strike,36,Hawkeye,41,Cyclone,47,Hyperspike"
+plays_extra = "Thunder,Nice Shot,Demolish,Boom,Energized,Updraft,Calming Aura,Clear Field,Shake Off,Whoosh,Heat Up,Shield,Staredown,Wall"
+possible_plays = Array[ExtResource("1_5701n")]([ExtResource("3_8kkme"), ExtResource("5_rtp85"), ExtResource("8_ha0xy"), ExtResource("10_rtp85"), ExtResource("13_ognuf"), ExtResource("14_0j1dp"), ExtResource("15_4tam6"), ExtResource("16_yfr2u"), ExtResource("17_3cg3p"), ExtResource("18_1gpjw")])
 possible_traits = Array[ExtResource("2_7c8yp")]([ExtResource("2_l3acx")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("5_fflrt"),
-6: ExtResource("6_4cn4a")
+6: ExtResource("30_ysmj0")
 })
 ball_anchor_position_receive = Vector2(60, -115)
 ball_anchor_position_ready = Vector2(110, -145)

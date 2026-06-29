@@ -1,19 +1,18 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://co8s30ae20aos"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=14 format=3 uid="uid://1u1foala2jx2"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_e3v75"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_ad7c4"]
 [ext_resource type="Resource" uid="uid://df1qq8e66hiyh" path="res://Autoloads/Resources/Trait/intangible.tres" id="2_pro8y"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_6nk6x"]
-[ext_resource type="Resource" uid="uid://b6xyao2ghmtij" path="res://Autoloads/Resources/Plays/Attack/Mind/cornershot.tres" id="3_uddiu"]
-[ext_resource type="Texture2D" uid="uid://d1m61fwxsa28u" path="res://Autoloads/Resources/Beastie/Mistic/mistic_idle.png" id="5_c3xaf"]
-[ext_resource type="Resource" uid="uid://fbkol2rhhchv" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="6_5aog5"]
-[ext_resource type="Resource" uid="uid://b3ie8s030fuig" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="8_wemd7"]
-[ext_resource type="Resource" uid="uid://kjfbpg4iax4n" path="res://Autoloads/Resources/Plays/Attack/Mind/freezeray.tres" id="10_7hnm1"]
-[ext_resource type="Resource" uid="uid://dlf2eqay3itwo" path="res://Autoloads/Resources/Plays/Attack/Mind/soulcursher.tres" id="13_2h1qh"]
-[ext_resource type="Resource" uid="uid://cm6axu5oniegv" path="res://Autoloads/Resources/Plays/Attack/Mind/echo_strike.tres" id="15_piynx"]
-[ext_resource type="Resource" uid="uid://cpue5n2qo6k4j" path="res://Autoloads/Resources/Plays/Attack/Mind/slice.tres" id="16_1jgjq"]
-[ext_resource type="Resource" uid="uid://17upagq6d0q6" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="17_5et26"]
-[ext_resource type="Texture2D" uid="uid://c423r10svyi6l" path="res://Autoloads/Resources/Beastie/Mistic/icon_mistic.png" id="39_l2axt"]
+[ext_resource type="Resource" uid="uid://b6xyao2ghmtij" path="res://Autoloads/Resources/Plays/Attack/Mind/cornershot.tres" id="3_l2axt"]
+[ext_resource type="Resource" uid="uid://fbkol2rhhchv" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="6_na227"]
+[ext_resource type="Resource" uid="uid://b3ie8s030fuig" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="8_qd3c2"]
+[ext_resource type="Resource" uid="uid://kjfbpg4iax4n" path="res://Autoloads/Resources/Plays/Attack/Mind/freezeray.tres" id="10_v66jc"]
+[ext_resource type="Resource" uid="uid://dlf2eqay3itwo" path="res://Autoloads/Resources/Plays/Attack/Mind/soulcursher.tres" id="13_3im7o"]
+[ext_resource type="Resource" uid="uid://cm6axu5oniegv" path="res://Autoloads/Resources/Plays/Attack/Mind/echo_strike.tres" id="15_rs618"]
+[ext_resource type="Resource" uid="uid://cpue5n2qo6k4j" path="res://Autoloads/Resources/Plays/Attack/Mind/slice.tres" id="16_s85c4"]
+[ext_resource type="Resource" uid="uid://17upagq6d0q6" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="17_jnne2"]
+[ext_resource type="Texture2D" uid="uid://c423r10svyi6l" path="res://Autoloads/Resources/Beastie/Mistic/icon_mistic.png" id="33_ctsvt"]
 
 [resource]
 script = ExtResource("3_6nk6x")
@@ -28,11 +27,12 @@ mind_base_pow = 85
 body_base_def = 105
 spirit_base_def = 50
 mind_base_def = 80
-possible_plays = Array[ExtResource("1_e3v75")]([ExtResource("3_uddiu"), ExtResource("6_5aog5"), ExtResource("8_wemd7"), ExtResource("10_7hnm1"), ExtResource("13_2h1qh"), ExtResource("15_piynx"), ExtResource("16_1jgjq"), ExtResource("17_5et26")])
+plays_level = "0,Cornershot,0,Cover,13,Stinky,18,Rattle,23,Heat Up,18,Nerve Strike,33,Hex,36,Freezeray,39,Teleport,44,Dreadful Mist,49,Soulcrusher,54,Gloom"
+plays_extra = "Echo Strike,Slice,Mindfield,Refresh,Dispel,Exhaust,Feint,Jeer,Mark,Meditate,Wink,Hawkeye,Menace,Patience,Shield,Staredown"
+possible_plays = Array[ExtResource("1_e3v75")]([ExtResource("3_l2axt"), ExtResource("6_na227"), ExtResource("8_qd3c2"), ExtResource("10_v66jc"), ExtResource("13_3im7o"), ExtResource("15_rs618"), ExtResource("16_s85c4"), ExtResource("17_jnne2")])
 possible_traits = Array[ExtResource("2_ad7c4")]([ExtResource("2_pro8y")])
 sprites = Dictionary[int, Texture2D]({
-0: ExtResource("5_c3xaf"),
-6: ExtResource("39_l2axt")
+6: ExtResource("33_ctsvt")
 })
 y_offset = -50
 ball_anchor_position_receive = Vector2(53, -125)

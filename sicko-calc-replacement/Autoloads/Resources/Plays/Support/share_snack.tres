@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_fq0ai")
 name = "Share Snack"
-descrition = "Evenly shares STAMINA between self and target. Can target opponents from net."
+descrition = "Target Beastie in an adjacent row. Evenly shares STAMINA between self and target."
 metadata/_custom_type_script = "uid://ckljlmv7ycuxl"

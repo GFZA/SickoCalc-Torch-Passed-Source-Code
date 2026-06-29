@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://7snecrnukynf"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://dmgu4ib5nmfsg"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_qbjbc"]
 [ext_resource type="Resource" uid="uid://d21smuww0mij1" path="res://Autoloads/Resources/Trait/helmet.tres" id="2_2mihm"]
@@ -14,6 +14,7 @@
 [ext_resource type="Resource" uid="uid://bi278ctjoqvrt" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="10_rdihq"]
 [ext_resource type="Resource" uid="uid://smdb12qjwch4" path="res://Autoloads/Resources/Plays/Attack/Mind/pressure.tres" id="11_tv8sc"]
 [ext_resource type="Resource" uid="uid://boyul2oo7py0g" path="res://Autoloads/Resources/Trait/momentum.tres" id="13_52muu"]
+[ext_resource type="Texture2D" uid="uid://dddp06tmmpnos" path="res://Autoloads/Resources/Beastie/Grubiron/icon_grubiron.png" id="41_16i8k"]
 
 [resource]
 script = ExtResource("3_7j7uh")
@@ -22,16 +23,21 @@ my_trait = ExtResource("2_2mihm")
 specie_name = "Grubiron"
 beastiepedia_id = 40
 is_nfe = true
+bar_color = Color(0.6392157, 0.92156863, 0.39215687, 1)
 body_base_pow = 60
 spirit_base_pow = 35
 mind_base_pow = 35
 body_base_def = 95
 spirit_base_def = 45
 mind_base_def = 70
+plays_level = "0,Breaker,0,Whoosh,9,Shake Off,13,Precision Strike,17,Smack,21,Rocket,27,Set,33,Rainbow,37,Fall Back,43,Hawkeye,49,Hyperspike"
+plays_extra = "Overpower,Dive,Bump,Pressure,Dig,Forward Pass,Juggle,Pipe,Call Out,Clear Field,Hunker,Mark,Battle Cry,Mighty Yell,Shield"
 possible_plays = Array[ExtResource("1_qbjbc")]([ExtResource("3_qrm3j"), ExtResource("4_6o51n"), ExtResource("5_75vud"), ExtResource("6_kecvj"), ExtResource("7_j8e00"), ExtResource("8_hqlmy"), ExtResource("9_ogbi7"), ExtResource("10_rdihq"), ExtResource("11_tv8sc")])
 possible_traits = Array[ExtResource("2_wemd6")]([ExtResource("2_2mihm"), ExtResource("13_52muu")])
 sprites = Dictionary[int, Texture2D]({
-0: null,
-6: null
+6: ExtResource("41_16i8k")
 })
+y_offset = -15
+ball_anchor_position_receive = Vector2(22, -85)
+ball_anchor_position_ready = Vector2(50, -75)
 metadata/_custom_type_script = "uid://ehabj4qsgxpl"
