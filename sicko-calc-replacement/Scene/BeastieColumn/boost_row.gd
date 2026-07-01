@@ -171,20 +171,24 @@ func show_single_boost_ui() -> void:
 
 
 func reset_all_ui(no_emit : bool = false, same_type : bool = false) -> void:
-	if not same_type:
-		boost_number_ui.reset()
-	bpow_number_ui.reset()
-	bdef_number_ui.reset()
-	spow_number_ui.reset()
-	sdef_number_ui.reset()
-	mpow_number_ui.reset()
-	mdef_number_ui.reset()
+	if not all_boost_uis.visible:
+		if not same_type:
+			boost_number_ui.reset()
+	else:
+		bpow_number_ui.reset()
+		bdef_number_ui.reset()
+		spow_number_ui.reset()
+		sdef_number_ui.reset()
+		mpow_number_ui.reset()
+		mdef_number_ui.reset()
 
-	if not same_type:
-		invest_number_ui.reset()
-	bdef_invest_number_ui.reset()
-	sdef_invest_number_ui.reset()
-	mdef_invest_number_ui.reset()
+	if not all_invest_uis.visible:
+		if not same_type:
+			invest_number_ui.reset()
+	else:
+		bdef_invest_number_ui.reset()
+		sdef_invest_number_ui.reset()
+		mdef_invest_number_ui.reset()
 
 	if no_emit:
 		return
