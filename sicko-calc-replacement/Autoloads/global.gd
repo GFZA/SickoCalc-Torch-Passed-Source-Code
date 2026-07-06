@@ -351,8 +351,11 @@ func _assign_beastie_their_playdex(beastie : Beastie, path_to_beastie : String) 
 				if play.type in [Plays.Type.VOLLEY, Plays.Type.DEFENSE, Plays.Type.SUPPORT]:
 					break
 				else:
-					beastie.possible_plays.append(play)
-					break
+					if play_name == "mimic":
+						break
+					else:
+						beastie.possible_plays.append(play)
+						break
 			i += 1
 			if i == all_plays.size():
 				push_error("Can't find '%s' from %s in global all_plays data!" % [play_name, beastie.specie_name])

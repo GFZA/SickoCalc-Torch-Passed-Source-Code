@@ -1,21 +1,21 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://qutyku37beyh"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://csk7atq7srgrv"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_m3n25"]
 [ext_resource type="Resource" uid="uid://cqtrgnsfy5pqt" path="res://Autoloads/Resources/Trait/majesty.tres" id="2_bb6h4"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_nn5kn"]
-[ext_resource type="Resource" uid="uid://51titaex4o3e" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="3_f1kon"]
+[ext_resource type="Resource" uid="uid://51titaex4o3e" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="3_ncmny"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_omuif"]
-[ext_resource type="Resource" uid="uid://bpdws38adgj1d" path="res://Autoloads/Resources/Plays/Attack/Body/boom.tres" id="5_g1btp"]
-[ext_resource type="Resource" uid="uid://b3bvfpjwplhwn" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="8_g1btp"]
-[ext_resource type="Resource" uid="uid://dqbap051upqpl" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="10_xvobr"]
-[ext_resource type="Resource" uid="uid://cnliahyhutvwb" path="res://Autoloads/Resources/Plays/Attack/Spirit/burnout.tres" id="11_n371g"]
-[ext_resource type="Resource" uid="uid://c7csn6tjtvrt2" path="res://Autoloads/Resources/Plays/Attack/Body/ultimate_attack.tres" id="13_j3dc8"]
-[ext_resource type="Resource" uid="uid://deeuy477kp33d" path="res://Autoloads/Resources/Plays/Attack/Body/hyperspike.tres" id="14_4cvnv"]
-[ext_resource type="Resource" uid="uid://ooe1a5sxb6wn" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="15_kfu2m"]
-[ext_resource type="Resource" uid="uid://cmcpx7nmshnvs" path="res://Autoloads/Resources/Plays/Attack/Spirit/supercommit.tres" id="16_6arso"]
-[ext_resource type="Resource" uid="uid://btuerrrtm5jsh" path="res://Autoloads/Resources/Plays/Attack/Spirit/thrash.tres" id="17_k5no6"]
-[ext_resource type="Resource" uid="uid://c0hsvmpto8e3s" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="18_3p1u6"]
-[ext_resource type="Resource" uid="uid://cl3u33ko6jycn" path="res://Autoloads/Resources/Plays/Attack/Spirit/turnabout.tres" id="19_ax1c7"]
+[ext_resource type="Resource" uid="uid://bpdws38adgj1d" path="res://Autoloads/Resources/Plays/Attack/Body/boom.tres" id="4_nly3v"]
+[ext_resource type="Resource" uid="uid://b3bvfpjwplhwn" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="5_s8lvw"]
+[ext_resource type="Resource" uid="uid://dqbap051upqpl" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="6_ho5p3"]
+[ext_resource type="Resource" uid="uid://cnliahyhutvwb" path="res://Autoloads/Resources/Plays/Attack/Spirit/burnout.tres" id="7_2447t"]
+[ext_resource type="Resource" uid="uid://c7csn6tjtvrt2" path="res://Autoloads/Resources/Plays/Attack/Body/ultimate_attack.tres" id="8_n1h5i"]
+[ext_resource type="Resource" uid="uid://deeuy477kp33d" path="res://Autoloads/Resources/Plays/Attack/Body/hyperspike.tres" id="9_tmi0b"]
+[ext_resource type="Resource" uid="uid://ooe1a5sxb6wn" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="10_k4782"]
+[ext_resource type="Resource" uid="uid://cmcpx7nmshnvs" path="res://Autoloads/Resources/Plays/Attack/Spirit/supercommit.tres" id="11_al17u"]
+[ext_resource type="Resource" uid="uid://btuerrrtm5jsh" path="res://Autoloads/Resources/Plays/Attack/Spirit/thrash.tres" id="12_fqrv3"]
+[ext_resource type="Resource" uid="uid://c0hsvmpto8e3s" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="13_6w6vr"]
+[ext_resource type="Resource" uid="uid://cl3u33ko6jycn" path="res://Autoloads/Resources/Plays/Attack/Spirit/turnabout.tres" id="14_bhn5w"]
 [ext_resource type="Texture2D" uid="uid://detgmsttfy7tg" path="res://Autoloads/Resources/Beastie/Yamyth/icon_yamyth.png" id="32_7gkg7"]
 
 [resource]
@@ -33,7 +33,7 @@ spirit_base_def = 100
 mind_base_def = 64
 plays_level = "0,Breaker,0,Body Ready,11,Boom,17,Flex,23,Shield,27,Thump,33,Exhaust,37,Overpower,43,Burnout,46,Blaze,50,Ultimate Attack"
 plays_extra = "Hyperspike,Demolish,Supercommit,Thrash,Grit,Turnabout,Cover,Pipe,Call Out,Mark,Reign,Rumble,Menace,Patience,Stinky,Wall"
-possible_plays = Array[ExtResource("1_m3n25")]([ExtResource("3_f1kon"), ExtResource("5_g1btp"), ExtResource("8_g1btp"), ExtResource("10_xvobr"), ExtResource("11_n371g"), ExtResource("13_j3dc8"), ExtResource("14_4cvnv"), ExtResource("15_kfu2m"), ExtResource("16_6arso"), ExtResource("17_k5no6"), ExtResource("18_3p1u6"), ExtResource("19_ax1c7")])
+possible_plays = Array[ExtResource("1_m3n25")]([ExtResource("3_ncmny"), ExtResource("4_nly3v"), ExtResource("5_s8lvw"), ExtResource("6_ho5p3"), ExtResource("7_2447t"), ExtResource("8_n1h5i"), ExtResource("9_tmi0b"), ExtResource("10_k4782"), ExtResource("11_al17u"), ExtResource("12_fqrv3"), ExtResource("13_6w6vr"), ExtResource("14_bhn5w")])
 possible_traits = Array[ExtResource("2_nn5kn")]([ExtResource("2_bb6h4")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("32_7gkg7")

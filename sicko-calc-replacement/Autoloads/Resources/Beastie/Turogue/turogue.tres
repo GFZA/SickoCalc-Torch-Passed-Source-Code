@@ -1,20 +1,20 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://5ocranyn8lmg"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://ca6xg440vygql"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_d38cg"]
 [ext_resource type="Resource" uid="uid://c5g053pe7ju8c" path="res://Autoloads/Resources/Trait/groove.tres" id="2_avi1j"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_v2oqb"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_q2si2"]
-[ext_resource type="Resource" uid="uid://de4i64x6vnp7m" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="4_3rpwn"]
-[ext_resource type="Resource" uid="uid://c8f8a3vv12co1" path="res://Autoloads/Resources/Plays/Attack/Mind/heartbreaker.tres" id="7_022xe"]
-[ext_resource type="Resource" uid="uid://bpdws38adgj1d" path="res://Autoloads/Resources/Plays/Attack/Body/boom.tres" id="9_sdl2m"]
-[ext_resource type="Resource" uid="uid://cme5s0ruaay2q" path="res://Autoloads/Resources/Plays/Attack/Mind/dump.tres" id="11_i7qnd"]
-[ext_resource type="Resource" uid="uid://bko08dievjnfg" path="res://Autoloads/Resources/Plays/Attack/Body/stomp.tres" id="14_t6mul"]
-[ext_resource type="Resource" uid="uid://cvelioeeooyfg" path="res://Autoloads/Resources/Plays/Attack/Body/nice_shot.tres" id="15_4yfi4"]
-[ext_resource type="Resource" uid="uid://hiuivj04u8ir" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="16_0q3o4"]
-[ext_resource type="Resource" uid="uid://bojb10i043gnl" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="17_5qrpc"]
-[ext_resource type="Resource" uid="uid://dxpdlo5hbqo7w" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="18_imhm5"]
-[ext_resource type="Resource" uid="uid://b6xyao2ghmtij" path="res://Autoloads/Resources/Plays/Attack/Mind/cornershot.tres" id="19_ruq2f"]
-[ext_resource type="Resource" uid="uid://cwwdwghrp4cco" path="res://Autoloads/Resources/Plays/Attack/Mind/precision_strike.tres" id="20_xiilh"]
+[ext_resource type="Resource" uid="uid://de4i64x6vnp7m" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="3_twt42"]
+[ext_resource type="Resource" uid="uid://c8f8a3vv12co1" path="res://Autoloads/Resources/Plays/Attack/Mind/heartbreaker.tres" id="4_h0ylb"]
+[ext_resource type="Resource" uid="uid://bpdws38adgj1d" path="res://Autoloads/Resources/Plays/Attack/Body/boom.tres" id="5_cjk4e"]
+[ext_resource type="Resource" uid="uid://cme5s0ruaay2q" path="res://Autoloads/Resources/Plays/Attack/Mind/dump.tres" id="6_bvhv6"]
+[ext_resource type="Resource" uid="uid://bko08dievjnfg" path="res://Autoloads/Resources/Plays/Attack/Body/stomp.tres" id="7_imdku"]
+[ext_resource type="Resource" uid="uid://cvelioeeooyfg" path="res://Autoloads/Resources/Plays/Attack/Body/nice_shot.tres" id="8_d6qil"]
+[ext_resource type="Resource" uid="uid://hiuivj04u8ir" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="9_pu4ds"]
+[ext_resource type="Resource" uid="uid://bojb10i043gnl" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="10_7ajr2"]
+[ext_resource type="Resource" uid="uid://dxpdlo5hbqo7w" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="11_ccmju"]
+[ext_resource type="Resource" uid="uid://b6xyao2ghmtij" path="res://Autoloads/Resources/Plays/Attack/Mind/cornershot.tres" id="12_mxv2c"]
+[ext_resource type="Resource" uid="uid://cwwdwghrp4cco" path="res://Autoloads/Resources/Plays/Attack/Mind/precision_strike.tres" id="13_lhtca"]
 [ext_resource type="Resource" uid="uid://b8p6v3sns2w2c" path="res://Autoloads/Resources/Trait/flee.tres" id="33_vr6mf"]
 [ext_resource type="Texture2D" uid="uid://xc5irei35pq7" path="res://Autoloads/Resources/Beastie/Turogue/icon_turogue.png" id="35_sk8i7"]
 
@@ -33,7 +33,7 @@ spirit_base_def = 83
 mind_base_def = 40
 plays_level = "0,Hunker,0,Relaxed Hit,4,Quick Breath,8,Drum,11,Heartbreaker,18,Shield,23,Boom,29,Mighty Yell,32,Dump,37,Refresh,40,Patience,46,Stomp"
 plays_extra = "Nice Shot,Vigor Beam,Rainbow,Prepared Attack,Cornershot,Precision Strike,Cover,Set,Call Out,Chant,Deep Breath,Introduce,Provoke,Steal,Trait Dance,Menace"
-possible_plays = Array[ExtResource("1_d38cg")]([ExtResource("4_3rpwn"), ExtResource("7_022xe"), ExtResource("9_sdl2m"), ExtResource("11_i7qnd"), ExtResource("14_t6mul"), ExtResource("15_4yfi4"), ExtResource("16_0q3o4"), ExtResource("17_5qrpc"), ExtResource("18_imhm5"), ExtResource("19_ruq2f"), ExtResource("20_xiilh")])
+possible_plays = Array[ExtResource("1_d38cg")]([ExtResource("3_twt42"), ExtResource("4_h0ylb"), ExtResource("5_cjk4e"), ExtResource("6_bvhv6"), ExtResource("7_imdku"), ExtResource("8_d6qil"), ExtResource("9_pu4ds"), ExtResource("10_7ajr2"), ExtResource("11_ccmju"), ExtResource("12_mxv2c"), ExtResource("13_lhtca")])
 possible_traits = Array[ExtResource("2_v2oqb")]([ExtResource("2_avi1j"), ExtResource("33_vr6mf")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("35_sk8i7")
