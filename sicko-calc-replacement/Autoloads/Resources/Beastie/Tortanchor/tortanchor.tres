@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://c16t4fsstqspu"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://dqm5mx8b3ivi5"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_ed32k"]
 [ext_resource type="Resource" uid="uid://c48v2ncgtes6y" path="res://Autoloads/Resources/Trait/shanty.tres" id="2_gttjx"]

@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=24 format=3 uid="uid://bvg5g4qw5nwpk"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=24 format=3 uid="uid://ccqvlmnwce62c"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_006db"]
 [ext_resource type="Resource" uid="uid://c8x3iq7qu13w7" path="res://Autoloads/Resources/Trait/unpredictable.tres" id="2_12o50"]

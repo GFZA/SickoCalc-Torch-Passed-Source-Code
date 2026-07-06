@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://caa7svx2mkptd"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://c48am4acgy1ud"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_ncnhv"]
 [ext_resource type="Resource" uid="uid://dmntv2bptj0yi" path="res://Autoloads/Resources/Trait/scary_face.tres" id="2_dv7o2"]

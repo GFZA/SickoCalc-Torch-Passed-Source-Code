@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://dpc0xoafkqsgj"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://bvghntaaw7n0u"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_lotr1"]
 [ext_resource type="Resource" uid="uid://dgjtsmaxf5xy2" path="res://Autoloads/Resources/Trait/venom_touch.tres" id="2_er023"]

@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=13 format=3 uid="uid://xjygtu5gqwun"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=13 format=3 uid="uid://dbhlfmj0mhelr"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_knhx4"]
 [ext_resource type="Resource" uid="uid://gg4non5q0kqq" path="res://Autoloads/Resources/Trait/cheerleader.tres" id="2_fob6b"]
