@@ -11,6 +11,7 @@ signal plays_select_ui_requested
 signal trait_select_ui_requested
 signal rally_requested(toggled_on : bool)
 signal stamina_change_requested(value : int)
+signal left_column_musclebrain_reset_requested # Left column connects to Right column via main
 
 @export var beastie : Beastie = null:
 	set(value):
@@ -267,7 +268,9 @@ func update_custom_trait_button() -> void:
 		net_button.icon = ICON_ROW_NET
 
 	if trait_name.to_lower() == "musclebrain":
-		boost_row.reset_all_ui(true)
+		boost_row.reset_all_ui(true, current_attack.type == Plays.Type.ATTACK_BODY)
+		if side == Global.MySide.LEFT:
+			left_column_musclebrain_reset_requested.emit()
 
 	beastie_updated.emit()
 
@@ -291,9 +294,17 @@ func _on_trait_button_pressed(trait_number : int) -> void:
 		back_button.icon = ICON_ROW_BACK
 		net_button.icon = ICON_ROW_NET
 	if old_trait.name.to_lower() == "musclebrain":
-		boost_row.reset_all_ui()
+		boost_row.reset_all_ui(true, current_attack.type == Plays.Type.ATTACK_BODY)
+		if side == Global.MySide.LEFT:
+			left_column_musclebrain_reset_requested.emit()
 
 	beastie_updated.emit()
+
+
+func on_left_column_musclebrain_reset_requested() -> void:
+	if side == Global.MySide.LEFT:
+		return
+	boost_row.reset_all_ui(true, current_attack.type == Plays.Type.ATTACK_BODY)
 
 
 func _on_trait_condtion_toggled(toggled_on) -> void:
@@ -337,6 +348,7 @@ func _on_volley_amount_changed(value : int) -> void:
 func _on_boost_updated(stat : Beastie.Stats, amount : int) -> void:
 	if not beastie:
 		return
+	beastie.current_boosts.clear()
 	beastie.current_boosts[stat] = amount
 	beastie_updated.emit()
 
@@ -344,6 +356,14 @@ func _on_boost_updated(stat : Beastie.Stats, amount : int) -> void:
 func _on_invest_updated(stat : Beastie.Stats, amount : int) -> void:
 	if not beastie:
 		return
+	beastie.invests = {
+		Beastie.Stats.B_POW : 0,
+		Beastie.Stats.S_POW : 0,
+		Beastie.Stats.M_POW : 0,
+		Beastie.Stats.B_DEF : 0,
+		Beastie.Stats.S_DEF : 0,
+		Beastie.Stats.M_DEF : 0,
+	}
 	beastie.invests[stat] = amount
 	beastie_updated.emit()
 

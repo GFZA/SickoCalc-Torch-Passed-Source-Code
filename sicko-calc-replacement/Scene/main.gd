@@ -50,6 +50,9 @@ func _ready() -> void:
 			right_beastie_column.beastie.health = value
 	)
 
+	# Absolute desperation of a solution...
+	left_beastie_column.left_column_musclebrain_reset_requested.connect(right_beastie_column.on_left_column_musclebrain_reset_requested)
+
 	cheerleader_button.toggled.connect(func(toggle_on : bool):
 		team_controller.have_cheerleader = toggle_on
 		_update()

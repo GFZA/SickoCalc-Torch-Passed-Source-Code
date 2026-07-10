@@ -10,7 +10,11 @@ signal reset_requested
 	set(value):
 		var same_type : bool = false
 		if attack:
-			same_type = value.type == attack.type
+			if side == Global.MySide.RIGHT:
+				same_type = (value.type == attack.type or Global.is_musclebrained)\
+							and not value.name.to_lower() in ["energized", "toppler", "pierce", "contest", "snipe"] # Force reset
+			else:
+				same_type = (value.type == attack.type or Global.is_musclebrained)
 		attack = value
 		if not is_node_ready():
 			await ready
