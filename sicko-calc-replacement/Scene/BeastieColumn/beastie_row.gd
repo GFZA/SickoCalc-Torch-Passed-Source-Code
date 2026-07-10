@@ -87,6 +87,7 @@ func _special() -> void:
 	var trait_name : String = beastie.my_trait.name.to_lower()
 	var attack_name : String = beastie.my_plays.front().name.to_lower()
 
+	# To anyone reading this code, please keep these secrets. Thanks!
 	match [beastie_name, trait_name, attack_name]:
 		["riplash", "shy", "launch"]:
 			name_label.text = "Pipe Bomb"
