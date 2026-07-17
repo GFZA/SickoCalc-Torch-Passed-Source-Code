@@ -348,7 +348,6 @@ func _on_volley_amount_changed(value : int) -> void:
 func _on_boost_updated(stat : Beastie.Stats, amount : int) -> void:
 	if not beastie:
 		return
-	beastie.current_boosts.clear()
 	beastie.current_boosts[stat] = amount
 	beastie_updated.emit()
 
