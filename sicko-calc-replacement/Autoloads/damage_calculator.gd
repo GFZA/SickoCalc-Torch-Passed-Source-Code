@@ -161,12 +161,9 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 	# --- DEF boosts ---
 	var total_defense_boost : int = 0
 	var def_boosts_to_add : int = defense_boosts
-	if defender_weepy or attacker_trait == "foggy" or attack_name == "raw fury":
-		def_boosts_to_add = min(0, defense_boosts) # so it counts deboosts
+	if defender_weepy or jazzed or attacker_trait == "foggy" or attack_name == "raw fury":
+		def_boosts_to_add = mini(0, defense_boosts) # so it counts deboosts
 	total_defense_boost += def_boosts_to_add
-
-	if jazzed:
-		total_defense_boost = mini(0, total_defense_boost)
 
 	var swap_row_bonus : bool = false
 	var defender_is_shy : bool = defender_trait == "shy"

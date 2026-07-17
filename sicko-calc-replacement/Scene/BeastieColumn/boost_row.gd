@@ -3,12 +3,20 @@ class_name BoostRow
 extends MarginContainer
 
 signal boost_updated(stat : Beastie.Stats, amount : int)
+signal boost_reset_requested
 signal invest_updated(stat : Beastie.Stats, amount : int)
+signal invest_reset_requested
 signal reset_requested
 
 @export var attack : Attack = null :
 	set(value):
 		var same_type : bool = false
+		# ‘same_type’ is a bad naming on my end, it’s there to check if I want to reset all the boosts and invests
+		# on the UIs, which I don’t want to do so when the new attack and the previous one have the same type,
+		# i.e. you’re calcing for +2 +30bpow kasaleet thump then switch to demolish, it will still retain the +2 boosts
+		# and +30 invest. I later make the ‘same_type’ always true when Global.is_musclebrained so it won’t reset
+		# when i.e. you’re calcing for +2 musclebrain careful shot then switch to any other attacks even with
+		# different types and it will retain the +2 since it’s always body.
 		if attack:
 			if side == Global.MySide.RIGHT:
 				same_type = (value.type == attack.type or Global.is_musclebrained)\
@@ -178,6 +186,7 @@ func reset_all_ui(no_emit : bool = false, same_type : bool = false) -> void:
 	if not all_boost_uis.visible:
 		if not same_type:
 			boost_number_ui.reset()
+			boost_reset_requested.emit()
 	else:
 		bpow_number_ui.reset()
 		bdef_number_ui.reset()
@@ -189,6 +198,7 @@ func reset_all_ui(no_emit : bool = false, same_type : bool = false) -> void:
 	if not all_invest_uis.visible:
 		if not same_type:
 			invest_number_ui.reset()
+			invest_reset_requested.emit()
 	else:
 		bdef_invest_number_ui.reset()
 		sdef_invest_number_ui.reset()

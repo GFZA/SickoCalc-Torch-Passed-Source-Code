@@ -5,4 +5,6 @@ All damage are calculated with the assumption of beasties being level 50 and ful
 
 Original SickoCalc by lllllllll (Barcode), Icon by Hamapirasu
 
+Contributions by ence
+
 [Link to the tool (95 POW).](https://gfza.github.io/SickoCalc-Torch-Passed/)
