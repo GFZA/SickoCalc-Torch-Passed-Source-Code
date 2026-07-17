@@ -111,7 +111,9 @@ func _ready() -> void:
 	volley_number_ui.value_updated.connect(_on_volley_amount_changed)
 
 	boost_row.boost_updated.connect(_on_boost_updated)
+	boost_row.boost_reset_requested.connect(_on_boost_reset_requested)
 	boost_row.invest_updated.connect(_on_invest_updated)
+	boost_row.invest_reset_requested.connect(_on_invest_reset_requested)
 
 	if is_left:
 		left_feeling_container.show()
@@ -355,6 +357,20 @@ func _on_boost_updated(stat : Beastie.Stats, amount : int) -> void:
 func _on_invest_updated(stat : Beastie.Stats, amount : int) -> void:
 	if not beastie:
 		return
+	beastie.invests[stat] = amount
+	beastie_updated.emit()
+
+
+func _on_boost_reset_requested() -> void:
+	if not beastie:
+		return
+	beastie.current_boosts.clear()
+	beastie_updated.emit()
+
+
+func _on_invest_reset_requested() -> void:
+	if not beastie:
+		return
 	beastie.invests = {
 		Beastie.Stats.B_POW : 0,
 		Beastie.Stats.S_POW : 0,
@@ -363,7 +379,6 @@ func _on_invest_updated(stat : Beastie.Stats, amount : int) -> void:
 		Beastie.Stats.S_DEF : 0,
 		Beastie.Stats.M_DEF : 0,
 	}
-	beastie.invests[stat] = amount
 	beastie_updated.emit()
 
 
