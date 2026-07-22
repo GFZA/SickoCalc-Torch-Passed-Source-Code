@@ -5,6 +5,14 @@ extends MarginContainer
 const FREE_BALL = preload("res://Autoloads/Resources/Plays/Attack/Body/free_ball.tres")
 const ICON_ROW_NET = preload("uid://i3su3ma1wc5")
 const ICON_ROW_BACK = preload("uid://dhs73i0hc16qu")
+const EMPTY_STAT : Dictionary[Beastie.Stats, int] = {
+		Beastie.Stats.B_POW : 0,
+		Beastie.Stats.S_POW : 0,
+		Beastie.Stats.M_POW : 0,
+		Beastie.Stats.B_DEF : 0,
+		Beastie.Stats.S_DEF : 0,
+		Beastie.Stats.M_DEF : 0,
+	}
 
 signal beastie_updated
 signal plays_select_ui_requested
@@ -111,9 +119,8 @@ func _ready() -> void:
 	volley_number_ui.value_updated.connect(_on_volley_amount_changed)
 
 	boost_row.boost_updated.connect(_on_boost_updated)
-	boost_row.boost_reset_requested.connect(_on_boost_reset_requested)
 	boost_row.invest_updated.connect(_on_invest_updated)
-	boost_row.invest_reset_requested.connect(_on_invest_reset_requested)
+	boost_row.reset_requested.connect(reset)
 
 	if is_left:
 		left_feeling_container.show()
@@ -136,8 +143,6 @@ func _ready() -> void:
 		right_weepy_button.toggled.connect(_on_feeling_button_toggled.bind(Beastie.Feelings.WEEPY))
 		tender_button.toggled.connect(_on_feeling_button_toggled.bind(Beastie.Feelings.TENDER))
 
-	boost_row.reset_requested.connect(reset)
-
 	beastie = Global.SPRECKO.duplicate(true)
 	_update_attack()
 
@@ -149,15 +154,51 @@ func update_beastie() -> void:
 		return
 
 	beastie_row.beastie = beastie
-	beastie.my_field_position = current_pos
+	_give_beastie_current_modifiers() # Force updating according what's currently showing in the UI
 
-	mimic_button.visible = beastie.specie_name.to_lower() in ["squimage", "diabloceras"]
+	var have_mimic : bool = beastie.specie_name.to_lower() in ["squimage", "diabloceras"]
+	mimic_button.visible = have_mimic
+	if not have_mimic:
+		mimic_button.button_pressed = false
+		_on_mimic_button_toggled(false)
 
 	_update_trait_button()
 	_update_trait_condition_button()
 
 	trait_one_button.button_pressed = true
 	_on_trait_button_pressed(1) # beastie_updated.emit() in here
+
+
+func _give_beastie_current_modifiers() -> void:
+	if not beastie:
+		return
+
+	Global.resetting = true # Disable updating to reduce lag
+
+	_on_pos_button_pressed(current_pos)
+
+	# Force boost_row to fetch its stat and assign to the beastie
+	boost_row.on_boost_ui_updated()
+	boost_row.on_invest_ui_updated()
+
+	var is_left : bool = side == Global.MySide.LEFT
+	if is_left:
+		_on_feeling_button_toggled(jazzed_button.button_pressed, Beastie.Feelings.JAZZED)
+		_on_feeling_button_toggled(left_weepy_button.button_pressed, Beastie.Feelings.WEEPY)
+		_on_blocked_updated(blocked_number_ui.num)
+	else:
+		_on_feeling_button_toggled(tough_button.button_pressed, Beastie.Feelings.TOUGH)
+		_on_feeling_button_toggled(right_weepy_button.button_pressed, Beastie.Feelings.WEEPY)
+		_on_feeling_button_toggled(tender_button.button_pressed, Beastie.Feelings.TENDER)
+
+	Global.resetting = false # Enable updating (the next line will initiate that)
+	_on_mimic_button_toggled(mimic_button.button_pressed)
+
+	# Reset unique stuffs so it doesn't break for others
+	stamina_container.reset()
+	beastie.health = 100
+	stamina_change_requested.emit(100)
+	volley_number_ui.reset()
 
 
 func _update_side() -> void:
@@ -347,38 +388,17 @@ func _on_volley_amount_changed(value : int) -> void:
 	beastie_updated.emit()
 
 
-func _on_boost_updated(stat : Beastie.Stats, amount : int) -> void:
+func _on_boost_updated(boost_dict : Dictionary[Beastie.Stats, int]) -> void:
 	if not beastie:
 		return
-	beastie.current_boosts[stat] = amount
+	beastie.current_boosts = boost_dict
 	beastie_updated.emit()
 
 
-func _on_invest_updated(stat : Beastie.Stats, amount : int) -> void:
+func _on_invest_updated(invest_dict : Dictionary[Beastie.Stats, int]) -> void:
 	if not beastie:
 		return
-	beastie.invests[stat] = amount
-	beastie_updated.emit()
-
-
-func _on_boost_reset_requested() -> void:
-	if not beastie:
-		return
-	beastie.current_boosts.clear()
-	beastie_updated.emit()
-
-
-func _on_invest_reset_requested() -> void:
-	if not beastie:
-		return
-	beastie.invests = {
-		Beastie.Stats.B_POW : 0,
-		Beastie.Stats.S_POW : 0,
-		Beastie.Stats.M_POW : 0,
-		Beastie.Stats.B_DEF : 0,
-		Beastie.Stats.S_DEF : 0,
-		Beastie.Stats.M_DEF : 0,
-	}
+	beastie.invests = invest_dict
 	beastie_updated.emit()
 
 
@@ -418,6 +438,9 @@ func reset() -> void:
 
 	rally_button.button_pressed = false
 	mimic_button.button_pressed = false
+
+	attack_condition_button.button_pressed = false
+	_on_attack_condtion_toggled(false)
 
 	stamina_container.reset()
 	stamina_change_requested.emit(100)

@@ -119,6 +119,9 @@ func _update() -> void:
 	if not is_node_ready():
 		await ready
 
+	if Global.resetting:
+		return
+
 	var attacker : Beastie = left_beastie_column.beastie
 	var defender : Beastie = right_beastie_column.beastie
 
