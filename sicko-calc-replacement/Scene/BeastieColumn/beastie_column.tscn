@@ -45,14 +45,6 @@ metadata/_custom_type_script = "uid://bslfuaragw1g7"
 script = ExtResource("16_ps03y")
 my_plays = Array[ExtResource("2_vcchh")]([ExtResource("6_uupfg"), null, null])
 my_trait = SubResource("Resource_vcchh")
-current_boosts = Dictionary[int, int]({
-0: 0,
-1: 0,
-2: 0,
-3: 0,
-4: 0,
-5: 0
-})
 is_nfe = true
 bar_color = Color(0.68235296, 0.92941177, 0.5764706, 1)
 possible_plays = Array[ExtResource("2_vcchh")]([ExtResource("5_gvagf"), ExtResource("6_ta5ev"), ExtResource("7_rr5fh"), ExtResource("8_blo7e"), ExtResource("9_sfsmm"), ExtResource("10_3h7xc"), ExtResource("11_fakko"), ExtResource("12_8eejc"), ExtResource("13_tt5s3")])

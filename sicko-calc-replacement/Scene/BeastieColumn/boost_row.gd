@@ -2,10 +2,17 @@
 class_name BoostRow
 extends MarginContainer
 
-signal boost_updated(stat : Beastie.Stats, amount : int)
-signal boost_reset_requested
-signal invest_updated(stat : Beastie.Stats, amount : int)
-signal invest_reset_requested
+const EMPTY_STAT : Dictionary[Beastie.Stats, int] = {
+		Beastie.Stats.B_POW : 0,
+		Beastie.Stats.S_POW : 0,
+		Beastie.Stats.M_POW : 0,
+		Beastie.Stats.B_DEF : 0,
+		Beastie.Stats.S_DEF : 0,
+		Beastie.Stats.M_DEF : 0,
+	}
+
+signal boost_updated(stat_dict : Dictionary[Beastie.Stats, int])
+signal invest_updated(stat_dict : Dictionary[Beastie.Stats, int])
 signal reset_requested
 
 @export var attack : Attack = null :
@@ -45,6 +52,16 @@ var side : Global.MySide = Global.MySide.LEFT :
 
 var current_stat : Beastie.Stats = Beastie.Stats.B_POW
 
+var boost_dict : Dictionary[Beastie.Stats, int] = {} : # Boosts doesn't need all 6 stats to exist to work properly
+	set(value):
+		boost_dict = value
+		boost_updated.emit(boost_dict)
+
+var invest_dict : Dictionary[Beastie.Stats, int] = EMPTY_STAT.duplicate() : # Invests NEED all 6 stats to exist to work properly
+	set(value):
+		invest_dict = value
+		invest_updated.emit(invest_dict)
+
 @onready var main_container: HBoxContainer = %MainContainer
 
 @onready var boosts_column: HBoxContainer = %BoostsColumn
@@ -76,22 +93,20 @@ var current_stat : Beastie.Stats = Beastie.Stats.B_POW
 func _ready() -> void:
 	Global.is_musclebrained_updated.connect(_update_attack_ui.unbind(1))
 
-	boost_number_ui.value_updated.connect(_on_boost_updated)
-
-	bpow_number_ui.value_updated.connect(_on_all_ui_boost_updated.bind(Beastie.Stats.B_POW))
-	spow_number_ui.value_updated.connect(_on_all_ui_boost_updated.bind(Beastie.Stats.S_POW))
-	mpow_number_ui.value_updated.connect(_on_all_ui_boost_updated.bind(Beastie.Stats.M_POW))
-	bdef_number_ui.value_updated.connect(_on_all_ui_boost_updated.bind(Beastie.Stats.B_DEF))
-	sdef_number_ui.value_updated.connect(_on_all_ui_boost_updated.bind(Beastie.Stats.S_DEF))
-	mdef_number_ui.value_updated.connect(_on_all_ui_boost_updated.bind(Beastie.Stats.M_DEF))
+	boost_number_ui.value_updated.connect(on_boost_ui_updated.unbind(1))
+	bpow_number_ui.value_updated.connect(on_boost_ui_updated.unbind(1))
+	spow_number_ui.value_updated.connect(on_boost_ui_updated.unbind(1))
+	mpow_number_ui.value_updated.connect(on_boost_ui_updated.unbind(1))
+	bdef_number_ui.value_updated.connect(on_boost_ui_updated.unbind(1))
+	sdef_number_ui.value_updated.connect(on_boost_ui_updated.unbind(1))
+	mdef_number_ui.value_updated.connect(on_boost_ui_updated.unbind(1))
 
 	reset_button.pressed.connect(reset_all_ui)
 
-	invest_number_ui.value_updated.connect(_on_invest_updated)
-
-	bdef_invest_number_ui.value_updated.connect(_on_all_ui_invest_updated.bind(Beastie.Stats.B_DEF))
-	sdef_invest_number_ui.value_updated.connect(_on_all_ui_invest_updated.bind(Beastie.Stats.S_DEF))
-	mdef_invest_number_ui.value_updated.connect(_on_all_ui_invest_updated.bind(Beastie.Stats.M_DEF))
+	invest_number_ui.value_updated.connect(on_invest_ui_updated.unbind(1))
+	bdef_invest_number_ui.value_updated.connect(on_invest_ui_updated.unbind(1))
+	sdef_invest_number_ui.value_updated.connect(on_invest_ui_updated.unbind(1))
+	mdef_invest_number_ui.value_updated.connect(on_invest_ui_updated.unbind(1))
 
 
 func _update_attack_ui() -> void:
@@ -114,20 +129,29 @@ func _update_attack_ui() -> void:
 				_update_ui_bg(Global.get_main_color(Global.ColorType.MIND))
 
 
-func _on_boost_updated(amount : int) -> void:
-	boost_updated.emit(current_stat, amount)
+func on_boost_ui_updated() -> void:
+	var new_boost_dict : Dictionary[Beastie.Stats, int] = {}
+	if all_boost_uis.visible:
+		new_boost_dict[Beastie.Stats.B_POW] = bpow_number_ui.num
+		new_boost_dict[Beastie.Stats.S_POW] = spow_number_ui.num
+		new_boost_dict[Beastie.Stats.M_POW] = mpow_number_ui.num
+		new_boost_dict[Beastie.Stats.B_DEF] = bdef_number_ui.num
+		new_boost_dict[Beastie.Stats.S_DEF] = sdef_number_ui.num
+		new_boost_dict[Beastie.Stats.M_DEF] = mdef_number_ui.num
+	else:
+		new_boost_dict[current_stat] = boost_number_ui.num
+	boost_dict = new_boost_dict
 
 
-func _on_all_ui_boost_updated(amount : int, stat : Beastie.Stats) -> void:
-	boost_updated.emit(stat, amount)
-
-
-func _on_invest_updated(amount : int) -> void:
-	invest_updated.emit(current_stat, amount)
-
-
-func _on_all_ui_invest_updated(amount : int, stat : Beastie.Stats) -> void:
-	invest_updated.emit(stat, amount)
+func on_invest_ui_updated() -> void:
+	var new_invest_dict : Dictionary[Beastie.Stats, int] = EMPTY_STAT.duplicate()
+	if all_invest_uis.visible:
+		new_invest_dict[Beastie.Stats.B_DEF] = bdef_invest_number_ui.num
+		new_invest_dict[Beastie.Stats.S_DEF] = sdef_invest_number_ui.num
+		new_invest_dict[Beastie.Stats.M_DEF] = mdef_invest_number_ui.num
+	else:
+		new_invest_dict[current_stat] = invest_number_ui.num
+	invest_dict = new_invest_dict
 
 
 func _update_ui_bg(color : Color) -> void:
@@ -186,7 +210,7 @@ func reset_all_ui(no_emit : bool = false, same_type : bool = false) -> void:
 	if not all_boost_uis.visible:
 		if not same_type:
 			boost_number_ui.reset()
-			boost_reset_requested.emit()
+			boost_dict = {}
 	else:
 		bpow_number_ui.reset()
 		bdef_number_ui.reset()
@@ -198,7 +222,7 @@ func reset_all_ui(no_emit : bool = false, same_type : bool = false) -> void:
 	if not all_invest_uis.visible:
 		if not same_type:
 			invest_number_ui.reset()
-			invest_reset_requested.emit()
+			invest_dict = EMPTY_STAT.duplicate()
 	else:
 		bdef_invest_number_ui.reset()
 		sdef_invest_number_ui.reset()
