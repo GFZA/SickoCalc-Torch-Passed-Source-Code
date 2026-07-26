@@ -132,6 +132,7 @@ func _update() -> void:
 	if attacker and defender:
 		Global.is_musclebrained = attacker.my_trait.name.to_lower() == "musclebrain"
 		current_attack.is_mimicked = left_beastie_column.mimic_button.button_pressed
+		attacker.my_plays[0] = current_attack
 		damage_splash.amount = DamageCalculator.get_damage(attacker, defender, current_attack, team_controller, team_controller)
 		damage_splash.attack = current_attack
 
@@ -144,7 +145,7 @@ func _update() -> void:
 			arrow.color = new_color
 
 		if left_beastie_column.current_attack == current_attack:
-			return # this prevents the most stupid accidental infinite loop I ever made, like wtf lmao
+			return # this prevents the most stupid accidental infinite recursive loop I ever made, like wtf lmao
 		left_beastie_column.current_attack = current_attack
 		right_beastie_column.current_attack = current_attack
 
