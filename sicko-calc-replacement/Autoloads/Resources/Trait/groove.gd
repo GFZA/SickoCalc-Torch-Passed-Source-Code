@@ -15,6 +15,10 @@ func get_attack_mult(attacker : Beastie, _defender : Beastie, _attack : Attack, 
 	if not is_groove:
 		return 1.0
 
+	var attacker_attack : Attack = attacker.my_plays[0]
+	if attacker_attack and not attacker_attack.type == Plays.Type.ATTACK_BODY:
+		return 1.0
+
 	if not attacker_team_controller:
 		return 1.0
 
