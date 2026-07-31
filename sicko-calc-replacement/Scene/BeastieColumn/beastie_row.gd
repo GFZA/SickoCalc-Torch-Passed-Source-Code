@@ -8,6 +8,7 @@ const EVIL_AXOLATI = preload("uid://l3eh6masrurv")
 const SECRET_1 = preload("uid://cukw0bkohbuhw")
 const SECRET_2 = preload("uid://cxjjnkkwhac1y")
 const SECRET_3 = preload("uid://bh3ewxrd80od8")
+const SECRET_4 = preload("uid://bvfwcjo648fyi")
 
 @export var beastie : Beastie :
 	set(value):
@@ -98,3 +99,6 @@ func _special() -> void:
 		["squimage", "moist", "grit"]:
 			name_label.text = "ena"
 			icon_rect.texture = SECRET_3
+		["sprecko", "cleanup", "sweep"]:
+			name_label.text = "Dirt Sponge"
+			icon_rect.texture = SECRET_4
