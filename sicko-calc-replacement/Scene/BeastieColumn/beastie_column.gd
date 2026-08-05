@@ -209,7 +209,12 @@ func _update_side() -> void:
 	beastie_row.side = side
 	boost_row.side = side
 	var is_right : bool = side == Global.MySide.RIGHT
-	position_buttons.move_child(back_button, is_right)
+	if is_right:
+		position_buttons.move_child(net_button, 1) # 0 is attly_at_label
+		position_buttons.move_child(back_button, 2)
+	else:
+		position_buttons.move_child(back_button, 1)
+		position_buttons.move_child(net_button, 2)
 	back_button.icon_alignment = HORIZONTAL_ALIGNMENT_RIGHT if is_right else HORIZONTAL_ALIGNMENT_LEFT
 	net_button.icon_alignment = HORIZONTAL_ALIGNMENT_LEFT if is_right else HORIZONTAL_ALIGNMENT_RIGHT
 
@@ -290,7 +295,7 @@ func _update_trait_condition_button() -> void:
 	var the_trait : Trait = beastie.my_trait
 	var is_left : bool = side == Global.MySide.LEFT
 	if ((the_trait.damage_dealt_mult != 1.0 or the_trait.is_starter_trait) and is_left) or \
-		(the_trait.def_mult != 1.0 and not is_left):
+		((the_trait.def_mult != 1.0 or the_trait.name.to_lower() == "stagecraft") and not is_left):
 		trait_condition_row.visible = beastie.my_trait.need_to_be_manually_activated
 		trait_condition_button.text = beastie.my_trait.condition_name
 
