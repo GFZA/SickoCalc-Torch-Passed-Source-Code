@@ -1,17 +1,17 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=14 format=3 uid="uid://dgw3dyf74grmg"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=14 format=3 uid="uid://dy3355nd18xau"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_glg3w"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_i5pwg"]
 [ext_resource type="Resource" uid="uid://eq3bpyndhp23" path="res://Autoloads/Resources/Trait/chill.tres" id="2_l0vcl"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_5vtmo"]
-[ext_resource type="Resource" uid="uid://b6xyao2ghmtij" path="res://Autoloads/Resources/Plays/Attack/Mind/cornershot.tres" id="3_wa7dk"]
+[ext_resource type="Resource" uid="uid://b6xyao2ghmtij" path="res://Autoloads/Resources/Plays/Attack/Mind/cornershot.tres" id="4_sr2yt"]
 [ext_resource type="Resource" uid="uid://b5kxueing1uuv" path="res://Autoloads/Resources/Trait/moist.tres" id="4_wa7dk"]
-[ext_resource type="Resource" uid="uid://dfr4rlcnefv8y" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="4_xydc2"]
-[ext_resource type="Resource" uid="uid://bqqsp4q4rpaet" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="5_bmett"]
-[ext_resource type="Resource" uid="uid://kjfbpg4iax4n" path="res://Autoloads/Resources/Plays/Attack/Mind/freezeray.tres" id="6_57d3d"]
-[ext_resource type="Resource" uid="uid://7nj03vet1qji" path="res://Autoloads/Resources/Plays/Attack/Spirit/heat_wave.tres" id="7_ql8n6"]
-[ext_resource type="Resource" uid="uid://b3ie8s030fuig" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="8_88lx4"]
-[ext_resource type="Resource" uid="uid://smdb12qjwch4" path="res://Autoloads/Resources/Plays/Attack/Mind/pressure.tres" id="9_onpel"]
+[ext_resource type="Resource" uid="uid://dfr4rlcnefv8y" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="7_8mcj0"]
+[ext_resource type="Resource" uid="uid://bqqsp4q4rpaet" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="10_txlgq"]
+[ext_resource type="Resource" uid="uid://kjfbpg4iax4n" path="res://Autoloads/Resources/Plays/Attack/Mind/freezeray.tres" id="12_4i14a"]
+[ext_resource type="Resource" uid="uid://7nj03vet1qji" path="res://Autoloads/Resources/Plays/Attack/Spirit/heat_wave.tres" id="14_5v7xv"]
+[ext_resource type="Resource" uid="uid://b3ie8s030fuig" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="15_hdx8m"]
+[ext_resource type="Resource" uid="uid://smdb12qjwch4" path="res://Autoloads/Resources/Plays/Attack/Mind/pressure.tres" id="16_2ad1d"]
 [ext_resource type="Texture2D" uid="uid://dw6cdotfo8884" path="res://Autoloads/Resources/Beastie/Mudslee/icon_mudslee.png" id="31_3c5a4"]
 
 [resource]
@@ -27,9 +27,45 @@ mind_base_pow = 73
 body_base_def = 80
 spirit_base_def = 108
 mind_base_def = 62
-plays_level = "0,Chill Out,0,Cornershot,5,Refresh,8,Dig,13,Floater,19,Calming Aura,24,Build,30,Spitball,35,Wink,41,Freezeray,46,Clear Field"
-plays_extra = "Heat Wave,Nerve Strike,Pressure,Forward Pass,Pipe,Deep Breath,Exhaust,Hunker,Meditate,Shake Off,Mighty Yell,Patience,Shield,Smack"
-possible_plays = Array[ExtResource("1_glg3w")]([ExtResource("3_wa7dk"), ExtResource("4_xydc2"), ExtResource("5_bmett"), ExtResource("6_57d3d"), ExtResource("7_ql8n6"), ExtResource("8_88lx4"), ExtResource("9_onpel")])
+plays_string = "From Levels:
+1
+Chill Out
+1
+Cornershot
+5
+Refresh
+8
+Dig
+13
+Floater
+19
+Calming Aura
+24
+Build
+30
+Spitball
+35
+Wink
+41
+Freezeray
+46
+Clear Field
+From Friends:
+Heat Wave
+Nerve Strike
+Pressure
+Forward Pass
+Pipe
+Deep Breath
+Exhaust
+Hunker
+Meditate
+Shake Off
+Mighty Yell
+Patience
+Shield
+Smack"
+possible_plays = Array[ExtResource("1_glg3w")]([ExtResource("4_sr2yt"), ExtResource("7_8mcj0"), ExtResource("10_txlgq"), ExtResource("12_4i14a"), ExtResource("14_5v7xv"), ExtResource("15_hdx8m"), ExtResource("16_2ad1d")])
 possible_traits = Array[ExtResource("2_i5pwg")]([ExtResource("2_l0vcl"), ExtResource("4_wa7dk")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("31_3c5a4")

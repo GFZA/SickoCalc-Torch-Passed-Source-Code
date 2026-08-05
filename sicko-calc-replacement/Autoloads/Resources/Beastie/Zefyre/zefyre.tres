@@ -1,15 +1,15 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://714tmwedtoav"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://tkj6ikuv4x5i"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_t21mn"]
 [ext_resource type="Resource" uid="uid://cw25kt8txsy6a" path="res://Autoloads/Resources/Trait/maverick.tres" id="2_icirc"]
-[ext_resource type="Resource" uid="uid://b4745hu4puleb" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_yn0qk"]
-[ext_resource type="Resource" uid="uid://d1lmi0j5jfehr" path="res://Autoloads/Resources/Plays/Attack/Spirit/tornadoball.tres" id="4_crqfi"]
-[ext_resource type="Resource" uid="uid://b2pc2vt2pjw6t" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="5_tc3f5"]
-[ext_resource type="Resource" uid="uid://ijppgxnoniu3" path="res://Autoloads/Resources/Plays/Attack/Spirit/airblast.tres" id="6_d0vbo"]
-[ext_resource type="Resource" uid="uid://d21rgslrfpvct" path="res://Autoloads/Resources/Plays/Attack/Spirit/flight.tres" id="7_ovdma"]
-[ext_resource type="Resource" uid="uid://cnliahyhutvwb" path="res://Autoloads/Resources/Plays/Attack/Spirit/burnout.tres" id="8_tsnkt"]
-[ext_resource type="Resource" uid="uid://c18abdsio1qy3" path="res://Autoloads/Resources/Plays/Attack/Spirit/desperate_force.tres" id="9_0nxou"]
-[ext_resource type="Resource" uid="uid://ld2lhvgalfff" path="res://Autoloads/Resources/Plays/Attack/Spirit/swarm.tres" id="10_yy4t3"]
+[ext_resource type="Resource" uid="uid://b4745hu4puleb" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_t21mn"]
+[ext_resource type="Resource" uid="uid://d1lmi0j5jfehr" path="res://Autoloads/Resources/Plays/Attack/Spirit/tornadoball.tres" id="6_hrqvx"]
+[ext_resource type="Resource" uid="uid://b2pc2vt2pjw6t" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="8_x2ss1"]
+[ext_resource type="Resource" uid="uid://ijppgxnoniu3" path="res://Autoloads/Resources/Plays/Attack/Spirit/airblast.tres" id="10_pn0in"]
+[ext_resource type="Resource" uid="uid://d21rgslrfpvct" path="res://Autoloads/Resources/Plays/Attack/Spirit/flight.tres" id="13_byf03"]
+[ext_resource type="Resource" uid="uid://cnliahyhutvwb" path="res://Autoloads/Resources/Plays/Attack/Spirit/burnout.tres" id="14_xfdo0"]
+[ext_resource type="Resource" uid="uid://c18abdsio1qy3" path="res://Autoloads/Resources/Plays/Attack/Spirit/desperate_force.tres" id="15_wvajn"]
+[ext_resource type="Resource" uid="uid://ld2lhvgalfff" path="res://Autoloads/Resources/Plays/Attack/Spirit/swarm.tres" id="16_gw7uq"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="24_05608"]
 [ext_resource type="Resource" uid="uid://d0oyfb25uci4p" path="res://Autoloads/Resources/Trait/flitting.tres" id="25_ndplo"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="26_qfdui"]
@@ -28,9 +28,42 @@ mind_base_pow = 55
 body_base_def = 44
 spirit_base_def = 110
 mind_base_def = 85
-plays_level = "0,Beginner Effort,0,Whoosh,10,Shield,14,Tornadoball,20,Cyclone,24,Bring The Heat,29,Clear Field,35,Airblast,40,Net Rush,44,Blaze,49,Flight,53,Burnout"
-plays_extra = "Desperate Force,Swarm,Cover,Daring Pass,Quick Tag,Reposition,Dramatic Exit,Fall Back,Role Reverse"
-possible_plays = Array[ExtResource("1_t21mn")]([ExtResource("3_yn0qk"), ExtResource("4_crqfi"), ExtResource("5_tc3f5"), ExtResource("6_d0vbo"), ExtResource("7_ovdma"), ExtResource("8_tsnkt"), ExtResource("9_0nxou"), ExtResource("10_yy4t3")])
+plays_string = "From Levels:
+1
+Beginner Effort
+1
+Whoosh
+10
+Shield
+14
+Tornadoball
+20
+Cyclone
+24
+Bring the Heat
+29
+Clear Field
+35
+Airblast
+40
+Net Rush
+44
+Blaze
+49
+Flight
+53
+Burnout
+From Friends:
+Desperate Force
+Swarm
+Cover
+Daring Pass
+Quick Tag
+Reposition
+Dramatic Exit
+Fall Back
+Role Reverse"
+possible_plays = Array[ExtResource("1_t21mn")]([ExtResource("3_t21mn"), ExtResource("6_hrqvx"), ExtResource("8_x2ss1"), ExtResource("10_pn0in"), ExtResource("13_byf03"), ExtResource("14_xfdo0"), ExtResource("15_wvajn"), ExtResource("16_gw7uq")])
 possible_traits = Array[ExtResource("24_05608")]([ExtResource("2_icirc"), ExtResource("25_ndplo")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("27_riame")

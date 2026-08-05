@@ -1,19 +1,19 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://cgg8j0thcvsg2"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://cudgyeimiovus"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_hpxhf"]
 [ext_resource type="Resource" uid="uid://cjna5urx7aj6a" path="res://Autoloads/Resources/Trait/unflappable.tres" id="2_h3r0u"]
-[ext_resource type="Resource" uid="uid://cq8dhafy2aqe5" path="res://Autoloads/Resources/Plays/Attack/Spirit/pepshot.tres" id="3_wwyt0"]
-[ext_resource type="Resource" uid="uid://c0hsvmpto8e3s" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="4_5ygm3"]
-[ext_resource type="Resource" uid="uid://bosg46t132k5k" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="5_0e570"]
-[ext_resource type="Resource" uid="uid://b2pc2vt2pjw6t" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="6_x0phv"]
-[ext_resource type="Resource" uid="uid://cmcpx7nmshnvs" path="res://Autoloads/Resources/Plays/Attack/Spirit/supercommit.tres" id="7_tjaxe"]
-[ext_resource type="Resource" uid="uid://yedb04mc431m" path="res://Autoloads/Resources/Plays/Attack/Spirit/counter.tres" id="8_kotxh"]
-[ext_resource type="Resource" uid="uid://c18abdsio1qy3" path="res://Autoloads/Resources/Plays/Attack/Spirit/desperate_force.tres" id="9_mwjch"]
-[ext_resource type="Resource" uid="uid://pq5ehf531if5" path="res://Autoloads/Resources/Plays/Attack/Spirit/cook.tres" id="10_3ykhq"]
-[ext_resource type="Resource" uid="uid://dfr4rlcnefv8y" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="11_no3si"]
-[ext_resource type="Resource" uid="uid://c6joa81j7k6sd" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="12_ugcey"]
-[ext_resource type="Resource" uid="uid://cwwdwghrp4cco" path="res://Autoloads/Resources/Plays/Attack/Mind/precision_strike.tres" id="13_wvhj2"]
+[ext_resource type="Resource" uid="uid://cq8dhafy2aqe5" path="res://Autoloads/Resources/Plays/Attack/Spirit/pepshot.tres" id="3_4obf8"]
+[ext_resource type="Resource" uid="uid://c0hsvmpto8e3s" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="6_rmm7t"]
+[ext_resource type="Resource" uid="uid://bosg46t132k5k" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="7_h3r0u"]
+[ext_resource type="Resource" uid="uid://b2pc2vt2pjw6t" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="10_h0gpr"]
+[ext_resource type="Resource" uid="uid://c6joa81j7k6sd" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="13_5ygm3"]
+[ext_resource type="Resource" uid="uid://cmcpx7nmshnvs" path="res://Autoloads/Resources/Plays/Attack/Spirit/supercommit.tres" id="13_060bl"]
+[ext_resource type="Resource" uid="uid://yedb04mc431m" path="res://Autoloads/Resources/Plays/Attack/Spirit/counter.tres" id="15_u8pbk"]
+[ext_resource type="Resource" uid="uid://c18abdsio1qy3" path="res://Autoloads/Resources/Plays/Attack/Spirit/desperate_force.tres" id="16_b82ns"]
+[ext_resource type="Resource" uid="uid://pq5ehf531if5" path="res://Autoloads/Resources/Plays/Attack/Spirit/cook.tres" id="17_4qelw"]
 [ext_resource type="Texture2D" uid="uid://dbfu71wn43mh7" path="res://Autoloads/Resources/Beastie/Duggout/icon_duggout.png" id="17_wwyt0"]
+[ext_resource type="Resource" uid="uid://dfr4rlcnefv8y" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="18_yonri"]
+[ext_resource type="Resource" uid="uid://cwwdwghrp4cco" path="res://Autoloads/Resources/Plays/Attack/Mind/precision_strike.tres" id="20_x7i1o"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="27_d2ypt"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="28_fuqgc"]
 [ext_resource type="Resource" uid="uid://8e7dnlx5xlde" path="res://Autoloads/Resources/Trait/overwork.tres" id="30_rujeu"]
@@ -31,9 +31,50 @@ mind_base_pow = 25
 body_base_def = 90
 spirit_base_def = 60
 mind_base_def = 75
-plays_level = "0,Pepshot,0,Dig,5,Forward Pass,10,Grit,13,Raw Fury,17,Quick Breath,23,Build,27,Bring The Heat,32,Call Out,36,Shield,40,Supercommit,46,Hawkeye"
-plays_extra = "Counter,Desperate Force,Cook,Floater,Lure Shot,Precision Strike,Quick Set,Refresh,Set,Calming Aura,Chant,Chill Out,Goo-Goo Eyes,Share Snack,Whistle,Fortify,Torch Pass"
-possible_plays = Array[ExtResource("1_hpxhf")]([ExtResource("3_wwyt0"), ExtResource("4_5ygm3"), ExtResource("5_0e570"), ExtResource("6_x0phv"), ExtResource("7_tjaxe"), ExtResource("8_kotxh"), ExtResource("9_mwjch"), ExtResource("10_3ykhq"), ExtResource("11_no3si"), ExtResource("12_ugcey"), ExtResource("13_wvhj2")])
+plays_string = "From Levels:
+1
+Pepshot
+1
+Dig
+5
+Forward Pass
+10
+Grit
+13
+Raw Fury
+17
+Quick Breath
+23
+Build
+27
+Bring the Heat
+32
+Call Out
+36
+Shield
+40
+Supercommit
+46
+Hawkeye
+From Friends:
+Counter
+Desperate Force
+Cook
+Floater
+Lure Shot
+Precision Strike
+Quick Set
+Refresh
+Set
+Calming Aura
+Chant
+Chill Out
+Goo-Goo Eyes
+Share Snack
+Whistle
+Fortify
+Torch Pass"
+possible_plays = Array[ExtResource("1_hpxhf")]([ExtResource("3_4obf8"), ExtResource("6_rmm7t"), ExtResource("7_h3r0u"), ExtResource("10_h0gpr"), ExtResource("13_060bl"), ExtResource("15_u8pbk"), ExtResource("16_b82ns"), ExtResource("17_4qelw"), ExtResource("18_yonri"), ExtResource("13_5ygm3"), ExtResource("20_x7i1o")])
 possible_traits = Array[ExtResource("27_d2ypt")]([ExtResource("2_h3r0u"), ExtResource("30_rujeu")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("17_wwyt0")

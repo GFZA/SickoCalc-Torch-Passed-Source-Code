@@ -1,19 +1,19 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://bhjhjo1l0ceqp"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://b8on8jddgybrx"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_qwrbq"]
 [ext_resource type="Resource" uid="uid://usm4ousrjrpy" path="res://Autoloads/Resources/Trait/hunter.tres" id="2_2qalg"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_c8kx2"]
-[ext_resource type="Resource" uid="uid://cnrdrpp1ytwvq" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_2qalg"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_88t42"]
-[ext_resource type="Resource" uid="uid://dfr4rlcnefv8y" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="4_ei6jd"]
-[ext_resource type="Resource" uid="uid://dc5fuxjba5vkb" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="5_awwmr"]
-[ext_resource type="Resource" uid="uid://cod7yqucaq628" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="6_tsl6s"]
-[ext_resource type="Resource" uid="uid://dmv2tjd66i2td" path="res://Autoloads/Resources/Plays/Attack/Mind/roll_shot.tres" id="7_mxtd8"]
-[ext_resource type="Resource" uid="uid://dlf2eqay3itwo" path="res://Autoloads/Resources/Plays/Attack/Mind/soulcursher.tres" id="8_lw158"]
-[ext_resource type="Resource" uid="uid://bycxj0vtn5bss" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="9_2br25"]
-[ext_resource type="Resource" uid="uid://b3ie8s030fuig" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="10_m7v2w"]
+[ext_resource type="Resource" uid="uid://cnrdrpp1ytwvq" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="4_dqylr"]
+[ext_resource type="Resource" uid="uid://dfr4rlcnefv8y" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="6_jdbkq"]
+[ext_resource type="Resource" uid="uid://dc5fuxjba5vkb" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="9_8xe6c"]
+[ext_resource type="Resource" uid="uid://cod7yqucaq628" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="11_jfocj"]
 [ext_resource type="Resource" uid="uid://cxq7k0072fthg" path="res://Autoloads/Resources/Trait/absorption.tres" id="12_thq60"]
+[ext_resource type="Resource" uid="uid://dmv2tjd66i2td" path="res://Autoloads/Resources/Plays/Attack/Mind/roll_shot.tres" id="13_5kxyb"]
 [ext_resource type="Texture2D" uid="uid://b45ysdhaqtkyu" path="res://Autoloads/Resources/Beastie/Seakit/icon_seakit.png" id="14_bjwt7"]
+[ext_resource type="Resource" uid="uid://dlf2eqay3itwo" path="res://Autoloads/Resources/Plays/Attack/Mind/soulcursher.tres" id="14_dnwli"]
+[ext_resource type="Resource" uid="uid://bycxj0vtn5bss" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="15_brllc"]
+[ext_resource type="Resource" uid="uid://b3ie8s030fuig" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="16_1ptgd"]
 
 [resource]
 script = ExtResource("3_88t42")
@@ -29,9 +29,45 @@ mind_base_pow = 83
 body_base_def = 67
 spirit_base_def = 79
 mind_base_def = 40
-plays_level = "0,Net Rush,0,Practice Shot,9,Telekinesis,14,Floater,19,Sting,22,Deep Breath,26,Sneak Attack,31,Nettle,35,Tracker,39,Mark,43,Roll Shot,48,Soulcrusher"
-plays_extra = "Stinger,Nerve Strike,Cover,Tactical Pass,Exhaust,Feint,Jeer,Lock Target,Assess,Hawkeye,Quick Breath,Shield"
-possible_plays = Array[ExtResource("1_qwrbq")]([ExtResource("3_2qalg"), ExtResource("4_ei6jd"), ExtResource("5_awwmr"), ExtResource("6_tsl6s"), ExtResource("7_mxtd8"), ExtResource("8_lw158"), ExtResource("9_2br25"), ExtResource("10_m7v2w")])
+plays_string = "From Levels:
+1
+Net Rush
+1
+Practice Shot
+9
+Telekinesis
+14
+Floater
+19
+Sting
+22
+Deep Breath
+26
+Sneak Attack
+31
+Nettle
+35
+Tracker
+39
+Mark
+43
+Roll Shot
+48
+Soulcrusher
+From Friends:
+Stinger
+Nerve Strike
+Cover
+Tactical Pass
+Exhaust
+Feint
+Jeer
+Lock Target
+Assess
+Hawkeye
+Quick Breath
+Shield"
+possible_plays = Array[ExtResource("1_qwrbq")]([ExtResource("4_dqylr"), ExtResource("6_jdbkq"), ExtResource("9_8xe6c"), ExtResource("11_jfocj"), ExtResource("13_5kxyb"), ExtResource("14_dnwli"), ExtResource("15_brllc"), ExtResource("16_1ptgd")])
 possible_traits = Array[ExtResource("2_c8kx2")]([ExtResource("2_2qalg"), ExtResource("12_thq60")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("14_bjwt7")
