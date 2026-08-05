@@ -1,22 +1,23 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://d3hasjjvrjtq8"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=20 format=3 uid="uid://cxlrnei2a6nnj"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_mjbct"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_c0oaa"]
 [ext_resource type="Resource" uid="uid://1q4bohxic4he" path="res://Autoloads/Resources/Trait/full_focus.tres" id="2_x4xr0"]
-[ext_resource type="Resource" uid="uid://cnrdrpp1ytwvq" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_kswp5"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_xmliq"]
-[ext_resource type="Resource" uid="uid://dxpdlo5hbqo7w" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="4_b2dfs"]
-[ext_resource type="Resource" uid="uid://c6cpdi5nq4tlw" path="res://Autoloads/Resources/Plays/Attack/Mind/zigzag.tres" id="5_lich6"]
-[ext_resource type="Resource" uid="uid://b4hy4c6g3y6kt" path="res://Autoloads/Resources/Plays/Attack/Mind/tool.tres" id="6_ydmap"]
-[ext_resource type="Resource" uid="uid://cvelioeeooyfg" path="res://Autoloads/Resources/Plays/Attack/Body/nice_shot.tres" id="7_osseh"]
-[ext_resource type="Resource" uid="uid://b1hvdsyb5bx4b" path="res://Autoloads/Resources/Plays/Attack/Body/muscle_memory.tres" id="8_jcio7"]
-[ext_resource type="Resource" uid="uid://bi278ctjoqvrt" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="9_0uv88"]
-[ext_resource type="Resource" uid="uid://dmv2tjd66i2td" path="res://Autoloads/Resources/Plays/Attack/Mind/roll_shot.tres" id="10_2lg8c"]
-[ext_resource type="Resource" uid="uid://cme5s0ruaay2q" path="res://Autoloads/Resources/Plays/Attack/Mind/dump.tres" id="11_3cds0"]
-[ext_resource type="Resource" uid="uid://cb5l0ce1v0p15" path="res://Autoloads/Resources/Plays/Attack/Mind/sweep.tres" id="12_ji4pg"]
-[ext_resource type="Resource" uid="uid://cod7yqucaq628" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="13_ewtk1"]
-[ext_resource type="Resource" uid="uid://17upagq6d0q6" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="14_6crta"]
+[ext_resource type="Resource" uid="uid://cnrdrpp1ytwvq" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="4_u75hd"]
+[ext_resource type="Resource" uid="uid://dxpdlo5hbqo7w" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="6_r1trf"]
+[ext_resource type="Resource" uid="uid://c6cpdi5nq4tlw" path="res://Autoloads/Resources/Plays/Attack/Mind/zigzag.tres" id="9_hbu3m"]
+[ext_resource type="Resource" uid="uid://b4hy4c6g3y6kt" path="res://Autoloads/Resources/Plays/Attack/Mind/tool.tres" id="13_fpduj"]
+[ext_resource type="Resource" uid="uid://cvelioeeooyfg" path="res://Autoloads/Resources/Plays/Attack/Body/nice_shot.tres" id="15_2os3a"]
+[ext_resource type="Resource" uid="uid://b1hvdsyb5bx4b" path="res://Autoloads/Resources/Plays/Attack/Body/muscle_memory.tres" id="16_juwo3"]
+[ext_resource type="Resource" uid="uid://bi278ctjoqvrt" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="17_trxp0"]
+[ext_resource type="Resource" uid="uid://dmv2tjd66i2td" path="res://Autoloads/Resources/Plays/Attack/Mind/roll_shot.tres" id="18_ffy6u"]
 [ext_resource type="Texture2D" uid="uid://cndc5ad53w1r" path="res://Autoloads/Resources/Beastie/Bandicraft/icon_bandicraft.png" id="19_b2dfs"]
+[ext_resource type="Resource" uid="uid://cme5s0ruaay2q" path="res://Autoloads/Resources/Plays/Attack/Mind/dump.tres" id="19_omk2e"]
+[ext_resource type="Resource" uid="uid://cb5l0ce1v0p15" path="res://Autoloads/Resources/Plays/Attack/Mind/sweep.tres" id="20_0bb1w"]
+[ext_resource type="Resource" uid="uid://cod7yqucaq628" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="21_ceqbk"]
+[ext_resource type="Resource" uid="uid://17upagq6d0q6" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="22_r18vb"]
+[ext_resource type="Resource" uid="uid://cwwdwghrp4cco" path="res://Autoloads/Resources/Plays/Attack/Mind/precision_strike.tres" id="23_nt7n5"]
 [ext_resource type="Resource" uid="uid://d1fu5qajfhwp2" path="res://Autoloads/Resources/Trait/captain.tres" id="36_hwn4f"]
 
 [resource]
@@ -32,9 +33,53 @@ mind_base_pow = 85
 body_base_def = 70
 spirit_base_def = 85
 mind_base_def = 118
-plays_level = "0,Dig,0,Practice Shot,15,Forward Pass,18,Prepared Attack,21,Set,25,Demanding Set,29,Zigzag,32,Build,36,Wall,41,Quick Set,45,Tool,49,Meditate"
-plays_extra = "Nice Shot,Muscle Memory,Bump,Roll Shot,Dump,Sweep,Tracker,Mindfield,Excited Pass,Net Rush,Pipe,Refresh,Tactical Pass,Clear Field,Lay Trap,Rumble,Shake Off,High Five,Shield"
-possible_plays = Array[ExtResource("1_mjbct")]([ExtResource("3_kswp5"), ExtResource("4_b2dfs"), ExtResource("5_lich6"), ExtResource("6_ydmap"), ExtResource("7_osseh"), ExtResource("8_jcio7"), ExtResource("9_0uv88"), ExtResource("10_2lg8c"), ExtResource("11_3cds0"), ExtResource("12_ji4pg"), ExtResource("13_ewtk1"), ExtResource("14_6crta")])
+plays_string = "From Levels:
+1
+Dig
+1
+Practice Shot
+15
+Forward Pass
+18
+Prepared Attack
+21
+Set
+25
+Demanding Set
+29
+Zigzag
+32
+Build
+36
+Wall
+41
+Quick Set
+45
+Tool
+49
+Meditate
+From Friends:
+Nice Shot
+Muscle Memory
+Bump
+Roll Shot
+Dump
+Sweep
+Tracker
+Mindfield
+Precision Strike
+Excited Pass
+Net Rush
+Pipe
+Refresh
+Tactical Pass
+Clear Field
+Lay Trap
+Rumble
+Shake Off
+High Five
+Shield"
+possible_plays = Array[ExtResource("1_mjbct")]([ExtResource("4_u75hd"), ExtResource("6_r1trf"), ExtResource("9_hbu3m"), ExtResource("13_fpduj"), ExtResource("15_2os3a"), ExtResource("16_juwo3"), ExtResource("17_trxp0"), ExtResource("18_ffy6u"), ExtResource("19_omk2e"), ExtResource("20_0bb1w"), ExtResource("21_ceqbk"), ExtResource("22_r18vb"), ExtResource("23_nt7n5")])
 possible_traits = Array[ExtResource("2_c0oaa")]([ExtResource("2_x4xr0"), ExtResource("36_hwn4f")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("19_b2dfs")

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://bmhu5whgfupao"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_6fdlu"]
+
+[resource]
+script = ExtResource("1_6fdlu")
+name = "EXP Tracker"
+base_pow = 45
+descrition = "Target feels +1 BLOCKED (POW x2/3). Ignores BLOCKED."
+type = 2
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

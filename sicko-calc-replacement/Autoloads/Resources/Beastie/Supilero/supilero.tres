@@ -1,16 +1,16 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://befc582fg631w"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://cae7rbefko3eo"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_bfpqm"]
 [ext_resource type="Resource" uid="uid://cnv44o8juprqo" path="res://Autoloads/Resources/Trait/forager.tres" id="2_ve7ok"]
-[ext_resource type="Resource" uid="uid://bi278ctjoqvrt" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_0dx2l"]
-[ext_resource type="Resource" uid="uid://51titaex4o3e" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="4_o8d7c"]
-[ext_resource type="Resource" uid="uid://ddnch0ufpde3l" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="5_ylp06"]
-[ext_resource type="Resource" uid="uid://rou4ol1fdo40" path="res://Autoloads/Resources/Plays/Attack/Body/true_strike.tres" id="6_aub5i"]
-[ext_resource type="Resource" uid="uid://hiuivj04u8ir" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="7_ykwxe"]
-[ext_resource type="Resource" uid="uid://khv754wvrclb" path="res://Autoloads/Resources/Plays/Attack/Body/thunder.tres" id="8_ainf8"]
-[ext_resource type="Resource" uid="uid://b3bvfpjwplhwn" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="9_m2fgo"]
-[ext_resource type="Resource" uid="uid://ooe1a5sxb6wn" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="10_hav6l"]
-[ext_resource type="Resource" uid="uid://c0hsvmpto8e3s" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="11_k23c2"]
+[ext_resource type="Resource" uid="uid://bi278ctjoqvrt" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_bfpqm"]
+[ext_resource type="Resource" uid="uid://51titaex4o3e" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="5_3d1f3"]
+[ext_resource type="Resource" uid="uid://ddnch0ufpde3l" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="8_3d1f3"]
+[ext_resource type="Resource" uid="uid://rou4ol1fdo40" path="res://Autoloads/Resources/Plays/Attack/Body/true_strike.tres" id="11_3t1ix"]
+[ext_resource type="Resource" uid="uid://hiuivj04u8ir" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="13_m5ma5"]
+[ext_resource type="Resource" uid="uid://khv754wvrclb" path="res://Autoloads/Resources/Plays/Attack/Body/thunder.tres" id="15_rrad1"]
+[ext_resource type="Resource" uid="uid://b3bvfpjwplhwn" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="16_n6oiu"]
+[ext_resource type="Resource" uid="uid://ooe1a5sxb6wn" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="16_pa5bn"]
+[ext_resource type="Resource" uid="uid://c0hsvmpto8e3s" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="18_rndbi"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="30_4lwbm"]
 [ext_resource type="Resource" uid="uid://brae51tcbsn8h" path="res://Autoloads/Resources/Trait/confident.tres" id="31_p2mw6"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="32_yow3n"]
@@ -29,9 +29,48 @@ mind_base_pow = 40
 body_base_def = 120
 spirit_base_def = 60
 mind_base_def = 95
-plays_level = "0,Bump,0,Quick Tag,12,Breaker,15,Cover,18,Hawkeye,21,Dive,25,Dig,29,Flex,35,True Strike,39,Build,44,Vigor Beam,49,High Five"
-plays_extra = "Thunder,Thump,Demolish,Grit,Forward Pass,Juggle,Set,Deep Breath,Introduce,Lock Target,Mark,Provoke,Mighty Yell,Patience,Shield"
-possible_plays = Array[ExtResource("1_bfpqm")]([ExtResource("3_0dx2l"), ExtResource("4_o8d7c"), ExtResource("5_ylp06"), ExtResource("6_aub5i"), ExtResource("7_ykwxe"), ExtResource("8_ainf8"), ExtResource("9_m2fgo"), ExtResource("10_hav6l"), ExtResource("11_k23c2")])
+plays_string = "From Levels:
+1
+Bump
+1
+Quick Tag
+12
+Breaker
+15
+Cover
+18
+Hawkeye
+21
+Dive
+25
+Dig
+29
+Flex
+35
+True Strike
+39
+Build
+44
+Vigor Beam
+49
+High Five
+From Friends:
+Thunder
+Thump
+Demolish
+Grit
+Forward Pass
+Juggle
+Set
+Deep Breath
+Introduce
+Lock Target
+Mark
+Provoke
+Mighty Yell
+Patience
+Shield"
+possible_plays = Array[ExtResource("1_bfpqm")]([ExtResource("3_bfpqm"), ExtResource("5_3d1f3"), ExtResource("8_3d1f3"), ExtResource("11_3t1ix"), ExtResource("13_m5ma5"), ExtResource("15_rrad1"), ExtResource("16_n6oiu"), ExtResource("16_pa5bn"), ExtResource("18_rndbi")])
 possible_traits = Array[ExtResource("30_4lwbm")]([ExtResource("2_ve7ok"), ExtResource("31_p2mw6")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("33_7msq5")

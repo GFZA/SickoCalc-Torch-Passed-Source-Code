@@ -16,6 +16,36 @@ const RALLY_FLAT : int = 20
 const CHEERLEADER_FLAT : int = 10
 const STARTER_FLAT : int = 15
 
+const NORMAL_CALC_BYPASSING_ATTACKS : Array[String] = ["grinder", "precision strike", "exp precision strike"]
+
+const LOWEST_DEF_TARGETING_ATTACKS : Array[String] = ["snipe"]
+const HIGHEST_DEF_TARGETING_ATTACKS : Array[String] = ["contest"]
+
+const ALWAYS_CALC_FROM_BENCH_ATTACKS : Array[String] = ["flight"]
+const ALWAYS_CALC_FROM_BACK_ATTACKS : Array[String] = ["flight"]
+const ALWAYS_CALC_FROM_FRONT_ATTACKS : Array[String] = ["swarm", "launch"]
+
+const SWAP_ROW_BONUS_ATTACKS : Array[String] = ["rocket"]
+const SWAP_ROW_BONUS_TRAITS : Array[String] = ["shy"]
+
+const BOOSTS_IGNORING_ATTACKS : Array[String] = ["raw fury", "exp precision strike"]
+const BOOSTS_IGNORING_TRAITS : Array[String] = ["foggy"]
+
+const TRAITS_IGNORING_ATTACKS : Array[String] = ["true strike"]
+const TRAITS_IGNORING_TRAITS : Array[String] = ["maverick"]
+
+const FIELD_IGNORING_ATTACKS : Array[String] = ["sweep"]
+const FIELD_IGNORING_TRAITS : Array[String] = ["in the clouds"]
+
+const RALLY_BOOST_EXCEPTION_ATTACKS : Array[String] = ["ego blast"]
+const RALLY_BOOST_EXCEPTION_TRAITS : Array[String] = ["extrovert"]
+
+const BLOCKED_IGNORING_ATTACKS : Array[String] = ["roll shot", "exp tracker"]
+const BLOCKED_IGNORING_TRAITS : Array[String] = ["rogue"]
+
+const TOUGH_IGNORING_ATTACKS : Array[String] = ["raw fury", "exp precision strike"]
+const TOUGH_IGNORING_TRAITS : Array[String] = [] # Unused
+
 
 func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 				attacker_team_controller : TeamController = null, \
@@ -40,7 +70,7 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 		if attack.is_mimicked:
 			final_damage = ceili(final_damage * MIMIC_MULT) # do it here as it skip the part where do this normally
 
-	if attack_name == "precision strike":
+	if attack_name in ["precision strike", "exp precision strike"]:
 		final_damage = PRESICION_STRIKE_DAMAGE # It's now affected by Blocked
 		if attacker_trait == "musclebrain":
 			final_damage = ceili(final_damage * MUSCLEBRAIN_MULT) # since it overwrite the musclebrain check above, just check again here
@@ -89,8 +119,8 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 
 	#region Set up vars for calculation
 
-	var attacker_at_net : bool = attacker.check_if_net() or (attack_name == "swarm") or (attack_name == "launch")
-	if attack_name == "flight":
+	var attacker_at_net : bool = attacker.check_if_net() or attack_name in ALWAYS_CALC_FROM_FRONT_ATTACKS
+	if attack_name in ALWAYS_CALC_FROM_BACK_ATTACKS:
 		attacker_at_net = false
 
 	var dread : bool = false
@@ -124,26 +154,27 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 	# 3 == Beastie.Stats.B_DEF
 	# 4 == Beastie.Stats.S_DEF
 	# 5 == Beastie.Stats.M_DEF
-	if attack_name == "contest":
+	if attack_name in HIGHEST_DEF_TARGETING_ATTACKS:
 		stats_type_defense = _get_highest_or_lowest_def_stat(true, attacker, defender, attack, jazzed, defender_weepy)
-	if attack_name == "snipe":
+	if attack_name in LOWEST_DEF_TARGETING_ATTACKS:
 		stats_type_defense = _get_highest_or_lowest_def_stat(false, attacker, defender, attack, jazzed, defender_weepy)
 
 	var total_attack_stat : int = attacker.get_total_stats_value(stats_type_attack) # Will get +5 from being lv.50 in calculation
 	var total_defense_stat : int = defender.get_total_stats_value(stats_type_defense)
 	var attack_boosts : int = attacker.get_boosts(stats_type_attack)
 	var defense_boosts : int = defender.get_boosts(stats_type_defense)
+	var ignore_trait : bool = (attack_name in TRAITS_IGNORING_ATTACKS or attacker_trait in TRAITS_IGNORING_TRAITS)
 	#endregion
 
 	#region Get boost counts and damage mults
 	# --- POW boosts ---
 	var total_attack_boost : int = 0
 	var attack_boosts_to_add : int = attack_boosts
-	var foggy_ignore : bool = defender_trait == "foggy" and \
-							not (attack_name == "true strike" or attacker_trait == "maverick")
-	if attacker_weepy or foggy_ignore:
+	var ignore_pow_boosts : bool = attacker_weepy or (defender_trait in BOOSTS_IGNORING_TRAITS and \
+							not (attack_name in TRAITS_IGNORING_ATTACKS or attacker_trait in TRAITS_IGNORING_TRAITS))
+	if ignore_pow_boosts:
 		attack_boosts_to_add = min(0, attack_boosts) # so it counts deboosts
-	elif attack_name == "flight":
+	elif attack_name in ALWAYS_CALC_FROM_BENCH_ATTACKS:
 		attack_boosts_to_add = 0  # clear all boosts
 	total_attack_boost += attack_boosts_to_add
 
@@ -152,8 +183,8 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 			total_attack_boost = 0
 		total_attack_boost += 1
 
-	if not attack_name == "flight": # Flight remove all row bonus for some reason
-		if attacker_trait == "shy":
+	if not attack_name in ALWAYS_CALC_FROM_BENCH_ATTACKS: # Flight remove all row bonus for some reason
+		if attacker_trait in SWAP_ROW_BONUS_TRAITS:
 			total_attack_boost += int(not attacker_at_net)
 		else:
 			total_attack_boost += int(attacker_at_net)
@@ -161,23 +192,24 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 	# --- DEF boosts ---
 	var total_defense_boost : int = 0
 	var def_boosts_to_add : int = defense_boosts
-	if defender_weepy or jazzed or attacker_trait == "foggy" or attack_name == "raw fury":
+	var ignore_target_boost : bool = (attacker_trait in BOOSTS_IGNORING_TRAITS) or (attack_name in BOOSTS_IGNORING_ATTACKS)
+	if defender_weepy or jazzed or ignore_target_boost:
 		def_boosts_to_add = mini(0, defense_boosts) # so it counts deboosts
 	total_defense_boost += def_boosts_to_add
 
 	var swap_row_bonus : bool = false
-	var defender_is_shy : bool = defender_trait == "shy"
-	var is_maverick : bool = attacker_trait == "maverick"
-	var is_rocket : bool = attack_name == "rocket"
-	var is_true_strike : bool = attack_name == "true strike"
+	var is_traits_ignoring_attack : bool = attack_name in TRAITS_IGNORING_ATTACKS
+	var attacker_is_traits_ignoring_trait : bool = attacker_trait in TRAITS_IGNORING_TRAITS
+	var is_swap_row_bonus_attack : bool = attack_name in SWAP_ROW_BONUS_ATTACKS
+	var defender_is_swap_row_bonus_trait : bool = defender_trait in SWAP_ROW_BONUS_TRAITS
 
-	if not defender_is_shy:
-		if is_rocket:
+	if not defender_is_swap_row_bonus_trait:
+		if is_swap_row_bonus_attack:
 			swap_row_bonus = true
 		else:
 			swap_row_bonus = false
 	else:
-		if is_rocket != (is_maverick != is_true_strike): # make it double ignore if both
+		if is_swap_row_bonus_attack != (attacker_is_traits_ignoring_trait != is_traits_ignoring_attack): # make it double ignore if both
 			swap_row_bonus = false
 		else:
 			swap_row_bonus = true
@@ -189,7 +221,7 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 
 	var attacker_trait_mult : float = attacker.my_trait.get_attack_mult(attacker, defender, attack, attacker_team_controller, defender_team_controller)
 	var defender_trait_mult : float = 1.0
-	if not (attack_name == "true strike" or attacker_trait == "maverick"):
+	if not ignore_trait:
 		defender_trait_mult = defender.my_trait.get_defense_mult(attacker, defender, attack, attacker_team_controller, defender_team_controller)
 
 	var mimic_mult : float = MIMIC_MULT if attack.is_mimicked else 1.0
@@ -197,13 +229,13 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 	var tender_mult : float = TENDER_MULT if tender else 1.0
 
 	var rally_mind_mult : float = RALLY_MIND_MULT if stats_type_attack == int(Plays.Type.ATTACK_MIND) and attacker_team_controller and \
-							(attacker_team_controller.get_field_effect_stack(FieldEffect.Type.RALLY) > 0) and (attack_name != "ego blast") \
-							and (attacker_trait != "extrovert") and (attack_name != "sweep") \
-							and not (attacker_trait == "in the clouds") else 1.0
+							(attacker_team_controller.get_field_effect_stack(FieldEffect.Type.RALLY) > 0) and not attack_name in RALLY_BOOST_EXCEPTION_ATTACKS \
+							and not attacker_trait in RALLY_BOOST_EXCEPTION_TRAITS and not attack_name in FIELD_IGNORING_ATTACKS \
+							and not (attacker_trait in FIELD_IGNORING_TRAITS) else 1.0
 
 	var friendship_mult : float = FRIENDSHIP_MULT if defender_team_controller and \
 							defender_team_controller.check_for_friendship_buff(defender) and \
-							not attack_name == "true strike" and not attacker_trait == "maverick" \
+							not ignore_trait \
 							else 1.0
 
 	var all_damage_mults : float = (attacker_trait_mult / defender_trait_mult) * mimic_mult \
@@ -227,16 +259,16 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 	#endregion
 
 	#region Calculate the damage + board states
-	if not attack_name in ["grinder", "precision strike"]:
+	if not attack_name in NORMAL_CALC_BYPASSING_ATTACKS:
 		final_damage = max(1, ceili(((floori(final_atk) * base_pow / final_def) * 0.4) * all_damage_mults))
 
 	if attacker_team_controller:
 		if attacker_team_controller.check_for_cheerleader_buff(attacker):
 			final_damage += CHEERLEADER_FLAT
-		var boostable_by_rally : bool = ((stats_type_attack == int(Plays.Type.ATTACK_SPIRIT)) or (attack_name == "ego blast") or (attacker_trait == "extrovert")) \
-										and not (attacker_trait == "in the clouds")
+		var boostable_by_rally : bool = ((stats_type_attack == int(Plays.Type.ATTACK_SPIRIT)) or (attack_name in RALLY_BOOST_EXCEPTION_ATTACKS) or (attacker_trait in RALLY_BOOST_EXCEPTION_TRAITS)) \
+										and not (attacker_trait in FIELD_IGNORING_TRAITS)
 		var has_rally : bool = (attacker_team_controller.get_field_effect_stack(FieldEffect.Type.RALLY) > 0)
-		var defender_ignore_rally : bool = (defender_trait == "in the clouds") and not attacker_trait == "maverick"
+		var defender_ignore_rally : bool = (defender_trait in FIELD_IGNORING_TRAITS) and not attacker_trait in TRAITS_IGNORING_TRAITS
 		if boostable_by_rally and has_rally and not defender_ignore_rally:
 			final_damage += RALLY_FLAT
 
@@ -246,7 +278,8 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 
 	# Apply Blocked after adding flat damage now (New in Milestone 4)
 	var blocked_stack : float = 0.0
-	if not (attack_name == "roll shot" or (attacker_trait == "rogue" and attacker.my_trait.manually_activated)):
+	var ignore_blocked : bool = (attack_name in BLOCKED_IGNORING_ATTACKS) or (attacker_trait in BLOCKED_IGNORING_TRAITS and attacker.my_trait.manually_activated)
+	if not ignore_blocked:
 		blocked_stack = attacker.get_feeling_stack(Beastie.Feelings.BLOCKED)
 	var blocked_mult : float = 2.0 / (2.0 + blocked_stack)
 	final_damage = max(1, ceili(final_damage * blocked_mult))
@@ -254,10 +287,11 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 	final_damage = attacker.my_trait.special_cal_formula(final_damage, attacker, defender, attack, attacker_team_controller, defender_team_controller)
 
 	# Apply Tough mult after everything
-	var tough_mult : float = TOUGH_MULT if tough and (not attack_name == "raw fury") else 1.0
+	var ignore_tough : bool = attack_name in TOUGH_IGNORING_ATTACKS
+	var tough_mult : float = TOUGH_MULT if tough and not ignore_tough else 1.0
 	final_damage = max(1, ceili(float(final_damage) * tough_mult))
 
-	if not (attack_name == "true strike" or attacker_trait == "maverick"):
+	if not ignore_trait:
 		final_damage = defender.my_trait.special_cal_formula(final_damage, attacker, defender, attack, attacker_team_controller, defender_team_controller)
 
 	#endregion
@@ -287,7 +321,7 @@ func _pre_calc_def_stat(stat : Beastie.Stats, attacker : Beastie, defender : Bea
 	var def_stat : int = defender.get_total_stats_value(stat)
 	var total_defense_boost : int = 0
 	var def_boosts_to_add : int = defender.get_boosts(stat)
-	if defender_weepy or attacker.my_trait.name.to_lower() == "foggy" or attack_name == "raw fury":
+	if defender_weepy or attacker.my_trait.name.to_lower() in BOOSTS_IGNORING_TRAITS or attack_name in BOOSTS_IGNORING_ATTACKS:
 		def_boosts_to_add = min(0, defender.get_boosts(stat)) # so it counts deboosts
 	total_defense_boost += def_boosts_to_add
 

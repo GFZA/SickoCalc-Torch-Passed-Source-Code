@@ -1,21 +1,21 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://cldkehhldo176"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://dy5dk11mcdk7v"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_rsqbk"]
 [ext_resource type="Resource" uid="uid://lnu1hhena6a0" path="res://Autoloads/Resources/Trait/foggy.tres" id="2_f5tyd"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_lkm30"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_f5tyd"]
-[ext_resource type="Resource" uid="uid://d0kxbfqagglny" path="res://Autoloads/Resources/Plays/Attack/Spirit/steamer.tres" id="3_hnxg8"]
+[ext_resource type="Resource" uid="uid://d0kxbfqagglny" path="res://Autoloads/Resources/Plays/Attack/Spirit/steamer.tres" id="3_ln4c0"]
 [ext_resource type="Resource" uid="uid://qcwdfpwncyjm" path="res://Autoloads/Resources/Trait/sauna.tres" id="4_81pjf"]
-[ext_resource type="Resource" uid="uid://pq5ehf531if5" path="res://Autoloads/Resources/Plays/Attack/Spirit/cook.tres" id="4_o6hgl"]
-[ext_resource type="Resource" uid="uid://chytrknikw18t" path="res://Autoloads/Resources/Plays/Attack/Spirit/eruption.tres" id="5_ewbba"]
-[ext_resource type="Resource" uid="uid://7nj03vet1qji" path="res://Autoloads/Resources/Plays/Attack/Spirit/heat_wave.tres" id="6_i7cg7"]
-[ext_resource type="Resource" uid="uid://cnliahyhutvwb" path="res://Autoloads/Resources/Plays/Attack/Spirit/burnout.tres" id="7_2jreq"]
-[ext_resource type="Resource" uid="uid://bcvrnhx6jhwoj" path="res://Autoloads/Resources/Plays/Attack/Spirit/challenge.tres" id="8_3kop5"]
-[ext_resource type="Resource" uid="uid://b2pc2vt2pjw6t" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="9_q2jwx"]
-[ext_resource type="Resource" uid="uid://dumv8ybmwmdqs" path="res://Autoloads/Resources/Plays/Attack/Spirit/relentless.tres" id="10_cah1w"]
-[ext_resource type="Resource" uid="uid://bqqsp4q4rpaet" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="11_7o5cl"]
-[ext_resource type="Resource" uid="uid://dfr4rlcnefv8y" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="12_uuwh4"]
-[ext_resource type="Resource" uid="uid://smdb12qjwch4" path="res://Autoloads/Resources/Plays/Attack/Mind/pressure.tres" id="13_lc5qc"]
+[ext_resource type="Resource" uid="uid://pq5ehf531if5" path="res://Autoloads/Resources/Plays/Attack/Spirit/cook.tres" id="5_1k7fw"]
+[ext_resource type="Resource" uid="uid://chytrknikw18t" path="res://Autoloads/Resources/Plays/Attack/Spirit/eruption.tres" id="8_ct1qq"]
+[ext_resource type="Resource" uid="uid://7nj03vet1qji" path="res://Autoloads/Resources/Plays/Attack/Spirit/heat_wave.tres" id="11_i48vh"]
+[ext_resource type="Resource" uid="uid://cnliahyhutvwb" path="res://Autoloads/Resources/Plays/Attack/Spirit/burnout.tres" id="14_pe5f5"]
+[ext_resource type="Resource" uid="uid://bcvrnhx6jhwoj" path="res://Autoloads/Resources/Plays/Attack/Spirit/challenge.tres" id="15_i4jp4"]
+[ext_resource type="Resource" uid="uid://b2pc2vt2pjw6t" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="16_ucf2d"]
+[ext_resource type="Resource" uid="uid://dumv8ybmwmdqs" path="res://Autoloads/Resources/Plays/Attack/Spirit/relentless.tres" id="17_57eok"]
+[ext_resource type="Resource" uid="uid://bqqsp4q4rpaet" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="18_ga7u1"]
+[ext_resource type="Resource" uid="uid://dfr4rlcnefv8y" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="19_wdl5p"]
+[ext_resource type="Resource" uid="uid://smdb12qjwch4" path="res://Autoloads/Resources/Plays/Attack/Mind/pressure.tres" id="20_1ukgy"]
 [ext_resource type="Texture2D" uid="uid://6252y727lkwl" path="res://Autoloads/Resources/Beastie/Scauldra/icon_scauldra.png" id="33_fiyek"]
 
 [resource]
@@ -31,9 +31,48 @@ mind_base_pow = 65
 body_base_def = 99
 spirit_base_def = 120
 mind_base_def = 65
-plays_level = "0,Steamer,0,Exhaust,10,Cook,17,Heat Up,22,Shield,27,Eruption,32,Pipe,37,Reign,41,Heat Wave,45,Whistle,48,Clear Field,53,Burnout"
-plays_extra = "Challenge,Bring the Heat,Relentless,Spitball,Floater,Pressure,Excited Pass,Updraft,Blaze,Dreadful Mist,Hum,Hunker,Tough Front,Intimidate,Patience"
-possible_plays = Array[ExtResource("1_rsqbk")]([ExtResource("3_hnxg8"), ExtResource("4_o6hgl"), ExtResource("5_ewbba"), ExtResource("6_i7cg7"), ExtResource("7_2jreq"), ExtResource("8_3kop5"), ExtResource("9_q2jwx"), ExtResource("10_cah1w"), ExtResource("11_7o5cl"), ExtResource("12_uuwh4"), ExtResource("13_lc5qc")])
+plays_string = "From Levels:
+1
+Steamer
+1
+Exhaust
+10
+Cook
+17
+Heat Up
+22
+Shield
+27
+Eruption
+32
+Pipe
+37
+Reign
+41
+Heat Wave
+45
+Whistle
+48
+Clear Field
+53
+Burnout
+From Friends:
+Challenge
+Bring the Heat
+Relentless
+Spitball
+Floater
+Pressure
+Excited Pass
+Updraft
+Blaze
+Dreadful Mist
+Hum
+Hunker
+Tough Front
+Intimidate
+Patience"
+possible_plays = Array[ExtResource("1_rsqbk")]([ExtResource("3_ln4c0"), ExtResource("5_1k7fw"), ExtResource("8_ct1qq"), ExtResource("11_i48vh"), ExtResource("14_pe5f5"), ExtResource("15_i4jp4"), ExtResource("16_ucf2d"), ExtResource("17_57eok"), ExtResource("18_ga7u1"), ExtResource("19_wdl5p"), ExtResource("20_1ukgy")])
 possible_traits = Array[ExtResource("2_lkm30")]([ExtResource("2_f5tyd"), ExtResource("4_81pjf")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("33_fiyek")

@@ -334,14 +334,10 @@ func _assign_beastie_their_playdex(beastie : Beastie, path_to_beastie : String) 
 	beastie.possible_plays.clear()
 	var all_play_names : Array[String] = []
 
-	var level : PackedStringArray = beastie.plays_level.split(",")
-	for play_name : String in level:
-		if play_name.to_int() != 0 or play_name == "0":
-			level.erase(play_name)
-	all_play_names.append_array(level)
-
-	var extra : PackedStringArray = beastie.plays_extra.split(",")
-	all_play_names.append_array(extra)
+	var splitted_string : PackedStringArray = beastie.plays_string.split("\n")
+	for play_name : String in splitted_string:
+		if play_name.to_int() == 0 and not play_name in ["From Levels:", "From Friends:"]:
+			all_play_names.append(play_name)
 
 	for play_name : String in all_play_names:
 		play_name = play_name.to_lower()

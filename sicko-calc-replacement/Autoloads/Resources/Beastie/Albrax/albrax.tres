@@ -1,18 +1,18 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://dil5veqq2ktna"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://bj604ix0ul6e5"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_pfaa0"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_lv4pa"]
 [ext_resource type="Resource" uid="uid://cop5br2rp1l7p" path="res://Autoloads/Resources/Trait/tractor_beam.tres" id="2_weoxj"]
-[ext_resource type="Resource" uid="uid://17upagq6d0q6" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="3_h2a8d"]
+[ext_resource type="Resource" uid="uid://17upagq6d0q6" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="3_4f6f8"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_weoxj"]
-[ext_resource type="Resource" uid="uid://c6joa81j7k6sd" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="4_c5nxi"]
-[ext_resource type="Resource" uid="uid://kjfbpg4iax4n" path="res://Autoloads/Resources/Plays/Attack/Mind/freezeray.tres" id="5_q8xcb"]
-[ext_resource type="Resource" uid="uid://b4hy4c6g3y6kt" path="res://Autoloads/Resources/Plays/Attack/Mind/tool.tres" id="6_hrkoq"]
-[ext_resource type="Resource" uid="uid://bojb10i043gnl" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="7_j4xtm"]
-[ext_resource type="Resource" uid="uid://dfr4rlcnefv8y" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="8_6710w"]
-[ext_resource type="Resource" uid="uid://bh4ukdiqnmxsh" path="res://Autoloads/Resources/Plays/Attack/Mind/cold_calculation.tres" id="9_mwiek"]
-[ext_resource type="Resource" uid="uid://fbkol2rhhchv" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="10_h705o"]
-[ext_resource type="Resource" uid="uid://cod7yqucaq628" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="11_3tc2j"]
+[ext_resource type="Resource" uid="uid://c6joa81j7k6sd" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="6_nyird"]
+[ext_resource type="Resource" uid="uid://kjfbpg4iax4n" path="res://Autoloads/Resources/Plays/Attack/Mind/freezeray.tres" id="9_h4al0"]
+[ext_resource type="Resource" uid="uid://b4hy4c6g3y6kt" path="res://Autoloads/Resources/Plays/Attack/Mind/tool.tres" id="12_h3q8r"]
+[ext_resource type="Resource" uid="uid://bojb10i043gnl" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="14_1hrnw"]
+[ext_resource type="Resource" uid="uid://dfr4rlcnefv8y" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="15_2ankf"]
+[ext_resource type="Resource" uid="uid://bh4ukdiqnmxsh" path="res://Autoloads/Resources/Plays/Attack/Mind/cold_calculation.tres" id="16_nj5bj"]
+[ext_resource type="Resource" uid="uid://fbkol2rhhchv" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="17_wve4t"]
+[ext_resource type="Resource" uid="uid://cod7yqucaq628" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="18_1cnsx"]
 [ext_resource type="Texture2D" uid="uid://bsp34n5nwe2fi" path="res://Autoloads/Resources/Beastie/Albrax/icon_albrax.png" id="27_cayxh"]
 
 [resource]
@@ -28,9 +28,42 @@ mind_base_pow = 88
 body_base_def = 73
 spirit_base_def = 113
 mind_base_def = 46
-plays_level = "0,Mindfield,0,Lock Target,10,Mark,14,Lure Shot,20,Meditate,25,Provoke,30,Freezeray,35,Assess,39,Teleport,44,Tool,49,Staredown"
-plays_extra = "Rainbow,Floater,Cold Calculation,Rattle,Tracker,Refresh,Updraft,Call Out,Chill Out,Exhaust,Shield"
-possible_plays = Array[ExtResource("1_pfaa0")]([ExtResource("3_h2a8d"), ExtResource("4_c5nxi"), ExtResource("5_q8xcb"), ExtResource("6_hrkoq"), ExtResource("7_j4xtm"), ExtResource("8_6710w"), ExtResource("9_mwiek"), ExtResource("10_h705o"), ExtResource("11_3tc2j")])
+plays_string = "From Levels:
+1
+Mindfield
+1
+Lock Target
+10
+Mark
+14
+Lure Shot
+20
+Meditate
+25
+Provoke
+30
+Freezeray
+35
+Assess
+39
+Teleport
+44
+Tool
+49
+Staredown
+From Friends:
+Rainbow
+Floater
+Cold Calculation
+Rattle
+Tracker
+Refresh
+Updraft
+Call Out
+Chill Out
+Exhaust
+Shield"
+possible_plays = Array[ExtResource("1_pfaa0")]([ExtResource("3_4f6f8"), ExtResource("6_nyird"), ExtResource("9_h4al0"), ExtResource("12_h3q8r"), ExtResource("14_1hrnw"), ExtResource("15_2ankf"), ExtResource("16_nj5bj"), ExtResource("17_wve4t"), ExtResource("18_1cnsx")])
 possible_traits = Array[ExtResource("2_lv4pa")]([ExtResource("2_weoxj")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("27_cayxh")

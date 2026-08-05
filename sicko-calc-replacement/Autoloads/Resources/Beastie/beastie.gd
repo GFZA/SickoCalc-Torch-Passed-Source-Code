@@ -88,8 +88,7 @@ signal health_updated(health : int)
 @export_range(1, 150) var body_base_def : int = 50
 @export_range(1, 150) var spirit_base_def : int = 67
 @export_range(1, 150) var mind_base_def : int = 55
-@export_multiline var plays_level : String = "0,Careful Shot,0,Call Out,6,Refresh,9,Lure Shot,12,Breaker,15,Shield,19,Clear Field,24,Toppler,30,Mark,35,Snipe,39,Forward Pass,43,Demolish"
-@export_multiline var plays_extra : String = "Power Sap,Boom,Relaxed Hit,Dig,Pipe,Chill Out,Exhaust,Hunker,Tough Front,Heat Up,Torch Pass"
+@export_multiline var plays_string : String = "From Levels:\n1\nCareful Shot\n1\nCall Out\n6\nRefresh\n9\nLure Shot\n12\nBreaker\n15\nShield\n19\nClear Field\n24\nToppler\n30\nMark\n35\nSnipe\n39\nForward Pass\n43\nDemolish\nFrom Friends:\nPower Sap\nBoom\nRelaxed Hit\nDig\nPipe\nChill Out\nExhaust\nHunker\nTough Front\nHeat Up\nTorch Pass"
 @export var possible_plays : Array[Plays] = []
 @export var possible_traits : Array[Trait] = []
 @export var sprites : Dictionary[Sprite, Texture2D] = {

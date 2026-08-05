@@ -1,25 +1,25 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=21 format=3 uid="uid://lmofraeuq427"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=21 format=3 uid="uid://u3m8swrktbs3"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_fo56u"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_73rju"]
 [ext_resource type="Resource" uid="uid://dpdcbhb64tceo" path="res://Autoloads/Resources/Trait/stirring.tres" id="2_437uw"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_jkegs"]
-[ext_resource type="Resource" uid="uid://cnrdrpp1ytwvq" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_m3gke"]
-[ext_resource type="Resource" uid="uid://cm6axu5oniegv" path="res://Autoloads/Resources/Plays/Attack/Mind/echo_strike.tres" id="4_a7um6"]
+[ext_resource type="Resource" uid="uid://cnrdrpp1ytwvq" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_yxwjv"]
 [ext_resource type="Resource" uid="uid://bryqk7emw3yhy" path="res://Autoloads/Resources/Trait/stagecraft.tres" id="4_fj4vk"]
-[ext_resource type="Resource" uid="uid://c0hsvmpto8e3s" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="5_qi2x6"]
-[ext_resource type="Resource" uid="uid://cdvmyw82xfyc5" path="res://Autoloads/Resources/Plays/Attack/Mind/ego_blast.tres" id="6_7ddkb"]
-[ext_resource type="Resource" uid="uid://c346ver25emiu" path="res://Autoloads/Resources/Plays/Attack/Spirit/passion_strike.tres" id="7_3ywjm"]
-[ext_resource type="Resource" uid="uid://bbtfkfi4i2py6" path="res://Autoloads/Resources/Plays/Attack/Mind/perfect_shot.tres" id="8_y2tpa"]
-[ext_resource type="Resource" uid="uid://cnliahyhutvwb" path="res://Autoloads/Resources/Plays/Attack/Spirit/burnout.tres" id="9_24bfs"]
-[ext_resource type="Resource" uid="uid://c8alcpfh6p0m0" path="res://Autoloads/Resources/Plays/Attack/Spirit/scream.tres" id="10_vpa4r"]
-[ext_resource type="Resource" uid="uid://bosg46t132k5k" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="11_xg50x"]
-[ext_resource type="Resource" uid="uid://bt6kmjvu2p44g" path="res://Autoloads/Resources/Plays/Attack/Spirit/comeback.tres" id="12_ndy8o"]
-[ext_resource type="Resource" uid="uid://cx5i0qenub7xe" path="res://Autoloads/Resources/Plays/Attack/Mind/splinter.tres" id="13_fmi6w"]
-[ext_resource type="Resource" uid="uid://bh4ukdiqnmxsh" path="res://Autoloads/Resources/Plays/Attack/Mind/cold_calculation.tres" id="14_xa33j"]
-[ext_resource type="Resource" uid="uid://b3ie8s030fuig" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="15_3tfo5"]
-[ext_resource type="Resource" uid="uid://fbkol2rhhchv" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="16_ek7cj"]
+[ext_resource type="Resource" uid="uid://cm6axu5oniegv" path="res://Autoloads/Resources/Plays/Attack/Mind/echo_strike.tres" id="5_qg7y4"]
+[ext_resource type="Resource" uid="uid://c0hsvmpto8e3s" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="7_11e1k"]
+[ext_resource type="Resource" uid="uid://cdvmyw82xfyc5" path="res://Autoloads/Resources/Plays/Attack/Mind/ego_blast.tres" id="9_n56t8"]
+[ext_resource type="Resource" uid="uid://c346ver25emiu" path="res://Autoloads/Resources/Plays/Attack/Spirit/passion_strike.tres" id="12_cfmue"]
+[ext_resource type="Resource" uid="uid://bbtfkfi4i2py6" path="res://Autoloads/Resources/Plays/Attack/Mind/perfect_shot.tres" id="13_e07d2"]
+[ext_resource type="Resource" uid="uid://cnliahyhutvwb" path="res://Autoloads/Resources/Plays/Attack/Spirit/burnout.tres" id="15_i8ei2"]
+[ext_resource type="Resource" uid="uid://c8alcpfh6p0m0" path="res://Autoloads/Resources/Plays/Attack/Spirit/scream.tres" id="16_b1j58"]
+[ext_resource type="Resource" uid="uid://bosg46t132k5k" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="17_uua5i"]
+[ext_resource type="Resource" uid="uid://bt6kmjvu2p44g" path="res://Autoloads/Resources/Plays/Attack/Spirit/comeback.tres" id="18_u23ft"]
+[ext_resource type="Resource" uid="uid://cx5i0qenub7xe" path="res://Autoloads/Resources/Plays/Attack/Mind/splinter.tres" id="19_ubsek"]
+[ext_resource type="Resource" uid="uid://bh4ukdiqnmxsh" path="res://Autoloads/Resources/Plays/Attack/Mind/cold_calculation.tres" id="20_m1fba"]
 [ext_resource type="Texture2D" uid="uid://b6m6pdk4ik857" path="res://Autoloads/Resources/Beastie/Plumask/icon_plumask.png" id="20_m3gke"]
+[ext_resource type="Resource" uid="uid://b3ie8s030fuig" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="21_ivrcr"]
+[ext_resource type="Resource" uid="uid://fbkol2rhhchv" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="22_5ey2a"]
 
 [resource]
 script = ExtResource("3_jkegs")
@@ -34,9 +34,53 @@ mind_base_pow = 95
 body_base_def = 30
 spirit_base_def = 90
 mind_base_def = 75
-plays_level = "0,Practice Shot,0,Heart Harden,11,Echo Strike,14,Hunker,20,Grit,26,Rally,29,Ego Blast,33,Provoke,38,Overthink,42,Passion Strike,46,Perfect Shot,51,Dreadful Mist"
-plays_extra = "Burnout,Scream,Raw Fury,Comeback,Splinter,Cold Calculation,Nerve Strike,Rattle,Daring Pass,Blaze,Chant,Chill Out,Exhaust,Tough Front,Dramatic Exit,Frazzle,Gloom,Heat Up,Shield,Soliloquy"
-possible_plays = Array[ExtResource("1_fo56u")]([ExtResource("3_m3gke"), ExtResource("4_a7um6"), ExtResource("5_qi2x6"), ExtResource("6_7ddkb"), ExtResource("7_3ywjm"), ExtResource("8_y2tpa"), ExtResource("9_24bfs"), ExtResource("10_vpa4r"), ExtResource("11_xg50x"), ExtResource("12_ndy8o"), ExtResource("13_fmi6w"), ExtResource("14_xa33j"), ExtResource("15_3tfo5"), ExtResource("16_ek7cj")])
+plays_string = "From Levels:
+1
+Practice Shot
+1
+Heart Harden
+11
+Echo Strike
+14
+Hunker
+20
+Grit
+26
+Rally
+29
+Ego Blast
+33
+Provoke
+38
+Overthink
+42
+Passion Strike
+46
+Perfect Shot
+51
+Dreadful Mist
+From Friends:
+Burnout
+Scream
+Raw Fury
+Comeback
+Splinter
+Cold Calculation
+Nerve Strike
+Rattle
+Daring Pass
+Blaze
+Chant
+Chill Out
+Exhaust
+Tough Front
+Dramatic Exit
+Frazzle
+Gloom
+Heat Up
+Shield
+Soliloquy"
+possible_plays = Array[ExtResource("1_fo56u")]([ExtResource("3_yxwjv"), ExtResource("5_qg7y4"), ExtResource("7_11e1k"), ExtResource("9_n56t8"), ExtResource("12_cfmue"), ExtResource("13_e07d2"), ExtResource("15_i8ei2"), ExtResource("16_b1j58"), ExtResource("17_uua5i"), ExtResource("18_u23ft"), ExtResource("19_ubsek"), ExtResource("20_m1fba"), ExtResource("21_ivrcr"), ExtResource("22_5ey2a")])
 possible_traits = Array[ExtResource("2_73rju")]([ExtResource("2_437uw"), ExtResource("4_fj4vk")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("20_m3gke")
