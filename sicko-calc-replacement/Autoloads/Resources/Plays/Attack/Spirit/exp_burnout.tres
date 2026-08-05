@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://b7c8kxnusvsbb"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_gy4ln"]
+
+[resource]
+script = ExtResource("1_gy4ln")
+name = "EXP Burnout"
+base_pow = 100
+descrition = "ATTACK. -15 STAMINA."
+type = 1
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

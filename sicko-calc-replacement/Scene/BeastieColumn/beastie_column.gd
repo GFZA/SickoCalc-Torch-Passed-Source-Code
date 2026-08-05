@@ -51,6 +51,7 @@ var current_pos : Beastie.Position = Beastie.Position.UPPER_BACK
 @onready var trait_condition_button: Button = %TraitConditionButton
 
 @onready var position_buttons: HBoxContainer = %PositionButtons
+@onready var ally_at_label: Label = %AllyAtLabel
 @onready var back_button: Button = %BackButton
 @onready var net_button: Button = %NetButton
 
@@ -236,6 +237,8 @@ func _update_attack() -> void:
 		attack_plays_ui.show()
 
 		var attack_name : String = current_attack.name.to_lower()
+		ally_at_label.visible = attack_name == "exp flying kick"
+
 		var is_vigor_beam : bool = attack_name == "vigor beam"
 		var is_soulcrusher : bool = attack_name == "soulcrusher"
 		var is_zigzag : bool = attack_name == "zigzag"
