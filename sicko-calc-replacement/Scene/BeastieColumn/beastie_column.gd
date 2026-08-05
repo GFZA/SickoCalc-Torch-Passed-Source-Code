@@ -83,6 +83,7 @@ var current_pos : Beastie.Position = Beastie.Position.UPPER_BACK
 
 func _ready() -> void:
 	var is_left : bool = side == Global.MySide.LEFT
+	ally_at_label.visible = false
 	attack_row.visible = is_left
 	attack_condition_row.visible = is_left
 	boost_row.side = side
@@ -237,7 +238,7 @@ func _update_attack() -> void:
 		attack_plays_ui.show()
 
 		var attack_name : String = current_attack.name.to_lower()
-		ally_at_label.visible = attack_name == "exp flying kick"
+		ally_at_label.visible = (attack_name == "exp flying kick") and side == Global.MySide.LEFT
 
 		var is_vigor_beam : bool = attack_name == "vigor beam"
 		var is_soulcrusher : bool = attack_name == "soulcrusher"
