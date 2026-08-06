@@ -6,7 +6,7 @@
 script = ExtResource("1_t5b0g")
 name = "EXP Kick"
 target = 3
-base_pow = 75
+base_pow = 70
 descrition = "Auto-targets back row. Can hit without volleying."
 type = 0
 metadata/_custom_type_script = "uid://bc63soeia1eb1"
