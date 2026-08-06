@@ -198,7 +198,7 @@ size_flags_horizontal = 4
 theme = ExtResource("24_xw8bv")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_nyb1q")
-text = "Patch : Milestone 5 + Experiment as of Aug 3"
+text = "Patch : Milestone 5 + Experiment as of Aug 5"
 horizontal_alignment = 1
 
 [node name="CreditTwoLabel" type="Label" parent="Overlay"]
