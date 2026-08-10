@@ -2,6 +2,7 @@
 class_name BeastieButton
 extends Button
 
+const MAX_NON_EXTINCT_COUNT := 100
 const LENGTH_WHEN_NAME := 651.0
 const LENGTH_WHEN_NO_NAME := 232.0
 const NONE_ICON := preload("uid://dey8bdpdiw1p4")
@@ -24,6 +25,7 @@ signal beastie_selected(selected_beastie : Beastie)
 @onready var name_info_container: VBoxContainer = %NameInfoContainer
 @onready var number_container: HBoxContainer = %NumberContainer
 @onready var number_label: Label = %Numberlabel
+@onready var extinct_label: Label = %ExtinctLabel
 @onready var name_label: Label = %NameLabel
 
 
@@ -42,7 +44,10 @@ func _update_beastie() -> void:
 		return
 	var new_icon : Texture2D = beastie.get_sprite(Beastie.Sprite.ICON)
 	icon_rec.texture = new_icon if new_icon else null
-	number_label.text = str(beastie.beastiepedia_id)
+	var id : int = beastie.beastiepedia_id
+	number_label.text = str(id)
+	number_label.visible = id <= MAX_NON_EXTINCT_COUNT
+	extinct_label.visible = id > MAX_NON_EXTINCT_COUNT
 	number_container.show()
 	name_label.text = beastie.specie_name
 
