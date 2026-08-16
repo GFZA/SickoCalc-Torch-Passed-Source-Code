@@ -78,7 +78,7 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 			final_damage = ceili(final_damage * MIMIC_MULT) # do it here as it skip the part where do this normally
 
 	if attack_name == "free ball":
-		if attacker_trait == "miracle play":
+		if attacker_trait == "miracle play" and not attack.is_mimicked:
 			attack = attack.duplicate(true)
 			attack.base_pow = MIRACLE_PLAY_POW
 

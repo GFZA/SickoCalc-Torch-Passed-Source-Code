@@ -292,7 +292,7 @@ func _adjust_plays(resource_file_path : String) -> void:
 func _adjust_traits(resource_file_path : String) -> void:
 	var the_trait : Trait = load(resource_file_path)
 	if ((the_trait.def_mult != 1.0 or the_trait.damage_dealt_mult != 1.0 or the_trait.is_starter_trait) and \
-		the_trait.name.to_lower() not in ["spiker", "absorption", "helmet", "musclebrain"] and not the_trait.always_activate) or \
+		the_trait.name.to_lower() not in ["spiker", "goofy", "absorption", "helmet", "musclebrain"] and not the_trait.always_activate) or \
 		the_trait.name.to_lower() in ["stagecraft"]:
 		the_trait.need_to_be_manually_activated = true
 	ResourceSaver.save(the_trait, resource_file_path)

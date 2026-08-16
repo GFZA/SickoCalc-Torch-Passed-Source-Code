@@ -18,8 +18,6 @@ signal beastie_updated
 signal plays_select_ui_requested
 signal trait_select_ui_requested
 signal rally_requested(toggled_on : bool)
-signal stamina_change_requested(value : int)
-signal left_column_musclebrain_reset_requested # Left column connects to Right column via main
 
 @export var beastie : Beastie = null:
 	set(value):
@@ -30,6 +28,8 @@ signal left_column_musclebrain_reset_requested # Left column connects to Right c
 	set(value):
 		side = value
 		_update_side()
+
+var opposite_column : BeastieColumn = null
 
 var current_attack : Attack = FREE_BALL:
 	set(value):
@@ -188,19 +188,26 @@ func _give_beastie_current_modifiers() -> void:
 		_on_feeling_button_toggled(jazzed_button.button_pressed, Beastie.Feelings.JAZZED)
 		_on_feeling_button_toggled(left_weepy_button.button_pressed, Beastie.Feelings.WEEPY)
 		_on_blocked_updated(blocked_number_ui.num)
+		var attack : Attack = beastie.my_plays[0]
+		var attack_name : String = attack.name.to_lower() if attack else ""
+		if volley_number_ui.visible and attack_name == "zigzag":
+			attack.volley_amount = volley_number_ui.num
+		else:
+			volley_number_ui.reset()
+		stamina_container.reset() # Reset UI for both Vigor Beam and Soulcrusher on switching attacker
+		beastie.health = 100 # Reset Vigor Beam on switching attacker
 	else:
 		_on_feeling_button_toggled(tough_button.button_pressed, Beastie.Feelings.TOUGH)
 		_on_feeling_button_toggled(right_weepy_button.button_pressed, Beastie.Feelings.WEEPY)
 		_on_feeling_button_toggled(tender_button.button_pressed, Beastie.Feelings.TENDER)
+		if opposite_column and opposite_column.beastie:
+			if opposite_column.current_attack.name.to_lower() == "soulcrusher":
+				beastie.health = opposite_column.stamina_container.value # Copy stamina for Soulcrusher on switching defender
+			else:
+				beastie.health = 100 # Reset Soulcrusher on switching attacker
 
 	Global.resetting = false # Enable updating (the next line will initiate that)
 	_on_mimic_button_toggled(mimic_button.button_pressed)
-
-	# Reset unique stuffs so it doesn't break for others
-	stamina_container.reset()
-	beastie.health = 100
-	stamina_change_requested.emit(100)
-	volley_number_ui.reset()
 
 
 func _update_side() -> void:
@@ -260,9 +267,16 @@ func _update_attack() -> void:
 		match attack_name:
 			"vigor beam":
 				stamina_container.text = "User STAMINA"
+				beastie.health = stamina_container.value # Copy stamina for Vigor Beam on switching attack
+				if opposite_column and opposite_column.beastie:
+					opposite_column.beastie.health = 100 # Reset
 			"soulcrusher":
 				stamina_container.text = "Target STAMINA"
+				beastie.health = 100 # Reset
+				if opposite_column and opposite_column.beastie:
+					opposite_column.beastie.health = stamina_container.value # Copy stamina for Soulcrusher on switching attack
 		volley_amount_container.visible = is_zigzag
+		volley_number_ui.reset() # Force reset when selecting Zigzag again
 
 		rally_button.visible = current_attack.type in [Plays.Type.ATTACK_SPIRIT, Plays.Type.ATTACK_MIND] \
 								or beastie.my_trait.name.to_lower() == "extrovert"
@@ -304,25 +318,25 @@ func _update_trait_condition_button() -> void:
 					or beastie.my_trait.name.to_lower() == "extrovert"
 
 
-func update_custom_trait_button() -> void:
+func update_custom_trait_button(old_trait : Trait) -> void:
 	if beastie.my_trait == null:
 		return
-
-	var trait_name : String = beastie.my_trait.name
-	custom_trait_button.text = trait_name
+	var old_trait_name : String = old_trait.name if old_trait else ""
+	var new_trait_name : String = beastie.my_trait.name
+	custom_trait_button.text = new_trait_name
 	custom_trait_button.button_pressed = true
 	_update_trait_condition_button()
-	if trait_name.to_lower() == "shy":
+	if new_trait_name.to_lower() == "shy":
 		back_button.icon = ICON_ROW_NET
 		net_button.icon = ICON_ROW_BACK
 	else:
 		back_button.icon = ICON_ROW_BACK
 		net_button.icon = ICON_ROW_NET
 
-	if trait_name.to_lower() == "musclebrain":
+	if new_trait_name.to_lower() == "musclebrain" or old_trait_name.to_lower() == "musclebrain":
 		boost_row.reset_all_ui(true, current_attack.type == Plays.Type.ATTACK_BODY)
-		if side == Global.MySide.LEFT:
-			left_column_musclebrain_reset_requested.emit()
+		if side == Global.MySide.LEFT and opposite_column: # Make right reset too
+			opposite_column.boost_row.reset_all_ui(true, current_attack.type == Plays.Type.ATTACK_BODY)
 
 	beastie_updated.emit()
 
@@ -334,29 +348,25 @@ func _on_trait_button_pressed(trait_number : int) -> void:
 	if trait_two:
 		trait_two.manually_activated = false
 	var new_trait : Trait = trait_one if trait_number == 1 else trait_two
+	var new_trait_name : String = new_trait.name.to_lower()
 	if new_trait and new_trait == beastie.my_trait:
 		return
 	var old_trait : Trait = beastie.my_trait
+	var old_trait_name : String = old_trait.name.to_lower()
 	beastie.my_trait = new_trait
 	_update_trait_condition_button()
-	if new_trait.name.to_lower() == "shy":
+	if new_trait_name == "shy":
 		back_button.icon = ICON_ROW_NET
 		net_button.icon = ICON_ROW_BACK
 	else:
 		back_button.icon = ICON_ROW_BACK
 		net_button.icon = ICON_ROW_NET
-	if old_trait.name.to_lower() == "musclebrain":
+	if new_trait_name == "musclebrain" or old_trait_name == "musclebrain":
 		boost_row.reset_all_ui(true, current_attack.type == Plays.Type.ATTACK_BODY)
-		if side == Global.MySide.LEFT:
-			left_column_musclebrain_reset_requested.emit()
+		if side == Global.MySide.LEFT and opposite_column: # Make right reset too
+			opposite_column.boost_row.reset_all_ui(true, current_attack.type == Plays.Type.ATTACK_BODY)
 
 	beastie_updated.emit()
-
-
-func on_left_column_musclebrain_reset_requested() -> void:
-	if side == Global.MySide.LEFT:
-		return
-	boost_row.reset_all_ui(true, current_attack.type == Plays.Type.ATTACK_BODY)
 
 
 func _on_trait_condtion_toggled(toggled_on) -> void:
@@ -382,11 +392,14 @@ func _on_mimic_button_toggled(toggled_on : bool) -> void:
 
 
 func _on_stamina_changed(value : int) -> void:
+	if not side == Global.MySide.LEFT:
+		return
 	match current_attack.name.to_lower():
 		"vigor beam":
 			beastie.health = value
 		"soulcrusher":
-			stamina_change_requested.emit(value)
+			if opposite_column and opposite_column.beastie:
+				opposite_column.beastie.health = value
 	beastie_updated.emit()
 
 
@@ -433,7 +446,7 @@ func _on_blocked_updated(amount : int) -> void:
 
 func reset() -> void:
 	if beastie:
-		beastie.health = 100
+		beastie.health = 100 # This applies to both sides
 
 	jazzed_button.button_pressed = false
 	left_weepy_button.button_pressed = false
@@ -452,7 +465,6 @@ func reset() -> void:
 	_on_attack_condtion_toggled(false)
 
 	stamina_container.reset()
-	stamina_change_requested.emit(100)
 	volley_number_ui.reset()
 
 	trait_one_button.button_pressed = true

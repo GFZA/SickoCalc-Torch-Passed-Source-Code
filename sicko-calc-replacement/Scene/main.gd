@@ -29,6 +29,9 @@ var current_attack : Attack = FREE_BALL :
 func _ready() -> void:
 	github_button.pressed.connect(_on_github_button_pressed)
 
+	left_beastie_column.opposite_column = right_beastie_column
+	right_beastie_column.opposite_column = left_beastie_column
+
 	left_beastie_column.beastie_updated.connect(_update)
 	right_beastie_column.beastie_updated.connect(_update)
 
@@ -45,13 +48,6 @@ func _ready() -> void:
 	select_uis.trait_selected.connect(_on_trait_selected)
 
 	left_beastie_column.rally_requested.connect(_on_rally_requested)
-	left_beastie_column.stamina_change_requested.connect(func(value : int):
-		if right_beastie_column.beastie:
-			right_beastie_column.beastie.health = value
-	)
-
-	# Absolute desperation of a solution...
-	left_beastie_column.left_column_musclebrain_reset_requested.connect(right_beastie_column.on_left_column_musclebrain_reset_requested)
 
 	cheerleader_button.toggled.connect(func(toggle_on : bool):
 		team_controller.have_cheerleader = toggle_on
@@ -111,8 +107,9 @@ func _on_play_selected(attack : Plays) -> void:
 
 func _on_trait_selected(new_trait : Trait, side : Global.MySide) -> void:
 	var column : BeastieColumn = left_beastie_column if side == Global.MySide.LEFT else right_beastie_column
+	var old_trait : Trait = column.beastie.my_trait
 	column.beastie.my_trait = new_trait
-	column.update_custom_trait_button()
+	column.update_custom_trait_button(old_trait)
 
 
 func _update() -> void:
