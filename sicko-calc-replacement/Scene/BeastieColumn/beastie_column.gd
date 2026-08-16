@@ -188,6 +188,12 @@ func _give_beastie_current_modifiers() -> void:
 		_on_feeling_button_toggled(jazzed_button.button_pressed, Beastie.Feelings.JAZZED)
 		_on_feeling_button_toggled(left_weepy_button.button_pressed, Beastie.Feelings.WEEPY)
 		_on_blocked_updated(blocked_number_ui.num)
+		var attack : Attack = beastie.my_plays[0]
+		var attack_name : String = attack.name.to_lower() if attack else ""
+		if volley_number_ui.visible and attack_name == "zigzag":
+			attack.volley_amount = volley_number_ui.num
+		else:
+			volley_number_ui.reset()
 	else:
 		_on_feeling_button_toggled(tough_button.button_pressed, Beastie.Feelings.TOUGH)
 		_on_feeling_button_toggled(right_weepy_button.button_pressed, Beastie.Feelings.WEEPY)
@@ -200,7 +206,6 @@ func _give_beastie_current_modifiers() -> void:
 	stamina_container.reset()
 	beastie.health = 100
 	stamina_change_requested.emit(100)
-	volley_number_ui.reset()
 
 
 func _update_side() -> void:
@@ -263,6 +268,7 @@ func _update_attack() -> void:
 			"soulcrusher":
 				stamina_container.text = "Target STAMINA"
 		volley_amount_container.visible = is_zigzag
+		volley_number_ui.reset() # Force reset when selecting Zigzag again
 
 		rally_button.visible = current_attack.type in [Plays.Type.ATTACK_SPIRIT, Plays.Type.ATTACK_MIND] \
 								or beastie.my_trait.name.to_lower() == "extrovert"
