@@ -1,23 +1,23 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://b10nybw70xx73"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://dsyo1oe3nnpdx"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_q3d1b"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_alwt5"]
-[ext_resource type="Resource" uid="uid://dcwc0edr003lc" path="res://Autoloads/Resources/Trait/scavenger.tres" id="2_xe5rl"]
-[ext_resource type="Resource" uid="uid://c0sctvo70deyt" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_hon8k"]
+[ext_resource type="Resource" uid="uid://chj4ern3e6noc" path="res://Autoloads/Resources/Trait/scavenger.tres" id="2_xe5rl"]
+[ext_resource type="Resource" uid="uid://cm70uava1yg8o" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_hon8k"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_xe5rl"]
-[ext_resource type="Resource" uid="uid://c61k5iketw8gj" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="4_q1ghf"]
-[ext_resource type="Resource" uid="uid://bdnlecl0s1bg1" path="res://Autoloads/Resources/Plays/Attack/Spirit/relentless.tres" id="5_qrfn8"]
-[ext_resource type="Resource" uid="uid://camyp3pk4s2xy" path="res://Autoloads/Resources/Plays/Attack/Spirit/thriller.tres" id="6_g1l7w"]
-[ext_resource type="Resource" uid="uid://cuvfann7341yy" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="7_4d40d"]
-[ext_resource type="Resource" uid="uid://c22lonn5u3ril" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="8_ams18"]
-[ext_resource type="Resource" uid="uid://dro8ty8hatxdx" path="res://Autoloads/Resources/Plays/Attack/Body/power_sap.tres" id="9_nujgk"]
-[ext_resource type="Resource" uid="uid://cvdicau5iv3vh" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="10_eatb0"]
-[ext_resource type="Resource" uid="uid://baf1yq3mq16tu" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="11_43h5r"]
+[ext_resource type="Resource" uid="uid://b3fafiiiohfee" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="4_q1ghf"]
+[ext_resource type="Resource" uid="uid://kgmhp21oxv4j" path="res://Autoloads/Resources/Plays/Attack/Spirit/relentless.tres" id="5_qrfn8"]
+[ext_resource type="Resource" uid="uid://do2ea4s61g6cl" path="res://Autoloads/Resources/Plays/Attack/Spirit/thriller.tres" id="6_g1l7w"]
+[ext_resource type="Resource" uid="uid://qfxv11mpmmrd" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="7_4d40d"]
+[ext_resource type="Resource" uid="uid://jh6i5gw62j55" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="8_ams18"]
+[ext_resource type="Resource" uid="uid://bjcli6tikgdm3" path="res://Autoloads/Resources/Plays/Attack/Body/power_sap.tres" id="9_nujgk"]
+[ext_resource type="Resource" uid="uid://dvcccgl73ar4r" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="10_eatb0"]
+[ext_resource type="Resource" uid="uid://c330d4p6h5uke" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="11_43h5r"]
 [ext_resource type="Texture2D" uid="uid://bsw130o6w354p" path="res://Autoloads/Resources/Beastie/Jellibat/icon_jellibat.png" id="11_v2r6x"]
-[ext_resource type="Resource" uid="uid://clp8emc65hxxo" path="res://Autoloads/Resources/Plays/Attack/Spirit/flight.tres" id="24_rd7x5"]
-[ext_resource type="Resource" uid="uid://bq3iy0yc21ohp" path="res://Autoloads/Resources/Plays/Attack/Spirit/scream.tres" id="25_8y31x"]
-[ext_resource type="Resource" uid="uid://cx8x63cuyg161" path="res://Autoloads/Resources/Plays/Attack/Spirit/cook.tres" id="26_etw4f"]
-[ext_resource type="Resource" uid="uid://b8luvjr8qoufi" path="res://Autoloads/Resources/Plays/Attack/Spirit/swarm.tres" id="28_uqhu6"]
+[ext_resource type="Resource" uid="uid://cpw1r5p6a1bd8" path="res://Autoloads/Resources/Plays/Attack/Spirit/flight.tres" id="24_rd7x5"]
+[ext_resource type="Resource" uid="uid://jbjvwf7ty48l" path="res://Autoloads/Resources/Plays/Attack/Spirit/scream.tres" id="25_8y31x"]
+[ext_resource type="Resource" uid="uid://b4lsgcxi4wnpo" path="res://Autoloads/Resources/Plays/Attack/Spirit/cook.tres" id="26_etw4f"]
+[ext_resource type="Resource" uid="uid://b2kpbvkxp4t8l" path="res://Autoloads/Resources/Plays/Attack/Spirit/swarm.tres" id="28_uqhu6"]
 
 [resource]
 script = ExtResource("3_xe5rl")
@@ -33,7 +33,7 @@ spirit_base_pow = 76
 mind_base_pow = 29
 body_base_def = 28
 spirit_base_def = 68
-plays_string_array = Array[String](["beginner effort", "careful shot", "relentless", "thriller", "raw fury", "bring the heat", "power sap", "high slam", "dive", "refresh", "daring pass", "set", "forward pass", "call out", "calming aura", "battle cry", "exhaust", "quick tag", "shield", "high five", "steal", "flight", "scream", "cook", "goo-goo eyes", "swarm", "whistle"])
+plays_string_array = Array[String](["beginner effort", "careful shot", "relentless", "thriller", "raw fury", "bring the heat", "power sap", "high slam", "dive", "refresh", "daring pass", "set", "forward pass", "call out", "calming aura", "battle cry", "exhaust", "quick tag", "shield", "high five", "steal", "flight", "scream", "cook", "goo-goo eyes", "swarm", "whistle", "squeeze"])
 traits_string_array = Array[String](["scavenger"])
 possible_plays = Array[ExtResource("1_q3d1b")]([ExtResource("3_hon8k"), ExtResource("4_q1ghf"), ExtResource("5_qrfn8"), ExtResource("6_g1l7w"), ExtResource("7_4d40d"), ExtResource("8_ams18"), ExtResource("9_nujgk"), ExtResource("10_eatb0"), ExtResource("11_43h5r"), ExtResource("24_rd7x5"), ExtResource("25_8y31x"), ExtResource("26_etw4f"), ExtResource("28_uqhu6")])
 possible_traits = Array[ExtResource("2_alwt5")]([ExtResource("2_xe5rl")])

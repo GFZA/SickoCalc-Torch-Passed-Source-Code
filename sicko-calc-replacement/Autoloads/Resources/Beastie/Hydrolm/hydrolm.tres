@@ -1,24 +1,24 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=21 format=3 uid="uid://b5gj20xlwb1th"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=21 format=3 uid="uid://covra0drxo82c"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_sp66t"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_86y82"]
-[ext_resource type="Resource" uid="uid://dtl83silkfkk4" path="res://Autoloads/Resources/Trait/restoration.tres" id="2_ri7ad"]
-[ext_resource type="Resource" uid="uid://c88rcatq6gk4y" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_msy52"]
+[ext_resource type="Resource" uid="uid://c4tftxccw86ep" path="res://Autoloads/Resources/Trait/restoration.tres" id="2_ri7ad"]
+[ext_resource type="Resource" uid="uid://bh7cvkyof83rj" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_msy52"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_ri7ad"]
-[ext_resource type="Resource" uid="uid://fgq2455h2ohi" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="6_mr5xt"]
-[ext_resource type="Resource" uid="uid://bsxg1aevss6ry" path="res://Autoloads/Resources/Plays/Attack/Mind/precision_strike.tres" id="6_opri8"]
-[ext_resource type="Resource" uid="uid://mgi45vtu8scp" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="7_asptf"]
-[ext_resource type="Resource" uid="uid://bcddvnkea0a6i" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="11_438w8"]
-[ext_resource type="Resource" uid="uid://dro8ty8hatxdx" path="res://Autoloads/Resources/Plays/Attack/Body/power_sap.tres" id="11_afi2k"]
-[ext_resource type="Resource" uid="uid://bbssb3w0wahh6" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="13_8jni3"]
-[ext_resource type="Resource" uid="uid://4glrathop5to" path="res://Autoloads/Resources/Plays/Attack/Body/spike.tres" id="14_afi2k"]
-[ext_resource type="Resource" uid="uid://cvdicau5iv3vh" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="15_7ws76"]
-[ext_resource type="Resource" uid="uid://dlodpoblex8aw" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="16_8u33q"]
-[ext_resource type="Resource" uid="uid://bhqeqwobkmkmm" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="17_hlkmd"]
-[ext_resource type="Resource" uid="uid://c0311mnuib5cq" path="res://Autoloads/Resources/Plays/Attack/Body/rocket.tres" id="26_ix0oj"]
-[ext_resource type="Resource" uid="uid://bod5yvhemrq2g" path="res://Autoloads/Resources/Plays/Attack/Mind/ego_blast.tres" id="28_62sue"]
-[ext_resource type="Resource" uid="uid://kij1ilq37be5" path="res://Autoloads/Resources/Plays/Attack/Body/true_strike.tres" id="29_2gb1h"]
-[ext_resource type="Resource" uid="uid://b4npttbg8ic61" path="res://Autoloads/Resources/Trait/torpor.tres" id="32_8x0us"]
+[ext_resource type="Resource" uid="uid://chimd5aoryek2" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="6_mr5xt"]
+[ext_resource type="Resource" uid="uid://cjo7j376iosld" path="res://Autoloads/Resources/Plays/Attack/Mind/precision_strike.tres" id="6_opri8"]
+[ext_resource type="Resource" uid="uid://dbd6qo66gc80b" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="7_asptf"]
+[ext_resource type="Resource" uid="uid://dja4k3j6xenmf" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="11_438w8"]
+[ext_resource type="Resource" uid="uid://bjcli6tikgdm3" path="res://Autoloads/Resources/Plays/Attack/Body/power_sap.tres" id="11_afi2k"]
+[ext_resource type="Resource" uid="uid://bul5jwe1qisst" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="13_8jni3"]
+[ext_resource type="Resource" uid="uid://sjx12yfk4v1j" path="res://Autoloads/Resources/Plays/Attack/Body/spike.tres" id="14_afi2k"]
+[ext_resource type="Resource" uid="uid://dvcccgl73ar4r" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="15_7ws76"]
+[ext_resource type="Resource" uid="uid://bpusa2ne5wfcg" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="16_8u33q"]
+[ext_resource type="Resource" uid="uid://dn2b0t2ad1g03" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="17_hlkmd"]
+[ext_resource type="Resource" uid="uid://c81nspw48g4nv" path="res://Autoloads/Resources/Plays/Attack/Body/rocket.tres" id="26_ix0oj"]
+[ext_resource type="Resource" uid="uid://b2ui5rl5w2grw" path="res://Autoloads/Resources/Plays/Attack/Mind/ego_blast.tres" id="28_62sue"]
+[ext_resource type="Resource" uid="uid://bscetg05fetwr" path="res://Autoloads/Resources/Plays/Attack/Body/true_strike.tres" id="29_2gb1h"]
+[ext_resource type="Resource" uid="uid://di1e6767eacad" path="res://Autoloads/Resources/Trait/torpor.tres" id="32_8x0us"]
 [ext_resource type="Texture2D" uid="uid://5qwkxais1pym" path="res://Autoloads/Resources/Beastie/Hydrolm/icon_hydrolm.png" id="34_5pbry"]
 
 [resource]
@@ -35,7 +35,7 @@ mind_base_pow = 95
 body_base_def = 60
 spirit_base_def = 80
 mind_base_def = 100
-plays_string_array = Array[String](["practice shot", "shield", "relaxed hit", "precision strike", "stinger", "assess", "power sap", "cover", "rainbow", "meditate", "vigor beam", "spike", "high slam", "prepared attack", "mindfield", "tactical pass", "deep breath", "flex", "telekinesis", "patience", "cyclone", "exhaust", "fall back", "rocket", "menace", "ego blast", "true strike", "chill out"])
+plays_string_array = Array[String](["practice shot", "shield", "relaxed hit", "precision strike", "stinger", "assess", "power sap", "cover", "rainbow", "meditate", "vigor beam", "spike", "high slam", "prepared attack", "mindfield", "tactical pass", "deep breath", "stretch", "telekinesis", "patience", "cyclone", "exhaust", "fall back", "rocket", "menace", "ego blast", "true strike", "squeeze", "chill out"])
 traits_string_array = Array[String](["restoration", "torpor"])
 possible_plays = Array[ExtResource("1_sp66t")]([ExtResource("3_msy52"), ExtResource("6_mr5xt"), ExtResource("6_opri8"), ExtResource("7_asptf"), ExtResource("11_afi2k"), ExtResource("11_438w8"), ExtResource("13_8jni3"), ExtResource("14_afi2k"), ExtResource("15_7ws76"), ExtResource("16_8u33q"), ExtResource("17_hlkmd"), ExtResource("26_ix0oj"), ExtResource("28_62sue"), ExtResource("29_2gb1h")])
 possible_traits = Array[ExtResource("2_86y82")]([ExtResource("2_ri7ad"), ExtResource("32_8x0us")])

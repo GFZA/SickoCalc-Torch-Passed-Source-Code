@@ -1,19 +1,19 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://ohowkpwls8cg"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://co6c62w8c0kl7"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_a7qem"]
-[ext_resource type="Resource" uid="uid://cqqqwhvet3aki" path="res://Autoloads/Resources/Trait/study.tres" id="2_m22yn"]
+[ext_resource type="Resource" uid="uid://dlkmxsktb51c4" path="res://Autoloads/Resources/Trait/study.tres" id="2_m22yn"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_rly5o"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_jebf3"]
-[ext_resource type="Resource" uid="uid://c88rcatq6gk4y" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_vvey4"]
-[ext_resource type="Resource" uid="uid://dvywg8hgfbpi4" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="4_yqkmg"]
-[ext_resource type="Resource" uid="uid://bjvubmjc3wd2w" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="5_rmsuf"]
-[ext_resource type="Resource" uid="uid://c1nbc6xnb8cix" path="res://Autoloads/Resources/Plays/Attack/Mind/cold_calculation.tres" id="6_pnofk"]
-[ext_resource type="Resource" uid="uid://dlodpoblex8aw" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="7_0ogja"]
-[ext_resource type="Resource" uid="uid://bcddvnkea0a6i" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="8_0t8vq"]
-[ext_resource type="Resource" uid="uid://bq0va3t2lu7gm" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="9_j23nq"]
-[ext_resource type="Resource" uid="uid://mgi45vtu8scp" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="24_0mwia"]
-[ext_resource type="Resource" uid="uid://bhqeqwobkmkmm" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="25_drarx"]
-[ext_resource type="Resource" uid="uid://cevk477q1nav3" path="res://Autoloads/Resources/Plays/Attack/Mind/tool.tres" id="26_gnnjx"]
+[ext_resource type="Resource" uid="uid://bh7cvkyof83rj" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_vvey4"]
+[ext_resource type="Resource" uid="uid://cesssgehplj57" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="4_yqkmg"]
+[ext_resource type="Resource" uid="uid://d164pvvi00o7h" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="5_rmsuf"]
+[ext_resource type="Resource" uid="uid://n3jtpon2cbv1" path="res://Autoloads/Resources/Plays/Attack/Mind/cold_calculation.tres" id="6_pnofk"]
+[ext_resource type="Resource" uid="uid://bpusa2ne5wfcg" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="7_0ogja"]
+[ext_resource type="Resource" uid="uid://dja4k3j6xenmf" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="8_0t8vq"]
+[ext_resource type="Resource" uid="uid://bvconqtxqmogy" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="9_j23nq"]
+[ext_resource type="Resource" uid="uid://dbd6qo66gc80b" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="24_0mwia"]
+[ext_resource type="Resource" uid="uid://dn2b0t2ad1g03" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="25_drarx"]
+[ext_resource type="Resource" uid="uid://djeo8o0og5w1c" path="res://Autoloads/Resources/Plays/Attack/Mind/tool.tres" id="26_gnnjx"]
 [ext_resource type="Texture2D" uid="uid://dtbbs8fp1epyv" path="res://Autoloads/Resources/Beastie/Debugly/icon_debugly.png" id="29_uyarb"]
 
 [resource]
@@ -36,6 +36,6 @@ possible_traits = Array[ExtResource("2_rly5o")]([ExtResource("2_m22yn")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("29_uyarb")
 })
-ball_anchor_position_receive = Vector2(48, -165)
-ball_anchor_position_ready = Vector2(38, -210)
+ball_anchor_position_receive = Vector2(100, -200)
+ball_anchor_position_ready = Vector2(40, -170)
 metadata/_custom_type_script = "uid://ehabj4qsgxpl"

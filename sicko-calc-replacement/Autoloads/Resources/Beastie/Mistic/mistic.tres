@@ -1,17 +1,17 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=14 format=3 uid="uid://bnjlun76wkalm"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=14 format=3 uid="uid://bul08okvctfox"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_e3v75"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_ad7c4"]
-[ext_resource type="Resource" uid="uid://blyx4yhsa8jh8" path="res://Autoloads/Resources/Trait/intangible.tres" id="2_pro8y"]
+[ext_resource type="Resource" uid="uid://bgvijbvm658s4" path="res://Autoloads/Resources/Trait/intangible.tres" id="2_pro8y"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_6nk6x"]
-[ext_resource type="Resource" uid="uid://bhqeqwobkmkmm" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="4_pivcn"]
-[ext_resource type="Resource" uid="uid://cuuc60lnkhsv1" path="res://Autoloads/Resources/Plays/Attack/Mind/slice.tres" id="5_0gjn4"]
-[ext_resource type="Resource" uid="uid://bu7lpmvoakuwl" path="res://Autoloads/Resources/Plays/Attack/Mind/cornershot.tres" id="6_na227"]
-[ext_resource type="Resource" uid="uid://bhtwwc0s5xk2i" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="17_s85c4"]
-[ext_resource type="Resource" uid="uid://bu14usafsgtsi" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="22_5fw5x"]
-[ext_resource type="Resource" uid="uid://7735wtodpfd0" path="res://Autoloads/Resources/Plays/Attack/Mind/echo_strike.tres" id="24_604e7"]
-[ext_resource type="Resource" uid="uid://lmfl1gfvlwql" path="res://Autoloads/Resources/Plays/Attack/Mind/soulcursher.tres" id="28_1yhks"]
-[ext_resource type="Resource" uid="uid://clak4ft8xg32d" path="res://Autoloads/Resources/Plays/Attack/Mind/freezeray.tres" id="29_1ar88"]
+[ext_resource type="Resource" uid="uid://dn2b0t2ad1g03" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="4_pivcn"]
+[ext_resource type="Resource" uid="uid://4e2cogpnl0nc" path="res://Autoloads/Resources/Plays/Attack/Mind/slice.tres" id="5_0gjn4"]
+[ext_resource type="Resource" uid="uid://fx8g253e6v0h" path="res://Autoloads/Resources/Plays/Attack/Mind/cornershot.tres" id="6_na227"]
+[ext_resource type="Resource" uid="uid://c2axghfrxu6m5" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="17_s85c4"]
+[ext_resource type="Resource" uid="uid://dookpnoe5jjdo" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="22_5fw5x"]
+[ext_resource type="Resource" uid="uid://c5miguvavwugo" path="res://Autoloads/Resources/Plays/Attack/Mind/echo_strike.tres" id="24_604e7"]
+[ext_resource type="Resource" uid="uid://cma5t3c4e7o0y" path="res://Autoloads/Resources/Plays/Attack/Mind/soulcursher.tres" id="28_1yhks"]
+[ext_resource type="Resource" uid="uid://4g8s36jowiks" path="res://Autoloads/Resources/Plays/Attack/Mind/freezeray.tres" id="29_1ar88"]
 [ext_resource type="Texture2D" uid="uid://c423r10svyi6l" path="res://Autoloads/Resources/Beastie/Mistic/icon_mistic.png" id="33_ctsvt"]
 
 [resource]
@@ -28,7 +28,7 @@ mind_base_pow = 85
 body_base_def = 105
 spirit_base_def = 50
 mind_base_def = 80
-plays_string_array = Array[String](["hex", "mindfield", "slice", "cornershot", "cover", "refresh", "teleport", "feint", "meditate", "staredown", "jeer", "mark", "hawkeye", "patience", "nerve strike", "shield", "dispel", "heat up", "dreadful mist", "rattle", "gloom", "echo strike", "menace", "exhaust", "wink", "soulcrusher", "freezeray", "stinky"])
+plays_string_array = Array[String](["hex", "mindfield", "slice", "cornershot", "cover", "refresh", "teleport", "feint", "meditate", "staredown", "jeer", "mark", "hawkeye", "patience", "nerve strike", "shield", "dispel", "heat up", "dreadful mist", "rattle", "gloom", "echo strike", "menace", "exhaust", "wink", "squeeze", "soulcrusher", "freezeray", "stinky"])
 traits_string_array = Array[String](["intangible"])
 possible_plays = Array[ExtResource("1_e3v75")]([ExtResource("4_pivcn"), ExtResource("5_0gjn4"), ExtResource("6_na227"), ExtResource("17_s85c4"), ExtResource("22_5fw5x"), ExtResource("24_604e7"), ExtResource("28_1yhks"), ExtResource("29_1ar88")])
 possible_traits = Array[ExtResource("2_ad7c4")]([ExtResource("2_pro8y")])

@@ -1,22 +1,23 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://brbywbdl27ixk"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://cssqbbva60ecs"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_2gsfb"]
-[ext_resource type="Resource" uid="uid://cttwmg6bjdiwo" path="res://Autoloads/Resources/Trait/foggy.tres" id="2_2qr6f"]
+[ext_resource type="Resource" uid="uid://ca184yq55qxaj" path="res://Autoloads/Resources/Trait/foggy.tres" id="2_2qr6f"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_xpk4t"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_2qr6f"]
-[ext_resource type="Resource" uid="uid://b8fvwd3wlvdqm" path="res://Autoloads/Resources/Plays/Attack/Spirit/steamer.tres" id="4_png1u"]
-[ext_resource type="Resource" uid="uid://bdnlecl0s1bg1" path="res://Autoloads/Resources/Plays/Attack/Spirit/relentless.tres" id="5_flsuw"]
-[ext_resource type="Resource" uid="uid://c22lonn5u3ril" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="6_fio7e"]
-[ext_resource type="Resource" uid="uid://b4s0d72rrcla6" path="res://Autoloads/Resources/Plays/Attack/Spirit/burnout.tres" id="7_bguqp"]
-[ext_resource type="Resource" uid="uid://2mhhrvutq705" path="res://Autoloads/Resources/Plays/Attack/Spirit/eruption.tres" id="7_o2bkh"]
-[ext_resource type="Resource" uid="uid://c7gemo3wnvcwo" path="res://Autoloads/Resources/Plays/Attack/Spirit/challenge.tres" id="9_7vf3s"]
-[ext_resource type="Resource" uid="uid://bjvubmjc3wd2w" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="10_cuiji"]
+[ext_resource type="Resource" uid="uid://tnf87fyswfah" path="res://Autoloads/Resources/Plays/Attack/Spirit/steamer.tres" id="4_png1u"]
+[ext_resource type="Resource" uid="uid://kgmhp21oxv4j" path="res://Autoloads/Resources/Plays/Attack/Spirit/relentless.tres" id="5_flsuw"]
+[ext_resource type="Resource" uid="uid://jh6i5gw62j55" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="6_fio7e"]
+[ext_resource type="Resource" uid="uid://drwfcsi7if780" path="res://Autoloads/Resources/Plays/Attack/Spirit/eruption.tres" id="7_o2bkh"]
+[ext_resource type="Resource" uid="uid://drqv7x0y1410r" path="res://Autoloads/Resources/Plays/Attack/Spirit/explosive_spirit.tres" id="8_a4rx5"]
+[ext_resource type="Resource" uid="uid://b5vfm8rk70lb3" path="res://Autoloads/Resources/Plays/Attack/Spirit/challenge.tres" id="9_7vf3s"]
+[ext_resource type="Resource" uid="uid://d164pvvi00o7h" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="10_cuiji"]
 [ext_resource type="Texture2D" uid="uid://o7pyea8mi21j" path="res://Autoloads/Resources/Beastie/Druppa/icon_druppa.png" id="11_bguqp"]
-[ext_resource type="Resource" uid="uid://b4sw5ft6xnrrg" path="res://Autoloads/Resources/Plays/Attack/Mind/pressure.tres" id="11_r240e"]
-[ext_resource type="Resource" uid="uid://maegmkmvt031" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="24_ix5dg"]
-[ext_resource type="Resource" uid="uid://6d76b3vnamfr" path="res://Autoloads/Resources/Plays/Attack/Spirit/heat_wave.tres" id="26_3cpt3"]
-[ext_resource type="Resource" uid="uid://cx8x63cuyg161" path="res://Autoloads/Resources/Plays/Attack/Spirit/cook.tres" id="27_8oqn2"]
-[ext_resource type="Resource" uid="uid://2nria41e8sxy" path="res://Autoloads/Resources/Trait/sauna.tres" id="31_gidwq"]
+[ext_resource type="Resource" uid="uid://cym8huqhnkq0k" path="res://Autoloads/Resources/Plays/Attack/Mind/pressure.tres" id="11_r240e"]
+[ext_resource type="Resource" uid="uid://dingt6rkixc2p" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="24_ix5dg"]
+[ext_resource type="Resource" uid="uid://bswiiypt3e04k" path="res://Autoloads/Resources/Plays/Attack/Spirit/heat_wave.tres" id="26_3cpt3"]
+[ext_resource type="Resource" uid="uid://b4lsgcxi4wnpo" path="res://Autoloads/Resources/Plays/Attack/Spirit/cook.tres" id="27_8oqn2"]
+[ext_resource type="Resource" uid="uid://c64dh46nq4agp" path="res://Autoloads/Resources/Plays/Attack/Spirit/burnout.tres" id="29_png1u"]
+[ext_resource type="Resource" uid="uid://r0868l1sqlv1" path="res://Autoloads/Resources/Trait/sauna.tres" id="31_gidwq"]
 
 [resource]
 script = ExtResource("3_2qr6f")
@@ -32,9 +33,9 @@ spirit_base_pow = 65
 mind_base_pow = 55
 body_base_def = 60
 spirit_base_def = 75
-plays_string_array = Array[String](["heat up", "steamer", "relentless", "bring the heat", "eruption", "burnout", "challenge", "floater", "pressure", "excited pass", "pipe", "updraft", "blaze", "whistle", "hunker", "tough front", "exhaust", "patience", "intimidate", "shield", "clear field", "spitball", "dreadful mist", "heat wave", "cook", "hum", "reign"])
+plays_string_array = Array[String](["heat up", "steamer", "relentless", "bring the heat", "eruption", "explosive spirit", "challenge", "floater", "pressure", "excited pass", "pipe", "updraft", "blaze", "whistle", "hunker", "tough front", "exhaust", "patience", "intimidate", "shield", "clear field", "spitball", "dreadful mist", "heat wave", "cook", "hum", "burnout", "reign"])
 traits_string_array = Array[String](["foggy", "sauna"])
-possible_plays = Array[ExtResource("1_2gsfb")]([ExtResource("4_png1u"), ExtResource("5_flsuw"), ExtResource("6_fio7e"), ExtResource("7_o2bkh"), ExtResource("7_bguqp"), ExtResource("9_7vf3s"), ExtResource("10_cuiji"), ExtResource("11_r240e"), ExtResource("24_ix5dg"), ExtResource("26_3cpt3"), ExtResource("27_8oqn2")])
+possible_plays = Array[ExtResource("1_2gsfb")]([ExtResource("4_png1u"), ExtResource("5_flsuw"), ExtResource("6_fio7e"), ExtResource("7_o2bkh"), ExtResource("8_a4rx5"), ExtResource("9_7vf3s"), ExtResource("10_cuiji"), ExtResource("11_r240e"), ExtResource("24_ix5dg"), ExtResource("26_3cpt3"), ExtResource("27_8oqn2"), ExtResource("29_png1u")])
 possible_traits = Array[ExtResource("2_xpk4t")]([ExtResource("2_2qr6f"), ExtResource("31_gidwq")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("11_bguqp")

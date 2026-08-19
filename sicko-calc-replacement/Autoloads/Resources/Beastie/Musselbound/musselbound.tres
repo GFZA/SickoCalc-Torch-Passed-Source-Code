@@ -1,20 +1,20 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=17 format=3 uid="uid://cjsgk028t4l7g"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=17 format=3 uid="uid://m51kfa2xr0vp"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_eeoda"]
-[ext_resource type="Resource" uid="uid://hcyncgdujghb" path="res://Autoloads/Resources/Trait/musclebrain.tres" id="2_4s8pt"]
+[ext_resource type="Resource" uid="uid://da6wiw647l57m" path="res://Autoloads/Resources/Trait/musclebrain.tres" id="2_4s8pt"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_oo7lv"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_4s8pt"]
-[ext_resource type="Resource" uid="uid://bx8c5vlkglnna" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_ffki4"]
-[ext_resource type="Resource" uid="uid://d1u53eqrq7al3" path="res://Autoloads/Resources/Plays/Attack/Mind/zigzag.tres" id="4_lh252"]
-[ext_resource type="Resource" uid="uid://bdnlecl0s1bg1" path="res://Autoloads/Resources/Plays/Attack/Spirit/relentless.tres" id="5_pg5xa"]
-[ext_resource type="Resource" uid="uid://baf1yq3mq16tu" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="6_l5jyv"]
-[ext_resource type="Resource" uid="uid://nj7bo2jh52pr" path="res://Autoloads/Resources/Plays/Attack/Body/muscle_memory.tres" id="7_txfmq"]
-[ext_resource type="Resource" uid="uid://dqgbkmysyedur" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="8_tc1kg"]
-[ext_resource type="Resource" uid="uid://maegmkmvt031" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="9_nu8ks"]
-[ext_resource type="Resource" uid="uid://cfk5xjgct6e78" path="res://Autoloads/Resources/Plays/Attack/Mind/roll_shot.tres" id="10_caays"]
-[ext_resource type="Resource" uid="uid://wb5u2h0tv0wm" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="11_va51i"]
-[ext_resource type="Resource" uid="uid://ewie1sj4rkcg" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="12_phy40"]
-[ext_resource type="Resource" uid="uid://b7tjj7bteoya8" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="25_5tbax"]
+[ext_resource type="Resource" uid="uid://b3u25d7p8nlhi" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_ffki4"]
+[ext_resource type="Resource" uid="uid://csx7bg30p2luu" path="res://Autoloads/Resources/Plays/Attack/Mind/zigzag.tres" id="4_lh252"]
+[ext_resource type="Resource" uid="uid://kgmhp21oxv4j" path="res://Autoloads/Resources/Plays/Attack/Spirit/relentless.tres" id="5_pg5xa"]
+[ext_resource type="Resource" uid="uid://c330d4p6h5uke" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="6_l5jyv"]
+[ext_resource type="Resource" uid="uid://bw6f8btbb43q" path="res://Autoloads/Resources/Plays/Attack/Body/muscle_memory.tres" id="7_txfmq"]
+[ext_resource type="Resource" uid="uid://2txqx1tm0pak" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="8_tc1kg"]
+[ext_resource type="Resource" uid="uid://dingt6rkixc2p" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="9_nu8ks"]
+[ext_resource type="Resource" uid="uid://dlfsovfwiwxg4" path="res://Autoloads/Resources/Plays/Attack/Mind/roll_shot.tres" id="10_caays"]
+[ext_resource type="Resource" uid="uid://clbiv5d3ryvv" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="11_va51i"]
+[ext_resource type="Resource" uid="uid://dm7kvoffputoc" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="12_phy40"]
+[ext_resource type="Resource" uid="uid://dfq6t4eiyi64b" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="25_5tbax"]
 [ext_resource type="Texture2D" uid="uid://ca6vfogwbwv1d" path="res://Autoloads/Resources/Beastie/Musselbound/icon_musselbound.png" id="28_pum3o"]
 
 [resource]
@@ -31,7 +31,7 @@ mind_base_pow = 36
 body_base_def = 120
 spirit_base_def = 68
 mind_base_def = 38
-plays_string_array = Array[String](["bump", "zigzag", "relentless", "dive", "muscle memory", "sneak attack", "spitball", "roll shot", "thump", "overpower", "dig", "juggle", "net rush", "confident pass", "flex", "hunker", "tough front", "body ready", "smack", "shield", "exhaust", "patience", "grit"])
+plays_string_array = Array[String](["bump", "zigzag", "relentless", "dive", "muscle memory", "sneak attack", "spitball", "roll shot", "thump", "overpower", "dig", "juggle", "net rush", "confident pass", "flex", "hunker", "tough front", "body ready", "smack", "shield", "exhaust", "patience", "grit", "stretch"])
 traits_string_array = Array[String](["musclebrain"])
 possible_plays = Array[ExtResource("1_eeoda")]([ExtResource("3_ffki4"), ExtResource("4_lh252"), ExtResource("5_pg5xa"), ExtResource("6_l5jyv"), ExtResource("7_txfmq"), ExtResource("8_tc1kg"), ExtResource("9_nu8ks"), ExtResource("10_caays"), ExtResource("11_va51i"), ExtResource("12_phy40"), ExtResource("25_5tbax")])
 possible_traits = Array[ExtResource("2_oo7lv")]([ExtResource("2_4s8pt")])

@@ -1,17 +1,17 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://dk16queifha77"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://dpa63cyde02o"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_t21mn"]
-[ext_resource type="Resource" uid="uid://0j5ts0arwgm0" path="res://Autoloads/Resources/Trait/maverick.tres" id="2_icirc"]
-[ext_resource type="Resource" uid="uid://clp8emc65hxxo" path="res://Autoloads/Resources/Plays/Attack/Spirit/flight.tres" id="3_t21mn"]
-[ext_resource type="Resource" uid="uid://drx8ruj3gvwmc" path="res://Autoloads/Resources/Plays/Attack/Spirit/airblast.tres" id="4_icirc"]
-[ext_resource type="Resource" uid="uid://c22lonn5u3ril" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="6_nd01w"]
-[ext_resource type="Resource" uid="uid://g448w722fsvt" path="res://Autoloads/Resources/Plays/Attack/Spirit/desperate_force.tres" id="7_x2ss1"]
-[ext_resource type="Resource" uid="uid://b4s0d72rrcla6" path="res://Autoloads/Resources/Plays/Attack/Spirit/burnout.tres" id="7_yn0qk"]
-[ext_resource type="Resource" uid="uid://cndm1k2tmfpd" path="res://Autoloads/Resources/Plays/Attack/Spirit/tornadoball.tres" id="20_booys"]
-[ext_resource type="Resource" uid="uid://b8luvjr8qoufi" path="res://Autoloads/Resources/Plays/Attack/Spirit/swarm.tres" id="22_1mr5q"]
-[ext_resource type="Resource" uid="uid://c0sctvo70deyt" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="23_gi3sd"]
+[ext_resource type="Resource" uid="uid://bkr8qyuiof8dy" path="res://Autoloads/Resources/Trait/maverick.tres" id="2_icirc"]
+[ext_resource type="Resource" uid="uid://cpw1r5p6a1bd8" path="res://Autoloads/Resources/Plays/Attack/Spirit/flight.tres" id="3_t21mn"]
+[ext_resource type="Resource" uid="uid://c7idb30h43hwy" path="res://Autoloads/Resources/Plays/Attack/Spirit/airblast.tres" id="4_icirc"]
+[ext_resource type="Resource" uid="uid://jh6i5gw62j55" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="6_nd01w"]
+[ext_resource type="Resource" uid="uid://bwt0un7f6ln11" path="res://Autoloads/Resources/Plays/Attack/Spirit/desperate_force.tres" id="7_x2ss1"]
+[ext_resource type="Resource" uid="uid://drqv7x0y1410r" path="res://Autoloads/Resources/Plays/Attack/Spirit/explosive_spirit.tres" id="8_pn0in"]
+[ext_resource type="Resource" uid="uid://cg6adjirx66yj" path="res://Autoloads/Resources/Plays/Attack/Spirit/tornadoball.tres" id="20_booys"]
+[ext_resource type="Resource" uid="uid://b2kpbvkxp4t8l" path="res://Autoloads/Resources/Plays/Attack/Spirit/swarm.tres" id="22_1mr5q"]
+[ext_resource type="Resource" uid="uid://cm70uava1yg8o" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="23_gi3sd"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="24_05608"]
-[ext_resource type="Resource" uid="uid://5m0x20otsp65" path="res://Autoloads/Resources/Trait/flitting.tres" id="25_rsycn"]
+[ext_resource type="Resource" uid="uid://cf4gh8ej8teky" path="res://Autoloads/Resources/Trait/flitting.tres" id="25_rsycn"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="26_qfdui"]
 [ext_resource type="Texture2D" uid="uid://bqymk7la6yspy" path="res://Autoloads/Resources/Beastie/Zefyre/icon_zefyre.png" id="27_riame"]
 
@@ -29,9 +29,9 @@ mind_base_pow = 55
 body_base_def = 44
 spirit_base_def = 110
 mind_base_def = 85
-plays_string_array = Array[String](["flight", "airblast", "whoosh", "bring the heat", "desperate force", "burnout", "net rush", "daring pass", "reposition", "quick tag", "clear field", "blaze", "shield", "cyclone", "cover", "fall back", "role reverse", "tornadoball", "dramatic exit", "swarm", "beginner effort"])
+plays_string_array = Array[String](["flight", "airblast", "whoosh", "bring the heat", "desperate force", "explosive spirit", "net rush", "daring pass", "reposition", "quick tag", "clear field", "blaze", "shield", "cyclone", "cover", "fall back", "role reverse", "tornadoball", "dramatic exit", "swarm", "beginner effort"])
 traits_string_array = Array[String](["maverick", "flitting"])
-possible_plays = Array[ExtResource("1_t21mn")]([ExtResource("3_t21mn"), ExtResource("4_icirc"), ExtResource("6_nd01w"), ExtResource("7_x2ss1"), ExtResource("7_yn0qk"), ExtResource("20_booys"), ExtResource("22_1mr5q"), ExtResource("23_gi3sd")])
+possible_plays = Array[ExtResource("1_t21mn")]([ExtResource("3_t21mn"), ExtResource("4_icirc"), ExtResource("6_nd01w"), ExtResource("7_x2ss1"), ExtResource("8_pn0in"), ExtResource("20_booys"), ExtResource("22_1mr5q"), ExtResource("23_gi3sd")])
 possible_traits = Array[ExtResource("24_05608")]([ExtResource("2_icirc"), ExtResource("25_rsycn")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("27_riame")

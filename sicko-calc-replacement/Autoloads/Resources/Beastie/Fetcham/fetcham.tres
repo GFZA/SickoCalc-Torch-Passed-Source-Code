@@ -1,26 +1,26 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=22 format=3 uid="uid://cqoyg745olk5y"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=22 format=3 uid="uid://vjvewi3f3roq"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_pixgo"]
-[ext_resource type="Resource" uid="uid://dblelndoemcu3" path="res://Autoloads/Resources/Trait/fetch.tres" id="2_6kc0a"]
+[ext_resource type="Resource" uid="uid://d0rviw5tnxbsb" path="res://Autoloads/Resources/Trait/fetch.tres" id="2_6kc0a"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_6mp8w"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_8uncm"]
-[ext_resource type="Resource" uid="uid://bx8c5vlkglnna" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_hhr7t"]
-[ext_resource type="Resource" uid="uid://bdnlecl0s1bg1" path="res://Autoloads/Resources/Plays/Attack/Spirit/relentless.tres" id="6_d21xv"]
-[ext_resource type="Resource" uid="uid://g448w722fsvt" path="res://Autoloads/Resources/Plays/Attack/Spirit/desperate_force.tres" id="7_o1vdl"]
-[ext_resource type="Resource" uid="uid://dhajmqdvcc34q" path="res://Autoloads/Resources/Plays/Attack/Spirit/counter.tres" id="8_pr83b"]
-[ext_resource type="Resource" uid="uid://uq8s0r3eswi2" path="res://Autoloads/Resources/Plays/Attack/Body/launch.tres" id="9_d8c2d"]
-[ext_resource type="Resource" uid="uid://ccaahq60wfk0e" path="res://Autoloads/Resources/Plays/Attack/Spirit/pepshot.tres" id="10_lgx3a"]
-[ext_resource type="Resource" uid="uid://b4s0d72rrcla6" path="res://Autoloads/Resources/Plays/Attack/Spirit/burnout.tres" id="11_vsocr"]
-[ext_resource type="Resource" uid="uid://bq0va3t2lu7gm" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="17_gxc0a"]
-[ext_resource type="Resource" uid="uid://bbssb3w0wahh6" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="18_rc83a"]
+[ext_resource type="Resource" uid="uid://b3u25d7p8nlhi" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_hhr7t"]
+[ext_resource type="Resource" uid="uid://kgmhp21oxv4j" path="res://Autoloads/Resources/Plays/Attack/Spirit/relentless.tres" id="6_d21xv"]
+[ext_resource type="Resource" uid="uid://bwt0un7f6ln11" path="res://Autoloads/Resources/Plays/Attack/Spirit/desperate_force.tres" id="7_o1vdl"]
+[ext_resource type="Resource" uid="uid://k4cycu6o4ffn" path="res://Autoloads/Resources/Plays/Attack/Spirit/counter.tres" id="8_pr83b"]
+[ext_resource type="Resource" uid="uid://x7j08lyjrr1v" path="res://Autoloads/Resources/Plays/Attack/Body/launch.tres" id="9_d8c2d"]
+[ext_resource type="Resource" uid="uid://8irsgl20f2ew" path="res://Autoloads/Resources/Plays/Attack/Spirit/pepshot.tres" id="10_lgx3a"]
+[ext_resource type="Resource" uid="uid://bvconqtxqmogy" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="17_gxc0a"]
+[ext_resource type="Resource" uid="uid://bul5jwe1qisst" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="18_rc83a"]
+[ext_resource type="Resource" uid="uid://drqv7x0y1410r" path="res://Autoloads/Resources/Plays/Attack/Spirit/explosive_spirit.tres" id="21_v73xm"]
 [ext_resource type="Texture2D" uid="uid://dx6pnpeskrn42" path="res://Autoloads/Resources/Beastie/Fetcham/icon_fetcham.png" id="21_vsocr"]
-[ext_resource type="Resource" uid="uid://camyp3pk4s2xy" path="res://Autoloads/Resources/Plays/Attack/Spirit/thriller.tres" id="23_hbqeg"]
-[ext_resource type="Resource" uid="uid://baf1yq3mq16tu" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="24_ew41b"]
-[ext_resource type="Resource" uid="uid://maegmkmvt031" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="25_7mq8n"]
-[ext_resource type="Resource" uid="uid://6hu01s3a2n05" path="res://Autoloads/Resources/Plays/Attack/Spirit/thrash.tres" id="28_wfypl"]
-[ext_resource type="Resource" uid="uid://kij1ilq37be5" path="res://Autoloads/Resources/Plays/Attack/Body/true_strike.tres" id="31_a4of8"]
-[ext_resource type="Resource" uid="uid://dvit2g10fjm6j" path="res://Autoloads/Resources/Plays/Attack/Spirit/comeback.tres" id="32_32gqd"]
-[ext_resource type="Resource" uid="uid://b004jebtlwirj" path="res://Autoloads/Resources/Trait/watchtower.tres" id="34_kxxyr"]
+[ext_resource type="Resource" uid="uid://do2ea4s61g6cl" path="res://Autoloads/Resources/Plays/Attack/Spirit/thriller.tres" id="23_hbqeg"]
+[ext_resource type="Resource" uid="uid://c330d4p6h5uke" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="24_ew41b"]
+[ext_resource type="Resource" uid="uid://dingt6rkixc2p" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="25_7mq8n"]
+[ext_resource type="Resource" uid="uid://sdl0fq5d1841" path="res://Autoloads/Resources/Plays/Attack/Spirit/thrash.tres" id="28_wfypl"]
+[ext_resource type="Resource" uid="uid://bscetg05fetwr" path="res://Autoloads/Resources/Plays/Attack/Body/true_strike.tres" id="31_a4of8"]
+[ext_resource type="Resource" uid="uid://bthchfd4wjutk" path="res://Autoloads/Resources/Plays/Attack/Spirit/comeback.tres" id="32_32gqd"]
+[ext_resource type="Resource" uid="uid://idgc5ow4c3lf" path="res://Autoloads/Resources/Trait/watchtower.tres" id="34_kxxyr"]
 
 [resource]
 script = ExtResource("3_8uncm")
@@ -36,9 +36,9 @@ mind_base_pow = 35
 body_base_def = 85
 spirit_base_def = 95
 mind_base_def = 50
-plays_string_array = Array[String](["bump", "hawkeye", "dig", "relentless", "desperate force", "counter", "launch", "pepshot", "net rush", "cover", "juggle", "mark", "shield", "quick tag", "energized", "vigor beam", "goo-goo eyes", "whistle", "burnout", "role reverse", "thriller", "dive", "spitball", "steal", "shake off", "thrash", "excited pass", "forward pass", "true strike", "comeback"])
+plays_string_array = Array[String](["bump", "hawkeye", "dig", "relentless", "desperate force", "counter", "launch", "pepshot", "net rush", "cover", "juggle", "mark", "shield", "quick tag", "energized", "vigor beam", "goo-goo eyes", "whistle", "explosive spirit", "role reverse", "thriller", "dive", "spitball", "steal", "shake off", "thrash", "excited pass", "forward pass", "true strike", "comeback"])
 traits_string_array = Array[String](["fetch", "watchtower"])
-possible_plays = Array[ExtResource("1_pixgo")]([ExtResource("3_hhr7t"), ExtResource("6_d21xv"), ExtResource("7_o1vdl"), ExtResource("8_pr83b"), ExtResource("9_d8c2d"), ExtResource("10_lgx3a"), ExtResource("17_gxc0a"), ExtResource("18_rc83a"), ExtResource("11_vsocr"), ExtResource("23_hbqeg"), ExtResource("24_ew41b"), ExtResource("25_7mq8n"), ExtResource("28_wfypl"), ExtResource("31_a4of8"), ExtResource("32_32gqd")])
+possible_plays = Array[ExtResource("1_pixgo")]([ExtResource("3_hhr7t"), ExtResource("6_d21xv"), ExtResource("7_o1vdl"), ExtResource("8_pr83b"), ExtResource("9_d8c2d"), ExtResource("10_lgx3a"), ExtResource("17_gxc0a"), ExtResource("18_rc83a"), ExtResource("21_v73xm"), ExtResource("23_hbqeg"), ExtResource("24_ew41b"), ExtResource("25_7mq8n"), ExtResource("28_wfypl"), ExtResource("31_a4of8"), ExtResource("32_32gqd")])
 possible_traits = Array[ExtResource("2_6mp8w")]([ExtResource("2_6kc0a"), ExtResource("34_kxxyr")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("21_vsocr")

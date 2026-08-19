@@ -1,19 +1,19 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://dfumc3kpami70"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://do6knc4f66sfm"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_nrti3"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_on4qm"]
-[ext_resource type="Resource" uid="uid://co0e0rgqx5603" path="res://Autoloads/Resources/Trait/slippery.tres" id="2_xd0ft"]
-[ext_resource type="Resource" uid="uid://bhqeqwobkmkmm" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="3_eiyrt"]
+[ext_resource type="Resource" uid="uid://hopcqy28xi5n" path="res://Autoloads/Resources/Trait/slippery.tres" id="2_xd0ft"]
+[ext_resource type="Resource" uid="uid://dn2b0t2ad1g03" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="3_eiyrt"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_fsb33"]
-[ext_resource type="Resource" uid="uid://cevk477q1nav3" path="res://Autoloads/Resources/Plays/Attack/Mind/tool.tres" id="6_00qpm"]
-[ext_resource type="Resource" uid="uid://bcddvnkea0a6i" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="7_7dxlp"]
-[ext_resource type="Resource" uid="uid://bjvubmjc3wd2w" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="8_gc0nd"]
-[ext_resource type="Resource" uid="uid://boewv1xdqdcwf" path="res://Autoloads/Resources/Plays/Attack/Mind/heartbreaker.tres" id="9_k3ujp"]
-[ext_resource type="Resource" uid="uid://dfaq17t8jv2vc" path="res://Autoloads/Resources/Plays/Attack/Mind/trickspin.tres" id="10_8y7wa"]
-[ext_resource type="Resource" uid="uid://cuuc60lnkhsv1" path="res://Autoloads/Resources/Plays/Attack/Mind/slice.tres" id="11_tawor"]
+[ext_resource type="Resource" uid="uid://djeo8o0og5w1c" path="res://Autoloads/Resources/Plays/Attack/Mind/tool.tres" id="6_00qpm"]
+[ext_resource type="Resource" uid="uid://dja4k3j6xenmf" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="7_7dxlp"]
+[ext_resource type="Resource" uid="uid://d164pvvi00o7h" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="8_gc0nd"]
+[ext_resource type="Resource" uid="uid://daapa3hwr7i60" path="res://Autoloads/Resources/Plays/Attack/Mind/heartbreaker.tres" id="9_k3ujp"]
+[ext_resource type="Resource" uid="uid://t617h8jy81r2" path="res://Autoloads/Resources/Plays/Attack/Mind/trickspin.tres" id="10_8y7wa"]
+[ext_resource type="Resource" uid="uid://4e2cogpnl0nc" path="res://Autoloads/Resources/Plays/Attack/Mind/slice.tres" id="11_tawor"]
 [ext_resource type="Texture2D" uid="uid://yd8pfn7m6vqo" path="res://Autoloads/Resources/Beastie/Gremlur/icon_gremlur.png" id="13_5dj70"]
-[ext_resource type="Resource" uid="uid://mgi45vtu8scp" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="25_1gibo"]
-[ext_resource type="Resource" uid="uid://d3m8lktdaafrq" path="res://Autoloads/Resources/Trait/adaptation.tres" id="28_5hrqn"]
+[ext_resource type="Resource" uid="uid://dbd6qo66gc80b" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="25_1gibo"]
+[ext_resource type="Resource" uid="uid://cj4idki0kxelo" path="res://Autoloads/Resources/Trait/adaptation.tres" id="28_5hrqn"]
 
 [resource]
 script = ExtResource("3_fsb33")
@@ -25,11 +25,11 @@ beastiepedia_id = 89
 bar_color = Color(0.64705884, 0.44313726, 1, 1)
 body_base_pow = 55
 spirit_base_pow = 50
-mind_base_pow = 90
-body_base_def = 70
-spirit_base_def = 80
-mind_base_def = 45
-plays_string_array = Array[String](["mindfield", "shield", "cover", "tool", "rainbow", "floater", "heartbreaker", "trickspin", "slice", "forward pass", "call out", "deep breath", "provoke", "lock target", "jeer", "hawkeye", "nettle", "lay trap", "frazzle", "steal", "dreadful mist", "fall back", "stinger", "copycat"])
+mind_base_pow = 81
+body_base_def = 45
+spirit_base_def = 70
+mind_base_def = 89
+plays_string_array = Array[String](["mindfield", "shield", "cover", "tool", "rainbow", "floater", "heartbreaker", "trickspin", "slice", "forward pass", "call out", "deep breath", "provoke", "lock target", "jeer", "hawkeye", "lay trap", "frazzle", "steal", "dreadful mist", "fall back", "stinger", "catwalk", "reign", "goo-goo eyes", "copycat"])
 traits_string_array = Array[String](["slippery", "adaptation"])
 possible_plays = Array[ExtResource("1_nrti3")]([ExtResource("3_eiyrt"), ExtResource("6_00qpm"), ExtResource("7_7dxlp"), ExtResource("8_gc0nd"), ExtResource("9_k3ujp"), ExtResource("10_8y7wa"), ExtResource("11_tawor"), ExtResource("25_1gibo")])
 possible_traits = Array[ExtResource("2_on4qm")]([ExtResource("2_xd0ft"), ExtResource("28_5hrqn")])
@@ -37,6 +37,6 @@ sprites = Dictionary[int, Texture2D]({
 6: ExtResource("13_5dj70")
 })
 y_offset = -15
-ball_anchor_position_receive = Vector2(16, -68)
-ball_anchor_position_ready = Vector2(40, -106)
+ball_anchor_position_receive = Vector2(70, -70)
+ball_anchor_position_ready = Vector2(15, -85)
 metadata/_custom_type_script = "uid://ehabj4qsgxpl"

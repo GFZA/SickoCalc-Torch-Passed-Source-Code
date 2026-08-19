@@ -1,20 +1,20 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://cs8p316n4ek7p"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://brd50x1gsau6o"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_vjhpb"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_ipj00"]
-[ext_resource type="Resource" uid="uid://b004jebtlwirj" path="res://Autoloads/Resources/Trait/watchtower.tres" id="2_mh4dv"]
-[ext_resource type="Resource" uid="uid://s2rfx2brbkjp" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="3_fajae"]
+[ext_resource type="Resource" uid="uid://idgc5ow4c3lf" path="res://Autoloads/Resources/Trait/watchtower.tres" id="2_mh4dv"]
+[ext_resource type="Resource" uid="uid://d1l5unu2xxfdh" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="3_fajae"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_tr6kv"]
-[ext_resource type="Resource" uid="uid://p80bbmytiwqg" path="res://Autoloads/Resources/Plays/Attack/Body/sidewinder.tres" id="4_eo6o0"]
-[ext_resource type="Resource" uid="uid://c0311mnuib5cq" path="res://Autoloads/Resources/Plays/Attack/Body/rocket.tres" id="6_3kiae"]
-[ext_resource type="Resource" uid="uid://5ltjg2ttl7gj" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="7_kp8jf"]
-[ext_resource type="Resource" uid="uid://cvdicau5iv3vh" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="7_uvvf8"]
-[ext_resource type="Resource" uid="uid://wb5u2h0tv0wm" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="8_rg64q"]
-[ext_resource type="Resource" uid="uid://ewie1sj4rkcg" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="9_asxgm"]
+[ext_resource type="Resource" uid="uid://u3j21441mj0x" path="res://Autoloads/Resources/Plays/Attack/Body/sidewinder.tres" id="4_eo6o0"]
+[ext_resource type="Resource" uid="uid://c81nspw48g4nv" path="res://Autoloads/Resources/Plays/Attack/Body/rocket.tres" id="6_3kiae"]
+[ext_resource type="Resource" uid="uid://cavm6w3nphq5x" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="7_kp8jf"]
+[ext_resource type="Resource" uid="uid://dvcccgl73ar4r" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="7_uvvf8"]
+[ext_resource type="Resource" uid="uid://clbiv5d3ryvv" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="8_rg64q"]
+[ext_resource type="Resource" uid="uid://dm7kvoffputoc" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="9_asxgm"]
 [ext_resource type="Texture2D" uid="uid://lcw15gyrncmx" path="res://Autoloads/Resources/Beastie/Demolipede/icon_demolipede.png" id="15_xg4av"]
-[ext_resource type="Resource" uid="uid://dl3ygremr2gnn" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="17_gw4qo"]
-[ext_resource type="Resource" uid="uid://baf1yq3mq16tu" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="24_mmiyl"]
-[ext_resource type="Resource" uid="uid://cnuhl6sca4x2n" path="res://Autoloads/Resources/Trait/wallbreaker.tres" id="26_es82v"]
+[ext_resource type="Resource" uid="uid://sjm5j6045dgt" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="17_gw4qo"]
+[ext_resource type="Resource" uid="uid://c330d4p6h5uke" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="24_mmiyl"]
+[ext_resource type="Resource" uid="uid://3376jxdyb7u" path="res://Autoloads/Resources/Trait/wallbreaker.tres" id="26_es82v"]
 
 [resource]
 script = ExtResource("3_tr6kv")
@@ -37,6 +37,6 @@ possible_traits = Array[ExtResource("2_ipj00")]([ExtResource("2_mh4dv"), ExtReso
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("15_xg4av")
 })
-ball_anchor_position_receive = Vector2(-58, -142)
-ball_anchor_position_ready = Vector2(55, -157)
+ball_anchor_position_receive = Vector2(-65, -160)
+ball_anchor_position_ready = Vector2(80, -110)
 metadata/_custom_type_script = "uid://ehabj4qsgxpl"
