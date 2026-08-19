@@ -1,11 +1,11 @@
-[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://c1to42gkwilrq"]
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://bs4m4l7bie2xg"]
 
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_g30c7"]
 
 [resource]
 script = ExtResource("1_g30c7")
 name = "Power Up"
-description = "BODY Attacks do +15 damage when STAMINA is below 34"
+description = "BODY Attacks do +50% damage when STAMINA is below 34"
 need_to_be_manually_activated = true
 condition_name = "User STAMINA is below 34"
 is_starter_trait = true

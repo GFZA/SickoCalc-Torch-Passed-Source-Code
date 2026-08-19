@@ -1,11 +1,11 @@
-[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://cnliahyhutvwb"]
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://c64dh46nq4agp"]
 
-[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_iqajw"]
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_pvsg8"]
 
 [resource]
-script = ExtResource("1_iqajw")
+script = ExtResource("1_pvsg8")
 name = "Burnout"
-base_pow = 110
-descrition = "ATTACK. SPIRIT POW DOWN2 to self."
+base_pow = 100
+descrition = "ATTACK. -15 STAMINA."
 type = 1
 metadata/_custom_type_script = "uid://bc63soeia1eb1"

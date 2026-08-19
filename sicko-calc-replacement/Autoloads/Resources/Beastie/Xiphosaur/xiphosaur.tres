@@ -1,18 +1,18 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://drayeowrxfw5e"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://bd05lwwagesix"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_aavhy"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_5x0qa"]
-[ext_resource type="Resource" uid="uid://dfwsfokqyvkia" path="res://Autoloads/Resources/Trait/armored.tres" id="2_pm4g0"]
-[ext_resource type="Resource" uid="uid://b4745hu4puleb" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_5sg5e"]
+[ext_resource type="Resource" uid="uid://dki54nf7dghbo" path="res://Autoloads/Resources/Trait/armored.tres" id="2_pm4g0"]
+[ext_resource type="Resource" uid="uid://cm70uava1yg8o" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_5sg5e"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_pm4g0"]
-[ext_resource type="Resource" uid="uid://cya1yqpm1hk8m" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="6_oy6fx"]
-[ext_resource type="Resource" uid="uid://bwntvaq8we2ee" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="9_x7rrh"]
-[ext_resource type="Resource" uid="uid://pq5ehf531if5" path="res://Autoloads/Resources/Plays/Attack/Spirit/cook.tres" id="11_qcdbm"]
-[ext_resource type="Resource" uid="uid://yedb04mc431m" path="res://Autoloads/Resources/Plays/Attack/Spirit/counter.tres" id="13_oy6fx"]
-[ext_resource type="Resource" uid="uid://c18abdsio1qy3" path="res://Autoloads/Resources/Plays/Attack/Spirit/desperate_force.tres" id="15_5u06q"]
-[ext_resource type="Resource" uid="uid://bt6kmjvu2p44g" path="res://Autoloads/Resources/Plays/Attack/Spirit/comeback.tres" id="16_w60fm"]
-[ext_resource type="Resource" uid="uid://c0hsvmpto8e3s" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="17_x7rrh"]
-[ext_resource type="Resource" uid="uid://d0kxbfqagglny" path="res://Autoloads/Resources/Plays/Attack/Spirit/steamer.tres" id="18_p2ph1"]
+[ext_resource type="Resource" uid="uid://tnf87fyswfah" path="res://Autoloads/Resources/Plays/Attack/Spirit/steamer.tres" id="4_sf1s4"]
+[ext_resource type="Resource" uid="uid://bxndwbax7qt22" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="6_oy6fx"]
+[ext_resource type="Resource" uid="uid://bthchfd4wjutk" path="res://Autoloads/Resources/Plays/Attack/Spirit/comeback.tres" id="7_oy6fx"]
+[ext_resource type="Resource" uid="uid://bwt0un7f6ln11" path="res://Autoloads/Resources/Plays/Attack/Spirit/desperate_force.tres" id="8_5u06q"]
+[ext_resource type="Resource" uid="uid://dfq6t4eiyi64b" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="9_w60fm"]
+[ext_resource type="Resource" uid="uid://b3fafiiiohfee" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="9_x7rrh"]
+[ext_resource type="Resource" uid="uid://k4cycu6o4ffn" path="res://Autoloads/Resources/Plays/Attack/Spirit/counter.tres" id="10_x7rrh"]
+[ext_resource type="Resource" uid="uid://b4lsgcxi4wnpo" path="res://Autoloads/Resources/Plays/Attack/Spirit/cook.tres" id="23_mjp41"]
 [ext_resource type="Texture2D" uid="uid://du25h8n0l1bj5" path="res://Autoloads/Resources/Beastie/Xiphosaur/icon_xiphosaur.png" id="27_6xxgd"]
 
 [resource]
@@ -20,6 +20,7 @@ script = ExtResource("3_pm4g0")
 my_plays = Array[ExtResource("1_aavhy")]([null, null, null])
 my_trait = ExtResource("2_pm4g0")
 specie_name = "Xiphosaur"
+internal_name = "horseshoe"
 beastiepedia_id = 72
 bar_color = Color(0.7137255, 0.3647059, 0.23137255, 1)
 body_base_pow = 20
@@ -28,43 +29,9 @@ mind_base_pow = 29
 body_base_def = 123
 spirit_base_def = 85
 mind_base_def = 107
-plays_string = "From Levels:
-1
-Beginner Effort
-1
-Shield
-6
-Dig
-11
-Toppler
-16
-Hunker
-21
-Forward Pass
-26
-Careful Shot
-30
-Exhaust
-34
-Cook
-37
-Lay Trap
-41
-Counter
-46
-Torch Pass
-From Friends:
-Desperate Force
-Comeback
-Grit
-Steamer
-Pipe
-Drum
-Nettle
-Shake Off
-Tough Front
-Body Ready"
-possible_plays = Array[ExtResource("1_aavhy")]([ExtResource("3_5sg5e"), ExtResource("6_oy6fx"), ExtResource("9_x7rrh"), ExtResource("11_qcdbm"), ExtResource("13_oy6fx"), ExtResource("15_5u06q"), ExtResource("16_w60fm"), ExtResource("17_x7rrh"), ExtResource("18_p2ph1")])
+plays_string_array = Array[String](["beginner effort", "steamer", "careful shot", "toppler", "comeback", "desperate force", "grit", "counter", "dig", "forward pass", "pipe", "exhaust", "tough front", "hunker", "nettle", "lay trap", "drum", "body ready", "torch pass", "shield", "cook", "shake off"])
+traits_string_array = Array[String](["armored"])
+possible_plays = Array[ExtResource("1_aavhy")]([ExtResource("3_5sg5e"), ExtResource("4_sf1s4"), ExtResource("9_x7rrh"), ExtResource("6_oy6fx"), ExtResource("7_oy6fx"), ExtResource("8_5u06q"), ExtResource("9_w60fm"), ExtResource("10_x7rrh"), ExtResource("23_mjp41")])
 possible_traits = Array[ExtResource("2_5x0qa")]([ExtResource("2_pm4g0")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("27_6xxgd")

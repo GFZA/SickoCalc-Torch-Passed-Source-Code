@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=20 format=3 uid="uid://dji04smb46ll6"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_ov7a5"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_gc6d7"]
+[ext_resource type="Resource" uid="uid://c6ycuak6ntpex" path="res://Autoloads/Resources/Trait/steadfast.tres" id="2_nbdut"]
+[ext_resource type="Resource" uid="uid://b3u25d7p8nlhi" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_8qia8"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_nbdut"]
+[ext_resource type="Resource" uid="uid://sjm5j6045dgt" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="4_iqn8e"]
+[ext_resource type="Resource" uid="uid://cmh1bw4nmxyfi" path="res://Autoloads/Resources/Plays/Attack/Body/shove.tres" id="5_o8uqv"]
+[ext_resource type="Resource" uid="uid://c81nspw48g4nv" path="res://Autoloads/Resources/Plays/Attack/Body/rocket.tres" id="6_m054u"]
+[ext_resource type="Resource" uid="uid://dvcccgl73ar4r" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="7_ldcwe"]
+[ext_resource type="Resource" uid="uid://b153wak5pgbil" path="res://Autoloads/Resources/Plays/Attack/Body/stomp.tres" id="8_jrrmq"]
+[ext_resource type="Resource" uid="uid://clbiv5d3ryvv" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="9_ysaog"]
+[ext_resource type="Resource" uid="uid://cesssgehplj57" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="10_meh4p"]
+[ext_resource type="Resource" uid="uid://cslq62j86s88g" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="11_h7l7k"]
+[ext_resource type="Texture2D" uid="uid://cbasd56sgpt4x" path="res://Autoloads/Resources/Beastie/Skibble/icon_skibble.png" id="11_xqmvx"]
+[ext_resource type="Resource" uid="uid://gxducrjenbep" path="res://Autoloads/Resources/Plays/Attack/Mind/ricochet.tres" id="12_bhj08"]
+[ext_resource type="Resource" uid="uid://n3jtpon2cbv1" path="res://Autoloads/Resources/Plays/Attack/Mind/cold_calculation.tres" id="13_ocw5j"]
+[ext_resource type="Resource" uid="uid://bpusa2ne5wfcg" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="14_8x2e7"]
+[ext_resource type="Resource" uid="uid://d1l5unu2xxfdh" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="31_b78i1"]
+[ext_resource type="Resource" uid="uid://dki54nf7dghbo" path="res://Autoloads/Resources/Trait/armored.tres" id="33_2bs5n"]
+
+[resource]
+script = ExtResource("3_nbdut")
+my_plays = Array[ExtResource("1_ov7a5")]([null, null, null])
+my_trait = ExtResource("2_nbdut")
+specie_name = "Skibble"
+internal_name = "rocklizard1"
+beastiepedia_id = 75
+is_nfe = true
+bar_color = Color(0.47843137, 0.5254902, 0.52156866, 1)
+body_base_pow = 52
+spirit_base_pow = 18
+mind_base_pow = 41
+body_base_def = 85
+spirit_base_def = 57
+mind_base_def = 23
+plays_string_array = Array[String](["bump", "breaker", "shove", "rocket", "high slam", "stomp", "thump", "tracker", "lure shot", "ricochet", "cold calculation", "prepared attack", "dig", "forward pass", "deep breath", "feint", "provoke", "flex", "tough front", "hunker", "body ready", "distraction", "quick breath", "exhaust", "shield", "pump up", "menace", "shake off", "basic hit"])
+traits_string_array = Array[String](["steadfast", "armored"])
+possible_plays = Array[ExtResource("1_ov7a5")]([ExtResource("3_8qia8"), ExtResource("4_iqn8e"), ExtResource("5_o8uqv"), ExtResource("6_m054u"), ExtResource("7_ldcwe"), ExtResource("8_jrrmq"), ExtResource("9_ysaog"), ExtResource("10_meh4p"), ExtResource("11_h7l7k"), ExtResource("12_bhj08"), ExtResource("13_ocw5j"), ExtResource("14_8x2e7"), ExtResource("31_b78i1")])
+possible_traits = Array[ExtResource("2_gc6d7")]([ExtResource("2_nbdut"), ExtResource("33_2bs5n")])
+sprites = Dictionary[int, Texture2D]({
+6: ExtResource("11_xqmvx")
+})
+y_offset = -20
+ball_anchor_position_receive = Vector2(20, -70)
+ball_anchor_position_ready = Vector2(50, -55)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

@@ -4,25 +4,25 @@
 [ext_resource type="Script" uid="uid://b5jcl1uu04k63" path="res://Scene/main.gd" id="1_r34rm"]
 [ext_resource type="PackedScene" uid="uid://cnn1686te4wf8" path="res://Scene/BeastieColumn/beastie_column.tscn" id="1_sblpm"]
 [ext_resource type="PackedScene" uid="uid://cbc5i66rtpig1" path="res://Scene/DamageSplash/damage_splash.tscn" id="3_2wwxx"]
-[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="3_hiice"]
 [ext_resource type="FontFile" uid="uid://cvfib27cf5q88" path="res://Autoloads/Resources/Fonts/Go Banana.ttf" id="3_nyb1q"]
-[ext_resource type="Resource" uid="uid://vgjeoby0udu0" path="res://Autoloads/Resources/Plays/Attack/Body/free_ball.tres" id="4_aam5o"]
-[ext_resource type="Resource" uid="uid://c3elar3cfgqeb" path="res://Autoloads/Resources/Trait/scavenger.tres" id="4_sor6r"]
 [ext_resource type="Texture2D" uid="uid://k7ofg6xpe8pl" path="res://Autoloads/Icons/icon_calc.png" id="4_uctnp"]
 [ext_resource type="Texture2D" uid="uid://c56bab4mbpfwg" path="res://Autoloads/Icons/icon_github.png" id="5_m37ut"]
-[ext_resource type="Resource" uid="uid://bwntvaq8we2ee" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="5_pqe63"]
-[ext_resource type="Resource" uid="uid://c6joa81j7k6sd" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="6_aam5o"]
-[ext_resource type="Resource" uid="uid://51titaex4o3e" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="7_nyb1q"]
-[ext_resource type="Resource" uid="uid://cya1yqpm1hk8m" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="8_xw8bv"]
-[ext_resource type="Resource" uid="uid://iarkv57ltv2s" path="res://Autoloads/Resources/Plays/Attack/Mind/snipe.tres" id="9_wimqa"]
-[ext_resource type="Resource" uid="uid://ooe1a5sxb6wn" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="10_t372l"]
-[ext_resource type="Resource" uid="uid://cnksvmrwuymf3" path="res://Autoloads/Resources/Plays/Attack/Body/power_sap.tres" id="11_uctnp"]
-[ext_resource type="Resource" uid="uid://bpdws38adgj1d" path="res://Autoloads/Resources/Plays/Attack/Body/boom.tres" id="12_m37ut"]
-[ext_resource type="Resource" uid="uid://de4i64x6vnp7m" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="13_yoaul"]
-[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="14_mepbf"]
-[ext_resource type="Resource" uid="uid://b2f4ajbr7hmk5" path="res://Autoloads/Resources/Trait/cleanup.tres" id="15_dvq1j"]
-[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="16_50v0s"]
-[ext_resource type="Texture2D" uid="uid://bmkrey7wnjpt" path="res://Autoloads/Resources/Beastie/Sprecko/icon_sprecko.png" id="20_b0nqf"]
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="6_wimqa"]
+[ext_resource type="Resource" uid="uid://dj1gr3u6kh2cj" path="res://Autoloads/Resources/Plays/Attack/Body/free_ball.tres" id="7_t372l"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="8_uctnp"]
+[ext_resource type="Resource" uid="uid://b3fafiiiohfee" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="9_m37ut"]
+[ext_resource type="Resource" uid="uid://b21yp6ypxihut" path="res://Autoloads/Resources/Plays/Attack/Body/boom.tres" id="10_yoaul"]
+[ext_resource type="Resource" uid="uid://cslq62j86s88g" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="11_mepbf"]
+[ext_resource type="Resource" uid="uid://sjm5j6045dgt" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="12_dvq1j"]
+[ext_resource type="Resource" uid="uid://chimd5aoryek2" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="13_50v0s"]
+[ext_resource type="Resource" uid="uid://bjcli6tikgdm3" path="res://Autoloads/Resources/Plays/Attack/Body/power_sap.tres" id="14_mu7ye"]
+[ext_resource type="Resource" uid="uid://bxndwbax7qt22" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="15_2oiod"]
+[ext_resource type="Resource" uid="uid://cavm6w3nphq5x" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="16_8bkap"]
+[ext_resource type="Resource" uid="uid://cxavlxbnqpmy4" path="res://Autoloads/Resources/Plays/Attack/Mind/snipe.tres" id="17_b0nqf"]
+[ext_resource type="Resource" uid="uid://chj4ern3e6noc" path="res://Autoloads/Resources/Trait/scavenger.tres" id="18_ot48q"]
+[ext_resource type="Resource" uid="uid://d2d0y2wkj65yn" path="res://Autoloads/Resources/Trait/cleanup.tres" id="19_2uk8d"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="20_cr44a"]
+[ext_resource type="Texture2D" uid="uid://bmkrey7wnjpt" path="res://Autoloads/Resources/Beastie/Sprecko/icon_sprecko.png" id="21_tcekk"]
 [ext_resource type="Texture2D" uid="uid://0a5xkw4orq58" path="res://Autoloads/Misc/main_ui_bg_tile_4.png" id="23_nyb1q"]
 [ext_resource type="Theme" uid="uid://bkrlwg21fhprn" path="res://Autoloads/Resources/Themes/edit_button.tres" id="24_xw8bv"]
 [ext_resource type="Theme" uid="uid://cp230picecare" path="res://Autoloads/Resources/Themes/edit_button_for_button_group.tres" id="26_wimqa"]
@@ -30,51 +30,55 @@
 [ext_resource type="Script" uid="uid://dv7bjfhfn4rs3" path="res://Scene/team_contoller.gd" id="27_xw8bv"]
 
 [sub_resource type="Resource" id="Resource_wimqa"]
-script = ExtResource("14_mepbf")
+script = ExtResource("8_uctnp")
 name = "Scavenger"
 description = "Restores 25 STAMINA when TAGGED OUT"
 metadata/_custom_type_script = "uid://bslfuaragw1g7"
 
 [sub_resource type="Resource" id="Resource_t372l"]
-script = ExtResource("16_50v0s")
-my_plays = Array[ExtResource("3_hiice")]([ExtResource("4_aam5o"), null, null])
+script = ExtResource("20_cr44a")
+my_plays = Array[ExtResource("6_wimqa")]([ExtResource("7_t372l"), null, null])
 my_trait = SubResource("Resource_wimqa")
 current_boosts = Dictionary[int, int]({
 0: 0
 })
 is_nfe = true
 bar_color = Color(0.68235296, 0.92941177, 0.5764706, 1)
-possible_plays = Array[ExtResource("3_hiice")]([ExtResource("5_pqe63"), ExtResource("6_aam5o"), ExtResource("7_nyb1q"), ExtResource("8_xw8bv"), ExtResource("9_wimqa"), ExtResource("10_t372l"), ExtResource("11_uctnp"), ExtResource("12_m37ut"), ExtResource("13_yoaul")])
-possible_traits = Array[ExtResource("14_mepbf")]([ExtResource("4_sor6r"), ExtResource("15_dvq1j")])
+plays_string_array = Array[String](["careful shot", "boom", "lure shot", "breaker", "relaxed hit", "power sap", "dig", "pipe", "forward pass", "refresh", "shield", "exhaust", "clear field", "hunker", "tough front", "mark", "torch pass", "call out", "chill out", "heat up", "toppler", "demolish", "snipe"])
+traits_string_array = Array[String](["scavenger", "cleanup"])
+possible_plays = Array[ExtResource("6_wimqa")]([ExtResource("9_m37ut"), ExtResource("10_yoaul"), ExtResource("11_mepbf"), ExtResource("12_dvq1j"), ExtResource("13_50v0s"), ExtResource("14_mu7ye"), ExtResource("15_2oiod"), ExtResource("16_8bkap"), ExtResource("17_b0nqf")])
+possible_traits = Array[ExtResource("8_uctnp")]([ExtResource("18_ot48q"), ExtResource("19_2uk8d")])
 sprites = Dictionary[int, Texture2D]({
-6: ExtResource("20_b0nqf")
+6: ExtResource("21_tcekk")
 })
-y_offset = -5
+y_offset = -15
 ball_anchor_position_receive = Vector2(10, -52)
 ball_anchor_position_ready = Vector2(60, -85)
 metadata/_custom_type_script = "uid://ehabj4qsgxpl"
 
 [sub_resource type="Resource" id="Resource_uctnp"]
-script = ExtResource("14_mepbf")
+script = ExtResource("8_uctnp")
 name = "Scavenger"
 description = "Restores 25 STAMINA when TAGGED OUT"
 metadata/_custom_type_script = "uid://bslfuaragw1g7"
 
 [sub_resource type="Resource" id="Resource_m37ut"]
-script = ExtResource("16_50v0s")
-my_plays = Array[ExtResource("3_hiice")]([null, null, null])
+script = ExtResource("20_cr44a")
+my_plays = Array[ExtResource("6_wimqa")]([null, null, null])
 my_trait = SubResource("Resource_uctnp")
 current_boosts = Dictionary[int, int]({
-3: 0
+0: 0
 })
 is_nfe = true
 bar_color = Color(0.68235296, 0.92941177, 0.5764706, 1)
-possible_plays = Array[ExtResource("3_hiice")]([ExtResource("5_pqe63"), ExtResource("6_aam5o"), ExtResource("7_nyb1q"), ExtResource("8_xw8bv"), ExtResource("9_wimqa"), ExtResource("10_t372l"), ExtResource("11_uctnp"), ExtResource("12_m37ut"), ExtResource("13_yoaul")])
-possible_traits = Array[ExtResource("14_mepbf")]([ExtResource("4_sor6r"), ExtResource("15_dvq1j")])
+plays_string_array = Array[String](["careful shot", "boom", "lure shot", "breaker", "relaxed hit", "power sap", "dig", "pipe", "forward pass", "refresh", "shield", "exhaust", "clear field", "hunker", "tough front", "mark", "torch pass", "call out", "chill out", "heat up", "toppler", "demolish", "snipe"])
+traits_string_array = Array[String](["scavenger", "cleanup"])
+possible_plays = Array[ExtResource("6_wimqa")]([ExtResource("9_m37ut"), ExtResource("10_yoaul"), ExtResource("11_mepbf"), ExtResource("12_dvq1j"), ExtResource("13_50v0s"), ExtResource("14_mu7ye"), ExtResource("15_2oiod"), ExtResource("16_8bkap"), ExtResource("17_b0nqf")])
+possible_traits = Array[ExtResource("8_uctnp")]([ExtResource("18_ot48q"), ExtResource("19_2uk8d")])
 sprites = Dictionary[int, Texture2D]({
-6: ExtResource("20_b0nqf")
+6: ExtResource("21_tcekk")
 })
-y_offset = -5
+y_offset = -15
 ball_anchor_position_receive = Vector2(10, -52)
 ball_anchor_position_ready = Vector2(60, -85)
 metadata/_custom_type_script = "uid://ehabj4qsgxpl"
@@ -198,7 +202,7 @@ size_flags_horizontal = 4
 theme = ExtResource("24_xw8bv")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_nyb1q")
-text = "Patch : Milestone 5 + Experiment as of Aug 5"
+text = "Patch : Milestone 6 (City Update)"
 horizontal_alignment = 1
 
 [node name="CreditTwoLabel" type="Label" parent="Overlay"]

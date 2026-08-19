@@ -1,11 +1,9 @@
-[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://xy75cvl1w1dw"]
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://hopcqy28xi5n"]
 
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_ya4oy"]
 
 [resource]
 script = ExtResource("1_ya4oy")
 name = "Slippery"
-description = "This Beastie's damage is reduced 25%. Re-targets attacks towards them to adjacent allies"
-always_activate = true
-damage_dealt_mult = 0.75
+description = "Makes adjacent allies receive attacks in their place"
 metadata/_custom_type_script = "uid://bslfuaragw1g7"

@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://dxyh0a27gdcma"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_ihkqb"]
+[ext_resource type="Resource" uid="uid://bs4m4l7bie2xg" path="res://Autoloads/Resources/Trait/power_up.tres" id="2_8sxk4"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_ct5t1"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_8sxk4"]
+[ext_resource type="Resource" uid="uid://b3u25d7p8nlhi" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_pv88f"]
+[ext_resource type="Resource" uid="uid://chimd5aoryek2" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="4_6ci5h"]
+[ext_resource type="Resource" uid="uid://clbiv5d3ryvv" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="6_rxvef"]
+[ext_resource type="Resource" uid="uid://cmh1bw4nmxyfi" path="res://Autoloads/Resources/Plays/Attack/Body/shove.tres" id="8_ywwap"]
+[ext_resource type="Texture2D" uid="uid://ddwxusmtf0fbu" path="res://Autoloads/Resources/Beastie/Ostrisigh/icon_ostrisigh.png" id="11_lrrmm"]
+[ext_resource type="Resource" uid="uid://bwt0un7f6ln11" path="res://Autoloads/Resources/Plays/Attack/Spirit/desperate_force.tres" id="13_0mfuh"]
+[ext_resource type="Resource" uid="uid://b153wak5pgbil" path="res://Autoloads/Resources/Plays/Attack/Body/stomp.tres" id="17_eg8tn"]
+[ext_resource type="Resource" uid="uid://sjm5j6045dgt" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="20_8ptnw"]
+[ext_resource type="Resource" uid="uid://48aoek5bqh4d" path="res://Autoloads/Resources/Plays/Attack/Body/kick.tres" id="24_6ci5h"]
+[ext_resource type="Resource" uid="uid://cavm6w3nphq5x" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="24_elouj"]
+[ext_resource type="Resource" uid="uid://cg78buq1dpuhn" path="res://Autoloads/Resources/Plays/Attack/Body/flying_kick.tres" id="25_bd55r"]
+[ext_resource type="Resource" uid="uid://bul5jwe1qisst" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="25_ef7lw"]
+[ext_resource type="Resource" uid="uid://d1l5unu2xxfdh" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="27_olxfj"]
+[ext_resource type="Resource" uid="uid://cwke5k3x4l74c" path="res://Autoloads/Resources/Trait/overwork.tres" id="30_h0v8d"]
+
+[resource]
+script = ExtResource("3_8sxk4")
+my_plays = Array[ExtResource("1_ihkqb")]([null, null, null])
+my_trait = ExtResource("2_8sxk4")
+specie_name = "Ostrisigh"
+internal_name = "cassowary2"
+beastiepedia_id = 6
+is_nfe = true
+bar_color = Color(0.36078432, 0.6627451, 0.7647059, 1)
+body_base_pow = 87
+spirit_base_pow = 50
+mind_base_pow = 33
+body_base_def = 85
+spirit_base_def = 35
+mind_base_def = 65
+plays_string_array = Array[String](["bump", "relaxed hit", "net rush", "thump", "shove", "deep breath", "stretch", "quick breath", "hunker", "desperate force", "cover", "call out", "body ready", "stomp", "shield", "hawkeye", "breaker", "reposition", "mark", "smack", "demolish", "kick", "flying kick", "tough front", "vigor beam", "basic hit"])
+traits_string_array = Array[String](["power up", "overwork"])
+possible_plays = Array[ExtResource("1_ihkqb")]([ExtResource("3_pv88f"), ExtResource("4_6ci5h"), ExtResource("6_rxvef"), ExtResource("8_ywwap"), ExtResource("13_0mfuh"), ExtResource("17_eg8tn"), ExtResource("20_8ptnw"), ExtResource("24_elouj"), ExtResource("24_6ci5h"), ExtResource("25_bd55r"), ExtResource("25_ef7lw"), ExtResource("27_olxfj")])
+possible_traits = Array[ExtResource("2_ct5t1")]([ExtResource("2_8sxk4"), ExtResource("30_h0v8d")])
+sprites = Dictionary[int, Texture2D]({
+6: ExtResource("11_lrrmm")
+})
+y_offset = -20
+ball_anchor_position_receive = Vector2(120, -65)
+ball_anchor_position_ready = Vector2(150, -108)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

@@ -7,18 +7,18 @@
 [ext_resource type="Theme" uid="uid://cp230picecare" path="res://Autoloads/Resources/Themes/edit_button_for_button_group.tres" id="4_buii5"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="4_gl0d7"]
 [ext_resource type="PackedScene" uid="uid://b4bws0qofhe6x" path="res://Scene/PlayUI/plays_ui.tscn" id="4_om41x"]
-[ext_resource type="Resource" uid="uid://bwntvaq8we2ee" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="5_gvagf"]
-[ext_resource type="Resource" uid="uid://c6joa81j7k6sd" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="6_ta5ev"]
-[ext_resource type="Resource" uid="uid://vgjeoby0udu0" path="res://Autoloads/Resources/Plays/Attack/Body/free_ball.tres" id="6_uupfg"]
-[ext_resource type="Resource" uid="uid://51titaex4o3e" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="7_rr5fh"]
-[ext_resource type="Resource" uid="uid://cya1yqpm1hk8m" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="8_blo7e"]
-[ext_resource type="Resource" uid="uid://iarkv57ltv2s" path="res://Autoloads/Resources/Plays/Attack/Mind/snipe.tres" id="9_sfsmm"]
-[ext_resource type="Resource" uid="uid://ooe1a5sxb6wn" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="10_3h7xc"]
-[ext_resource type="Resource" uid="uid://cnksvmrwuymf3" path="res://Autoloads/Resources/Plays/Attack/Body/power_sap.tres" id="11_fakko"]
-[ext_resource type="Resource" uid="uid://bpdws38adgj1d" path="res://Autoloads/Resources/Plays/Attack/Body/boom.tres" id="12_8eejc"]
-[ext_resource type="Resource" uid="uid://de4i64x6vnp7m" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="13_tt5s3"]
-[ext_resource type="Resource" uid="uid://c3elar3cfgqeb" path="res://Autoloads/Resources/Trait/scavenger.tres" id="14_sr6oy"]
-[ext_resource type="Resource" uid="uid://b2f4ajbr7hmk5" path="res://Autoloads/Resources/Trait/cleanup.tres" id="15_10xa0"]
+[ext_resource type="Resource" uid="uid://b3fafiiiohfee" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="5_gvagf"]
+[ext_resource type="Resource" uid="uid://cslq62j86s88g" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="6_ta5ev"]
+[ext_resource type="Resource" uid="uid://dj1gr3u6kh2cj" path="res://Autoloads/Resources/Plays/Attack/Body/free_ball.tres" id="6_uupfg"]
+[ext_resource type="Resource" uid="uid://sjm5j6045dgt" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="7_rr5fh"]
+[ext_resource type="Resource" uid="uid://bxndwbax7qt22" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="8_blo7e"]
+[ext_resource type="Resource" uid="uid://cxavlxbnqpmy4" path="res://Autoloads/Resources/Plays/Attack/Mind/snipe.tres" id="9_sfsmm"]
+[ext_resource type="Resource" uid="uid://cavm6w3nphq5x" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="10_3h7xc"]
+[ext_resource type="Resource" uid="uid://bjcli6tikgdm3" path="res://Autoloads/Resources/Plays/Attack/Body/power_sap.tres" id="11_fakko"]
+[ext_resource type="Resource" uid="uid://b21yp6ypxihut" path="res://Autoloads/Resources/Plays/Attack/Body/boom.tres" id="12_8eejc"]
+[ext_resource type="Resource" uid="uid://chimd5aoryek2" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="13_tt5s3"]
+[ext_resource type="Resource" uid="uid://chj4ern3e6noc" path="res://Autoloads/Resources/Trait/scavenger.tres" id="14_sr6oy"]
+[ext_resource type="Resource" uid="uid://d2d0y2wkj65yn" path="res://Autoloads/Resources/Trait/cleanup.tres" id="15_10xa0"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="16_ps03y"]
 [ext_resource type="Texture2D" uid="uid://bmkrey7wnjpt" path="res://Autoloads/Resources/Beastie/Sprecko/icon_sprecko.png" id="17_l46dx"]
 [ext_resource type="Texture2D" uid="uid://0a5xkw4orq58" path="res://Autoloads/Misc/main_ui_bg_tile_4.png" id="20_prtdr"]
@@ -35,40 +35,42 @@
 [ext_resource type="Texture2D" uid="uid://bdpt0dp2stnq8" path="res://Autoloads/Icons/icon_tough.png" id="33_vcchh"]
 [ext_resource type="Texture2D" uid="uid://7pheu4eh1geu" path="res://Autoloads/Icons/icon_tender.png" id="34_gl0d7"]
 
-[sub_resource type="Resource" id="Resource_o4jx3"]
+[sub_resource type="Resource" id="Resource_vcchh"]
 script = ExtResource("4_gl0d7")
 name = "Scavenger"
 description = "Restores 25 STAMINA when TAGGED OUT"
 metadata/_custom_type_script = "uid://bslfuaragw1g7"
 
-[sub_resource type="Resource" id="Resource_tmn5e"]
+[sub_resource type="Resource" id="Resource_gl0d7"]
 script = ExtResource("16_ps03y")
 my_plays = Array[ExtResource("2_vcchh")]([ExtResource("6_uupfg"), null, null])
-my_trait = SubResource("Resource_o4jx3")
+my_trait = SubResource("Resource_vcchh")
 current_boosts = Dictionary[int, int]({
 0: 0
 })
 is_nfe = true
 bar_color = Color(0.68235296, 0.92941177, 0.5764706, 1)
-possible_plays = Array[ExtResource("2_vcchh")]([ExtResource("5_gvagf"), ExtResource("6_ta5ev"), ExtResource("7_rr5fh"), ExtResource("8_blo7e"), ExtResource("9_sfsmm"), ExtResource("10_3h7xc"), ExtResource("11_fakko"), ExtResource("12_8eejc"), ExtResource("13_tt5s3")])
+plays_string_array = Array[String](["careful shot", "boom", "lure shot", "breaker", "relaxed hit", "power sap", "dig", "pipe", "forward pass", "refresh", "shield", "exhaust", "clear field", "hunker", "tough front", "mark", "torch pass", "call out", "chill out", "heat up", "toppler", "demolish", "snipe"])
+traits_string_array = Array[String](["scavenger", "cleanup"])
+possible_plays = Array[ExtResource("2_vcchh")]([ExtResource("5_gvagf"), ExtResource("12_8eejc"), ExtResource("6_ta5ev"), ExtResource("7_rr5fh"), ExtResource("13_tt5s3"), ExtResource("11_fakko"), ExtResource("8_blo7e"), ExtResource("10_3h7xc"), ExtResource("9_sfsmm")])
 possible_traits = Array[ExtResource("4_gl0d7")]([ExtResource("14_sr6oy"), ExtResource("15_10xa0")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("17_l46dx")
 })
-y_offset = -5
+y_offset = -15
 ball_anchor_position_receive = Vector2(10, -52)
 ball_anchor_position_ready = Vector2(60, -85)
 metadata/_custom_type_script = "uid://ehabj4qsgxpl"
 
-[sub_resource type="ButtonGroup" id="ButtonGroup_58ooy"]
+[sub_resource type="ButtonGroup" id="ButtonGroup_gvagf"]
 
-[sub_resource type="ButtonGroup" id="ButtonGroup_wjdxc"]
+[sub_resource type="ButtonGroup" id="ButtonGroup_ta5ev"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_fakko"]
 font = ExtResource("29_ta5ev")
 font_size = 64
 
-[sub_resource type="ButtonGroup" id="ButtonGroup_0ekm4"]
+[sub_resource type="ButtonGroup" id="ButtonGroup_rr5fh"]
 allow_unpress = true
 
 [node name="BeastieColumn" type="MarginContainer"]
@@ -78,7 +80,6 @@ theme_override_constants/margin_top = 100
 theme_override_constants/margin_right = 100
 theme_override_constants/margin_bottom = 100
 script = ExtResource("1_nvjsa")
-beastie = SubResource("Resource_tmn5e")
 
 [node name="BGRec" type="TextureRect" parent="."]
 layout_mode = 2
@@ -95,7 +96,7 @@ offset_bottom = 1825.0
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 0
-beastie = SubResource("Resource_tmn5e")
+beastie = SubResource("Resource_gl0d7")
 
 [node name="Spacer" type="Control" parent="BGRec/MainContainer"]
 custom_minimum_size = Vector2(0, 25)
@@ -117,7 +118,7 @@ focus_mode = 0
 theme = ExtResource("4_buii5")
 toggle_mode = true
 button_pressed = true
-button_group = SubResource("ButtonGroup_58ooy")
+button_group = SubResource("ButtonGroup_gvagf")
 text = "Scavenger"
 
 [node name="TraitTwoButton" type="Button" parent="BGRec/MainContainer/TraitRow"]
@@ -128,7 +129,7 @@ size_flags_horizontal = 4
 focus_mode = 0
 theme = ExtResource("4_buii5")
 toggle_mode = true
-button_group = SubResource("ButtonGroup_58ooy")
+button_group = SubResource("ButtonGroup_gvagf")
 text = "Cleanup"
 
 [node name="CustomTraitButton" type="Button" parent="BGRec/MainContainer/TraitRow"]
@@ -139,7 +140,7 @@ size_flags_horizontal = 4
 focus_mode = 0
 theme = ExtResource("4_buii5")
 toggle_mode = true
-button_group = SubResource("ButtonGroup_58ooy")
+button_group = SubResource("ButtonGroup_gvagf")
 text = "Custom"
 
 [node name="Spacer2" type="Control" parent="BGRec/MainContainer"]
@@ -184,6 +185,7 @@ alignment = 1
 
 [node name="AllyAtLabel" type="Label" parent="BGRec/MainContainer/PositionButtons"]
 unique_name_in_owner = true
+visible = false
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -201,7 +203,7 @@ focus_mode = 0
 theme = ExtResource("4_buii5")
 toggle_mode = true
 button_pressed = true
-button_group = SubResource("ButtonGroup_wjdxc")
+button_group = SubResource("ButtonGroup_ta5ev")
 text = "Back"
 icon = ExtResource("24_aauwx")
 expand_icon = true
@@ -214,7 +216,7 @@ size_flags_horizontal = 4
 focus_mode = 0
 theme = ExtResource("4_buii5")
 toggle_mode = true
-button_group = SubResource("ButtonGroup_wjdxc")
+button_group = SubResource("ButtonGroup_ta5ev")
 text = "Net"
 icon = ExtResource("25_8gptb")
 icon_alignment = 2
@@ -382,7 +384,7 @@ focus_mode = 0
 theme = ExtResource("4_buii5")
 theme_override_font_sizes/font_size = 88
 toggle_mode = true
-button_group = SubResource("ButtonGroup_0ekm4")
+button_group = SubResource("ButtonGroup_rr5fh")
 text = "Jazzed"
 icon = ExtResource("29_13mji")
 icon_alignment = 1
@@ -400,7 +402,7 @@ focus_mode = 0
 theme = ExtResource("4_buii5")
 theme_override_font_sizes/font_size = 88
 toggle_mode = true
-button_group = SubResource("ButtonGroup_0ekm4")
+button_group = SubResource("ButtonGroup_rr5fh")
 text = "Weepy"
 icon = ExtResource("30_erbep")
 icon_alignment = 1

@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_wk137")
 name = "Inspiring Defense"
-descrition = "Feel 1 TOUGH (¼ damage) & 2 ANGRY (only attacks). ALL_TYPE POW UP1 to ally."
+descrition = "Feel 1 TOUGH (¼ damage) & 3 ANGRY (only attacks). ALL_TYPE POW UP1 to ally."
 type = 5
 metadata/_custom_type_script = "uid://oq75vqpgnqa3"

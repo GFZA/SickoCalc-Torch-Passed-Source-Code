@@ -1,6 +1,16 @@
 @tool
 extends Node
 
+const BEASTIE_DATA_JSON_PATH := "res://Autoloads/Resources/JSONs/beastie_data.json"
+const TRAIT_DATA_JSON_PATH := "res://Autoloads/Resources/JSONs/abilities.json"
+const MOVE_DATA_JSON_PATH := "res://Autoloads/Resources/JSONs/move_dic.json"
+const ALL_TEXT_JSON_PATH := "res://Autoloads/Resources/JSONs/game.json"
+
+var beastie_data_json : Dictionary = {}
+var all_text_json : Dictionary = {}
+var trait_data_json : Dictionary = {}
+var move_data_json : Dictionary = {}
+
 signal is_musclebrained_updated(value : bool)
 
 enum MySide {LEFT, RIGHT}
@@ -177,6 +187,15 @@ var all_plays : Array[Plays] = []
 var all_trait_data : Array[Trait] = []
 
 
+func _init() -> void:
+	if is_on_web:
+		return
+	beastie_data_json = JSON.parse_string(FileAccess.get_file_as_string(BEASTIE_DATA_JSON_PATH))
+	trait_data_json = JSON.parse_string(FileAccess.get_file_as_string(TRAIT_DATA_JSON_PATH))
+	move_data_json = JSON.parse_string(FileAccess.get_file_as_string(MOVE_DATA_JSON_PATH))
+	all_text_json = JSON.parse_string(FileAccess.get_file_as_string(ALL_TEXT_JSON_PATH))
+
+
 func _ready() -> void:
 	_assign_all_plays_data()
 	_assign_all_trait_data()
@@ -197,15 +216,15 @@ func _assign_all_plays_data() -> void:
 			2:
 				path += "Attack/Mind"
 				array_to_add = all_mind_attacks
-			3:
-				path += "Volley"
-				array_to_add = all_volley_plays
-			4:
-				path += "Support"
-				array_to_add = all_support_plays
-			5:
-				path += "Defense"
-				array_to_add = all_defense_plays
+			#3:
+				#path += "Volley"
+				#array_to_add = all_volley_plays
+			#4:
+				#path += "Support"
+				#array_to_add = all_support_plays
+			#5:
+				#path += "Defense"
+				#array_to_add = all_defense_plays
 
 		var dir := DirAccess.open(path)
 		if dir:
@@ -231,9 +250,9 @@ func _assign_all_plays_data() -> void:
 	all_plays.append_array(all_body_attacks)
 	all_plays.append_array(all_spirit_attacks)
 	all_plays.append_array(all_mind_attacks)
-	all_plays.append_array(all_volley_plays)
-	all_plays.append_array(all_support_plays)
-	all_plays.append_array(all_defense_plays)
+	#all_plays.append_array(all_volley_plays)
+	#all_plays.append_array(all_support_plays)
+	#all_plays.append_array(all_defense_plays)
 
 
 func _assign_all_trait_data() -> void:
@@ -272,7 +291,8 @@ func _assign_all_beasties_data() -> void:
 							var beastie : Beastie = load(final_path)
 							#var path_to_folder : String = path + beastie.specie_name.capitalize() + "/"
 							#_assign_beastie_their_sprite(beastie, path_to_folder, final_path)
-							#_assign_beastie_their_playdex(beastie, final_path)
+							#_assign_beastie_their_data_from_json(beastie, final_path)
+							#_assign_beastie_their_playdex_and_traits(beastie, final_path)
 							all_beasties_data.append(beastie)
 						inner_file_name = inner_dir.get_next()
 			file_name = dir.get_next()
@@ -283,10 +303,13 @@ func _assign_all_beasties_data() -> void:
 #region Dev tool functions (uncomment codes above then run the game)
 
 func _adjust_plays(resource_file_path : String) -> void:
-	var attack : Attack = load(resource_file_path)
-	if attack.condition_mult != 1.0:
-		attack.need_to_be_manually_activated = true
-	ResourceSaver.save(attack, resource_file_path)
+	var play : Plays = load(resource_file_path)
+	if play.type in [Plays.Type.VOLLEY, Plays.Type.DEFENSE, Plays.Type.SUPPORT]:
+		return
+
+	if play.condition_mult != 1.0:
+		play.need_to_be_manually_activated = true
+	ResourceSaver.save(play, resource_file_path)
 
 
 func _adjust_traits(resource_file_path : String) -> void:
@@ -330,25 +353,67 @@ func _assign_beastie_their_sprite(beastie : Beastie, path_to_folder : String, pa
 	ResourceSaver.save(beastie, path_to_beastie)
 
 
-func _assign_beastie_their_playdex(beastie : Beastie, path_to_beastie : String) -> void:
+func _assign_beastie_their_data_from_json(beastie : Beastie, path_to_beastie : String) -> void:
+	if is_on_web:
+		return
+
+	var beastie_data : Dictionary = beastie_data_json.get(beastie.internal_name)
+	# Stats
+	beastie.body_base_pow = beastie_data.get("ba")
+	beastie.body_base_def = beastie_data.get("bd")
+	beastie.spirit_base_pow = beastie_data.get("ha")
+	beastie.spirit_base_def = beastie_data.get("hd")
+	beastie.mind_base_pow = beastie_data.get("ma")
+	beastie.mind_base_def = beastie_data.get("md")
+	# Traits Strings
+	beastie.traits_string_array.clear()
+	for internal_name : String in beastie_data.get("ability"):
+		var trait_data : Dictionary = trait_data_json.get(internal_name)
+		var define_text : String = trait_data.get("name")
+		define_text = define_text.trim_prefix("¦")
+		define_text = define_text.trim_suffix("¦")
+		var ingame_name : String = all_text_json.get(define_text)
+		ingame_name = ingame_name.to_lower()
+		beastie.traits_string_array.append(ingame_name)
+	# Plays Strings
+	beastie.plays_string_array.clear()
+	for internal_name : String in beastie_data.get("attklist"):
+		var move_data : Dictionary = move_data_json.get(internal_name)
+		var define_text : String = move_data.get("name")
+		define_text = define_text.trim_prefix("¦")
+		define_text = define_text.trim_suffix("¦")
+		var ingame_name : String = all_text_json.get(define_text)
+		ingame_name = ingame_name.to_lower()
+		beastie.plays_string_array.append(ingame_name)
+
+	ResourceSaver.save(beastie, path_to_beastie)
+
+
+func _assign_beastie_their_playdex_and_traits(beastie : Beastie, path_to_beastie : String) -> void:
+	if is_on_web:
+		return
+
+	beastie.possible_traits.clear()
+	for trait_name : String in beastie.traits_string_array:
+		var i : int = 0
+		for new_trait : Trait in all_trait_data:
+			if new_trait.name.to_lower() == trait_name:
+				beastie.possible_traits.append(new_trait)
+				break
+			i += 1
+			if i == all_trait_data.size():
+				push_error("Can't find '%s' from %s in global all_trait_data data!" % [new_trait, beastie.specie_name])
+
 	beastie.possible_plays.clear()
-	var all_play_names : Array[String] = []
-
-	var splitted_string : PackedStringArray = beastie.plays_string.split("\n")
-	for play_name : String in splitted_string:
-		if play_name.to_int() == 0 and not play_name in ["From Levels:", "From Friends:"]:
-			all_play_names.append(play_name)
-
-	for play_name : String in all_play_names:
-		play_name = play_name.to_lower()
+	for play_name : String in beastie.plays_string_array:
 		var i : int = 0
 		for play : Plays in all_plays:
 			if play.name.to_lower() == play_name:
 				if play.type in [Plays.Type.VOLLEY, Plays.Type.DEFENSE, Plays.Type.SUPPORT]:
-					break
+					break # Only want Attack
 				else:
 					if play_name == "mimic":
-						break
+						break # Mimic is useless in SickoCalc so remove it here
 					else:
 						beastie.possible_plays.append(play)
 						break

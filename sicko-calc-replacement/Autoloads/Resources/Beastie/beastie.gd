@@ -79,6 +79,7 @@ signal health_updated(health : int)
 
 @export_group("Internal Infos")
 @export var specie_name : String = "Sprecko"
+@export var internal_name : String = "shroom1"
 @export_range(1, 106) var beastiepedia_id : int = 1
 @export var is_nfe : bool = false
 @export_color_no_alpha var bar_color : Color = Color.GREEN
@@ -88,7 +89,32 @@ signal health_updated(health : int)
 @export_range(1, 150) var body_base_def : int = 50
 @export_range(1, 150) var spirit_base_def : int = 67
 @export_range(1, 150) var mind_base_def : int = 55
-@export_multiline var plays_string : String = "From Levels:\n1\nCareful Shot\n1\nCall Out\n6\nRefresh\n9\nLure Shot\n12\nBreaker\n15\nShield\n19\nClear Field\n24\nToppler\n30\nMark\n35\nSnipe\n39\nForward Pass\n43\nDemolish\nFrom Friends:\nPower Sap\nBoom\nRelaxed Hit\nDig\nPipe\nChill Out\nExhaust\nHunker\nTough Front\nHeat Up\nTorch Pass"
+@export_multiline var plays_string_array : Array[String] = [
+	  "careful",
+	  "bomb",
+	  "dropshot",
+	  "rocksmash",
+	  "healhit",
+	  "healhit2",
+	  "dig",
+	  "allycover",
+	  "allyrush",
+	  "refresh",
+	  "protect",
+	  "rest",
+	  "fieldclear",
+	  "preblock",
+	  "substitute",
+	  "mark",
+	  "lifepass",
+	  "callout",
+	  "chill",
+	  "sweatup",
+	  "enemyboosts",
+	  "flatten",
+      "snipe"
+	]
+@export_multiline var traits_string_array : Array[String] = ["regenerator", "fieldclear"]
 @export var possible_plays : Array[Plays] = []
 @export var possible_traits : Array[Trait] = []
 @export var sprites : Dictionary[Sprite, Texture2D] = {

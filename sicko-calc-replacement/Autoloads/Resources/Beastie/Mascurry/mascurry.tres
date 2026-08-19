@@ -1,25 +1,26 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://brbpkvginsffs"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://bn2j4xhnyw233"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_e3agr"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_l1gr1"]
-[ext_resource type="Resource" uid="uid://0j2wljh1wykn" path="res://Autoloads/Resources/Trait/rumpus.tres" id="2_uk7iy"]
+[ext_resource type="Resource" uid="uid://ta6f0d5h5wkn" path="res://Autoloads/Resources/Trait/rumpus.tres" id="2_uk7iy"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_nt2fm"]
-[ext_resource type="Resource" uid="uid://dc0b8j0fujpbd" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="4_7qmdc"]
-[ext_resource type="Resource" uid="uid://c5g053pe7ju8c" path="res://Autoloads/Resources/Trait/groove.tres" id="4_rsmqe"]
-[ext_resource type="Resource" uid="uid://br2xlvc1ky06q" path="res://Autoloads/Resources/Plays/Attack/Body/kneebender.tres" id="7_y4uib"]
-[ext_resource type="Resource" uid="uid://bko08dievjnfg" path="res://Autoloads/Resources/Plays/Attack/Body/stomp.tres" id="9_qx1tt"]
-[ext_resource type="Resource" uid="uid://hiuivj04u8ir" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="12_ggi0x"]
-[ext_resource type="Resource" uid="uid://khv754wvrclb" path="res://Autoloads/Resources/Plays/Attack/Body/thunder.tres" id="13_f235u"]
-[ext_resource type="Resource" uid="uid://de4i64x6vnp7m" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="14_6a1ew"]
+[ext_resource type="Resource" uid="uid://nkku7hsj2uue" path="res://Autoloads/Resources/Plays/Attack/Body/reach_shot.tres" id="6_id4s5"]
+[ext_resource type="Resource" uid="uid://dokb5fgdehhvy" path="res://Autoloads/Resources/Plays/Attack/Body/thunder.tres" id="7_y4uib"]
+[ext_resource type="Resource" uid="uid://gnwaw4wjofmu" path="res://Autoloads/Resources/Plays/Attack/Body/kneebender.tres" id="9_6nbad"]
+[ext_resource type="Resource" uid="uid://chimd5aoryek2" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="14_6a1ew"]
 [ext_resource type="Texture2D" uid="uid://boxtq3yiabyd1" path="res://Autoloads/Resources/Beastie/Mascurry/icon_mascurry.png" id="14_p1tdk"]
-[ext_resource type="Resource" uid="uid://qi0fklguwm3c" path="res://Autoloads/Resources/Plays/Attack/Body/reach_shot.tres" id="15_6a1ew"]
-[ext_resource type="Resource" uid="uid://ld2lhvgalfff" path="res://Autoloads/Resources/Plays/Attack/Spirit/swarm.tres" id="16_grahw"]
+[ext_resource type="Resource" uid="uid://bul5jwe1qisst" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="17_grahw"]
+[ext_resource type="Resource" uid="uid://b2kpbvkxp4t8l" path="res://Autoloads/Resources/Plays/Attack/Spirit/swarm.tres" id="23_dk2me"]
+[ext_resource type="Resource" uid="uid://d1l5unu2xxfdh" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="24_y1j6q"]
+[ext_resource type="Resource" uid="uid://b153wak5pgbil" path="res://Autoloads/Resources/Plays/Attack/Body/stomp.tres" id="25_aoamf"]
+[ext_resource type="Resource" uid="uid://b0nt2r5udymyk" path="res://Autoloads/Resources/Trait/groove.tres" id="27_3e5sr"]
 
 [resource]
 script = ExtResource("3_nt2fm")
 my_plays = Array[ExtResource("1_e3agr")]([null, null, null])
 my_trait = ExtResource("2_uk7iy")
 specie_name = "Mascurry"
+internal_name = "cheerleadermon"
 beastiepedia_id = 103
 bar_color = Color(0.98039216, 0.61960787, 0.63529414, 1)
 body_base_pow = 98
@@ -28,43 +29,10 @@ mind_base_pow = 30
 body_base_def = 97
 spirit_base_def = 88
 mind_base_def = 54
-plays_string = "From Levels:
-1
-Cheer
-1
-Basic Hit
-7
-Drum
-13
-Set
-19
-Kneebender
-24
-Chant
-29
-Stomp
-34
-High Five
-41
-Pump Up
-48
-Vigor Beam
-From Friends:
-Thunder
-Relaxed Hit
-Reach Shot
-Swarm
-Excited Pass
-Juggle
-Updraft
-Dispel
-Introduce
-Rally
-Whistle
-Whoosh
-Shield"
-possible_plays = Array[ExtResource("1_e3agr")]([ExtResource("4_7qmdc"), ExtResource("7_y4uib"), ExtResource("9_qx1tt"), ExtResource("12_ggi0x"), ExtResource("13_f235u"), ExtResource("14_6a1ew"), ExtResource("15_6a1ew"), ExtResource("16_grahw")])
-possible_traits = Array[ExtResource("2_l1gr1")]([ExtResource("2_uk7iy"), ExtResource("4_rsmqe")])
+plays_string_array = Array[String](["introduce", "updraft", "cheer", "reach shot", "thunder", "relaxed hit", "kneebender", "set", "whistle", "whoosh", "pump up", "chant", "high five", "juggle", "vigor beam", "rally", "drum", "shield", "dispel", "excited pass", "swarm", "basic hit", "stomp"])
+traits_string_array = Array[String](["rumpus", "groove"])
+possible_plays = Array[ExtResource("1_e3agr")]([ExtResource("6_id4s5"), ExtResource("7_y4uib"), ExtResource("14_6a1ew"), ExtResource("9_6nbad"), ExtResource("17_grahw"), ExtResource("23_dk2me"), ExtResource("24_y1j6q"), ExtResource("25_aoamf")])
+possible_traits = Array[ExtResource("2_l1gr1")]([ExtResource("2_uk7iy"), ExtResource("27_3e5sr")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("14_p1tdk")
 })

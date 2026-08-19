@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://7k4iqk6y72ls"]
+
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_wtyb5"]
+
+[resource]
+script = ExtResource("1_wtyb5")
+name = "Fearless"
+description = "Immune to NERVOUS. Doesn't experience negative effects from their own attacks."
+metadata/_custom_type_script = "uid://bslfuaragw1g7"

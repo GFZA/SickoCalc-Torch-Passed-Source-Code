@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://bo14r6pev5bgd"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_bhe3g"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_8q015"]
+[ext_resource type="Resource" uid="uid://cnoxf0pfe77v2" path="res://Autoloads/Resources/Trait/helmet.tres" id="2_mc3qv"]
+[ext_resource type="Resource" uid="uid://b3u25d7p8nlhi" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_0s3j0"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_mc3qv"]
+[ext_resource type="Resource" uid="uid://sjm5j6045dgt" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="4_1kn20"]
+[ext_resource type="Resource" uid="uid://c81nspw48g4nv" path="res://Autoloads/Resources/Plays/Attack/Body/rocket.tres" id="8_6c7kc"]
+[ext_resource type="Resource" uid="uid://dm7kvoffputoc" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="9_v8p7i"]
+[ext_resource type="Resource" uid="uid://bxkqqg076x8wt" path="res://Autoloads/Resources/Plays/Attack/Body/hyperspike.tres" id="11_5mx0d"]
+[ext_resource type="Texture2D" uid="uid://cx1i0xegwn5l5" path="res://Autoloads/Resources/Beastie/Scrubbub/icon_scrubbub.png" id="11_fcl6a"]
+[ext_resource type="Resource" uid="uid://dja4k3j6xenmf" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="12_q5ef4"]
+[ext_resource type="Resource" uid="uid://cjo7j376iosld" path="res://Autoloads/Resources/Plays/Attack/Mind/precision_strike.tres" id="13_pehjw"]
+[ext_resource type="Resource" uid="uid://cym8huqhnkq0k" path="res://Autoloads/Resources/Plays/Attack/Mind/pressure.tres" id="20_i8ait"]
+[ext_resource type="Resource" uid="uid://c330d4p6h5uke" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="27_i2hee"]
+[ext_resource type="Resource" uid="uid://bfh6q68o075ie" path="res://Autoloads/Resources/Trait/momentum.tres" id="30_1fk31"]
+
+[resource]
+script = ExtResource("3_mc3qv")
+my_plays = Array[ExtResource("1_bhe3g")]([null, null, null])
+my_trait = ExtResource("2_mc3qv")
+specie_name = "Scrubbub"
+internal_name = "football1"
+beastiepedia_id = 39
+is_nfe = true
+bar_color = Color(0.3764706, 0.68235296, 0.30980393, 1)
+body_base_pow = 48
+spirit_base_pow = 45
+mind_base_pow = 20
+body_base_def = 80
+spirit_base_def = 35
+mind_base_def = 50
+plays_string_array = Array[String](["bump", "breaker", "pipe", "forward pass", "smack", "rocket", "overpower", "dig", "hyperspike", "rainbow", "precision strike", "set", "hunker", "shake off", "fall back", "hawkeye", "juggle", "pressure", "mighty yell", "shield", "battle cry", "clear field", "call out", "whoosh", "dive", "mark"])
+traits_string_array = Array[String](["helmet", "momentum"])
+possible_plays = Array[ExtResource("1_bhe3g")]([ExtResource("3_0s3j0"), ExtResource("4_1kn20"), ExtResource("8_6c7kc"), ExtResource("9_v8p7i"), ExtResource("11_5mx0d"), ExtResource("12_q5ef4"), ExtResource("13_pehjw"), ExtResource("20_i8ait"), ExtResource("27_i2hee")])
+possible_traits = Array[ExtResource("2_8q015")]([ExtResource("2_mc3qv"), ExtResource("30_1fk31")])
+sprites = Dictionary[int, Texture2D]({
+6: ExtResource("11_fcl6a")
+})
+y_offset = -30
+ball_anchor_position_receive = Vector2(20, -70)
+ball_anchor_position_ready = Vector2(60, -60)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

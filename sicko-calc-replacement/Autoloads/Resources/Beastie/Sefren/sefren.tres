@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://bcgtc61k3hmqn"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_1qsh0"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_qk1ho"]
+[ext_resource type="Resource" uid="uid://bkr8qyuiof8dy" path="res://Autoloads/Resources/Trait/maverick.tres" id="2_spm7b"]
+[ext_resource type="Resource" uid="uid://cpw1r5p6a1bd8" path="res://Autoloads/Resources/Plays/Attack/Spirit/flight.tres" id="3_fh0gm"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_spm7b"]
+[ext_resource type="Resource" uid="uid://c7idb30h43hwy" path="res://Autoloads/Resources/Plays/Attack/Spirit/airblast.tres" id="4_lomau"]
+[ext_resource type="Resource" uid="uid://jh6i5gw62j55" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="6_mtehs"]
+[ext_resource type="Resource" uid="uid://bwt0un7f6ln11" path="res://Autoloads/Resources/Plays/Attack/Spirit/desperate_force.tres" id="7_2300c"]
+[ext_resource type="Resource" uid="uid://drqv7x0y1410r" path="res://Autoloads/Resources/Plays/Attack/Spirit/explosive_spirit.tres" id="8_dqmrc"]
+[ext_resource type="Texture2D" uid="uid://bh3fajccik1bg" path="res://Autoloads/Resources/Beastie/Sefren/icon_sefren.png" id="11_veu8s"]
+[ext_resource type="Resource" uid="uid://cg6adjirx66yj" path="res://Autoloads/Resources/Plays/Attack/Spirit/tornadoball.tres" id="20_8n1wg"]
+[ext_resource type="Resource" uid="uid://b2kpbvkxp4t8l" path="res://Autoloads/Resources/Plays/Attack/Spirit/swarm.tres" id="22_c8v3a"]
+[ext_resource type="Resource" uid="uid://cm70uava1yg8o" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="23_an5d4"]
+[ext_resource type="Resource" uid="uid://cf4gh8ej8teky" path="res://Autoloads/Resources/Trait/flitting.tres" id="25_4osws"]
+
+[resource]
+script = ExtResource("3_spm7b")
+my_plays = Array[ExtResource("1_1qsh0")]([null, null, null])
+my_trait = ExtResource("2_spm7b")
+specie_name = "Sefren"
+internal_name = "lyrebird1"
+beastiepedia_id = 20
+is_nfe = true
+bar_color = Color(0.99215686, 0.49411765, 0.7607843, 1)
+body_base_pow = 23
+spirit_base_pow = 68
+mind_base_pow = 30
+body_base_def = 20
+spirit_base_def = 72
+mind_base_def = 35
+plays_string_array = Array[String](["flight", "airblast", "whoosh", "bring the heat", "desperate force", "explosive spirit", "net rush", "daring pass", "reposition", "quick tag", "clear field", "blaze", "shield", "cyclone", "cover", "fall back", "role reverse", "tornadoball", "dramatic exit", "swarm", "beginner effort"])
+traits_string_array = Array[String](["maverick", "flitting"])
+possible_plays = Array[ExtResource("1_1qsh0")]([ExtResource("3_fh0gm"), ExtResource("4_lomau"), ExtResource("6_mtehs"), ExtResource("7_2300c"), ExtResource("8_dqmrc"), ExtResource("20_8n1wg"), ExtResource("22_c8v3a"), ExtResource("23_an5d4")])
+possible_traits = Array[ExtResource("2_qk1ho")]([ExtResource("2_spm7b"), ExtResource("25_4osws")])
+sprites = Dictionary[int, Texture2D]({
+6: ExtResource("11_veu8s")
+})
+ball_anchor_position_receive = Vector2(-23, -102)
+ball_anchor_position_ready = Vector2(50, -90)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

@@ -1,33 +1,25 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://hckjb07n1ab0"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=14 format=3 uid="uid://bmswbjod6fqkl"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_ioeqj"]
-[ext_resource type="Resource" uid="uid://vpstp8b0iceu" path="res://Autoloads/Resources/Trait/charge.tres" id="2_8ney0"]
-[ext_resource type="Resource" uid="uid://dc0b8j0fujpbd" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="3_ioeqj"]
-[ext_resource type="Resource" uid="uid://du31ndfut0hoa" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="5_8ney0"]
-[ext_resource type="Resource" uid="uid://djcmrw24fjtuo" path="res://Autoloads/Resources/Plays/Attack/Body/zinger.tres" id="7_xgnbv"]
-[ext_resource type="Resource" uid="uid://cnksvmrwuymf3" path="res://Autoloads/Resources/Plays/Attack/Body/power_sap.tres" id="10_gg4kb"]
-[ext_resource type="Resource" uid="uid://khv754wvrclb" path="res://Autoloads/Resources/Plays/Attack/Body/thunder.tres" id="12_ca443"]
-[ext_resource type="Resource" uid="uid://hiuivj04u8ir" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="15_52jv7"]
-[ext_resource type="Resource" uid="uid://dqbap051upqpl" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="16_5ca8l"]
-[ext_resource type="Resource" uid="uid://de4i64x6vnp7m" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="17_n6brn"]
+[ext_resource type="Resource" uid="uid://46lxd8xn7w51" path="res://Autoloads/Resources/Trait/charge.tres" id="2_8ney0"]
+[ext_resource type="Resource" uid="uid://d1l5unu2xxfdh" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="3_ioeqj"]
+[ext_resource type="Resource" uid="uid://bvconqtxqmogy" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="4_8ney0"]
+[ext_resource type="Resource" uid="uid://lep6vctbtbfi" path="res://Autoloads/Resources/Plays/Attack/Body/zinger.tres" id="5_xgnbv"]
+[ext_resource type="Resource" uid="uid://dokb5fgdehhvy" path="res://Autoloads/Resources/Plays/Attack/Body/thunder.tres" id="8_3kfxm"]
+[ext_resource type="Resource" uid="uid://dm7kvoffputoc" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="9_ffvtv"]
+[ext_resource type="Resource" uid="uid://bul5jwe1qisst" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="10_ca443"]
+[ext_resource type="Resource" uid="uid://bjcli6tikgdm3" path="res://Autoloads/Resources/Plays/Attack/Body/power_sap.tres" id="10_gg4kb"]
+[ext_resource type="Resource" uid="uid://chimd5aoryek2" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="17_n6brn"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="25_hyuuq"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="26_xpxsm"]
 [ext_resource type="Texture2D" uid="uid://b631nnfcog6da" path="res://Autoloads/Resources/Beastie/Beelb/icon_beelb.png" id="27_jtty3"]
 
-[sub_resource type="Resource" id="Resource_ti30s"]
-script = ExtResource("25_hyuuq")
-name = "Charge"
-description = "ALL_TYPE POW UP1 at the end of each turn"
-metadata/_custom_type_script = "uid://bslfuaragw1g7"
-
 [resource]
 script = ExtResource("26_xpxsm")
 my_plays = Array[ExtResource("1_ioeqj")]([null, null, null])
-my_trait = SubResource("Resource_ti30s")
-current_boosts = Dictionary[int, int]({
-0: 0
-})
+my_trait = ExtResource("2_8ney0")
 specie_name = "Beelb"
+internal_name = "snake"
 beastiepedia_id = 85
 bar_color = Color(0.7411765, 0.827451, 0.5686275, 1)
 body_base_pow = 91
@@ -36,48 +28,13 @@ mind_base_pow = 33
 body_base_def = 80
 spirit_base_def = 104
 mind_base_def = 92
-plays_string = "From Levels:
-1
-Basic Hit
-1
-Exhaust
-6
-Energized
-10
-Refresh
-14
-Zinger
-18
-Quick Breath
-23
-Hunker
-26
-Power Sap
-30
-Deep Breath
-34
-Thunder
-39
-High Five
-43
-Tough Front
-48
-Vigor Beam
-From Friends:
-Overpower
-Relaxed Hit
-Net Rush
-Goo-Goo Eyes
-Shake Off
-Body Ready
-Fall Back
-Frazzle
-Shield"
-possible_plays = Array[ExtResource("1_ioeqj")]([ExtResource("3_ioeqj"), ExtResource("5_8ney0"), ExtResource("7_xgnbv"), ExtResource("10_gg4kb"), ExtResource("12_ca443"), ExtResource("15_52jv7"), ExtResource("16_5ca8l"), ExtResource("17_n6brn")])
+plays_string_array = Array[String](["basic hit", "energized", "zinger", "relaxed hit", "power sap", "thunder", "overpower", "vigor beam", "refresh", "net rush", "deep breath", "hunker", "exhaust", "tough front", "goo-goo eyes", "quick breath", "fall back", "shield", "frazzle", "high five", "shake off", "body ready"])
+traits_string_array = Array[String](["charge"])
+possible_plays = Array[ExtResource("1_ioeqj")]([ExtResource("3_ioeqj"), ExtResource("4_8ney0"), ExtResource("5_xgnbv"), ExtResource("17_n6brn"), ExtResource("10_gg4kb"), ExtResource("8_3kfxm"), ExtResource("9_ffvtv"), ExtResource("10_ca443")])
 possible_traits = Array[ExtResource("25_hyuuq")]([ExtResource("2_8ney0")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("27_jtty3")
 })
-ball_anchor_position_receive = Vector2(20, -111)
-ball_anchor_position_ready = Vector2(-8, -120)
+ball_anchor_position_receive = Vector2(-10, -125)
+ball_anchor_position_ready = Vector2(10, -120)
 metadata/_custom_type_script = "uid://ehabj4qsgxpl"

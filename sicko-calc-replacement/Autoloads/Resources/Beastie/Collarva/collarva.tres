@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://dtv17trdmw0cu"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_mxtcd"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_2p0cj"]
+[ext_resource type="Resource" uid="uid://b74a56h5nalqt" path="res://Autoloads/Resources/Trait/stirring.tres" id="2_r5nr7"]
+[ext_resource type="Resource" uid="uid://dfq6t4eiyi64b" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="3_6gjxb"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_r5nr7"]
+[ext_resource type="Resource" uid="uid://bthchfd4wjutk" path="res://Autoloads/Resources/Plays/Attack/Spirit/comeback.tres" id="4_swa1p"]
+[ext_resource type="Resource" uid="uid://6f6c3ccy6jht" path="res://Autoloads/Resources/Plays/Attack/Mind/perfect_shot.tres" id="6_ei5b1"]
+[ext_resource type="Resource" uid="uid://drqv7x0y1410r" path="res://Autoloads/Resources/Plays/Attack/Spirit/explosive_spirit.tres" id="7_31bat"]
+[ext_resource type="Texture2D" uid="uid://qhdjbt4pgxoe" path="res://Autoloads/Resources/Beastie/Collarva/icon_collarva.png" id="11_yrn7b"]
+[ext_resource type="Resource" uid="uid://qfxv11mpmmrd" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="14_kgm8n"]
+[ext_resource type="Resource" uid="uid://c2axghfrxu6m5" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="19_scqip"]
+[ext_resource type="Resource" uid="uid://b2ui5rl5w2grw" path="res://Autoloads/Resources/Plays/Attack/Mind/ego_blast.tres" id="22_o2owc"]
+[ext_resource type="Resource" uid="uid://cls25qck6u46f" path="res://Autoloads/Resources/Plays/Attack/Mind/splinter.tres" id="23_hrsao"]
+[ext_resource type="Resource" uid="uid://dookpnoe5jjdo" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="24_yj6r6"]
+[ext_resource type="Resource" uid="uid://n3jtpon2cbv1" path="res://Autoloads/Resources/Plays/Attack/Mind/cold_calculation.tres" id="25_dvxx7"]
+[ext_resource type="Resource" uid="uid://c5miguvavwugo" path="res://Autoloads/Resources/Plays/Attack/Mind/echo_strike.tres" id="28_qr4qe"]
+[ext_resource type="Resource" uid="uid://bh7cvkyof83rj" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="31_jk2vc"]
+[ext_resource type="Resource" uid="uid://dh1k805kik5y0" path="res://Autoloads/Resources/Trait/defiant.tres" id="33_k1enj"]
+
+[resource]
+script = ExtResource("3_r5nr7")
+my_plays = Array[ExtResource("1_mxtcd")]([null, null, null])
+my_trait = ExtResource("2_r5nr7")
+specie_name = "Collarva"
+internal_name = "moth1"
+beastiepedia_id = 14
+is_nfe = true
+bar_color = Color(0.12156863, 0.6862745, 1, 1)
+body_base_pow = 10
+spirit_base_pow = 45
+mind_base_pow = 65
+body_base_def = 20
+spirit_base_def = 40
+mind_base_def = 50
+plays_string_array = Array[String](["grit", "comeback", "tough front", "perfect shot", "explosive spirit", "overthink", "hunker", "daring pass", "blaze", "shield", "heart harden", "raw fury", "dramatic exit", "frazzle", "provoke", "chill out", "nerve strike", "heat up", "dreadful mist", "ego blast", "splinter", "rattle", "cold calculation", "gloom", "soliloquy", "echo strike", "exhaust", "chant", "practice shot"])
+traits_string_array = Array[String](["stirring", "defiant"])
+possible_plays = Array[ExtResource("1_mxtcd")]([ExtResource("3_6gjxb"), ExtResource("4_swa1p"), ExtResource("6_ei5b1"), ExtResource("7_31bat"), ExtResource("14_kgm8n"), ExtResource("19_scqip"), ExtResource("22_o2owc"), ExtResource("23_hrsao"), ExtResource("24_yj6r6"), ExtResource("25_dvxx7"), ExtResource("28_qr4qe"), ExtResource("31_jk2vc")])
+possible_traits = Array[ExtResource("2_2p0cj")]([ExtResource("2_r5nr7"), ExtResource("33_k1enj")])
+sprites = Dictionary[int, Texture2D]({
+6: ExtResource("11_yrn7b")
+})
+y_offset = -10
+ball_anchor_position_receive = Vector2(30, -66)
+ball_anchor_position_ready = Vector2(50, -70)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

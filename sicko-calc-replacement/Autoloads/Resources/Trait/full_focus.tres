@@ -1,11 +1,11 @@
-[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://1q4bohxic4he"]
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://b4e4ykejtdr3f"]
 
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="1_qkn7j"]
 
 [resource]
 script = ExtResource("1_qkn7j")
 name = "Full Focus"
-description = "MIND Attacks do +15 damage when STAMINA is below 34"
+description = "MIND Attacks do +50% damage when STAMINA is below 34"
 need_to_be_manually_activated = true
 condition_name = "User STAMINA is below 34"
 is_starter_trait = true

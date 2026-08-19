@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://cod7yqucaq628"]
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://cesssgehplj57"]
 
 [ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_qpeq0"]
 
@@ -6,6 +6,6 @@
 script = ExtResource("1_qpeq0")
 name = "Tracker"
 base_pow = 45
-descrition = "ATTACK. Target feels +1 BLOCKED (POW x2/3)."
+descrition = "ATTACK. Target feels +1 BLOCKED (POW x2/3). Ignores BLOCKED."
 type = 2
 metadata/_custom_type_script = "uid://bc63soeia1eb1"
