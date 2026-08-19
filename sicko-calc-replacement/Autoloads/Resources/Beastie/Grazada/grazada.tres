@@ -1,25 +1,26 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://d0wwmbjvfk1u3"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://4d4w262dso8"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_ncnhv"]
-[ext_resource type="Resource" uid="uid://dmntv2bptj0yi" path="res://Autoloads/Resources/Trait/scary_face.tres" id="2_dv7o2"]
+[ext_resource type="Resource" uid="uid://dsawlbfcgtm0e" path="res://Autoloads/Resources/Trait/scary_face.tres" id="2_dv7o2"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_fjxcg"]
+[ext_resource type="Resource" uid="uid://c0sctvo70deyt" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_42ray"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_yr6yw"]
-[ext_resource type="Resource" uid="uid://b4745hu4puleb" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="4_rqq3b"]
-[ext_resource type="Resource" uid="uid://bwntvaq8we2ee" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="5_ygyas"]
-[ext_resource type="Resource" uid="uid://bosg46t132k5k" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="8_l5osa"]
-[ext_resource type="Resource" uid="uid://4bo2qruocep5" path="res://Autoloads/Resources/Plays/Attack/Spirit/thriller.tres" id="11_kvq25"]
-[ext_resource type="Resource" uid="uid://c8alcpfh6p0m0" path="res://Autoloads/Resources/Plays/Attack/Spirit/scream.tres" id="13_ktf7v"]
+[ext_resource type="Resource" uid="uid://c61k5iketw8gj" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="5_ygyas"]
+[ext_resource type="Resource" uid="uid://cuvfann7341yy" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="8_l5osa"]
+[ext_resource type="Resource" uid="uid://b7tjj7bteoya8" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="11_kvq25"]
 [ext_resource type="Texture2D" uid="uid://cchcj86ry4ycf" path="res://Autoloads/Resources/Beastie/Grazada/icon_grazada.png" id="14_kjm1s"]
-[ext_resource type="Resource" uid="uid://bcvrnhx6jhwoj" path="res://Autoloads/Resources/Plays/Attack/Spirit/challenge.tres" id="15_qtyf5"]
-[ext_resource type="Resource" uid="uid://xuq2krgioyg5" path="res://Autoloads/Resources/Plays/Attack/Spirit/jammer.tres" id="16_0clt4"]
-[ext_resource type="Resource" uid="uid://c0hsvmpto8e3s" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="17_o0iib"]
-[ext_resource type="Resource" uid="uid://cq8dhafy2aqe5" path="res://Autoloads/Resources/Plays/Attack/Spirit/pepshot.tres" id="18_n3in1"]
+[ext_resource type="Resource" uid="uid://camyp3pk4s2xy" path="res://Autoloads/Resources/Plays/Attack/Spirit/thriller.tres" id="15_qtyf5"]
+[ext_resource type="Resource" uid="uid://dkacdwk0xgf5d" path="res://Autoloads/Resources/Plays/Attack/Spirit/jammer.tres" id="16_0clt4"]
+[ext_resource type="Resource" uid="uid://bq3iy0yc21ohp" path="res://Autoloads/Resources/Plays/Attack/Spirit/scream.tres" id="27_32x0o"]
+[ext_resource type="Resource" uid="uid://ccaahq60wfk0e" path="res://Autoloads/Resources/Plays/Attack/Spirit/pepshot.tres" id="28_gcx7p"]
+[ext_resource type="Resource" uid="uid://c7gemo3wnvcwo" path="res://Autoloads/Resources/Plays/Attack/Spirit/challenge.tres" id="29_yke4s"]
 
 [resource]
 script = ExtResource("3_yr6yw")
 my_plays = Array[ExtResource("1_ncnhv")]([null, null, null])
 my_trait = ExtResource("2_dv7o2")
 specie_name = "Grazada"
+internal_name = "monkey"
 beastiepedia_id = 52
 bar_color = Color(0.68235296, 0.7372549, 0.2627451, 1)
 body_base_pow = 55
@@ -28,53 +29,9 @@ mind_base_pow = 25
 body_base_def = 105
 spirit_base_def = 85
 mind_base_def = 65
-plays_string = "From Levels:
-1
-Excited Pass
-1
-Beginner Effort
-6
-Careful Shot
-9
-Stinky
-13
-Cheer
-18
-Raw Fury
-23
-Rally
-30
-Mighty Yell
-34
-Thriller
-39
-Tough Front
-44
-Scream
-47
-Battle Cry
-From Friends:
-Challenge
-Jammer
-Grit
-Pepshot
-Pipe
-Refresh
-Set
-Call Out
-Chant
-Chill Out
-Exhaust
-Hunker
-Provoke
-Wink
-Distraction
-Dramatic Exit
-High Five
-Shield
-Staredown
-Upsetting Comment"
-possible_plays = Array[ExtResource("1_ncnhv")]([ExtResource("4_rqq3b"), ExtResource("5_ygyas"), ExtResource("8_l5osa"), ExtResource("11_kvq25"), ExtResource("13_ktf7v"), ExtResource("15_qtyf5"), ExtResource("16_0clt4"), ExtResource("17_o0iib"), ExtResource("18_n3in1")])
+plays_string_array = Array[String](["beginner effort", "excited pass", "careful shot", "stinky", "cheer", "raw fury", "staredown", "rally", "grit", "mighty yell", "tough front", "battle cry", "thriller", "jammer", "refresh", "set", "call out", "exhaust", "hunker", "provoke", "dramatic exit", "high five", "shield", "upsetting comment", "scream", "pepshot", "challenge", "chant", "pipe", "wink", "chill out", "distraction"])
+traits_string_array = Array[String](["scary face"])
+possible_plays = Array[ExtResource("1_ncnhv")]([ExtResource("3_42ray"), ExtResource("5_ygyas"), ExtResource("8_l5osa"), ExtResource("11_kvq25"), ExtResource("15_qtyf5"), ExtResource("16_0clt4"), ExtResource("27_32x0o"), ExtResource("28_gcx7p"), ExtResource("29_yke4s")])
 possible_traits = Array[ExtResource("2_fjxcg")]([ExtResource("2_dv7o2")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("14_kjm1s")

@@ -1,0 +1,662 @@
+{
+  "ace": {
+    "desc": "¦abilitiessetup_abilitydefine_083¬0¬2¦",
+    "id": "ace",
+    "name": "¦abilitiessetup_abilitydefine_084¦"
+  },
+  "achiever": {
+    "desc": "¦abilitiessetup_abilitydefine_251¬0¬1.1¦",
+    "id": "achiever",
+    "name": "¦abilitiessetup_abilitydefine_252¦"
+  },
+  "acidic": {
+    "desc": "¦abilitiessetup_abilitydefine_195¬0¬10¦",
+    "id": "acidic",
+    "name": "¦abilitiessetup_abilitydefine_196¦"
+  },
+  "acrobat": {
+    "desc": "¦abilitiessetup_abilitydefine_063¬0¬1.5¦",
+    "id": "acrobat",
+    "name": "¦abilitiessetup_abilitydefine_064¦"
+  },
+  "allheart": {
+    "desc": "¦abilitiessetup_abilitydefine_202¦",
+    "id": "allheart",
+    "name": "¦abilitiessetup_abilitydefine_201¦"
+  },
+  "allpow": {
+    "desc": "¦abilitiessetup_abilitydefine_088¦",
+    "id": "allpow",
+    "name": "¦abilitiessetup_abilitydefine_087¦"
+  },
+  "allyheal": {
+    "desc": "¦abilitiessetup_abilitydefine_041¬0¬6¦",
+    "id": "allyheal",
+    "name": "¦abilitiessetup_abilitydefine_042¦"
+  },
+  "avenger": {
+    "desc": "¦abilitiessetup_abilitydefine_053¬0¬1.2¬1¬[sprStatus,5]¦statuseffectstuff_006¦¦",
+    "id": "avenger",
+    "name": "¦abilitiessetup_abilitydefine_054¦"
+  },
+  "biting": {
+    "desc": "¦abilitiessetup_abilitydefine_304¬0¬20¦",
+    "id": "biting",
+    "name": "¦abilitiessetup_abilitydefine_305¦"
+  },
+  "blocker": {
+    "desc": "¦abilitiessetup_abilitydefine_059¬0¬[sprStatus,8]¦statuseffectstuff_009¦¦",
+    "id": "blocker",
+    "name": "¦abilitiessetup_abilitydefine_060¦"
+  },
+  "boostin": {
+    "desc": "¦abilitiessetup_abilitydefine_242¦",
+    "id": "boostin",
+    "name": "¦abilitiessetup_abilitydefine_241¦"
+  },
+  "bouncy": {
+    "desc": "¦abilitiessetup_abilitydefine_062¦",
+    "id": "bouncy",
+    "name": "¦abilitiessetup_abilitydefine_061¦"
+  },
+  "breaker": {
+    "desc": "¦abilitiessetup_abilitydefine_263¬0¬[sprIcon,0][sprIcon,1][sprIcon,2]¬1¬3¦",
+    "id": "breaker",
+    "name": "¦abilitiessetup_abilitydefine_264¦"
+  },
+  "charge": {
+    "desc": "¦abilitiessetup_abilitydefine_086¦",
+    "id": "charge",
+    "name": "¦abilitiessetup_abilitydefine_085¦"
+  },
+  "cheer": {
+    "desc": "¦abilitiessetup_abilitydefine_015¬0¬10¦",
+    "id": "cheer",
+    "name": "¦abilitiessetup_abilitydefine_016¦"
+  },
+  "competitive": {
+    "desc": "¦abilitiessetup_abilitydefine_174¦",
+    "id": "competitive",
+    "name": "¦abilitiessetup_abilitydefine_173¦"
+  },
+  "crowddef": {
+    "desc": "¦abilitiessetup_abilitydefine_175¬1¬1.5¬0¬¦fieldeffectstuff_001¦¦",
+    "id": "crowddef",
+    "name": "¦abilitiessetup_abilitydefine_176¦"
+  },
+  "crowdheal": {
+    "desc": "¦abilitiessetup_abilitydefine_211¬1¬6¬0¬¦fieldeffectstuff_001¦¦",
+    "id": "crowdheal",
+    "name": "¦abilitiessetup_abilitydefine_212¦"
+  },
+  "crowdpow": {
+    "desc": "¦abilitiessetup_abilitydefine_209¬0¬¦fieldeffectstuff_001¦¬1¬1.5¬2¬15¦",
+    "id": "crowdpow",
+    "name": "¦abilitiessetup_abilitydefine_210¦"
+  },
+  "dauntless": {
+    "desc": "¦abilitiessetup_abilitydefine_192¦",
+    "id": "dauntless",
+    "name": "¦abilitiessetup_abilitydefine_191¦"
+  },
+  "decoy": {
+    "desc": "¦abilitiessetup_abilitydefine_279¦",
+    "id": "decoy",
+    "name": "¦abilitiessetup_abilitydefine_306¦"
+  },
+  "decoy2": {
+    "desc": "¦abilitiessetup_abilitydefine_307¦",
+    "id": "decoy2",
+    "name": "¦abilitiessetup_abilitydefine_280¦"
+  },
+  "defender": {
+    "desc": "¦abilitiessetup_abilitydefine_055¬0¬1.3¬1¬[sprStatus,5]¦statuseffectstuff_006¦¦",
+    "id": "defender",
+    "name": "¦abilitiessetup_abilitydefine_056¦"
+  },
+  "defiant_b": {
+    "desc": "¦abilitiessetup_abilitydefine_092¦",
+    "id": "defiant_b",
+    "name": "¦abilitiessetup_abilitydefine_091¦"
+  },
+  "defiant_h": {
+    "desc": "¦abilitiessetup_abilitydefine_071¬0¬1¦",
+    "id": "defiant_h",
+    "name": "¦abilitiessetup_abilitydefine_072¦"
+  },
+  "defiant_m": {
+    "desc": "¦abilitiessetup_abilitydefine_198¦",
+    "id": "defiant_m",
+    "name": "¦abilitiessetup_abilitydefine_197¦"
+  },
+  "doubler": {
+    "desc": "¦abilitiessetup_abilitydefine_239¦",
+    "id": "doubler",
+    "name": "¦abilitiessetup_abilitydefine_303¦"
+  },
+  "dreadheal": {
+    "desc": "¦abilitiessetup_abilitydefine_227¬0¬¦fieldeffectstuff_004¦¬1¬3¦",
+    "id": "dreadheal",
+    "name": "¦abilitiessetup_abilitydefine_228¦"
+  },
+  "dreadlock": {
+    "desc": "¦abilitiessetup_abilitydefine_213¬0¬¦fieldeffectstuff_004¦¬1¬[sprStatus,0]¦statuseffectstuff_001¦¦",
+    "id": "dreadlock",
+    "name": "¦abilitiessetup_abilitydefine_214¦"
+  },
+  "echo": {
+    "desc": "¦abilitiessetup_abilitydefine_151¬1¬1¦",
+    "id": "echo",
+    "name": "¦abilitiessetup_abilitydefine_152¦"
+  },
+  "empath": {
+    "desc": "¦abilitiessetup_abilitydefine_104¦",
+    "id": "empath",
+    "name": "¦abilitiessetup_abilitydefine_103¦"
+  },
+  "extraheal": {
+    "desc": "¦abilitiessetup_abilitydefine_122¦",
+    "id": "extraheal",
+    "name": "¦abilitiessetup_abilitydefine_121¦"
+  },
+  "extrovert": {
+    "desc": "¦abilitiessetup_abilitydefine_298¦",
+    "id": "extrovert",
+    "name": "¦abilitiessetup_abilitydefine_297¦"
+  },
+  "fetch": {
+    "desc": "¦abilitiessetup_abilitydefine_021¬0¬[sprStatus,8]¦statuseffectstuff_009¦ ¦statuseffectstuff_022¦¦",
+    "id": "fetch",
+    "name": "¦abilitiessetup_abilitydefine_022¦"
+  },
+  "fieldclear": {
+    "desc": "¦abilitiessetup_abilitydefine_024¦",
+    "id": "fieldclear",
+    "name": "¦abilitiessetup_abilitydefine_023¦"
+  },
+  "flashfire": {
+    "desc": "¦abilitiessetup_abilitydefine_200¦",
+    "id": "flashfire",
+    "name": "¦abilitiessetup_abilitydefine_199¦"
+  },
+  "flee": {
+    "desc": "¦abilitiessetup_abilitydefine_037¬0¬50¦",
+    "id": "flee",
+    "name": "¦abilitiessetup_abilitydefine_038¦"
+  },
+  "fortress": {
+    "desc": "¦abilitiessetup_abilitydefine_308¬0¬12¦",
+    "id": "fortress",
+    "name": "¦abilitiessetup_abilitydefine_309¦"
+  },
+  "freemove": {
+    "desc": "¦abilitiessetup_abilitydefine_112¦",
+    "id": "freemove",
+    "name": "¦abilitiessetup_abilitydefine_111¦"
+  },
+  "friendguard": {
+    "desc": "¦abilitiessetup_abilitydefine_017¬0¬¾¦",
+    "id": "friendguard",
+    "name": "¦abilitiessetup_abilitydefine_018¦"
+  },
+  "fwdpass": {
+    "desc": "¦abilitiessetup_abilitydefine_044¦",
+    "id": "fwdpass",
+    "name": "¦abilitiessetup_abilitydefine_043¦"
+  },
+  "galaxybrain": {
+    "desc": "¦abilitiessetup_abilitydefine_073¬0¬0¦",
+    "id": "galaxybrain",
+    "name": "¦abilitiessetup_abilitydefine_074¦"
+  },
+  "ghost": {
+    "desc": "¦abilitiessetup_abilitydefine_048¦",
+    "id": "ghost",
+    "name": "¦abilitiessetup_abilitydefine_047¦"
+  },
+  "gloat": {
+    "desc": "¦abilitiessetup_abilitydefine_181¬0¬[sprStatus,5]¦statuseffectstuff_006¦¬1¬50¦",
+    "id": "gloat",
+    "name": "¦abilitiessetup_abilitydefine_182¦"
+  },
+  "guts": {
+    "desc": "¦abilitiessetup_abilitydefine_051¬4¬1.3¬0¬[sprStatus,6]¦statuseffectstuff_007¦¬1¬[sprStatus,0]¦statuseffectstuff_001¦¬2¬[sprStatus,11]¦statuseffectstuff_012¦¬3¬[sprStatus,18]¦statuseffectstuff_029¦¦",
+    "id": "guts",
+    "name": "¦abilitiessetup_abilitydefine_052¦"
+  },
+  "handsfree": {
+    "desc": "¦abilitiessetup_abilitydefine_194¦",
+    "id": "handsfree",
+    "name": "¦abilitiessetup_abilitydefine_193¦"
+  },
+  "haunted": {
+    "desc": "¦abilitiessetup_abilitydefine_281¬1¬4¬0¬[sprStatus,10]¦statuseffectstuff_011¦¦",
+    "id": "haunted",
+    "name": "¦abilitiessetup_abilitydefine_282¦"
+  },
+  "heavy": {
+    "desc": "¦abilitiessetup_abilitydefine_034¦",
+    "id": "heavy",
+    "name": "¦abilitiessetup_abilitydefine_033¦"
+  },
+  "ignorenoisy": {
+    "desc": "¦abilitiessetup_abilitydefine_215¬0¬[sprStatus,3]¦statuseffectstuff_004¦¦",
+    "id": "ignorenoisy",
+    "name": "¦abilitiessetup_abilitydefine_216¦"
+  },
+  "intimidate": {
+    "desc": "¦abilitiessetup_abilitydefine_069¬0¬3¦",
+    "id": "intimidate",
+    "name": "¦abilitiessetup_abilitydefine_070¦"
+  },
+  "lifeorb": {
+    "desc": "¦abilitiessetup_abilitydefine_039¬0¬1.2¬1¬15¦",
+    "id": "lifeorb",
+    "name": "¦abilitiessetup_abilitydefine_040¦"
+  },
+  "lightningrod_m": {
+    "desc": "¦abilitiessetup_abilitydefine_090¦",
+    "id": "lightningrod_m",
+    "name": "¦abilitiessetup_abilitydefine_089¦"
+  },
+  "magicguard": {
+    "desc": "¦abilitiessetup_abilitydefine_118¬0¬20¦",
+    "id": "magicguard",
+    "name": "¦abilitiessetup_abilitydefine_117¦"
+  },
+  "mask": {
+    "desc": "¦abilitiessetup_abilitydefine_237¬0¬¦fieldeffectstuff_001¦¬1¬¦fieldeffectstuff_004¦¬2¬50¦",
+    "id": "mask",
+    "name": "¦abilitiessetup_abilitydefine_238¦"
+  },
+  "mimic": {
+    "desc": "¦abilitiessetup_abilitydefine_158¦",
+    "id": "mimic",
+    "name": "¦abilitiessetup_abilitydefine_157¦"
+  },
+  "mimically": {
+    "desc": "¦abilitiessetup_abilitydefine_244¦",
+    "id": "mimically",
+    "name": "¦abilitiessetup_abilitydefine_243¦"
+  },
+  "mindabsorb": {
+    "desc": "¦abilitiessetup_abilitydefine_137¬0¬1.5¦",
+    "id": "mindabsorb",
+    "name": "¦abilitiessetup_abilitydefine_138¦"
+  },
+  "mindless": {
+    "desc": "¦abilitiessetup_abilitydefine_143¬0¬1.2¦",
+    "id": "mindless",
+    "name": "¦abilitiessetup_abilitydefine_144¦"
+  },
+  "moldbreaker": {
+    "desc": "¦abilitiessetup_abilitydefine_030¦",
+    "id": "moldbreaker",
+    "name": "¦abilitiessetup_abilitydefine_029¦"
+  },
+  "mom": {
+    "desc": "¦abilitiessetup_abilitydefine_139¬0¬0¦",
+    "id": "mom",
+    "name": "¦abilitiessetup_abilitydefine_140¦"
+  },
+  "monster": {
+    "desc": "¦abilitiessetup_abilitydefine_183¬0¬2¬1¬[sprStatus,2]¦statuseffectstuff_003¦¦",
+    "id": "monster",
+    "name": "¦abilitiessetup_abilitydefine_184¦"
+  },
+  "multiscale": {
+    "desc": "¦abilitiessetup_abilitydefine_031¬0¬1.5¦",
+    "id": "multiscale",
+    "name": "¦abilitiessetup_abilitydefine_032¦"
+  },
+  "negation": {
+    "desc": "¦abilitiessetup_abilitydefine_116¦",
+    "id": "negation",
+    "name": "¦abilitiessetup_abilitydefine_115¦"
+  },
+  "nimble": {
+    "desc": "¦abilitiessetup_abilitydefine_170¦",
+    "id": "nimble",
+    "name": "¦abilitiessetup_abilitydefine_169¦"
+  },
+  "noboosts": {
+    "desc": "¦abilitiessetup_abilitydefine_186¦",
+    "id": "noboosts",
+    "name": "¦abilitiessetup_abilitydefine_185¦"
+  },
+  "nodie": {
+    "desc": "¦abilitiessetup_abilitydefine_127¬1¬[sprStatus,2]¦statuseffectstuff_003¦¦",
+    "id": "nodie",
+    "name": "¦abilitiessetup_abilitydefine_128¦"
+  },
+  "nofield": {
+    "desc": "¦abilitiessetup_abilitydefine_156¦",
+    "id": "nofield",
+    "name": "¦abilitiessetup_abilitydefine_155¦"
+  },
+  "noiseattack": {
+    "desc": "¦abilitiessetup_abilitydefine_259¬0¬[sprStatus,3]¦statuseffectstuff_004¦¦",
+    "id": "noiseattack",
+    "name": "¦abilitiessetup_abilitydefine_260¦"
+  },
+  "noredirect": {
+    "desc": "¦abilitiessetup_abilitydefine_180¦",
+    "id": "noredirect",
+    "name": "¦abilitiessetup_abilitydefine_179¦"
+  },
+  "nostatus": {
+    "desc": "¦abilitiessetup_abilitydefine_036¬0¬[sprStatus,9]¦statuseffectstuff_010¦¦",
+    "id": "nostatus",
+    "name": "¦abilitiessetup_abilitydefine_035¦"
+  },
+  "notag": {
+    "desc": "¦abilitiessetup_abilitydefine_145¬0¬[sprStatus,5]¦statuseffectstuff_006¦¦",
+    "id": "notag",
+    "name": "¦abilitiessetup_abilitydefine_146¦"
+  },
+  "novolley": {
+    "desc": "¦abilitiessetup_abilitydefine_150¦",
+    "id": "novolley",
+    "name": "¦abilitiessetup_abilitydefine_149¦"
+  },
+  "nurture": {
+    "desc": "¦abilitiessetup_abilitydefine_119¬0¬20¦",
+    "id": "nurture",
+    "name": "¦abilitiessetup_abilitydefine_120¦"
+  },
+  "oblivious": {
+    "desc": "¦abilitiessetup_abilitydefine_080¦",
+    "id": "oblivious",
+    "name": "¦abilitiessetup_abilitydefine_079¦"
+  },
+  "overwrite": {
+    "desc": "¦abilitiessetup_abilitydefine_160¦",
+    "id": "overwrite",
+    "name": "¦abilitiessetup_abilitydefine_159¦"
+  },
+  "prankster": {
+    "desc": "¦abilitiessetup_abilitydefine_010¦",
+    "id": "prankster",
+    "name": "¦abilitiessetup_abilitydefine_009¦"
+  },
+  "redirection": {
+    "desc": "¦abilitiessetup_abilitydefine_067¬0¬[sprStatus,3]¦statuseffectstuff_004¦¬1¬+1 [sprStatus,1]¦statuseffectstuff_002¦¦",
+    "id": "redirection",
+    "name": "¦abilitiessetup_abilitydefine_068¦"
+  },
+  "redirectkiller": {
+    "desc": "¦abilitiessetup_abilitydefine_301¬0¬1.5¬1¬[sprStatus,9]¦statuseffectstuff_010¦¦",
+    "id": "redirectkiller",
+    "name": "¦abilitiessetup_abilitydefine_302¦"
+  },
+  "regenerator": {
+    "desc": "¦abilitiessetup_abilitydefine_001¬0¬25¦",
+    "id": "regenerator",
+    "name": "¦abilitiessetup_abilitydefine_002¦"
+  },
+  "regenerator2": {
+    "desc": "¦abilitiessetup_abilitydefine_001¬0¬50¦",
+    "id": "regenerator2",
+    "name": "¦abilitiessetup_abilitydefine_240¦"
+  },
+  "rhythmblock": {
+    "desc": "¦abilitiessetup_abilitydefine_177¬0¬¦fieldeffectstuff_003¦¬1¬[sprStatus,9]¦statuseffectstuff_010¦¦",
+    "id": "rhythmblock",
+    "name": "¦abilitiessetup_abilitydefine_178¦"
+  },
+  "rhythmpow": {
+    "desc": "¦abilitiessetup_abilitydefine_101¬1¬1.2¬0¬¦fieldeffectstuff_003¦¦",
+    "id": "rhythmpow",
+    "name": "¦abilitiessetup_abilitydefine_102¦"
+  },
+  "rhythmset": {
+    "desc": "¦abilitiessetup_abilitydefine_235¬0¬¦fieldeffectstuff_003¦¦",
+    "id": "rhythmset",
+    "name": "¦abilitiessetup_abilitydefine_236¦"
+  },
+  "runner": {
+    "desc": "¦abilitiessetup_abilitydefine_189¬0¬1.3¦",
+    "id": "runner",
+    "name": "¦abilitiessetup_abilitydefine_190¦"
+  },
+  "sauna": {
+    "desc": "¦abilitiessetup_abilitydefine_147¬0¬[sprStatus,6]¦statuseffectstuff_007¦¦",
+    "id": "sauna",
+    "name": "¦abilitiessetup_abilitydefine_148¦"
+  },
+  "scary": {
+    "desc": "¦abilitiessetup_abilitydefine_166¦",
+    "id": "scary",
+    "name": "¦abilitiessetup_abilitydefine_165¦"
+  },
+  "shield": {
+    "desc": "¦abilitiessetup_abilitydefine_049¬0¬¾¦",
+    "id": "shield",
+    "name": "¦abilitiessetup_abilitydefine_050¦"
+  },
+  "shrug": {
+    "desc": "¦abilitiessetup_abilitydefine_171¬0¬10¦",
+    "id": "shrug",
+    "name": "¦abilitiessetup_abilitydefine_172¦"
+  },
+  "shy": {
+    "desc": "¦abilitiessetup_abilitydefine_082¦",
+    "id": "shy",
+    "name": "¦abilitiessetup_abilitydefine_081¦"
+  },
+  "sidebody": {
+    "desc": "¦abilitiessetup_abilitydefine_296¦",
+    "id": "sidebody",
+    "name": "¦abilitiessetup_abilitydefine_295¦"
+  },
+  "silencer": {
+    "desc": "¦abilitiessetup_abilitydefine_153¬1¬1.5¬0¬[sprStatus,3]¦statuseffectstuff_004¦¦",
+    "id": "silencer",
+    "name": "¦abilitiessetup_abilitydefine_154¦"
+  },
+  "smooth": {
+    "desc": "¦abilitiessetup_abilitydefine_249¬0¬15¦",
+    "id": "smooth",
+    "name": "¦abilitiessetup_abilitydefine_250¦"
+  },
+  "sneaky": {
+    "desc": "¦abilitiessetup_abilitydefine_066¬0¬25¦",
+    "id": "sneaky",
+    "name": "¦abilitiessetup_abilitydefine_065¦"
+  },
+  "spiker": {
+    "desc": "¦abilitiessetup_abilitydefine_005¬0¬1.2¦",
+    "id": "spiker",
+    "name": "¦abilitiessetup_abilitydefine_006¦"
+  },
+  "starter_b": {
+    "desc": "¦abilitiessetup_abilitydefine_019¬0¬15¬1¬34¦",
+    "id": "starter_b",
+    "name": "¦abilitiessetup_abilitydefine_020¦"
+  },
+  "starter_h": {
+    "desc": "¦abilitiessetup_abilitydefine_025¬0¬15¬1¬34¦",
+    "id": "starter_h",
+    "name": "¦abilitiessetup_abilitydefine_026¦"
+  },
+  "starter_m": {
+    "desc": "¦abilitiessetup_abilitydefine_027¬0¬15¬1¬34¦",
+    "id": "starter_m",
+    "name": "¦abilitiessetup_abilitydefine_028¦"
+  },
+  "static": {
+    "desc": "¦abilitiessetup_abilitydefine_077¬0¬[sprStatus,0]¦statuseffectstuff_001¦ ¦statuseffectstuff_014¦¦",
+    "id": "static",
+    "name": "¦abilitiessetup_abilitydefine_078¦"
+  },
+  "statkeeper": {
+    "desc": "¦abilitiessetup_abilitydefine_208¦",
+    "id": "statkeeper",
+    "name": "¦abilitiessetup_abilitydefine_207¦"
+  },
+  "steal": {
+    "desc": "¦abilitiessetup_abilitydefine_142¦",
+    "id": "steal",
+    "name": "¦abilitiessetup_abilitydefine_141¦"
+  },
+  "stingblock": {
+    "desc": "¦abilitiessetup_abilitydefine_161¬0¬[sprStatus,9]¦statuseffectstuff_010¦¬1¬25¦",
+    "id": "stingblock",
+    "name": "¦abilitiessetup_abilitydefine_162¦"
+  },
+  "straightshot": {
+    "desc": "¦abilitiessetup_abilitydefine_075¬0¬1.3¦",
+    "id": "straightshot",
+    "name": "¦abilitiessetup_abilitydefine_076¦"
+  },
+  "strongchance": {
+    "desc": "¦abilitiessetup_abilitydefine_093¬0¬75¦",
+    "id": "strongchance",
+    "name": "¦abilitiessetup_abilitydefine_094¦"
+  },
+  "study": {
+    "desc": "¦abilitiessetup_abilitydefine_106¬0¬1¦",
+    "id": "study",
+    "name": "¦abilitiessetup_abilitydefine_105¦"
+  },
+  "sturdy": {
+    "desc": "¦abilitiessetup_abilitydefine_058¦",
+    "id": "sturdy",
+    "name": "¦abilitiessetup_abilitydefine_057¦"
+  },
+  "superarmor": {
+    "desc": "¦abilitiessetup_abilitydefine_277¬0¬1.5¦",
+    "id": "superarmor",
+    "name": "¦abilitiessetup_abilitydefine_278¦"
+  },
+  "superblock": {
+    "desc": "¦abilitiessetup_abilitydefine_129¬0¬1.5¬1¬[sprStatus,9]¦statuseffectstuff_010¦¦",
+    "id": "superblock",
+    "name": "¦abilitiessetup_abilitydefine_130¦"
+  },
+  "synchronize": {
+    "desc": "¦abilitiessetup_abilitydefine_293¦",
+    "id": "synchronize",
+    "name": "¦abilitiessetup_abilitydefine_310¦"
+  },
+  "synchronize2": {
+    "desc": "¦abilitiessetup_abilitydefine_311¦",
+    "id": "synchronize2",
+    "name": "¦abilitiessetup_abilitydefine_294¦"
+  },
+  "tagheal": {
+    "desc": "¦abilitiessetup_abilitydefine_187¬0¬35¦",
+    "id": "tagheal",
+    "name": "¦abilitiessetup_abilitydefine_188¦"
+  },
+  "taghit": {
+    "desc": "¦abilitiessetup_abilitydefine_107¬0¬1.5¦",
+    "id": "taghit",
+    "name": "¦abilitiessetup_abilitydefine_108¦"
+  },
+  "tangled": {
+    "desc": "¦abilitiessetup_abilitydefine_247¬0¬10¦",
+    "id": "tangled",
+    "name": "¦abilitiessetup_abilitydefine_248¦"
+  },
+  "taunt": {
+    "desc": "¦abilitiessetup_abilitydefine_133¬0¬[sprStatus,1]¦statuseffectstuff_002¦¦",
+    "id": "taunt",
+    "name": "¦abilitiessetup_abilitydefine_134¦"
+  },
+  "technician": {
+    "desc": "¦abilitiessetup_abilitydefine_011¬0¬60¬1¬1.5¦",
+    "id": "technician",
+    "name": "¦abilitiessetup_abilitydefine_012¦"
+  },
+  "teleport": {
+    "desc": "¦abilitiessetup_abilitydefine_164¦",
+    "id": "teleport",
+    "name": "¦abilitiessetup_abilitydefine_163¦"
+  },
+  "traitless": {
+    "desc": "¦abilitiessetup_abilitydefine_168¦",
+    "id": "traitless",
+    "name": "¦abilitiessetup_abilitydefine_167¦"
+  },
+  "trappow": {
+    "desc": "¦abilitiessetup_abilitydefine_099¬0¬¦fieldeffectstuff_002¦¦",
+    "id": "trappow",
+    "name": "¦abilitiessetup_abilitydefine_100¦"
+  },
+  "trust": {
+    "desc": "¦abilitiessetup_abilitydefine_014¦",
+    "id": "trust",
+    "name": "¦abilitiessetup_abilitydefine_013¦"
+  },
+  "unangry": {
+    "desc": "¦abilitiessetup_abilitydefine_113¬0¬[sprStatus,1]¦statuseffectstuff_002¦¦",
+    "id": "unangry",
+    "name": "¦abilitiessetup_abilitydefine_114¦"
+  },
+  "unghost": {
+    "desc": "¦abilitiessetup_abilitydefine_276¦",
+    "id": "unghost",
+    "name": "¦abilitiessetup_abilitydefine_275¦"
+  },
+  "unlazy": {
+    "desc": "¦abilitiessetup_abilitydefine_109¬0¬[sprStatus,10]¦statuseffectstuff_011¦¦",
+    "id": "unlazy",
+    "name": "¦abilitiessetup_abilitydefine_110¦"
+  },
+  "unmarked": {
+    "desc": "¦abilitiessetup_abilitydefine_003¬0¬[sprStatus,9]¦statuseffectstuff_010¦¦",
+    "id": "unmarked",
+    "name": "¦abilitiessetup_abilitydefine_004¦"
+  },
+  "unnervous": {
+    "desc": "¦abilitiessetup_abilitydefine_095¬0¬[sprStatus,0]¦statuseffectstuff_001¦¬1¬[sprStatus,2]¦statuseffectstuff_003¦¬2¬[sprStatus,12]¦statuseffectstuff_013¦¦",
+    "id": "unnervous",
+    "name": "¦abilitiessetup_abilitydefine_096¦"
+  },
+  "unshaken": {
+    "desc": "¦abilitiessetup_abilitydefine_205¬0¬[sprStatus,2]¦statuseffectstuff_003¦¦",
+    "id": "unshaken",
+    "name": "¦abilitiessetup_abilitydefine_206¦"
+  },
+  "unsweaty": {
+    "desc": "¦abilitiessetup_abilitydefine_045¬0¬[sprStatus,6]¦statuseffectstuff_007¦¬1¬10¦",
+    "id": "unsweaty",
+    "name": "¦abilitiessetup_abilitydefine_046¦"
+  },
+  "vampire": {
+    "desc": "¦abilitiessetup_abilitydefine_135¬0¬¼¦",
+    "id": "vampire",
+    "name": "¦abilitiessetup_abilitydefine_136¦"
+  },
+  "vertical": {
+    "desc": "¦abilitiessetup_abilitydefine_007¬0¬1.3¦",
+    "id": "vertical",
+    "name": "¦abilitiessetup_abilitydefine_008¦"
+  },
+  "vicious": {
+    "desc": "¦abilitiessetup_abilitydefine_125¬0¬30¦",
+    "id": "vicious",
+    "name": "¦abilitiessetup_abilitydefine_126¦"
+  },
+  "waiting": {
+    "desc": "¦abilitiessetup_abilitydefine_124¦",
+    "id": "waiting",
+    "name": "¦abilitiessetup_abilitydefine_123¦"
+  },
+  "watcher": {
+    "desc": "¦abilitiessetup_abilitydefine_098¬0¬[sprStatus,9]¦statuseffectstuff_010¦¦",
+    "id": "watcher",
+    "name": "¦abilitiessetup_abilitydefine_097¦"
+  },
+  "wipekiller": {
+    "desc": "¦abilitiessetup_abilitydefine_245¬0¬1.3¬1¬[sprStatus,5]¦statuseffectstuff_006¦¦",
+    "id": "wipekiller",
+    "name": "¦abilitiessetup_abilitydefine_246¦"
+  },
+  "wither": {
+    "desc": "¦abilitiessetup_abilitydefine_131¬0¬10¦",
+    "id": "wither",
+    "name": "¦abilitiessetup_abilitydefine_132¦"
+  }
+}

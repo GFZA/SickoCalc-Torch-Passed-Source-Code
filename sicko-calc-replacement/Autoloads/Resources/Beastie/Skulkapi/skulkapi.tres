@@ -1,23 +1,23 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=20 format=3 uid="uid://5jhg4mo5h8u"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=20 format=3 uid="uid://qkugdl005pxi"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_pva2w"]
-[ext_resource type="Resource" uid="uid://cc1uupl4pwwjw" path="res://Autoloads/Resources/Trait/stealthy.tres" id="2_7046n"]
+[ext_resource type="Resource" uid="uid://bgw24my40dsfo" path="res://Autoloads/Resources/Trait/stealthy.tres" id="2_7046n"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_wu5ja"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_fjol0"]
-[ext_resource type="Resource" uid="uid://cnrdrpp1ytwvq" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_mhno4"]
-[ext_resource type="Resource" uid="uid://bppf7bt0r5lgi" path="res://Autoloads/Resources/Plays/Attack/Mind/twist.tres" id="5_brjfu"]
-[ext_resource type="Resource" uid="uid://c6cpdi5nq4tlw" path="res://Autoloads/Resources/Plays/Attack/Mind/zigzag.tres" id="7_fvmdd"]
-[ext_resource type="Resource" uid="uid://dc5fuxjba5vkb" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="9_7vju4"]
-[ext_resource type="Resource" uid="uid://dw7hjak5gn2tk" path="res://Autoloads/Resources/Plays/Attack/Spirit/cut_shot.tres" id="11_4nkes"]
-[ext_resource type="Resource" uid="uid://dlf2eqay3itwo" path="res://Autoloads/Resources/Plays/Attack/Mind/soulcursher.tres" id="13_m3qeo"]
-[ext_resource type="Resource" uid="uid://btuerrrtm5jsh" path="res://Autoloads/Resources/Plays/Attack/Spirit/thrash.tres" id="14_td7p5"]
-[ext_resource type="Resource" uid="uid://d21rgslrfpvct" path="res://Autoloads/Resources/Plays/Attack/Spirit/flight.tres" id="15_ivi2w"]
-[ext_resource type="Resource" uid="uid://xuq2krgioyg5" path="res://Autoloads/Resources/Plays/Attack/Spirit/jammer.tres" id="16_damrv"]
-[ext_resource type="Resource" uid="uid://cya1yqpm1hk8m" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="17_7gamc"]
-[ext_resource type="Resource" uid="uid://dumv8ybmwmdqs" path="res://Autoloads/Resources/Plays/Attack/Spirit/relentless.tres" id="17_wr87o"]
-[ext_resource type="Resource" uid="uid://cdvmyw82xfyc5" path="res://Autoloads/Resources/Plays/Attack/Mind/ego_blast.tres" id="19_6nnt3"]
-[ext_resource type="Resource" uid="uid://c6joa81j7k6sd" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="19_i6d4d"]
-[ext_resource type="Resource" uid="uid://smdb12qjwch4" path="res://Autoloads/Resources/Plays/Attack/Mind/pressure.tres" id="21_4i328"]
+[ext_resource type="Resource" uid="uid://c88rcatq6gk4y" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_mhno4"]
+[ext_resource type="Resource" uid="uid://bskxkg6ifl6ut" path="res://Autoloads/Resources/Plays/Attack/Mind/twist.tres" id="4_kc7mx"]
+[ext_resource type="Resource" uid="uid://b4sw5ft6xnrrg" path="res://Autoloads/Resources/Plays/Attack/Mind/pressure.tres" id="5_brjfu"]
+[ext_resource type="Resource" uid="uid://d1u53eqrq7al3" path="res://Autoloads/Resources/Plays/Attack/Mind/zigzag.tres" id="6_4a86h"]
+[ext_resource type="Resource" uid="uid://bod5yvhemrq2g" path="res://Autoloads/Resources/Plays/Attack/Mind/ego_blast.tres" id="8_fvmdd"]
+[ext_resource type="Resource" uid="uid://dqgbkmysyedur" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="9_syr2v"]
+[ext_resource type="Resource" uid="uid://lmfl1gfvlwql" path="res://Autoloads/Resources/Plays/Attack/Mind/soulcursher.tres" id="10_7vju4"]
+[ext_resource type="Resource" uid="uid://bdnlecl0s1bg1" path="res://Autoloads/Resources/Plays/Attack/Spirit/relentless.tres" id="11_m88ve"]
+[ext_resource type="Resource" uid="uid://dkacdwk0xgf5d" path="res://Autoloads/Resources/Plays/Attack/Spirit/jammer.tres" id="13_4nkes"]
+[ext_resource type="Resource" uid="uid://dwi10jxtsh6jv" path="res://Autoloads/Resources/Plays/Attack/Spirit/cut_shot.tres" id="14_qqnkq"]
+[ext_resource type="Resource" uid="uid://bqohaluy1bian" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="17_7gamc"]
+[ext_resource type="Resource" uid="uid://dvlvjc15g68m7" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="19_i6d4d"]
+[ext_resource type="Resource" uid="uid://clp8emc65hxxo" path="res://Autoloads/Resources/Plays/Attack/Spirit/flight.tres" id="29_m8ah2"]
+[ext_resource type="Resource" uid="uid://6hu01s3a2n05" path="res://Autoloads/Resources/Plays/Attack/Spirit/thrash.tres" id="31_bfi3e"]
 [ext_resource type="Texture2D" uid="uid://cvg48nb5lv56w" path="res://Autoloads/Resources/Beastie/Skulkapi/icon_skulkapi.png" id="36_v23mj"]
 
 [resource]
@@ -25,6 +25,7 @@ script = ExtResource("3_fjol0")
 my_plays = Array[ExtResource("1_pva2w")]([null, null, null])
 my_trait = ExtResource("2_7046n")
 specie_name = "Skulkapi"
+internal_name = "okapi"
 beastiepedia_id = 50
 bar_color = Color(0.8666667, 0.09019608, 0.8392157, 1)
 body_base_pow = 26
@@ -32,52 +33,9 @@ spirit_base_pow = 78
 mind_base_pow = 86
 spirit_base_def = 89
 mind_base_def = 104
-plays_string = "From Levels:
-1
-Practice Shot
-1
-Fall Back
-5
-Twist
-10
-Teleport
-15
-Zigzag
-20
-Wink
-26
-Sneak Attack
-31
-Reign
-36
-Cut Shot
-42
-Intimidate
-48
-Soulcrusher
-From Friends:
-Thrash
-Flight
-Jammer
-Relentless
-Toppler
-Ego Blast
-Lure Shot
-Pressure
-Cover
-Excited Pass
-Forward Pass
-Net Rush
-Exhaust
-Feint
-Goo-Goo Eyes
-Mark
-Meditate
-Whoosh
-Mind Read
-Shield
-Staredown"
-possible_plays = Array[ExtResource("1_pva2w")]([ExtResource("3_mhno4"), ExtResource("5_brjfu"), ExtResource("7_fvmdd"), ExtResource("9_7vju4"), ExtResource("11_4nkes"), ExtResource("13_m3qeo"), ExtResource("14_td7p5"), ExtResource("15_ivi2w"), ExtResource("16_damrv"), ExtResource("17_wr87o"), ExtResource("17_7gamc"), ExtResource("19_6nnt3"), ExtResource("19_i6d4d"), ExtResource("21_4i328")])
+plays_string_array = Array[String](["practice shot", "twist", "pressure", "zigzag", "lure shot", "ego blast", "sneak attack", "soulcrusher", "relentless", "toppler", "jammer", "cut shot", "net rush", "cover", "forward pass", "excited pass", "feint", "teleport", "meditate", "mark", "mind read", "fall back", "staredown", "intimidate", "exhaust", "shield", "flight", "whoosh", "thrash", "goo-goo eyes", "wink", "reign"])
+traits_string_array = Array[String](["stealthy"])
+possible_plays = Array[ExtResource("1_pva2w")]([ExtResource("3_mhno4"), ExtResource("4_kc7mx"), ExtResource("5_brjfu"), ExtResource("6_4a86h"), ExtResource("19_i6d4d"), ExtResource("8_fvmdd"), ExtResource("9_syr2v"), ExtResource("10_7vju4"), ExtResource("11_m88ve"), ExtResource("17_7gamc"), ExtResource("13_4nkes"), ExtResource("14_qqnkq"), ExtResource("29_m8ah2"), ExtResource("31_bfi3e")])
 possible_traits = Array[ExtResource("2_wu5ja")]([ExtResource("2_7046n")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("36_v23mj")

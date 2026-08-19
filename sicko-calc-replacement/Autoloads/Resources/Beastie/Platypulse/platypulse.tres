@@ -1,28 +1,29 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://dqgsv6wtcxr65"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://c086eljc3v5oi"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_q2b64"]
-[ext_resource type="Resource" uid="uid://ct7431wre3ug2" path="res://Autoloads/Resources/Trait/neural_net.tres" id="2_f806a"]
+[ext_resource type="Resource" uid="uid://cug8lvl3nafkb" path="res://Autoloads/Resources/Trait/neural_net.tres" id="2_f806a"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_pjspl"]
-[ext_resource type="Resource" uid="uid://cnrdrpp1ytwvq" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_6boed"]
+[ext_resource type="Resource" uid="uid://dvywg8hgfbpi4" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="3_6boed"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_t50rp"]
-[ext_resource type="Resource" uid="uid://b6xyao2ghmtij" path="res://Autoloads/Resources/Plays/Attack/Mind/cornershot.tres" id="5_nu00v"]
-[ext_resource type="Resource" uid="uid://cod7yqucaq628" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="7_jdm1t"]
-[ext_resource type="Resource" uid="uid://iarkv57ltv2s" path="res://Autoloads/Resources/Plays/Attack/Mind/snipe.tres" id="9_x0tb2"]
-[ext_resource type="Resource" uid="uid://kjfbpg4iax4n" path="res://Autoloads/Resources/Plays/Attack/Mind/freezeray.tres" id="11_bntr3"]
-[ext_resource type="Resource" uid="uid://cm6axu5oniegv" path="res://Autoloads/Resources/Plays/Attack/Mind/echo_strike.tres" id="13_ouox0"]
-[ext_resource type="Resource" uid="uid://dfr4rlcnefv8y" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="14_ynroh"]
-[ext_resource type="Resource" uid="uid://bycxj0vtn5bss" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="15_jetbn"]
-[ext_resource type="Resource" uid="uid://cme5s0ruaay2q" path="res://Autoloads/Resources/Plays/Attack/Mind/dump.tres" id="16_dplny"]
+[ext_resource type="Resource" uid="uid://c88rcatq6gk4y" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="4_wf15q"]
+[ext_resource type="Resource" uid="uid://bu7lpmvoakuwl" path="res://Autoloads/Resources/Plays/Attack/Mind/cornershot.tres" id="5_nu00v"]
+[ext_resource type="Resource" uid="uid://clak4ft8xg32d" path="res://Autoloads/Resources/Plays/Attack/Mind/freezeray.tres" id="6_jdm1t"]
+[ext_resource type="Resource" uid="uid://bhtwwc0s5xk2i" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="7_i4j0s"]
+[ext_resource type="Resource" uid="uid://bjvubmjc3wd2w" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="8_bntr3"]
+[ext_resource type="Resource" uid="uid://mgi45vtu8scp" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="9_0vn3a"]
+[ext_resource type="Resource" uid="uid://co7ln5c4qp2o7" path="res://Autoloads/Resources/Plays/Attack/Mind/snipe.tres" id="9_x0tb2"]
+[ext_resource type="Resource" uid="uid://rxrxfpeh5rph" path="res://Autoloads/Resources/Plays/Attack/Mind/dump.tres" id="10_ouox0"]
 [ext_resource type="Texture2D" uid="uid://ckjtr70282d3o" path="res://Autoloads/Resources/Beastie/Platypulse/icon_platypulse.png" id="17_anh6h"]
-[ext_resource type="Resource" uid="uid://d3do2oh5f2miw" path="res://Autoloads/Resources/Plays/Attack/Mind/pierce.tres" id="17_ta8iq"]
-[ext_resource type="Resource" uid="uid://b3ie8s030fuig" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="18_xpjro"]
-[ext_resource type="Resource" uid="uid://c6cpdi5nq4tlw" path="res://Autoloads/Resources/Plays/Attack/Mind/zigzag.tres" id="19_46vd8"]
+[ext_resource type="Resource" uid="uid://gha0ih35lly" path="res://Autoloads/Resources/Plays/Attack/Mind/pierce.tres" id="27_7bt6e"]
+[ext_resource type="Resource" uid="uid://7735wtodpfd0" path="res://Autoloads/Resources/Plays/Attack/Mind/echo_strike.tres" id="30_kb2ht"]
+[ext_resource type="Resource" uid="uid://d1u53eqrq7al3" path="res://Autoloads/Resources/Plays/Attack/Mind/zigzag.tres" id="31_o6pg4"]
 
 [resource]
 script = ExtResource("3_t50rp")
 my_plays = Array[ExtResource("1_q2b64")]([null, null, null])
 my_trait = ExtResource("2_f806a")
 specie_name = "Platypulse"
+internal_name = "platypus2"
 beastiepedia_id = 28
 bar_color = Color(0.9882353, 0.85882354, 0.40392157, 1)
 body_base_pow = 26
@@ -31,49 +32,9 @@ mind_base_pow = 99
 body_base_def = 46
 spirit_base_def = 90
 mind_base_def = 115
-plays_string = "From Levels:
-1
-Practice Shot
-1
-Mind Read
-9
-Cornershot
-14
-Heat Up
-17
-Tracker
-23
-Lay Trap
-29
-Snipe
-35
-Mark
-41
-Freezeray
-45
-Telekinesis
-51
-Echo Strike
-From Friends:
-Floater
-Stinger
-Dump
-Pierce
-Nerve Strike
-Zigzag
-Cover
-Forward Pass
-Pipe
-Tactical Pass
-Lock Target
-Meditate
-Overthink
-Assess
-Frazzle
-Shield
-Smack
-Staredown"
-possible_plays = Array[ExtResource("1_q2b64")]([ExtResource("3_6boed"), ExtResource("5_nu00v"), ExtResource("7_jdm1t"), ExtResource("9_x0tb2"), ExtResource("11_bntr3"), ExtResource("13_ouox0"), ExtResource("14_ynroh"), ExtResource("15_jetbn"), ExtResource("16_dplny"), ExtResource("17_ta8iq"), ExtResource("18_xpjro"), ExtResource("19_46vd8")])
+plays_string_array = Array[String](["tracker", "practice shot", "cornershot", "freezeray", "nerve strike", "floater", "stinger", "dump", "tactical pass", "cover", "pipe", "forward pass", "meditate", "telekinesis", "assess", "overthink", "lock target", "mark", "lay trap", "smack", "mind read", "shield", "staredown", "frazzle", "pierce", "snipe", "heat up", "echo strike", "zigzag"])
+traits_string_array = Array[String](["neural net"])
+possible_plays = Array[ExtResource("1_q2b64")]([ExtResource("3_6boed"), ExtResource("4_wf15q"), ExtResource("5_nu00v"), ExtResource("6_jdm1t"), ExtResource("7_i4j0s"), ExtResource("8_bntr3"), ExtResource("9_0vn3a"), ExtResource("10_ouox0"), ExtResource("27_7bt6e"), ExtResource("9_x0tb2"), ExtResource("30_kb2ht"), ExtResource("31_o6pg4")])
 possible_traits = Array[ExtResource("2_pjspl")]([ExtResource("2_f806a")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("17_anh6h")

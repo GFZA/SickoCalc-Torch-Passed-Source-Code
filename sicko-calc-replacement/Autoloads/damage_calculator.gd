@@ -14,9 +14,8 @@ const TOUGH_MULT : float = 0.25
 
 const RALLY_FLAT : int = 20
 const CHEERLEADER_FLAT : int = 10
-const STARTER_FLAT : int = 15
 
-const NORMAL_CALC_BYPASSING_ATTACKS : Array[String] = ["grinder", "precision strike", "exp precision strike"]
+const NORMAL_CALC_BYPASSING_ATTACKS : Array[String] = ["grinder", "precision strike"]
 
 const LOWEST_DEF_TARGETING_ATTACKS : Array[String] = ["snipe"]
 const HIGHEST_DEF_TARGETING_ATTACKS : Array[String] = ["contest"]
@@ -28,7 +27,7 @@ const ALWAYS_CALC_FROM_FRONT_ATTACKS : Array[String] = ["swarm", "launch"]
 const SWAP_ROW_BONUS_ATTACKS : Array[String] = ["rocket"]
 const SWAP_ROW_BONUS_TRAITS : Array[String] = ["shy"]
 
-const BOOSTS_IGNORING_ATTACKS : Array[String] = ["raw fury", "exp precision strike"]
+const BOOSTS_IGNORING_ATTACKS : Array[String] = ["raw fury", "precision strike"]
 const BOOSTS_IGNORING_TRAITS : Array[String] = ["foggy"]
 
 const TRAITS_IGNORING_ATTACKS : Array[String] = ["true strike"]
@@ -40,10 +39,10 @@ const FIELD_IGNORING_TRAITS : Array[String] = ["in the clouds"]
 const RALLY_BOOST_EXCEPTION_ATTACKS : Array[String] = ["ego blast"]
 const RALLY_BOOST_EXCEPTION_TRAITS : Array[String] = ["extrovert"]
 
-const BLOCKED_IGNORING_ATTACKS : Array[String] = ["roll shot", "exp tracker"]
+const BLOCKED_IGNORING_ATTACKS : Array[String] = ["roll shot", "tracker"]
 const BLOCKED_IGNORING_TRAITS : Array[String] = ["rogue"]
 
-const TOUGH_IGNORING_ATTACKS : Array[String] = ["raw fury", "exp precision strike"]
+const TOUGH_IGNORING_ATTACKS : Array[String] = ["raw fury", "precision strike"]
 const TOUGH_IGNORING_TRAITS : Array[String] = [] # Unused
 
 
@@ -70,15 +69,15 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 		if attack.is_mimicked:
 			final_damage = ceili(final_damage * MIMIC_MULT) # do it here as it skip the part where do this normally
 
-	if attack_name in ["precision strike", "exp precision strike"]:
+	if attack_name in ["precision strike"]:
 		final_damage = PRESICION_STRIKE_DAMAGE # It's now affected by Blocked
 		if attacker_trait == "musclebrain":
 			final_damage = ceili(final_damage * MUSCLEBRAIN_MULT) # since it overwrite the musclebrain check above, just check again here
 		if attack.is_mimicked:
 			final_damage = ceili(final_damage * MIMIC_MULT) # do it here as it skip the part where do this normally
 
-	if attack_name == "free ball":
-		if attacker_trait == "miracle play" and not attack.is_mimicked:
+	if attack_name == "free ball" and not attack.is_mimicked:
+		if attacker_trait == "miracle play":
 			attack = attack.duplicate(true)
 			attack.base_pow = MIRACLE_PLAY_POW
 
@@ -177,6 +176,7 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 	elif attack_name in ALWAYS_CALC_FROM_BENCH_ATTACKS:
 		attack_boosts_to_add = 0  # clear all boosts
 	total_attack_boost += attack_boosts_to_add
+	total_attack_boost += int(attacker.my_trait.get_starter_trait_boost_stack(attacker, stats_type_attack))
 
 	if jazzed:
 		if signi(total_attack_boost) == -1:
@@ -271,10 +271,6 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 		var defender_ignore_rally : bool = (defender_trait in FIELD_IGNORING_TRAITS) and not attacker_trait in TRAITS_IGNORING_TRAITS
 		if boostable_by_rally and has_rally and not defender_ignore_rally:
 			final_damage += RALLY_FLAT
-
-	var starter_trait_proc : bool = bool(attacker.my_trait.get_starter_trait_boost_stack(attacker, stats_type_attack))
-	if starter_trait_proc:
-		final_damage += STARTER_FLAT
 
 	# Apply Blocked after adding flat damage now (New in Milestone 4)
 	var blocked_stack : float = 0.0

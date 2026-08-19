@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://dy7cio3h6lvaf"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_3ogjx"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_80n5h"]
+[ext_resource type="Resource" uid="uid://cjbcmoksyqqcn" path="res://Autoloads/Resources/Trait/primitive.tres" id="2_q3s3h"]
+[ext_resource type="Resource" uid="uid://c0sctvo70deyt" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_40fl7"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_q3s3h"]
+[ext_resource type="Resource" uid="uid://c61k5iketw8gj" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="4_650uw"]
+[ext_resource type="Resource" uid="uid://b7tjj7bteoya8" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="5_0tjcy"]
+[ext_resource type="Resource" uid="uid://dwi10jxtsh6jv" path="res://Autoloads/Resources/Plays/Attack/Spirit/cut_shot.tres" id="6_0anvd"]
+[ext_resource type="Resource" uid="uid://dct5i74sgdo84" path="res://Autoloads/Resources/Plays/Attack/Spirit/turnabout.tres" id="7_fxs3e"]
+[ext_resource type="Resource" uid="uid://cuvfann7341yy" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="8_pla1q"]
+[ext_resource type="Resource" uid="uid://bdnlecl0s1bg1" path="res://Autoloads/Resources/Plays/Attack/Spirit/relentless.tres" id="10_3lxts"]
+[ext_resource type="Texture2D" uid="uid://cepwbdpk4inh6" path="res://Autoloads/Resources/Beastie/Petula/icon_petula.png" id="11_mmjbl"]
+[ext_resource type="Resource" uid="uid://dkacdwk0xgf5d" path="res://Autoloads/Resources/Plays/Attack/Spirit/jammer.tres" id="23_k8xdb"]
+[ext_resource type="Resource" uid="uid://b8luvjr8qoufi" path="res://Autoloads/Resources/Plays/Attack/Spirit/swarm.tres" id="26_8ig8f"]
+[ext_resource type="Resource" uid="uid://ck1jyxfcibvjc" path="res://Autoloads/Resources/Plays/Attack/Spirit/passion_strike.tres" id="27_4ufxc"]
+
+[resource]
+script = ExtResource("3_q3s3h")
+my_plays = Array[ExtResource("1_3ogjx")]([null, null, null])
+my_trait = ExtResource("2_q3s3h")
+specie_name = "Petula"
+internal_name = "jellyfish1"
+beastiepedia_id = 62
+is_nfe = true
+bar_color = Color(1, 0.09803922, 0.42352942, 1)
+body_base_pow = 14
+spirit_base_pow = 74
+mind_base_pow = 35
+body_base_def = 64
+spirit_base_def = 73
+mind_base_def = 52
+plays_string_array = Array[String](["beginner effort", "careful shot", "grit", "cut shot", "turnabout", "raw fury", "net rush", "relentless", "cover", "refresh", "excited pass", "hunker", "dispel", "blaze", "lay trap", "shake off", "patience", "nettle", "sting", "shield", "jammer", "teleport", "gloom", "swarm", "passion strike"])
+traits_string_array = Array[String](["primitive"])
+possible_plays = Array[ExtResource("1_3ogjx")]([ExtResource("3_40fl7"), ExtResource("4_650uw"), ExtResource("5_0tjcy"), ExtResource("6_0anvd"), ExtResource("7_fxs3e"), ExtResource("8_pla1q"), ExtResource("10_3lxts"), ExtResource("23_k8xdb"), ExtResource("26_8ig8f"), ExtResource("27_4ufxc")])
+possible_traits = Array[ExtResource("2_80n5h")]([ExtResource("2_q3s3h")])
+sprites = Dictionary[int, Texture2D]({
+6: ExtResource("11_mmjbl")
+})
+y_offset = -100
+ball_anchor_position_receive = Vector2(22, -106)
+ball_anchor_position_ready = Vector2(31, -110)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

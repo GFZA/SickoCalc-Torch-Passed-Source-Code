@@ -1,23 +1,24 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=13 format=3 uid="uid://tka4sd3332yw"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=13 format=3 uid="uid://djhtytw5yk7p"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_knhx4"]
-[ext_resource type="Resource" uid="uid://gg4non5q0kqq" path="res://Autoloads/Resources/Trait/cheerleader.tres" id="2_fob6b"]
+[ext_resource type="Resource" uid="uid://i5ysftg38v45" path="res://Autoloads/Resources/Trait/cheerleader.tres" id="2_fob6b"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_liucn"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_dsutf"]
-[ext_resource type="Resource" uid="uid://dc0b8j0fujpbd" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="4_grfdo"]
-[ext_resource type="Resource" uid="uid://qi0fklguwm3c" path="res://Autoloads/Resources/Plays/Attack/Body/reach_shot.tres" id="7_csys5"]
-[ext_resource type="Resource" uid="uid://br2xlvc1ky06q" path="res://Autoloads/Resources/Plays/Attack/Body/kneebender.tres" id="10_t3rco"]
-[ext_resource type="Resource" uid="uid://hiuivj04u8ir" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="11_tw305"]
+[ext_resource type="Resource" uid="uid://flllnsq6qtxd" path="res://Autoloads/Resources/Plays/Attack/Body/reach_shot.tres" id="6_44gg3"]
+[ext_resource type="Resource" uid="uid://varwkuxdkjx4" path="res://Autoloads/Resources/Plays/Attack/Body/thunder.tres" id="7_csys5"]
+[ext_resource type="Resource" uid="uid://5bs4vk6u3yin" path="res://Autoloads/Resources/Plays/Attack/Body/kneebender.tres" id="9_58ols"]
 [ext_resource type="Texture2D" uid="uid://bflv0df4fj7k" path="res://Autoloads/Resources/Beastie/Cherrily/icon_cherrily.png" id="12_2is11"]
-[ext_resource type="Resource" uid="uid://khv754wvrclb" path="res://Autoloads/Resources/Plays/Attack/Body/thunder.tres" id="14_veg4w"]
-[ext_resource type="Resource" uid="uid://de4i64x6vnp7m" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="15_yq3ji"]
-[ext_resource type="Resource" uid="uid://ld2lhvgalfff" path="res://Autoloads/Resources/Plays/Attack/Spirit/swarm.tres" id="16_tlclr"]
+[ext_resource type="Resource" uid="uid://fgq2455h2ohi" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="15_yq3ji"]
+[ext_resource type="Resource" uid="uid://bbssb3w0wahh6" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="17_yq3ji"]
+[ext_resource type="Resource" uid="uid://b8luvjr8qoufi" path="res://Autoloads/Resources/Plays/Attack/Spirit/swarm.tres" id="23_8qu55"]
+[ext_resource type="Resource" uid="uid://s2rfx2brbkjp" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="24_j08v7"]
 
 [resource]
 script = ExtResource("3_dsutf")
 my_plays = Array[ExtResource("1_knhx4")]([null, null, null])
 my_trait = ExtResource("2_fob6b")
 specie_name = "Cherrily"
+internal_name = "cheerleader"
 beastiepedia_id = 36
 bar_color = Color(0.98039216, 0.60784316, 0.6313726, 1)
 body_base_pow = 65
@@ -26,42 +27,9 @@ mind_base_pow = 40
 body_base_def = 75
 spirit_base_def = 88
 mind_base_def = 57
-plays_string = "From Levels:
-1
-Cheer
-1
-Basic Hit
-9
-Rally
-14
-Set
-21
-Reach Shot
-25
-Chant
-29
-Updraft
-33
-Kneebender
-39
-Vigor Beam
-43
-Pump Up
-50
-Dispel
-From Friends:
-Thunder
-Relaxed Hit
-Swarm
-Excited Pass
-Juggle
-Drum
-Introduce
-Whistle
-Whoosh
-High Five
-Shield"
-possible_plays = Array[ExtResource("1_knhx4")]([ExtResource("4_grfdo"), ExtResource("7_csys5"), ExtResource("10_t3rco"), ExtResource("11_tw305"), ExtResource("14_veg4w"), ExtResource("15_yq3ji"), ExtResource("16_tlclr")])
+plays_string_array = Array[String](["introduce", "updraft", "cheer", "reach shot", "thunder", "relaxed hit", "kneebender", "set", "whistle", "whoosh", "pump up", "chant", "high five", "juggle", "vigor beam", "rally", "drum", "shield", "dispel", "excited pass", "swarm", "basic hit"])
+traits_string_array = Array[String](["cheerleader"])
+possible_plays = Array[ExtResource("1_knhx4")]([ExtResource("6_44gg3"), ExtResource("7_csys5"), ExtResource("15_yq3ji"), ExtResource("9_58ols"), ExtResource("17_yq3ji"), ExtResource("23_8qu55"), ExtResource("24_j08v7")])
 possible_traits = Array[ExtResource("2_liucn")]([ExtResource("2_fob6b")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("12_2is11")

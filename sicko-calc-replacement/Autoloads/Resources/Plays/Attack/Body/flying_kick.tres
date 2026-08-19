@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://hcgm2huykil6"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_gmpdl"]
+
+[resource]
+script = ExtResource("1_gmpdl")
+name = "Flying Kick"
+base_pow = 95
+descrition = "Used when ally has ball. Before hit, SHIFTs self to ally row."
+type = 0
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

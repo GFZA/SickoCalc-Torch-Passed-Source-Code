@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Support" load_steps=2 format=3 uid="uid://dil8thy3v6p6d"]
+
+[ext_resource type="Script" uid="uid://ckljlmv7ycuxl" path="res://Autoloads/Resources/Plays/Support/support.gd" id="1_y6hjg"]
+
+[resource]
+script = ExtResource("1_y6hjg")
+name = "Squeeze"
+descrition = "Can target opponents or allies. Advances target's FEELINGs by 1 turn."
+metadata/_custom_type_script = "uid://ckljlmv7ycuxl"

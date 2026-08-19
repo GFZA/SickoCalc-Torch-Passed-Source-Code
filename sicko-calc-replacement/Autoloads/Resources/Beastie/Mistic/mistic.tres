@@ -1,17 +1,17 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=14 format=3 uid="uid://gnevdd4jps3y"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=14 format=3 uid="uid://bnjlun76wkalm"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_e3v75"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_ad7c4"]
-[ext_resource type="Resource" uid="uid://df1qq8e66hiyh" path="res://Autoloads/Resources/Trait/intangible.tres" id="2_pro8y"]
+[ext_resource type="Resource" uid="uid://blyx4yhsa8jh8" path="res://Autoloads/Resources/Trait/intangible.tres" id="2_pro8y"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_6nk6x"]
-[ext_resource type="Resource" uid="uid://b6xyao2ghmtij" path="res://Autoloads/Resources/Plays/Attack/Mind/cornershot.tres" id="3_l2axt"]
-[ext_resource type="Resource" uid="uid://fbkol2rhhchv" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="6_na227"]
-[ext_resource type="Resource" uid="uid://b3ie8s030fuig" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="8_qd3c2"]
-[ext_resource type="Resource" uid="uid://kjfbpg4iax4n" path="res://Autoloads/Resources/Plays/Attack/Mind/freezeray.tres" id="10_v66jc"]
-[ext_resource type="Resource" uid="uid://dlf2eqay3itwo" path="res://Autoloads/Resources/Plays/Attack/Mind/soulcursher.tres" id="13_3im7o"]
-[ext_resource type="Resource" uid="uid://cm6axu5oniegv" path="res://Autoloads/Resources/Plays/Attack/Mind/echo_strike.tres" id="15_rs618"]
-[ext_resource type="Resource" uid="uid://cpue5n2qo6k4j" path="res://Autoloads/Resources/Plays/Attack/Mind/slice.tres" id="16_s85c4"]
-[ext_resource type="Resource" uid="uid://17upagq6d0q6" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="17_jnne2"]
+[ext_resource type="Resource" uid="uid://bhqeqwobkmkmm" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="4_pivcn"]
+[ext_resource type="Resource" uid="uid://cuuc60lnkhsv1" path="res://Autoloads/Resources/Plays/Attack/Mind/slice.tres" id="5_0gjn4"]
+[ext_resource type="Resource" uid="uid://bu7lpmvoakuwl" path="res://Autoloads/Resources/Plays/Attack/Mind/cornershot.tres" id="6_na227"]
+[ext_resource type="Resource" uid="uid://bhtwwc0s5xk2i" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="17_s85c4"]
+[ext_resource type="Resource" uid="uid://bu14usafsgtsi" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="22_5fw5x"]
+[ext_resource type="Resource" uid="uid://7735wtodpfd0" path="res://Autoloads/Resources/Plays/Attack/Mind/echo_strike.tres" id="24_604e7"]
+[ext_resource type="Resource" uid="uid://lmfl1gfvlwql" path="res://Autoloads/Resources/Plays/Attack/Mind/soulcursher.tres" id="28_1yhks"]
+[ext_resource type="Resource" uid="uid://clak4ft8xg32d" path="res://Autoloads/Resources/Plays/Attack/Mind/freezeray.tres" id="29_1ar88"]
 [ext_resource type="Texture2D" uid="uid://c423r10svyi6l" path="res://Autoloads/Resources/Beastie/Mistic/icon_mistic.png" id="33_ctsvt"]
 
 [resource]
@@ -19,6 +19,7 @@ script = ExtResource("3_6nk6x")
 my_plays = Array[ExtResource("1_e3v75")]([null, null, null])
 my_trait = ExtResource("2_pro8y")
 specie_name = "Mistic"
+internal_name = "ghost"
 beastiepedia_id = 46
 bar_color = Color(0.5019608, 0.41568628, 0.52156866, 1)
 body_base_pow = 15
@@ -27,49 +28,9 @@ mind_base_pow = 85
 body_base_def = 105
 spirit_base_def = 50
 mind_base_def = 80
-plays_string = "From Levels:
-1
-Cornershot
-1
-Cover
-13
-Stinky
-18
-Rattle
-23
-Heat Up
-28
-Nerve Strike
-33
-Hex
-36
-Freezeray
-39
-Teleport
-44
-Dreadful Mist
-49
-Soulcrusher
-54
-Gloom
-From Friends:
-Echo Strike
-Slice
-Mindfield
-Refresh
-Dispel
-Exhaust
-Feint
-Jeer
-Mark
-Meditate
-Wink
-Hawkeye
-Menace
-Patience
-Shield
-Staredown"
-possible_plays = Array[ExtResource("1_e3v75")]([ExtResource("3_l2axt"), ExtResource("6_na227"), ExtResource("8_qd3c2"), ExtResource("10_v66jc"), ExtResource("13_3im7o"), ExtResource("15_rs618"), ExtResource("16_s85c4"), ExtResource("17_jnne2")])
+plays_string_array = Array[String](["hex", "mindfield", "slice", "cornershot", "cover", "refresh", "teleport", "feint", "meditate", "staredown", "jeer", "mark", "hawkeye", "patience", "nerve strike", "shield", "dispel", "heat up", "dreadful mist", "rattle", "gloom", "echo strike", "menace", "exhaust", "wink", "soulcrusher", "freezeray", "stinky"])
+traits_string_array = Array[String](["intangible"])
+possible_plays = Array[ExtResource("1_e3v75")]([ExtResource("4_pivcn"), ExtResource("5_0gjn4"), ExtResource("6_na227"), ExtResource("17_s85c4"), ExtResource("22_5fw5x"), ExtResource("24_604e7"), ExtResource("28_1yhks"), ExtResource("29_1ar88")])
 possible_traits = Array[ExtResource("2_ad7c4")]([ExtResource("2_pro8y")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("33_ctsvt")

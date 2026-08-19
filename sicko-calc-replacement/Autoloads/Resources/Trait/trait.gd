@@ -18,12 +18,12 @@ extends Resource
 var manually_activated : bool = false
 
 
-func get_starter_trait_boost_stack(_attacker : Beastie, type : int) -> int:
+func get_starter_trait_boost_stack(attacker : Beastie, type : int) -> int:
 	# It's no longer boost but it's easier to not change the name lol
 	# The change is done to DamageCalculator btw
 	if not is_starter_trait:
 		return 0
-	if type == int(starter_trait_type) and manually_activated:
+	if type == int(starter_trait_type) and (attacker.health < 34 or manually_activated):
 		# type will int as it's different enum but same int
 		# please never do this again...
 		return 1

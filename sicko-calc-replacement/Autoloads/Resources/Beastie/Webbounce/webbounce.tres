@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://yjt4ftbgj6si"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_jq3qg"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_lpd62"]
+[ext_resource type="Resource" uid="uid://coo6bswb735gm" path="res://Autoloads/Resources/Trait/goofy.tres" id="2_oarkc"]
+[ext_resource type="Resource" uid="uid://cw0xa64oc8qpd" path="res://Autoloads/Resources/Plays/Attack/Body/bounce.tres" id="3_kjjgw"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_oarkc"]
+[ext_resource type="Resource" uid="uid://bcddvnkea0a6i" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="4_5adj6"]
+[ext_resource type="Resource" uid="uid://flllnsq6qtxd" path="res://Autoloads/Resources/Plays/Attack/Body/reach_shot.tres" id="6_ex5tn"]
+[ext_resource type="Resource" uid="uid://fgq2455h2ohi" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="7_2s036"]
+[ext_resource type="Resource" uid="uid://p80bbmytiwqg" path="res://Autoloads/Resources/Plays/Attack/Body/sidewinder.tres" id="8_dukfm"]
+[ext_resource type="Resource" uid="uid://cuuc60lnkhsv1" path="res://Autoloads/Resources/Plays/Attack/Mind/slice.tres" id="9_6ch3f"]
+[ext_resource type="Resource" uid="uid://bu7lpmvoakuwl" path="res://Autoloads/Resources/Plays/Attack/Mind/cornershot.tres" id="10_16tnw"]
+[ext_resource type="Texture2D" uid="uid://2pch1orss655" path="res://Autoloads/Resources/Beastie/Webbounce/icon_webbounce.png" id="11_5v5h1"]
+[ext_resource type="Resource" uid="uid://d1u53eqrq7al3" path="res://Autoloads/Resources/Plays/Attack/Mind/zigzag.tres" id="11_s34wk"]
+[ext_resource type="Resource" uid="uid://nj7bo2jh52pr" path="res://Autoloads/Resources/Plays/Attack/Body/muscle_memory.tres" id="17_maxgy"]
+[ext_resource type="Resource" uid="uid://cdionjwwaatqh" path="res://Autoloads/Resources/Plays/Attack/Mind/ricochet.tres" id="21_1ow4q"]
+[ext_resource type="Resource" uid="uid://bskxkg6ifl6ut" path="res://Autoloads/Resources/Plays/Attack/Mind/twist.tres" id="22_wln1y"]
+[ext_resource type="Resource" uid="uid://dfaq17t8jv2vc" path="res://Autoloads/Resources/Plays/Attack/Mind/trickspin.tres" id="24_g7y0d"]
+[ext_resource type="Resource" uid="uid://cpjhci5qg0bc1" path="res://Autoloads/Resources/Trait/plucky.tres" id="26_e2hia"]
+
+[resource]
+script = ExtResource("3_oarkc")
+my_plays = Array[ExtResource("1_jq3qg")]([null, null, null])
+my_trait = ExtResource("2_oarkc")
+specie_name = "Webbounce"
+internal_name = "clown1"
+beastiepedia_id = 42
+is_nfe = true
+bar_color = Color(1, 0.79607844, 0.08627451, 1)
+body_base_pow = 60
+spirit_base_pow = 20
+mind_base_pow = 70
+body_base_def = 30
+spirit_base_def = 70
+plays_string_array = Array[String](["bounce", "rainbow", "juggle", "reach shot", "relaxed hit", "sidewinder", "slice", "cornershot", "zigzag", "confident pass", "set", "cheer", "exhaust", "stinky", "muscle memory", "shield", "trait dance", "shake off", "ricochet", "twist", "whistle", "trickspin"])
+traits_string_array = Array[String](["goofy", "plucky"])
+possible_plays = Array[ExtResource("1_jq3qg")]([ExtResource("3_kjjgw"), ExtResource("4_5adj6"), ExtResource("6_ex5tn"), ExtResource("7_2s036"), ExtResource("8_dukfm"), ExtResource("9_6ch3f"), ExtResource("10_16tnw"), ExtResource("11_s34wk"), ExtResource("17_maxgy"), ExtResource("21_1ow4q"), ExtResource("22_wln1y"), ExtResource("24_g7y0d")])
+possible_traits = Array[ExtResource("2_lpd62")]([ExtResource("2_oarkc"), ExtResource("26_e2hia")])
+sprites = Dictionary[int, Texture2D]({
+6: ExtResource("11_5v5h1")
+})
+y_offset = -10
+ball_anchor_position_receive = Vector2(-22, -90)
+ball_anchor_position_ready = Vector2(46, -73)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

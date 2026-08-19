@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://yqjmu4fs6htt"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_aymbi"]
+[ext_resource type="Resource" uid="uid://5xrttl33u0pi" path="res://Autoloads/Resources/Trait/high_spirits.tres" id="2_0hv2y"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_x4t0t"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_0hv2y"]
+[ext_resource type="Resource" uid="uid://ccaahq60wfk0e" path="res://Autoloads/Resources/Plays/Attack/Spirit/pepshot.tres" id="3_40ybh"]
+[ext_resource type="Resource" uid="uid://c22lonn5u3ril" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="4_gudop"]
+[ext_resource type="Resource" uid="uid://c6gmawss0c25g" path="res://Autoloads/Resources/Plays/Attack/Spirit/supercommit.tres" id="5_2iu8w"]
+[ext_resource type="Resource" uid="uid://dkacdwk0xgf5d" path="res://Autoloads/Resources/Plays/Attack/Spirit/jammer.tres" id="6_7qhfo"]
+[ext_resource type="Texture2D" uid="uid://h5x0r28bwki5" path="res://Autoloads/Resources/Beastie/Axolati/icon_axolati.png" id="11_roo0g"]
+[ext_resource type="Resource" uid="uid://bq0va3t2lu7gm" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="21_h1pro"]
+[ext_resource type="Resource" uid="uid://c8rif5as2atsx" path="res://Autoloads/Resources/Plays/Attack/Body/stomp.tres" id="22_n8y3m"]
+[ext_resource type="Resource" uid="uid://fgq2455h2ohi" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="23_impqd"]
+[ext_resource type="Resource" uid="uid://camyp3pk4s2xy" path="res://Autoloads/Resources/Plays/Attack/Spirit/thriller.tres" id="24_rln2o"]
+[ext_resource type="Resource" uid="uid://cbl087autayrw" path="res://Autoloads/Resources/Plays/Attack/Spirit/rousing_strike.tres" id="25_0vohq"]
+[ext_resource type="Resource" uid="uid://dr32u1jygangk" path="res://Autoloads/Resources/Trait/rumpus.tres" id="28_ax4eh"]
+
+[resource]
+script = ExtResource("3_0hv2y")
+my_plays = Array[ExtResource("1_aymbi")]([null, null, null])
+my_trait = ExtResource("2_0hv2y")
+specie_name = "Axolati"
+internal_name = "frog1"
+beastiepedia_id = 8
+is_nfe = true
+bar_color = Color(0.8745098, 0.30588236, 0.35686275, 1)
+body_base_pow = 37
+spirit_base_pow = 70
+mind_base_pow = 25
+body_base_def = 45
+spirit_base_def = 60
+mind_base_def = 33
+plays_string_array = Array[String](["pepshot", "bring the heat", "supercommit", "jammer", "mighty yell", "net rush", "cover", "forward pass", "battle cry", "whistle", "chant", "cheer", "drum", "shield", "dramatic exit", "introduce", "trait dance", "soliloquy", "energized", "stomp", "relaxed hit", "thriller", "rousing strike", "hum"])
+traits_string_array = Array[String](["high spirits", "rumpus"])
+possible_plays = Array[ExtResource("1_aymbi")]([ExtResource("3_40ybh"), ExtResource("4_gudop"), ExtResource("5_2iu8w"), ExtResource("6_7qhfo"), ExtResource("21_h1pro"), ExtResource("22_n8y3m"), ExtResource("23_impqd"), ExtResource("24_rln2o"), ExtResource("25_0vohq")])
+possible_traits = Array[ExtResource("2_x4t0t")]([ExtResource("2_0hv2y"), ExtResource("28_ax4eh")])
+sprites = Dictionary[int, Texture2D]({
+6: ExtResource("11_roo0g")
+})
+ball_anchor_position_receive = Vector2(32, -65)
+ball_anchor_position_ready = Vector2(50, -78)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

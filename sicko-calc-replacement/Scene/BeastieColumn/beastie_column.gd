@@ -250,7 +250,7 @@ func _update_attack() -> void:
 		attack_plays_ui.show()
 
 		var attack_name : String = current_attack.name.to_lower()
-		ally_at_label.visible = (attack_name == "exp flying kick") and side == Global.MySide.LEFT
+		ally_at_label.visible = (attack_name == "flying kick") and side == Global.MySide.LEFT
 
 		var is_vigor_beam : bool = attack_name == "vigor beam"
 		var is_soulcrusher : bool = attack_name == "soulcrusher"

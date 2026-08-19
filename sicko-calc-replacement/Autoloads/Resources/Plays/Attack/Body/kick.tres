@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://cwi5c6hqibcs8"]
+
+[ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_11lnt"]
+
+[resource]
+script = ExtResource("1_11lnt")
+name = "Kick"
+target = 3
+base_pow = 70
+descrition = "Auto-targets back row. Can hit without volleying."
+type = 0
+metadata/_custom_type_script = "uid://bc63soeia1eb1"

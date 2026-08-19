@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=22 format=3 uid="uid://d2s4n20q3mbm8"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_35kdm"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_i4stc"]
+[ext_resource type="Resource" uid="uid://sq0olu0vgoot" path="res://Autoloads/Resources/Trait/mischief.tres" id="2_jughp"]
+[ext_resource type="Resource" uid="uid://bx8c5vlkglnna" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_a8dxa"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_jughp"]
+[ext_resource type="Resource" uid="uid://5bs4vk6u3yin" path="res://Autoloads/Resources/Plays/Attack/Body/kneebender.tres" id="4_sfmyw"]
+[ext_resource type="Resource" uid="uid://ccvl27stc1tky" path="res://Autoloads/Resources/Plays/Attack/Body/zinger.tres" id="5_schuv"]
+[ext_resource type="Resource" uid="uid://dlodpoblex8aw" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="6_2dwro"]
+[ext_resource type="Resource" uid="uid://dqgbkmysyedur" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="7_u8p6e"]
+[ext_resource type="Resource" uid="uid://dvlvjc15g68m7" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="8_5ao3s"]
+[ext_resource type="Resource" uid="uid://cfk5xjgct6e78" path="res://Autoloads/Resources/Plays/Attack/Mind/roll_shot.tres" id="9_scjac"]
+[ext_resource type="Resource" uid="uid://b4sw5ft6xnrrg" path="res://Autoloads/Resources/Plays/Attack/Mind/pressure.tres" id="10_cbaux"]
+[ext_resource type="Resource" uid="uid://boewv1xdqdcwf" path="res://Autoloads/Resources/Plays/Attack/Mind/heartbreaker.tres" id="11_md2wy"]
+[ext_resource type="Texture2D" uid="uid://cimxssw1vbh5d" path="res://Autoloads/Resources/Beastie/Rookee/icon_rookee.png" id="11_tkv45"]
+[ext_resource type="Resource" uid="uid://dgidum4ihswoa" path="res://Autoloads/Resources/Plays/Attack/Body/nice_shot.tres" id="28_7otrt"]
+[ext_resource type="Resource" uid="uid://maegmkmvt031" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="29_4kqno"]
+[ext_resource type="Resource" uid="uid://bu14usafsgtsi" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="31_m7kmt"]
+[ext_resource type="Resource" uid="uid://mgi45vtu8scp" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="32_t1hsi"]
+[ext_resource type="Resource" uid="uid://cevk477q1nav3" path="res://Autoloads/Resources/Plays/Attack/Mind/tool.tres" id="33_5t0jt"]
+[ext_resource type="Resource" uid="uid://c88rcatq6gk4y" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="34_n6ndj"]
+[ext_resource type="Resource" uid="uid://h5n3q5v6eocq" path="res://Autoloads/Resources/Trait/crowing.tres" id="36_fl0ax"]
+
+[resource]
+script = ExtResource("3_jughp")
+my_plays = Array[ExtResource("1_35kdm")]([null, null, null])
+my_trait = ExtResource("2_jughp")
+specie_name = "Rookee"
+internal_name = "kangaroo1"
+beastiepedia_id = 24
+is_nfe = true
+bar_color = Color(0.8980392, 0.74509805, 0.5882353, 1)
+body_base_pow = 55
+spirit_base_pow = 18
+mind_base_pow = 74
+body_base_def = 55
+spirit_base_def = 28
+mind_base_def = 80
+plays_string_array = Array[String](["bump", "kneebender", "zinger", "prepared attack", "sneak attack", "lure shot", "roll shot", "pressure", "heartbreaker", "juggle", "forward pass", "exhaust", "stinky", "upsetting comment", "shield", "lay trap", "feint", "nettle", "deep breath", "provoke", "hunker", "whistle", "jeer", "intimidate", "frazzle", "nice shot", "spitball", "chill out", "rattle", "stinger", "tool", "practice shot"])
+traits_string_array = Array[String](["mischief", "crowing"])
+possible_plays = Array[ExtResource("1_35kdm")]([ExtResource("3_a8dxa"), ExtResource("4_sfmyw"), ExtResource("5_schuv"), ExtResource("6_2dwro"), ExtResource("7_u8p6e"), ExtResource("8_5ao3s"), ExtResource("9_scjac"), ExtResource("10_cbaux"), ExtResource("11_md2wy"), ExtResource("28_7otrt"), ExtResource("29_4kqno"), ExtResource("31_m7kmt"), ExtResource("32_t1hsi"), ExtResource("33_5t0jt"), ExtResource("34_n6ndj")])
+possible_traits = Array[ExtResource("2_i4stc")]([ExtResource("2_jughp"), ExtResource("36_fl0ax")])
+sprites = Dictionary[int, Texture2D]({
+6: ExtResource("11_tkv45")
+})
+ball_anchor_position_receive = Vector2(57, -80)
+ball_anchor_position_ready = Vector2(93, -70)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

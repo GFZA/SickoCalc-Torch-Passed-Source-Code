@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=22 format=3 uid="uid://pikmsh675q2b"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_h8tfn"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_dchmj"]
+[ext_resource type="Resource" uid="uid://dblelndoemcu3" path="res://Autoloads/Resources/Trait/fetch.tres" id="2_dyvpn"]
+[ext_resource type="Resource" uid="uid://bx8c5vlkglnna" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_8gvyy"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_dyvpn"]
+[ext_resource type="Resource" uid="uid://bdnlecl0s1bg1" path="res://Autoloads/Resources/Plays/Attack/Spirit/relentless.tres" id="6_ybg3m"]
+[ext_resource type="Resource" uid="uid://g448w722fsvt" path="res://Autoloads/Resources/Plays/Attack/Spirit/desperate_force.tres" id="7_acwd5"]
+[ext_resource type="Resource" uid="uid://dhajmqdvcc34q" path="res://Autoloads/Resources/Plays/Attack/Spirit/counter.tres" id="8_rbb4o"]
+[ext_resource type="Resource" uid="uid://uq8s0r3eswi2" path="res://Autoloads/Resources/Plays/Attack/Body/launch.tres" id="9_rxjq8"]
+[ext_resource type="Resource" uid="uid://ccaahq60wfk0e" path="res://Autoloads/Resources/Plays/Attack/Spirit/pepshot.tres" id="10_tq7xy"]
+[ext_resource type="Texture2D" uid="uid://cv8u1oxmwed25" path="res://Autoloads/Resources/Beastie/Woollie/icon_woollie.png" id="11_8cad6"]
+[ext_resource type="Resource" uid="uid://b4s0d72rrcla6" path="res://Autoloads/Resources/Plays/Attack/Spirit/burnout.tres" id="11_reqmo"]
+[ext_resource type="Resource" uid="uid://bq0va3t2lu7gm" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="17_cxs6n"]
+[ext_resource type="Resource" uid="uid://bbssb3w0wahh6" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="18_584es"]
+[ext_resource type="Resource" uid="uid://camyp3pk4s2xy" path="res://Autoloads/Resources/Plays/Attack/Spirit/thriller.tres" id="23_0kbiu"]
+[ext_resource type="Resource" uid="uid://baf1yq3mq16tu" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="24_3m8lx"]
+[ext_resource type="Resource" uid="uid://maegmkmvt031" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="25_hqaiu"]
+[ext_resource type="Resource" uid="uid://6hu01s3a2n05" path="res://Autoloads/Resources/Plays/Attack/Spirit/thrash.tres" id="28_1kxpq"]
+[ext_resource type="Resource" uid="uid://kij1ilq37be5" path="res://Autoloads/Resources/Plays/Attack/Body/true_strike.tres" id="31_bfxgd"]
+[ext_resource type="Resource" uid="uid://dvit2g10fjm6j" path="res://Autoloads/Resources/Plays/Attack/Spirit/comeback.tres" id="32_85ll5"]
+[ext_resource type="Resource" uid="uid://b004jebtlwirj" path="res://Autoloads/Resources/Trait/watchtower.tres" id="34_2e8o2"]
+
+[resource]
+script = ExtResource("3_dyvpn")
+my_plays = Array[ExtResource("1_h8tfn")]([null, null, null])
+my_trait = ExtResource("2_dyvpn")
+specie_name = "Woollie"
+internal_name = "dog1"
+beastiepedia_id = 22
+is_nfe = true
+bar_color = Color(0.8039216, 0.34117648, 0.23529412, 1)
+body_base_pow = 53
+spirit_base_pow = 59
+mind_base_pow = 21
+body_base_def = 68
+spirit_base_def = 75
+mind_base_def = 42
+plays_string_array = Array[String](["bump", "hawkeye", "dig", "relentless", "desperate force", "counter", "launch", "pepshot", "net rush", "cover", "juggle", "mark", "shield", "quick tag", "energized", "vigor beam", "goo-goo eyes", "whistle", "burnout", "role reverse", "thriller", "dive", "spitball", "steal", "shake off", "thrash", "excited pass", "forward pass", "true strike", "comeback"])
+traits_string_array = Array[String](["fetch", "watchtower"])
+possible_plays = Array[ExtResource("1_h8tfn")]([ExtResource("3_8gvyy"), ExtResource("6_ybg3m"), ExtResource("7_acwd5"), ExtResource("8_rbb4o"), ExtResource("9_rxjq8"), ExtResource("10_tq7xy"), ExtResource("17_cxs6n"), ExtResource("18_584es"), ExtResource("11_reqmo"), ExtResource("23_0kbiu"), ExtResource("24_3m8lx"), ExtResource("25_hqaiu"), ExtResource("28_1kxpq"), ExtResource("31_bfxgd"), ExtResource("32_85ll5")])
+possible_traits = Array[ExtResource("2_dchmj")]([ExtResource("2_dyvpn"), ExtResource("34_2e8o2")])
+sprites = Dictionary[int, Texture2D]({
+6: ExtResource("11_8cad6")
+})
+ball_anchor_position_receive = Vector2(38, -127)
+ball_anchor_position_ready = Vector2(96, -100)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

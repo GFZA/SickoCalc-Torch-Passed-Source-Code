@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://cwwdwghrp4cco"]
+[gd_resource type="Resource" script_class="Attack" load_steps=2 format=3 uid="uid://bsxg1aevss6ry"]
 
 [ext_resource type="Script" uid="uid://bc63soeia1eb1" path="res://Autoloads/Resources/Plays/Attack/attack.gd" id="1_w4iud"]
 
@@ -7,6 +7,6 @@ script = ExtResource("1_w4iud")
 name = "Precision Strike"
 target = 3
 base_pow = 0
-descrition = "Auto-targets back row. Always does 30 damage."
+descrition = "Auto-targets back row. Always does 30 damage. Ignores shields and UP1 BOOSTS."
 type = 2
 metadata/_custom_type_script = "uid://bc63soeia1eb1"

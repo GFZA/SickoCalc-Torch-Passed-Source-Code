@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://da1x58q80evos"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_qfmtq"]
+[ext_resource type="Resource" uid="uid://dwqt1jhpqsqeq" path="res://Autoloads/Resources/Trait/launcher.tres" id="2_78gsq"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_snm28"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_78gsq"]
+[ext_resource type="Resource" uid="uid://wb5u2h0tv0wm" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="3_kx75n"]
+[ext_resource type="Resource" uid="uid://dl3ygremr2gnn" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="4_4njm1"]
+[ext_resource type="Resource" uid="uid://c0311mnuib5cq" path="res://Autoloads/Resources/Plays/Attack/Body/rocket.tres" id="5_xo4u2"]
+[ext_resource type="Resource" uid="uid://bbaqfpex23sp0" path="res://Autoloads/Resources/Plays/Attack/Body/hyperspike.tres" id="6_y165n"]
+[ext_resource type="Resource" uid="uid://uq8s0r3eswi2" path="res://Autoloads/Resources/Plays/Attack/Body/launch.tres" id="7_o8cqp"]
+[ext_resource type="Resource" uid="uid://nj7bo2jh52pr" path="res://Autoloads/Resources/Plays/Attack/Body/muscle_memory.tres" id="8_mwysh"]
+[ext_resource type="Resource" uid="uid://cn881fmj7tjus" path="res://Autoloads/Resources/Plays/Attack/Body/shove.tres" id="9_ug26c"]
+[ext_resource type="Texture2D" uid="uid://uixnevnwaua1" path="res://Autoloads/Resources/Beastie/Waglash/icon_waglash.png" id="11_kkcul"]
+[ext_resource type="Resource" uid="uid://s2rfx2brbkjp" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="24_abj3l"]
+[ext_resource type="Resource" uid="uid://cu6eewr3xyhwp" path="res://Autoloads/Resources/Trait/steadfast.tres" id="26_sd7k6"]
+
+[resource]
+script = ExtResource("3_78gsq")
+my_plays = Array[ExtResource("1_qfmtq")]([null, null, null])
+my_trait = ExtResource("2_78gsq")
+specie_name = "Waglash"
+internal_name = "shark1"
+beastiepedia_id = 58
+is_nfe = true
+bar_color = Color(1, 0.2627451, 0.12156863, 1)
+body_base_pow = 70
+spirit_base_pow = 25
+mind_base_pow = 35
+body_base_def = 40
+spirit_base_def = 65
+mind_base_def = 75
+plays_string_array = Array[String](["thump", "breaker", "rocket", "hyperspike", "launch", "muscle memory", "shove", "exhaust", "trait dance", "flex", "quick breath", "hunker", "body ready", "shield", "dig", "pump up", "cyclone", "high five", "smack", "jeer", "shake off", "basic hit"])
+traits_string_array = Array[String](["launcher", "steadfast"])
+possible_plays = Array[ExtResource("1_qfmtq")]([ExtResource("3_kx75n"), ExtResource("4_4njm1"), ExtResource("5_xo4u2"), ExtResource("6_y165n"), ExtResource("7_o8cqp"), ExtResource("8_mwysh"), ExtResource("9_ug26c"), ExtResource("24_abj3l")])
+possible_traits = Array[ExtResource("2_snm28")]([ExtResource("2_78gsq"), ExtResource("26_sd7k6")])
+sprites = Dictionary[int, Texture2D]({
+6: ExtResource("11_kkcul")
+})
+y_offset = -10
+ball_anchor_position_receive = Vector2(30, -70)
+ball_anchor_position_ready = Vector2(60, -65)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=14 format=3 uid="uid://cdp6hirl1oo7f"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_2t786"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_ccr71"]
+[ext_resource type="Resource" uid="uid://blyx4yhsa8jh8" path="res://Autoloads/Resources/Trait/intangible.tres" id="2_fuqqy"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_fuqqy"]
+[ext_resource type="Resource" uid="uid://bhqeqwobkmkmm" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="4_vty2r"]
+[ext_resource type="Resource" uid="uid://cuuc60lnkhsv1" path="res://Autoloads/Resources/Plays/Attack/Mind/slice.tres" id="5_xwpu0"]
+[ext_resource type="Resource" uid="uid://bu7lpmvoakuwl" path="res://Autoloads/Resources/Plays/Attack/Mind/cornershot.tres" id="6_ewdeu"]
+[ext_resource type="Texture2D" uid="uid://dp5sojbdihh80" path="res://Autoloads/Resources/Beastie/Gastic/icon_gastic.png" id="11_0gs1c"]
+[ext_resource type="Resource" uid="uid://bhtwwc0s5xk2i" path="res://Autoloads/Resources/Plays/Attack/Mind/nerve_strike.tres" id="17_ohnkf"]
+[ext_resource type="Resource" uid="uid://bu14usafsgtsi" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="22_0oi40"]
+[ext_resource type="Resource" uid="uid://7735wtodpfd0" path="res://Autoloads/Resources/Plays/Attack/Mind/echo_strike.tres" id="24_r87ru"]
+[ext_resource type="Resource" uid="uid://lmfl1gfvlwql" path="res://Autoloads/Resources/Plays/Attack/Mind/soulcursher.tres" id="28_j8aky"]
+[ext_resource type="Resource" uid="uid://clak4ft8xg32d" path="res://Autoloads/Resources/Plays/Attack/Mind/freezeray.tres" id="29_yxpdl"]
+
+[resource]
+script = ExtResource("3_fuqqy")
+my_plays = Array[ExtResource("1_2t786")]([null, null, null])
+my_trait = ExtResource("2_fuqqy")
+specie_name = "Gastic"
+internal_name = "ghost1"
+beastiepedia_id = 44
+is_nfe = true
+bar_color = Color(0.6784314, 0.33333334, 0.76862746, 1)
+body_base_pow = 5
+spirit_base_pow = 32
+mind_base_pow = 54
+body_base_def = 77
+spirit_base_def = 18
+mind_base_def = 49
+plays_string_array = Array[String](["hex", "mindfield", "slice", "cornershot", "cover", "refresh", "teleport", "feint", "meditate", "staredown", "jeer", "mark", "hawkeye", "patience", "nerve strike", "shield", "dispel", "heat up", "dreadful mist", "rattle", "gloom", "echo strike", "menace", "exhaust", "wink", "soulcrusher", "freezeray", "stinky"])
+traits_string_array = Array[String](["intangible"])
+possible_plays = Array[ExtResource("1_2t786")]([ExtResource("4_vty2r"), ExtResource("5_xwpu0"), ExtResource("6_ewdeu"), ExtResource("17_ohnkf"), ExtResource("22_0oi40"), ExtResource("24_r87ru"), ExtResource("28_j8aky"), ExtResource("29_yxpdl")])
+possible_traits = Array[ExtResource("2_ccr71")]([ExtResource("2_fuqqy")])
+sprites = Dictionary[int, Texture2D]({
+6: ExtResource("11_0gs1c")
+})
+y_offset = -35
+ball_anchor_position_receive = Vector2(32, -68)
+ball_anchor_position_ready = Vector2(56, -116)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

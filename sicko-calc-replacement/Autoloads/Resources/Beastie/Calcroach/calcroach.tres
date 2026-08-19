@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://cl8qksv3esf5x"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_mdmie"]
+[ext_resource type="Resource" uid="uid://cqqqwhvet3aki" path="res://Autoloads/Resources/Trait/study.tres" id="2_06y1g"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_jow2q"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_06y1g"]
+[ext_resource type="Resource" uid="uid://c88rcatq6gk4y" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_dhk4g"]
+[ext_resource type="Resource" uid="uid://dvywg8hgfbpi4" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="4_tmkrc"]
+[ext_resource type="Resource" uid="uid://bjvubmjc3wd2w" path="res://Autoloads/Resources/Plays/Attack/Mind/floater.tres" id="5_3dxvh"]
+[ext_resource type="Resource" uid="uid://c1nbc6xnb8cix" path="res://Autoloads/Resources/Plays/Attack/Mind/cold_calculation.tres" id="6_w5jve"]
+[ext_resource type="Resource" uid="uid://dlodpoblex8aw" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="7_fgf81"]
+[ext_resource type="Resource" uid="uid://bcddvnkea0a6i" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="8_0me2l"]
+[ext_resource type="Resource" uid="uid://bq0va3t2lu7gm" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="9_kpw1h"]
+[ext_resource type="Texture2D" uid="uid://cfcbgkggwschx" path="res://Autoloads/Resources/Beastie/Calcroach/icon_calcroach.png" id="11_plac6"]
+[ext_resource type="Resource" uid="uid://mgi45vtu8scp" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="24_uw21e"]
+[ext_resource type="Resource" uid="uid://bhqeqwobkmkmm" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="25_aiia8"]
+[ext_resource type="Resource" uid="uid://cevk477q1nav3" path="res://Autoloads/Resources/Plays/Attack/Mind/tool.tres" id="26_hijui"]
+
+[resource]
+script = ExtResource("3_06y1g")
+my_plays = Array[ExtResource("1_mdmie")]([null, null, null])
+my_trait = ExtResource("2_06y1g")
+specie_name = "Calcroach"
+internal_name = "nerd1"
+beastiepedia_id = 83
+is_nfe = true
+bar_color = Color(0.16078432, 0.6745098, 1, 1)
+body_base_pow = 38
+spirit_base_pow = 16
+mind_base_pow = 85
+body_base_def = 43
+spirit_base_def = 36
+mind_base_def = 80
+plays_string_array = Array[String](["practice shot", "tracker", "floater", "cold calculation", "prepared attack", "rainbow", "energized", "cover", "tactical pass", "call out", "meditate", "exhaust", "overthink", "mark", "lay trap", "hawkeye", "shield", "mind read", "telekinesis", "assess", "dispel", "stinger", "mindfield", "tool"])
+traits_string_array = Array[String](["study"])
+possible_plays = Array[ExtResource("1_mdmie")]([ExtResource("3_dhk4g"), ExtResource("4_tmkrc"), ExtResource("5_3dxvh"), ExtResource("6_w5jve"), ExtResource("7_fgf81"), ExtResource("8_0me2l"), ExtResource("9_kpw1h"), ExtResource("24_uw21e"), ExtResource("25_aiia8"), ExtResource("26_hijui")])
+possible_traits = Array[ExtResource("2_jow2q")]([ExtResource("2_06y1g")])
+sprites = Dictionary[int, Texture2D]({
+6: ExtResource("11_plac6")
+})
+ball_anchor_position_receive = Vector2(-10, -66)
+ball_anchor_position_ready = Vector2(48, -90)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

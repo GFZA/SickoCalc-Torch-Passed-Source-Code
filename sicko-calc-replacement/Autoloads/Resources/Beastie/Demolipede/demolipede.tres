@@ -1,26 +1,27 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://d2khnn5ryqq2v"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://cs8p316n4ek7p"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_vjhpb"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_ipj00"]
-[ext_resource type="Resource" uid="uid://wm3bnbsrsel" path="res://Autoloads/Resources/Trait/watchtower.tres" id="2_mh4dv"]
-[ext_resource type="Resource" uid="uid://dc0b8j0fujpbd" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="3_fajae"]
+[ext_resource type="Resource" uid="uid://b004jebtlwirj" path="res://Autoloads/Resources/Trait/watchtower.tres" id="2_mh4dv"]
+[ext_resource type="Resource" uid="uid://s2rfx2brbkjp" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="3_fajae"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_tr6kv"]
-[ext_resource type="Resource" uid="uid://bso8xjw2fie52" path="res://Autoloads/Resources/Trait/wallbreaker.tres" id="4_c46k2"]
-[ext_resource type="Resource" uid="uid://xatg4jj1ib0k" path="res://Autoloads/Resources/Plays/Attack/Body/sidewinder.tres" id="5_eo6o0"]
-[ext_resource type="Resource" uid="uid://ooe1a5sxb6wn" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="7_kp8jf"]
-[ext_resource type="Resource" uid="uid://b3bvfpjwplhwn" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="10_uvvf8"]
-[ext_resource type="Resource" uid="uid://dqbap051upqpl" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="13_rg64q"]
-[ext_resource type="Resource" uid="uid://32wc5cr5dtuo" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="14_asxgm"]
-[ext_resource type="Resource" uid="uid://6lu5dwdsnlss" path="res://Autoloads/Resources/Plays/Attack/Body/rocket.tres" id="15_pha0r"]
+[ext_resource type="Resource" uid="uid://p80bbmytiwqg" path="res://Autoloads/Resources/Plays/Attack/Body/sidewinder.tres" id="4_eo6o0"]
+[ext_resource type="Resource" uid="uid://c0311mnuib5cq" path="res://Autoloads/Resources/Plays/Attack/Body/rocket.tres" id="6_3kiae"]
+[ext_resource type="Resource" uid="uid://5ltjg2ttl7gj" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="7_kp8jf"]
+[ext_resource type="Resource" uid="uid://cvdicau5iv3vh" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="7_uvvf8"]
+[ext_resource type="Resource" uid="uid://wb5u2h0tv0wm" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="8_rg64q"]
+[ext_resource type="Resource" uid="uid://ewie1sj4rkcg" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="9_asxgm"]
 [ext_resource type="Texture2D" uid="uid://lcw15gyrncmx" path="res://Autoloads/Resources/Beastie/Demolipede/icon_demolipede.png" id="15_xg4av"]
-[ext_resource type="Resource" uid="uid://ddnch0ufpde3l" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="16_lhucw"]
-[ext_resource type="Resource" uid="uid://51titaex4o3e" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="17_gw4qo"]
+[ext_resource type="Resource" uid="uid://dl3ygremr2gnn" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="17_gw4qo"]
+[ext_resource type="Resource" uid="uid://baf1yq3mq16tu" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="24_mmiyl"]
+[ext_resource type="Resource" uid="uid://cnuhl6sca4x2n" path="res://Autoloads/Resources/Trait/wallbreaker.tres" id="26_es82v"]
 
 [resource]
 script = ExtResource("3_tr6kv")
 my_plays = Array[ExtResource("1_vjhpb")]([null, null, null])
 my_trait = ExtResource("2_mh4dv")
 specie_name = "Demolipede"
+internal_name = "millipede"
 beastiepedia_id = 79
 bar_color = Color(0.9372549, 0.58431375, 0, 1)
 body_base_pow = 88
@@ -29,43 +30,10 @@ mind_base_pow = 48
 body_base_def = 88
 spirit_base_def = 58
 mind_base_def = 98
-plays_string = "From Levels:
-1
-Basic Hit
-1
-Dig
-10
-Sidewinder
-14
-Rumble
-19
-Demolish
-25
-Clear Field
-30
-Shield
-36
-Thump
-40
-Mark
-44
-Exhaust
-48
-Overpower
-From Friends:
-High Slam
-Rocket
-Dive
-Breaker
-Forward Pass
-Jeer
-Lock Target
-Frazzle
-Heart Harden
-Mind Read
-Patience"
-possible_plays = Array[ExtResource("1_vjhpb")]([ExtResource("3_fajae"), ExtResource("5_eo6o0"), ExtResource("7_kp8jf"), ExtResource("10_uvvf8"), ExtResource("13_rg64q"), ExtResource("14_asxgm"), ExtResource("15_pha0r"), ExtResource("16_lhucw"), ExtResource("17_gw4qo")])
-possible_traits = Array[ExtResource("2_ipj00")]([ExtResource("2_mh4dv"), ExtResource("4_c46k2")])
+plays_string_array = Array[String](["basic hit", "sidewinder", "breaker", "rocket", "high slam", "thump", "overpower", "lock target", "rumble", "jeer", "exhaust", "patience", "shield", "mind read", "heart harden", "frazzle", "demolish", "dig", "forward pass", "clear field", "mark", "dive"])
+traits_string_array = Array[String](["watchtower", "wallbreaker"])
+possible_plays = Array[ExtResource("1_vjhpb")]([ExtResource("3_fajae"), ExtResource("4_eo6o0"), ExtResource("17_gw4qo"), ExtResource("6_3kiae"), ExtResource("7_uvvf8"), ExtResource("8_rg64q"), ExtResource("9_asxgm"), ExtResource("7_kp8jf"), ExtResource("24_mmiyl")])
+possible_traits = Array[ExtResource("2_ipj00")]([ExtResource("2_mh4dv"), ExtResource("26_es82v")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("15_xg4av")
 })

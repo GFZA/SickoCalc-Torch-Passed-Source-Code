@@ -1,32 +1,33 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=22 format=3 uid="uid://p3w6m5pl8mjy"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=22 format=3 uid="uid://b4d33h8j80ps7"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_7vuc1"]
-[ext_resource type="Resource" uid="uid://cdtatdc12icql" path="res://Autoloads/Resources/Trait/overwrite.tres" id="2_7fdah"]
+[ext_resource type="Resource" uid="uid://b3e16rckb5hn7" path="res://Autoloads/Resources/Trait/overwrite.tres" id="2_7fdah"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_gt5ta"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_8rjds"]
-[ext_resource type="Resource" uid="uid://cq8dhafy2aqe5" path="res://Autoloads/Resources/Plays/Attack/Spirit/pepshot.tres" id="3_hejqy"]
-[ext_resource type="Resource" uid="uid://bqqsp4q4rpaet" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="6_g1aol"]
-[ext_resource type="Resource" uid="uid://xuq2krgioyg5" path="res://Autoloads/Resources/Plays/Attack/Spirit/jammer.tres" id="7_idgjv"]
-[ext_resource type="Resource" uid="uid://du31ndfut0hoa" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="9_wa38k"]
-[ext_resource type="Resource" uid="uid://bojb10i043gnl" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="11_8567r"]
-[ext_resource type="Resource" uid="uid://dqbap051upqpl" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="12_iyrtc"]
-[ext_resource type="Resource" uid="uid://tmx3od063v8l" path="res://Autoloads/Resources/Plays/Attack/Spirit/contest.tres" id="14_sru5a"]
-[ext_resource type="Resource" uid="uid://deeuy477kp33d" path="res://Autoloads/Resources/Plays/Attack/Body/hyperspike.tres" id="15_as84x"]
-[ext_resource type="Resource" uid="uid://br2xlvc1ky06q" path="res://Autoloads/Resources/Plays/Attack/Body/kneebender.tres" id="16_ctvac"]
-[ext_resource type="Resource" uid="uid://c346ver25emiu" path="res://Autoloads/Resources/Plays/Attack/Spirit/passion_strike.tres" id="17_a4e10"]
-[ext_resource type="Resource" uid="uid://bcvrnhx6jhwoj" path="res://Autoloads/Resources/Plays/Attack/Spirit/challenge.tres" id="18_rl300"]
-[ext_resource type="Resource" uid="uid://4bo2qruocep5" path="res://Autoloads/Resources/Plays/Attack/Spirit/thriller.tres" id="19_p1frc"]
-[ext_resource type="Resource" uid="uid://pq5ehf531if5" path="res://Autoloads/Resources/Plays/Attack/Spirit/cook.tres" id="20_dfl7h"]
-[ext_resource type="Resource" uid="uid://d0kxbfqagglny" path="res://Autoloads/Resources/Plays/Attack/Spirit/steamer.tres" id="21_q4ok7"]
-[ext_resource type="Resource" uid="uid://bbtfkfi4i2py6" path="res://Autoloads/Resources/Plays/Attack/Mind/perfect_shot.tres" id="22_ff62j"]
+[ext_resource type="Resource" uid="uid://ccaahq60wfk0e" path="res://Autoloads/Resources/Plays/Attack/Spirit/pepshot.tres" id="3_hejqy"]
+[ext_resource type="Resource" uid="uid://bcddvnkea0a6i" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="4_aogw2"]
+[ext_resource type="Resource" uid="uid://bgsxb4yxk5aqh" path="res://Autoloads/Resources/Plays/Attack/Spirit/contest.tres" id="6_yle7y"]
+[ext_resource type="Resource" uid="uid://maegmkmvt031" path="res://Autoloads/Resources/Plays/Attack/Mind/spitball.tres" id="7_g1aol"]
+[ext_resource type="Resource" uid="uid://dkacdwk0xgf5d" path="res://Autoloads/Resources/Plays/Attack/Spirit/jammer.tres" id="8_idgjv"]
+[ext_resource type="Resource" uid="uid://dlodpoblex8aw" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="9_qk0wt"]
+[ext_resource type="Resource" uid="uid://bbaqfpex23sp0" path="res://Autoloads/Resources/Plays/Attack/Body/hyperspike.tres" id="10_wa38k"]
+[ext_resource type="Resource" uid="uid://bdpky68n6shu8" path="res://Autoloads/Resources/Plays/Attack/Mind/perfect_shot.tres" id="11_k5wqc"]
+[ext_resource type="Resource" uid="uid://bq0va3t2lu7gm" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="21_ctvac"]
+[ext_resource type="Resource" uid="uid://ewie1sj4rkcg" path="res://Autoloads/Resources/Plays/Attack/Body/overpower.tres" id="22_a4e10"]
 [ext_resource type="Texture2D" uid="uid://dgw7fyeacdjcg" path="res://Autoloads/Resources/Beastie/Diabloceras/icon_diabloceras.png" id="22_qk1cp"]
-[ext_resource type="Resource" uid="uid://dxpdlo5hbqo7w" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="23_ake0p"]
+[ext_resource type="Resource" uid="uid://5bs4vk6u3yin" path="res://Autoloads/Resources/Plays/Attack/Body/kneebender.tres" id="24_p1frc"]
+[ext_resource type="Resource" uid="uid://b8fvwd3wlvdqm" path="res://Autoloads/Resources/Plays/Attack/Spirit/steamer.tres" id="25_dfl7h"]
+[ext_resource type="Resource" uid="uid://camyp3pk4s2xy" path="res://Autoloads/Resources/Plays/Attack/Spirit/thriller.tres" id="28_ake0p"]
+[ext_resource type="Resource" uid="uid://cx8x63cuyg161" path="res://Autoloads/Resources/Plays/Attack/Spirit/cook.tres" id="32_0y0wo"]
+[ext_resource type="Resource" uid="uid://ck1jyxfcibvjc" path="res://Autoloads/Resources/Plays/Attack/Spirit/passion_strike.tres" id="34_thxga"]
+[ext_resource type="Resource" uid="uid://c7gemo3wnvcwo" path="res://Autoloads/Resources/Plays/Attack/Spirit/challenge.tres" id="35_w5i02"]
 
 [resource]
 script = ExtResource("3_8rjds")
 my_plays = Array[ExtResource("1_7vuc1")]([null, null, null])
 my_trait = ExtResource("2_7fdah")
 specie_name = "Diabloceras"
+internal_name = "rainbowmon"
 beastiepedia_id = 104
 bar_color = Color(0.24313726, 1, 0.54509807, 1)
 body_base_pow = 66
@@ -35,57 +36,9 @@ mind_base_pow = 66
 body_base_def = 108
 spirit_base_def = 83
 mind_base_def = 68
-plays_string = "From Levels:
-1
-Pepshot
-1
-Gloom
-10
-Mimic
-14
-Spitball
-17
-Jammer
-23
-Pump Up
-28
-Energized
-34
-Dramatic Exit
-37
-Rainbow
-43
-Overpower
-48
-Trait Dance
-52
-Contest
-From Friends:
-Hyperspike
-Kneebender
-Passion Strike
-Challenge
-Thriller
-Cook
-Steamer
-Perfect Shot
-Prepared Attack
-Excited Pass
-Forward Pass
-Juggle
-Call Out
-Exhaust
-Goo-Goo Eyes
-Mark
-Overthink
-Rally
-Reign
-Cyclone
-Distraction
-Hawkeye
-Heart Harden
-Shield"
-possible_plays = Array[ExtResource("1_7vuc1")]([ExtResource("3_hejqy"), ExtResource("6_g1aol"), ExtResource("7_idgjv"), ExtResource("9_wa38k"), ExtResource("11_8567r"), ExtResource("12_iyrtc"), ExtResource("14_sru5a"), ExtResource("15_as84x"), ExtResource("16_ctvac"), ExtResource("17_a4e10"), ExtResource("18_rl300"), ExtResource("19_p1frc"), ExtResource("20_dfl7h"), ExtResource("21_q4ok7"), ExtResource("22_ff62j"), ExtResource("23_ake0p")])
+plays_string_array = Array[String](["pepshot", "rainbow", "shield", "contest", "spitball", "jammer", "prepared attack", "hyperspike", "perfect shot", "excited pass", "forward pass", "hawkeye", "goo-goo eyes", "cyclone", "mark", "exhaust", "call out", "overthink", "energized", "overpower", "distraction", "kneebender", "steamer", "rally", "dramatic exit", "thriller", "trait dance", "juggle", "heart harden", "cook", "gloom", "passion strike", "challenge", "pump up", "mimic", "reign"])
+traits_string_array = Array[String](["overwrite"])
+possible_plays = Array[ExtResource("1_7vuc1")]([ExtResource("3_hejqy"), ExtResource("4_aogw2"), ExtResource("6_yle7y"), ExtResource("7_g1aol"), ExtResource("8_idgjv"), ExtResource("9_qk0wt"), ExtResource("10_wa38k"), ExtResource("11_k5wqc"), ExtResource("21_ctvac"), ExtResource("22_a4e10"), ExtResource("24_p1frc"), ExtResource("25_dfl7h"), ExtResource("28_ake0p"), ExtResource("32_0y0wo"), ExtResource("34_thxga"), ExtResource("35_w5i02")])
 possible_traits = Array[ExtResource("2_gt5ta")]([ExtResource("2_7fdah")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("22_qk1cp")

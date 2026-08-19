@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=21 format=3 uid="uid://dd3kmjyj88jdh"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_mp8di"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_q0etv"]
+[ext_resource type="Resource" uid="uid://dtl83silkfkk4" path="res://Autoloads/Resources/Trait/restoration.tres" id="2_ws7rh"]
+[ext_resource type="Resource" uid="uid://c88rcatq6gk4y" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_q5wht"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_ws7rh"]
+[ext_resource type="Resource" uid="uid://fgq2455h2ohi" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="5_xxx1q"]
+[ext_resource type="Resource" uid="uid://bsxg1aevss6ry" path="res://Autoloads/Resources/Plays/Attack/Mind/precision_strike.tres" id="6_io7xw"]
+[ext_resource type="Resource" uid="uid://mgi45vtu8scp" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="7_n5c78"]
+[ext_resource type="Resource" uid="uid://dro8ty8hatxdx" path="res://Autoloads/Resources/Plays/Attack/Body/power_sap.tres" id="9_sp0te"]
+[ext_resource type="Texture2D" uid="uid://dmn3g5nh0meoq" path="res://Autoloads/Resources/Beastie/Proteos/icon_proteos.png" id="11_dr2g0"]
+[ext_resource type="Resource" uid="uid://bcddvnkea0a6i" path="res://Autoloads/Resources/Plays/Attack/Mind/rainbow.tres" id="11_kyxxf"]
+[ext_resource type="Resource" uid="uid://bbssb3w0wahh6" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="13_imjgh"]
+[ext_resource type="Resource" uid="uid://4glrathop5to" path="res://Autoloads/Resources/Plays/Attack/Body/spike.tres" id="14_h2mo6"]
+[ext_resource type="Resource" uid="uid://cvdicau5iv3vh" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="15_g4qjp"]
+[ext_resource type="Resource" uid="uid://dlodpoblex8aw" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="16_tj7r3"]
+[ext_resource type="Resource" uid="uid://bhqeqwobkmkmm" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="17_a3bbw"]
+[ext_resource type="Resource" uid="uid://c0311mnuib5cq" path="res://Autoloads/Resources/Plays/Attack/Body/rocket.tres" id="26_4t0e8"]
+[ext_resource type="Resource" uid="uid://bod5yvhemrq2g" path="res://Autoloads/Resources/Plays/Attack/Mind/ego_blast.tres" id="28_if3y3"]
+[ext_resource type="Resource" uid="uid://kij1ilq37be5" path="res://Autoloads/Resources/Plays/Attack/Body/true_strike.tres" id="29_v06qr"]
+[ext_resource type="Resource" uid="uid://b4npttbg8ic61" path="res://Autoloads/Resources/Trait/torpor.tres" id="32_bj6ul"]
+
+[resource]
+script = ExtResource("3_ws7rh")
+my_plays = Array[ExtResource("1_mp8di")]([null, null, null])
+my_trait = ExtResource("2_ws7rh")
+specie_name = "Proteos"
+internal_name = "olm1"
+beastiepedia_id = 92
+is_nfe = true
+bar_color = Color(0.40392157, 0.78431374, 1, 1)
+body_base_pow = 50
+spirit_base_pow = 25
+mind_base_pow = 60
+body_base_def = 40
+spirit_base_def = 45
+mind_base_def = 70
+plays_string_array = Array[String](["practice shot", "shield", "relaxed hit", "precision strike", "stinger", "assess", "power sap", "cover", "rainbow", "meditate", "vigor beam", "spike", "high slam", "prepared attack", "mindfield", "tactical pass", "deep breath", "flex", "telekinesis", "patience", "cyclone", "exhaust", "fall back", "rocket", "menace", "ego blast", "true strike", "chill out"])
+traits_string_array = Array[String](["restoration", "torpor"])
+possible_plays = Array[ExtResource("1_mp8di")]([ExtResource("3_q5wht"), ExtResource("5_xxx1q"), ExtResource("6_io7xw"), ExtResource("7_n5c78"), ExtResource("9_sp0te"), ExtResource("11_kyxxf"), ExtResource("13_imjgh"), ExtResource("14_h2mo6"), ExtResource("15_g4qjp"), ExtResource("16_tj7r3"), ExtResource("17_a3bbw"), ExtResource("26_4t0e8"), ExtResource("28_if3y3"), ExtResource("29_v06qr")])
+possible_traits = Array[ExtResource("2_q0etv")]([ExtResource("2_ws7rh"), ExtResource("32_bj6ul")])
+sprites = Dictionary[int, Texture2D]({
+6: ExtResource("11_dr2g0")
+})
+y_offset = -20
+ball_anchor_position_receive = Vector2(10, -90)
+ball_anchor_position_ready = Vector2(60, -75)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

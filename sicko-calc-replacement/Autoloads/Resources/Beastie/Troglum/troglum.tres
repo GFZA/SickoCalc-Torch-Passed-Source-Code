@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=24 format=3 uid="uid://c3e55ykba7lpo"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_ksfct"]
+[ext_resource type="Resource" uid="uid://b7uo748wguuah" path="res://Autoloads/Resources/Trait/unpredictable.tres" id="2_6eo7l"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_mupey"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_6eo7l"]
+[ext_resource type="Resource" uid="uid://cuuc60lnkhsv1" path="res://Autoloads/Resources/Plays/Attack/Mind/slice.tres" id="3_bg0uo"]
+[ext_resource type="Resource" uid="uid://bskxkg6ifl6ut" path="res://Autoloads/Resources/Plays/Attack/Mind/twist.tres" id="5_1odmh"]
+[ext_resource type="Resource" uid="uid://p80bbmytiwqg" path="res://Autoloads/Resources/Plays/Attack/Body/sidewinder.tres" id="6_fmk77"]
+[ext_resource type="Resource" uid="uid://flllnsq6qtxd" path="res://Autoloads/Resources/Plays/Attack/Body/reach_shot.tres" id="7_a6vds"]
+[ext_resource type="Resource" uid="uid://ccvl27stc1tky" path="res://Autoloads/Resources/Plays/Attack/Body/zinger.tres" id="8_74lgp"]
+[ext_resource type="Resource" uid="uid://bu7lpmvoakuwl" path="res://Autoloads/Resources/Plays/Attack/Mind/cornershot.tres" id="9_cnas0"]
+[ext_resource type="Resource" uid="uid://clak4ft8xg32d" path="res://Autoloads/Resources/Plays/Attack/Mind/freezeray.tres" id="10_nc3jf"]
+[ext_resource type="Resource" uid="uid://dvlvjc15g68m7" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="11_exlah"]
+[ext_resource type="Texture2D" uid="uid://bdo7lraiwqxav" path="res://Autoloads/Resources/Beastie/Troglum/icon_troglum.png" id="11_sg7i8"]
+[ext_resource type="Resource" uid="uid://rxrxfpeh5rph" path="res://Autoloads/Resources/Plays/Attack/Mind/dump.tres" id="12_55bhy"]
+[ext_resource type="Resource" uid="uid://c0311mnuib5cq" path="res://Autoloads/Resources/Plays/Attack/Body/rocket.tres" id="23_5abdr"]
+[ext_resource type="Resource" uid="uid://baf1yq3mq16tu" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="26_oe6s3"]
+[ext_resource type="Resource" uid="uid://dgidum4ihswoa" path="res://Autoloads/Resources/Plays/Attack/Body/nice_shot.tres" id="27_sdf2i"]
+[ext_resource type="Resource" uid="uid://bu14usafsgtsi" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="29_2177k"]
+[ext_resource type="Resource" uid="uid://cdionjwwaatqh" path="res://Autoloads/Resources/Plays/Attack/Mind/ricochet.tres" id="31_wu874"]
+[ext_resource type="Resource" uid="uid://mgi45vtu8scp" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="32_xcgq4"]
+[ext_resource type="Resource" uid="uid://d1u53eqrq7al3" path="res://Autoloads/Resources/Plays/Attack/Mind/zigzag.tres" id="34_4nn1a"]
+[ext_resource type="Resource" uid="uid://dfaq17t8jv2vc" path="res://Autoloads/Resources/Plays/Attack/Mind/trickspin.tres" id="35_3ht15"]
+[ext_resource type="Resource" uid="uid://dj006acwiynre" path="res://Autoloads/Resources/Trait/rogue.tres" id="37_u2afh"]
+
+[resource]
+script = ExtResource("3_6eo7l")
+my_plays = Array[ExtResource("1_ksfct")]([null, null, null])
+my_trait = ExtResource("2_6eo7l")
+specie_name = "Troglum"
+internal_name = "tricky1"
+beastiepedia_id = 48
+is_nfe = true
+bar_color = Color(0.75686276, 0.56078434, 0.54509807, 1)
+body_base_pow = 40
+spirit_base_pow = 28
+mind_base_pow = 73
+body_base_def = 35
+spirit_base_def = 45
+mind_base_def = 57
+plays_string_array = Array[String](["slice", "role reverse", "twist", "sidewinder", "reach shot", "zinger", "cornershot", "freezeray", "lure shot", "dump", "net rush", "cover", "refresh", "telekinesis", "teleport", "provoke", "whistle", "lock target", "juggle", "tough front", "rocket", "shield", "frazzle", "dive", "nice shot", "trait dance", "rattle", "dig", "ricochet", "stinger", "clear field", "zigzag", "trickspin"])
+traits_string_array = Array[String](["unpredictable", "rogue"])
+possible_plays = Array[ExtResource("1_ksfct")]([ExtResource("3_bg0uo"), ExtResource("5_1odmh"), ExtResource("6_fmk77"), ExtResource("7_a6vds"), ExtResource("8_74lgp"), ExtResource("9_cnas0"), ExtResource("10_nc3jf"), ExtResource("11_exlah"), ExtResource("12_55bhy"), ExtResource("23_5abdr"), ExtResource("26_oe6s3"), ExtResource("27_sdf2i"), ExtResource("29_2177k"), ExtResource("31_wu874"), ExtResource("32_xcgq4"), ExtResource("34_4nn1a"), ExtResource("35_3ht15")])
+possible_traits = Array[ExtResource("2_mupey")]([ExtResource("2_6eo7l"), ExtResource("37_u2afh")])
+sprites = Dictionary[int, Texture2D]({
+6: ExtResource("11_sg7i8")
+})
+y_offset = -10
+ball_anchor_position_receive = Vector2(38, -20)
+ball_anchor_position_ready = Vector2(60, -75)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

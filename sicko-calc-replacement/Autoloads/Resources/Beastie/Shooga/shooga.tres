@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://codgwnp7jbkcg"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_yfpjk"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_hecqd"]
+[ext_resource type="Resource" uid="uid://dcwc0edr003lc" path="res://Autoloads/Resources/Trait/scavenger.tres" id="2_pqwsh"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_pqwsh"]
+[ext_resource type="Resource" uid="uid://bx8c5vlkglnna" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_r1p1e"]
+[ext_resource type="Resource" uid="uid://dl3ygremr2gnn" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="4_5exp5"]
+[ext_resource type="Resource" uid="uid://5ltjg2ttl7gj" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="5_oq6ki"]
+[ext_resource type="Resource" uid="uid://bbssb3w0wahh6" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="7_y12nb"]
+[ext_resource type="Texture2D" uid="uid://0hk5v0sghru3" path="res://Autoloads/Resources/Beastie/Shooga/icon_shooga.png" id="11_dllnj"]
+[ext_resource type="Resource" uid="uid://varwkuxdkjx4" path="res://Autoloads/Resources/Plays/Attack/Body/thunder.tres" id="20_6oipj"]
+[ext_resource type="Resource" uid="uid://kij1ilq37be5" path="res://Autoloads/Resources/Plays/Attack/Body/true_strike.tres" id="21_641nl"]
+[ext_resource type="Resource" uid="uid://wb5u2h0tv0wm" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="22_bvxwb"]
+[ext_resource type="Resource" uid="uid://baf1yq3mq16tu" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="24_oqcat"]
+[ext_resource type="Resource" uid="uid://c8xo4ymrin8am" path="res://Autoloads/Resources/Trait/flee.tres" id="26_qxrc4"]
+
+[resource]
+script = ExtResource("3_pqwsh")
+my_plays = Array[ExtResource("1_yfpjk")]([null, null, null])
+my_trait = ExtResource("2_pqwsh")
+specie_name = "Shooga"
+internal_name = "possum1"
+beastiepedia_id = 17
+is_nfe = true
+bar_color = Color(0.9882353, 0.4, 0.30980393, 1)
+spirit_base_pow = 18
+mind_base_pow = 22
+body_base_def = 65
+spirit_base_def = 25
+mind_base_def = 57
+plays_string_array = Array[String](["bump", "breaker", "demolish", "dig", "vigor beam", "juggle", "flex", "deep breath", "hawkeye", "forward pass", "cover", "lock target", "mark", "shield", "quick tag", "high five", "patience", "thunder", "true strike", "thump", "build", "dive"])
+traits_string_array = Array[String](["scavenger", "flee"])
+possible_plays = Array[ExtResource("1_yfpjk")]([ExtResource("3_r1p1e"), ExtResource("4_5exp5"), ExtResource("5_oq6ki"), ExtResource("7_y12nb"), ExtResource("20_6oipj"), ExtResource("21_641nl"), ExtResource("22_bvxwb"), ExtResource("24_oqcat")])
+possible_traits = Array[ExtResource("2_hecqd")]([ExtResource("2_pqwsh"), ExtResource("26_qxrc4")])
+sprites = Dictionary[int, Texture2D]({
+6: ExtResource("11_dllnj")
+})
+y_offset = -20
+ball_anchor_position_receive = Vector2(5, -45)
+ball_anchor_position_ready = Vector2(50, -70)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

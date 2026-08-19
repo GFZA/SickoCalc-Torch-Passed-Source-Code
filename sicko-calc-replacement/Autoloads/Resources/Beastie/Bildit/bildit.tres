@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://xodjyvhu3hj"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_q3ort"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_71xvf"]
+[ext_resource type="Resource" uid="uid://00hv21i50yue" path="res://Autoloads/Resources/Trait/full_focus.tres" id="2_p3kms"]
+[ext_resource type="Resource" uid="uid://bx8c5vlkglnna" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_76tdq"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_p3kms"]
+[ext_resource type="Resource" uid="uid://rxrxfpeh5rph" path="res://Autoloads/Resources/Plays/Attack/Mind/dump.tres" id="5_x338a"]
+[ext_resource type="Resource" uid="uid://cevk477q1nav3" path="res://Autoloads/Resources/Plays/Attack/Mind/tool.tres" id="6_kxfob"]
+[ext_resource type="Resource" uid="uid://cfk5xjgct6e78" path="res://Autoloads/Resources/Plays/Attack/Mind/roll_shot.tres" id="7_x4pqm"]
+[ext_resource type="Resource" uid="uid://dvywg8hgfbpi4" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="8_xuh6x"]
+[ext_resource type="Resource" uid="uid://dlodpoblex8aw" path="res://Autoloads/Resources/Plays/Attack/Mind/prepared_attack.tres" id="9_s11ov"]
+[ext_resource type="Resource" uid="uid://bhqeqwobkmkmm" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="10_fjaex"]
+[ext_resource type="Resource" uid="uid://nj7bo2jh52pr" path="res://Autoloads/Resources/Plays/Attack/Body/muscle_memory.tres" id="19_tc61c"]
+[ext_resource type="Resource" uid="uid://dgidum4ihswoa" path="res://Autoloads/Resources/Plays/Attack/Body/nice_shot.tres" id="22_6yt7b"]
+[ext_resource type="Resource" uid="uid://bntwi1r4uwdg4" path="res://Autoloads/Resources/Plays/Attack/Mind/sweep.tres" id="30_y7mc2"]
+[ext_resource type="Resource" uid="uid://d1u53eqrq7al3" path="res://Autoloads/Resources/Plays/Attack/Mind/zigzag.tres" id="31_6lbmx"]
+[ext_resource type="Resource" uid="uid://c88rcatq6gk4y" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="32_m4ux7"]
+[ext_resource type="Resource" uid="uid://dfkkwo31n4fmd" path="res://Autoloads/Resources/Trait/captain.tres" id="35_86nya"]
+[ext_resource type="Texture2D" uid="uid://oi0b5ubmnu02" path="res://Autoloads/Resources/Beastie/Bildit/icon_bildit.png" id="43_s11ov"]
+
+[resource]
+script = ExtResource("3_p3kms")
+my_plays = Array[ExtResource("1_q3ort")]([null, null, null])
+my_trait = ExtResource("2_p3kms")
+specie_name = "Bildit"
+internal_name = "bilby1"
+beastiepedia_id = 11
+is_nfe = true
+bar_color = Color(0.39607844, 0.7294118, 0.99215686, 1)
+body_base_pow = 28
+spirit_base_pow = 17
+mind_base_pow = 65
+body_base_def = 40
+spirit_base_def = 50
+mind_base_def = 70
+plays_string_array = Array[String](["bump", "set", "dump", "tool", "roll shot", "tracker", "prepared attack", "mindfield", "quick set", "pipe", "tactical pass", "net rush", "forward pass", "demanding set", "shield", "refresh", "muscle memory", "lay trap", "build", "nice shot", "shake off", "meditate", "wall", "rumble", "high five", "excited pass", "clear field", "sweep", "zigzag", "practice shot", "dig"])
+traits_string_array = Array[String](["full focus", "captain"])
+possible_plays = Array[ExtResource("1_q3ort")]([ExtResource("3_76tdq"), ExtResource("5_x338a"), ExtResource("6_kxfob"), ExtResource("7_x4pqm"), ExtResource("8_xuh6x"), ExtResource("9_s11ov"), ExtResource("10_fjaex"), ExtResource("19_tc61c"), ExtResource("22_6yt7b"), ExtResource("30_y7mc2"), ExtResource("31_6lbmx"), ExtResource("32_m4ux7")])
+possible_traits = Array[ExtResource("2_71xvf")]([ExtResource("2_p3kms"), ExtResource("35_86nya")])
+sprites = Dictionary[int, Texture2D]({
+6: ExtResource("43_s11ov")
+})
+ball_anchor_position_receive = Vector2(55, -58)
+ball_anchor_position_ready = Vector2(66, -96)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"
