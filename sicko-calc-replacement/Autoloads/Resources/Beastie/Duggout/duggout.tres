@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://dbqf3fpshh3t7"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://dtec3vjiswy0y"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_hpxhf"]
-[ext_resource type="Resource" uid="uid://pyb4kvifsdox" path="res://Autoloads/Resources/Trait/unflappable.tres" id="2_h3r0u"]
+[ext_resource type="Resource" uid="uid://cwbpoxdyhsded" path="res://Autoloads/Resources/Trait/unflappable.tres" id="2_h3r0u"]
 [ext_resource type="Resource" uid="uid://8irsgl20f2ew" path="res://Autoloads/Resources/Plays/Attack/Spirit/pepshot.tres" id="5_h3r0u"]
 [ext_resource type="Resource" uid="uid://jh6i5gw62j55" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="6_rujeu"]
 [ext_resource type="Resource" uid="uid://bc3iw657oth6u" path="res://Autoloads/Resources/Plays/Attack/Spirit/supercommit.tres" id="8_d6vsb"]
@@ -16,7 +16,7 @@
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="28_fuqgc"]
 [ext_resource type="Resource" uid="uid://qfxv11mpmmrd" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="30_nxeup"]
 [ext_resource type="Resource" uid="uid://k4cycu6o4ffn" path="res://Autoloads/Resources/Plays/Attack/Spirit/counter.tres" id="31_xngbf"]
-[ext_resource type="Resource" uid="uid://cwke5k3x4l74c" path="res://Autoloads/Resources/Trait/overwork.tres" id="33_1m6hc"]
+[ext_resource type="Resource" uid="uid://cdkt3d3bdwopf" path="res://Autoloads/Resources/Trait/overwork.tres" id="33_1m6hc"]
 
 [resource]
 script = ExtResource("28_fuqgc")

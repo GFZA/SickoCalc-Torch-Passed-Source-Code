@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://x0b3d0ex70iq"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://c2yguq42ylxo4"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_p0sbs"]
-[ext_resource type="Resource" uid="uid://bbe07fgd15hjk" path="res://Autoloads/Resources/Trait/tractor_beam.tres" id="2_84kce"]
+[ext_resource type="Resource" uid="uid://gqywauxkl1b2" path="res://Autoloads/Resources/Trait/tractor_beam.tres" id="2_84kce"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_lr1h0"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_84kce"]
 [ext_resource type="Resource" uid="uid://4g8s36jowiks" path="res://Autoloads/Resources/Plays/Attack/Mind/freezeray.tres" id="4_6rquf"]

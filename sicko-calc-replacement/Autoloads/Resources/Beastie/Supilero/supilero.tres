@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://b2j634lddgcne"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://ymwhu5ey8haf"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_bfpqm"]
-[ext_resource type="Resource" uid="uid://bfl6g14lvjbpk" path="res://Autoloads/Resources/Trait/forager.tres" id="2_ve7ok"]
+[ext_resource type="Resource" uid="uid://dqwfq8txhjrgg" path="res://Autoloads/Resources/Trait/forager.tres" id="2_ve7ok"]
 [ext_resource type="Resource" uid="uid://b3u25d7p8nlhi" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_bfpqm"]
 [ext_resource type="Resource" uid="uid://sjm5j6045dgt" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="5_3d1f3"]
 [ext_resource type="Resource" uid="uid://bul5jwe1qisst" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="7_ve7ok"]
@@ -12,7 +12,7 @@
 [ext_resource type="Resource" uid="uid://c330d4p6h5uke" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="24_pa5bn"]
 [ext_resource type="Resource" uid="uid://dfq6t4eiyi64b" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="28_86tyb"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="30_4lwbm"]
-[ext_resource type="Resource" uid="uid://cpnwygxki1d4t" path="res://Autoloads/Resources/Trait/confident.tres" id="31_4fn21"]
+[ext_resource type="Resource" uid="uid://cnjym03on3ulf" path="res://Autoloads/Resources/Trait/confident.tres" id="31_4fn21"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="32_yow3n"]
 [ext_resource type="Texture2D" uid="uid://bop7sqeqcogaa" path="res://Autoloads/Resources/Beastie/Supilero/icon_supilero.png" id="33_7msq5"]
 

@@ -1,11 +1,11 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://cgdqo1t6wl2es"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://bhwtaggo6c7b1"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_bdkx8"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_81byg"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_6y1ef"]
 [ext_resource type="Resource" uid="uid://d1l5unu2xxfdh" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="3_is2km"]
 [ext_resource type="Resource" uid="uid://lep6vctbtbfi" path="res://Autoloads/Resources/Plays/Attack/Body/zinger.tres" id="4_34j5v"]
-[ext_resource type="Resource" uid="uid://b0nt2r5udymyk" path="res://Autoloads/Resources/Trait/groove.tres" id="4_y1bsu"]
+[ext_resource type="Resource" uid="uid://yv5adeob01nx" path="res://Autoloads/Resources/Trait/groove.tres" id="4_y1bsu"]
 [ext_resource type="Resource" uid="uid://c330d4p6h5uke" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="6_c16vj"]
 [ext_resource type="Resource" uid="uid://b153wak5pgbil" path="res://Autoloads/Resources/Plays/Attack/Body/stomp.tres" id="7_x7vag"]
 [ext_resource type="Resource" uid="uid://k4cycu6o4ffn" path="res://Autoloads/Resources/Plays/Attack/Spirit/counter.tres" id="9_2wuoq"]
@@ -17,7 +17,7 @@
 [ext_resource type="Resource" uid="uid://c7gaka07n1twm" path="res://Autoloads/Resources/Plays/Attack/Spirit/rousing_strike.tres" id="29_64s0i"]
 [ext_resource type="Resource" uid="uid://ckamqfalbe5g" path="res://Autoloads/Resources/Plays/Attack/Body/slide.tres" id="30_j3s5p"]
 [ext_resource type="Resource" uid="uid://bbmp14ev7tigl" path="res://Autoloads/Resources/Plays/Attack/Spirit/passion_strike.tres" id="31_bxfm8"]
-[ext_resource type="Resource" uid="uid://iosl4f1udxmr" path="res://Autoloads/Resources/Trait/synchronize.tres" id="34_nu8so"]
+[ext_resource type="Resource" uid="uid://c4t1na5aseslv" path="res://Autoloads/Resources/Trait/synchronize.tres" id="34_nu8so"]
 
 [resource]
 script = ExtResource("3_6y1ef")

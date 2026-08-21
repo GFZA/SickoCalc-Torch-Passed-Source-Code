@@ -1,8 +1,8 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://bd05lwwagesix"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://61u3hu0vhhnv"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_aavhy"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_5x0qa"]
-[ext_resource type="Resource" uid="uid://dki54nf7dghbo" path="res://Autoloads/Resources/Trait/armored.tres" id="2_pm4g0"]
+[ext_resource type="Resource" uid="uid://c77xkulu3y3p3" path="res://Autoloads/Resources/Trait/armored.tres" id="2_pm4g0"]
 [ext_resource type="Resource" uid="uid://cm70uava1yg8o" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_5sg5e"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_pm4g0"]
 [ext_resource type="Resource" uid="uid://tnf87fyswfah" path="res://Autoloads/Resources/Plays/Attack/Spirit/steamer.tres" id="4_sf1s4"]

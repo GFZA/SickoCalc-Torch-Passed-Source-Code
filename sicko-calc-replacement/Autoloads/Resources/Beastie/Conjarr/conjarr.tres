@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://cvxmtqunm6lhi"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://dkfjxb0d33qs2"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_cj2tx"]
-[ext_resource type="Resource" uid="uid://chtek5dr2j1ve" path="res://Autoloads/Resources/Trait/cryptic.tres" id="2_2dtr3"]
+[ext_resource type="Resource" uid="uid://d4neeunc6wgad" path="res://Autoloads/Resources/Trait/cryptic.tres" id="2_2dtr3"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_a2f2f"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_g23rx"]
 [ext_resource type="Resource" uid="uid://cpdvsedakhf2s" path="res://Autoloads/Resources/Plays/Attack/Spirit/cut_shot.tres" id="3_p783k"]
@@ -16,7 +16,7 @@
 [ext_resource type="Resource" uid="uid://bscetg05fetwr" path="res://Autoloads/Resources/Plays/Attack/Body/true_strike.tres" id="32_np0q4"]
 [ext_resource type="Resource" uid="uid://cg6adjirx66yj" path="res://Autoloads/Resources/Plays/Attack/Spirit/tornadoball.tres" id="34_3p18a"]
 [ext_resource type="Resource" uid="uid://cm70uava1yg8o" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="36_fao0l"]
-[ext_resource type="Resource" uid="uid://1kkttc2buyoy" path="res://Autoloads/Resources/Trait/enchanter.tres" id="38_p783k"]
+[ext_resource type="Resource" uid="uid://c8sxk1bivmtj6" path="res://Autoloads/Resources/Trait/enchanter.tres" id="38_p783k"]
 
 [resource]
 script = ExtResource("3_g23rx")

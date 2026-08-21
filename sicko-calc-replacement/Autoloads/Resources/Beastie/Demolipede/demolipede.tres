@@ -1,8 +1,8 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://brd50x1gsau6o"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://dj3qup4rnf5ni"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_vjhpb"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_ipj00"]
-[ext_resource type="Resource" uid="uid://idgc5ow4c3lf" path="res://Autoloads/Resources/Trait/watchtower.tres" id="2_mh4dv"]
+[ext_resource type="Resource" uid="uid://b004jebtlwirj" path="res://Autoloads/Resources/Trait/watchtower.tres" id="2_mh4dv"]
 [ext_resource type="Resource" uid="uid://d1l5unu2xxfdh" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="3_fajae"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_tr6kv"]
 [ext_resource type="Resource" uid="uid://u3j21441mj0x" path="res://Autoloads/Resources/Plays/Attack/Body/sidewinder.tres" id="4_eo6o0"]
@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://lcw15gyrncmx" path="res://Autoloads/Resources/Beastie/Demolipede/icon_demolipede.png" id="15_xg4av"]
 [ext_resource type="Resource" uid="uid://sjm5j6045dgt" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="17_gw4qo"]
 [ext_resource type="Resource" uid="uid://c330d4p6h5uke" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="24_mmiyl"]
-[ext_resource type="Resource" uid="uid://3376jxdyb7u" path="res://Autoloads/Resources/Trait/wallbreaker.tres" id="26_es82v"]
+[ext_resource type="Resource" uid="uid://cnuhl6sca4x2n" path="res://Autoloads/Resources/Trait/wallbreaker.tres" id="26_es82v"]
 
 [resource]
 script = ExtResource("3_tr6kv")

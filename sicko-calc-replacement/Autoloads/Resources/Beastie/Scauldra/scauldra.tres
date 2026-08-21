@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://cp4mv4y3kxnkw"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://b2rl352332myw"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_rsqbk"]
-[ext_resource type="Resource" uid="uid://ca184yq55qxaj" path="res://Autoloads/Resources/Trait/foggy.tres" id="2_f5tyd"]
+[ext_resource type="Resource" uid="uid://cttwmg6bjdiwo" path="res://Autoloads/Resources/Trait/foggy.tres" id="2_f5tyd"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_lkm30"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_f5tyd"]
 [ext_resource type="Resource" uid="uid://tnf87fyswfah" path="res://Autoloads/Resources/Plays/Attack/Spirit/steamer.tres" id="4_1k7fw"]
@@ -16,7 +16,7 @@
 [ext_resource type="Resource" uid="uid://bswiiypt3e04k" path="res://Autoloads/Resources/Plays/Attack/Spirit/heat_wave.tres" id="26_gpfvk"]
 [ext_resource type="Resource" uid="uid://b4lsgcxi4wnpo" path="res://Autoloads/Resources/Plays/Attack/Spirit/cook.tres" id="27_4o8xy"]
 [ext_resource type="Resource" uid="uid://c64dh46nq4agp" path="res://Autoloads/Resources/Plays/Attack/Spirit/burnout.tres" id="29_1k7fw"]
-[ext_resource type="Resource" uid="uid://r0868l1sqlv1" path="res://Autoloads/Resources/Trait/sauna.tres" id="31_0rasu"]
+[ext_resource type="Resource" uid="uid://2nria41e8sxy" path="res://Autoloads/Resources/Trait/sauna.tres" id="31_0rasu"]
 [ext_resource type="Texture2D" uid="uid://6252y727lkwl" path="res://Autoloads/Resources/Beastie/Scauldra/icon_scauldra.png" id="33_fiyek"]
 
 [resource]

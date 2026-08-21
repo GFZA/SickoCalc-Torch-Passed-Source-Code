@@ -1,8 +1,8 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://ixkv8kmbfg1m"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://dufyievb5264y"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_ekhv6"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_hy5vk"]
-[ext_resource type="Resource" uid="uid://b74a56h5nalqt" path="res://Autoloads/Resources/Trait/stirring.tres" id="2_pf2od"]
+[ext_resource type="Resource" uid="uid://c4x6rfce6enn2" path="res://Autoloads/Resources/Trait/stirring.tres" id="2_pf2od"]
 [ext_resource type="Resource" uid="uid://dfq6t4eiyi64b" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="3_k6jht"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_pf2od"]
 [ext_resource type="Resource" uid="uid://bthchfd4wjutk" path="res://Autoloads/Resources/Plays/Attack/Spirit/comeback.tres" id="4_2y8xs"]
@@ -17,7 +17,7 @@
 [ext_resource type="Resource" uid="uid://n3jtpon2cbv1" path="res://Autoloads/Resources/Plays/Attack/Mind/cold_calculation.tres" id="25_sw1i8"]
 [ext_resource type="Resource" uid="uid://c5miguvavwugo" path="res://Autoloads/Resources/Plays/Attack/Mind/echo_strike.tres" id="28_osro4"]
 [ext_resource type="Resource" uid="uid://bh7cvkyof83rj" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="31_666uq"]
-[ext_resource type="Resource" uid="uid://dh1k805kik5y0" path="res://Autoloads/Resources/Trait/defiant.tres" id="33_ysplb"]
+[ext_resource type="Resource" uid="uid://bxdr7ucwofnjp" path="res://Autoloads/Resources/Trait/defiant.tres" id="33_ysplb"]
 
 [resource]
 script = ExtResource("3_pf2od")

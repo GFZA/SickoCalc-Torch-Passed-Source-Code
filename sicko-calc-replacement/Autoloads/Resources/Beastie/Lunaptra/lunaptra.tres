@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://c31ua8x7mgyam"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=19 format=3 uid="uid://cdhlxinfc4t01"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_dvkgs"]
-[ext_resource type="Resource" uid="uid://cttk3mfp3ttsq" path="res://Autoloads/Resources/Trait/vampire.tres" id="2_wdimx"]
+[ext_resource type="Resource" uid="uid://nisvlnsm2r26" path="res://Autoloads/Resources/Trait/vampire.tres" id="2_wdimx"]
 [ext_resource type="Resource" uid="uid://cm70uava1yg8o" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_hi5vl"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="3_y7hd3"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="5_jxnvn"]
@@ -16,7 +16,7 @@
 [ext_resource type="Resource" uid="uid://c330d4p6h5uke" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="22_ri8im"]
 [ext_resource type="Resource" uid="uid://sjx12yfk4v1j" path="res://Autoloads/Resources/Plays/Attack/Body/spike.tres" id="24_6qd03"]
 [ext_resource type="Resource" uid="uid://48aoek5bqh4d" path="res://Autoloads/Resources/Plays/Attack/Body/kick.tres" id="28_qhykr"]
-[ext_resource type="Resource" uid="uid://3udnn1c0mov0" path="res://Autoloads/Resources/Trait/survivor.tres" id="29_pe2a8"]
+[ext_resource type="Resource" uid="uid://baicmuxhppjn" path="res://Autoloads/Resources/Trait/survivor.tres" id="29_pe2a8"]
 [ext_resource type="Texture2D" uid="uid://du4m3meywuhq2" path="res://Autoloads/Resources/Beastie/Lunaptra/icon_lunaptra.png" id="31_h7wye"]
 
 [resource]

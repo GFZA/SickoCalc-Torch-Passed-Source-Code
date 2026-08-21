@@ -1,8 +1,8 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=24 format=3 uid="uid://b4qx8u5emob7u"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=24 format=3 uid="uid://m036s8k65gfc"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_br6ue"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_0a61l"]
-[ext_resource type="Resource" uid="uid://dikns0t31vy6e" path="res://Autoloads/Resources/Trait/ambush.tres" id="2_b41mp"]
+[ext_resource type="Resource" uid="uid://dx03gp1bf4853" path="res://Autoloads/Resources/Trait/ambush.tres" id="2_b41mp"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_8rhki"]
 [ext_resource type="Resource" uid="uid://codc6ffohaua5" path="res://Autoloads/Resources/Plays/Attack/Mind/pierce.tres" id="5_j80pd"]
 [ext_resource type="Resource" uid="uid://dlajsr2prnr43" path="res://Autoloads/Resources/Plays/Attack/Body/finisher.tres" id="6_ruiq0"]
@@ -21,7 +21,7 @@
 [ext_resource type="Resource" uid="uid://dookpnoe5jjdo" path="res://Autoloads/Resources/Plays/Attack/Mind/rattle.tres" id="28_vf50s"]
 [ext_resource type="Resource" uid="uid://366o6eeo447v" path="res://Autoloads/Resources/Plays/Attack/Mind/sweep.tres" id="31_028u1"]
 [ext_resource type="Resource" uid="uid://2txqx1tm0pak" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="32_6l8fy"]
-[ext_resource type="Resource" uid="uid://tek4tbqq3a5k" path="res://Autoloads/Resources/Trait/hunter.tres" id="34_2h7to"]
+[ext_resource type="Resource" uid="uid://bcvdytg1o5fsh" path="res://Autoloads/Resources/Trait/hunter.tres" id="34_2h7to"]
 [ext_resource type="Texture2D" uid="uid://d2o225lptsg5x" path="res://Autoloads/Resources/Beastie/Crawlurk/icon_crawlurk.png" id="36_pfblg"]
 
 [resource]

@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=22 format=3 uid="uid://c76nqppf6sked"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=22 format=3 uid="uid://bdqnpm0lcbvfc"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_gkqgm"]
-[ext_resource type="Resource" uid="uid://b2pty8tggydqn" path="res://Autoloads/Resources/Trait/hardy.tres" id="2_5vbmt"]
+[ext_resource type="Resource" uid="uid://b4nampfarocyo" path="res://Autoloads/Resources/Trait/hardy.tres" id="2_5vbmt"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="3_22yyu"]
 [ext_resource type="Resource" uid="uid://d1l5unu2xxfdh" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="3_ttahv"]
 [ext_resource type="Resource" uid="uid://lep6vctbtbfi" path="res://Autoloads/Resources/Plays/Attack/Body/zinger.tres" id="4_1jn2b"]
@@ -20,7 +20,7 @@
 [ext_resource type="Resource" uid="uid://bul5jwe1qisst" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="30_2iw46"]
 [ext_resource type="Resource" uid="uid://qfxv11mpmmrd" path="res://Autoloads/Resources/Plays/Attack/Spirit/raw_fury.tres" id="31_mr5a5"]
 [ext_resource type="Resource" uid="uid://48aoek5bqh4d" path="res://Autoloads/Resources/Plays/Attack/Body/kick.tres" id="34_1jn2b"]
-[ext_resource type="Resource" uid="uid://b1dww8l5i0wjh" path="res://Autoloads/Resources/Trait/competitive.tres" id="35_xjyul"]
+[ext_resource type="Resource" uid="uid://k12qvex4ah6h" path="res://Autoloads/Resources/Trait/competitive.tres" id="35_xjyul"]
 
 [resource]
 script = ExtResource("5_yq7pv")

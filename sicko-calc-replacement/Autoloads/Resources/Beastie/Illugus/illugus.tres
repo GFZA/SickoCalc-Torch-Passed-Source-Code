@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=23 format=3 uid="uid://bt6k88ojv6n7t"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=23 format=3 uid="uid://nb1a0q1b81g5"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_1qr5m"]
-[ext_resource type="Resource" uid="uid://naksxwt0o7hd" path="res://Autoloads/Resources/Trait/trapper.tres" id="2_1wfet"]
+[ext_resource type="Resource" uid="uid://bqs2s72jeuj48" path="res://Autoloads/Resources/Trait/trapper.tres" id="2_1wfet"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_n1j3f"]
 [ext_resource type="Resource" uid="uid://cslq62j86s88g" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="3_fjles"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_ifijr"]
@@ -21,7 +21,7 @@
 [ext_resource type="Resource" uid="uid://4e2cogpnl0nc" path="res://Autoloads/Resources/Plays/Attack/Mind/slice.tres" id="32_hxoih"]
 [ext_resource type="Resource" uid="uid://dbd6qo66gc80b" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="33_ikkbn"]
 [ext_resource type="Resource" uid="uid://366o6eeo447v" path="res://Autoloads/Resources/Plays/Attack/Mind/sweep.tres" id="34_3oo7i"]
-[ext_resource type="Resource" uid="uid://csp0m1gu1q57b" path="res://Autoloads/Resources/Trait/precise.tres" id="38_3vket"]
+[ext_resource type="Resource" uid="uid://dmrqorx2p14s6" path="res://Autoloads/Resources/Trait/precise.tres" id="38_3vket"]
 
 [resource]
 script = ExtResource("3_ifijr")

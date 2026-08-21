@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=21 format=3 uid="uid://bk1d7akxiw2sl"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=21 format=3 uid="uid://dqm43jnni3g83"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_iu5xd"]
-[ext_resource type="Resource" uid="uid://dpclhmewcb11k" path="res://Autoloads/Resources/Trait/treat.tres" id="2_47xei"]
+[ext_resource type="Resource" uid="uid://bj0w6sv3xeajo" path="res://Autoloads/Resources/Trait/treat.tres" id="2_47xei"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_ob7yb"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_47xei"]
 [ext_resource type="Resource" uid="uid://cm70uava1yg8o" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_la770"]
@@ -18,7 +18,7 @@
 [ext_resource type="Resource" uid="uid://jbjvwf7ty48l" path="res://Autoloads/Resources/Plays/Attack/Spirit/scream.tres" id="25_pil6h"]
 [ext_resource type="Resource" uid="uid://b4lsgcxi4wnpo" path="res://Autoloads/Resources/Plays/Attack/Spirit/cook.tres" id="26_sykds"]
 [ext_resource type="Resource" uid="uid://b2kpbvkxp4t8l" path="res://Autoloads/Resources/Plays/Attack/Spirit/swarm.tres" id="28_o82c6"]
-[ext_resource type="Resource" uid="uid://tu42g882rj4a" path="res://Autoloads/Resources/Trait/protector.tres" id="32_3w55c"]
+[ext_resource type="Resource" uid="uid://br76ttp1c6qmh" path="res://Autoloads/Resources/Trait/protector.tres" id="32_3w55c"]
 [ext_resource type="Resource" uid="uid://c64dh46nq4agp" path="res://Autoloads/Resources/Plays/Attack/Spirit/burnout.tres" id="32_kqm4r"]
 
 [resource]

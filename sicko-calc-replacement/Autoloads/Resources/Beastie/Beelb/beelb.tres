@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=14 format=3 uid="uid://bmswbjod6fqkl"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=14 format=3 uid="uid://b0ooa8ixs5pxh"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_ioeqj"]
-[ext_resource type="Resource" uid="uid://46lxd8xn7w51" path="res://Autoloads/Resources/Trait/charge.tres" id="2_8ney0"]
+[ext_resource type="Resource" uid="uid://dc45gmv3q1bg7" path="res://Autoloads/Resources/Trait/charge.tres" id="2_8ney0"]
 [ext_resource type="Resource" uid="uid://d1l5unu2xxfdh" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="3_ioeqj"]
 [ext_resource type="Resource" uid="uid://bvconqtxqmogy" path="res://Autoloads/Resources/Plays/Attack/Body/energized.tres" id="4_8ney0"]
 [ext_resource type="Resource" uid="uid://lep6vctbtbfi" path="res://Autoloads/Resources/Plays/Attack/Body/zinger.tres" id="5_xgnbv"]

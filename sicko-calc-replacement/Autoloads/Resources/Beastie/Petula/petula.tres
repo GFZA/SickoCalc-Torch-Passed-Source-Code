@@ -1,8 +1,8 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://dy7cio3h6lvaf"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://dgvdvudftkks5"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_3ogjx"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_80n5h"]
-[ext_resource type="Resource" uid="uid://c24uuhcq2ikkv" path="res://Autoloads/Resources/Trait/primitive.tres" id="2_q3s3h"]
+[ext_resource type="Resource" uid="uid://cjbcmoksyqqcn" path="res://Autoloads/Resources/Trait/primitive.tres" id="2_q3s3h"]
 [ext_resource type="Resource" uid="uid://cm70uava1yg8o" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="3_40fl7"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_q3s3h"]
 [ext_resource type="Resource" uid="uid://b3fafiiiohfee" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="4_650uw"]

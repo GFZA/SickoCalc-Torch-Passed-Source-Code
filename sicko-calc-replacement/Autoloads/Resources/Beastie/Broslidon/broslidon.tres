@@ -1,8 +1,8 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=17 format=3 uid="uid://cgg8r5j04008y"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=17 format=3 uid="uid://bh35c1obhta81"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_tadrq"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_oul1c"]
-[ext_resource type="Resource" uid="uid://gjxqj3og2ewa" path="res://Autoloads/Resources/Trait/smooth.tres" id="2_y7wdv"]
+[ext_resource type="Resource" uid="uid://cpv3pceycwgx2" path="res://Autoloads/Resources/Trait/smooth.tres" id="2_y7wdv"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_3iwip"]
 [ext_resource type="Resource" uid="uid://b3u25d7p8nlhi" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_siwng"]
 [ext_resource type="Resource" uid="uid://bw6f8btbb43q" path="res://Autoloads/Resources/Plays/Attack/Body/muscle_memory.tres" id="5_xixf5"]
@@ -14,7 +14,7 @@
 [ext_resource type="Resource" uid="uid://gy6jlwyvuitk" path="res://Autoloads/Resources/Plays/Attack/Body/nice_shot.tres" id="25_6qct1"]
 [ext_resource type="Resource" uid="uid://ckamqfalbe5g" path="res://Autoloads/Resources/Plays/Attack/Body/slide.tres" id="27_gdgxa"]
 [ext_resource type="Resource" uid="uid://d1l5unu2xxfdh" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="29_52375"]
-[ext_resource type="Resource" uid="uid://cy5ar0r0t4ncd" path="res://Autoloads/Resources/Trait/miracle_play.tres" id="32_a8sop"]
+[ext_resource type="Resource" uid="uid://c1rbv1x6kjstp" path="res://Autoloads/Resources/Trait/miracle_play.tres" id="32_a8sop"]
 [ext_resource type="Texture2D" uid="uid://dv26u7yn00vgm" path="res://Autoloads/Resources/Beastie/Broslidon/icon_broslidon.png" id="34_sqami"]
 
 [resource]

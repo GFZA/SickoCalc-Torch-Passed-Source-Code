@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=21 format=3 uid="uid://yxjxsgo3rxef"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=21 format=3 uid="uid://boq8yvldrw3lv"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_63de5"]
-[ext_resource type="Resource" uid="uid://0p6jjhoo25v5" path="res://Autoloads/Resources/Trait/decoy.tres" id="2_1mwk4"]
+[ext_resource type="Resource" uid="uid://dm1rusd7rm2xl" path="res://Autoloads/Resources/Trait/decoy.tres" id="2_1mwk4"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_rysq2"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_mjom6"]
 [ext_resource type="Resource" uid="uid://b3u25d7p8nlhi" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_ot52c"]
@@ -19,7 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://dpljjakkd3ruc" path="res://Autoloads/Resources/Beastie/Boldlur/icon_boldlur.png" id="20_y6npn"]
 [ext_resource type="Resource" uid="uid://cslq62j86s88g" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="22_wh02g"]
 [ext_resource type="Resource" uid="uid://d1l5unu2xxfdh" path="res://Autoloads/Resources/Plays/Attack/Body/basic_hit.tres" id="31_h72k7"]
-[ext_resource type="Resource" uid="uid://bgj3rc78hp3dk" path="res://Autoloads/Resources/Trait/super_armor.tres" id="35_quao2"]
+[ext_resource type="Resource" uid="uid://2316hmiuds6g" path="res://Autoloads/Resources/Trait/super_armor.tres" id="35_quao2"]
 
 [resource]
 script = ExtResource("3_mjom6")

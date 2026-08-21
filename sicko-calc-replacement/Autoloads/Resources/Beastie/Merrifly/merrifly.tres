@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=13 format=3 uid="uid://dss5xucoqn7cr"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=13 format=3 uid="uid://bpio3hcr4dhjo"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_0cadv"]
-[ext_resource type="Resource" uid="uid://b88qfpp2plyk6" path="res://Autoloads/Resources/Trait/cheerleader.tres" id="2_df2ef"]
+[ext_resource type="Resource" uid="uid://i5ysftg38v45" path="res://Autoloads/Resources/Trait/cheerleader.tres" id="2_df2ef"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_kphom"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_df2ef"]
 [ext_resource type="Resource" uid="uid://nkku7hsj2uue" path="res://Autoloads/Resources/Plays/Attack/Body/reach_shot.tres" id="6_xnmvx"]

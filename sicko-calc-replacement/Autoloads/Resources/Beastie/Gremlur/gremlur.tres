@@ -1,8 +1,8 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://do6knc4f66sfm"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://bqxnomw1f5ml4"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_nrti3"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_on4qm"]
-[ext_resource type="Resource" uid="uid://hopcqy28xi5n" path="res://Autoloads/Resources/Trait/slippery.tres" id="2_xd0ft"]
+[ext_resource type="Resource" uid="uid://co0e0rgqx5603" path="res://Autoloads/Resources/Trait/slippery.tres" id="2_xd0ft"]
 [ext_resource type="Resource" uid="uid://dn2b0t2ad1g03" path="res://Autoloads/Resources/Plays/Attack/Mind/mindfield.tres" id="3_eiyrt"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_fsb33"]
 [ext_resource type="Resource" uid="uid://djeo8o0og5w1c" path="res://Autoloads/Resources/Plays/Attack/Mind/tool.tres" id="6_00qpm"]
@@ -13,7 +13,7 @@
 [ext_resource type="Resource" uid="uid://4e2cogpnl0nc" path="res://Autoloads/Resources/Plays/Attack/Mind/slice.tres" id="11_tawor"]
 [ext_resource type="Texture2D" uid="uid://yd8pfn7m6vqo" path="res://Autoloads/Resources/Beastie/Gremlur/icon_gremlur.png" id="13_5dj70"]
 [ext_resource type="Resource" uid="uid://dbd6qo66gc80b" path="res://Autoloads/Resources/Plays/Attack/Mind/stinger.tres" id="25_1gibo"]
-[ext_resource type="Resource" uid="uid://cj4idki0kxelo" path="res://Autoloads/Resources/Trait/adaptation.tres" id="28_5hrqn"]
+[ext_resource type="Resource" uid="uid://d3m8lktdaafrq" path="res://Autoloads/Resources/Trait/adaptation.tres" id="28_5hrqn"]
 
 [resource]
 script = ExtResource("3_fsb33")

@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://dpa63cyde02o"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=15 format=3 uid="uid://n0q8ixibenl"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_t21mn"]
-[ext_resource type="Resource" uid="uid://bkr8qyuiof8dy" path="res://Autoloads/Resources/Trait/maverick.tres" id="2_icirc"]
+[ext_resource type="Resource" uid="uid://0j5ts0arwgm0" path="res://Autoloads/Resources/Trait/maverick.tres" id="2_icirc"]
 [ext_resource type="Resource" uid="uid://cpw1r5p6a1bd8" path="res://Autoloads/Resources/Plays/Attack/Spirit/flight.tres" id="3_t21mn"]
 [ext_resource type="Resource" uid="uid://c7idb30h43hwy" path="res://Autoloads/Resources/Plays/Attack/Spirit/airblast.tres" id="4_icirc"]
 [ext_resource type="Resource" uid="uid://jh6i5gw62j55" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="6_nd01w"]
@@ -11,7 +11,7 @@
 [ext_resource type="Resource" uid="uid://b2kpbvkxp4t8l" path="res://Autoloads/Resources/Plays/Attack/Spirit/swarm.tres" id="22_1mr5q"]
 [ext_resource type="Resource" uid="uid://cm70uava1yg8o" path="res://Autoloads/Resources/Plays/Attack/Spirit/beginner_effort.tres" id="23_gi3sd"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="24_05608"]
-[ext_resource type="Resource" uid="uid://cf4gh8ej8teky" path="res://Autoloads/Resources/Trait/flitting.tres" id="25_rsycn"]
+[ext_resource type="Resource" uid="uid://5m0x20otsp65" path="res://Autoloads/Resources/Trait/flitting.tres" id="25_rsycn"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="26_qfdui"]
 [ext_resource type="Texture2D" uid="uid://bqymk7la6yspy" path="res://Autoloads/Resources/Beastie/Zefyre/icon_zefyre.png" id="27_riame"]
 

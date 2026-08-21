@@ -1,8 +1,8 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://tdbs8tjcqyci"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=18 format=3 uid="uid://bapxh4jorl4qm"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_j7oek"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_eyydh"]
-[ext_resource type="Resource" uid="uid://utahqmjdtaha" path="res://Autoloads/Resources/Trait/neural_net.tres" id="2_v3f8f"]
+[ext_resource type="Resource" uid="uid://cug8lvl3nafkb" path="res://Autoloads/Resources/Trait/neural_net.tres" id="2_v3f8f"]
 [ext_resource type="Resource" uid="uid://cesssgehplj57" path="res://Autoloads/Resources/Plays/Attack/Mind/tracker.tres" id="3_uqinu"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_v3f8f"]
 [ext_resource type="Resource" uid="uid://bh7cvkyof83rj" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="4_frmvq"]

@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=23 format=3 uid="uid://657fws6x1lo5"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=23 format=3 uid="uid://cmhc6gdd7buuk"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_ml67k"]
-[ext_resource type="Resource" uid="uid://bj25pf8d4di60" path="res://Autoloads/Resources/Trait/protean.tres" id="2_6kp4b"]
+[ext_resource type="Resource" uid="uid://dlp6xhxlrhi1x" path="res://Autoloads/Resources/Trait/protean.tres" id="2_6kp4b"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_lukmp"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_cevkm"]
 [ext_resource type="Resource" uid="uid://8irsgl20f2ew" path="res://Autoloads/Resources/Plays/Attack/Spirit/pepshot.tres" id="3_hju26"]
@@ -21,7 +21,7 @@
 [ext_resource type="Resource" uid="uid://b4lsgcxi4wnpo" path="res://Autoloads/Resources/Plays/Attack/Spirit/cook.tres" id="32_mt5rc"]
 [ext_resource type="Resource" uid="uid://bbmp14ev7tigl" path="res://Autoloads/Resources/Plays/Attack/Spirit/passion_strike.tres" id="34_ksd4k"]
 [ext_resource type="Resource" uid="uid://b5vfm8rk70lb3" path="res://Autoloads/Resources/Plays/Attack/Spirit/challenge.tres" id="35_6en2p"]
-[ext_resource type="Resource" uid="uid://dkdojfuhob7j8" path="res://Autoloads/Resources/Trait/mimicry.tres" id="39_q2xto"]
+[ext_resource type="Resource" uid="uid://dja4y717vdbli" path="res://Autoloads/Resources/Trait/mimicry.tres" id="39_q2xto"]
 
 [resource]
 script = ExtResource("3_cevkm")

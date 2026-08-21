@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=21 format=3 uid="uid://lw84uju4caya"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=21 format=3 uid="uid://4e0411ksndhf"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_ou104"]
-[ext_resource type="Resource" uid="uid://cpgcslxxto108" path="res://Autoloads/Resources/Trait/performer.tres" id="2_5tssy"]
+[ext_resource type="Resource" uid="uid://btvy58evf3gqq" path="res://Autoloads/Resources/Trait/performer.tres" id="2_5tssy"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_wllxg"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_d8coo"]
 [ext_resource type="Resource" uid="uid://bxndwbax7qt22" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="10_cwcx7"]
@@ -19,7 +19,7 @@
 [ext_resource type="Resource" uid="uid://cpdvsedakhf2s" path="res://Autoloads/Resources/Plays/Attack/Spirit/cut_shot.tres" id="29_ggp8q"]
 [ext_resource type="Resource" uid="uid://kgmhp21oxv4j" path="res://Autoloads/Resources/Plays/Attack/Spirit/relentless.tres" id="30_yntfi"]
 [ext_resource type="Resource" uid="uid://dorvedod5sekr" path="res://Autoloads/Resources/Plays/Attack/Spirit/contest.tres" id="33_cwcx7"]
-[ext_resource type="Resource" uid="uid://dh1k805kik5y0" path="res://Autoloads/Resources/Trait/defiant.tres" id="35_u8rdo"]
+[ext_resource type="Resource" uid="uid://bxdr7ucwofnjp" path="res://Autoloads/Resources/Trait/defiant.tres" id="35_u8rdo"]
 
 [resource]
 script = ExtResource("3_d8coo")
