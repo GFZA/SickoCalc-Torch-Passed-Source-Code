@@ -2,11 +2,13 @@
 extends Node
 
 const BEASTIE_DATA_JSON_PATH := "res://Autoloads/Resources/JSONs/beastie_data.json"
+const BEASTIE_INTERNAL_NAME_JSON_PATH := "res://Autoloads/Resources/JSONs/beastie_internal_name.json"
 const TRAIT_DATA_JSON_PATH := "res://Autoloads/Resources/JSONs/abilities.json"
 const MOVE_DATA_JSON_PATH := "res://Autoloads/Resources/JSONs/move_dic.json"
 const ALL_TEXT_JSON_PATH := "res://Autoloads/Resources/JSONs/game.json"
 
 var beastie_data_json : Dictionary = {}
+var beastie_internal_name_json : Dictionary = {}
 var all_text_json : Dictionary = {}
 var trait_data_json : Dictionary = {}
 var move_data_json : Dictionary = {}
@@ -191,6 +193,7 @@ func _init() -> void:
 	if is_on_web:
 		return
 	beastie_data_json = JSON.parse_string(FileAccess.get_file_as_string(BEASTIE_DATA_JSON_PATH))
+	beastie_internal_name_json = JSON.parse_string(FileAccess.get_file_as_string(BEASTIE_INTERNAL_NAME_JSON_PATH))
 	trait_data_json = JSON.parse_string(FileAccess.get_file_as_string(TRAIT_DATA_JSON_PATH))
 	move_data_json = JSON.parse_string(FileAccess.get_file_as_string(MOVE_DATA_JSON_PATH))
 	all_text_json = JSON.parse_string(FileAccess.get_file_as_string(ALL_TEXT_JSON_PATH))
@@ -356,8 +359,10 @@ func _assign_beastie_their_sprite(beastie : Beastie, path_to_folder : String, pa
 func _assign_beastie_their_data_from_json(beastie : Beastie, path_to_beastie : String) -> void:
 	if is_on_web:
 		return
-
-	var beastie_data : Dictionary = beastie_data_json.get(beastie.internal_name)
+	var internal_name : String = beastie_internal_name_json.get(beastie.specie_name)
+	var beastie_data : Dictionary = beastie_data_json.get(internal_name)
+	# Internal name
+	beastie.internal_name = internal_name
 	# Stats
 	beastie.body_base_pow = beastie_data.get("ba")
 	beastie.body_base_def = beastie_data.get("bd")
@@ -367,8 +372,8 @@ func _assign_beastie_their_data_from_json(beastie : Beastie, path_to_beastie : S
 	beastie.mind_base_def = beastie_data.get("md")
 	# Traits Strings
 	beastie.traits_string_array.clear()
-	for internal_name : String in beastie_data.get("ability"):
-		var trait_data : Dictionary = trait_data_json.get(internal_name)
+	for trait_internal_name : String in beastie_data.get("ability"):
+		var trait_data : Dictionary = trait_data_json.get(trait_internal_name)
 		var define_text : String = trait_data.get("name")
 		define_text = define_text.trim_prefix("¦")
 		define_text = define_text.trim_suffix("¦")
@@ -377,8 +382,8 @@ func _assign_beastie_their_data_from_json(beastie : Beastie, path_to_beastie : S
 		beastie.traits_string_array.append(ingame_name)
 	# Plays Strings
 	beastie.plays_string_array.clear()
-	for internal_name : String in beastie_data.get("attklist"):
-		var move_data : Dictionary = move_data_json.get(internal_name)
+	for play_internal_name : String in beastie_data.get("attklist"):
+		var move_data : Dictionary = move_data_json.get(play_internal_name)
 		var define_text : String = move_data.get("name")
 		define_text = define_text.trim_prefix("¦")
 		define_text = define_text.trim_suffix("¦")

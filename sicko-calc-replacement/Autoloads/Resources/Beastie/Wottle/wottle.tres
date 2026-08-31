@@ -1,15 +1,15 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=11 format=3 uid="uid://d2l7qak34yaax"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=11 format=3 uid="uid://cgceyn2gkccu2"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_d144n"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_30rnj"]
-[ext_resource type="Resource" uid="uid://cyng6bcmajg44" path="res://Autoloads/Resources/Trait/shy.tres" id="2_ukmd4"]
+[ext_resource type="Resource" uid="uid://u167p7w65q41" path="res://Autoloads/Resources/Trait/shy.tres" id="2_ukmd4"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="3_pwot0"]
-[ext_resource type="Resource" uid="uid://cg6adjirx66yj" path="res://Autoloads/Resources/Plays/Attack/Spirit/tornadoball.tres" id="4_0rubi"]
-[ext_resource type="Resource" uid="uid://b3fafiiiohfee" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="6_0rubi"]
-[ext_resource type="Resource" uid="uid://jh6i5gw62j55" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="6_u5ltw"]
+[ext_resource type="Resource" uid="uid://cndm1k2tmfpd" path="res://Autoloads/Resources/Plays/Attack/Spirit/tornadoball.tres" id="4_0rubi"]
+[ext_resource type="Resource" uid="uid://c61k5iketw8gj" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="6_0rubi"]
+[ext_resource type="Resource" uid="uid://c22lonn5u3ril" path="res://Autoloads/Resources/Plays/Attack/Spirit/bring_the_heat.tres" id="6_u5ltw"]
 [ext_resource type="Texture2D" uid="uid://crxsv6d1dtfpr" path="res://Autoloads/Resources/Beastie/Wottle/icon_wottle.png" id="12_fewm5"]
-[ext_resource type="Resource" uid="uid://bxndwbax7qt22" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="15_pa32x"]
-[ext_resource type="Resource" uid="uid://cpw1r5p6a1bd8" path="res://Autoloads/Resources/Plays/Attack/Spirit/flight.tres" id="27_ujnum"]
+[ext_resource type="Resource" uid="uid://bqohaluy1bian" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="15_pa32x"]
+[ext_resource type="Resource" uid="uid://clp8emc65hxxo" path="res://Autoloads/Resources/Plays/Attack/Spirit/flight.tres" id="27_ujnum"]
 
 [resource]
 script = ExtResource("3_pwot0")
