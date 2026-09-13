@@ -79,8 +79,6 @@ func _ready() -> void:
 
 	_update()
 
-	_fix_button_for_mobile.call_deferred()
-
 
 func _on_beastie_selected(beastie : Beastie, side : Global.MySide) -> void:
 	var column : BeastieColumn = left_beastie_column if side == Global.MySide.LEFT else right_beastie_column
@@ -127,20 +125,23 @@ func _update() -> void:
 		damage_splash.attack = null
 
 	if attacker and defender:
+		# Get damage to display
 		Global.is_musclebrained = attacker.my_trait.name.to_lower() == "musclebrain"
 		current_attack.is_mimicked = left_beastie_column.mimic_button.button_pressed
 		attacker.my_plays[0] = current_attack
 		damage_splash.amount = DamageCalculator.get_damage(attacker, defender, current_attack, team_controller, team_controller)
 		damage_splash.attack = current_attack
 
+		# Set arrow color
 		var index : int = int(current_attack.type)
 		var color_type := index as Global.ColorType
 		var new_color = Global.get_main_color(color_type)
-		if Global.is_musclebrained:
-			new_color = Global.get_main_color(Global.ColorType.BODY)
+		#if Global.is_musclebrained:
+			#new_color = Global.get_main_color(Global.ColorType.BODY)
 		for arrow : Polygon2D in arrow_anchor.get_children():
 			arrow.color = new_color
 
+		# Assign attack to columns
 		if left_beastie_column.current_attack == current_attack:
 			return # this prevents the most stupid accidental infinite recursive loop I ever made, like wtf lmao
 		left_beastie_column.current_attack = current_attack
@@ -165,29 +166,3 @@ func save_image() -> void:
 
 func _on_github_button_pressed() -> void:
 	OS.shell_open("https://github.com/GFZA/SickoCalc-Torch-Passed-Source-Code")
-
-
-# It doesn't work??????
-# I have no idea why lol
-# TODO: look into this more
-
-var all_buttons : Array[Button] = []
-
-func _fix_button_for_mobile() -> void:
-	_find_button_recursive(self)
-	for button : Button in all_buttons:
-		if not button.name.to_lower() == "screenshotbutton":
-			button.action_mode = BaseButton.ACTION_MODE_BUTTON_PRESS # really bad cheese to set all button lol
-		if Global.is_on_web_mobile:
-			var normal_style = button.get_theme_stylebox("normal")
-			var pressed_style = button.get_theme_stylebox("pressed")
-			button.add_theme_stylebox_override("hover", normal_style)
-			button.add_theme_stylebox_override("hover_pressed", pressed_style)
-
-
-func _find_button_recursive(parent : Node) -> void:
-	for child in parent.get_children():
-		if child.get_class().to_lower() == "button":
-			all_buttons.append(child)
-		if child.get_child_count() > 0:
-			_find_button_recursive(child)
