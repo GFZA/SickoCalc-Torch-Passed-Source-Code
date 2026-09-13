@@ -125,20 +125,23 @@ func _update() -> void:
 		damage_splash.attack = null
 
 	if attacker and defender:
+		# Get damage to display
 		Global.is_musclebrained = attacker.my_trait.name.to_lower() == "musclebrain"
 		current_attack.is_mimicked = left_beastie_column.mimic_button.button_pressed
 		attacker.my_plays[0] = current_attack
 		damage_splash.amount = DamageCalculator.get_damage(attacker, defender, current_attack, team_controller, team_controller)
 		damage_splash.attack = current_attack
 
+		# Set arrow color
 		var index : int = int(current_attack.type)
 		var color_type := index as Global.ColorType
 		var new_color = Global.get_main_color(color_type)
-		if Global.is_musclebrained:
-			new_color = Global.get_main_color(Global.ColorType.BODY)
+		#if Global.is_musclebrained:
+			#new_color = Global.get_main_color(Global.ColorType.BODY)
 		for arrow : Polygon2D in arrow_anchor.get_children():
 			arrow.color = new_color
 
+		# Assign attack to columns
 		if left_beastie_column.current_attack == current_attack:
 			return # this prevents the most stupid accidental infinite recursive loop I ever made, like wtf lmao
 		left_beastie_column.current_attack = current_attack
