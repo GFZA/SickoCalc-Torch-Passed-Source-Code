@@ -79,8 +79,6 @@ func _ready() -> void:
 
 	_update()
 
-	_fix_button_for_mobile.call_deferred()
-
 
 func _on_beastie_selected(beastie : Beastie, side : Global.MySide) -> void:
 	var column : BeastieColumn = left_beastie_column if side == Global.MySide.LEFT else right_beastie_column
@@ -165,29 +163,3 @@ func save_image() -> void:
 
 func _on_github_button_pressed() -> void:
 	OS.shell_open("https://github.com/GFZA/SickoCalc-Torch-Passed-Source-Code")
-
-
-# It doesn't work??????
-# I have no idea why lol
-# TODO: look into this more
-
-var all_buttons : Array[Button] = []
-
-func _fix_button_for_mobile() -> void:
-	_find_button_recursive(self)
-	for button : Button in all_buttons:
-		if not button.name.to_lower() == "screenshotbutton":
-			button.action_mode = BaseButton.ACTION_MODE_BUTTON_PRESS # really bad cheese to set all button lol
-		if Global.is_on_web_mobile:
-			var normal_style = button.get_theme_stylebox("normal")
-			var pressed_style = button.get_theme_stylebox("pressed")
-			button.add_theme_stylebox_override("hover", normal_style)
-			button.add_theme_stylebox_override("hover_pressed", pressed_style)
-
-
-func _find_button_recursive(parent : Node) -> void:
-	for child in parent.get_children():
-		if child.get_class().to_lower() == "button":
-			all_buttons.append(child)
-		if child.get_child_count() > 0:
-			_find_button_recursive(child)

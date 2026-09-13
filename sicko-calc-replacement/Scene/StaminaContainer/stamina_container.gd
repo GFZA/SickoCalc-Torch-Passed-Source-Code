@@ -4,7 +4,7 @@ extends HBoxContainer
 
 signal value_updated(value : int)
 
-@export var text : String = "Target STAMINA":
+@export var text : String = "Text Here":
 	set(new_value):
 		text = new_value
 		if not is_node_ready():
@@ -57,5 +57,7 @@ func _on_stamina_slider_value_changed(new_value : int) -> void:
 
 
 func reset() -> void:
-	text = "Text Here"
+	#text = "Text Here" # Don't reset text to fix placeholder text appearing when reset or switching beastie
+						# It isn't noticable since this container should hide itself when not in use
+						# A bit of cheesey method but it works lol
 	value = 100
