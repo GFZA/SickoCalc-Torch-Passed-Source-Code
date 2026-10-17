@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=16 format=3 uid="uid://c2i5a3gqdmvyh"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_ejcw7"]
+[ext_resource type="Resource" uid="uid://bfl6g14lvjbpk" path="res://Autoloads/Resources/Trait/forager.tres" id="2_omxr8"]
+[ext_resource type="Resource" uid="uid://bx8c5vlkglnna" path="res://Autoloads/Resources/Plays/Attack/Body/bump.tres" id="3_4e5qu"]
+[ext_resource type="Resource" uid="uid://dl3ygremr2gnn" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="4_sd2eu"]
+[ext_resource type="Resource" uid="uid://5ltjg2ttl7gj" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="5_03cb0"]
+[ext_resource type="Resource" uid="uid://bbssb3w0wahh6" path="res://Autoloads/Resources/Plays/Attack/Body/vigor_beam.tres" id="6_ea4cn"]
+[ext_resource type="Resource" uid="uid://varwkuxdkjx4" path="res://Autoloads/Resources/Plays/Attack/Body/thunder.tres" id="7_3jnuq"]
+[ext_resource type="Resource" uid="uid://kij1ilq37be5" path="res://Autoloads/Resources/Plays/Attack/Body/true_strike.tres" id="8_owoax"]
+[ext_resource type="Resource" uid="uid://wb5u2h0tv0wm" path="res://Autoloads/Resources/Plays/Attack/Body/thump.tres" id="9_d24dd"]
+[ext_resource type="Resource" uid="uid://baf1yq3mq16tu" path="res://Autoloads/Resources/Plays/Attack/Body/dive.tres" id="10_6stdf"]
+[ext_resource type="Resource" uid="uid://b7tjj7bteoya8" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="11_0171i"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="12_iwao1"]
+[ext_resource type="Resource" uid="uid://cpnwygxki1d4t" path="res://Autoloads/Resources/Trait/confident.tres" id="13_ivmtw"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="14_5f06r"]
+[ext_resource type="Texture2D" uid="uid://bop7sqeqcogaa" path="res://Autoloads/Resources/Beastie/EXP Supilero/icon_exp_supilero.png" id="15_0w3d0"]
+
+[resource]
+script = ExtResource("14_5f06r")
+my_plays = Array[ExtResource("1_ejcw7")]([null, null, null])
+my_trait = ExtResource("2_omxr8")
+specie_name = "EXP Supilero"
+internal_name = "possum"
+beastiepedia_id = 19
+bar_color = Color(0.8901961, 0.6392157, 0.20392157, 1)
+body_base_pow = 68
+spirit_base_pow = 50
+mind_base_pow = 40
+body_base_def = 120
+spirit_base_def = 60
+mind_base_def = 95
+plays_string_array = Array[String](["bump", "breaker", "demolish", "dig", "vigor beam", "juggle", "flex", "shake off", "hawkeye", "forward pass", "cover", "lock target", "mark", "shield", "quick tag", "patience", "thunder", "true strike", "thump", "quick breath", "build", "dive", "set", "mighty yell", "provoke", "grit", "introduce"])
+traits_string_array = Array[String](["forager", "confident"])
+possible_plays = Array[ExtResource("1_ejcw7")]([ExtResource("3_4e5qu"), ExtResource("4_sd2eu"), ExtResource("5_03cb0"), ExtResource("6_ea4cn"), ExtResource("7_3jnuq"), ExtResource("8_owoax"), ExtResource("9_d24dd"), ExtResource("10_6stdf"), ExtResource("11_0171i")])
+possible_traits = Array[ExtResource("12_iwao1")]([ExtResource("2_omxr8"), ExtResource("13_ivmtw")])
+sprites = Dictionary[int, Texture2D]({
+6: ExtResource("15_0w3d0")
+})
+ball_anchor_position_receive = Vector2(65, -68)
+ball_anchor_position_ready = Vector2(74, -100)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

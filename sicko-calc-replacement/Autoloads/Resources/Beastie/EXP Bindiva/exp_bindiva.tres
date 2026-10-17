@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="Beastie" load_steps=17 format=3 uid="uid://b2n2r3rwm8rba"]
+
+[ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_is445"]
+[ext_resource type="Resource" uid="uid://dhimp3gdc6d4h" path="res://Autoloads/Resources/Trait/thief.tres" id="2_fr6mx"]
+[ext_resource type="Resource" uid="uid://c88rcatq6gk4y" path="res://Autoloads/Resources/Plays/Attack/Mind/practice_shot.tres" id="3_xg0u1"]
+[ext_resource type="Resource" uid="uid://gha0ih35lly" path="res://Autoloads/Resources/Plays/Attack/Mind/pierce.tres" id="4_floc2"]
+[ext_resource type="Resource" uid="uid://dvlvjc15g68m7" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="5_754te"]
+[ext_resource type="Resource" uid="uid://dqgbkmysyedur" path="res://Autoloads/Resources/Plays/Attack/Mind/sneak_attack.tres" id="6_1sspo"]
+[ext_resource type="Resource" uid="uid://boewv1xdqdcwf" path="res://Autoloads/Resources/Plays/Attack/Mind/heartbreaker.tres" id="7_a2b7l"]
+[ext_resource type="Resource" uid="uid://cfk5xjgct6e78" path="res://Autoloads/Resources/Plays/Attack/Mind/roll_shot.tres" id="8_oidq5"]
+[ext_resource type="Resource" uid="uid://rxrxfpeh5rph" path="res://Autoloads/Resources/Plays/Attack/Mind/dump.tres" id="9_o43ch"]
+[ext_resource type="Resource" uid="uid://cevk477q1nav3" path="res://Autoloads/Resources/Plays/Attack/Mind/tool.tres" id="10_67qay"]
+[ext_resource type="Resource" uid="uid://cvdicau5iv3vh" path="res://Autoloads/Resources/Plays/Attack/Body/high_slam.tres" id="11_dcwuj"]
+[ext_resource type="Resource" uid="uid://7735wtodpfd0" path="res://Autoloads/Resources/Plays/Attack/Mind/echo_strike.tres" id="12_xfgqv"]
+[ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="13_pljhp"]
+[ext_resource type="Resource" uid="uid://rgv42rdv1y" path="res://Autoloads/Resources/Trait/majesty.tres" id="14_1swcn"]
+[ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="15_ami1t"]
+[ext_resource type="Texture2D" uid="uid://bbppqyrug7luq" path="res://Autoloads/Resources/Beastie/EXP Bindiva/icon_exp_bindiva.png" id="16_j132r"]
+
+[resource]
+script = ExtResource("15_ami1t")
+my_plays = Array[ExtResource("1_is445")]([null, null, null])
+my_trait = ExtResource("2_fr6mx")
+specie_name = "EXP Bindiva"
+internal_name = "ibis"
+beastiepedia_id = 88
+bar_color = Color(0.5921569, 0.5058824, 0.87058824, 1)
+body_base_pow = 71
+spirit_base_pow = 39
+mind_base_pow = 100
+body_base_def = 71
+spirit_base_def = 38
+mind_base_def = 88
+plays_string_array = Array[String](["practice shot", "pierce", "lure shot", "sneak attack", "heartbreaker", "roll shot", "dump", "tool", "high slam", "dig", "steal", "quick set", "exhaust", "provoke", "jeer", "hawkeye", "shield", "intimidate", "dramatic exit", "distraction", "echo strike", "clear field", "wink", "catwalk"])
+traits_string_array = Array[String](["thief", "majesty"])
+possible_plays = Array[ExtResource("1_is445")]([ExtResource("3_xg0u1"), ExtResource("4_floc2"), ExtResource("5_754te"), ExtResource("6_1sspo"), ExtResource("7_a2b7l"), ExtResource("8_oidq5"), ExtResource("9_o43ch"), ExtResource("10_67qay"), ExtResource("11_dcwuj"), ExtResource("12_xfgqv")])
+possible_traits = Array[ExtResource("13_pljhp")]([ExtResource("2_fr6mx"), ExtResource("14_1swcn")])
+sprites = Dictionary[int, Texture2D]({
+6: ExtResource("16_j132r")
+})
+y_offset = -20
+ball_anchor_position_receive = Vector2(-16, -155)
+ball_anchor_position_ready = Vector2(40, -155)
+metadata/_custom_type_script = "uid://ehabj4qsgxpl"

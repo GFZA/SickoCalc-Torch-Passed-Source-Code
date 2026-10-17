@@ -14,7 +14,7 @@
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="30_4lwbm"]
 [ext_resource type="Resource" uid="uid://cpnwygxki1d4t" path="res://Autoloads/Resources/Trait/confident.tres" id="31_4fn21"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="32_yow3n"]
-[ext_resource type="Texture2D" uid="uid://bop7sqeqcogaa" path="res://Autoloads/Resources/Beastie/Supilero/icon_supilero.png" id="33_7msq5"]
+[ext_resource type="Texture2D" uid="uid://bi2577tthah1h" path="res://Autoloads/Resources/Beastie/Supilero/icon_supilero.png" id="33_7msq5"]
 
 [resource]
 script = ExtResource("32_yow3n")

@@ -181,7 +181,7 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 		if signi(total_attack_boost) == -1:
 			total_attack_boost = 0
 		total_attack_boost += 1
-		
+
 	total_attack_boost += int(attacker.my_trait.get_starter_trait_boost_stack(attacker, stats_type_attack))
 
 	if not attack_name in ALWAYS_CALC_FROM_BENCH_ATTACKS: # Flight remove all row bonus for some reason

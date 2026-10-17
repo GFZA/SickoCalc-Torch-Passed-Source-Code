@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Beastie" load_steps=25 format=3 uid="uid://dslooumb441oi"]
+[gd_resource type="Resource" script_class="Beastie" load_steps=26 format=3 uid="uid://dslooumb441oi"]
 
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="1_dlrtg"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="2_ft3xs"]
@@ -16,6 +16,7 @@
 [ext_resource type="Resource" uid="uid://g448w722fsvt" path="res://Autoloads/Resources/Plays/Attack/Spirit/desperate_force.tres" id="12_1sdl0"]
 [ext_resource type="Resource" uid="uid://b4s0d72rrcla6" path="res://Autoloads/Resources/Plays/Attack/Spirit/burnout.tres" id="13_3y0u4"]
 [ext_resource type="Resource" uid="uid://bqohaluy1bian" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="14_20gyr"]
+[ext_resource type="Resource" uid="uid://b7c8kxnusvsbb" path="res://Autoloads/Resources/Plays/Attack/Spirit/exp_burnout.tres" id="21_me2xf"]
 [ext_resource type="Resource" uid="uid://c0311mnuib5cq" path="res://Autoloads/Resources/Plays/Attack/Body/rocket.tres" id="21_qybn6"]
 [ext_resource type="Resource" uid="uid://b7tjj7bteoya8" path="res://Autoloads/Resources/Plays/Attack/Spirit/grit.tres" id="22_nwfgd"]
 [ext_resource type="Resource" uid="uid://uq8s0r3eswi2" path="res://Autoloads/Resources/Plays/Attack/Body/launch.tres" id="23_a4gtw"]
@@ -42,7 +43,7 @@ spirit_base_def = 25
 mind_base_def = 38
 plays_string_array = Array[String](["challenge", "contest", "counter", "confident pass", "spike", "slide", "dive", "hyperspike", "relentless", "desperate force", "burnout", "toppler", "net rush", "pipe", "dig", "tough front", "quick tag", "shield", "rocket", "grit", "launch", "turnabout", "dramatic exit", "overpower", "whoosh", "exhaust", "swarm", "daring pass", "dodge roll", "role reverse", "provoke", "beginner effort"])
 traits_string_array = Array[String](["acrobat", "fearless"])
-possible_plays = Array[ExtResource("1_dlrtg")]([ExtResource("3_3y0u4"), ExtResource("4_omxnm"), ExtResource("5_qg74u"), ExtResource("7_35f78"), ExtResource("8_pdfyo"), ExtResource("9_8wrst"), ExtResource("10_h5dx8"), ExtResource("11_bs23h"), ExtResource("12_1sdl0"), ExtResource("13_3y0u4"), ExtResource("14_20gyr"), ExtResource("21_qybn6"), ExtResource("22_nwfgd"), ExtResource("23_a4gtw"), ExtResource("24_rfwn7"), ExtResource("26_dva76"), ExtResource("29_8wr1c"), ExtResource("34_f6ubb")])
+possible_plays = Array[ExtResource("1_dlrtg")]([ExtResource("3_3y0u4"), ExtResource("4_omxnm"), ExtResource("5_qg74u"), ExtResource("7_35f78"), ExtResource("8_pdfyo"), ExtResource("9_8wrst"), ExtResource("10_h5dx8"), ExtResource("11_bs23h"), ExtResource("12_1sdl0"), ExtResource("13_3y0u4"), ExtResource("14_20gyr"), ExtResource("21_qybn6"), ExtResource("22_nwfgd"), ExtResource("23_a4gtw"), ExtResource("24_rfwn7"), ExtResource("26_dva76"), ExtResource("29_8wr1c"), ExtResource("34_f6ubb"), ExtResource("21_me2xf")])
 possible_traits = Array[ExtResource("2_ft3xs")]([ExtResource("2_xuaqp"), ExtResource("36_omxnm")])
 sprites = Dictionary[int, Texture2D]({
 6: ExtResource("11_561fl")
