@@ -15,6 +15,9 @@ const TOUGH_MULT : float = 0.25
 const RALLY_FLAT : int = 20
 const CHEERLEADER_FLAT : int = 10
 
+const WEARINESS_STACK_LIMIT : int = 15
+const WEARINESS_DAMAGE_PER_STACK_EXCEED : int = 8
+
 const NORMAL_CALC_BYPASSING_ATTACKS : Array[String] = ["grinder", "precision strike"]
 
 const LOWEST_DEF_TARGETING_ATTACKS : Array[String] = ["snipe"]
@@ -294,7 +297,7 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 	#endregion
 
 	if attacker_team_controller:
-		final_damage += (max(0, (attacker_team_controller.weariness - 7)) * 10)
+		final_damage += (max(0, (attacker_team_controller.weariness - WEARINESS_STACK_LIMIT)) * WEARINESS_DAMAGE_PER_STACK_EXCEED)
 
 	return final_damage
 
