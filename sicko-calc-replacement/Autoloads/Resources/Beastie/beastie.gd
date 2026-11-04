@@ -27,11 +27,11 @@ signal level_updated(level : int)
 		health = value
 		health_updated.emit(health)
 
-@export_range(1, 100, 1) var level : int = 100 :
-    set(value):
-        clamp(value, 1, 100)
-        level = value
-        level_updated(level)
+@export_range(1, 100, 1) var level : int = 50 :
+	set(value):
+		clamp(value, 1, 100)
+		level = value
+		level_updated.emit(level)
 
 @export var my_plays : Array[Plays] = get_empty_slot_plays_array() :
 	set(value):
@@ -149,26 +149,30 @@ var ally_field_position : Position = Position.NOT_ASSIGNED
 var is_really_at_bench : bool = false
 
 
-func calc_stat_for_level(base_stat : int, invest_point : int, level : int) -> int:
-    return 5 + ceil((base_stat + level * invest_point) / 50)
+func calc_stat_for_level(base_stat : int, invest_point : int) -> int:
+	print(base_stat)
+	print(invest_point)
+	print(5 + ceili(((base_stat + invest_point) * float(level) / 50.0)))
+	print("------------")
+	return 5 + ceili(((base_stat + invest_point) * float(level) / 50.0))
 
 
-func get_total_stats_value(stats_type : Stats, level : int) -> int:
-	var base_stats : int = 0
+func get_total_stats_value(stats_type : Stats) -> int:
+	var resulting_stats : int = 0
 	match stats_type: # Should have use Dictionary like invests instead, too lazy to refactor now...
 		Beastie.Stats.B_POW:
-			stats = calc_stat_for_level(body_base_pow, invests.get(stats_type), level)
+			resulting_stats = calc_stat_for_level(body_base_pow, invests.get(stats_type))
 		Beastie.Stats.S_POW:
-			stats = calc_stat_for_level(spirit_base_pow, invests.get(stats_type), level)
+			resulting_stats = calc_stat_for_level(spirit_base_pow, invests.get(stats_type))
 		Beastie.Stats.M_POW:
-			stats = calc_stat_for_level(mind_base_pow, invests.get(stats_type), level)
+			resulting_stats = calc_stat_for_level(mind_base_pow, invests.get(stats_type))
 		Beastie.Stats.B_DEF:
-			stats = calc_stat_for_level(body_base_def, invests.get(stats_type), level)
+			resulting_stats = calc_stat_for_level(body_base_def, invests.get(stats_type))
 		Beastie.Stats.S_DEF:
-			stats = calc_stat_for_level(spirit_base_def, invests.get(stats_type), level)
+			resulting_stats = calc_stat_for_level(spirit_base_def, invests.get(stats_type))
 		Beastie.Stats.M_DEF:
-			stats = calc_stat_for_level(mind_base_def, invests.get(stats_type), level)
-	return stats
+			resulting_stats = calc_stat_for_level(mind_base_def, invests.get(stats_type))
+	return resulting_stats
 
 
 func get_sprite(sprite_type : Sprite) -> Texture2D:
@@ -248,7 +252,7 @@ func get_stats_to_display(stat : Stats) -> int:
 			else:
 				total_boost += int(not check_if_net()) + int(check_if_stack())
 
-	var final_stat : float = float(base_stat) + 5.0
+	var final_stat : float = float(base_stat)
 	match signi(total_boost):
 		1:
 			final_stat += floori(final_stat * float(total_boost) / 2.0)

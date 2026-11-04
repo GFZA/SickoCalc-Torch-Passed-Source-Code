@@ -247,14 +247,14 @@ func get_damage(attacker : Beastie, defender : Beastie, attack : Attack, \
 	#endregion
 
 	#region Get final stats for calculation
-	var final_atk : float = float(total_attack_stat) + 5.0
+	var final_atk : float = float(total_attack_stat)
 	match signi(total_attack_boost):
 		1:
 			final_atk += floori(final_atk * float(total_attack_boost) / 2.0)
 		-1:
 			final_atk = floori(final_atk * 2.0 / (absf(float(total_attack_boost)) + 2.0))
 
-	var final_def : float = float(total_defense_stat) + 5.0
+	var final_def : float = float(total_defense_stat)
 	match signi(total_defense_boost):
 		1:
 			final_def += floori(final_def * float(total_defense_boost) / 2.0)
@@ -331,7 +331,7 @@ func _pre_calc_def_stat(stat : Beastie.Stats, attacker : Beastie, defender : Bea
 	# didn't account for back row bonus cuz we just need to see what's highest
 	# then calc the acutal stat later
 
-	var final_def : float = float(def_stat) + 5.0
+	var final_def : float = float(def_stat)
 	match signi(total_defense_boost):
 		1:
 			final_def += floori(final_def * float(total_defense_boost) / 2.0)
