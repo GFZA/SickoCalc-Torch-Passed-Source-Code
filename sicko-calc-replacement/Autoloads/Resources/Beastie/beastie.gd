@@ -150,10 +150,6 @@ var is_really_at_bench : bool = false
 
 
 func calc_stat_for_level(base_stat : int, invest_point : int) -> int:
-	print(base_stat)
-	print(invest_point)
-	print(5 + ceili(((base_stat + invest_point) * float(level) / 50.0)))
-	print("------------")
 	return 5 + ceili(((base_stat + invest_point) * float(level) / 50.0))
 
 
