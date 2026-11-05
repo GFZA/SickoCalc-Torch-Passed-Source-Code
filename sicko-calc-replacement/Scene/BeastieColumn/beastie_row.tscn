@@ -1,8 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://1arcfnc6wacj"]
+[gd_scene load_steps=8 format=3 uid="uid://1arcfnc6wacj"]
 
 [ext_resource type="Script" uid="uid://qsm1bgrq1n67" path="res://Scene/BeastieColumn/beastie_row.gd" id="1_cnr5y"]
 [ext_resource type="Theme" uid="uid://bkrlwg21fhprn" path="res://Autoloads/Resources/Themes/edit_button.tres" id="2_cnr5y"]
+[ext_resource type="FontFile" uid="uid://q2kbgu0jja56" path="res://Autoloads/Resources/Fonts/sportsjersey.ttf" id="2_mmbrw"]
 [ext_resource type="Texture2D" uid="uid://l3eh6masrurv" path="res://Autoloads/Resources/Beastie/evil_axolati.png" id="3_cnr5y"]
+[ext_resource type="Texture2D" uid="uid://bguiky7x105wd" path="res://Autoloads/Icons/icon_up_white.png" id="4_lryin"]
+[ext_resource type="Texture2D" uid="uid://ym4g7x27mim3" path="res://Autoloads/Icons/icon_down_white.png" id="5_aobvt"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ri7am"]
+font = ExtResource("2_mmbrw")
+font_size = 64
 
 [node name="BeastieRow" type="MarginContainer"]
 custom_minimum_size = Vector2(1150, 500)
@@ -30,9 +37,64 @@ theme_override_constants/margin_right = 125
 layout_mode = 2
 theme_override_constants/separation = 12
 
-[node name="StatsLabel" type="Label" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer"]
+[node name="UpperStatsContainer" type="HBoxContainer" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LevelContainer" type="HBoxContainer" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer/UpperStatsContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="LevelLabel" type="Label" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer/UpperStatsContainer/LevelContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "LV"
+label_settings = SubResource("LabelSettings_ri7am")
+
+[node name="LevelLineEdit" type="LineEdit" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer/UpperStatsContainer/LevelContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_behavior_recursive = 2
+theme = ExtResource("2_cnr5y")
+theme_override_constants/minimum_character_width = 3
+text = "50"
+placeholder_text = "50"
+alignment = 1
+max_length = 3
+virtual_keyboard_type = 2
+
+[node name="LevelButtonContainer" type="VBoxContainer" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer/UpperStatsContainer/LevelContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = -8
+
+[node name="LevelUpButton" type="Button" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer/UpperStatsContainer/LevelContainer/LevelButtonContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+theme = ExtResource("2_cnr5y")
+theme_override_constants/icon_max_width = 36
+icon = ExtResource("4_lryin")
+vertical_icon_alignment = 0
+
+[node name="LevelDownButton" type="Button" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer/UpperStatsContainer/LevelContainer/LevelButtonContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 4
+focus_mode = 0
+theme = ExtResource("2_cnr5y")
+theme_override_constants/icon_max_width = 36
+icon = ExtResource("5_aobvt")
+vertical_icon_alignment = 2
+
+[node name="StatsLabel" type="Label" parent="MainContainer/StatsMainContainer/StatsMarginContainer/StatsContainer/UpperStatsContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
 theme = ExtResource("2_cnr5y")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 72

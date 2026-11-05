@@ -38,6 +38,7 @@ func _ready() -> void:
 
 func _on_stamina_line_edit_text_summited(new_text : String) -> void:
 	var new_stamina : int = new_text.to_int() if new_text.length() != 0 else 100
+	new_stamina = clampi(new_stamina, 1, 100)
 	value = new_stamina
 	stamina_line_edit.release_focus()
 
