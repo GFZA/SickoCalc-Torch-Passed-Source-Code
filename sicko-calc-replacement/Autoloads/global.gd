@@ -14,11 +14,17 @@ var trait_data_json : Dictionary = {}
 var move_data_json : Dictionary = {}
 
 signal is_musclebrained_updated(value : bool)
+signal damage_updated(value : int)
 
 enum MySide {LEFT, RIGHT}
 enum SortBeastie {NAME, NUMBER}
 
 var SPRECKO : Beastie = load("res://Autoloads/Resources/Beastie/Sprecko/sprecko.tres")
+
+var damage : int = 0 :
+	set(value):
+		damage = value
+		damage_updated.emit(damage)
 
 var pause_updating_field : bool = false
 var resetting : bool = false

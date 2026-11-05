@@ -10,6 +10,7 @@ const SECRET_1 = preload("uid://cukw0bkohbuhw")
 const SECRET_2 = preload("uid://cxjjnkkwhac1y")
 const SECRET_3 = preload("uid://bh3ewxrd80od8")
 const SECRET_4 = preload("uid://bvfwcjo648fyi")
+const SECRET_5 = preload("uid://d1e421ymawf16")
 
 @export var beastie : Beastie :
 	set(value):
@@ -56,6 +57,7 @@ func _ready() -> void:
 	level_up_button.pressed.connect(_on_level_up_button_pressed)
 	level_down_button.pressed.connect(_on_level_down_button_pressed)
 	select_beastie_button.pressed.connect(beastie_select_ui_requested.emit)
+	Global.damage_updated.connect(_more_special)
 
 
 func update_beastie() -> void:
@@ -135,7 +137,7 @@ func _special() -> void:
 		["riplash", "shy", "launch"]:
 			name_label.text = "Pipe Bomb"
 			icon_rect.texture = SECRET_1
-		["kasaleet", "power up", "spike"]:
+		["kasaleet", _, "spike"]:
 			name_label.text = "Footdive"
 			icon_rect.texture = SECRET_2
 		["squimage", "moist", "grit"]:
@@ -144,3 +146,11 @@ func _special() -> void:
 		["sprecko", "cleanup", "sweep"]:
 			name_label.text = "Dirt Sponge"
 			icon_rect.texture = SECRET_4
+
+
+func _more_special(damage : int) -> void:
+	if not beastie:
+		return
+	if beastie.specie_name == "Rookee" and damage > 100000:
+		name_label.text = "Scapegoat"
+		icon_rect.texture = SECRET_5

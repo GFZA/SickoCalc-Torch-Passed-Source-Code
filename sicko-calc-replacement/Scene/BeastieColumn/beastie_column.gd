@@ -178,6 +178,8 @@ func _give_beastie_current_modifiers() -> void:
 
 	Global.resetting = true # Disable updating to reduce lag
 
+	beastie.level = beastie_row.level
+
 	_on_pos_button_pressed(current_pos)
 
 	# Force boost_row to fetch its stat and assign to the beastie
