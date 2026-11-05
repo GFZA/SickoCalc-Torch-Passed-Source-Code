@@ -16,17 +16,11 @@ const FREE_BALL = preload("res://Autoloads/Resources/Plays/Attack/Body/free_ball
 var all_body_attacks : Array[Plays] = []
 var all_spirit_attacks : Array[Plays] = []
 var all_mind_attacks : Array[Plays] = []
-#var all_volley_plays : Array[Plays] = []
-#var all_support_plays : Array[Plays] = []
-#var all_defense_plays : Array[Plays] = []
 var all_plays : Array[Plays] = []
 
 var beastie_body_attacks : Array[Plays] = []
 var beastie_spirit_attacks : Array[Plays] = []
 var beastie_mind_attacks : Array[Plays] = []
-#var beastie_volley_plays : Array[Plays] = []
-#var beastie_support_plays : Array[Plays] = []
-#var beastie_defense_plays : Array[Plays] = []
 var beastie_plays : Array[Plays] = []
 
 var current_filter : Plays.Type = Plays.Type.NONE :
@@ -75,9 +69,6 @@ func _assign_all_data_arrays() -> void:
 	all_body_attacks = Global.all_body_attacks.duplicate()
 	all_spirit_attacks = Global.all_spirit_attacks.duplicate()
 	all_mind_attacks = Global.all_mind_attacks.duplicate()
-	#all_volley_plays = Global.all_volley_plays.duplicate()
-	#all_support_plays = Global.all_support_plays.duplicate()
-	#all_defense_plays = Global.all_defense_plays.duplicate()
 	all_plays = Global.all_plays
 
 
@@ -86,9 +77,6 @@ func _update_beastie_plays_data() -> void:
 		beastie_body_attacks.clear()
 		beastie_spirit_attacks.clear()
 		beastie_mind_attacks.clear()
-		#beastie_volley_plays.clear()
-		#beastie_support_plays.clear()
-		#beastie_defense_plays.clear()
 		beastie_plays.clear()
 		return
 
@@ -119,31 +107,10 @@ func _update_beastie_plays_data() -> void:
 	)
 	beastie_mind_attacks.sort_custom(sort_by_name)
 
-	## Volley
-	#beastie_volley_plays = pre_sort_beastie_plays.filter(func(plays : Plays):
-		#return plays.type == Plays.Type.VOLLEY if plays else false
-	#)
-	#beastie_volley_plays.sort_custom(sort_by_name)
-#
-	## Support
-	#beastie_support_plays = pre_sort_beastie_plays.filter(func(plays : Plays):
-		#return plays.type == Plays.Type.SUPPORT if plays else false
-	#)
-	#beastie_support_plays.sort_custom(sort_by_name)
-#
-	## Defense
-	#beastie_defense_plays = pre_sort_beastie_plays.filter(func(plays : Plays):
-		#return plays.type == Plays.Type.DEFENSE if plays else false
-	#)
-	#beastie_defense_plays.sort_custom(sort_by_name)
-
 	# All Plays
 	beastie_plays.append_array(beastie_body_attacks)
 	beastie_plays.append_array(beastie_spirit_attacks)
 	beastie_plays.append_array(beastie_mind_attacks)
-	#beastie_plays.append_array(beastie_volley_plays)
-	#beastie_plays.append_array(beastie_support_plays)
-	#beastie_plays.append_array(beastie_defense_plays)
 
 
 func _get_filtered_array() -> Array[Plays]:
@@ -157,12 +124,6 @@ func _get_filtered_array() -> Array[Plays]:
 				return beastie_spirit_attacks
 			Plays.Type.ATTACK_MIND:
 				return beastie_mind_attacks
-			#Plays.Type.VOLLEY:
-				#return beastie_volley_plays
-			#Plays.Type.SUPPORT:
-				#return beastie_support_plays
-			#Plays.Type.DEFENSE:
-				#return beastie_defense_plays
 	else:
 		match current_filter:
 			Plays.Type.NONE:
@@ -173,12 +134,6 @@ func _get_filtered_array() -> Array[Plays]:
 				return all_spirit_attacks
 			Plays.Type.ATTACK_MIND:
 				return all_mind_attacks
-			#Plays.Type.VOLLEY:
-				#return all_volley_plays
-			#Plays.Type.SUPPORT:
-				#return all_support_plays
-			#Plays.Type.DEFENSE:
-				#return all_defense_plays
 	return []
 
 
@@ -217,13 +172,8 @@ func _on_plays_button_plays_selected(plays : Plays) -> void:
 	if not beastie:
 		return
 	if not plays:
-		#beastie.my_plays[0] = null
-		#beastie.my_plays_updated.emit(beastie.my_plays) # Have to manually emitted for some reason)
 		plays_selected.emit(null)
 	else:
-		#beastie.my_plays[0] = plays.duplicate(true)
-		#beastie.my_plays_updated.emit(beastie.my_plays) # Have to manually emitted for some reason)
-		#plays_selected.emit(beastie.my_plays[0])
 		plays_selected.emit(plays.duplicate(true))
 
 

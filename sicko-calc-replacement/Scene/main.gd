@@ -129,7 +129,8 @@ func _update() -> void:
 		Global.is_musclebrained = attacker.my_trait.name.to_lower() == "musclebrain"
 		current_attack.is_mimicked = left_beastie_column.mimic_button.button_pressed
 		attacker.my_plays[0] = current_attack
-		damage_splash.amount = DamageCalculator.get_damage(attacker, defender, current_attack, team_controller, team_controller)
+		Global.damage = DamageCalculator.get_damage(attacker, defender, current_attack, team_controller, team_controller)
+		damage_splash.amount = Global.damage
 		damage_splash.attack = current_attack
 
 		# Set arrow color

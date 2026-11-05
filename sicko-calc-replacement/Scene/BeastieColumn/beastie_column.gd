@@ -88,6 +88,7 @@ func _ready() -> void:
 	attack_condition_row.visible = is_left
 	boost_row.side = side
 
+	beastie_row.level_updated.connect(_on_beastie_row_level_update)
 	beastie_updated.connect(beastie_row.update_beastie)
 
 	if is_left:
@@ -176,6 +177,8 @@ func _give_beastie_current_modifiers() -> void:
 		return
 
 	Global.resetting = true # Disable updating to reduce lag
+
+	beastie.level = beastie_row.level
 
 	_on_pos_button_pressed(current_pos)
 
@@ -280,6 +283,11 @@ func _update_attack() -> void:
 
 		rally_button.visible = current_attack.type in [Plays.Type.ATTACK_SPIRIT, Plays.Type.ATTACK_MIND] \
 								or beastie.my_trait.name.to_lower() == "extrovert"
+
+
+func _on_beastie_row_level_update(level : int) -> void:
+	beastie.level = level
+	beastie_updated.emit()
 
 
 func _on_attack_condtion_toggled(toggled_on) -> void:
@@ -447,6 +455,8 @@ func _on_blocked_updated(amount : int) -> void:
 func reset() -> void:
 	if beastie:
 		beastie.health = 100 # This applies to both sides
+
+	beastie_row.reset_level()
 
 	jazzed_button.button_pressed = false
 	left_weepy_button.button_pressed = false

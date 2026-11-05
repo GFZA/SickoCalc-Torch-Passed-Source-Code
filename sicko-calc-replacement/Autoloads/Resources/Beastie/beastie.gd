@@ -18,6 +18,7 @@ signal current_feelings_updated(feelings_dict : Dictionary[Feelings, int])
 signal my_plays_updated(updated_plays : Array[Plays])
 signal my_trait_updated(updated_trait : Trait)
 signal health_updated(health : int)
+signal level_updated(level : int)
 
 
 @export_range(0, 100, 1) var health : int = 100 :
@@ -25,6 +26,12 @@ signal health_updated(health : int)
 		clamp(value, 0, 100)
 		health = value
 		health_updated.emit(health)
+
+@export_range(1, 100, 1) var level : int = 50 :
+	set(value):
+		clamp(value, 1, 100)
+		level = value
+		level_updated.emit(level)
 
 @export var my_plays : Array[Plays] = get_empty_slot_plays_array() :
 	set(value):
@@ -142,23 +149,26 @@ var ally_field_position : Position = Position.NOT_ASSIGNED
 var is_really_at_bench : bool = false
 
 
+func calc_stat_for_level(base_stat : int, invest_point : int) -> int:
+	return 5 + ceili(((base_stat + invest_point) * float(level) / 50.0))
+
+
 func get_total_stats_value(stats_type : Stats) -> int:
-	var base_stats : int = 0
+	var resulting_stats : int = 0
 	match stats_type: # Should have use Dictionary like invests instead, too lazy to refactor now...
 		Beastie.Stats.B_POW:
-			base_stats = body_base_pow
+			resulting_stats = calc_stat_for_level(body_base_pow, invests.get(stats_type))
 		Beastie.Stats.S_POW:
-			base_stats = spirit_base_pow
+			resulting_stats = calc_stat_for_level(spirit_base_pow, invests.get(stats_type))
 		Beastie.Stats.M_POW:
-			base_stats = mind_base_pow
+			resulting_stats = calc_stat_for_level(mind_base_pow, invests.get(stats_type))
 		Beastie.Stats.B_DEF:
-			base_stats = body_base_def
+			resulting_stats = calc_stat_for_level(body_base_def, invests.get(stats_type))
 		Beastie.Stats.S_DEF:
-			base_stats = spirit_base_def
+			resulting_stats = calc_stat_for_level(spirit_base_def, invests.get(stats_type))
 		Beastie.Stats.M_DEF:
-			base_stats = mind_base_def
-	var invest_point : int = invests.get(stats_type)
-	return base_stats + invest_point
+			resulting_stats = calc_stat_for_level(mind_base_def, invests.get(stats_type))
+	return resulting_stats
 
 
 func get_sprite(sprite_type : Sprite) -> Texture2D:
@@ -238,7 +248,7 @@ func get_stats_to_display(stat : Stats) -> int:
 			else:
 				total_boost += int(not check_if_net()) + int(check_if_stack())
 
-	var final_stat : float = float(base_stat) + 5.0
+	var final_stat : float = float(base_stat)
 	match signi(total_boost):
 		1:
 			final_stat += floori(final_stat * float(total_boost) / 2.0)
