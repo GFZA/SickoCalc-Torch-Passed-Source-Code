@@ -8,19 +8,19 @@
 [ext_resource type="Texture2D" uid="uid://k7ofg6xpe8pl" path="res://Autoloads/Icons/icon_calc.png" id="4_uctnp"]
 [ext_resource type="Texture2D" uid="uid://c56bab4mbpfwg" path="res://Autoloads/Icons/icon_github.png" id="5_m37ut"]
 [ext_resource type="Script" uid="uid://07ew5v3khpsn" path="res://Autoloads/Resources/Plays/plays.gd" id="6_wimqa"]
-[ext_resource type="Resource" uid="uid://51jyo72ry87v" path="res://Autoloads/Resources/Plays/Attack/Body/free_ball.tres" id="7_t372l"]
+[ext_resource type="Resource" uid="uid://dj1gr3u6kh2cj" path="res://Autoloads/Resources/Plays/Attack/Body/free_ball.tres" id="7_t372l"]
 [ext_resource type="Script" uid="uid://bslfuaragw1g7" path="res://Autoloads/Resources/Trait/trait.gd" id="8_uctnp"]
-[ext_resource type="Resource" uid="uid://c61k5iketw8gj" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="9_m37ut"]
-[ext_resource type="Resource" uid="uid://rs2qstwbelyi" path="res://Autoloads/Resources/Plays/Attack/Body/boom.tres" id="10_yoaul"]
-[ext_resource type="Resource" uid="uid://dvlvjc15g68m7" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="11_mepbf"]
-[ext_resource type="Resource" uid="uid://dl3ygremr2gnn" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="12_dvq1j"]
-[ext_resource type="Resource" uid="uid://fgq2455h2ohi" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="13_50v0s"]
-[ext_resource type="Resource" uid="uid://dro8ty8hatxdx" path="res://Autoloads/Resources/Plays/Attack/Body/power_sap.tres" id="14_mu7ye"]
-[ext_resource type="Resource" uid="uid://bqohaluy1bian" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="15_2oiod"]
-[ext_resource type="Resource" uid="uid://5ltjg2ttl7gj" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="16_8bkap"]
-[ext_resource type="Resource" uid="uid://co7ln5c4qp2o7" path="res://Autoloads/Resources/Plays/Attack/Mind/snipe.tres" id="17_b0nqf"]
-[ext_resource type="Resource" uid="uid://chj4ern3e6noc" path="res://Autoloads/Resources/Trait/scavenger.tres" id="18_ot48q"]
-[ext_resource type="Resource" uid="uid://d2d0y2wkj65yn" path="res://Autoloads/Resources/Trait/cleanup.tres" id="19_2uk8d"]
+[ext_resource type="Resource" uid="uid://b3fafiiiohfee" path="res://Autoloads/Resources/Plays/Attack/Spirit/careful_shot.tres" id="9_m37ut"]
+[ext_resource type="Resource" uid="uid://b21yp6ypxihut" path="res://Autoloads/Resources/Plays/Attack/Body/boom.tres" id="10_yoaul"]
+[ext_resource type="Resource" uid="uid://cslq62j86s88g" path="res://Autoloads/Resources/Plays/Attack/Mind/lure_shot.tres" id="11_mepbf"]
+[ext_resource type="Resource" uid="uid://sjm5j6045dgt" path="res://Autoloads/Resources/Plays/Attack/Body/breaker.tres" id="12_dvq1j"]
+[ext_resource type="Resource" uid="uid://chimd5aoryek2" path="res://Autoloads/Resources/Plays/Attack/Body/relaxed_hit.tres" id="13_50v0s"]
+[ext_resource type="Resource" uid="uid://bjcli6tikgdm3" path="res://Autoloads/Resources/Plays/Attack/Body/power_sap.tres" id="14_mu7ye"]
+[ext_resource type="Resource" uid="uid://bxndwbax7qt22" path="res://Autoloads/Resources/Plays/Attack/Spirit/toppler.tres" id="15_2oiod"]
+[ext_resource type="Resource" uid="uid://cavm6w3nphq5x" path="res://Autoloads/Resources/Plays/Attack/Body/demolish.tres" id="16_8bkap"]
+[ext_resource type="Resource" uid="uid://cxavlxbnqpmy4" path="res://Autoloads/Resources/Plays/Attack/Mind/snipe.tres" id="17_b0nqf"]
+[ext_resource type="Resource" uid="uid://dcwc0edr003lc" path="res://Autoloads/Resources/Trait/scavenger.tres" id="18_ot48q"]
+[ext_resource type="Resource" uid="uid://b0xp11ytelogp" path="res://Autoloads/Resources/Trait/cleanup.tres" id="19_2uk8d"]
 [ext_resource type="Script" uid="uid://ehabj4qsgxpl" path="res://Autoloads/Resources/Beastie/beastie.gd" id="20_cr44a"]
 [ext_resource type="Texture2D" uid="uid://bmkrey7wnjpt" path="res://Autoloads/Resources/Beastie/Sprecko/icon_sprecko.png" id="21_tcekk"]
 [ext_resource type="Texture2D" uid="uid://0a5xkw4orq58" path="res://Autoloads/Misc/main_ui_bg_tile_4.png" id="23_nyb1q"]
@@ -67,7 +67,7 @@ script = ExtResource("20_cr44a")
 my_plays = Array[ExtResource("6_wimqa")]([null, null, null])
 my_trait = SubResource("Resource_uctnp")
 current_boosts = Dictionary[int, int]({
-3: 0
+0: 0
 })
 is_nfe = true
 bar_color = Color(0.68235296, 0.92941177, 0.5764706, 1)
