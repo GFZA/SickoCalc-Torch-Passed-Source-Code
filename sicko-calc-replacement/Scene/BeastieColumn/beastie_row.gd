@@ -103,6 +103,7 @@ func _update_side() -> void:
 
 func _on_level_line_edit_text_summited(new_text : String) -> void:
 	var new_level : int = new_text.to_int() if new_text.length() != 0 else 100
+	new_level = clampi(new_level, 1, 100)
 	level = new_level
 	level_line_edit.release_focus()
 

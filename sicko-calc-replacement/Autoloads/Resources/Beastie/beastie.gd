@@ -45,7 +45,7 @@ signal level_updated(level : int)
 		my_trait = value
 		if my_trait and my_trait.name.to_lower() == "haunted":
 			current_feelings.clear()
-			current_feelings.get_or_add(Feelings.TRIED, 4)
+			current_feelings.get_or_add(Feelings.TRIED, 3)
 		my_trait_updated.emit(my_trait)
 
 @export var current_boosts : Dictionary[Stats, int] = {} :
@@ -66,9 +66,9 @@ signal level_updated(level : int)
 		value = value.substr(0, MAX_NAME_LENGTH)
 		my_name = value
 		my_name_updated.emit(my_name)
-@export_range(0, 999) var sport_number : int = 0:
+@export_range(-1, 999) var sport_number : int = -1:
 	set(value):
-		clamp(value, 0, 999)
+		clamp(value, -1, 999)
 		sport_number = value
 		sport_number_updated.emit(sport_number)
 @export var invests : Dictionary[Stats, int] = {
