@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvfwcjo648fyi"
-path="res://.godot/imported/secret_4.png-4b972a4155b3ee41424432081ad566d7.ctex"
+uid="uid://cxjjnkkwhac1y"
+path="res://.godot/imported/footdive.png-178ba7e1609531358ba6078b28c8d456.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Autoloads/Misc/secret_4.png"
-dest_files=["res://.godot/imported/secret_4.png-4b972a4155b3ee41424432081ad566d7.ctex"]
+source_file="res://Autoloads/Misc/footdive.png"
+dest_files=["res://.godot/imported/footdive.png-178ba7e1609531358ba6078b28c8d456.ctex"]
 
 [params]
 

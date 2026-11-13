@@ -6,11 +6,15 @@ signal level_updated(level : int)
 signal beastie_select_ui_requested
 
 const EVIL_AXOLATI = preload("uid://l3eh6masrurv")
-const SECRET_1 = preload("uid://cukw0bkohbuhw")
-const SECRET_2 = preload("uid://cxjjnkkwhac1y")
-const SECRET_3 = preload("uid://bh3ewxrd80od8")
-const SECRET_4 = preload("uid://bvfwcjo648fyi")
-const SECRET_5 = preload("uid://d1e421ymawf16")
+const SICKO_SECRETS : Dictionary[String, Texture2D] ={
+	"Pipe Bomb" : preload("uid://cukw0bkohbuhw"),
+	"Footdive" : preload("uid://cxjjnkkwhac1y"),
+	"ena" : preload("uid://bh3ewxrd80od8"),
+	"Dirt Sponge" : preload("uid://bvfwcjo648fyi"),
+	"Scapegoat" : preload("uid://d1e421ymawf16"),
+	"FaceDogs" : preload("uid://j048wg8mhujy"),
+	"Noizard" : preload("uid://db86gaq2wi32e")
+}
 
 @export var beastie : Beastie :
 	set(value):
@@ -29,6 +33,8 @@ const SECRET_5 = preload("uid://d1e421ymawf16")
 	set(value):
 		side = value
 		_update_side()
+
+var special_roll : int = 0
 
 @onready var main_container: HBoxContainer = %MainContainer
 
@@ -49,6 +55,7 @@ const SECRET_5 = preload("uid://d1e421ymawf16")
 
 @onready var beastie_display_container: VBoxContainer = %BeastieDisplayContainer
 @onready var name_label: Label = %NameLabel
+@onready var secret_num_label: HBoxContainer = %SecretNumLabel
 @onready var icon_rect: TextureRect = %IconRect
 
 
@@ -56,14 +63,21 @@ func _ready() -> void:
 	level_line_edit.text_submitted.connect(_on_level_line_edit_text_summited)
 	level_up_button.pressed.connect(_on_level_up_button_pressed)
 	level_down_button.pressed.connect(_on_level_down_button_pressed)
-	select_beastie_button.pressed.connect(beastie_select_ui_requested.emit)
+	select_beastie_button.pressed.connect(_on_select_beastie_button_pressed)
 	Global.damage_updated.connect(_more_special)
+
+
+func _on_select_beastie_button_pressed() -> void:
+	beastie_select_ui_requested.emit()
+	special_roll = randi_range(0, 1023) # 1 in 1024
+	print(special_roll)
 
 
 func update_beastie() -> void:
 	if not is_node_ready():
 		await ready
 
+	secret_num_label.hide()
 	var is_left : bool = (side == Global.MySide.LEFT)
 	if not beastie:
 		name_label.text = "Unselected"
@@ -127,31 +141,42 @@ func _special() -> void:
 		return
 	if not beastie.my_trait:
 		return
+
+	# To anyone reading this code, please keep these secrets. Thanks!
+	var beastie_name : String = beastie.specie_name.to_lower()
+	if beastie_name == "noizard" and special_roll == 0: # Roll everytime the beastie select button is pressed
+		_apply_special("Noizard")
+		secret_num_label.show()
+		return
+
 	if beastie.my_plays.front() == null:
 		return
-	var beastie_name : String = beastie.specie_name.to_lower()
 	var trait_name : String = beastie.my_trait.name.to_lower()
 	var attack_name : String = beastie.my_plays.front().name.to_lower()
 
-	# To anyone reading this code, please keep these secrets. Thanks!
 	match [beastie_name, trait_name, attack_name]:
 		["riplash", "shy", "launch"]:
-			name_label.text = "Pipe Bomb"
-			icon_rect.texture = SECRET_1
+			_apply_special("Pipe Bomb")
 		["kasaleet", _, "spike"]:
-			name_label.text = "Footdive"
-			icon_rect.texture = SECRET_2
+			_apply_special("Footdive")
 		["squimage", "moist", "grit"]:
-			name_label.text = "ena"
-			icon_rect.texture = SECRET_3
+			_apply_special("ena")
 		["sprecko", "cleanup", "sweep"]:
-			name_label.text = "Dirt Sponge"
-			icon_rect.texture = SECRET_4
+			_apply_special("Dirt Sponge")
+		["collarva", "stirring", "perfect shot"]:
+			_apply_special("FaceDogs")
 
 
 func _more_special(damage : int) -> void:
 	if not beastie:
 		return
 	if beastie.specie_name == "Rookee" and damage > 100000:
-		name_label.text = "Scapegoat"
-		icon_rect.texture = SECRET_5
+		_apply_special("Scapegoat")
+
+
+func _apply_special(key : String) -> void:
+	if not SICKO_SECRETS.has(key):
+		printerr("Error! %s not exist for SickoSecrets!" % key)
+		return
+	name_label.text = key
+	icon_rect.texture = SICKO_SECRETS[key]

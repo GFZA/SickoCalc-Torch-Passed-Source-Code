@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bh3ewxrd80od8"
-path="res://.godot/imported/secret_3.png-a7ad4e267b1a2093a25c4f1a3ddbe4ab.ctex"
+uid="uid://d1e421ymawf16"
+path="res://.godot/imported/scapegoat.png-3a4a753841d263b92a9604954c5ffba3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Autoloads/Misc/secret_3.png"
-dest_files=["res://.godot/imported/secret_3.png-a7ad4e267b1a2093a25c4f1a3ddbe4ab.ctex"]
+source_file="res://Autoloads/Misc/scapegoat.png"
+dest_files=["res://.godot/imported/scapegoat.png-3a4a753841d263b92a9604954c5ffba3.ctex"]
 
 [params]
 

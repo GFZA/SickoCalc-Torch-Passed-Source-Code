@@ -206,6 +206,7 @@ func _init() -> void:
 
 
 func _ready() -> void:
+	randomize()
 	_assign_all_plays_data()
 	_assign_all_trait_data()
 	_assign_all_beasties_data()

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxjjnkkwhac1y"
-path="res://.godot/imported/secret_2.png-08a8e522974df477f841d294a0953b36.ctex"
+uid="uid://bh3ewxrd80od8"
+path="res://.godot/imported/ena.png-94ac5e81e96ec00a33abf8709c5559c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Autoloads/Misc/secret_2.png"
-dest_files=["res://.godot/imported/secret_2.png-08a8e522974df477f841d294a0953b36.ctex"]
+source_file="res://Autoloads/Misc/ena.png"
+dest_files=["res://.godot/imported/ena.png-94ac5e81e96ec00a33abf8709c5559c0.ctex"]
 
 [params]
 

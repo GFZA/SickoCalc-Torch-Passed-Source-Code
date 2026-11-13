@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://1arcfnc6wacj"]
+[gd_scene load_steps=10 format=3 uid="uid://1arcfnc6wacj"]
 
 [ext_resource type="Script" uid="uid://qsm1bgrq1n67" path="res://Scene/BeastieColumn/beastie_row.gd" id="1_cnr5y"]
 [ext_resource type="Theme" uid="uid://bkrlwg21fhprn" path="res://Autoloads/Resources/Themes/edit_button.tres" id="2_cnr5y"]
@@ -6,10 +6,16 @@
 [ext_resource type="Texture2D" uid="uid://l3eh6masrurv" path="res://Autoloads/Resources/Beastie/evil_axolati.png" id="3_cnr5y"]
 [ext_resource type="Texture2D" uid="uid://bguiky7x105wd" path="res://Autoloads/Icons/icon_up_white.png" id="4_lryin"]
 [ext_resource type="Texture2D" uid="uid://ym4g7x27mim3" path="res://Autoloads/Icons/icon_down_white.png" id="5_aobvt"]
+[ext_resource type="FontFile" uid="uid://cvfib27cf5q88" path="res://Autoloads/Resources/Fonts/Go Banana.ttf" id="6_lryin"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ri7am"]
 font = ExtResource("2_mmbrw")
 font_size = 64
+
+[sub_resource type="LabelSettings" id="LabelSettings_aobvt"]
+font = ExtResource("6_lryin")
+font_size = 64
+outline_size = 6
 
 [node name="BeastieRow" type="MarginContainer"]
 custom_minimum_size = Vector2(1150, 500)
@@ -190,15 +196,44 @@ theme_override_constants/separation = 8
 custom_minimum_size = Vector2(0, 5)
 layout_mode = 2
 
-[node name="NameLabel" type="Label" parent="MainContainer/BeastieDisplayContainer"]
-unique_name_in_owner = true
+[node name="NameContainer" type="HBoxContainer" parent="MainContainer/BeastieDisplayContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
+theme_override_constants/separation = 8
+
+[node name="NameLabel" type="Label" parent="MainContainer/BeastieDisplayContainer/NameContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
 theme = ExtResource("2_cnr5y")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 88
 text = "Unselected"
 horizontal_alignment = 1
+
+[node name="SecretNumLabel" type="HBoxContainer" parent="MainContainer/BeastieDisplayContainer/NameContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 0
+
+[node name="HashLabel" type="Label" parent="MainContainer/BeastieDisplayContainer/NameContainer/SecretNumLabel"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 64
+text = "#"
+label_settings = SubResource("LabelSettings_aobvt")
+
+[node name="Numberlabel" type="Label" parent="MainContainer/BeastieDisplayContainer/NameContainer/SecretNumLabel"]
+layout_mode = 2
+size_flags_horizontal = 4
+focus_behavior_recursive = 1
+theme = ExtResource("2_cnr5y")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 88
+text = "21"
 
 [node name="IconMarginContainer" type="MarginContainer" parent="MainContainer/BeastieDisplayContainer"]
 layout_mode = 2
